@@ -1,0 +1,1826 @@
+{
+  "analysis_id": "glm_common_core_campaign_20260907_A",
+  "common_selection": {
+    "analysis_group_count": 235,
+    "analysis_group_manifest_hash": "9654abf46d19267ee060a8d5e267b427f6a08212b84cd495884958f226cc5758",
+    "n_pairs": 290,
+    "n_rows": 580,
+    "pairs_hash": "da16394f92591e75c06f1ae21bdce3396160713680cb893930d9c67e7e47796b",
+    "selection_manifest_hash": "98d00a93581684e8b768ad94a58869dbf44aedfc5481aa533ba17aff717b09ca",
+    "split_manifest_hash": "85ee2903ce9b90e027b4658274dabc3ba71932f1d0dfb3cd48e7bbb76d40fd14"
+  },
+  "estimand": "clean_vs_corrupt_recapture_discrimination",
+  "models": [
+    {
+      "anchors": {
+        "early": {
+          "adjacent_interface_differences": [
+            {
+              "alpha": 0.05,
+              "ci_high": 0.023396967916498243,
+              "ci_low": -0.018360190601052814,
+              "difference": 0.0028775267538645455,
+              "difference_definition": "post_moe_residual_minus_router_input",
+              "left": {
+                "auroc": 0.7319381688466112,
+                "name": "post_moe_residual"
+              },
+              "n_resamples": 1000,
+              "n_valid_resamples": 1000,
+              "num_groups": 235,
+              "resampling_unit": "analysis_group",
+              "right": {
+                "auroc": 0.7290606420927467,
+                "name": "router_input"
+              },
+              "seed": 20260829,
+              "status": "ok"
+            },
+            {
+              "alpha": 0.05,
+              "ci_high": 0.017118343332180447,
+              "ci_low": -0.034325872195887536,
+              "difference": -0.00848989298454228,
+              "difference_definition": "router_input_minus_router_logits",
+              "left": {
+                "auroc": 0.7290606420927467,
+                "name": "router_input"
+              },
+              "n_resamples": 1000,
+              "n_valid_resamples": 1000,
+              "num_groups": 235,
+              "resampling_unit": "analysis_group",
+              "right": {
+                "auroc": 0.737550535077289,
+                "name": "router_logits"
+              },
+              "seed": 20260829,
+              "status": "ok"
+            },
+            {
+              "alpha": 0.05,
+              "ci_high": 0.10901155670538656,
+              "ci_low": 0.050159250076182715,
+              "difference": 0.07982164090368615,
+              "difference_definition": "router_logits_minus_expert_id_aligned_sparse_weights",
+              "left": {
+                "auroc": 0.737550535077289,
+                "name": "router_logits"
+              },
+              "n_resamples": 1000,
+              "n_valid_resamples": 1000,
+              "num_groups": 235,
+              "resampling_unit": "analysis_group",
+              "right": {
+                "auroc": 0.6577288941736028,
+                "name": "expert_id_aligned_sparse_weights"
+              },
+              "seed": 20260829,
+              "status": "ok"
+            },
+            {
+              "alpha": 0.05,
+              "ci_high": 0.18836345510407668,
+              "ci_low": 0.12908265325917312,
+              "difference": 0.15731272294887033,
+              "difference_definition": "expert_id_aligned_sparse_weights_minus_expert_id_membership_count",
+              "left": {
+                "auroc": 0.6577288941736028,
+                "name": "expert_id_aligned_sparse_weights"
+              },
+              "n_resamples": 1000,
+              "n_valid_resamples": 1000,
+              "num_groups": 235,
+              "resampling_unit": "analysis_group",
+              "right": {
+                "auroc": 0.5004161712247325,
+                "name": "expert_id_membership_count"
+              },
+              "seed": 20260829,
+              "status": "ok"
+            }
+          ],
+          "features": {
+            "expert_id_aligned_sparse_weights": {
+              "analysis_group_definition": "connected_components_of_source_suffix_or_normalized_problem",
+              "estimator": {
+                "C": 1.0,
+                "class_weight": "balanced",
+                "implementation": "sklearn.linear_model.LogisticRegression",
+                "max_iter": 2000,
+                "penalty": "l2",
+                "random_state": 20260829,
+                "score": "decision_function_log_odds",
+                "solver": "liblinear"
+              },
+              "feature_dim": 64,
+              "fold_aurocs": [
+                0.7108333333333333,
+                0.6679115196782534,
+                0.6629464285714286,
+                0.622234989945418,
+                0.640625
+              ],
+              "folds": [
+                {
+                  "eval_auroc": 0.7108333333333333,
+                  "eval_groups_hash": "75074a6626389fb8d765f1ef7220c0fed629dc8c862f6cc017a95a962a02c74c",
+                  "eval_negative_count": 60,
+                  "eval_positive_count": 60,
+                  "fold_hash": "1f5f0d6dbb3a5fd4212b233a5eeac2792ea45d1f6c8f2d9ec73fda3144c4087f",
+                  "fold_index": 0,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 60,
+                  "n_eval_rows": 120,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 230,
+                  "n_train_rows": 460,
+                  "seed": 20260829,
+                  "train_groups_hash": "2627c345b9341e11072c086e7f4a4fd5c03ac44a02ffe757c6f802ea5021e724"
+                },
+                {
+                  "eval_auroc": 0.6679115196782534,
+                  "eval_groups_hash": "a5e8938e65226dbd935184bf6a71f635a71b69669db0977ff171ac003d9e72ae",
+                  "eval_negative_count": 59,
+                  "eval_positive_count": 59,
+                  "fold_hash": "ce46c46c18eb25827a0efa7ad2b7e25876935fca3acc7dfe86d69e54417ce18d",
+                  "fold_index": 1,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 59,
+                  "n_eval_rows": 118,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 231,
+                  "n_train_rows": 462,
+                  "seed": 20260829,
+                  "train_groups_hash": "cbda7f068d958252a63463c81cb6d0a83982d15e3af48b25d7d3452368761b34"
+                },
+                {
+                  "eval_auroc": 0.6629464285714286,
+                  "eval_groups_hash": "49cbe3a9c14ca1c2e39b279b37c58d3589be968bf75d9c860e798376a3cefe78",
+                  "eval_negative_count": 56,
+                  "eval_positive_count": 56,
+                  "fold_hash": "90655ae21dd16aca8b268f20c1c9c38a6672c36e54df7ad3aad2fe07492582af",
+                  "fold_index": 2,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 56,
+                  "n_eval_rows": 112,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 234,
+                  "n_train_rows": 468,
+                  "seed": 20260829,
+                  "train_groups_hash": "030e4b0bb34821804b24e99c050bb6e9126bf58cfbd56e125b72b7ee8732e5cf"
+                },
+                {
+                  "eval_auroc": 0.622234989945418,
+                  "eval_groups_hash": "430ad9fcfeb703c395e6d2aea82dfc161928a118e591480c21f3c297fc172d57",
+                  "eval_negative_count": 59,
+                  "eval_positive_count": 59,
+                  "fold_hash": "aeb832764c0d2824966a68d6ccd8a2bcf21e9065d8a81f9e7f22b7c319a55562",
+                  "fold_index": 3,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 59,
+                  "n_eval_rows": 118,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 231,
+                  "n_train_rows": 462,
+                  "seed": 20260829,
+                  "train_groups_hash": "8a6af2a45c6f18b684c1f528ca2890d2b8b50c8039c0f97e721fa2e413208c6f"
+                },
+                {
+                  "eval_auroc": 0.640625,
+                  "eval_groups_hash": "8bd5286d8185e30952452a16e1fae2b1c72d1bae96e6a5467420b031c9df10df",
+                  "eval_negative_count": 56,
+                  "eval_positive_count": 56,
+                  "fold_hash": "7181c245ea49be6402ba8deb2d4122a421e8ffae815a314262606bdb57ab9100",
+                  "fold_index": 4,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 56,
+                  "n_eval_rows": 112,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 234,
+                  "n_train_rows": 468,
+                  "seed": 20260829,
+                  "train_groups_hash": "27dddd29bbeaf65922546608a4238051389b3cf2ded42c43d6326635ea3a9796"
+                }
+              ],
+              "group_bootstrap_ci": {
+                "alpha": 0.05,
+                "ci_high": 0.6849251492498787,
+                "ci_low": 0.6324374650565092,
+                "estimate": 0.6577288941736028,
+                "n_resamples": 1000,
+                "n_valid_resamples": 1000,
+                "num_groups": 235,
+                "resampling_unit": "group",
+                "seed": 20260829,
+                "status": "ok"
+              },
+              "mean_fold_auroc": 0.6609102543056867,
+              "micro_oof_auroc": 0.6577288941736028,
+              "n_analysis_groups": 235,
+              "n_pairs": 290,
+              "n_rows": 580,
+              "preprocessing": {
+                "fit_scope": "training_fold_only",
+                "implementation": "sklearn.preprocessing.StandardScaler",
+                "standardize": true
+              },
+              "runtime_versions": {
+                "numpy": "2.4.6",
+                "scikit_learn": "1.9.0"
+              },
+              "schema_version": 1,
+              "split_manifest_hash": "85ee2903ce9b90e027b4658274dabc3ba71932f1d0dfb3cd48e7bbb76d40fd14",
+              "status": "ok"
+            },
+            "expert_id_membership_count": {
+              "analysis_group_definition": "connected_components_of_source_suffix_or_normalized_problem",
+              "estimator": {
+                "C": 1.0,
+                "class_weight": "balanced",
+                "implementation": "sklearn.linear_model.LogisticRegression",
+                "max_iter": 2000,
+                "penalty": "l2",
+                "random_state": 20260829,
+                "score": "decision_function_log_odds",
+                "solver": "liblinear"
+              },
+              "feature_dim": 64,
+              "fold_aurocs": [
+                0.5156944444444445,
+                0.5245619074978455,
+                0.517219387755102,
+                0.49971272622809537,
+                0.49362244897959184
+              ],
+              "folds": [
+                {
+                  "eval_auroc": 0.5156944444444445,
+                  "eval_groups_hash": "75074a6626389fb8d765f1ef7220c0fed629dc8c862f6cc017a95a962a02c74c",
+                  "eval_negative_count": 60,
+                  "eval_positive_count": 60,
+                  "fold_hash": "1f5f0d6dbb3a5fd4212b233a5eeac2792ea45d1f6c8f2d9ec73fda3144c4087f",
+                  "fold_index": 0,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 60,
+                  "n_eval_rows": 120,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 230,
+                  "n_train_rows": 460,
+                  "seed": 20260829,
+                  "train_groups_hash": "2627c345b9341e11072c086e7f4a4fd5c03ac44a02ffe757c6f802ea5021e724"
+                },
+                {
+                  "eval_auroc": 0.5245619074978455,
+                  "eval_groups_hash": "a5e8938e65226dbd935184bf6a71f635a71b69669db0977ff171ac003d9e72ae",
+                  "eval_negative_count": 59,
+                  "eval_positive_count": 59,
+                  "fold_hash": "ce46c46c18eb25827a0efa7ad2b7e25876935fca3acc7dfe86d69e54417ce18d",
+                  "fold_index": 1,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 59,
+                  "n_eval_rows": 118,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 231,
+                  "n_train_rows": 462,
+                  "seed": 20260829,
+                  "train_groups_hash": "cbda7f068d958252a63463c81cb6d0a83982d15e3af48b25d7d3452368761b34"
+                },
+                {
+                  "eval_auroc": 0.517219387755102,
+                  "eval_groups_hash": "49cbe3a9c14ca1c2e39b279b37c58d3589be968bf75d9c860e798376a3cefe78",
+                  "eval_negative_count": 56,
+                  "eval_positive_count": 56,
+                  "fold_hash": "90655ae21dd16aca8b268f20c1c9c38a6672c36e54df7ad3aad2fe07492582af",
+                  "fold_index": 2,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 56,
+                  "n_eval_rows": 112,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 234,
+                  "n_train_rows": 468,
+                  "seed": 20260829,
+                  "train_groups_hash": "030e4b0bb34821804b24e99c050bb6e9126bf58cfbd56e125b72b7ee8732e5cf"
+                },
+                {
+                  "eval_auroc": 0.49971272622809537,
+                  "eval_groups_hash": "430ad9fcfeb703c395e6d2aea82dfc161928a118e591480c21f3c297fc172d57",
+                  "eval_negative_count": 59,
+                  "eval_positive_count": 59,
+                  "fold_hash": "aeb832764c0d2824966a68d6ccd8a2bcf21e9065d8a81f9e7f22b7c319a55562",
+                  "fold_index": 3,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 59,
+                  "n_eval_rows": 118,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 231,
+                  "n_train_rows": 462,
+                  "seed": 20260829,
+                  "train_groups_hash": "8a6af2a45c6f18b684c1f528ca2890d2b8b50c8039c0f97e721fa2e413208c6f"
+                },
+                {
+                  "eval_auroc": 0.49362244897959184,
+                  "eval_groups_hash": "8bd5286d8185e30952452a16e1fae2b1c72d1bae96e6a5467420b031c9df10df",
+                  "eval_negative_count": 56,
+                  "eval_positive_count": 56,
+                  "fold_hash": "7181c245ea49be6402ba8deb2d4122a421e8ffae815a314262606bdb57ab9100",
+                  "fold_index": 4,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 56,
+                  "n_eval_rows": 112,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 234,
+                  "n_train_rows": 468,
+                  "seed": 20260829,
+                  "train_groups_hash": "27dddd29bbeaf65922546608a4238051389b3cf2ded42c43d6326635ea3a9796"
+                }
+              ],
+              "group_bootstrap_ci": {
+                "alpha": 0.05,
+                "ci_high": 0.5164387262024658,
+                "ci_low": 0.48348542465036687,
+                "estimate": 0.5004161712247325,
+                "n_resamples": 1000,
+                "n_valid_resamples": 1000,
+                "num_groups": 235,
+                "resampling_unit": "group",
+                "seed": 20260829,
+                "status": "ok"
+              },
+              "mean_fold_auroc": 0.5101621829810159,
+              "micro_oof_auroc": 0.5004161712247325,
+              "n_analysis_groups": 235,
+              "n_pairs": 290,
+              "n_rows": 580,
+              "preprocessing": {
+                "fit_scope": "training_fold_only",
+                "implementation": "sklearn.preprocessing.StandardScaler",
+                "standardize": true
+              },
+              "runtime_versions": {
+                "numpy": "2.4.6",
+                "scikit_learn": "1.9.0"
+              },
+              "schema_version": 1,
+              "split_manifest_hash": "85ee2903ce9b90e027b4658274dabc3ba71932f1d0dfb3cd48e7bbb76d40fd14",
+              "status": "ok"
+            },
+            "post_moe_residual": {
+              "analysis_group_definition": "connected_components_of_source_suffix_or_normalized_problem",
+              "estimator": {
+                "C": 1.0,
+                "class_weight": "balanced",
+                "implementation": "sklearn.linear_model.LogisticRegression",
+                "max_iter": 2000,
+                "penalty": "l2",
+                "random_state": 20260829,
+                "score": "decision_function_log_odds",
+                "solver": "liblinear"
+              },
+              "feature_dim": 2048,
+              "fold_aurocs": [
+                0.7497222222222222,
+                0.7328353921286986,
+                0.7669005102040817,
+                0.7293881068658431,
+                0.6967474489795918
+              ],
+              "folds": [
+                {
+                  "eval_auroc": 0.7497222222222222,
+                  "eval_groups_hash": "75074a6626389fb8d765f1ef7220c0fed629dc8c862f6cc017a95a962a02c74c",
+                  "eval_negative_count": 60,
+                  "eval_positive_count": 60,
+                  "fold_hash": "1f5f0d6dbb3a5fd4212b233a5eeac2792ea45d1f6c8f2d9ec73fda3144c4087f",
+                  "fold_index": 0,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 60,
+                  "n_eval_rows": 120,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 230,
+                  "n_train_rows": 460,
+                  "seed": 20260829,
+                  "train_groups_hash": "2627c345b9341e11072c086e7f4a4fd5c03ac44a02ffe757c6f802ea5021e724"
+                },
+                {
+                  "eval_auroc": 0.7328353921286986,
+                  "eval_groups_hash": "a5e8938e65226dbd935184bf6a71f635a71b69669db0977ff171ac003d9e72ae",
+                  "eval_negative_count": 59,
+                  "eval_positive_count": 59,
+                  "fold_hash": "ce46c46c18eb25827a0efa7ad2b7e25876935fca3acc7dfe86d69e54417ce18d",
+                  "fold_index": 1,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 59,
+                  "n_eval_rows": 118,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 231,
+                  "n_train_rows": 462,
+                  "seed": 20260829,
+                  "train_groups_hash": "cbda7f068d958252a63463c81cb6d0a83982d15e3af48b25d7d3452368761b34"
+                },
+                {
+                  "eval_auroc": 0.7669005102040817,
+                  "eval_groups_hash": "49cbe3a9c14ca1c2e39b279b37c58d3589be968bf75d9c860e798376a3cefe78",
+                  "eval_negative_count": 56,
+                  "eval_positive_count": 56,
+                  "fold_hash": "90655ae21dd16aca8b268f20c1c9c38a6672c36e54df7ad3aad2fe07492582af",
+                  "fold_index": 2,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 56,
+                  "n_eval_rows": 112,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 234,
+                  "n_train_rows": 468,
+                  "seed": 20260829,
+                  "train_groups_hash": "030e4b0bb34821804b24e99c050bb6e9126bf58cfbd56e125b72b7ee8732e5cf"
+                },
+                {
+                  "eval_auroc": 0.7293881068658431,
+                  "eval_groups_hash": "430ad9fcfeb703c395e6d2aea82dfc161928a118e591480c21f3c297fc172d57",
+                  "eval_negative_count": 59,
+                  "eval_positive_count": 59,
+                  "fold_hash": "aeb832764c0d2824966a68d6ccd8a2bcf21e9065d8a81f9e7f22b7c319a55562",
+                  "fold_index": 3,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 59,
+                  "n_eval_rows": 118,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 231,
+                  "n_train_rows": 462,
+                  "seed": 20260829,
+                  "train_groups_hash": "8a6af2a45c6f18b684c1f528ca2890d2b8b50c8039c0f97e721fa2e413208c6f"
+                },
+                {
+                  "eval_auroc": 0.6967474489795918,
+                  "eval_groups_hash": "8bd5286d8185e30952452a16e1fae2b1c72d1bae96e6a5467420b031c9df10df",
+                  "eval_negative_count": 56,
+                  "eval_positive_count": 56,
+                  "fold_hash": "7181c245ea49be6402ba8deb2d4122a421e8ffae815a314262606bdb57ab9100",
+                  "fold_index": 4,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 56,
+                  "n_eval_rows": 112,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 234,
+                  "n_train_rows": 468,
+                  "seed": 20260829,
+                  "train_groups_hash": "27dddd29bbeaf65922546608a4238051389b3cf2ded42c43d6326635ea3a9796"
+                }
+              ],
+              "group_bootstrap_ci": {
+                "alpha": 0.05,
+                "ci_high": 0.7629476016606612,
+                "ci_low": 0.7029939080989774,
+                "estimate": 0.7319381688466112,
+                "n_resamples": 1000,
+                "n_valid_resamples": 1000,
+                "num_groups": 235,
+                "resampling_unit": "group",
+                "seed": 20260829,
+                "status": "ok"
+              },
+              "mean_fold_auroc": 0.7351187360800875,
+              "micro_oof_auroc": 0.7319381688466112,
+              "n_analysis_groups": 235,
+              "n_pairs": 290,
+              "n_rows": 580,
+              "preprocessing": {
+                "fit_scope": "training_fold_only",
+                "implementation": "sklearn.preprocessing.StandardScaler",
+                "standardize": true
+              },
+              "runtime_versions": {
+                "numpy": "2.4.6",
+                "scikit_learn": "1.9.0"
+              },
+              "schema_version": 1,
+              "split_manifest_hash": "85ee2903ce9b90e027b4658274dabc3ba71932f1d0dfb3cd48e7bbb76d40fd14",
+              "status": "ok"
+            },
+            "rank_only_sorted_weights_legacy": {
+              "analysis_group_definition": "connected_components_of_source_suffix_or_normalized_problem",
+              "estimator": {
+                "C": 1.0,
+                "class_weight": "balanced",
+                "implementation": "sklearn.linear_model.LogisticRegression",
+                "max_iter": 2000,
+                "penalty": "l2",
+                "random_state": 20260829,
+                "score": "decision_function_log_odds",
+                "solver": "liblinear"
+              },
+              "feature_dim": 4,
+              "fold_aurocs": [
+                0.5858333333333333,
+                0.5665038781959207,
+                0.5392219387755102,
+                0.5567365699511635,
+                0.5082908163265306
+              ],
+              "folds": [
+                {
+                  "eval_auroc": 0.5858333333333333,
+                  "eval_groups_hash": "75074a6626389fb8d765f1ef7220c0fed629dc8c862f6cc017a95a962a02c74c",
+                  "eval_negative_count": 60,
+                  "eval_positive_count": 60,
+                  "fold_hash": "1f5f0d6dbb3a5fd4212b233a5eeac2792ea45d1f6c8f2d9ec73fda3144c4087f",
+                  "fold_index": 0,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 60,
+                  "n_eval_rows": 120,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 230,
+                  "n_train_rows": 460,
+                  "seed": 20260829,
+                  "train_groups_hash": "2627c345b9341e11072c086e7f4a4fd5c03ac44a02ffe757c6f802ea5021e724"
+                },
+                {
+                  "eval_auroc": 0.5665038781959207,
+                  "eval_groups_hash": "a5e8938e65226dbd935184bf6a71f635a71b69669db0977ff171ac003d9e72ae",
+                  "eval_negative_count": 59,
+                  "eval_positive_count": 59,
+                  "fold_hash": "ce46c46c18eb25827a0efa7ad2b7e25876935fca3acc7dfe86d69e54417ce18d",
+                  "fold_index": 1,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 59,
+                  "n_eval_rows": 118,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 231,
+                  "n_train_rows": 462,
+                  "seed": 20260829,
+                  "train_groups_hash": "cbda7f068d958252a63463c81cb6d0a83982d15e3af48b25d7d3452368761b34"
+                },
+                {
+                  "eval_auroc": 0.5392219387755102,
+                  "eval_groups_hash": "49cbe3a9c14ca1c2e39b279b37c58d3589be968bf75d9c860e798376a3cefe78",
+                  "eval_negative_count": 56,
+                  "eval_positive_count": 56,
+                  "fold_hash": "90655ae21dd16aca8b268f20c1c9c38a6672c36e54df7ad3aad2fe07492582af",
+                  "fold_index": 2,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 56,
+                  "n_eval_rows": 112,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 234,
+                  "n_train_rows": 468,
+                  "seed": 20260829,
+                  "train_groups_hash": "030e4b0bb34821804b24e99c050bb6e9126bf58cfbd56e125b72b7ee8732e5cf"
+                },
+                {
+                  "eval_auroc": 0.5567365699511635,
+                  "eval_groups_hash": "430ad9fcfeb703c395e6d2aea82dfc161928a118e591480c21f3c297fc172d57",
+                  "eval_negative_count": 59,
+                  "eval_positive_count": 59,
+                  "fold_hash": "aeb832764c0d2824966a68d6ccd8a2bcf21e9065d8a81f9e7f22b7c319a55562",
+                  "fold_index": 3,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 59,
+                  "n_eval_rows": 118,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 231,
+                  "n_train_rows": 462,
+                  "seed": 20260829,
+                  "train_groups_hash": "8a6af2a45c6f18b684c1f528ca2890d2b8b50c8039c0f97e721fa2e413208c6f"
+                },
+                {
+                  "eval_auroc": 0.5082908163265306,
+                  "eval_groups_hash": "8bd5286d8185e30952452a16e1fae2b1c72d1bae96e6a5467420b031c9df10df",
+                  "eval_negative_count": 56,
+                  "eval_positive_count": 56,
+                  "fold_hash": "7181c245ea49be6402ba8deb2d4122a421e8ffae815a314262606bdb57ab9100",
+                  "fold_index": 4,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 56,
+                  "n_eval_rows": 112,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 234,
+                  "n_train_rows": 468,
+                  "seed": 20260829,
+                  "train_groups_hash": "27dddd29bbeaf65922546608a4238051389b3cf2ded42c43d6326635ea3a9796"
+                }
+              ],
+              "group_bootstrap_ci": {
+                "alpha": 0.05,
+                "ci_high": 0.5792954387758952,
+                "ci_low": 0.5233770182524906,
+                "estimate": 0.550475624256837,
+                "n_resamples": 1000,
+                "n_valid_resamples": 1000,
+                "num_groups": 235,
+                "resampling_unit": "group",
+                "seed": 20260829,
+                "status": "ok"
+              },
+              "mean_fold_auroc": 0.5513173073164916,
+              "micro_oof_auroc": 0.550475624256837,
+              "n_analysis_groups": 235,
+              "n_pairs": 290,
+              "n_rows": 580,
+              "preprocessing": {
+                "fit_scope": "training_fold_only",
+                "implementation": "sklearn.preprocessing.StandardScaler",
+                "standardize": true
+              },
+              "runtime_versions": {
+                "numpy": "2.4.6",
+                "scikit_learn": "1.9.0"
+              },
+              "schema_version": 1,
+              "split_manifest_hash": "85ee2903ce9b90e027b4658274dabc3ba71932f1d0dfb3cd48e7bbb76d40fd14",
+              "status": "ok"
+            },
+            "router_input": {
+              "analysis_group_definition": "connected_components_of_source_suffix_or_normalized_problem",
+              "estimator": {
+                "C": 1.0,
+                "class_weight": "balanced",
+                "implementation": "sklearn.linear_model.LogisticRegression",
+                "max_iter": 2000,
+                "penalty": "l2",
+                "random_state": 20260829,
+                "score": "decision_function_log_odds",
+                "solver": "liblinear"
+              },
+              "feature_dim": 2048,
+              "fold_aurocs": [
+                0.7416666666666667,
+                0.762424590634875,
+                0.7633928571428571,
+                0.6977879919563343,
+                0.6712372448979592
+              ],
+              "folds": [
+                {
+                  "eval_auroc": 0.7416666666666667,
+                  "eval_groups_hash": "75074a6626389fb8d765f1ef7220c0fed629dc8c862f6cc017a95a962a02c74c",
+                  "eval_negative_count": 60,
+                  "eval_positive_count": 60,
+                  "fold_hash": "1f5f0d6dbb3a5fd4212b233a5eeac2792ea45d1f6c8f2d9ec73fda3144c4087f",
+                  "fold_index": 0,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 60,
+                  "n_eval_rows": 120,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 230,
+                  "n_train_rows": 460,
+                  "seed": 20260829,
+                  "train_groups_hash": "2627c345b9341e11072c086e7f4a4fd5c03ac44a02ffe757c6f802ea5021e724"
+                },
+                {
+                  "eval_auroc": 0.762424590634875,
+                  "eval_groups_hash": "a5e8938e65226dbd935184bf6a71f635a71b69669db0977ff171ac003d9e72ae",
+                  "eval_negative_count": 59,
+                  "eval_positive_count": 59,
+                  "fold_hash": "ce46c46c18eb25827a0efa7ad2b7e25876935fca3acc7dfe86d69e54417ce18d",
+                  "fold_index": 1,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 59,
+                  "n_eval_rows": 118,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 231,
+                  "n_train_rows": 462,
+                  "seed": 20260829,
+                  "train_groups_hash": "cbda7f068d958252a63463c81cb6d0a83982d15e3af48b25d7d3452368761b34"
+                },
+                {
+                  "eval_auroc": 0.7633928571428571,
+                  "eval_groups_hash": "49cbe3a9c14ca1c2e39b279b37c58d3589be968bf75d9c860e798376a3cefe78",
+                  "eval_negative_count": 56,
+                  "eval_positive_count": 56,
+                  "fold_hash": "90655ae21dd16aca8b268f20c1c9c38a6672c36e54df7ad3aad2fe07492582af",
+                  "fold_index": 2,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 56,
+                  "n_eval_rows": 112,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 234,
+                  "n_train_rows": 468,
+                  "seed": 20260829,
+                  "train_groups_hash": "030e4b0bb34821804b24e99c050bb6e9126bf58cfbd56e125b72b7ee8732e5cf"
+                },
+                {
+                  "eval_auroc": 0.6977879919563343,
+                  "eval_groups_hash": "430ad9fcfeb703c395e6d2aea82dfc161928a118e591480c21f3c297fc172d57",
+                  "eval_negative_count": 59,
+                  "eval_positive_count": 59,
+                  "fold_hash": "aeb832764c0d2824966a68d6ccd8a2bcf21e9065d8a81f9e7f22b7c319a55562",
+                  "fold_index": 3,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 59,
+                  "n_eval_rows": 118,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 231,
+                  "n_train_rows": 462,
+                  "seed": 20260829,
+                  "train_groups_hash": "8a6af2a45c6f18b684c1f528ca2890d2b8b50c8039c0f97e721fa2e413208c6f"
+                },
+                {
+                  "eval_auroc": 0.6712372448979592,
+                  "eval_groups_hash": "8bd5286d8185e30952452a16e1fae2b1c72d1bae96e6a5467420b031c9df10df",
+                  "eval_negative_count": 56,
+                  "eval_positive_count": 56,
+                  "fold_hash": "7181c245ea49be6402ba8deb2d4122a421e8ffae815a314262606bdb57ab9100",
+                  "fold_index": 4,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 56,
+                  "n_eval_rows": 112,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 234,
+                  "n_train_rows": 468,
+                  "seed": 20260829,
+                  "train_groups_hash": "27dddd29bbeaf65922546608a4238051389b3cf2ded42c43d6326635ea3a9796"
+                }
+              ],
+              "group_bootstrap_ci": {
+                "alpha": 0.05,
+                "ci_high": 0.7616159096956735,
+                "ci_low": 0.6989160091149967,
+                "estimate": 0.7290606420927467,
+                "n_resamples": 1000,
+                "n_valid_resamples": 1000,
+                "num_groups": 235,
+                "resampling_unit": "group",
+                "seed": 20260829,
+                "status": "ok"
+              },
+              "mean_fold_auroc": 0.7273018702597385,
+              "micro_oof_auroc": 0.7290606420927467,
+              "n_analysis_groups": 235,
+              "n_pairs": 290,
+              "n_rows": 580,
+              "preprocessing": {
+                "fit_scope": "training_fold_only",
+                "implementation": "sklearn.preprocessing.StandardScaler",
+                "standardize": true
+              },
+              "runtime_versions": {
+                "numpy": "2.4.6",
+                "scikit_learn": "1.9.0"
+              },
+              "schema_version": 1,
+              "split_manifest_hash": "85ee2903ce9b90e027b4658274dabc3ba71932f1d0dfb3cd48e7bbb76d40fd14",
+              "status": "ok"
+            },
+            "router_logits": {
+              "analysis_group_definition": "connected_components_of_source_suffix_or_normalized_problem",
+              "estimator": {
+                "C": 1.0,
+                "class_weight": "balanced",
+                "implementation": "sklearn.linear_model.LogisticRegression",
+                "max_iter": 2000,
+                "penalty": "l2",
+                "random_state": 20260829,
+                "score": "decision_function_log_odds",
+                "solver": "liblinear"
+              },
+              "feature_dim": 64,
+              "fold_aurocs": [
+                0.7241666666666666,
+                0.7561045676529733,
+                0.7735969387755102,
+                0.709566216604424,
+                0.7244897959183674
+              ],
+              "folds": [
+                {
+                  "eval_auroc": 0.7241666666666666,
+                  "eval_groups_hash": "75074a6626389fb8d765f1ef7220c0fed629dc8c862f6cc017a95a962a02c74c",
+                  "eval_negative_count": 60,
+                  "eval_positive_count": 60,
+                  "fold_hash": "1f5f0d6dbb3a5fd4212b233a5eeac2792ea45d1f6c8f2d9ec73fda3144c4087f",
+                  "fold_index": 0,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 60,
+                  "n_eval_rows": 120,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 230,
+                  "n_train_rows": 460,
+                  "seed": 20260829,
+                  "train_groups_hash": "2627c345b9341e11072c086e7f4a4fd5c03ac44a02ffe757c6f802ea5021e724"
+                },
+                {
+                  "eval_auroc": 0.7561045676529733,
+                  "eval_groups_hash": "a5e8938e65226dbd935184bf6a71f635a71b69669db0977ff171ac003d9e72ae",
+                  "eval_negative_count": 59,
+                  "eval_positive_count": 59,
+                  "fold_hash": "ce46c46c18eb25827a0efa7ad2b7e25876935fca3acc7dfe86d69e54417ce18d",
+                  "fold_index": 1,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 59,
+                  "n_eval_rows": 118,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 231,
+                  "n_train_rows": 462,
+                  "seed": 20260829,
+                  "train_groups_hash": "cbda7f068d958252a63463c81cb6d0a83982d15e3af48b25d7d3452368761b34"
+                },
+                {
+                  "eval_auroc": 0.7735969387755102,
+                  "eval_groups_hash": "49cbe3a9c14ca1c2e39b279b37c58d3589be968bf75d9c860e798376a3cefe78",
+                  "eval_negative_count": 56,
+                  "eval_positive_count": 56,
+                  "fold_hash": "90655ae21dd16aca8b268f20c1c9c38a6672c36e54df7ad3aad2fe07492582af",
+                  "fold_index": 2,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 56,
+                  "n_eval_rows": 112,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 234,
+                  "n_train_rows": 468,
+                  "seed": 20260829,
+                  "train_groups_hash": "030e4b0bb34821804b24e99c050bb6e9126bf58cfbd56e125b72b7ee8732e5cf"
+                },
+                {
+                  "eval_auroc": 0.709566216604424,
+                  "eval_groups_hash": "430ad9fcfeb703c395e6d2aea82dfc161928a118e591480c21f3c297fc172d57",
+                  "eval_negative_count": 59,
+                  "eval_positive_count": 59,
+                  "fold_hash": "aeb832764c0d2824966a68d6ccd8a2bcf21e9065d8a81f9e7f22b7c319a55562",
+                  "fold_index": 3,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 59,
+                  "n_eval_rows": 118,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 231,
+                  "n_train_rows": 462,
+                  "seed": 20260829,
+                  "train_groups_hash": "8a6af2a45c6f18b684c1f528ca2890d2b8b50c8039c0f97e721fa2e413208c6f"
+                },
+                {
+                  "eval_auroc": 0.7244897959183674,
+                  "eval_groups_hash": "8bd5286d8185e30952452a16e1fae2b1c72d1bae96e6a5467420b031c9df10df",
+                  "eval_negative_count": 56,
+                  "eval_positive_count": 56,
+                  "fold_hash": "7181c245ea49be6402ba8deb2d4122a421e8ffae815a314262606bdb57ab9100",
+                  "fold_index": 4,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 56,
+                  "n_eval_rows": 112,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 234,
+                  "n_train_rows": 468,
+                  "seed": 20260829,
+                  "train_groups_hash": "27dddd29bbeaf65922546608a4238051389b3cf2ded42c43d6326635ea3a9796"
+                }
+              ],
+              "group_bootstrap_ci": {
+                "alpha": 0.05,
+                "ci_high": 0.7700144709580771,
+                "ci_low": 0.7049020907698994,
+                "estimate": 0.737550535077289,
+                "n_resamples": 1000,
+                "n_valid_resamples": 1000,
+                "num_groups": 235,
+                "resampling_unit": "group",
+                "seed": 20260829,
+                "status": "ok"
+              },
+              "mean_fold_auroc": 0.7375848371235882,
+              "micro_oof_auroc": 0.737550535077289,
+              "n_analysis_groups": 235,
+              "n_pairs": 290,
+              "n_rows": 580,
+              "preprocessing": {
+                "fit_scope": "training_fold_only",
+                "implementation": "sklearn.preprocessing.StandardScaler",
+                "standardize": true
+              },
+              "runtime_versions": {
+                "numpy": "2.4.6",
+                "scikit_learn": "1.9.0"
+              },
+              "schema_version": 1,
+              "split_manifest_hash": "85ee2903ce9b90e027b4658274dabc3ba71932f1d0dfb3cd48e7bbb76d40fd14",
+              "status": "ok"
+            }
+          },
+          "layer": 1
+        },
+        "middle": {
+          "adjacent_interface_differences": [
+            {
+              "alpha": 0.05,
+              "ci_high": 0.0016903574280652468,
+              "ci_low": -0.016066094551070487,
+              "difference": -0.007063020214030935,
+              "difference_definition": "post_moe_residual_minus_router_input",
+              "left": {
+                "auroc": 0.864601664684899,
+                "name": "post_moe_residual"
+              },
+              "n_resamples": 1000,
+              "n_valid_resamples": 1000,
+              "num_groups": 235,
+              "resampling_unit": "analysis_group",
+              "right": {
+                "auroc": 0.8716646848989299,
+                "name": "router_input"
+              },
+              "seed": 20260829,
+              "status": "ok"
+            },
+            {
+              "alpha": 0.05,
+              "ci_high": 0.07813191860182704,
+              "ci_low": 0.029289633052197388,
+              "difference": 0.0536979785969085,
+              "difference_definition": "router_input_minus_router_logits",
+              "left": {
+                "auroc": 0.8716646848989299,
+                "name": "router_input"
+              },
+              "n_resamples": 1000,
+              "n_valid_resamples": 1000,
+              "num_groups": 235,
+              "resampling_unit": "analysis_group",
+              "right": {
+                "auroc": 0.8179667063020214,
+                "name": "router_logits"
+              },
+              "seed": 20260829,
+              "status": "ok"
+            },
+            {
+              "alpha": 0.05,
+              "ci_high": 0.10590523351687635,
+              "ci_low": 0.04338449369102051,
+              "difference": 0.07527942925089182,
+              "difference_definition": "router_logits_minus_expert_id_aligned_sparse_weights",
+              "left": {
+                "auroc": 0.8179667063020214,
+                "name": "router_logits"
+              },
+              "n_resamples": 1000,
+              "n_valid_resamples": 1000,
+              "num_groups": 235,
+              "resampling_unit": "analysis_group",
+              "right": {
+                "auroc": 0.7426872770511296,
+                "name": "expert_id_aligned_sparse_weights"
+              },
+              "seed": 20260829,
+              "status": "ok"
+            },
+            {
+              "alpha": 0.05,
+              "ci_high": 0.0600030495107505,
+              "ci_low": 0.02234176636149905,
+              "difference": 0.04165873959571931,
+              "difference_definition": "expert_id_aligned_sparse_weights_minus_expert_id_membership_count",
+              "left": {
+                "auroc": 0.7426872770511296,
+                "name": "expert_id_aligned_sparse_weights"
+              },
+              "n_resamples": 1000,
+              "n_valid_resamples": 1000,
+              "num_groups": 235,
+              "resampling_unit": "analysis_group",
+              "right": {
+                "auroc": 0.7010285374554103,
+                "name": "expert_id_membership_count"
+              },
+              "seed": 20260829,
+              "status": "ok"
+            }
+          ],
+          "features": {
+            "expert_id_aligned_sparse_weights": {
+              "analysis_group_definition": "connected_components_of_source_suffix_or_normalized_problem",
+              "estimator": {
+                "C": 1.0,
+                "class_weight": "balanced",
+                "implementation": "sklearn.linear_model.LogisticRegression",
+                "max_iter": 2000,
+                "penalty": "l2",
+                "random_state": 20260829,
+                "score": "decision_function_log_odds",
+                "solver": "liblinear"
+              },
+              "feature_dim": 64,
+              "fold_aurocs": [
+                0.7377777777777778,
+                0.771617351335823,
+                0.7362882653061225,
+                0.7477736282677392,
+                0.7404336734693877
+              ],
+              "folds": [
+                {
+                  "eval_auroc": 0.7377777777777778,
+                  "eval_groups_hash": "75074a6626389fb8d765f1ef7220c0fed629dc8c862f6cc017a95a962a02c74c",
+                  "eval_negative_count": 60,
+                  "eval_positive_count": 60,
+                  "fold_hash": "1f5f0d6dbb3a5fd4212b233a5eeac2792ea45d1f6c8f2d9ec73fda3144c4087f",
+                  "fold_index": 0,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 60,
+                  "n_eval_rows": 120,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 230,
+                  "n_train_rows": 460,
+                  "seed": 20260829,
+                  "train_groups_hash": "2627c345b9341e11072c086e7f4a4fd5c03ac44a02ffe757c6f802ea5021e724"
+                },
+                {
+                  "eval_auroc": 0.771617351335823,
+                  "eval_groups_hash": "a5e8938e65226dbd935184bf6a71f635a71b69669db0977ff171ac003d9e72ae",
+                  "eval_negative_count": 59,
+                  "eval_positive_count": 59,
+                  "fold_hash": "ce46c46c18eb25827a0efa7ad2b7e25876935fca3acc7dfe86d69e54417ce18d",
+                  "fold_index": 1,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 59,
+                  "n_eval_rows": 118,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 231,
+                  "n_train_rows": 462,
+                  "seed": 20260829,
+                  "train_groups_hash": "cbda7f068d958252a63463c81cb6d0a83982d15e3af48b25d7d3452368761b34"
+                },
+                {
+                  "eval_auroc": 0.7362882653061225,
+                  "eval_groups_hash": "49cbe3a9c14ca1c2e39b279b37c58d3589be968bf75d9c860e798376a3cefe78",
+                  "eval_negative_count": 56,
+                  "eval_positive_count": 56,
+                  "fold_hash": "90655ae21dd16aca8b268f20c1c9c38a6672c36e54df7ad3aad2fe07492582af",
+                  "fold_index": 2,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 56,
+                  "n_eval_rows": 112,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 234,
+                  "n_train_rows": 468,
+                  "seed": 20260829,
+                  "train_groups_hash": "030e4b0bb34821804b24e99c050bb6e9126bf58cfbd56e125b72b7ee8732e5cf"
+                },
+                {
+                  "eval_auroc": 0.7477736282677392,
+                  "eval_groups_hash": "430ad9fcfeb703c395e6d2aea82dfc161928a118e591480c21f3c297fc172d57",
+                  "eval_negative_count": 59,
+                  "eval_positive_count": 59,
+                  "fold_hash": "aeb832764c0d2824966a68d6ccd8a2bcf21e9065d8a81f9e7f22b7c319a55562",
+                  "fold_index": 3,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 59,
+                  "n_eval_rows": 118,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 231,
+                  "n_train_rows": 462,
+                  "seed": 20260829,
+                  "train_groups_hash": "8a6af2a45c6f18b684c1f528ca2890d2b8b50c8039c0f97e721fa2e413208c6f"
+                },
+                {
+                  "eval_auroc": 0.7404336734693877,
+                  "eval_groups_hash": "8bd5286d8185e30952452a16e1fae2b1c72d1bae96e6a5467420b031c9df10df",
+                  "eval_negative_count": 56,
+                  "eval_positive_count": 56,
+                  "fold_hash": "7181c245ea49be6402ba8deb2d4122a421e8ffae815a314262606bdb57ab9100",
+                  "fold_index": 4,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 56,
+                  "n_eval_rows": 112,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 234,
+                  "n_train_rows": 468,
+                  "seed": 20260829,
+                  "train_groups_hash": "27dddd29bbeaf65922546608a4238051389b3cf2ded42c43d6326635ea3a9796"
+                }
+              ],
+              "group_bootstrap_ci": {
+                "alpha": 0.05,
+                "ci_high": 0.7774528503459852,
+                "ci_low": 0.7082199198494401,
+                "estimate": 0.7426872770511296,
+                "n_resamples": 1000,
+                "n_valid_resamples": 1000,
+                "num_groups": 235,
+                "resampling_unit": "group",
+                "seed": 20260829,
+                "status": "ok"
+              },
+              "mean_fold_auroc": 0.74677813923137,
+              "micro_oof_auroc": 0.7426872770511296,
+              "n_analysis_groups": 235,
+              "n_pairs": 290,
+              "n_rows": 580,
+              "preprocessing": {
+                "fit_scope": "training_fold_only",
+                "implementation": "sklearn.preprocessing.StandardScaler",
+                "standardize": true
+              },
+              "runtime_versions": {
+                "numpy": "2.4.6",
+                "scikit_learn": "1.9.0"
+              },
+              "schema_version": 1,
+              "split_manifest_hash": "85ee2903ce9b90e027b4658274dabc3ba71932f1d0dfb3cd48e7bbb76d40fd14",
+              "status": "ok"
+            },
+            "expert_id_membership_count": {
+              "analysis_group_definition": "connected_components_of_source_suffix_or_normalized_problem",
+              "estimator": {
+                "C": 1.0,
+                "class_weight": "balanced",
+                "implementation": "sklearn.linear_model.LogisticRegression",
+                "max_iter": 2000,
+                "penalty": "l2",
+                "random_state": 20260829,
+                "score": "decision_function_log_odds",
+                "solver": "liblinear"
+              },
+              "feature_dim": 64,
+              "fold_aurocs": [
+                0.7079166666666666,
+                0.6985061763860959,
+                0.7020089285714286,
+                0.7243608158575122,
+                0.7102997448979592
+              ],
+              "folds": [
+                {
+                  "eval_auroc": 0.7079166666666666,
+                  "eval_groups_hash": "75074a6626389fb8d765f1ef7220c0fed629dc8c862f6cc017a95a962a02c74c",
+                  "eval_negative_count": 60,
+                  "eval_positive_count": 60,
+                  "fold_hash": "1f5f0d6dbb3a5fd4212b233a5eeac2792ea45d1f6c8f2d9ec73fda3144c4087f",
+                  "fold_index": 0,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 60,
+                  "n_eval_rows": 120,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 230,
+                  "n_train_rows": 460,
+                  "seed": 20260829,
+                  "train_groups_hash": "2627c345b9341e11072c086e7f4a4fd5c03ac44a02ffe757c6f802ea5021e724"
+                },
+                {
+                  "eval_auroc": 0.6985061763860959,
+                  "eval_groups_hash": "a5e8938e65226dbd935184bf6a71f635a71b69669db0977ff171ac003d9e72ae",
+                  "eval_negative_count": 59,
+                  "eval_positive_count": 59,
+                  "fold_hash": "ce46c46c18eb25827a0efa7ad2b7e25876935fca3acc7dfe86d69e54417ce18d",
+                  "fold_index": 1,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 59,
+                  "n_eval_rows": 118,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 231,
+                  "n_train_rows": 462,
+                  "seed": 20260829,
+                  "train_groups_hash": "cbda7f068d958252a63463c81cb6d0a83982d15e3af48b25d7d3452368761b34"
+                },
+                {
+                  "eval_auroc": 0.7020089285714286,
+                  "eval_groups_hash": "49cbe3a9c14ca1c2e39b279b37c58d3589be968bf75d9c860e798376a3cefe78",
+                  "eval_negative_count": 56,
+                  "eval_positive_count": 56,
+                  "fold_hash": "90655ae21dd16aca8b268f20c1c9c38a6672c36e54df7ad3aad2fe07492582af",
+                  "fold_index": 2,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 56,
+                  "n_eval_rows": 112,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 234,
+                  "n_train_rows": 468,
+                  "seed": 20260829,
+                  "train_groups_hash": "030e4b0bb34821804b24e99c050bb6e9126bf58cfbd56e125b72b7ee8732e5cf"
+                },
+                {
+                  "eval_auroc": 0.7243608158575122,
+                  "eval_groups_hash": "430ad9fcfeb703c395e6d2aea82dfc161928a118e591480c21f3c297fc172d57",
+                  "eval_negative_count": 59,
+                  "eval_positive_count": 59,
+                  "fold_hash": "aeb832764c0d2824966a68d6ccd8a2bcf21e9065d8a81f9e7f22b7c319a55562",
+                  "fold_index": 3,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 59,
+                  "n_eval_rows": 118,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 231,
+                  "n_train_rows": 462,
+                  "seed": 20260829,
+                  "train_groups_hash": "8a6af2a45c6f18b684c1f528ca2890d2b8b50c8039c0f97e721fa2e413208c6f"
+                },
+                {
+                  "eval_auroc": 0.7102997448979592,
+                  "eval_groups_hash": "8bd5286d8185e30952452a16e1fae2b1c72d1bae96e6a5467420b031c9df10df",
+                  "eval_negative_count": 56,
+                  "eval_positive_count": 56,
+                  "fold_hash": "7181c245ea49be6402ba8deb2d4122a421e8ffae815a314262606bdb57ab9100",
+                  "fold_index": 4,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 56,
+                  "n_eval_rows": 112,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 234,
+                  "n_train_rows": 468,
+                  "seed": 20260829,
+                  "train_groups_hash": "27dddd29bbeaf65922546608a4238051389b3cf2ded42c43d6326635ea3a9796"
+                }
+              ],
+              "group_bootstrap_ci": {
+                "alpha": 0.05,
+                "ci_high": 0.7396513549033106,
+                "ci_low": 0.6643502802582945,
+                "estimate": 0.7010285374554103,
+                "n_resamples": 1000,
+                "n_valid_resamples": 1000,
+                "num_groups": 235,
+                "resampling_unit": "group",
+                "seed": 20260829,
+                "status": "ok"
+              },
+              "mean_fold_auroc": 0.7086184664759325,
+              "micro_oof_auroc": 0.7010285374554103,
+              "n_analysis_groups": 235,
+              "n_pairs": 290,
+              "n_rows": 580,
+              "preprocessing": {
+                "fit_scope": "training_fold_only",
+                "implementation": "sklearn.preprocessing.StandardScaler",
+                "standardize": true
+              },
+              "runtime_versions": {
+                "numpy": "2.4.6",
+                "scikit_learn": "1.9.0"
+              },
+              "schema_version": 1,
+              "split_manifest_hash": "85ee2903ce9b90e027b4658274dabc3ba71932f1d0dfb3cd48e7bbb76d40fd14",
+              "status": "ok"
+            },
+            "post_moe_residual": {
+              "analysis_group_definition": "connected_components_of_source_suffix_or_normalized_problem",
+              "estimator": {
+                "C": 1.0,
+                "class_weight": "balanced",
+                "implementation": "sklearn.linear_model.LogisticRegression",
+                "max_iter": 2000,
+                "penalty": "l2",
+                "random_state": 20260829,
+                "score": "decision_function_log_odds",
+                "solver": "liblinear"
+              },
+              "feature_dim": 2048,
+              "fold_aurocs": [
+                0.8575,
+                0.8899741453605285,
+                0.8944515306122449,
+                0.8756104567652974,
+                0.8338647959183674
+              ],
+              "folds": [
+                {
+                  "eval_auroc": 0.8575,
+                  "eval_groups_hash": "75074a6626389fb8d765f1ef7220c0fed629dc8c862f6cc017a95a962a02c74c",
+                  "eval_negative_count": 60,
+                  "eval_positive_count": 60,
+                  "fold_hash": "1f5f0d6dbb3a5fd4212b233a5eeac2792ea45d1f6c8f2d9ec73fda3144c4087f",
+                  "fold_index": 0,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 60,
+                  "n_eval_rows": 120,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 230,
+                  "n_train_rows": 460,
+                  "seed": 20260829,
+                  "train_groups_hash": "2627c345b9341e11072c086e7f4a4fd5c03ac44a02ffe757c6f802ea5021e724"
+                },
+                {
+                  "eval_auroc": 0.8899741453605285,
+                  "eval_groups_hash": "a5e8938e65226dbd935184bf6a71f635a71b69669db0977ff171ac003d9e72ae",
+                  "eval_negative_count": 59,
+                  "eval_positive_count": 59,
+                  "fold_hash": "ce46c46c18eb25827a0efa7ad2b7e25876935fca3acc7dfe86d69e54417ce18d",
+                  "fold_index": 1,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 59,
+                  "n_eval_rows": 118,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 231,
+                  "n_train_rows": 462,
+                  "seed": 20260829,
+                  "train_groups_hash": "cbda7f068d958252a63463c81cb6d0a83982d15e3af48b25d7d3452368761b34"
+                },
+                {
+                  "eval_auroc": 0.8944515306122449,
+                  "eval_groups_hash": "49cbe3a9c14ca1c2e39b279b37c58d3589be968bf75d9c860e798376a3cefe78",
+                  "eval_negative_count": 56,
+                  "eval_positive_count": 56,
+                  "fold_hash": "90655ae21dd16aca8b268f20c1c9c38a6672c36e54df7ad3aad2fe07492582af",
+                  "fold_index": 2,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 56,
+                  "n_eval_rows": 112,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 234,
+                  "n_train_rows": 468,
+                  "seed": 20260829,
+                  "train_groups_hash": "030e4b0bb34821804b24e99c050bb6e9126bf58cfbd56e125b72b7ee8732e5cf"
+                },
+                {
+                  "eval_auroc": 0.8756104567652974,
+                  "eval_groups_hash": "430ad9fcfeb703c395e6d2aea82dfc161928a118e591480c21f3c297fc172d57",
+                  "eval_negative_count": 59,
+                  "eval_positive_count": 59,
+                  "fold_hash": "aeb832764c0d2824966a68d6ccd8a2bcf21e9065d8a81f9e7f22b7c319a55562",
+                  "fold_index": 3,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 59,
+                  "n_eval_rows": 118,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 231,
+                  "n_train_rows": 462,
+                  "seed": 20260829,
+                  "train_groups_hash": "8a6af2a45c6f18b684c1f528ca2890d2b8b50c8039c0f97e721fa2e413208c6f"
+                },
+                {
+                  "eval_auroc": 0.8338647959183674,
+                  "eval_groups_hash": "8bd5286d8185e30952452a16e1fae2b1c72d1bae96e6a5467420b031c9df10df",
+                  "eval_negative_count": 56,
+                  "eval_positive_count": 56,
+                  "fold_hash": "7181c245ea49be6402ba8deb2d4122a421e8ffae815a314262606bdb57ab9100",
+                  "fold_index": 4,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 56,
+                  "n_eval_rows": 112,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 234,
+                  "n_train_rows": 468,
+                  "seed": 20260829,
+                  "train_groups_hash": "27dddd29bbeaf65922546608a4238051389b3cf2ded42c43d6326635ea3a9796"
+                }
+              ],
+              "group_bootstrap_ci": {
+                "alpha": 0.05,
+                "ci_high": 0.891767579246785,
+                "ci_low": 0.8386526245063197,
+                "estimate": 0.864601664684899,
+                "n_resamples": 1000,
+                "n_valid_resamples": 1000,
+                "num_groups": 235,
+                "resampling_unit": "group",
+                "seed": 20260829,
+                "status": "ok"
+              },
+              "mean_fold_auroc": 0.8702801857312877,
+              "micro_oof_auroc": 0.864601664684899,
+              "n_analysis_groups": 235,
+              "n_pairs": 290,
+              "n_rows": 580,
+              "preprocessing": {
+                "fit_scope": "training_fold_only",
+                "implementation": "sklearn.preprocessing.StandardScaler",
+                "standardize": true
+              },
+              "runtime_versions": {
+                "numpy": "2.4.6",
+                "scikit_learn": "1.9.0"
+              },
+              "schema_version": 1,
+              "split_manifest_hash": "85ee2903ce9b90e027b4658274dabc3ba71932f1d0dfb3cd48e7bbb76d40fd14",
+              "status": "ok"
+            },
+            "rank_only_sorted_weights_legacy": {
+              "analysis_group_definition": "connected_components_of_source_suffix_or_normalized_problem",
+              "estimator": {
+                "C": 1.0,
+                "class_weight": "balanced",
+                "implementation": "sklearn.linear_model.LogisticRegression",
+                "max_iter": 2000,
+                "penalty": "l2",
+                "random_state": 20260829,
+                "score": "decision_function_log_odds",
+                "solver": "liblinear"
+              },
+              "feature_dim": 4,
+              "fold_aurocs": [
+                0.7313888888888889,
+                0.679689744326343,
+                0.6836734693877551,
+                0.7311117494972709,
+                0.6447704081632653
+              ],
+              "folds": [
+                {
+                  "eval_auroc": 0.7313888888888889,
+                  "eval_groups_hash": "75074a6626389fb8d765f1ef7220c0fed629dc8c862f6cc017a95a962a02c74c",
+                  "eval_negative_count": 60,
+                  "eval_positive_count": 60,
+                  "fold_hash": "1f5f0d6dbb3a5fd4212b233a5eeac2792ea45d1f6c8f2d9ec73fda3144c4087f",
+                  "fold_index": 0,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 60,
+                  "n_eval_rows": 120,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 230,
+                  "n_train_rows": 460,
+                  "seed": 20260829,
+                  "train_groups_hash": "2627c345b9341e11072c086e7f4a4fd5c03ac44a02ffe757c6f802ea5021e724"
+                },
+                {
+                  "eval_auroc": 0.679689744326343,
+                  "eval_groups_hash": "a5e8938e65226dbd935184bf6a71f635a71b69669db0977ff171ac003d9e72ae",
+                  "eval_negative_count": 59,
+                  "eval_positive_count": 59,
+                  "fold_hash": "ce46c46c18eb25827a0efa7ad2b7e25876935fca3acc7dfe86d69e54417ce18d",
+                  "fold_index": 1,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 59,
+                  "n_eval_rows": 118,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 231,
+                  "n_train_rows": 462,
+                  "seed": 20260829,
+                  "train_groups_hash": "cbda7f068d958252a63463c81cb6d0a83982d15e3af48b25d7d3452368761b34"
+                },
+                {
+                  "eval_auroc": 0.6836734693877551,
+                  "eval_groups_hash": "49cbe3a9c14ca1c2e39b279b37c58d3589be968bf75d9c860e798376a3cefe78",
+                  "eval_negative_count": 56,
+                  "eval_positive_count": 56,
+                  "fold_hash": "90655ae21dd16aca8b268f20c1c9c38a6672c36e54df7ad3aad2fe07492582af",
+                  "fold_index": 2,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 56,
+                  "n_eval_rows": 112,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 234,
+                  "n_train_rows": 468,
+                  "seed": 20260829,
+                  "train_groups_hash": "030e4b0bb34821804b24e99c050bb6e9126bf58cfbd56e125b72b7ee8732e5cf"
+                },
+                {
+                  "eval_auroc": 0.7311117494972709,
+                  "eval_groups_hash": "430ad9fcfeb703c395e6d2aea82dfc161928a118e591480c21f3c297fc172d57",
+                  "eval_negative_count": 59,
+                  "eval_positive_count": 59,
+                  "fold_hash": "aeb832764c0d2824966a68d6ccd8a2bcf21e9065d8a81f9e7f22b7c319a55562",
+                  "fold_index": 3,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 59,
+                  "n_eval_rows": 118,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 231,
+                  "n_train_rows": 462,
+                  "seed": 20260829,
+                  "train_groups_hash": "8a6af2a45c6f18b684c1f528ca2890d2b8b50c8039c0f97e721fa2e413208c6f"
+                },
+                {
+                  "eval_auroc": 0.6447704081632653,
+                  "eval_groups_hash": "8bd5286d8185e30952452a16e1fae2b1c72d1bae96e6a5467420b031c9df10df",
+                  "eval_negative_count": 56,
+                  "eval_positive_count": 56,
+                  "fold_hash": "7181c245ea49be6402ba8deb2d4122a421e8ffae815a314262606bdb57ab9100",
+                  "fold_index": 4,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 56,
+                  "n_eval_rows": 112,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 234,
+                  "n_train_rows": 468,
+                  "seed": 20260829,
+                  "train_groups_hash": "27dddd29bbeaf65922546608a4238051389b3cf2ded42c43d6326635ea3a9796"
+                }
+              ],
+              "group_bootstrap_ci": {
+                "alpha": 0.05,
+                "ci_high": 0.72782996384843,
+                "ci_low": 0.6529680621310648,
+                "estimate": 0.6906896551724138,
+                "n_resamples": 1000,
+                "n_valid_resamples": 1000,
+                "num_groups": 235,
+                "resampling_unit": "group",
+                "seed": 20260829,
+                "status": "ok"
+              },
+              "mean_fold_auroc": 0.6941268520527046,
+              "micro_oof_auroc": 0.6906896551724138,
+              "n_analysis_groups": 235,
+              "n_pairs": 290,
+              "n_rows": 580,
+              "preprocessing": {
+                "fit_scope": "training_fold_only",
+                "implementation": "sklearn.preprocessing.StandardScaler",
+                "standardize": true
+              },
+              "runtime_versions": {
+                "numpy": "2.4.6",
+                "scikit_learn": "1.9.0"
+              },
+              "schema_version": 1,
+              "split_manifest_hash": "85ee2903ce9b90e027b4658274dabc3ba71932f1d0dfb3cd48e7bbb76d40fd14",
+              "status": "ok"
+            },
+            "router_input": {
+              "analysis_group_definition": "connected_components_of_source_suffix_or_normalized_problem",
+              "estimator": {
+                "C": 1.0,
+                "class_weight": "balanced",
+                "implementation": "sklearn.linear_model.LogisticRegression",
+                "max_iter": 2000,
+                "penalty": "l2",
+                "random_state": 20260829,
+                "score": "decision_function_log_odds",
+                "solver": "liblinear"
+              },
+              "feature_dim": 2048,
+              "fold_aurocs": [
+                0.8608333333333333,
+                0.8896868715886239,
+                0.9177295918367347,
+                0.8721631715024418,
+                0.8402423469387755
+              ],
+              "folds": [
+                {
+                  "eval_auroc": 0.8608333333333333,
+                  "eval_groups_hash": "75074a6626389fb8d765f1ef7220c0fed629dc8c862f6cc017a95a962a02c74c",
+                  "eval_negative_count": 60,
+                  "eval_positive_count": 60,
+                  "fold_hash": "1f5f0d6dbb3a5fd4212b233a5eeac2792ea45d1f6c8f2d9ec73fda3144c4087f",
+                  "fold_index": 0,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 60,
+                  "n_eval_rows": 120,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 230,
+                  "n_train_rows": 460,
+                  "seed": 20260829,
+                  "train_groups_hash": "2627c345b9341e11072c086e7f4a4fd5c03ac44a02ffe757c6f802ea5021e724"
+                },
+                {
+                  "eval_auroc": 0.8896868715886239,
+                  "eval_groups_hash": "a5e8938e65226dbd935184bf6a71f635a71b69669db0977ff171ac003d9e72ae",
+                  "eval_negative_count": 59,
+                  "eval_positive_count": 59,
+                  "fold_hash": "ce46c46c18eb25827a0efa7ad2b7e25876935fca3acc7dfe86d69e54417ce18d",
+                  "fold_index": 1,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 59,
+                  "n_eval_rows": 118,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 231,
+                  "n_train_rows": 462,
+                  "seed": 20260829,
+                  "train_groups_hash": "cbda7f068d958252a63463c81cb6d0a83982d15e3af48b25d7d3452368761b34"
+                },
+                {
+                  "eval_auroc": 0.9177295918367347,
+                  "eval_groups_hash": "49cbe3a9c14ca1c2e39b279b37c58d3589be968bf75d9c860e798376a3cefe78",
+                  "eval_negative_count": 56,
+                  "eval_positive_count": 56,
+                  "fold_hash": "90655ae21dd16aca8b268f20c1c9c38a6672c36e54df7ad3aad2fe07492582af",
+                  "fold_index": 2,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 56,
+                  "n_eval_rows": 112,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 234,
+                  "n_train_rows": 468,
+                  "seed": 20260829,
+                  "train_groups_hash": "030e4b0bb34821804b24e99c050bb6e9126bf58cfbd56e125b72b7ee8732e5cf"
+                },
+                {
+                  "eval_auroc": 0.8721631715024418,
+                  "eval_groups_hash": "430ad9fcfeb703c395e6d2aea82dfc161928a118e591480c21f3c297fc172d57",
+                  "eval_negative_count": 59,
+                  "eval_positive_count": 59,
+                  "fold_hash": "aeb832764c0d2824966a68d6ccd8a2bcf21e9065d8a81f9e7f22b7c319a55562",
+                  "fold_index": 3,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 59,
+                  "n_eval_rows": 118,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 231,
+                  "n_train_rows": 462,
+                  "seed": 20260829,
+                  "train_groups_hash": "8a6af2a45c6f18b684c1f528ca2890d2b8b50c8039c0f97e721fa2e413208c6f"
+                },
+                {
+                  "eval_auroc": 0.8402423469387755,
+                  "eval_groups_hash": "8bd5286d8185e30952452a16e1fae2b1c72d1bae96e6a5467420b031c9df10df",
+                  "eval_negative_count": 56,
+                  "eval_positive_count": 56,
+                  "fold_hash": "7181c245ea49be6402ba8deb2d4122a421e8ffae815a314262606bdb57ab9100",
+                  "fold_index": 4,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 56,
+                  "n_eval_rows": 112,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 234,
+                  "n_train_rows": 468,
+                  "seed": 20260829,
+                  "train_groups_hash": "27dddd29bbeaf65922546608a4238051389b3cf2ded42c43d6326635ea3a9796"
+                }
+              ],
+              "group_bootstrap_ci": {
+                "alpha": 0.05,
+                "ci_high": 0.8973245742286704,
+                "ci_low": 0.8451343823618821,
+                "estimate": 0.8716646848989299,
+                "n_resamples": 1000,
+                "n_valid_resamples": 1000,
+                "num_groups": 235,
+                "resampling_unit": "group",
+                "seed": 20260829,
+                "status": "ok"
+              },
+              "mean_fold_auroc": 0.8761310630399819,
+              "micro_oof_auroc": 0.8716646848989299,
+              "n_analysis_groups": 235,
+              "n_pairs": 290,
+              "n_rows": 580,
+              "preprocessing": {
+                "fit_scope": "training_fold_only",
+                "implementation": "sklearn.preprocessing.StandardScaler",
+                "standardize": true
+              },
+              "runtime_versions": {
+                "numpy": "2.4.6",
+                "scikit_learn": "1.9.0"
+              },
+              "schema_version": 1,
+              "split_manifest_hash": "85ee2903ce9b90e027b4658274dabc3ba71932f1d0dfb3cd48e7bbb76d40fd14",
+              "status": "ok"
+            },
+            "router_logits": {
+              "analysis_group_definition": "connected_components_of_source_suffix_or_normalized_problem",
+              "estimator": {
+                "C": 1.0,
+                "class_weight": "balanced",
+                "implementation": "sklearn.linear_model.LogisticRegression",
+                "max_iter": 2000,
+                "penalty": "l2",
+                "random_state": 20260829,
+                "score": "decision_function_log_odds",
+                "solver": "liblinear"
+              },
+              "feature_dim": 64,
+              "fold_aurocs": [
+                0.8336111111111111,
+                0.8302212008043666,
+                0.8801020408163265,
+                0.7911519678253376,
+                0.7882653061224489
+              ],
+              "folds": [
+                {
+                  "eval_auroc": 0.8336111111111111,
+                  "eval_groups_hash": "75074a6626389fb8d765f1ef7220c0fed629dc8c862f6cc017a95a962a02c74c",
+                  "eval_negative_count": 60,
+                  "eval_positive_count": 60,
+                  "fold_hash": "1f5f0d6dbb3a5fd4212b233a5eeac2792ea45d1f6c8f2d9ec73fda3144c4087f",
+                  "fold_index": 0,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 60,
+                  "n_eval_rows": 120,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 230,
+                  "n_train_rows": 460,
+                  "seed": 20260829,
+                  "train_groups_hash": "2627c345b9341e11072c086e7f4a4fd5c03ac44a02ffe757c6f802ea5021e724"
+                },
+                {
+                  "eval_auroc": 0.8302212008043666,
+                  "eval_groups_hash": "a5e8938e65226dbd935184bf6a71f635a71b69669db0977ff171ac003d9e72ae",
+                  "eval_negative_count": 59,
+                  "eval_positive_count": 59,
+                  "fold_hash": "ce46c46c18eb25827a0efa7ad2b7e25876935fca3acc7dfe86d69e54417ce18d",
+                  "fold_index": 1,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 59,
+                  "n_eval_rows": 118,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 231,
+                  "n_train_rows": 462,
+                  "seed": 20260829,
+                  "train_groups_hash": "cbda7f068d958252a63463c81cb6d0a83982d15e3af48b25d7d3452368761b34"
+                },
+                {
+                  "eval_auroc": 0.8801020408163265,
+                  "eval_groups_hash": "49cbe3a9c14ca1c2e39b279b37c58d3589be968bf75d9c860e798376a3cefe78",
+                  "eval_negative_count": 56,
+                  "eval_positive_count": 56,
+                  "fold_hash": "90655ae21dd16aca8b268f20c1c9c38a6672c36e54df7ad3aad2fe07492582af",
+                  "fold_index": 2,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 56,
+                  "n_eval_rows": 112,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 234,
+                  "n_train_rows": 468,
+                  "seed": 20260829,
+                  "train_groups_hash": "030e4b0bb34821804b24e99c050bb6e9126bf58cfbd56e125b72b7ee8732e5cf"
+                },
+                {
+                  "eval_auroc": 0.7911519678253376,
+                  "eval_groups_hash": "430ad9fcfeb703c395e6d2aea82dfc161928a118e591480c21f3c297fc172d57",
+                  "eval_negative_count": 59,
+                  "eval_positive_count": 59,
+                  "fold_hash": "aeb832764c0d2824966a68d6ccd8a2bcf21e9065d8a81f9e7f22b7c319a55562",
+                  "fold_index": 3,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 59,
+                  "n_eval_rows": 118,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 231,
+                  "n_train_rows": 462,
+                  "seed": 20260829,
+                  "train_groups_hash": "8a6af2a45c6f18b684c1f528ca2890d2b8b50c8039c0f97e721fa2e413208c6f"
+                },
+                {
+                  "eval_auroc": 0.7882653061224489,
+                  "eval_groups_hash": "8bd5286d8185e30952452a16e1fae2b1c72d1bae96e6a5467420b031c9df10df",
+                  "eval_negative_count": 56,
+                  "eval_positive_count": 56,
+                  "fold_hash": "7181c245ea49be6402ba8deb2d4122a421e8ffae815a314262606bdb57ab9100",
+                  "fold_index": 4,
+                  "n_eval_analysis_groups": 47,
+                  "n_eval_pairs": 56,
+                  "n_eval_rows": 112,
+                  "n_train_analysis_groups": 188,
+                  "n_train_pairs": 234,
+                  "n_train_rows": 468,
+                  "seed": 20260829,
+                  "train_groups_hash": "27dddd29bbeaf65922546608a4238051389b3cf2ded42c43d6326635ea3a9796"
+                }
+              ],
+              "group_bootstrap_ci": {
+                "alpha": 0.05,
+                "ci_high": 0.8476137988639911,
+                "ci_low": 0.7863930019253832,
+                "estimate": 0.8179667063020214,
+                "n_resamples": 1000,
+                "n_valid_resamples": 1000,
+                "num_groups": 235,
+                "resampling_unit": "group",
+                "seed": 20260829,
+                "status": "ok"
+              },
+              "mean_fold_auroc": 0.8246703253359181,
+              "micro_oof_auroc": 0.8179667063020214,
+              "n_analysis_groups": 235,
+              "n_pairs": 290,
+              "n_rows": 580,
+              "preprocessing": {
+                "fit_scope": "training_fold_only",
+                "implementation": "sklearn.preprocessing.StandardScaler",
+                "standardize": true
+              },
+              "runtime_versions": {
+                "numpy": "2.4.6",
+                "scikit_learn": "1.9.0"
+              },
+              "schema_version": 1,
+              "split_manifest_hash": "85ee2903ce9b90e027b4658274dabc3ba71932f1d0dfb3cd48e7bbb76d40fd14",
+              "status": "ok"
+            }
+          },
+          "layer": 24
+        }
+      },
+      "caveat": "",
+      "display_name": "GLM-4.7-Flash",
+      "model_id": "glm4_moe_lite",
+      "n_analysis_groups": 235,
+      "n_common_pairs": 290,
+      "n_common_rows": 580,
+      "n_manifest_rows": 580,
+      "num_experts": 64,
+      "protocol_grade": "common_core_20260907_no_degenerate_panels",
+      "recapture_protocol": "paired_first_error_common",
+      "selection_pairs_hash": "da16394f92591e75c06f1ae21bdce3396160713680cb893930d9c67e7e47796b",
+      "status": "ok",
+      "top_k": 4
+    }
+  ],
+  "positive_class": "corrupt",
+  "protocol": {
+    "analysis_group_definition": "connected_components_of_source_suffix_or_normalized_problem",
+    "bootstrap_resamples": 1000,
+    "contrast_feature_control": {
+      "reason": "Existing recapture manifests contain no predeclared topic, token-class, language, or formatting contrast label. No proxy label is invented.",
+      "status": "not_run_missing_predeclared_labels"
+    },
+    "estimator": {
+      "C": 1.0,
+      "class_weight": "balanced",
+      "implementation": "sklearn.linear_model.LogisticRegression",
+      "max_iter": 2000,
+      "penalty": "l2",
+      "preprocessing": "StandardScaler_fit_on_training_fold_only",
+      "solver": "liblinear"
+    },
+    "expected_analysis_group_count": 235,
+    "folds": 5,
+    "grouping_limitation": "The shared folds join all 290 frozen discovery pairs to pre-existing canonical source_problem_id values from the versioned Qwen3 CPU-correction artifact. The mapping has complete unambiguous coverage and preserves component IDs defined over the full historical 580-pair universe. The upstream grouping is a registered post-hoc sensitivity artifact, not a new prospective freeze.",
+    "outcome": "clean_vs_corrupt_recapture_discrimination",
+    "pair_count": 290,
+    "positive_class": "corrupt",
+    "row_count": 580,
+    "seed": 20260829
+  },
+  "schema_version": 1,
+  "status": "ok"
+}

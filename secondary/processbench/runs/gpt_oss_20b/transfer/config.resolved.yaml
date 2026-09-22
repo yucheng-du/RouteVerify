@@ -1,0 +1,116 @@
+actual_protocol:
+  alphas:
+  - 1.0
+  boundary_strategy: paired_first_error
+  candidates:
+  - CORRECT
+  - INCORRECT
+  controls:
+  - unpatched
+  - unpatched_rerun
+  - self_patch
+  expected_router_hooks: null
+  forced_reroute_control: false
+  include_equivalence_analysis: false
+  input_format: chat
+  patch_mode: single_site_sweep
+  prompt_mode: step_binary
+  split_manifest: null
+  split_partition: null
+alphas:
+- 1.0
+boundary_strategy: paired_first_error
+command:
+  argv:
+  - archive://runtime/packages/routeverify-43bc9228/bin/routeverify
+  - intervene
+  - patch
+  - --experiment
+  - archive://runtime/runs/gpt_oss_processbench_full_20260829T094519Z/resolved_configs/transfer.yaml
+  - --limit
+  - '64'
+  - --seed
+  - '20260828'
+  shell: archive://runtime/packages/routeverify-43bc9228/bin/routeverify intervene patch
+    --experiment archive://runtime/runs/gpt_oss_processbench_full_20260829T094519Z/resolved_configs/transfer.yaml
+    --limit 64 --seed 20260828
+config_sources:
+  data:
+    path: archive://execution/configs/data/processbench_natural_transfer.yaml
+    sha256: aff26b770947cad7a067621d9baf81106760a3694f3613465302be82be7e35cf
+  experiment:
+    path: archive://runtime/runs/gpt_oss_processbench_full_20260829T094519Z/resolved_configs/transfer.yaml
+    sha256: fe54cbcec96f562b687a917e5e3159214d02d4d2a9ab02125c2081e6265cc5b9
+  model:
+    path: archive://execution/configs/models/gpt_oss_20b.yaml
+    sha256: 15b76ba86f91ad38bbc7bce34f18b680ae5a27a1aaf4a8b9addcff62cc507cc8
+controls:
+- unpatched
+- unpatched_rerun
+- self_patch
+data: archive://execution/configs/data/processbench_natural_transfer.yaml
+expected_router_hooks: null
+export_router_weights: null
+forced_reroute_control: false
+identity_tolerance: 1.0e-05
+include_equivalence_analysis: false
+input_format: chat
+layers:
+- 12
+limit: 64
+model: archive://execution/configs/models/gpt_oss_20b.yaml
+output_dir: archive://runtime/runs/gpt_oss_processbench_full_20260829T094519Z/transfer
+patch_mode: single_site_sweep
+prompt_mode: step_binary
+resolved_data:
+  balanced: true
+  cache_dir: .cache/huggingface/datasets
+  dataset: processbench_transfer
+  expected_processed_sha256: b1d7f21aff6d5a17d1494b5e8bcc2a4bf43d0e2f7d6689921ccb368d4e735c94
+  expected_raw_sha256: fb1c59dfd1e83e1c5a48dbe598db27e4bc0b8bc524a09445f2d4b69178f61349
+  expected_resolved_data_revision: 3bdcd5371ed567559a78f559c01c13a6deee7604
+  expected_selection_manifest_sha256: 0f2d885fc9e7657886f0686a08f1236b62c595703c414d80069cc92b304ca7a2
+  hf_config: default
+  hf_id: Qwen/ProcessBench
+  output: data/processed/processbench-natural-transfer-v1.jsonl
+  pair_output: null
+  revision: 3bdcd5371ed567559a78f559c01c13a6deee7604
+  selection_manifest: data/processed/processbench-natural-transfer-v1.selection.json
+  split: gsm8k
+  subset: gsm8k
+  validation_accessed: false
+resolved_model:
+  alias: gpt_oss_20b
+  attn_implementation: null
+  cache_dir: .cache/huggingface/hub
+  device_map: auto
+  dtype: bfloat16
+  expected_architectures:
+  - GptOssForCausalLM
+  expected_chat_template_sha256: a4c9919cbbd4acdd51ccffe22da049264b1b73e59055fa58811a99efbd7c8146
+  expected_experts: 32
+  expected_kernels_version: 0.12.3
+  expected_layers: 24
+  expected_model_type: gpt_oss
+  expected_mxfp4_kernel_repo: kernels-community/gpt-oss-triton-kernels
+  expected_mxfp4_kernel_revision: 642d2a71c6a9b32fc18acb8ec53505fb324bc394
+  expected_router_block_indices: null
+  expected_router_blocks: null
+  expected_top_k: 4
+  expected_total_blocks: null
+  expected_transformers_version: 5.12.1
+  expected_triton_version: 3.7.1
+  harmony_reasoning_effort: medium
+  load_weights: true
+  model_id: openai/gpt-oss-20b
+  require_native_mxfp4: true
+  revision: 6cee5e81ee83917806bbde320786a8fb61efebee
+  tokenizer_revision: 6cee5e81ee83917806bbde320786a8fb61efebee
+  trust_remote_code: false
+router_weight_schema_version: 1
+seed: 20260828
+sites:
+- post_moe_residual
+- router_logits
+split_manifest: null
+split_partition: null

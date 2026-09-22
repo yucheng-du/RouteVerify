@@ -1,0 +1,157 @@
+{
+  "accuracy": 0.6875,
+  "auroc": 0.8544921875,
+  "breakdowns": {
+    "dataset": {
+      "processbench": {
+        "accuracy": 0.6875,
+        "auroc": 0.8544921875,
+        "mean_margin_incorrect_minus_correct": 1.3291348946082393,
+        "n": 128,
+        "negatives": 64,
+        "positives": 64
+      }
+    },
+    "error_type": {
+      "unknown": {
+        "accuracy": 0.6875,
+        "auroc": 0.8544921875,
+        "mean_margin_incorrect_minus_correct": 1.3291348946082393,
+        "n": 128,
+        "negatives": 64,
+        "positives": 64
+      }
+    },
+    "generator": {
+      "Llama-3.1-70B-Instruct": {
+        "accuracy": 0.5833333333333334,
+        "auroc": 0.7222222222222222,
+        "mean_margin_incorrect_minus_correct": 1.055042368881525,
+        "n": 12,
+        "negatives": 6,
+        "positives": 6
+      },
+      "Llama-3.1-8B-Instruct": {
+        "accuracy": 0.75,
+        "auroc": 0.9166666666666666,
+        "mean_margin_incorrect_minus_correct": 1.423800436477204,
+        "n": 12,
+        "negatives": 6,
+        "positives": 6
+      },
+      "Meta-Llama-3-70B-Instruct": {
+        "accuracy": 1.0,
+        "auroc": 1.0,
+        "mean_margin_incorrect_minus_correct": -0.5291384648047962,
+        "n": 12,
+        "negatives": 6,
+        "positives": 6
+      },
+      "Meta-Llama-3-8B-Instruct": {
+        "accuracy": 0.4166666666666667,
+        "auroc": 0.6944444444444444,
+        "mean_margin_incorrect_minus_correct": 4.110504336167101,
+        "n": 12,
+        "negatives": 6,
+        "positives": 6
+      },
+      "Qwen2-1.5B-Instruct": {
+        "accuracy": 0.5,
+        "auroc": 0.625,
+        "mean_margin_incorrect_minus_correct": -0.918581436077795,
+        "n": 8,
+        "negatives": 4,
+        "positives": 4
+      },
+      "Qwen2-72B-Instruct": {
+        "accuracy": 0.75,
+        "auroc": 0.75,
+        "mean_margin_incorrect_minus_correct": 0.37512063491687475,
+        "n": 12,
+        "negatives": 6,
+        "positives": 6
+      },
+      "Qwen2-7B-Instruct": {
+        "accuracy": 0.6666666666666666,
+        "auroc": 0.8055555555555556,
+        "mean_margin_incorrect_minus_correct": 1.36019187494281,
+        "n": 12,
+        "negatives": 6,
+        "positives": 6
+      },
+      "Qwen2.5-1.5B-Instruct": {
+        "accuracy": 0.8333333333333334,
+        "auroc": 1.0,
+        "mean_margin_incorrect_minus_correct": 1.4847716731480343,
+        "n": 12,
+        "negatives": 6,
+        "positives": 6
+      },
+      "Qwen2.5-72B-Instruct": {
+        "accuracy": 0.5,
+        "auroc": 0.75,
+        "mean_margin_incorrect_minus_correct": 3.607136894754793,
+        "n": 4,
+        "negatives": 2,
+        "positives": 2
+      },
+      "Qwen2.5-7B-Instruct": {
+        "accuracy": 0.6666666666666666,
+        "auroc": 1.0,
+        "mean_margin_incorrect_minus_correct": 2.525684343696668,
+        "n": 12,
+        "negatives": 6,
+        "positives": 6
+      },
+      "Qwen2.5-Math-72B-Instruct": {
+        "accuracy": 0.625,
+        "auroc": 0.875,
+        "mean_margin_incorrect_minus_correct": 1.7695484421312115,
+        "n": 8,
+        "negatives": 4,
+        "positives": 4
+      },
+      "Qwen2.5-Math-7B-Instruct": {
+        "accuracy": 0.75,
+        "auroc": 0.8611111111111112,
+        "mean_margin_incorrect_minus_correct": 0.6017713701085928,
+        "n": 12,
+        "negatives": 6,
+        "positives": 6
+      }
+    },
+    "subset": {
+      "gsm8k": {
+        "accuracy": 0.6875,
+        "auroc": 0.8544921875,
+        "mean_margin_incorrect_minus_correct": 1.3291348946082393,
+        "n": 128,
+        "negatives": 64,
+        "positives": 64
+      }
+    },
+    "variant": {
+      "clean": {
+        "accuracy": 0.546875,
+        "auroc": null,
+        "mean_margin_incorrect_minus_correct": -1.838677517256742,
+        "n": 64,
+        "negatives": 64,
+        "positives": 0
+      },
+      "corrupt": {
+        "accuracy": 0.828125,
+        "auroc": null,
+        "mean_margin_incorrect_minus_correct": 4.496947306473221,
+        "n": 64,
+        "negatives": 0,
+        "positives": 64
+      }
+    }
+  },
+  "mean_margin_incorrect_minus_correct": 1.3291348946082393,
+  "mode": "step-binary",
+  "n": 128,
+  "negatives": 64,
+  "positives": 64
+}

@@ -1,0 +1,83 @@
+# Run via scripts/glm_common_core_campaign_20260907.py; smoke binding uses actual artifacts.
+schema_version: 1
+run_role: full_discovery
+data_config: configs/experiments/campaign_20260907_A/glm_common_core_data.yaml
+split_manifest: docs/results/first_batch_zero_gpu_20260730/discovery_validation_split.json
+split_manifest_hash: ee24124fc4a1b86466a6b2aa3c64ebc0e40d71eb7183a3b45124a41ac04a8ac0
+split_partition: discovery
+expected_pairs: 290
+expected_behavior_pairs: 64
+behavior_min_auroc: 0.55
+identity_tolerance: 1.0e-05
+profiles:
+  glm4_moe_lite:
+    authorization_env: ALLOW_GLM4_COMMON_CORE_FULL
+    adapter_alias: glm4_moe_lite
+    adapter_class: routeverify.models.glm4_moe_lite.Glm4MoELiteAdapter
+    model_config: configs/models/glm4_moe_lite.yaml
+    model_id: zai-org/GLM-4.7-Flash
+    revision: 7dd20894a642a0aa287e9827cb1a1f7f91386b67
+    seed: 20260907
+    router_semantics_id: glm4_moe_lite_sigmoid_bias_group_topk_norm_scale_v1
+    router_block_indices:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 17
+    - 18
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 26
+    - 27
+    - 28
+    - 29
+    - 30
+    - 31
+    - 32
+    - 33
+    - 34
+    - 35
+    - 36
+    - 37
+    - 38
+    - 39
+    - 40
+    - 41
+    - 42
+    - 43
+    - 44
+    - 45
+    - 46
+    endpoint_layers:
+    - 1
+    - 24
+    stages:
+      endpoint: configs/experiments/campaign_20260907_A/glm_common_core_endpoint_full.yaml
+      router: configs/experiments/campaign_20260907_A/glm_common_core_router_full.yaml
+      recapture: configs/experiments/campaign_20260907_A/glm_common_core_recapture_full.yaml
+    artifact_contract:
+      patch_diagnostics_schema: 1
+      require_candidate_patch_diagnostics: true
+      require_router_dispatch_for_site_kinds:
+      - router_logits
+      require_capture_site_contract: true
+      router_weight_schema_version: 2
+campaign_policy: glm_common_core_20260907_v1

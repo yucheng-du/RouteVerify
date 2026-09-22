@@ -1,0 +1,22 @@
+model: archive://execution/configs/models/gemma4_moe.yaml
+data: archive://execution/configs/data/processbench_natural_transfer.yaml
+seed: 20260828
+limit: 64
+prompt_mode: step_binary
+input_format: chat
+boundary_strategy: paired_first_error
+sites:
+- post_moe_residual
+- router_logits
+layers:
+- 15
+output_dir: archive://runtime/runs/gemma4_processbench_full_20260829T104105Z/transfer
+patch_mode: single_site_sweep
+alphas:
+- 1.0
+controls:
+- unpatched
+- unpatched_rerun
+- self_patch
+include_equivalence_analysis: false
+identity_tolerance: 1.0e-05

@@ -1,0 +1,22 @@
+boundary_strategy: first_error_or_matched_all_correct
+data: configs/data/prmbench.yaml
+input_format: chat
+layers:
+- 0
+- 12
+- 24
+- 36
+- 47
+limit: 580
+model: configs/models/qwen3_moe.yaml
+output_dir: artifacts/qwen3_full_suite_20260627T012309Z/qwen3_prmbench_diagnostic_verifier
+prompt_mode: step_binary
+seed: 0
+sites:
+- pre_moe_residual
+- router_input
+- router_logits
+- router_topk_ids
+- router_topk_weights
+- moe_output
+- post_moe_residual

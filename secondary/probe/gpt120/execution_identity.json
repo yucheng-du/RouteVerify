@@ -1,0 +1,194 @@
+{
+  "analysis_id": "interface_access_gpt120_20260908",
+  "runtime": {
+    "packages": {
+      "PyYAML": "6.0.3",
+      "numpy": "2.4.6",
+      "safetensors": "0.8.0",
+      "scikit-learn": "1.9.0",
+      "scipy": "1.17.1",
+      "threadpoolctl": "3.6.0"
+    },
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "python": "3.11.2 (v3.11.2:878ead1ac1, Feb  7 2023, 10:02:41) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "threadpools": []
+  },
+  "recorded_code_sha256": {
+    "scripts/run_interface_access_analysis.py": "573319c76c20c41737936fbf708d4b382419f9a7a3bda0db909e5b9531dd739d",
+    "scripts/run_interface_access_gpt120_20260908.py": "a87b65b8a3d945b7f4feb12e8e2dae29c50daad8648ae7369a394b39211c96d9",
+    "src/routeverify/analysis/fair_comparison.py": "916087b83c7c3771c2cfc0bf2a1110d6da672605fc8ea22d148f058b1ef9f3c4",
+    "src/routeverify/analysis/interface_access.py": "e129c80c380b5c95e6d9b629a2644c639e4b042244ea3db149f541e50ce5e6e7",
+    "src/routeverify/analysis/probes.py": "69f6869813fd83782b1feec89281dd83670d6b0cf001d090b867200ddc107682",
+    "src/routeverify/analysis/protocols.py": "3c980e65e7bd2732efa3330d99dd5ef30323677a62c49651668002e45f9b7f47",
+    "src/routeverify/analysis/routing_probes.py": "1e9e568e472bcd18152913a4eb014bda411578465b6056d8294582d48ca683f2",
+    "src/routeverify/analysis/surface_baselines.py": "bc4fb6e835c04c98907ed64f02bb81b17362289004ba1dfd102ff722d2163a2b"
+  },
+  "inputs": {
+    "archive://analysis-worktree/configs/analysis/interface_access_canonical_common_20260829.yaml": "fdc93f0f86b3be3268ca305a4f09e5f23bd1143fe3a7ead3226f5cc605c3e88f",
+    "archive://analysis-worktree/configs/analysis/interface_access_gpt120_20260908.yaml": "1bccfb21af9f31b295d0a99a57b633ece5ddc8b9ff684a34e338121f5cad289e",
+    "archive://analysis-worktree/docs/results/interface_access_canonical_common_20260829/interface_access_oof_predictions.jsonl": "fbb8e2c748205cf21b05bd8ca32cbd94610afff7e0e562a4bca6bebf1d2ad43d",
+    "archive://analysis-worktree/docs/results/interface_access_canonical_common_20260829/interface_access_results.json": "3607733f1cbc6d5327454c152fce779aec58f282e3a33d6c72d45b4fab56b304",
+    "archive://analysis-worktree/docs/results/interface_access_canonical_common_20260829/source_component_folds.json": "40104b63e3dea343c1cdc6c7df30e1f695f8beab19caa377dfdc5afd4a0a15f0",
+    "archive://runpod_gpt_oss_full_20260809T110315Z_complete/routeverify-runs/gpt_oss_full_20260809T110315Z/recapture/config.resolved.yaml": "7640ee6d39be6a38631531d744910be0c34cbb93d18f4ca8b979cc439b4d09ee",
+    "archive://runpod_gpt_oss_full_20260809T110315Z_complete/routeverify-runs/gpt_oss_full_20260809T110315Z/recapture/data_manifest.jsonl": "fab5e82fe1e29b4cfa7fecc7b303b55d5fd0c0137ccb2141981487483b0f214f",
+    "archive://runpod_gpt_oss_full_20260809T110315Z_complete/routeverify-runs/gpt_oss_full_20260809T110315Z/recapture/selection_manifest.json": "e8916aa384fc141a8d4f72fec936c7fa1776763458a8bd81fb9cf019a0569fb1",
+    "archive://campaign_C/artifacts/campaign_20260907_C/gpt_oss_120b_common_core_full_v1/recapture/config.resolved.yaml": "e63f388eaa214c10a753b89a712fb7fe74fdc7b736e06679aabd019dcd94467d",
+    "archive://campaign_C/artifacts/campaign_20260907_C/gpt_oss_120b_common_core_full_v1/recapture/data_manifest.jsonl": "968bb3068323fa70fa25bdc140a6c70e3f36728b5851735dc34041f562142510",
+    "archive://campaign_C/artifacts/campaign_20260907_C/gpt_oss_120b_common_core_full_v1/recapture/environment.json": "3ddeb7c200a9ba0c963430ea0b3f48185f3062c4cd7f386cbdb9526c5f7c6e9a",
+    "archive://campaign_C/artifacts/campaign_20260907_C/gpt_oss_120b_common_core_full_v1/recapture/model_discovery.json": "3a985b805b8320c50565c4b7e184c2df2beab4ff1e4c5652a6c8c8cd13484470",
+    "archive://campaign_C/artifacts/campaign_20260907_C/gpt_oss_120b_common_core_full_v1/recapture/selection_manifest.json": "6a575dda248fac91b8b087be386888472156e9325a6072fbf55640fa8662a55a"
+  },
+  "feature_digests": {
+    "early": {
+      "expert_id_aligned_sparse_weights": {
+        "dtype": "float32",
+        "sha256": "22e1ccc03bccfffba6ab7e54257fa383761b2194e50e2ec0182bf26bd0edf9b7",
+        "shape": [
+          580,
+          128
+        ]
+      },
+      "expert_id_membership_count": {
+        "dtype": "float32",
+        "sha256": "8fe68742095e38e18924fec7aba135c19f30b5a43d6f0bae767f674d141659bc",
+        "shape": [
+          580,
+          128
+        ]
+      },
+      "post_moe_residual": {
+        "dtype": "float32",
+        "sha256": "d54a4d6e495a7ae07cec5bd3f3f49c5f26a14b6824d73b39f81aabc16dcf68f4",
+        "shape": [
+          580,
+          2880
+        ]
+      },
+      "rank_only_sorted_weights_legacy": {
+        "dtype": "float32",
+        "sha256": "a9197107f84b3a2af7ee048ba1b538f287fe01ec7b39627f269e38b1d061b70c",
+        "shape": [
+          580,
+          4
+        ]
+      },
+      "router_input": {
+        "dtype": "float32",
+        "sha256": "47b009eeb3ca55562fdddfdafcbec2348758c52c2e6b4b79db9c79c4e18886a5",
+        "shape": [
+          580,
+          2880
+        ]
+      },
+      "router_logits": {
+        "dtype": "float32",
+        "sha256": "f3b7b1e2aea10639c0002215128d243083ceec956d01ef008bfcf0bd7a0d2890",
+        "shape": [
+          580,
+          128
+        ]
+      }
+    },
+    "late": {
+      "expert_id_aligned_sparse_weights": {
+        "dtype": "float32",
+        "sha256": "98458ab80353569052366f487deddc320856307cc1d0c63cb67e5de6e62cef98",
+        "shape": [
+          580,
+          128
+        ]
+      },
+      "expert_id_membership_count": {
+        "dtype": "float32",
+        "sha256": "c473ef0cc3fcfc4d406f820e0339435eca74f7dc3b920237fe7c40139871c5bb",
+        "shape": [
+          580,
+          128
+        ]
+      },
+      "post_moe_residual": {
+        "dtype": "float32",
+        "sha256": "6dedc8efd7f7fd0cd5f9c424177194f1627526615b21c2229339a713914bcd1a",
+        "shape": [
+          580,
+          2880
+        ]
+      },
+      "rank_only_sorted_weights_legacy": {
+        "dtype": "float32",
+        "sha256": "d5bb9569f9823a05a6a658bfccaf88b6dff5d4e5367f1abc71112109de0be3f9",
+        "shape": [
+          580,
+          4
+        ]
+      },
+      "router_input": {
+        "dtype": "float32",
+        "sha256": "6f2d4597c3237f642ba22c6043f3958edc1a58d8adbe8ac0e30af062e84f8a67",
+        "shape": [
+          580,
+          2880
+        ]
+      },
+      "router_logits": {
+        "dtype": "float32",
+        "sha256": "394fb2525cdfdef2cf0341c847b19c3f57c51e87cd1c2392af4196b22ea0d8ea",
+        "shape": [
+          580,
+          128
+        ]
+      }
+    },
+    "middle": {
+      "expert_id_aligned_sparse_weights": {
+        "dtype": "float32",
+        "sha256": "da628f4fcf02b1719171c667b044fd066a75cd27f54eac7552e37c7e0d97f5c4",
+        "shape": [
+          580,
+          128
+        ]
+      },
+      "expert_id_membership_count": {
+        "dtype": "float32",
+        "sha256": "2f6fe1fbecc820fdd327ff644c6b748aac18beffa84d0ff8a9a49b94a2a3323f",
+        "shape": [
+          580,
+          128
+        ]
+      },
+      "post_moe_residual": {
+        "dtype": "float32",
+        "sha256": "c24d56bb4aff6e58fdaa9994bd00f93c2b69f67fbe5ec0ea007be85fe7ba4d7f",
+        "shape": [
+          580,
+          2880
+        ]
+      },
+      "rank_only_sorted_weights_legacy": {
+        "dtype": "float32",
+        "sha256": "ff04a2bcc2f30fec3c9e1c3fdff1d43a917b9ecd3376616d4da551e503e4942d",
+        "shape": [
+          580,
+          4
+        ]
+      },
+      "router_input": {
+        "dtype": "float32",
+        "sha256": "5b8430c263775ae0dd533f38cd75fb9ed6714f152faab7b51ad37b1b92c2e8ee",
+        "shape": [
+          580,
+          2880
+        ]
+      },
+      "router_logits": {
+        "dtype": "float32",
+        "sha256": "a33360100057d10ab2042806d44edd99d6480fbe1140e3444e490a157f232cce",
+        "shape": [
+          580,
+          128
+        ]
+      }
+    }
+  },
+  "scope": null
+}

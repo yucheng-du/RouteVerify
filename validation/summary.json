@@ -1,0 +1,130 @@
+{
+  "status": "validated_with_declared_probe_refit_differences",
+  "scope": "CPU reanalysis, canonical interface-probe refits and local packaging validation; no model forwards or GPU end-to-end reproduction",
+  "core": {
+    "status": "PASS",
+    "window_panels": 1170,
+    "window_pair_T_reconstructed": 161480,
+    "window_statistic_values_compared": 8190,
+    "window_maximum_absolute_error": 0.0,
+    "wide_D_models": 9,
+    "wide_D_primary_and_total_endpoints": 54,
+    "wide_D_posthoc_direct_contrasts": 10,
+    "wide_D_identity_and_Gemma_weight_checks": "PASS",
+    "bootstrap_resamples": 50000,
+    "GPU_forwards": 0
+  },
+  "headline": {
+    "status": "PASS",
+    "panels": 126,
+    "draws_per_panel": 50000,
+    "maximum_absolute_error": 4.440892098500626e-16,
+    "four_cell_occurrences_checked": 93960,
+    "GPU_forwards": 0,
+    "bundle_input": "native per-pair effects and contrasts",
+    "D_input": "native four-cell margins"
+  },
+  "secondary": {
+    "status": "pass",
+    "scope": "CPU recomputation from archived OOF and atomic ProcessBench scores; no forwards or refits",
+    "numeric_checks": 6290,
+    "maximum_absolute_error": 0.0,
+    "numpy": "2.4.4",
+    "probe_cells": 246
+  },
+  "window_rerun_after_sanitization": {
+    "status": "PASS",
+    "panels": 1170,
+    "maximum_absolute_error": 0.0,
+    "python": "3.11",
+    "numpy": "2.4.6"
+  },
+  "wide_D_rerun_after_sanitization": {
+    "status": "PASS",
+    "primary_and_total_endpoints": 54,
+    "direct_posthoc_contrasts": 10,
+    "full_input_arrays_rehashed": false,
+    "all_nine_source_and_donor_assignment_projections_equal": true,
+    "gpt20_and_gpt120_full_saved_identity_projections_equal": true
+  },
+  "execution_receipt": "execution/validation.json",
+  "source_identity_checks": 911,
+  "paper_receipt": "paper/validation.json",
+  "GPU_forwards": 0,
+  "model_weights_downloaded": false,
+  "anonymous_content_check": "Personal filesystem roots, account markers, private URLs and credential patterns scanned in plain text and decompressed gzip; PDF metadata cleaned. Private mapping is not included.",
+  "limits": [
+    "The compact feature bundle and refit entry cover the eight-model canonical 235-component interface panel; the 238-group sensitivity, historical Qwen comparison and text baselines retain saved-score reproduction.",
+    "Full activation archives, model weights and dataset problem/solution text are not included; selected native probe boundary vectors are included.",
+    "GLM refits on this macOS arm64 host differ from saved Linux x86_64 OOF scores. Maximum AUROC difference is 0.0003091557669441247; the precise cause is not isolated. Detailed score and interval differences are disclosed with the feature bundle; original saved results are unchanged.",
+    "GPT-OSS 120B original wrapper bytes remain unavailable and the textual difference is unknown; the retained wrapper has now exactly reproduced the original feature matrices, OOF scores and reported statistics on the fixed archived inputs."
+  ],
+  "post_review_corrections": {
+    "rendered_prompt_fields_removed": 128,
+    "behavior_records": 128,
+    "all_other_parsed_fields_unchanged": true,
+    "original_data_mutated": false,
+    "raw_prompt_policy_check_added": true,
+    "git_metadata_modes": [
+      "checkout (default): ignore only top-level .git",
+      "release-package: reject all .git"
+    ],
+    "secondary_reanalysis": {
+      "status": "pass",
+      "numeric_checks": 6290,
+      "maximum_absolute_error": 8.326672684688674e-17,
+      "numpy": "2.4.6",
+      "probe_cells": 246
+    },
+    "overview_change": "Neutral docstring only; rendering functions unchanged",
+    "GPU_forwards": 0,
+    "regression_tests": {
+      "command": "python -B -m unittest discover -s tests -v",
+      "tests": 10,
+      "passed": true,
+      "test_scope": "publication text-field removal, clone Git metadata modes, nested Git rejection, correctly hashed structured-text rejection"
+    }
+  },
+  "licensing": {
+    "candidate_permission": "Review use only; see LICENSES.md",
+    "open_source_release": false,
+    "project_metadata_files_updated": 8,
+    "third_party_terms_retained": true,
+    "original_sources_modified": false
+  },
+  "gpt120_wrapper_refit": {
+    "status": "passed",
+    "receipt": "validation/gpt120-wrapper-refit.json",
+    "panels": 18,
+    "classifier_fits": 90,
+    "oof_predictions": 10440,
+    "feature_matrices_match_recorded_hashes": 18,
+    "maximum_absolute_score_difference": 0.0,
+    "maximum_absolute_auroc_and_interval_difference": 0.0,
+    "direct_contrasts": 30,
+    "maximum_absolute_contrast_and_interval_difference": 0.0,
+    "original_wrapper_recovered": false,
+    "underlying_byte_difference_reason": "unknown",
+    "GPU_forwards": 0
+  },
+  "probe_refit": {
+    "execution_status": "completed",
+    "reference_comparison": "different",
+    "models": 8,
+    "cells": 138,
+    "classifier_fits": 690,
+    "oof_predictions": 80040,
+    "feature_matrices_equal_original_archive_extractor": 138,
+    "models_with_exact_oof_scores": 7,
+    "cells_with_exact_oof_scores_in_those_models": 126,
+    "difference_model": "glm4_moe_lite",
+    "maximum_absolute_auroc_difference": 0.0003091557669441247,
+    "maximum_absolute_score_difference": 0.5850103844179522,
+    "full_panel_validation_mode": "fit-only; original intervals are retained in the saved-score reanalysis",
+    "default_bootstrap_branch_validation": "validation/probe-default-command.json",
+    "details": "secondary/probe/features/validation.json",
+    "GLM_middle_interval_diagnostic": "secondary/probe/features/glm-refit-differences.json",
+    "original_scientific_results_modified": false,
+    "GPU_forwards": 0
+  }
+}

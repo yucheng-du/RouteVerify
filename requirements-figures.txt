@@ -1,0 +1,2 @@
+-r requirements-cpu.txt
+-r paper/figure_source/requirements.txt

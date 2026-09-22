@@ -1,0 +1,1298 @@
+{
+  "schema": "routeverify_wide_d_atomic_extraction_v1",
+  "stage": "S2",
+  "campaign": "archive://campaign_20260908_D/final_v1",
+  "triplets_source": "archive://campaign_20260908_D/final_v1/model_archives/MODEL_ARCHIVE_TRIPLETS.json",
+  "triplets_sha256": "97ab57d38cd66005407636f9c6b1334d8de8827bb24e778d89beb824265cb555",
+  "recorded_not_rehashed": true,
+  "note": "tar sha256/bytes are reused from MODEL_ARCHIVE_TRIPLETS.json; whole tars were not rehashed. Every pair member was hashed at read time and verified against both the per-model manifest and the reporting raw_pair_artifacts listing.",
+  "extraction_started_utc": "2026-09-17T22:05:55.315423+00:00",
+  "extraction_finished_utc": "2026-09-17T22:06:01.803577+00:00",
+  "python_version": "3.11.2 (v3.11.2:878ead1ac1, Feb  7 2023, 10:02:41) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "pandas_version": "3.0.3",
+  "models": [
+    {
+      "model": "olmoe",
+      "tar_path": "archive://campaign_20260908_D/final_v1/model_archives/olmoe_v1.tar.gz",
+      "tar_sha256_recorded": "0196ab127959aa1b6be075dd64c52853fabb5f007d34e4b52db043345bc33f31",
+      "tar_bytes_recorded": 116512737,
+      "tar_bytes_on_disk": 116512737,
+      "recorded_not_rehashed": true,
+      "triplet_status": "PASS",
+      "manifest_path": "archive://campaign_20260908_D/final_v1/model_archives/olmoe_v1.manifest.json",
+      "manifest_sha256_computed": "3096479c1ad046cedfbe8f1ce107342427778964d45b19b5168f3df8008b7abc",
+      "manifest_sha256_recorded": "3096479c1ad046cedfbe8f1ce107342427778964d45b19b5168f3df8008b7abc",
+      "manifest_sha256_matches_recorded": true,
+      "reporting_path": "archive://campaign_20260908_D/final_v1/reporting/olmoe_full_v1.json",
+      "reporting_sha256_computed": "480c3a58548c9394946853e90b6d2201e16003d0ff4b0def5a8486e5ff7b9165",
+      "manifest_pair_members": 290,
+      "reporting_pair_members": 290,
+      "members_read": 290,
+      "members_verified": 290,
+      "mismatches": [],
+      "units_parsed": 290,
+      "rows": 2900,
+      "counts_by_receiver_treatment_donor": {
+        "clean|donor_role|clean": 290,
+        "clean|donor_role|corrupt": 290,
+        "clean|self_patch|clean": 290,
+        "clean|unpatched|NA": 290,
+        "clean|unpatched_rerun|NA": 290,
+        "corrupt|donor_role|clean": 290,
+        "corrupt|donor_role|corrupt": 290,
+        "corrupt|self_patch|corrupt": 290,
+        "corrupt|unpatched|NA": 290,
+        "corrupt|unpatched_rerun|NA": 290
+      },
+      "n_pairs": 290,
+      "n_components": 235,
+      "unique_donor_pairs": 204,
+      "eligible_pairs": 290,
+      "ineligible_pair_ids": [],
+      "technical_failed_pair_ids": [],
+      "run_ids": [
+        "39286ded-fb0c-493f-95bf-7424f1052bb1"
+      ],
+      "contract_ids": [
+        "59baae0869504eeacb848d01832aaadc381132095e1747a68a5c3f2d67582487"
+      ],
+      "execution_versions": [
+        "v1"
+      ],
+      "arms": [
+        "all_router"
+      ],
+      "windows": [
+        "full_step"
+      ],
+      "alphas": [
+        "1.0"
+      ],
+      "protocols": [
+        "window_donor_role_v1_20260908"
+      ],
+      "panels": [
+        "window_d"
+      ],
+      "target_site_counts": [
+        16
+      ],
+      "checkpoint_identity": {
+        "from_reporting_checkpoint": {
+          "alias": "olmoe",
+          "harmony_reasoning_effort": "medium",
+          "model_id": "allenai/OLMoE-1B-7B-0924-Instruct",
+          "require_native_mxfp4": false,
+          "revision": "7f1c97f440f06ce36705e4f2b843edb5925f4498",
+          "tokenizer_revision": "7f1c97f440f06ce36705e4f2b843edb5925f4498"
+        },
+        "reporting_run_directory": "archive://runtime/campaign_20260908_D/runs/olmoe/full_v1",
+        "reporting_contract_id": "59baae0869504eeacb848d01832aaadc381132095e1747a68a5c3f2d67582487",
+        "reporting_N": 290,
+        "reporting_K": 235,
+        "reporting_selected_pairs": 290,
+        "reporting_ineligible_pairs": 0,
+        "reporting_unique_fixed_donor_pairs": 204,
+        "reporting_execution_run_id": "39286ded-fb0c-493f-95bf-7424f1052bb1",
+        "reporting_runtime_model_class": "OlmoeForCausalLM",
+        "reporting_target_site_count": 16
+      },
+      "stored_D_estimates": {
+        "primary_mean_logprob": {
+          "D_clean": {
+            "bootstrap_standard_error": 0.02668204826821999,
+            "ci_high": 0.04352227072808525,
+            "ci_low": -0.060855600028102315,
+            "mean": -0.008776800815436202
+          },
+          "D_common": {
+            "bootstrap_standard_error": 0.0278830507336512,
+            "ci_high": 0.07125330800187868,
+            "ci_low": -0.03758962613894646,
+            "mean": 0.016356184025078987
+          },
+          "D_error": {
+            "bootstrap_standard_error": 0.043533331712769366,
+            "ci_high": 0.12697449342127826,
+            "ci_low": -0.04351965374418939,
+            "mean": 0.04148916886559415
+          }
+        },
+        "sensitivity_total_logprob": {
+          "D_clean": {
+            "bootstrap_standard_error": 0.07743199398824761,
+            "ci_high": 0.1265426516136083,
+            "ci_low": -0.17651803287903392,
+            "mean": -0.025437387775485244
+          },
+          "D_common": {
+            "bootstrap_standard_error": 0.07714935346003579,
+            "ci_high": 0.19109691548258512,
+            "ci_low": -0.10922422311044619,
+            "mean": 0.039437958058913175
+          },
+          "D_error": {
+            "bootstrap_standard_error": 0.11780446921568438,
+            "ci_high": 0.33612244722409823,
+            "ci_low": -0.12550836019616005,
+            "mean": 0.10431330389331159
+          }
+        }
+      },
+      "row_checks": {
+        "nonfinite_values": 0,
+        "max_abs_total_over_tokens_minus_mean": 0.0,
+        "max_abs_margin_mean_recompute_delta": 0.0,
+        "max_abs_margin_total_recompute_delta": 0.0,
+        "max_abs_alias_mean_minus_margin_mean": 0.0,
+        "max_abs_alias_total_minus_margin_total": 0.0
+      },
+      "csv_path": "archive://analysis-worktree/docs/results/verification_metrics_cpu_20260917/extracted/wide_d/olmoe.csv.gz",
+      "csv_bytes": 227431,
+      "csv_sha256": "5d1234c4b8c025ec1b59017863941b1fc235ce43c39616e224e3d8cbc80a6212",
+      "extraction_started_utc": "2026-09-17T22:05:55.658716+00:00",
+      "extraction_finished_utc": "2026-09-17T22:05:57.568217+00:00"
+    },
+    {
+      "model": "gpt_oss_20b",
+      "tar_path": "archive://campaign_20260908_D/final_v1/model_archives/gpt_oss_20b_v1.tar.gz",
+      "tar_sha256_recorded": "7abdb94689b5bf3b18236933c7bc3eaa55201e3f79528c07e2562490910866bb",
+      "tar_bytes_recorded": 152376015,
+      "tar_bytes_on_disk": 152376015,
+      "recorded_not_rehashed": true,
+      "triplet_status": "PASS",
+      "manifest_path": "archive://campaign_20260908_D/final_v1/model_archives/gpt_oss_20b_v1.manifest.json",
+      "manifest_sha256_computed": "338f67b6d1dfddb831dc0ada0f711716153c99b3e841cbf70c494271d9433477",
+      "manifest_sha256_recorded": "338f67b6d1dfddb831dc0ada0f711716153c99b3e841cbf70c494271d9433477",
+      "manifest_sha256_matches_recorded": true,
+      "reporting_path": "archive://campaign_20260908_D/final_v1/reporting/gpt_oss_20b_full_v1.json",
+      "reporting_sha256_computed": "65d86c9c1fe33ac943ec3475e4d4d62021f21771a56414a4cd159da9334a3f09",
+      "manifest_pair_members": 290,
+      "reporting_pair_members": 290,
+      "members_read": 290,
+      "members_verified": 290,
+      "mismatches": [],
+      "units_parsed": 290,
+      "rows": 2900,
+      "counts_by_receiver_treatment_donor": {
+        "clean|donor_role|clean": 290,
+        "clean|donor_role|corrupt": 290,
+        "clean|self_patch|clean": 290,
+        "clean|unpatched|NA": 290,
+        "clean|unpatched_rerun|NA": 290,
+        "corrupt|donor_role|clean": 290,
+        "corrupt|donor_role|corrupt": 290,
+        "corrupt|self_patch|corrupt": 290,
+        "corrupt|unpatched|NA": 290,
+        "corrupt|unpatched_rerun|NA": 290
+      },
+      "n_pairs": 290,
+      "n_components": 235,
+      "unique_donor_pairs": 204,
+      "eligible_pairs": 290,
+      "ineligible_pair_ids": [],
+      "technical_failed_pair_ids": [],
+      "run_ids": [
+        "2fa9ddf3-5bec-45fe-8366-1c406bc85a61"
+      ],
+      "contract_ids": [
+        "0edb10d533baa641e0aaa0a47999500ee78cceb9cf8af2c4cfc99a1499aec4d6"
+      ],
+      "execution_versions": [
+        "v1"
+      ],
+      "arms": [
+        "all_router"
+      ],
+      "windows": [
+        "full_step"
+      ],
+      "alphas": [
+        "1.0"
+      ],
+      "protocols": [
+        "window_donor_role_v1_20260908"
+      ],
+      "panels": [
+        "window_d"
+      ],
+      "target_site_counts": [
+        24
+      ],
+      "checkpoint_identity": {
+        "from_reporting_checkpoint": {
+          "alias": "gpt_oss_20b",
+          "harmony_reasoning_effort": "medium",
+          "model_id": "openai/gpt-oss-20b",
+          "require_native_mxfp4": true,
+          "revision": "6cee5e81ee83917806bbde320786a8fb61efebee",
+          "tokenizer_revision": "6cee5e81ee83917806bbde320786a8fb61efebee"
+        },
+        "reporting_run_directory": "archive://runtime/campaign_20260908_D/runs/gpt_oss_20b/full_v1",
+        "reporting_contract_id": "0edb10d533baa641e0aaa0a47999500ee78cceb9cf8af2c4cfc99a1499aec4d6",
+        "reporting_N": 290,
+        "reporting_K": 235,
+        "reporting_selected_pairs": 290,
+        "reporting_ineligible_pairs": 0,
+        "reporting_unique_fixed_donor_pairs": 204,
+        "reporting_execution_run_id": "2fa9ddf3-5bec-45fe-8366-1c406bc85a61",
+        "reporting_runtime_model_class": "GptOssForCausalLM",
+        "reporting_target_site_count": 24
+      },
+      "stored_D_estimates": {
+        "primary_mean_logprob": {
+          "D_clean": {
+            "bootstrap_standard_error": 0.0337996074806912,
+            "ci_high": 0.18026872112434492,
+            "ci_low": 0.04799306600986939,
+            "mean": 0.11366537340418922
+          },
+          "D_common": {
+            "bootstrap_standard_error": 0.026551629045384852,
+            "ci_high": 0.12255290367253614,
+            "ci_low": 0.018114339268054003,
+            "mean": 0.0699445540692935
+          },
+          "D_error": {
+            "bootstrap_standard_error": 0.030727745323883157,
+            "ci_high": 0.08710306313964512,
+            "ci_low": -0.03346695175464262,
+            "mean": 0.026223734734397913
+          }
+        },
+        "sensitivity_total_logprob": {
+          "D_clean": {
+            "bootstrap_standard_error": 0.08128446917203928,
+            "ci_high": 0.41931662815285636,
+            "ci_low": 0.10173638083092255,
+            "mean": 0.25876296632762613
+          },
+          "D_common": {
+            "bootstrap_standard_error": 0.06117519658143392,
+            "ci_high": 0.2867595190485603,
+            "ci_low": 0.0462876650062587,
+            "mean": 0.16533142411639787
+          },
+          "D_error": {
+            "bootstrap_standard_error": 0.06811409175425506,
+            "ci_high": 0.20738449225476435,
+            "ci_low": -0.059969328965068604,
+            "mean": 0.07189988190516958
+          }
+        }
+      },
+      "row_checks": {
+        "nonfinite_values": 0,
+        "max_abs_total_over_tokens_minus_mean": 0.0,
+        "max_abs_margin_mean_recompute_delta": 0.0,
+        "max_abs_margin_total_recompute_delta": 0.0,
+        "max_abs_alias_mean_minus_margin_mean": 0.0,
+        "max_abs_alias_total_minus_margin_total": 0.0
+      },
+      "csv_path": "archive://analysis-worktree/docs/results/verification_metrics_cpu_20260917/extracted/wide_d/gpt_oss_20b.csv.gz",
+      "csv_bytes": 228150,
+      "csv_sha256": "d7843ec07a71266dc83e0d9104b002e657bd98b99fa1f2281d831735e4908375",
+      "extraction_started_utc": "2026-09-17T22:05:55.661912+00:00",
+      "extraction_finished_utc": "2026-09-17T22:05:58.303352+00:00"
+    },
+    {
+      "model": "qwen3_moe",
+      "tar_path": "archive://campaign_20260908_D/final_v1/model_archives/qwen3_moe_v1.tar.gz",
+      "tar_sha256_recorded": "e2fe82bc05cffa8dc48f7ba995a4580e869c03430c6e68f07226d5cca84cb399",
+      "tar_bytes_recorded": 531779957,
+      "tar_bytes_on_disk": 531779957,
+      "recorded_not_rehashed": true,
+      "triplet_status": "PASS",
+      "manifest_path": "archive://campaign_20260908_D/final_v1/model_archives/qwen3_moe_v1.manifest.json",
+      "manifest_sha256_computed": "4f1ce955f7e83974a9d1b57f1eefbd93c951e79e33a86feb7490c6e6f72b57d0",
+      "manifest_sha256_recorded": "4f1ce955f7e83974a9d1b57f1eefbd93c951e79e33a86feb7490c6e6f72b57d0",
+      "manifest_sha256_matches_recorded": true,
+      "reporting_path": "archive://campaign_20260908_D/final_v1/reporting/qwen3_moe_full_v1.json",
+      "reporting_sha256_computed": "85d539c88fa59b892ac3225860acc45a09fb6ea3a55cc2997a32eb01317c6e76",
+      "manifest_pair_members": 290,
+      "reporting_pair_members": 290,
+      "members_read": 290,
+      "members_verified": 290,
+      "mismatches": [],
+      "units_parsed": 290,
+      "rows": 2900,
+      "counts_by_receiver_treatment_donor": {
+        "clean|donor_role|clean": 290,
+        "clean|donor_role|corrupt": 290,
+        "clean|self_patch|clean": 290,
+        "clean|unpatched|NA": 290,
+        "clean|unpatched_rerun|NA": 290,
+        "corrupt|donor_role|clean": 290,
+        "corrupt|donor_role|corrupt": 290,
+        "corrupt|self_patch|corrupt": 290,
+        "corrupt|unpatched|NA": 290,
+        "corrupt|unpatched_rerun|NA": 290
+      },
+      "n_pairs": 290,
+      "n_components": 235,
+      "unique_donor_pairs": 204,
+      "eligible_pairs": 290,
+      "ineligible_pair_ids": [],
+      "technical_failed_pair_ids": [],
+      "run_ids": [
+        "b2a12be5-47a6-43f9-aa15-3fc970719df6"
+      ],
+      "contract_ids": [
+        "c5ded3d8c2bf7aa9769d023d09590cdcb6b1cffec1bee9b26b2a08f85bfaa3a8"
+      ],
+      "execution_versions": [
+        "v1"
+      ],
+      "arms": [
+        "all_router"
+      ],
+      "windows": [
+        "full_step"
+      ],
+      "alphas": [
+        "1.0"
+      ],
+      "protocols": [
+        "window_donor_role_v1_20260908"
+      ],
+      "panels": [
+        "window_d"
+      ],
+      "target_site_counts": [
+        48
+      ],
+      "checkpoint_identity": {
+        "from_reporting_checkpoint": {
+          "alias": "qwen3_moe",
+          "harmony_reasoning_effort": "medium",
+          "model_id": "Qwen/Qwen3-30B-A3B",
+          "require_native_mxfp4": false,
+          "revision": "ad44e777bcd18fa416d9da3bd8f70d33ebb85d39",
+          "tokenizer_revision": "ad44e777bcd18fa416d9da3bd8f70d33ebb85d39"
+        },
+        "reporting_run_directory": "archive://runtime/campaign_20260908_D/runs/qwen3_moe/full_v1",
+        "reporting_contract_id": "c5ded3d8c2bf7aa9769d023d09590cdcb6b1cffec1bee9b26b2a08f85bfaa3a8",
+        "reporting_N": 290,
+        "reporting_K": 235,
+        "reporting_selected_pairs": 290,
+        "reporting_ineligible_pairs": 0,
+        "reporting_unique_fixed_donor_pairs": 204,
+        "reporting_execution_run_id": "b2a12be5-47a6-43f9-aa15-3fc970719df6",
+        "reporting_runtime_model_class": "Qwen3MoeForCausalLM",
+        "reporting_target_site_count": 48
+      },
+      "stored_D_estimates": {
+        "primary_mean_logprob": {
+          "D_clean": {
+            "bootstrap_standard_error": 0.0584544418282523,
+            "ci_high": 0.019216057367165265,
+            "ci_low": -0.20953318070669957,
+            "mean": -0.0954463262054635
+          },
+          "D_common": {
+            "bootstrap_standard_error": 0.05206748425960691,
+            "ci_high": 0.01659297440935827,
+            "ci_low": -0.18715362098863877,
+            "mean": -0.08464482522593052
+          },
+          "D_error": {
+            "bootstrap_standard_error": 0.06850488960013174,
+            "ci_high": 0.058885043990078635,
+            "ci_low": -0.21019708239595486,
+            "mean": -0.07384332424639754
+          }
+        },
+        "sensitivity_total_logprob": {
+          "D_clean": {
+            "bootstrap_standard_error": 0.16297411172597873,
+            "ci_high": 0.05536333023341709,
+            "ci_low": -0.5815216546841085,
+            "mean": -0.2637930464533271
+          },
+          "D_common": {
+            "bootstrap_standard_error": 0.14428614667475634,
+            "ci_high": 0.04910714287038089,
+            "ci_low": -0.5153966246019825,
+            "mean": -0.23057426331361833
+          },
+          "D_error": {
+            "bootstrap_standard_error": 0.18744833546622292,
+            "ci_high": 0.16436013507265312,
+            "ci_low": -0.5702490620667628,
+            "mean": -0.1973554801739097
+          }
+        }
+      },
+      "row_checks": {
+        "nonfinite_values": 0,
+        "max_abs_total_over_tokens_minus_mean": 0.0,
+        "max_abs_margin_mean_recompute_delta": 0.0,
+        "max_abs_margin_total_recompute_delta": 0.0,
+        "max_abs_alias_mean_minus_margin_mean": 0.0,
+        "max_abs_alias_total_minus_margin_total": 0.0
+      },
+      "csv_path": "archive://analysis-worktree/docs/results/verification_metrics_cpu_20260917/extracted/wide_d/qwen3_moe.csv.gz",
+      "csv_bytes": 204664,
+      "csv_sha256": "23ca8fe73bd025b783d120895e9e21b4726ea9b2fde984512b083793cdfd7098",
+      "extraction_started_utc": "2026-09-17T22:05:55.674579+00:00",
+      "extraction_finished_utc": "2026-09-17T22:06:01.447539+00:00"
+    },
+    {
+      "model": "gemma4_moe",
+      "tar_path": "archive://campaign_20260908_D/final_v1/model_archives/gemma4_moe_v1.tar.gz",
+      "tar_sha256_recorded": "1572fcc9b510d68038432b7afbfc074b5ca84888e72fd00b7ad2dc8327756194",
+      "tar_bytes_recorded": 415203223,
+      "tar_bytes_on_disk": 415203223,
+      "recorded_not_rehashed": true,
+      "triplet_status": "PASS",
+      "manifest_path": "archive://campaign_20260908_D/final_v1/model_archives/gemma4_moe_v1.manifest.json",
+      "manifest_sha256_computed": "5440ebb5116573f60d444632cd2d20160675604d8a5a36e13d2c3f714ecc484a",
+      "manifest_sha256_recorded": "5440ebb5116573f60d444632cd2d20160675604d8a5a36e13d2c3f714ecc484a",
+      "manifest_sha256_matches_recorded": true,
+      "reporting_path": "archive://campaign_20260908_D/final_v1/reporting/gemma4_moe_full_v1.json",
+      "reporting_sha256_computed": "3a1b77bb099b61dd87e09755a4bfd0ce882be929fe970ec919801d4eb9587100",
+      "manifest_pair_members": 290,
+      "reporting_pair_members": 290,
+      "members_read": 290,
+      "members_verified": 290,
+      "mismatches": [],
+      "units_parsed": 290,
+      "rows": 2900,
+      "counts_by_receiver_treatment_donor": {
+        "clean|donor_role|clean": 290,
+        "clean|donor_role|corrupt": 290,
+        "clean|self_patch|clean": 290,
+        "clean|unpatched|NA": 290,
+        "clean|unpatched_rerun|NA": 290,
+        "corrupt|donor_role|clean": 290,
+        "corrupt|donor_role|corrupt": 290,
+        "corrupt|self_patch|corrupt": 290,
+        "corrupt|unpatched|NA": 290,
+        "corrupt|unpatched_rerun|NA": 290
+      },
+      "n_pairs": 290,
+      "n_components": 235,
+      "unique_donor_pairs": 204,
+      "eligible_pairs": 290,
+      "ineligible_pair_ids": [],
+      "technical_failed_pair_ids": [],
+      "run_ids": [
+        "29687b42-ec5c-4c96-9129-02e06d0136a2",
+        "4e46dce0-861b-44c9-8ace-f0f1d925818b"
+      ],
+      "contract_ids": [
+        "00b5f676e608ae1b1d776adcbd386018048fdd4485e1c598b060b8a619d2c425"
+      ],
+      "execution_versions": [
+        "v1"
+      ],
+      "arms": [
+        "all_router"
+      ],
+      "windows": [
+        "full_step"
+      ],
+      "alphas": [
+        "1.0"
+      ],
+      "protocols": [
+        "window_donor_role_v1_20260908"
+      ],
+      "panels": [
+        "window_d"
+      ],
+      "target_site_counts": [
+        30
+      ],
+      "checkpoint_identity": {
+        "from_reporting_checkpoint": {
+          "alias": "gemma4_moe",
+          "harmony_reasoning_effort": "medium",
+          "model_id": "google/gemma-4-26B-A4B-it",
+          "require_native_mxfp4": false,
+          "revision": "4d7ae4984b7db7de8f8457170b3f1a419ee76d52",
+          "tokenizer_revision": "4d7ae4984b7db7de8f8457170b3f1a419ee76d52"
+        },
+        "reporting_run_directory": "archive://runtime/campaign_20260908_D/runs/gemma4_moe/full_v1",
+        "reporting_contract_id": "00b5f676e608ae1b1d776adcbd386018048fdd4485e1c598b060b8a619d2c425",
+        "reporting_N": 290,
+        "reporting_K": 235,
+        "reporting_selected_pairs": 290,
+        "reporting_ineligible_pairs": 0,
+        "reporting_unique_fixed_donor_pairs": 204,
+        "reporting_execution_run_id": "4e46dce0-861b-44c9-8ace-f0f1d925818b",
+        "reporting_runtime_model_class": "Gemma4ForConditionalGeneration",
+        "reporting_target_site_count": 30
+      },
+      "stored_D_estimates": {
+        "primary_mean_logprob": {
+          "D_clean": {
+            "bootstrap_standard_error": 0.1588303216426864,
+            "ci_high": 0.7002209738937234,
+            "ci_low": 0.07616419521541813,
+            "mean": 0.3874600970823628
+          },
+          "D_common": {
+            "bootstrap_standard_error": 0.11925769641357296,
+            "ci_high": 0.45448900091924355,
+            "ci_low": -0.011420540856922352,
+            "mean": 0.22070615518512918
+          },
+          "D_error": {
+            "bootstrap_standard_error": 0.13962778355427435,
+            "ci_high": 0.3335210813812489,
+            "ci_low": -0.21588242926184523,
+            "mean": 0.053952213287895345
+          }
+        },
+        "sensitivity_total_logprob": {
+          "D_clean": {
+            "bootstrap_standard_error": 0.3789175948943739,
+            "ci_high": 1.7053706945484874,
+            "ci_low": 0.2172231457572073,
+            "mean": 0.9581647210430548
+          },
+          "D_common": {
+            "bootstrap_standard_error": 0.282214727713811,
+            "ci_high": 1.1019636036723768,
+            "ci_low": 0.0034157206783907495,
+            "mean": 0.5488436433855924
+          },
+          "D_error": {
+            "bootstrap_standard_error": 0.32763615390548717,
+            "ci_high": 0.7932659738943783,
+            "ci_low": -0.4944489164712755,
+            "mean": 0.13952256572813043
+          }
+        }
+      },
+      "row_checks": {
+        "nonfinite_values": 0,
+        "max_abs_total_over_tokens_minus_mean": 0.0,
+        "max_abs_margin_mean_recompute_delta": 0.0,
+        "max_abs_margin_total_recompute_delta": 0.0,
+        "max_abs_alias_mean_minus_margin_mean": 0.0,
+        "max_abs_alias_total_minus_margin_total": 0.0
+      },
+      "csv_path": "archive://analysis-worktree/docs/results/verification_metrics_cpu_20260917/extracted/wide_d/gemma4_moe.csv.gz",
+      "csv_bytes": 219613,
+      "csv_sha256": "90e7f84decdab4eba543381365476c8df63849aa90589e713741eb3314c79dee",
+      "extraction_started_utc": "2026-09-17T22:05:55.684769+00:00",
+      "extraction_finished_utc": "2026-09-17T22:06:00.050272+00:00"
+    },
+    {
+      "model": "glm4_moe_lite",
+      "tar_path": "archive://campaign_20260908_D/final_v1/model_archives/glm4_moe_lite_v1.tar.gz",
+      "tar_sha256_recorded": "8933bfbe6a3c318e270651fca848f26f3b33bd8fd93b7c7d3e86c54fc7dc2540",
+      "tar_bytes_recorded": 552900482,
+      "tar_bytes_on_disk": 552900482,
+      "recorded_not_rehashed": true,
+      "triplet_status": "PASS",
+      "manifest_path": "archive://campaign_20260908_D/final_v1/model_archives/glm4_moe_lite_v1.manifest.json",
+      "manifest_sha256_computed": "dc1a08924f5c5924ff5e218029b9c0f4e510dccfcb8782a0d7cd82773b706491",
+      "manifest_sha256_recorded": "dc1a08924f5c5924ff5e218029b9c0f4e510dccfcb8782a0d7cd82773b706491",
+      "manifest_sha256_matches_recorded": true,
+      "reporting_path": "archive://campaign_20260908_D/final_v1/reporting/glm4_moe_lite_full_v1.json",
+      "reporting_sha256_computed": "70824af5d97f22947c491deaca7ab0ce2808bb189a482f9c7cf1234a6de37773",
+      "manifest_pair_members": 290,
+      "reporting_pair_members": 290,
+      "members_read": 290,
+      "members_verified": 290,
+      "mismatches": [],
+      "units_parsed": 290,
+      "rows": 2900,
+      "counts_by_receiver_treatment_donor": {
+        "clean|donor_role|clean": 290,
+        "clean|donor_role|corrupt": 290,
+        "clean|self_patch|clean": 290,
+        "clean|unpatched|NA": 290,
+        "clean|unpatched_rerun|NA": 290,
+        "corrupt|donor_role|clean": 290,
+        "corrupt|donor_role|corrupt": 290,
+        "corrupt|self_patch|corrupt": 290,
+        "corrupt|unpatched|NA": 290,
+        "corrupt|unpatched_rerun|NA": 290
+      },
+      "n_pairs": 290,
+      "n_components": 235,
+      "unique_donor_pairs": 204,
+      "eligible_pairs": 290,
+      "ineligible_pair_ids": [],
+      "technical_failed_pair_ids": [],
+      "run_ids": [
+        "88d91669-74c7-4e4a-88bd-4df93fd89626"
+      ],
+      "contract_ids": [
+        "b7d148fa804549de86117b059464d9ed340d7b9755e716a819132dea875fce7c"
+      ],
+      "execution_versions": [
+        "v1"
+      ],
+      "arms": [
+        "all_router"
+      ],
+      "windows": [
+        "full_step"
+      ],
+      "alphas": [
+        "1.0"
+      ],
+      "protocols": [
+        "window_donor_role_v1_20260908"
+      ],
+      "panels": [
+        "window_d"
+      ],
+      "target_site_counts": [
+        46
+      ],
+      "checkpoint_identity": {
+        "from_reporting_checkpoint": {
+          "alias": "glm4_moe_lite",
+          "harmony_reasoning_effort": "medium",
+          "model_id": "zai-org/GLM-4.7-Flash",
+          "require_native_mxfp4": false,
+          "revision": "7dd20894a642a0aa287e9827cb1a1f7f91386b67",
+          "tokenizer_revision": "7dd20894a642a0aa287e9827cb1a1f7f91386b67"
+        },
+        "reporting_run_directory": "archive://runtime/campaign_20260908_D/runs/glm4_moe_lite/full_v1",
+        "reporting_contract_id": "b7d148fa804549de86117b059464d9ed340d7b9755e716a819132dea875fce7c",
+        "reporting_N": 290,
+        "reporting_K": 235,
+        "reporting_selected_pairs": 290,
+        "reporting_ineligible_pairs": 0,
+        "reporting_unique_fixed_donor_pairs": 204,
+        "reporting_execution_run_id": "88d91669-74c7-4e4a-88bd-4df93fd89626",
+        "reporting_runtime_model_class": "Glm4MoeLiteForCausalLM",
+        "reporting_target_site_count": 46
+      },
+      "stored_D_estimates": {
+        "primary_mean_logprob": {
+          "D_clean": {
+            "bootstrap_standard_error": 0.016303854067078627,
+            "ci_high": 0.036949195927083844,
+            "ci_low": -0.027318189204980865,
+            "mean": 0.004067604587916507
+          },
+          "D_common": {
+            "bootstrap_standard_error": 0.012036727514609324,
+            "ci_high": 0.011016789375091079,
+            "ci_low": -0.03626691136429624,
+            "mean": -0.01254824936234702
+          },
+          "D_error": {
+            "bootstrap_standard_error": 0.014302637197544606,
+            "ci_high": -0.0011054407199225964,
+            "ci_low": -0.05715404062333626,
+            "mean": -0.029164103312610545
+          }
+        },
+        "sensitivity_total_logprob": {
+          "D_clean": {
+            "bootstrap_standard_error": 0.04687925896092163,
+            "ci_high": 0.10904193408727829,
+            "ci_low": -0.07531870779623356,
+            "mean": 0.014733730105618978
+          },
+          "D_common": {
+            "bootstrap_standard_error": 0.03413361895366153,
+            "ci_high": 0.03560941308631355,
+            "ci_low": -0.09862375348582994,
+            "mean": -0.031333688847271016
+          },
+          "D_error": {
+            "bootstrap_standard_error": 0.03982533060983212,
+            "ci_high": 0.0009220218383306831,
+            "ci_low": -0.1551922945242936,
+            "mean": -0.07740110780016102
+          }
+        }
+      },
+      "row_checks": {
+        "nonfinite_values": 0,
+        "max_abs_total_over_tokens_minus_mean": 0.0,
+        "max_abs_margin_mean_recompute_delta": 0.0,
+        "max_abs_margin_total_recompute_delta": 0.0,
+        "max_abs_alias_mean_minus_margin_mean": 0.0,
+        "max_abs_alias_total_minus_margin_total": 0.0
+      },
+      "csv_path": "archive://analysis-worktree/docs/results/verification_metrics_cpu_20260917/extracted/wide_d/glm4_moe_lite.csv.gz",
+      "csv_bytes": 228176,
+      "csv_sha256": "9040a68b1658f8fa3354b730619e3826f1bb54465c41524d0111e101cb811459",
+      "extraction_started_utc": "2026-09-17T22:05:55.700829+00:00",
+      "extraction_finished_utc": "2026-09-17T22:06:00.830460+00:00"
+    },
+    {
+      "model": "nemotron3_nano",
+      "tar_path": "archive://campaign_20260908_D/final_v1/model_archives/nemotron3_nano_v1.tar.gz",
+      "tar_sha256_recorded": "996f4fb8a4ab0776b61b0f78d827ec62af8e38b43cf4f8ae76988d9cbf84511b",
+      "tar_bytes_recorded": 484283324,
+      "tar_bytes_on_disk": 484283324,
+      "recorded_not_rehashed": true,
+      "triplet_status": "PASS",
+      "manifest_path": "archive://campaign_20260908_D/final_v1/model_archives/nemotron3_nano_v1.manifest.json",
+      "manifest_sha256_computed": "debc30f4ca236d0f2ffd2057c737f103b0e8ad6fe8fce46540611da3ae5caa0e",
+      "manifest_sha256_recorded": "debc30f4ca236d0f2ffd2057c737f103b0e8ad6fe8fce46540611da3ae5caa0e",
+      "manifest_sha256_matches_recorded": true,
+      "reporting_path": "archive://campaign_20260908_D/final_v1/reporting/nemotron3_nano_full_v1.json",
+      "reporting_sha256_computed": "683f31ff2f0406713b8aee11c736329654e5c5c3f5160c035b2efe179e283e39",
+      "manifest_pair_members": 290,
+      "reporting_pair_members": 290,
+      "members_read": 290,
+      "members_verified": 290,
+      "mismatches": [],
+      "units_parsed": 290,
+      "rows": 2900,
+      "counts_by_receiver_treatment_donor": {
+        "clean|donor_role|clean": 290,
+        "clean|donor_role|corrupt": 290,
+        "clean|self_patch|clean": 290,
+        "clean|unpatched|NA": 290,
+        "clean|unpatched_rerun|NA": 290,
+        "corrupt|donor_role|clean": 290,
+        "corrupt|donor_role|corrupt": 290,
+        "corrupt|self_patch|corrupt": 290,
+        "corrupt|unpatched|NA": 290,
+        "corrupt|unpatched_rerun|NA": 290
+      },
+      "n_pairs": 290,
+      "n_components": 235,
+      "unique_donor_pairs": 204,
+      "eligible_pairs": 290,
+      "ineligible_pair_ids": [],
+      "technical_failed_pair_ids": [],
+      "run_ids": [
+        "a7f253a4-bd79-4f59-adce-369b7c7fbf75"
+      ],
+      "contract_ids": [
+        "e3a272f74e7d31af7eebbd930be17acc0515d4a2f1d8d6770198396bfbb71700"
+      ],
+      "execution_versions": [
+        "v1"
+      ],
+      "arms": [
+        "all_router"
+      ],
+      "windows": [
+        "full_step"
+      ],
+      "alphas": [
+        "1.0"
+      ],
+      "protocols": [
+        "window_donor_role_v1_20260908"
+      ],
+      "panels": [
+        "window_d"
+      ],
+      "target_site_counts": [
+        23
+      ],
+      "checkpoint_identity": {
+        "from_reporting_checkpoint": {
+          "alias": "nemotron3_nano",
+          "harmony_reasoning_effort": "medium",
+          "model_id": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+          "require_native_mxfp4": false,
+          "revision": "2d59de1cbd51c0adf384eb906b766d1aee0e0517",
+          "tokenizer_revision": "2d59de1cbd51c0adf384eb906b766d1aee0e0517"
+        },
+        "reporting_run_directory": "archive://runtime/campaign_20260908_D/runs/nemotron3_nano/full_v1",
+        "reporting_contract_id": "e3a272f74e7d31af7eebbd930be17acc0515d4a2f1d8d6770198396bfbb71700",
+        "reporting_N": 290,
+        "reporting_K": 235,
+        "reporting_selected_pairs": 290,
+        "reporting_ineligible_pairs": 0,
+        "reporting_unique_fixed_donor_pairs": 204,
+        "reporting_execution_run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+        "reporting_runtime_model_class": "NemotronHForCausalLM",
+        "reporting_target_site_count": 23
+      },
+      "stored_D_estimates": {
+        "primary_mean_logprob": {
+          "D_clean": {
+            "bootstrap_standard_error": 0.007140878018911454,
+            "ci_high": 0.017105801217730903,
+            "ci_low": -0.010924353672843945,
+            "mean": 0.003154242823392839
+          },
+          "D_common": {
+            "bootstrap_standard_error": 0.005168033816581301,
+            "ci_high": 0.0068773577585955,
+            "ci_low": -0.01336383936178815,
+            "mean": -0.0031436611365676737
+          },
+          "D_error": {
+            "bootstrap_standard_error": 0.006299042806427588,
+            "ci_high": 0.002800922372454425,
+            "ci_low": -0.021851343032103076,
+            "mean": -0.009441565096528198
+          }
+        },
+        "sensitivity_total_logprob": {
+          "D_clean": {
+            "bootstrap_standard_error": 0.02357409768356792,
+            "ci_high": 0.054912280843750834,
+            "ci_low": -0.037466177427317914,
+            "mean": 0.009042833758325413
+          },
+          "D_common": {
+            "bootstrap_standard_error": 0.01680861912451252,
+            "ci_high": 0.02173679696972579,
+            "ci_low": -0.04419246004830876,
+            "mean": -0.010819631773207722
+          },
+          "D_error": {
+            "bootstrap_standard_error": 0.020090702761750505,
+            "ci_high": 0.008183506577238446,
+            "ci_low": -0.07021701197276084,
+            "mean": -0.030682097304740856
+          }
+        }
+      },
+      "row_checks": {
+        "nonfinite_values": 0,
+        "max_abs_total_over_tokens_minus_mean": 0.0,
+        "max_abs_margin_mean_recompute_delta": 0.0,
+        "max_abs_margin_total_recompute_delta": 0.0,
+        "max_abs_alias_mean_minus_margin_mean": 0.0,
+        "max_abs_alias_total_minus_margin_total": 0.0
+      },
+      "csv_path": "archive://analysis-worktree/docs/results/verification_metrics_cpu_20260917/extracted/wide_d/nemotron3_nano.csv.gz",
+      "csv_bytes": 228008,
+      "csv_sha256": "27e7a670db52eacbc3907a3596936b9f16d0411825e74be785d0f9ea8e4cd207",
+      "extraction_started_utc": "2026-09-17T22:05:55.720082+00:00",
+      "extraction_finished_utc": "2026-09-17T22:05:59.299263+00:00"
+    },
+    {
+      "model": "nemotron35_lightning",
+      "tar_path": "archive://campaign_20260908_D/final_v1/model_archives/nemotron35_lightning_v1.tar.gz",
+      "tar_sha256_recorded": "82d1ed9e864f996c2bffef1e9eba81e77cc6412937430e0c7aeffc9795d6b630",
+      "tar_bytes_recorded": 486587090,
+      "tar_bytes_on_disk": 486587090,
+      "recorded_not_rehashed": true,
+      "triplet_status": "PASS",
+      "manifest_path": "archive://campaign_20260908_D/final_v1/model_archives/nemotron35_lightning_v1.manifest.json",
+      "manifest_sha256_computed": "3d8d8047e9c2f2c34317bbd4e2b3a9aff64c8f749bddebcaceec9b65c7b8b9ab",
+      "manifest_sha256_recorded": "3d8d8047e9c2f2c34317bbd4e2b3a9aff64c8f749bddebcaceec9b65c7b8b9ab",
+      "manifest_sha256_matches_recorded": true,
+      "reporting_path": "archive://campaign_20260908_D/final_v1/reporting/nemotron35_lightning_full_v1.json",
+      "reporting_sha256_computed": "f116c12d2fedacdb89ae52ceca8d48ece0af726dc62736e5ce81e637826c52ff",
+      "manifest_pair_members": 290,
+      "reporting_pair_members": 290,
+      "members_read": 290,
+      "members_verified": 290,
+      "mismatches": [],
+      "units_parsed": 290,
+      "rows": 2900,
+      "counts_by_receiver_treatment_donor": {
+        "clean|donor_role|clean": 290,
+        "clean|donor_role|corrupt": 290,
+        "clean|self_patch|clean": 290,
+        "clean|unpatched|NA": 290,
+        "clean|unpatched_rerun|NA": 290,
+        "corrupt|donor_role|clean": 290,
+        "corrupt|donor_role|corrupt": 290,
+        "corrupt|self_patch|corrupt": 290,
+        "corrupt|unpatched|NA": 290,
+        "corrupt|unpatched_rerun|NA": 290
+      },
+      "n_pairs": 290,
+      "n_components": 235,
+      "unique_donor_pairs": 204,
+      "eligible_pairs": 290,
+      "ineligible_pair_ids": [],
+      "technical_failed_pair_ids": [],
+      "run_ids": [
+        "7c4bffb6-356b-4805-bcc0-d8b44bc82144"
+      ],
+      "contract_ids": [
+        "6f0e2e17e335f773dc4ff6e9f5a777b9c5e292cd0fe69eab6783e3295ab5d4d9"
+      ],
+      "execution_versions": [
+        "v1"
+      ],
+      "arms": [
+        "all_router"
+      ],
+      "windows": [
+        "full_step"
+      ],
+      "alphas": [
+        "1.0"
+      ],
+      "protocols": [
+        "window_donor_role_v1_20260908"
+      ],
+      "panels": [
+        "window_d"
+      ],
+      "target_site_counts": [
+        23
+      ],
+      "checkpoint_identity": {
+        "from_reporting_checkpoint": {
+          "alias": "nemotron35_lightning",
+          "harmony_reasoning_effort": "medium",
+          "model_id": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+          "require_native_mxfp4": false,
+          "revision": "a9904d24bcc1d289a1950fa9d2b978c47cf903b9",
+          "tokenizer_revision": "a9904d24bcc1d289a1950fa9d2b978c47cf903b9"
+        },
+        "reporting_run_directory": "archive://runtime/campaign_20260908_D/runs/nemotron35_lightning/full_v1",
+        "reporting_contract_id": "6f0e2e17e335f773dc4ff6e9f5a777b9c5e292cd0fe69eab6783e3295ab5d4d9",
+        "reporting_N": 290,
+        "reporting_K": 235,
+        "reporting_selected_pairs": 290,
+        "reporting_ineligible_pairs": 0,
+        "reporting_unique_fixed_donor_pairs": 204,
+        "reporting_execution_run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+        "reporting_runtime_model_class": "NemotronHForCausalLM",
+        "reporting_target_site_count": 23
+      },
+      "stored_D_estimates": {
+        "primary_mean_logprob": {
+          "D_clean": {
+            "bootstrap_standard_error": 0.011081915951515373,
+            "ci_high": 0.04300214045134068,
+            "ci_low": -0.0004819306006960866,
+            "mean": 0.021302871790917957
+          },
+          "D_common": {
+            "bootstrap_standard_error": 0.009039573200581163,
+            "ci_high": 0.0304195078143003,
+            "ci_low": -0.004970687365812287,
+            "mean": 0.012792649879468205
+          },
+          "D_error": {
+            "bootstrap_standard_error": 0.012176029759768335,
+            "ci_high": 0.028039609316917572,
+            "ci_low": -0.019738932756744574,
+            "mean": 0.004282427968018439
+          }
+        },
+        "sensitivity_total_logprob": {
+          "D_clean": {
+            "bootstrap_standard_error": 0.03915063331612718,
+            "ci_high": 0.14850962858324682,
+            "ci_low": -0.0052471102839453465,
+            "mean": 0.07168507286797053
+          },
+          "D_common": {
+            "bootstrap_standard_error": 0.031342825472614466,
+            "ci_high": 0.09895428482945522,
+            "ci_low": -0.023871680388756034,
+            "mean": 0.03785291184944197
+          },
+          "D_error": {
+            "bootstrap_standard_error": 0.041046583688528426,
+            "ci_high": 0.08377890831729476,
+            "ci_low": -0.07749408106561964,
+            "mean": 0.004020750830913412
+          }
+        }
+      },
+      "row_checks": {
+        "nonfinite_values": 0,
+        "max_abs_total_over_tokens_minus_mean": 0.0,
+        "max_abs_margin_mean_recompute_delta": 0.0,
+        "max_abs_margin_total_recompute_delta": 0.0,
+        "max_abs_alias_mean_minus_margin_mean": 0.0,
+        "max_abs_alias_total_minus_margin_total": 0.0
+      },
+      "csv_path": "archive://analysis-worktree/docs/results/verification_metrics_cpu_20260917/extracted/wide_d/nemotron35_lightning.csv.gz",
+      "csv_bytes": 228741,
+      "csv_sha256": "63191d5eaa9fc3d3588e9c8fd494e088b664d0cb76fff8e969dda63d109ef91e",
+      "extraction_started_utc": "2026-09-17T22:05:55.731453+00:00",
+      "extraction_finished_utc": "2026-09-17T22:05:59.280285+00:00"
+    },
+    {
+      "model": "qwen36_moe",
+      "tar_path": "archive://campaign_20260908_D/final_v1/model_archives/qwen36_moe_v1.tar.gz",
+      "tar_sha256_recorded": "5e4e2d6b1e76751fef585a220090d44f51314c79e36abcb95418a409a2c62792",
+      "tar_bytes_recorded": 701802856,
+      "tar_bytes_on_disk": 701802856,
+      "recorded_not_rehashed": true,
+      "triplet_status": "PASS",
+      "manifest_path": "archive://campaign_20260908_D/final_v1/model_archives/qwen36_moe_v1.manifest.json",
+      "manifest_sha256_computed": "ad2d93a1173c2cb8822679e012df20593d81462502589189e5f51ef0bfc502e3",
+      "manifest_sha256_recorded": "ad2d93a1173c2cb8822679e012df20593d81462502589189e5f51ef0bfc502e3",
+      "manifest_sha256_matches_recorded": true,
+      "reporting_path": "archive://campaign_20260908_D/final_v1/reporting/qwen36_moe_full_v1.json",
+      "reporting_sha256_computed": "25a2a071b126457cd7fc1beb9779549b472d9f3978f2196410d91d5bf723f065",
+      "manifest_pair_members": 290,
+      "reporting_pair_members": 290,
+      "members_read": 290,
+      "members_verified": 290,
+      "mismatches": [],
+      "units_parsed": 290,
+      "rows": 2900,
+      "counts_by_receiver_treatment_donor": {
+        "clean|donor_role|clean": 290,
+        "clean|donor_role|corrupt": 290,
+        "clean|self_patch|clean": 290,
+        "clean|unpatched|NA": 290,
+        "clean|unpatched_rerun|NA": 290,
+        "corrupt|donor_role|clean": 290,
+        "corrupt|donor_role|corrupt": 290,
+        "corrupt|self_patch|corrupt": 290,
+        "corrupt|unpatched|NA": 290,
+        "corrupt|unpatched_rerun|NA": 290
+      },
+      "n_pairs": 290,
+      "n_components": 235,
+      "unique_donor_pairs": 204,
+      "eligible_pairs": 290,
+      "ineligible_pair_ids": [],
+      "technical_failed_pair_ids": [],
+      "run_ids": [
+        "facc1740-9b26-4f48-8256-404c6c6e7629"
+      ],
+      "contract_ids": [
+        "39b94e867838e83f3c4704bb7561d744852043d6a8886cad7dd4fde9c3e27436"
+      ],
+      "execution_versions": [
+        "v1"
+      ],
+      "arms": [
+        "all_router"
+      ],
+      "windows": [
+        "full_step"
+      ],
+      "alphas": [
+        "1.0"
+      ],
+      "protocols": [
+        "window_donor_role_v1_20260908"
+      ],
+      "panels": [
+        "window_d"
+      ],
+      "target_site_counts": [
+        40
+      ],
+      "checkpoint_identity": {
+        "from_reporting_checkpoint": {
+          "alias": "qwen36_moe",
+          "harmony_reasoning_effort": "medium",
+          "model_id": "Qwen/Qwen3.6-35B-A3B",
+          "require_native_mxfp4": false,
+          "revision": "995ad96eacd98c81ed38be0c5b274b04031597b0",
+          "tokenizer_revision": "995ad96eacd98c81ed38be0c5b274b04031597b0"
+        },
+        "reporting_run_directory": "archive://runtime/campaign_20260908_D/runs/qwen36_moe/full_v1",
+        "reporting_contract_id": "39b94e867838e83f3c4704bb7561d744852043d6a8886cad7dd4fde9c3e27436",
+        "reporting_N": 290,
+        "reporting_K": 235,
+        "reporting_selected_pairs": 290,
+        "reporting_ineligible_pairs": 0,
+        "reporting_unique_fixed_donor_pairs": 204,
+        "reporting_execution_run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+        "reporting_runtime_model_class": "Qwen3_5MoeForCausalLM",
+        "reporting_target_site_count": 40
+      },
+      "stored_D_estimates": {
+        "primary_mean_logprob": {
+          "D_clean": {
+            "bootstrap_standard_error": 0.020307870945381966,
+            "ci_high": 0.059522831383054906,
+            "ci_low": -0.019942920426918923,
+            "mean": 0.01976866827496251
+          },
+          "D_common": {
+            "bootstrap_standard_error": 0.01947060418493871,
+            "ci_high": 0.0485687077996615,
+            "ci_low": -0.02823029125024658,
+            "mean": 0.010505213766845874
+          },
+          "D_error": {
+            "bootstrap_standard_error": 0.032013611682854055,
+            "ci_high": 0.06442176015390064,
+            "ci_low": -0.06158949110172157,
+            "mean": 0.0012417592587292041
+          }
+        },
+        "sensitivity_total_logprob": {
+          "D_clean": {
+            "bootstrap_standard_error": 0.052412162415111783,
+            "ci_high": 0.15092354020957394,
+            "ci_low": -0.054064936487008705,
+            "mean": 0.047707490452790054
+          },
+          "D_common": {
+            "bootstrap_standard_error": 0.046357915142861514,
+            "ci_high": 0.1117736393372702,
+            "ci_low": -0.0710285878996793,
+            "mean": 0.02112381267762775
+          },
+          "D_error": {
+            "bootstrap_standard_error": 0.07381304620931971,
+            "ci_high": 0.14108976278219815,
+            "ci_low": -0.15020381252252332,
+            "mean": -0.005459865097534554
+          }
+        }
+      },
+      "row_checks": {
+        "nonfinite_values": 0,
+        "max_abs_total_over_tokens_minus_mean": 0.0,
+        "max_abs_margin_mean_recompute_delta": 0.0,
+        "max_abs_margin_total_recompute_delta": 0.0,
+        "max_abs_alias_mean_minus_margin_mean": 0.0,
+        "max_abs_alias_total_minus_margin_total": 0.0
+      },
+      "csv_path": "archive://analysis-worktree/docs/results/verification_metrics_cpu_20260917/extracted/wide_d/qwen36_moe.csv.gz",
+      "csv_bytes": 228839,
+      "csv_sha256": "ea23c5684d56dfcceeb2bed2f42499b74faa9dc6d6e4981abf07066f4a3a912e",
+      "extraction_started_utc": "2026-09-17T22:05:55.737374+00:00",
+      "extraction_finished_utc": "2026-09-17T22:06:01.787435+00:00"
+    },
+    {
+      "model": "gpt_oss_120b",
+      "tar_path": "archive://campaign_20260908_D/final_v1/model_archives/gpt_oss_120b_v1.tar.gz",
+      "tar_sha256_recorded": "198f8ffbed5c11d6e51f1d1cbf1920a6fe45206d88fa825395965818d8464a5e",
+      "tar_bytes_recorded": 463457537,
+      "tar_bytes_on_disk": 463457537,
+      "recorded_not_rehashed": true,
+      "triplet_status": "PASS",
+      "manifest_path": "archive://campaign_20260908_D/final_v1/model_archives/gpt_oss_120b_v1.manifest.json",
+      "manifest_sha256_computed": "5d976f6a2aeef79bba9938ac40428d7406c2172ebc34882fc3af064a442bc048",
+      "manifest_sha256_recorded": "5d976f6a2aeef79bba9938ac40428d7406c2172ebc34882fc3af064a442bc048",
+      "manifest_sha256_matches_recorded": true,
+      "reporting_path": "archive://campaign_20260908_D/final_v1/reporting/gpt_oss_120b_full_v1.json",
+      "reporting_sha256_computed": "147014d0a2b4554bb715aba7c0ef9b2ef731185de8c2b9d9d7007934f05e2ae0",
+      "manifest_pair_members": 290,
+      "reporting_pair_members": 290,
+      "members_read": 290,
+      "members_verified": 290,
+      "mismatches": [],
+      "units_parsed": 290,
+      "rows": 2900,
+      "counts_by_receiver_treatment_donor": {
+        "clean|donor_role|clean": 290,
+        "clean|donor_role|corrupt": 290,
+        "clean|self_patch|clean": 290,
+        "clean|unpatched|NA": 290,
+        "clean|unpatched_rerun|NA": 290,
+        "corrupt|donor_role|clean": 290,
+        "corrupt|donor_role|corrupt": 290,
+        "corrupt|self_patch|corrupt": 290,
+        "corrupt|unpatched|NA": 290,
+        "corrupt|unpatched_rerun|NA": 290
+      },
+      "n_pairs": 290,
+      "n_components": 235,
+      "unique_donor_pairs": 204,
+      "eligible_pairs": 290,
+      "ineligible_pair_ids": [],
+      "technical_failed_pair_ids": [],
+      "run_ids": [
+        "9381bf52-62ea-460d-a384-426efc6e272a"
+      ],
+      "contract_ids": [
+        "ed306573f09ce815b4728f8f73eb7f18ebec069b3ee40f2a952587ee4f73d0f8"
+      ],
+      "execution_versions": [
+        "v1"
+      ],
+      "arms": [
+        "all_router"
+      ],
+      "windows": [
+        "full_step"
+      ],
+      "alphas": [
+        "1.0"
+      ],
+      "protocols": [
+        "window_donor_role_v1_20260908"
+      ],
+      "panels": [
+        "window_d"
+      ],
+      "target_site_counts": [
+        36
+      ],
+      "checkpoint_identity": {
+        "from_reporting_checkpoint": {
+          "alias": "gpt_oss_120b",
+          "harmony_reasoning_effort": "medium",
+          "model_id": "openai/gpt-oss-120b",
+          "require_native_mxfp4": true,
+          "revision": "b5c939de8f754692c1647ca79fbf85e8c1e70f8a",
+          "tokenizer_revision": "b5c939de8f754692c1647ca79fbf85e8c1e70f8a"
+        },
+        "reporting_run_directory": "archive://runtime/campaign_20260908_D/runs/gpt_oss_120b/full_v1",
+        "reporting_contract_id": "ed306573f09ce815b4728f8f73eb7f18ebec069b3ee40f2a952587ee4f73d0f8",
+        "reporting_N": 290,
+        "reporting_K": 235,
+        "reporting_selected_pairs": 290,
+        "reporting_ineligible_pairs": 0,
+        "reporting_unique_fixed_donor_pairs": 204,
+        "reporting_execution_run_id": "9381bf52-62ea-460d-a384-426efc6e272a",
+        "reporting_runtime_model_class": "GptOssForCausalLM",
+        "reporting_target_site_count": 36
+      },
+      "stored_D_estimates": {
+        "primary_mean_logprob": {
+          "D_clean": {
+            "bootstrap_standard_error": 0.023683676124751703,
+            "ci_high": 0.043542854994471275,
+            "ci_low": -0.04892680436573712,
+            "mean": -0.0031788347252252012
+          },
+          "D_common": {
+            "bootstrap_standard_error": 0.017439331200810693,
+            "ci_high": 0.029011852213706946,
+            "ci_low": -0.03929379432975653,
+            "mean": -0.005118236740708683
+          },
+          "D_error": {
+            "bootstrap_standard_error": 0.02389336305677905,
+            "ci_high": 0.039644081573685264,
+            "ci_low": -0.05392237757661601,
+            "mean": -0.0070576387561921946
+          }
+        },
+        "sensitivity_total_logprob": {
+          "D_clean": {
+            "bootstrap_standard_error": 0.057235600307173104,
+            "ci_high": 0.12693452042073244,
+            "ci_low": -0.09683339894194658,
+            "mean": 0.01360501878807554
+          },
+          "D_common": {
+            "bootstrap_standard_error": 0.04103174326705312,
+            "ci_high": 0.07491798141980568,
+            "ci_low": -0.08586154492098676,
+            "mean": -0.005454596266394345
+          },
+          "D_error": {
+            "bootstrap_standard_error": 0.05540380782346643,
+            "ci_high": 0.08319284088002604,
+            "ci_low": -0.1339642115629402,
+            "mean": -0.02451421132086423
+          }
+        }
+      },
+      "row_checks": {
+        "nonfinite_values": 0,
+        "max_abs_total_over_tokens_minus_mean": 0.0,
+        "max_abs_margin_mean_recompute_delta": 0.0,
+        "max_abs_margin_total_recompute_delta": 0.0,
+        "max_abs_alias_mean_minus_margin_mean": 0.0,
+        "max_abs_alias_total_minus_margin_total": 0.0
+      },
+      "csv_path": "archive://analysis-worktree/docs/results/verification_metrics_cpu_20260917/extracted/wide_d/gpt_oss_120b.csv.gz",
+      "csv_bytes": 228038,
+      "csv_sha256": "768d3d91acc59d409cd67ef2d78d0b5902417a77c5f49f26f02bc16e5d67c7c5",
+      "extraction_started_utc": "2026-09-17T22:05:55.753702+00:00",
+      "extraction_finished_utc": "2026-09-17T22:06:00.501772+00:00"
+    }
+  ],
+  "total_members_read": 2610,
+  "total_members_verified": 2610,
+  "total_mismatches": 0,
+  "total_rows": 26100
+}

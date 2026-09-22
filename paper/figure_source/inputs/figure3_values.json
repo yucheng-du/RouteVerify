@@ -1,0 +1,411 @@
+{
+  "source_path": "docs/results/wide_d_synthesis_20260908/source_reports/reporting/wide_d_nine_model_v1.json",
+  "source_sha256": "6b1ccd80ecd58d01025ee41f3b2c7be274875a831509018244045019fa98e14b",
+  "sha256_verified": true,
+  "endpoint": "primary_mean_logprob",
+  "xlim": [
+    -0.25,
+    0.75
+  ],
+  "xticks": [
+    -0.2,
+    0,
+    0.2,
+    0.4,
+    0.6
+  ],
+  "xticklabels": [
+    "$-0.2$",
+    "0",
+    "0.2",
+    "0.4",
+    "0.6"
+  ],
+  "ylim": [
+    8.55,
+    -0.55
+  ],
+  "role_order": [
+    "D_clean",
+    "D_error",
+    "D_common"
+  ],
+  "role_titles": [
+    "Clean receiver",
+    "Error receiver",
+    "Receiver average"
+  ],
+  "role_colors": [
+    "#087F8C",
+    "#AA466B",
+    "#202B36"
+  ],
+  "role_markers": [
+    "o",
+    "s",
+    "D"
+  ],
+  "role_y_offsets": [
+    -0.24,
+    0.0,
+    0.24
+  ],
+  "json_keys": {
+    "per_cell": "wide_d_nine_model_v1.json -> models[] where model==<alias> -> primary_mean_logprob.<role> -> {mean,ci_low,ci_high,bootstrap_standard_error}",
+    "secondary_check": "secondary_contrasts.json -> reconstructed_original_endpoints.<alias>.primary_mean_logprob.<role> (must equal exactly)",
+    "not_plotted_direct": "secondary_contrasts.json -> role_contrasts.<alias> (D_clean - D_error)"
+  },
+  "rows": [
+    {
+      "alias": "qwen36_moe",
+      "label": "Qwen3.6",
+      "N": 290,
+      "K": 235,
+      "unique_fixed_donor_pairs": 204,
+      "checkpoint": {
+        "alias": "qwen36_moe",
+        "harmony_reasoning_effort": "medium",
+        "model_id": "Qwen/Qwen3.6-35B-A3B",
+        "require_native_mxfp4": false,
+        "revision": "995ad96eacd98c81ed38be0c5b274b04031597b0",
+        "tokenizer_revision": "995ad96eacd98c81ed38be0c5b274b04031597b0"
+      },
+      "D_clean": {
+        "mean": 0.01976866827496251,
+        "ci_low": -0.019942920426918923,
+        "ci_high": 0.059522831383054906,
+        "bootstrap_standard_error": 0.020307870945381966
+      },
+      "D_error": {
+        "mean": 0.0012417592587292041,
+        "ci_low": -0.06158949110172157,
+        "ci_high": 0.06442176015390064,
+        "bootstrap_standard_error": 0.032013611682854055
+      },
+      "D_common": {
+        "mean": 0.010505213766845874,
+        "ci_low": -0.02823029125024658,
+        "ci_high": 0.0485687077996615,
+        "bootstrap_standard_error": 0.01947060418493871
+      },
+      "not_plotted_D_clean_minus_D_error": {
+        "mean": 0.018526909016233318,
+        "ci_low": -0.05452524803510127,
+        "ci_high": 0.08971324172006934,
+        "bootstrap_standard_error": 0.03685300803629905
+      }
+    },
+    {
+      "alias": "qwen3_moe",
+      "label": "Qwen3",
+      "N": 290,
+      "K": 235,
+      "unique_fixed_donor_pairs": 204,
+      "checkpoint": {
+        "alias": "qwen3_moe",
+        "harmony_reasoning_effort": "medium",
+        "model_id": "Qwen/Qwen3-30B-A3B",
+        "require_native_mxfp4": false,
+        "revision": "ad44e777bcd18fa416d9da3bd8f70d33ebb85d39",
+        "tokenizer_revision": "ad44e777bcd18fa416d9da3bd8f70d33ebb85d39"
+      },
+      "D_clean": {
+        "mean": -0.0954463262054635,
+        "ci_low": -0.20953318070669957,
+        "ci_high": 0.019216057367165265,
+        "bootstrap_standard_error": 0.0584544418282523
+      },
+      "D_error": {
+        "mean": -0.07384332424639754,
+        "ci_low": -0.21019708239595486,
+        "ci_high": 0.058885043990078635,
+        "bootstrap_standard_error": 0.06850488960013174
+      },
+      "D_common": {
+        "mean": -0.08464482522593052,
+        "ci_low": -0.18715362098863877,
+        "ci_high": 0.01659297440935827,
+        "bootstrap_standard_error": 0.05206748425960691
+      },
+      "not_plotted_D_clean_minus_D_error": {
+        "mean": -0.021603001959065882,
+        "ci_low": -0.16243603897920889,
+        "ci_high": 0.12476677954896974,
+        "bootstrap_standard_error": 0.0733184265288051
+      }
+    },
+    {
+      "alias": "glm4_moe_lite",
+      "label": "GLM-4.7-Flash",
+      "N": 290,
+      "K": 235,
+      "unique_fixed_donor_pairs": 204,
+      "checkpoint": {
+        "alias": "glm4_moe_lite",
+        "harmony_reasoning_effort": "medium",
+        "model_id": "zai-org/GLM-4.7-Flash",
+        "require_native_mxfp4": false,
+        "revision": "7dd20894a642a0aa287e9827cb1a1f7f91386b67",
+        "tokenizer_revision": "7dd20894a642a0aa287e9827cb1a1f7f91386b67"
+      },
+      "D_clean": {
+        "mean": 0.004067604587916507,
+        "ci_low": -0.027318189204980865,
+        "ci_high": 0.036949195927083844,
+        "bootstrap_standard_error": 0.016303854067078627
+      },
+      "D_error": {
+        "mean": -0.029164103312610545,
+        "ci_low": -0.05715404062333626,
+        "ci_high": -0.0011054407199225964,
+        "bootstrap_standard_error": 0.014302637197544606
+      },
+      "D_common": {
+        "mean": -0.01254824936234702,
+        "ci_low": -0.03626691136429624,
+        "ci_high": 0.011016789375091079,
+        "bootstrap_standard_error": 0.012036727514609324
+      },
+      "not_plotted_D_clean_minus_D_error": {
+        "mean": 0.033231707900527055,
+        "ci_low": -0.0033284401990585624,
+        "ci_high": 0.07124888923117553,
+        "bootstrap_standard_error": 0.019006076382213896
+      }
+    },
+    {
+      "alias": "nemotron35_lightning",
+      "label": "Lightning",
+      "N": 290,
+      "K": 235,
+      "unique_fixed_donor_pairs": 204,
+      "checkpoint": {
+        "alias": "nemotron35_lightning",
+        "harmony_reasoning_effort": "medium",
+        "model_id": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+        "require_native_mxfp4": false,
+        "revision": "a9904d24bcc1d289a1950fa9d2b978c47cf903b9",
+        "tokenizer_revision": "a9904d24bcc1d289a1950fa9d2b978c47cf903b9"
+      },
+      "D_clean": {
+        "mean": 0.021302871790917957,
+        "ci_low": -0.0004819306006960866,
+        "ci_high": 0.04300214045134068,
+        "bootstrap_standard_error": 0.011081915951515373
+      },
+      "D_error": {
+        "mean": 0.004282427968018439,
+        "ci_low": -0.019738932756744574,
+        "ci_high": 0.028039609316917572,
+        "bootstrap_standard_error": 0.012176029759768335
+      },
+      "D_common": {
+        "mean": 0.012792649879468205,
+        "ci_low": -0.004970687365812287,
+        "ci_high": 0.0304195078143003,
+        "bootstrap_standard_error": 0.009039573200581163
+      },
+      "not_plotted_D_clean_minus_D_error": {
+        "mean": 0.017020443822899512,
+        "ci_low": -0.011473535555112456,
+        "ci_high": 0.04611843673870368,
+        "bootstrap_standard_error": 0.014672204644829946
+      }
+    },
+    {
+      "alias": "nemotron3_nano",
+      "label": "Nano",
+      "N": 290,
+      "K": 235,
+      "unique_fixed_donor_pairs": 204,
+      "checkpoint": {
+        "alias": "nemotron3_nano",
+        "harmony_reasoning_effort": "medium",
+        "model_id": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+        "require_native_mxfp4": false,
+        "revision": "2d59de1cbd51c0adf384eb906b766d1aee0e0517",
+        "tokenizer_revision": "2d59de1cbd51c0adf384eb906b766d1aee0e0517"
+      },
+      "D_clean": {
+        "mean": 0.003154242823392839,
+        "ci_low": -0.010924353672843945,
+        "ci_high": 0.017105801217730903,
+        "bootstrap_standard_error": 0.007140878018911454
+      },
+      "D_error": {
+        "mean": -0.009441565096528198,
+        "ci_low": -0.021851343032103076,
+        "ci_high": 0.002800922372454425,
+        "bootstrap_standard_error": 0.006299042806427588
+      },
+      "D_common": {
+        "mean": -0.0031436611365676737,
+        "ci_low": -0.01336383936178815,
+        "ci_high": 0.0068773577585955,
+        "bootstrap_standard_error": 0.005168033816581301
+      },
+      "not_plotted_D_clean_minus_D_error": {
+        "mean": 0.012595807919921029,
+        "ci_low": -0.004126562479341975,
+        "ci_high": 0.029489441139990538,
+        "bootstrap_standard_error": 0.008631677948061375
+      }
+    },
+    {
+      "alias": "gemma4_moe",
+      "label": "Gemma4",
+      "N": 290,
+      "K": 235,
+      "unique_fixed_donor_pairs": 204,
+      "checkpoint": {
+        "alias": "gemma4_moe",
+        "harmony_reasoning_effort": "medium",
+        "model_id": "google/gemma-4-26B-A4B-it",
+        "require_native_mxfp4": false,
+        "revision": "4d7ae4984b7db7de8f8457170b3f1a419ee76d52",
+        "tokenizer_revision": "4d7ae4984b7db7de8f8457170b3f1a419ee76d52"
+      },
+      "D_clean": {
+        "mean": 0.3874600970823628,
+        "ci_low": 0.07616419521541813,
+        "ci_high": 0.7002209738937234,
+        "bootstrap_standard_error": 0.1588303216426864
+      },
+      "D_error": {
+        "mean": 0.053952213287895345,
+        "ci_low": -0.21588242926184523,
+        "ci_high": 0.3335210813812489,
+        "bootstrap_standard_error": 0.13962778355427435
+      },
+      "D_common": {
+        "mean": 0.22070615518512918,
+        "ci_low": -0.011420540856922352,
+        "ci_high": 0.45448900091924355,
+        "bootstrap_standard_error": 0.11925769641357296
+      },
+      "not_plotted_D_clean_minus_D_error": {
+        "mean": 0.33350788379446755,
+        "ci_low": -0.02145234446295792,
+        "ci_high": 0.6877084808124878,
+        "bootstrap_standard_error": 0.18043388099608304
+      }
+    },
+    {
+      "alias": "olmoe",
+      "label": "OLMoE",
+      "N": 290,
+      "K": 235,
+      "unique_fixed_donor_pairs": 204,
+      "checkpoint": {
+        "alias": "olmoe",
+        "harmony_reasoning_effort": "medium",
+        "model_id": "allenai/OLMoE-1B-7B-0924-Instruct",
+        "require_native_mxfp4": false,
+        "revision": "7f1c97f440f06ce36705e4f2b843edb5925f4498",
+        "tokenizer_revision": "7f1c97f440f06ce36705e4f2b843edb5925f4498"
+      },
+      "D_clean": {
+        "mean": -0.008776800815436202,
+        "ci_low": -0.060855600028102315,
+        "ci_high": 0.04352227072808525,
+        "bootstrap_standard_error": 0.02668204826821999
+      },
+      "D_error": {
+        "mean": 0.04148916886559415,
+        "ci_low": -0.04351965374418939,
+        "ci_high": 0.12697449342127826,
+        "bootstrap_standard_error": 0.043533331712769366
+      },
+      "D_common": {
+        "mean": 0.016356184025078987,
+        "ci_low": -0.03758962613894646,
+        "ci_high": 0.07125330800187868,
+        "bootstrap_standard_error": 0.0278830507336512
+      },
+      "not_plotted_D_clean_minus_D_error": {
+        "mean": -0.05026596968103034,
+        "ci_low": -0.13872629658386382,
+        "ci_high": 0.04063817756245763,
+        "bootstrap_standard_error": 0.0458727290090943
+      }
+    },
+    {
+      "alias": "gpt_oss_20b",
+      "label": "GPT-OSS-20B",
+      "N": 290,
+      "K": 235,
+      "unique_fixed_donor_pairs": 204,
+      "checkpoint": {
+        "alias": "gpt_oss_20b",
+        "harmony_reasoning_effort": "medium",
+        "model_id": "openai/gpt-oss-20b",
+        "require_native_mxfp4": true,
+        "revision": "6cee5e81ee83917806bbde320786a8fb61efebee",
+        "tokenizer_revision": "6cee5e81ee83917806bbde320786a8fb61efebee"
+      },
+      "D_clean": {
+        "mean": 0.11366537340418922,
+        "ci_low": 0.04799306600986939,
+        "ci_high": 0.18026872112434492,
+        "bootstrap_standard_error": 0.0337996074806912
+      },
+      "D_error": {
+        "mean": 0.026223734734397913,
+        "ci_low": -0.03346695175464262,
+        "ci_high": 0.08710306313964512,
+        "bootstrap_standard_error": 0.030727745323883157
+      },
+      "D_common": {
+        "mean": 0.0699445540692935,
+        "ci_low": 0.018114339268054003,
+        "ci_high": 0.12255290367253614,
+        "bootstrap_standard_error": 0.026551629045384852
+      },
+      "not_plotted_D_clean_minus_D_error": {
+        "mean": 0.08744163866979125,
+        "ci_low": 0.015837263468610394,
+        "ci_high": 0.15974307479877783,
+        "bootstrap_standard_error": 0.036786676626484265
+      }
+    },
+    {
+      "alias": "gpt_oss_120b",
+      "label": "GPT-OSS-120B",
+      "N": 290,
+      "K": 235,
+      "unique_fixed_donor_pairs": 204,
+      "checkpoint": {
+        "alias": "gpt_oss_120b",
+        "harmony_reasoning_effort": "medium",
+        "model_id": "openai/gpt-oss-120b",
+        "require_native_mxfp4": true,
+        "revision": "b5c939de8f754692c1647ca79fbf85e8c1e70f8a",
+        "tokenizer_revision": "b5c939de8f754692c1647ca79fbf85e8c1e70f8a"
+      },
+      "D_clean": {
+        "mean": -0.0031788347252252012,
+        "ci_low": -0.04892680436573712,
+        "ci_high": 0.043542854994471275,
+        "bootstrap_standard_error": 0.023683676124751703
+      },
+      "D_error": {
+        "mean": -0.0070576387561921946,
+        "ci_low": -0.05392237757661601,
+        "ci_high": 0.039644081573685264,
+        "bootstrap_standard_error": 0.02389336305677905
+      },
+      "D_common": {
+        "mean": -0.005118236740708683,
+        "ci_low": -0.03929379432975653,
+        "ci_high": 0.029011852213706946,
+        "bootstrap_standard_error": 0.017439331200810693
+      },
+      "not_plotted_D_clean_minus_D_error": {
+        "mean": 0.0038788040309670076,
+        "ci_low": -0.05885852496647981,
+        "ci_high": 0.06727407097305393,
+        "bootstrap_standard_error": 0.03235888649141259
+      }
+    }
+  ]
+}

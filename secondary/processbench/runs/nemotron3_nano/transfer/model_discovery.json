@@ -1,0 +1,1106 @@
+{
+  "alias": "nemotron3_nano",
+  "candidates": [
+    {
+      "class_name": "NemotronHExperts",
+      "name": "model.layers.1.mixer.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "NemotronHTopkRouter",
+      "name": "model.layers.1.mixer.gate",
+      "role": "router"
+    },
+    {
+      "class_name": "NemotronHExperts",
+      "name": "model.layers.3.mixer.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "NemotronHTopkRouter",
+      "name": "model.layers.3.mixer.gate",
+      "role": "router"
+    },
+    {
+      "class_name": "NemotronHExperts",
+      "name": "model.layers.6.mixer.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "NemotronHTopkRouter",
+      "name": "model.layers.6.mixer.gate",
+      "role": "router"
+    },
+    {
+      "class_name": "NemotronHExperts",
+      "name": "model.layers.8.mixer.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "NemotronHTopkRouter",
+      "name": "model.layers.8.mixer.gate",
+      "role": "router"
+    },
+    {
+      "class_name": "NemotronHExperts",
+      "name": "model.layers.10.mixer.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "NemotronHTopkRouter",
+      "name": "model.layers.10.mixer.gate",
+      "role": "router"
+    },
+    {
+      "class_name": "NemotronHExperts",
+      "name": "model.layers.13.mixer.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "NemotronHTopkRouter",
+      "name": "model.layers.13.mixer.gate",
+      "role": "router"
+    },
+    {
+      "class_name": "NemotronHExperts",
+      "name": "model.layers.15.mixer.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "NemotronHTopkRouter",
+      "name": "model.layers.15.mixer.gate",
+      "role": "router"
+    },
+    {
+      "class_name": "NemotronHExperts",
+      "name": "model.layers.17.mixer.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "NemotronHTopkRouter",
+      "name": "model.layers.17.mixer.gate",
+      "role": "router"
+    },
+    {
+      "class_name": "NemotronHExperts",
+      "name": "model.layers.20.mixer.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "NemotronHTopkRouter",
+      "name": "model.layers.20.mixer.gate",
+      "role": "router"
+    },
+    {
+      "class_name": "NemotronHExperts",
+      "name": "model.layers.22.mixer.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "NemotronHTopkRouter",
+      "name": "model.layers.22.mixer.gate",
+      "role": "router"
+    },
+    {
+      "class_name": "NemotronHExperts",
+      "name": "model.layers.24.mixer.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "NemotronHTopkRouter",
+      "name": "model.layers.24.mixer.gate",
+      "role": "router"
+    },
+    {
+      "class_name": "NemotronHExperts",
+      "name": "model.layers.27.mixer.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "NemotronHTopkRouter",
+      "name": "model.layers.27.mixer.gate",
+      "role": "router"
+    },
+    {
+      "class_name": "NemotronHExperts",
+      "name": "model.layers.29.mixer.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "NemotronHTopkRouter",
+      "name": "model.layers.29.mixer.gate",
+      "role": "router"
+    },
+    {
+      "class_name": "NemotronHExperts",
+      "name": "model.layers.31.mixer.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "NemotronHTopkRouter",
+      "name": "model.layers.31.mixer.gate",
+      "role": "router"
+    },
+    {
+      "class_name": "NemotronHExperts",
+      "name": "model.layers.34.mixer.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "NemotronHTopkRouter",
+      "name": "model.layers.34.mixer.gate",
+      "role": "router"
+    },
+    {
+      "class_name": "NemotronHExperts",
+      "name": "model.layers.36.mixer.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "NemotronHTopkRouter",
+      "name": "model.layers.36.mixer.gate",
+      "role": "router"
+    },
+    {
+      "class_name": "NemotronHExperts",
+      "name": "model.layers.38.mixer.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "NemotronHTopkRouter",
+      "name": "model.layers.38.mixer.gate",
+      "role": "router"
+    },
+    {
+      "class_name": "NemotronHExperts",
+      "name": "model.layers.40.mixer.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "NemotronHTopkRouter",
+      "name": "model.layers.40.mixer.gate",
+      "role": "router"
+    },
+    {
+      "class_name": "NemotronHExperts",
+      "name": "model.layers.43.mixer.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "NemotronHTopkRouter",
+      "name": "model.layers.43.mixer.gate",
+      "role": "router"
+    },
+    {
+      "class_name": "NemotronHExperts",
+      "name": "model.layers.45.mixer.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "NemotronHTopkRouter",
+      "name": "model.layers.45.mixer.gate",
+      "role": "router"
+    },
+    {
+      "class_name": "NemotronHExperts",
+      "name": "model.layers.47.mixer.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "NemotronHTopkRouter",
+      "name": "model.layers.47.mixer.gate",
+      "role": "router"
+    },
+    {
+      "class_name": "NemotronHExperts",
+      "name": "model.layers.49.mixer.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "NemotronHTopkRouter",
+      "name": "model.layers.49.mixer.gate",
+      "role": "router"
+    },
+    {
+      "class_name": "NemotronHExperts",
+      "name": "model.layers.51.mixer.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "NemotronHTopkRouter",
+      "name": "model.layers.51.mixer.gate",
+      "role": "router"
+    }
+  ],
+  "metadata": {
+    "architectures": [
+      "NemotronHForCausalLM"
+    ],
+    "load_weights": true,
+    "model_type": "nemotron_h",
+    "num_experts": 128,
+    "num_experts_per_tok": 6,
+    "num_hidden_layers": 52,
+    "num_local_experts": 128,
+    "num_moe_layers": 23,
+    "runtime_inspect": {
+      "actual_contract": {
+        "experts": 128,
+        "hidden_size": 2688,
+        "norm_topk_prob": true,
+        "routed_scaling_factor": 2.5,
+        "router_blocks": 23,
+        "shared_experts": 1,
+        "top_k": 6,
+        "total_blocks": 52
+      },
+      "adapter": "nemotron3_nano",
+      "architectures": [
+        "NemotronHForCausalLM"
+      ],
+      "block_type_counts": {
+        "attention": 6,
+        "mamba": 23,
+        "mlp": 0,
+        "moe": 23
+      },
+      "block_types": [
+        "mamba",
+        "moe",
+        "mamba",
+        "moe",
+        "mamba",
+        "attention",
+        "moe",
+        "mamba",
+        "moe",
+        "mamba",
+        "moe",
+        "mamba",
+        "attention",
+        "moe",
+        "mamba",
+        "moe",
+        "mamba",
+        "moe",
+        "mamba",
+        "attention",
+        "moe",
+        "mamba",
+        "moe",
+        "mamba",
+        "moe",
+        "mamba",
+        "attention",
+        "moe",
+        "mamba",
+        "moe",
+        "mamba",
+        "moe",
+        "mamba",
+        "attention",
+        "moe",
+        "mamba",
+        "moe",
+        "mamba",
+        "moe",
+        "mamba",
+        "moe",
+        "mamba",
+        "attention",
+        "moe",
+        "mamba",
+        "moe",
+        "mamba",
+        "moe",
+        "mamba",
+        "moe",
+        "mamba",
+        "moe"
+      ],
+      "contract_matches": true,
+      "expected_contract": {
+        "experts": 128,
+        "hidden_size": 2688,
+        "hybrid_override_pattern": "MEMEM*EMEMEM*EMEMEM*EMEMEM*EMEMEM*EMEMEMEM*EMEMEMEME",
+        "norm_topk_prob": true,
+        "routed_scaling_factor": 2.5,
+        "router_block_indices": [
+          1,
+          3,
+          6,
+          8,
+          10,
+          13,
+          15,
+          17,
+          20,
+          22,
+          24,
+          27,
+          29,
+          31,
+          34,
+          36,
+          38,
+          40,
+          43,
+          45,
+          47,
+          49,
+          51
+        ],
+        "router_blocks": 23,
+        "shared_experts": 1,
+        "top_k": 6,
+        "total_blocks": 52
+      },
+      "hub_kernel_load": {
+        "kernels": {
+          "causal-conv1d": {
+            "loaded": true,
+            "module_file": ".cache/huggingface/hub/models--kernels-community--causal-conv1d/snapshots/6e9a58272220a363dc50e59cba737abcedd7b59f/build/torch212-cxx11-cu130-x86_64-linux/__init__.py",
+            "module_name": "causal_conv1d_919eaa318494c999",
+            "repo_id": "kernels-community/causal-conv1d",
+            "revision": "6e9a58272220a363dc50e59cba737abcedd7b59f"
+          },
+          "mamba-ssm": {
+            "loaded": true,
+            "module_file": ".cache/huggingface/hub/models--kernels-community--mamba-ssm/snapshots/768416abf0ad7262a23d83c6efef10b9a4786489/build/torch212-cxx11-cu130-x86_64-linux/__init__.py",
+            "module_name": "mamba_ssm_37f49a61c37efe23",
+            "repo_id": "kernels-community/mamba-ssm",
+            "revision": "768416abf0ad7262a23d83c6efef10b9a4786489"
+          }
+        },
+        "kernels_version": "0.12.3",
+        "mapping_mutated_in_place": true,
+        "mapping_restored": true,
+        "module_cache_mutated_in_place": true,
+        "module_cache_restored": true,
+        "schema_version": 1,
+        "scope": "nemotron3_nano_model_load",
+        "transformers_version": "5.12.1"
+      },
+      "hybrid_override_pattern": "MEMEM*EMEMEM*EMEMEM*EMEMEM*EMEMEM*EMEMEMEM*EMEMEMEME",
+      "layout_consistent": true,
+      "model_id": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+      "model_type": "nemotron_h",
+      "module_contract": {
+        "experts": 128,
+        "hidden_size": 2688,
+        "norm_topk_prob": true,
+        "routed_scaling_factor": 2.5,
+        "top_k": 6
+      },
+      "moe_latent_size": null,
+      "moe_layers": [
+        {
+          "absolute_block_index": 1,
+          "block_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHBlock",
+          "expert_module_num_experts": 128,
+          "experts_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHExperts",
+          "fc2_latent_proj_class": "torch.nn.modules.linear.Identity",
+          "gate_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHTopkRouter",
+          "gate_num_experts": 128,
+          "gate_weight_shape": [
+            128,
+            2688
+          ],
+          "mixer_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHMoE",
+          "moe_ordinal": 0,
+          "normalized_depth": 0.0196078431372549,
+          "shared_experts_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHMLP",
+          "top_k": 6
+        },
+        {
+          "absolute_block_index": 3,
+          "block_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHBlock",
+          "expert_module_num_experts": 128,
+          "experts_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHExperts",
+          "fc2_latent_proj_class": "torch.nn.modules.linear.Identity",
+          "gate_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHTopkRouter",
+          "gate_num_experts": 128,
+          "gate_weight_shape": [
+            128,
+            2688
+          ],
+          "mixer_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHMoE",
+          "moe_ordinal": 1,
+          "normalized_depth": 0.058823529411764705,
+          "shared_experts_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHMLP",
+          "top_k": 6
+        },
+        {
+          "absolute_block_index": 6,
+          "block_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHBlock",
+          "expert_module_num_experts": 128,
+          "experts_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHExperts",
+          "fc2_latent_proj_class": "torch.nn.modules.linear.Identity",
+          "gate_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHTopkRouter",
+          "gate_num_experts": 128,
+          "gate_weight_shape": [
+            128,
+            2688
+          ],
+          "mixer_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHMoE",
+          "moe_ordinal": 2,
+          "normalized_depth": 0.11764705882352941,
+          "shared_experts_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHMLP",
+          "top_k": 6
+        },
+        {
+          "absolute_block_index": 8,
+          "block_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHBlock",
+          "expert_module_num_experts": 128,
+          "experts_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHExperts",
+          "fc2_latent_proj_class": "torch.nn.modules.linear.Identity",
+          "gate_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHTopkRouter",
+          "gate_num_experts": 128,
+          "gate_weight_shape": [
+            128,
+            2688
+          ],
+          "mixer_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHMoE",
+          "moe_ordinal": 3,
+          "normalized_depth": 0.1568627450980392,
+          "shared_experts_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHMLP",
+          "top_k": 6
+        },
+        {
+          "absolute_block_index": 10,
+          "block_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHBlock",
+          "expert_module_num_experts": 128,
+          "experts_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHExperts",
+          "fc2_latent_proj_class": "torch.nn.modules.linear.Identity",
+          "gate_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHTopkRouter",
+          "gate_num_experts": 128,
+          "gate_weight_shape": [
+            128,
+            2688
+          ],
+          "mixer_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHMoE",
+          "moe_ordinal": 4,
+          "normalized_depth": 0.19607843137254902,
+          "shared_experts_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHMLP",
+          "top_k": 6
+        },
+        {
+          "absolute_block_index": 13,
+          "block_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHBlock",
+          "expert_module_num_experts": 128,
+          "experts_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHExperts",
+          "fc2_latent_proj_class": "torch.nn.modules.linear.Identity",
+          "gate_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHTopkRouter",
+          "gate_num_experts": 128,
+          "gate_weight_shape": [
+            128,
+            2688
+          ],
+          "mixer_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHMoE",
+          "moe_ordinal": 5,
+          "normalized_depth": 0.2549019607843137,
+          "shared_experts_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHMLP",
+          "top_k": 6
+        },
+        {
+          "absolute_block_index": 15,
+          "block_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHBlock",
+          "expert_module_num_experts": 128,
+          "experts_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHExperts",
+          "fc2_latent_proj_class": "torch.nn.modules.linear.Identity",
+          "gate_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHTopkRouter",
+          "gate_num_experts": 128,
+          "gate_weight_shape": [
+            128,
+            2688
+          ],
+          "mixer_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHMoE",
+          "moe_ordinal": 6,
+          "normalized_depth": 0.29411764705882354,
+          "shared_experts_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHMLP",
+          "top_k": 6
+        },
+        {
+          "absolute_block_index": 17,
+          "block_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHBlock",
+          "expert_module_num_experts": 128,
+          "experts_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHExperts",
+          "fc2_latent_proj_class": "torch.nn.modules.linear.Identity",
+          "gate_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHTopkRouter",
+          "gate_num_experts": 128,
+          "gate_weight_shape": [
+            128,
+            2688
+          ],
+          "mixer_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHMoE",
+          "moe_ordinal": 7,
+          "normalized_depth": 0.3333333333333333,
+          "shared_experts_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHMLP",
+          "top_k": 6
+        },
+        {
+          "absolute_block_index": 20,
+          "block_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHBlock",
+          "expert_module_num_experts": 128,
+          "experts_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHExperts",
+          "fc2_latent_proj_class": "torch.nn.modules.linear.Identity",
+          "gate_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHTopkRouter",
+          "gate_num_experts": 128,
+          "gate_weight_shape": [
+            128,
+            2688
+          ],
+          "mixer_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHMoE",
+          "moe_ordinal": 8,
+          "normalized_depth": 0.39215686274509803,
+          "shared_experts_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHMLP",
+          "top_k": 6
+        },
+        {
+          "absolute_block_index": 22,
+          "block_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHBlock",
+          "expert_module_num_experts": 128,
+          "experts_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHExperts",
+          "fc2_latent_proj_class": "torch.nn.modules.linear.Identity",
+          "gate_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHTopkRouter",
+          "gate_num_experts": 128,
+          "gate_weight_shape": [
+            128,
+            2688
+          ],
+          "mixer_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHMoE",
+          "moe_ordinal": 9,
+          "normalized_depth": 0.43137254901960786,
+          "shared_experts_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHMLP",
+          "top_k": 6
+        },
+        {
+          "absolute_block_index": 24,
+          "block_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHBlock",
+          "expert_module_num_experts": 128,
+          "experts_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHExperts",
+          "fc2_latent_proj_class": "torch.nn.modules.linear.Identity",
+          "gate_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHTopkRouter",
+          "gate_num_experts": 128,
+          "gate_weight_shape": [
+            128,
+            2688
+          ],
+          "mixer_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHMoE",
+          "moe_ordinal": 10,
+          "normalized_depth": 0.47058823529411764,
+          "shared_experts_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHMLP",
+          "top_k": 6
+        },
+        {
+          "absolute_block_index": 27,
+          "block_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHBlock",
+          "expert_module_num_experts": 128,
+          "experts_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHExperts",
+          "fc2_latent_proj_class": "torch.nn.modules.linear.Identity",
+          "gate_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHTopkRouter",
+          "gate_num_experts": 128,
+          "gate_weight_shape": [
+            128,
+            2688
+          ],
+          "mixer_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHMoE",
+          "moe_ordinal": 11,
+          "normalized_depth": 0.5294117647058824,
+          "shared_experts_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHMLP",
+          "top_k": 6
+        },
+        {
+          "absolute_block_index": 29,
+          "block_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHBlock",
+          "expert_module_num_experts": 128,
+          "experts_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHExperts",
+          "fc2_latent_proj_class": "torch.nn.modules.linear.Identity",
+          "gate_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHTopkRouter",
+          "gate_num_experts": 128,
+          "gate_weight_shape": [
+            128,
+            2688
+          ],
+          "mixer_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHMoE",
+          "moe_ordinal": 12,
+          "normalized_depth": 0.5686274509803921,
+          "shared_experts_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHMLP",
+          "top_k": 6
+        },
+        {
+          "absolute_block_index": 31,
+          "block_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHBlock",
+          "expert_module_num_experts": 128,
+          "experts_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHExperts",
+          "fc2_latent_proj_class": "torch.nn.modules.linear.Identity",
+          "gate_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHTopkRouter",
+          "gate_num_experts": 128,
+          "gate_weight_shape": [
+            128,
+            2688
+          ],
+          "mixer_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHMoE",
+          "moe_ordinal": 13,
+          "normalized_depth": 0.6078431372549019,
+          "shared_experts_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHMLP",
+          "top_k": 6
+        },
+        {
+          "absolute_block_index": 34,
+          "block_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHBlock",
+          "expert_module_num_experts": 128,
+          "experts_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHExperts",
+          "fc2_latent_proj_class": "torch.nn.modules.linear.Identity",
+          "gate_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHTopkRouter",
+          "gate_num_experts": 128,
+          "gate_weight_shape": [
+            128,
+            2688
+          ],
+          "mixer_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHMoE",
+          "moe_ordinal": 14,
+          "normalized_depth": 0.6666666666666666,
+          "shared_experts_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHMLP",
+          "top_k": 6
+        },
+        {
+          "absolute_block_index": 36,
+          "block_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHBlock",
+          "expert_module_num_experts": 128,
+          "experts_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHExperts",
+          "fc2_latent_proj_class": "torch.nn.modules.linear.Identity",
+          "gate_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHTopkRouter",
+          "gate_num_experts": 128,
+          "gate_weight_shape": [
+            128,
+            2688
+          ],
+          "mixer_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHMoE",
+          "moe_ordinal": 15,
+          "normalized_depth": 0.7058823529411765,
+          "shared_experts_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHMLP",
+          "top_k": 6
+        },
+        {
+          "absolute_block_index": 38,
+          "block_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHBlock",
+          "expert_module_num_experts": 128,
+          "experts_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHExperts",
+          "fc2_latent_proj_class": "torch.nn.modules.linear.Identity",
+          "gate_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHTopkRouter",
+          "gate_num_experts": 128,
+          "gate_weight_shape": [
+            128,
+            2688
+          ],
+          "mixer_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHMoE",
+          "moe_ordinal": 16,
+          "normalized_depth": 0.7450980392156863,
+          "shared_experts_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHMLP",
+          "top_k": 6
+        },
+        {
+          "absolute_block_index": 40,
+          "block_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHBlock",
+          "expert_module_num_experts": 128,
+          "experts_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHExperts",
+          "fc2_latent_proj_class": "torch.nn.modules.linear.Identity",
+          "gate_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHTopkRouter",
+          "gate_num_experts": 128,
+          "gate_weight_shape": [
+            128,
+            2688
+          ],
+          "mixer_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHMoE",
+          "moe_ordinal": 17,
+          "normalized_depth": 0.7843137254901961,
+          "shared_experts_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHMLP",
+          "top_k": 6
+        },
+        {
+          "absolute_block_index": 43,
+          "block_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHBlock",
+          "expert_module_num_experts": 128,
+          "experts_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHExperts",
+          "fc2_latent_proj_class": "torch.nn.modules.linear.Identity",
+          "gate_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHTopkRouter",
+          "gate_num_experts": 128,
+          "gate_weight_shape": [
+            128,
+            2688
+          ],
+          "mixer_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHMoE",
+          "moe_ordinal": 18,
+          "normalized_depth": 0.8431372549019608,
+          "shared_experts_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHMLP",
+          "top_k": 6
+        },
+        {
+          "absolute_block_index": 45,
+          "block_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHBlock",
+          "expert_module_num_experts": 128,
+          "experts_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHExperts",
+          "fc2_latent_proj_class": "torch.nn.modules.linear.Identity",
+          "gate_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHTopkRouter",
+          "gate_num_experts": 128,
+          "gate_weight_shape": [
+            128,
+            2688
+          ],
+          "mixer_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHMoE",
+          "moe_ordinal": 19,
+          "normalized_depth": 0.8823529411764706,
+          "shared_experts_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHMLP",
+          "top_k": 6
+        },
+        {
+          "absolute_block_index": 47,
+          "block_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHBlock",
+          "expert_module_num_experts": 128,
+          "experts_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHExperts",
+          "fc2_latent_proj_class": "torch.nn.modules.linear.Identity",
+          "gate_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHTopkRouter",
+          "gate_num_experts": 128,
+          "gate_weight_shape": [
+            128,
+            2688
+          ],
+          "mixer_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHMoE",
+          "moe_ordinal": 20,
+          "normalized_depth": 0.9215686274509803,
+          "shared_experts_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHMLP",
+          "top_k": 6
+        },
+        {
+          "absolute_block_index": 49,
+          "block_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHBlock",
+          "expert_module_num_experts": 128,
+          "experts_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHExperts",
+          "fc2_latent_proj_class": "torch.nn.modules.linear.Identity",
+          "gate_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHTopkRouter",
+          "gate_num_experts": 128,
+          "gate_weight_shape": [
+            128,
+            2688
+          ],
+          "mixer_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHMoE",
+          "moe_ordinal": 21,
+          "normalized_depth": 0.9607843137254902,
+          "shared_experts_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHMLP",
+          "top_k": 6
+        },
+        {
+          "absolute_block_index": 51,
+          "block_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHBlock",
+          "expert_module_num_experts": 128,
+          "experts_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHExperts",
+          "fc2_latent_proj_class": "torch.nn.modules.linear.Identity",
+          "gate_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHTopkRouter",
+          "gate_num_experts": 128,
+          "gate_weight_shape": [
+            128,
+            2688
+          ],
+          "mixer_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHMoE",
+          "moe_ordinal": 22,
+          "normalized_depth": 1.0,
+          "shared_experts_class": "transformers.models.nemotron_h.modeling_nemotron_h.NemotronHMLP",
+          "top_k": 6
+        }
+      ],
+      "router_block_indices": [
+        1,
+        3,
+        6,
+        8,
+        10,
+        13,
+        15,
+        17,
+        20,
+        22,
+        24,
+        27,
+        29,
+        31,
+        34,
+        36,
+        38,
+        40,
+        43,
+        45,
+        47,
+        49,
+        51
+      ],
+      "schema_version": 1
+    },
+    "static_preflight": {
+      "actual_contract": {
+        "experts": 128,
+        "hidden_size": 2688,
+        "norm_topk_prob": true,
+        "routed_scaling_factor": 2.5,
+        "router_blocks": 23,
+        "shared_experts": 1,
+        "top_k": 6,
+        "total_blocks": 52
+      },
+      "adapter": "nemotron3_nano",
+      "architectures": [
+        "NemotronHForCausalLM"
+      ],
+      "block_type_counts": {
+        "attention": 6,
+        "mamba": 23,
+        "mlp": 0,
+        "moe": 23
+      },
+      "block_types": [
+        "mamba",
+        "moe",
+        "mamba",
+        "moe",
+        "mamba",
+        "attention",
+        "moe",
+        "mamba",
+        "moe",
+        "mamba",
+        "moe",
+        "mamba",
+        "attention",
+        "moe",
+        "mamba",
+        "moe",
+        "mamba",
+        "moe",
+        "mamba",
+        "attention",
+        "moe",
+        "mamba",
+        "moe",
+        "mamba",
+        "moe",
+        "mamba",
+        "attention",
+        "moe",
+        "mamba",
+        "moe",
+        "mamba",
+        "moe",
+        "mamba",
+        "attention",
+        "moe",
+        "mamba",
+        "moe",
+        "mamba",
+        "moe",
+        "mamba",
+        "moe",
+        "mamba",
+        "attention",
+        "moe",
+        "mamba",
+        "moe",
+        "mamba",
+        "moe",
+        "mamba",
+        "moe",
+        "mamba",
+        "moe"
+      ],
+      "contract_matches": true,
+      "expected_contract": {
+        "experts": 128,
+        "hidden_size": 2688,
+        "hybrid_override_pattern": "MEMEM*EMEMEM*EMEMEM*EMEMEM*EMEMEM*EMEMEMEM*EMEMEMEME",
+        "norm_topk_prob": true,
+        "routed_scaling_factor": 2.5,
+        "router_block_indices": [
+          1,
+          3,
+          6,
+          8,
+          10,
+          13,
+          15,
+          17,
+          20,
+          22,
+          24,
+          27,
+          29,
+          31,
+          34,
+          36,
+          38,
+          40,
+          43,
+          45,
+          47,
+          49,
+          51
+        ],
+        "router_blocks": 23,
+        "shared_experts": 1,
+        "top_k": 6,
+        "total_blocks": 52
+      },
+      "hybrid_override_pattern": "MEMEM*EMEMEM*EMEMEM*EMEMEM*EMEMEM*EMEMEMEM*EMEMEMEME",
+      "model_id": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+      "model_type": "nemotron_h",
+      "moe_latent_size": null,
+      "moe_layers": [
+        {
+          "absolute_block_index": 1,
+          "moe_ordinal": 0,
+          "normalized_depth": 0.0196078431372549
+        },
+        {
+          "absolute_block_index": 3,
+          "moe_ordinal": 1,
+          "normalized_depth": 0.058823529411764705
+        },
+        {
+          "absolute_block_index": 6,
+          "moe_ordinal": 2,
+          "normalized_depth": 0.11764705882352941
+        },
+        {
+          "absolute_block_index": 8,
+          "moe_ordinal": 3,
+          "normalized_depth": 0.1568627450980392
+        },
+        {
+          "absolute_block_index": 10,
+          "moe_ordinal": 4,
+          "normalized_depth": 0.19607843137254902
+        },
+        {
+          "absolute_block_index": 13,
+          "moe_ordinal": 5,
+          "normalized_depth": 0.2549019607843137
+        },
+        {
+          "absolute_block_index": 15,
+          "moe_ordinal": 6,
+          "normalized_depth": 0.29411764705882354
+        },
+        {
+          "absolute_block_index": 17,
+          "moe_ordinal": 7,
+          "normalized_depth": 0.3333333333333333
+        },
+        {
+          "absolute_block_index": 20,
+          "moe_ordinal": 8,
+          "normalized_depth": 0.39215686274509803
+        },
+        {
+          "absolute_block_index": 22,
+          "moe_ordinal": 9,
+          "normalized_depth": 0.43137254901960786
+        },
+        {
+          "absolute_block_index": 24,
+          "moe_ordinal": 10,
+          "normalized_depth": 0.47058823529411764
+        },
+        {
+          "absolute_block_index": 27,
+          "moe_ordinal": 11,
+          "normalized_depth": 0.5294117647058824
+        },
+        {
+          "absolute_block_index": 29,
+          "moe_ordinal": 12,
+          "normalized_depth": 0.5686274509803921
+        },
+        {
+          "absolute_block_index": 31,
+          "moe_ordinal": 13,
+          "normalized_depth": 0.6078431372549019
+        },
+        {
+          "absolute_block_index": 34,
+          "moe_ordinal": 14,
+          "normalized_depth": 0.6666666666666666
+        },
+        {
+          "absolute_block_index": 36,
+          "moe_ordinal": 15,
+          "normalized_depth": 0.7058823529411765
+        },
+        {
+          "absolute_block_index": 38,
+          "moe_ordinal": 16,
+          "normalized_depth": 0.7450980392156863
+        },
+        {
+          "absolute_block_index": 40,
+          "moe_ordinal": 17,
+          "normalized_depth": 0.7843137254901961
+        },
+        {
+          "absolute_block_index": 43,
+          "moe_ordinal": 18,
+          "normalized_depth": 0.8431372549019608
+        },
+        {
+          "absolute_block_index": 45,
+          "moe_ordinal": 19,
+          "normalized_depth": 0.8823529411764706
+        },
+        {
+          "absolute_block_index": 47,
+          "moe_ordinal": 20,
+          "normalized_depth": 0.9215686274509803
+        },
+        {
+          "absolute_block_index": 49,
+          "moe_ordinal": 21,
+          "normalized_depth": 0.9607843137254902
+        },
+        {
+          "absolute_block_index": 51,
+          "moe_ordinal": 22,
+          "normalized_depth": 1.0
+        }
+      ],
+      "router_block_indices": [
+        1,
+        3,
+        6,
+        8,
+        10,
+        13,
+        15,
+        17,
+        20,
+        22,
+        24,
+        27,
+        29,
+        31,
+        34,
+        36,
+        38,
+        40,
+        43,
+        45,
+        47,
+        49,
+        51
+      ],
+      "schema_version": 1
+    },
+    "transformers_version": "5.12.1"
+  },
+  "model_id": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+  "summary": {
+    "experts": 23,
+    "router": 23
+  }
+}

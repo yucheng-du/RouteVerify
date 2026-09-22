@@ -1,0 +1,100 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "routeverify"
+version = "0.1.0"
+description = "Causal auditing of process-error signals in MoE reasoning models."
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+license = { text = "Review use only; see repository-root LICENSES.md" }
+authors = [{ name = "RouteVerify contributors" }]
+dependencies = [
+  "numpy>=1.26",
+  "pydantic>=2.7",
+  "pyyaml>=6.0",
+  "rich>=13.7",
+  "typer>=0.12",
+]
+
+[project.optional-dependencies]
+analysis = [
+  "matplotlib>=3.8",
+  "safetensors>=0.4",
+  "scikit-learn>=1.4",
+]
+data = [
+  "datasets>=2.20",
+  "pandas>=2.2",
+  "pyarrow>=16.0",
+]
+models = [
+  "accelerate>=0.33",
+  "einops",
+  "kernels==0.12.3",
+  "safetensors>=0.4",
+  "torch>=2.3",
+  "transformers==5.12.1",
+]
+all = [
+  "accelerate>=0.33",
+  "datasets>=2.20",
+  "einops",
+  "kernels==0.12.3",
+  "matplotlib>=3.8",
+  "pandas>=2.2",
+  "pyarrow>=16.0",
+  "safetensors>=0.4",
+  "scikit-learn>=1.4",
+  "torch>=2.3",
+  "transformers==5.12.1",
+]
+
+[project.scripts]
+routeverify = "routeverify.cli:main"
+
+[dependency-groups]
+dev = [
+  "mypy>=1.10",
+  "pytest>=8.2",
+  "ruff>=0.5",
+  "types-PyYAML>=6.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/routeverify"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "N", "RUF"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+warn_unused_ignores = true
+warn_redundant_casts = true
+packages = ["routeverify"]
+
+[[tool.mypy.overrides]]
+module = [
+  "accelerate",
+  "accelerate.*",
+  "datasets.*",
+  "huggingface_hub",
+  "huggingface_hub.*",
+  "matplotlib.*",
+  "safetensors.*",
+  "sklearn.*",
+  "torch.*",
+  "transformers.*",
+]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

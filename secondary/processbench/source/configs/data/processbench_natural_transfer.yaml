@@ -1,0 +1,14 @@
+dataset: processbench_transfer
+hf_id: Qwen/ProcessBench
+revision: 3bdcd5371ed567559a78f559c01c13a6deee7604
+expected_resolved_data_revision: 3bdcd5371ed567559a78f559c01c13a6deee7604
+subset: gsm8k
+split: gsm8k
+hf_config: default
+output: data/processed/processbench-natural-transfer-v1.jsonl
+selection_manifest: data/processed/processbench-natural-transfer-v1.selection.json
+expected_processed_sha256: b1d7f21aff6d5a17d1494b5e8bcc2a4bf43d0e2f7d6689921ccb368d4e735c94
+expected_selection_manifest_sha256: 0f2d885fc9e7657886f0686a08f1236b62c595703c414d80069cc92b304ca7a2
+expected_raw_sha256: fb1c59dfd1e83e1c5a48dbe598db27e4bc0b8bc524a09445f2d4b69178f61349
+validation_accessed: false
+balanced: true

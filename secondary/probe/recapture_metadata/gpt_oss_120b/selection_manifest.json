@@ -1,0 +1,2648 @@
+{
+  "available_pair_count": 290,
+  "dataset": "prmbench",
+  "frozen_split": {
+    "manifest_hash": "ee24124fc4a1b86466a6b2aa3c64ebc0e40d71eb7183a3b45124a41ac04a8ac0",
+    "partition": "discovery",
+    "path": "docs/results/first_batch_zero_gpu_20260730/discovery_validation_split.json"
+  },
+  "manifest_hash": "5b249a16a9d985304396c5363e2082938a639b61aa3be950140291159038c031",
+  "pairs": [
+    {
+      "clean_content_hash": "877897114f33605e",
+      "clean_sample_id": "prmbench/preview/circular_prm_test_p1_54/clean",
+      "corrupt_content_hash": "a0a1a834bdbbdd22",
+      "corrupt_sample_id": "prmbench/preview/circular_prm_test_p1_54/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/circular_prm_test_p1_54",
+      "pair_id": "prmbench/preview/circular_prm_test_p1_54",
+      "source_id": "circular_prm_test_p1_54"
+    },
+    {
+      "clean_content_hash": "56747060e6dc6839",
+      "clean_sample_id": "prmbench/preview/circular_prm_test_p2_2126/clean",
+      "corrupt_content_hash": "0ed7686edb738f2e",
+      "corrupt_sample_id": "prmbench/preview/circular_prm_test_p2_2126/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/circular_prm_test_p2_2126",
+      "pair_id": "prmbench/preview/circular_prm_test_p2_2126",
+      "source_id": "circular_prm_test_p2_2126"
+    },
+    {
+      "clean_content_hash": "4035586f37224599",
+      "clean_sample_id": "prmbench/preview/circular_prm_test_p2_2265/clean",
+      "corrupt_content_hash": "c7e60cfd1158c150",
+      "corrupt_sample_id": "prmbench/preview/circular_prm_test_p2_2265/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/circular_prm_test_p2_2265",
+      "pair_id": "prmbench/preview/circular_prm_test_p2_2265",
+      "source_id": "circular_prm_test_p2_2265"
+    },
+    {
+      "clean_content_hash": "380c93cede2eacff",
+      "clean_sample_id": "prmbench/preview/circular_prm_train_p1_211/clean",
+      "corrupt_content_hash": "0340c96705aa4460",
+      "corrupt_sample_id": "prmbench/preview/circular_prm_train_p1_211/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/circular_prm_train_p1_211",
+      "pair_id": "prmbench/preview/circular_prm_train_p1_211",
+      "source_id": "circular_prm_train_p1_211"
+    },
+    {
+      "clean_content_hash": "88826d87359fbd8f",
+      "clean_sample_id": "prmbench/preview/circular_prm_train_p1_310/clean",
+      "corrupt_content_hash": "feba2f70f97f7d22",
+      "corrupt_sample_id": "prmbench/preview/circular_prm_train_p1_310/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/circular_prm_train_p1_310",
+      "pair_id": "prmbench/preview/circular_prm_train_p1_310",
+      "source_id": "circular_prm_train_p1_310"
+    },
+    {
+      "clean_content_hash": "1a082abb94e68683",
+      "clean_sample_id": "prmbench/preview/circular_prm_train_p1_421/clean",
+      "corrupt_content_hash": "ade707d7af6aa39f",
+      "corrupt_sample_id": "prmbench/preview/circular_prm_train_p1_421/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/circular_prm_train_p1_421",
+      "pair_id": "prmbench/preview/circular_prm_train_p1_421",
+      "source_id": "circular_prm_train_p1_421"
+    },
+    {
+      "clean_content_hash": "f0eab2ca48351ebd",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p1_0/clean",
+      "corrupt_content_hash": "c7a2fbd682461a0d",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p1_0/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p1_0",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_0",
+      "source_id": "confidence_prm_test_p1_0"
+    },
+    {
+      "clean_content_hash": "17f5bc8bb0cab4b9",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p1_11/clean",
+      "corrupt_content_hash": "6d2b4f1e0d03ad06",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p1_11/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p1_11",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_11",
+      "source_id": "confidence_prm_test_p1_11"
+    },
+    {
+      "clean_content_hash": "bcfa1da2d0bccb25",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p1_13/clean",
+      "corrupt_content_hash": "82d2def0a19ae688",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p1_13/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p1_13",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_13",
+      "source_id": "confidence_prm_test_p1_13"
+    },
+    {
+      "clean_content_hash": "4d931a26b23c88b7",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p1_20/clean",
+      "corrupt_content_hash": "ae36049551713fea",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p1_20/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p1_20",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_20",
+      "source_id": "confidence_prm_test_p1_20"
+    },
+    {
+      "clean_content_hash": "b85489d3a7ccd90f",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p1_48/clean",
+      "corrupt_content_hash": "84af1b375dba5b4b",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p1_48/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p1_48",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_48",
+      "source_id": "confidence_prm_test_p1_48"
+    },
+    {
+      "clean_content_hash": "be974f61640932b2",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p1_58/clean",
+      "corrupt_content_hash": "ca2b6439a25a1e41",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p1_58/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p1_58",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_58",
+      "source_id": "confidence_prm_test_p1_58"
+    },
+    {
+      "clean_content_hash": "ad2a69b427d8705e",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p1_77/clean",
+      "corrupt_content_hash": "dd29dcc94d760394",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p1_77/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p1_77",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_77",
+      "source_id": "confidence_prm_test_p1_77"
+    },
+    {
+      "clean_content_hash": "f75038b654528775",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p1_81/clean",
+      "corrupt_content_hash": "3fd2cff5168cebe8",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p1_81/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p1_81",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_81",
+      "source_id": "confidence_prm_test_p1_81"
+    },
+    {
+      "clean_content_hash": "772c815f7152f11c",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p1_86/clean",
+      "corrupt_content_hash": "c0cef9e1d7042f51",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p1_86/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p1_86",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_86",
+      "source_id": "confidence_prm_test_p1_86"
+    },
+    {
+      "clean_content_hash": "7d28bbb811d2ebbb",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p1_88/clean",
+      "corrupt_content_hash": "c70da1acc2300df7",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p1_88/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p1_88",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_88",
+      "source_id": "confidence_prm_test_p1_88"
+    },
+    {
+      "clean_content_hash": "60b8f23e46149e02",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p1_96/clean",
+      "corrupt_content_hash": "1f333125cd46e7fe",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p1_96/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p1_96",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_96",
+      "source_id": "confidence_prm_test_p1_96"
+    },
+    {
+      "clean_content_hash": "f0df6949e3e67178",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p1_98/clean",
+      "corrupt_content_hash": "a956f51d60456def",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p1_98/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p1_98",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_98",
+      "source_id": "confidence_prm_test_p1_98"
+    },
+    {
+      "clean_content_hash": "7dfd296784214222",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p2_1128/clean",
+      "corrupt_content_hash": "a73ff08dcf884621",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p2_1128/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p2_1128",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1128",
+      "source_id": "confidence_prm_test_p2_1128"
+    },
+    {
+      "clean_content_hash": "e9e97e0c84402be5",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p2_1141/clean",
+      "corrupt_content_hash": "2d588f11c2b5aba2",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p2_1141/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p2_1141",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1141",
+      "source_id": "confidence_prm_test_p2_1141"
+    },
+    {
+      "clean_content_hash": "0a77797645216cbf",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p2_1286/clean",
+      "corrupt_content_hash": "2c3bed606f22a5e5",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p2_1286/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p2_1286",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1286",
+      "source_id": "confidence_prm_test_p2_1286"
+    },
+    {
+      "clean_content_hash": "a116a10f897f219b",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p2_1292/clean",
+      "corrupt_content_hash": "189f0918f623389b",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p2_1292/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p2_1292",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1292",
+      "source_id": "confidence_prm_test_p2_1292"
+    },
+    {
+      "clean_content_hash": "a8752c465faccc20",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p2_1305/clean",
+      "corrupt_content_hash": "434d4b270ef5f097",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p2_1305/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p2_1305",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1305",
+      "source_id": "confidence_prm_test_p2_1305"
+    },
+    {
+      "clean_content_hash": "80ff4decf0746503",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p2_1351/clean",
+      "corrupt_content_hash": "780ec36941ff568d",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p2_1351/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p2_1351",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1351",
+      "source_id": "confidence_prm_test_p2_1351"
+    },
+    {
+      "clean_content_hash": "ffa30f685517083f",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p2_1496/clean",
+      "corrupt_content_hash": "36e4d6201b341c65",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p2_1496/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p2_1496",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1496",
+      "source_id": "confidence_prm_test_p2_1496"
+    },
+    {
+      "clean_content_hash": "21082e84cdddd6ca",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p2_1518/clean",
+      "corrupt_content_hash": "dd6f55321e3a480e",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p2_1518/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p2_1518",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1518",
+      "source_id": "confidence_prm_test_p2_1518"
+    },
+    {
+      "clean_content_hash": "c19aa84f56f0535e",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p2_1559/clean",
+      "corrupt_content_hash": "a0527999a4a45116",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p2_1559/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p2_1559",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1559",
+      "source_id": "confidence_prm_test_p2_1559"
+    },
+    {
+      "clean_content_hash": "45e41d666de0b215",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p2_1606/clean",
+      "corrupt_content_hash": "aeabdf9d61d12b81",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p2_1606/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p2_1606",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1606",
+      "source_id": "confidence_prm_test_p2_1606"
+    },
+    {
+      "clean_content_hash": "d1551e38f12125f7",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p2_1634/clean",
+      "corrupt_content_hash": "5715c11f341c0f6b",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p2_1634/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p2_1634",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1634",
+      "source_id": "confidence_prm_test_p2_1634"
+    },
+    {
+      "clean_content_hash": "6ab6e48b859e58b4",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p2_1716/clean",
+      "corrupt_content_hash": "708f29a0d65771f3",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p2_1716/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p2_1716",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1716",
+      "source_id": "confidence_prm_test_p2_1716"
+    },
+    {
+      "clean_content_hash": "93554bb7a6a2498c",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p2_1721/clean",
+      "corrupt_content_hash": "bbb0913795c9ba17",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p2_1721/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p2_1721",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1721",
+      "source_id": "confidence_prm_test_p2_1721"
+    },
+    {
+      "clean_content_hash": "132527fc8df242e1",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p2_1759/clean",
+      "corrupt_content_hash": "d4ca2b9278893a4d",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p2_1759/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p2_1759",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1759",
+      "source_id": "confidence_prm_test_p2_1759"
+    },
+    {
+      "clean_content_hash": "efbaf42da3e94a14",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p2_1785/clean",
+      "corrupt_content_hash": "43763288014dc2ec",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p2_1785/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p2_1785",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1785",
+      "source_id": "confidence_prm_test_p2_1785"
+    },
+    {
+      "clean_content_hash": "ee72b4267969f293",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p2_1816/clean",
+      "corrupt_content_hash": "86982b0fb315892e",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p2_1816/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p2_1816",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1816",
+      "source_id": "confidence_prm_test_p2_1816"
+    },
+    {
+      "clean_content_hash": "9e6b4e9b41e2a2e4",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p2_1829/clean",
+      "corrupt_content_hash": "15f5c458e71ca73a",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p2_1829/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p2_1829",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1829",
+      "source_id": "confidence_prm_test_p2_1829"
+    },
+    {
+      "clean_content_hash": "bcee6db41f3065a3",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p2_1899/clean",
+      "corrupt_content_hash": "17a254afdd064a06",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p2_1899/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p2_1899",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1899",
+      "source_id": "confidence_prm_test_p2_1899"
+    },
+    {
+      "clean_content_hash": "6c2a0c0d7acdf0ea",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p2_1920/clean",
+      "corrupt_content_hash": "b8caf11bff9dc855",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p2_1920/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p2_1920",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1920",
+      "source_id": "confidence_prm_test_p2_1920"
+    },
+    {
+      "clean_content_hash": "8d82fe0c8d73ae9d",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p2_1935/clean",
+      "corrupt_content_hash": "993d44dbab958a65",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p2_1935/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p2_1935",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1935",
+      "source_id": "confidence_prm_test_p2_1935"
+    },
+    {
+      "clean_content_hash": "19c0d870613acf30",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p2_1947/clean",
+      "corrupt_content_hash": "37894cdc0e6a2930",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p2_1947/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p2_1947",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1947",
+      "source_id": "confidence_prm_test_p2_1947"
+    },
+    {
+      "clean_content_hash": "ef5414dd58cf8039",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p2_1956/clean",
+      "corrupt_content_hash": "dfbccc9bbdb62f6d",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p2_1956/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p2_1956",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1956",
+      "source_id": "confidence_prm_test_p2_1956"
+    },
+    {
+      "clean_content_hash": "2b836a8582bf6f4d",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p2_2050/clean",
+      "corrupt_content_hash": "0b0a3d2791221eac",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p2_2050/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p2_2050",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2050",
+      "source_id": "confidence_prm_test_p2_2050"
+    },
+    {
+      "clean_content_hash": "d5b23c0fab7c82fd",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p2_2071/clean",
+      "corrupt_content_hash": "1b0b19e33e31b97f",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p2_2071/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p2_2071",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2071",
+      "source_id": "confidence_prm_test_p2_2071"
+    },
+    {
+      "clean_content_hash": "d281f8131de20a0b",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p2_2094/clean",
+      "corrupt_content_hash": "71379f4709fc0734",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p2_2094/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p2_2094",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2094",
+      "source_id": "confidence_prm_test_p2_2094"
+    },
+    {
+      "clean_content_hash": "89bf61d3207251d6",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p2_2095/clean",
+      "corrupt_content_hash": "93e4b73c2e045e75",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p2_2095/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p2_2095",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2095",
+      "source_id": "confidence_prm_test_p2_2095"
+    },
+    {
+      "clean_content_hash": "67d424b4cdd2c1ac",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p2_2105/clean",
+      "corrupt_content_hash": "d5e438be91bc585e",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p2_2105/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p2_2105",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2105",
+      "source_id": "confidence_prm_test_p2_2105"
+    },
+    {
+      "clean_content_hash": "fe93cad121f94b28",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p2_2127/clean",
+      "corrupt_content_hash": "2c5fd5a8b6d93eaa",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p2_2127/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p2_2127",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2127",
+      "source_id": "confidence_prm_test_p2_2127"
+    },
+    {
+      "clean_content_hash": "85e25960e1c8b281",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p2_2226/clean",
+      "corrupt_content_hash": "e3d622c48edbb201",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p2_2226/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p2_2226",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2226",
+      "source_id": "confidence_prm_test_p2_2226"
+    },
+    {
+      "clean_content_hash": "4035586f37224599",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p2_2265/clean",
+      "corrupt_content_hash": "4dc2d7cb011b67b7",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p2_2265/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p2_2265",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2265",
+      "source_id": "confidence_prm_test_p2_2265"
+    },
+    {
+      "clean_content_hash": "2a2f2b0af4d26849",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p2_2375/clean",
+      "corrupt_content_hash": "d5e8127f5d15183c",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p2_2375/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p2_2375",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2375",
+      "source_id": "confidence_prm_test_p2_2375"
+    },
+    {
+      "clean_content_hash": "9e9e2f0c6198b913",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p2_2449/clean",
+      "corrupt_content_hash": "f6d54616635011d6",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p2_2449/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p2_2449",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2449",
+      "source_id": "confidence_prm_test_p2_2449"
+    },
+    {
+      "clean_content_hash": "c3255fc8d21a2d52",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p2_2562/clean",
+      "corrupt_content_hash": "6b9c916ff01bf7a8",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p2_2562/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p2_2562",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2562",
+      "source_id": "confidence_prm_test_p2_2562"
+    },
+    {
+      "clean_content_hash": "a26ca32bb4f7af3f",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p2_2576/clean",
+      "corrupt_content_hash": "d711b1af9b1280cf",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p2_2576/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p2_2576",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2576",
+      "source_id": "confidence_prm_test_p2_2576"
+    },
+    {
+      "clean_content_hash": "4e7fbd05f96537dd",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p2_2594/clean",
+      "corrupt_content_hash": "e3a219f37ecb6979",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p2_2594/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p2_2594",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2594",
+      "source_id": "confidence_prm_test_p2_2594"
+    },
+    {
+      "clean_content_hash": "975ac09143f758b3",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p2_2709/clean",
+      "corrupt_content_hash": "93c779c215114a81",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p2_2709/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p2_2709",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2709",
+      "source_id": "confidence_prm_test_p2_2709"
+    },
+    {
+      "clean_content_hash": "36e7848067b994b0",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p2_360/clean",
+      "corrupt_content_hash": "c7181c4ffe7827b3",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p2_360/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p2_360",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_360",
+      "source_id": "confidence_prm_test_p2_360"
+    },
+    {
+      "clean_content_hash": "7d49c336a8964fb4",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p2_409/clean",
+      "corrupt_content_hash": "7d36661e8bebf8a0",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p2_409/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p2_409",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_409",
+      "source_id": "confidence_prm_test_p2_409"
+    },
+    {
+      "clean_content_hash": "36ee99ac3238429d",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p2_671/clean",
+      "corrupt_content_hash": "d6c01142035dabb0",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p2_671/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p2_671",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_671",
+      "source_id": "confidence_prm_test_p2_671"
+    },
+    {
+      "clean_content_hash": "15b4c3bea0c4215f",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p2_736/clean",
+      "corrupt_content_hash": "d1ded066b9f6794c",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p2_736/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p2_736",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_736",
+      "source_id": "confidence_prm_test_p2_736"
+    },
+    {
+      "clean_content_hash": "f1d4bd0f9cd2c0d7",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p2_783/clean",
+      "corrupt_content_hash": "66b2c2e98e67b72a",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p2_783/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p2_783",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_783",
+      "source_id": "confidence_prm_test_p2_783"
+    },
+    {
+      "clean_content_hash": "274fe7c213705dd1",
+      "clean_sample_id": "prmbench/preview/confidence_prm_test_p2_991/clean",
+      "corrupt_content_hash": "dfdd7c391c0a3506",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_test_p2_991/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_test_p2_991",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_991",
+      "source_id": "confidence_prm_test_p2_991"
+    },
+    {
+      "clean_content_hash": "d385901bc812b334",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_105/clean",
+      "corrupt_content_hash": "98a0411d5a4b36a3",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_105/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_105",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_105",
+      "source_id": "confidence_prm_train_p1_105"
+    },
+    {
+      "clean_content_hash": "f85404735785b337",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_112/clean",
+      "corrupt_content_hash": "adb7189d6fea764f",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_112/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_112",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_112",
+      "source_id": "confidence_prm_train_p1_112"
+    },
+    {
+      "clean_content_hash": "79477affeef971c7",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_116/clean",
+      "corrupt_content_hash": "ae6628b8929f9ced",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_116/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_116",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_116",
+      "source_id": "confidence_prm_train_p1_116"
+    },
+    {
+      "clean_content_hash": "6c483721f1078e0b",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_120/clean",
+      "corrupt_content_hash": "883bb6ff7e6aae3e",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_120/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_120",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_120",
+      "source_id": "confidence_prm_train_p1_120"
+    },
+    {
+      "clean_content_hash": "2b7558cb4a450a5d",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_125/clean",
+      "corrupt_content_hash": "30a0c337e11e5c83",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_125/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_125",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_125",
+      "source_id": "confidence_prm_train_p1_125"
+    },
+    {
+      "clean_content_hash": "1a23b4644651bb29",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_128/clean",
+      "corrupt_content_hash": "aa280fcc56ce77b3",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_128/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_128",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_128",
+      "source_id": "confidence_prm_train_p1_128"
+    },
+    {
+      "clean_content_hash": "8929abaa214bb6b6",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_132/clean",
+      "corrupt_content_hash": "6b4deb137561da70",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_132/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_132",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_132",
+      "source_id": "confidence_prm_train_p1_132"
+    },
+    {
+      "clean_content_hash": "836731c8f4bf34f6",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_142/clean",
+      "corrupt_content_hash": "6c29e85fc1ef0d37",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_142/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_142",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_142",
+      "source_id": "confidence_prm_train_p1_142"
+    },
+    {
+      "clean_content_hash": "4488fdc41ab3720f",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_150/clean",
+      "corrupt_content_hash": "09a271fea37f5c21",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_150/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_150",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_150",
+      "source_id": "confidence_prm_train_p1_150"
+    },
+    {
+      "clean_content_hash": "e3ba0bc8b02f3cbc",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_152/clean",
+      "corrupt_content_hash": "a9b9eb82d1e0c577",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_152/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_152",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_152",
+      "source_id": "confidence_prm_train_p1_152"
+    },
+    {
+      "clean_content_hash": "2ec16bae23d2e8d4",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_160/clean",
+      "corrupt_content_hash": "1720e3021673786f",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_160/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_160",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_160",
+      "source_id": "confidence_prm_train_p1_160"
+    },
+    {
+      "clean_content_hash": "babae9017e2225a4",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_173/clean",
+      "corrupt_content_hash": "fb7d4591c59d8349",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_173/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_173",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_173",
+      "source_id": "confidence_prm_train_p1_173"
+    },
+    {
+      "clean_content_hash": "8c113389a942c759",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_182/clean",
+      "corrupt_content_hash": "c98b289bb3863a88",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_182/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_182",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_182",
+      "source_id": "confidence_prm_train_p1_182"
+    },
+    {
+      "clean_content_hash": "2b9ac426a6e191c3",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_186/clean",
+      "corrupt_content_hash": "c8ea6e61c84b6b2f",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_186/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_186",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_186",
+      "source_id": "confidence_prm_train_p1_186"
+    },
+    {
+      "clean_content_hash": "dc0b87317455d45f",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_20/clean",
+      "corrupt_content_hash": "767e5f2b15e9943b",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_20/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_20",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_20",
+      "source_id": "confidence_prm_train_p1_20"
+    },
+    {
+      "clean_content_hash": "d734c7593be6a01e",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_208/clean",
+      "corrupt_content_hash": "a7ef0591349d670e",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_208/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_208",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_208",
+      "source_id": "confidence_prm_train_p1_208"
+    },
+    {
+      "clean_content_hash": "d37a44c841b6ae07",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_22/clean",
+      "corrupt_content_hash": "9f29918550c1b565",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_22/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_22",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_22",
+      "source_id": "confidence_prm_train_p1_22"
+    },
+    {
+      "clean_content_hash": "55e7d0bae422d5cb",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_222/clean",
+      "corrupt_content_hash": "a046cfb77dce7e94",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_222/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_222",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_222",
+      "source_id": "confidence_prm_train_p1_222"
+    },
+    {
+      "clean_content_hash": "4078df11be2f1411",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_244/clean",
+      "corrupt_content_hash": "e361c1573b502250",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_244/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_244",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_244",
+      "source_id": "confidence_prm_train_p1_244"
+    },
+    {
+      "clean_content_hash": "2c0742cf48801797",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_249/clean",
+      "corrupt_content_hash": "01098832b3c5b794",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_249/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_249",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_249",
+      "source_id": "confidence_prm_train_p1_249"
+    },
+    {
+      "clean_content_hash": "6fd598fe616507bb",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_261/clean",
+      "corrupt_content_hash": "e125e3f1b1f0d402",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_261/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_261",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_261",
+      "source_id": "confidence_prm_train_p1_261"
+    },
+    {
+      "clean_content_hash": "f8f6a5850c5adc8c",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_271/clean",
+      "corrupt_content_hash": "e10875e8e058c4ae",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_271/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_271",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_271",
+      "source_id": "confidence_prm_train_p1_271"
+    },
+    {
+      "clean_content_hash": "21a0b2ce8b4c574f",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_278/clean",
+      "corrupt_content_hash": "9621217009d22ac0",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_278/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_278",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_278",
+      "source_id": "confidence_prm_train_p1_278"
+    },
+    {
+      "clean_content_hash": "d891fe855f4c37bc",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_28/clean",
+      "corrupt_content_hash": "cc674d435e5e7f94",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_28/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_28",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_28",
+      "source_id": "confidence_prm_train_p1_28"
+    },
+    {
+      "clean_content_hash": "98eefe0dc2504cb0",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_286/clean",
+      "corrupt_content_hash": "e07213071440a57f",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_286/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_286",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_286",
+      "source_id": "confidence_prm_train_p1_286"
+    },
+    {
+      "clean_content_hash": "462f5b0369ec4923",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_289/clean",
+      "corrupt_content_hash": "8bc85eded736316b",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_289/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_289",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_289",
+      "source_id": "confidence_prm_train_p1_289"
+    },
+    {
+      "clean_content_hash": "02d12ae6376395fa",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_290/clean",
+      "corrupt_content_hash": "e8375490d2d6843d",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_290/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_290",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_290",
+      "source_id": "confidence_prm_train_p1_290"
+    },
+    {
+      "clean_content_hash": "6cd96a7bd9c7b51c",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_293/clean",
+      "corrupt_content_hash": "2498053eeb83957d",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_293/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_293",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_293",
+      "source_id": "confidence_prm_train_p1_293"
+    },
+    {
+      "clean_content_hash": "5778e60e415ee2b4",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_299/clean",
+      "corrupt_content_hash": "101fde737bd3371c",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_299/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_299",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_299",
+      "source_id": "confidence_prm_train_p1_299"
+    },
+    {
+      "clean_content_hash": "6f27890ae29661c9",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_3/clean",
+      "corrupt_content_hash": "21b64bcf90ff7fb3",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_3/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_3",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_3",
+      "source_id": "confidence_prm_train_p1_3"
+    },
+    {
+      "clean_content_hash": "a2d47426013ea046",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_301/clean",
+      "corrupt_content_hash": "cdbbb13098043dc4",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_301/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_301",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_301",
+      "source_id": "confidence_prm_train_p1_301"
+    },
+    {
+      "clean_content_hash": "356f3a5bbf34c884",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_311/clean",
+      "corrupt_content_hash": "a03cb89c495ece07",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_311/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_311",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_311",
+      "source_id": "confidence_prm_train_p1_311"
+    },
+    {
+      "clean_content_hash": "54fe138208c5ae2b",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_336/clean",
+      "corrupt_content_hash": "ae974e442e9e9ba1",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_336/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_336",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_336",
+      "source_id": "confidence_prm_train_p1_336"
+    },
+    {
+      "clean_content_hash": "cc315118c4fc4273",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_344/clean",
+      "corrupt_content_hash": "ab3edec19113dd09",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_344/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_344",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_344",
+      "source_id": "confidence_prm_train_p1_344"
+    },
+    {
+      "clean_content_hash": "6c16a09c422e0efc",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_369/clean",
+      "corrupt_content_hash": "9f86971c00126144",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_369/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_369",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_369",
+      "source_id": "confidence_prm_train_p1_369"
+    },
+    {
+      "clean_content_hash": "f5100faee97e5a8d",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_376/clean",
+      "corrupt_content_hash": "37a92e914d332141",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_376/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_376",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_376",
+      "source_id": "confidence_prm_train_p1_376"
+    },
+    {
+      "clean_content_hash": "505c3f46e43ca362",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_381/clean",
+      "corrupt_content_hash": "22b9178e20766463",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_381/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_381",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_381",
+      "source_id": "confidence_prm_train_p1_381"
+    },
+    {
+      "clean_content_hash": "5d66d03ef7d2431a",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_399/clean",
+      "corrupt_content_hash": "760df139441097ba",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_399/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_399",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_399",
+      "source_id": "confidence_prm_train_p1_399"
+    },
+    {
+      "clean_content_hash": "40910e54875442a3",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_411/clean",
+      "corrupt_content_hash": "3f525a24d0562120",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_411/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_411",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_411",
+      "source_id": "confidence_prm_train_p1_411"
+    },
+    {
+      "clean_content_hash": "5d57e07979491e00",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_416/clean",
+      "corrupt_content_hash": "0f147e4a0de353f9",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_416/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_416",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_416",
+      "source_id": "confidence_prm_train_p1_416"
+    },
+    {
+      "clean_content_hash": "6309657cba53def2",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_425/clean",
+      "corrupt_content_hash": "b5f2d5915626b7fe",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_425/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_425",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_425",
+      "source_id": "confidence_prm_train_p1_425"
+    },
+    {
+      "clean_content_hash": "0fb9eae34b3cfd5e",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_430/clean",
+      "corrupt_content_hash": "458fe9c8315bbfc1",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_430/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_430",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_430",
+      "source_id": "confidence_prm_train_p1_430"
+    },
+    {
+      "clean_content_hash": "f4204640b96c0c48",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_437/clean",
+      "corrupt_content_hash": "44b714f31c95183f",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_437/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_437",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_437",
+      "source_id": "confidence_prm_train_p1_437"
+    },
+    {
+      "clean_content_hash": "560fb3328f377391",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_441/clean",
+      "corrupt_content_hash": "6183c783b389b316",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_441/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_441",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_441",
+      "source_id": "confidence_prm_train_p1_441"
+    },
+    {
+      "clean_content_hash": "b76394ba067139e3",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_45/clean",
+      "corrupt_content_hash": "71381126f3d282b2",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_45/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_45",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_45",
+      "source_id": "confidence_prm_train_p1_45"
+    },
+    {
+      "clean_content_hash": "703e5e8ed8fdb8f5",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_450/clean",
+      "corrupt_content_hash": "b86f43f8287abf49",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_450/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_450",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_450",
+      "source_id": "confidence_prm_train_p1_450"
+    },
+    {
+      "clean_content_hash": "4f70dc039a396612",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_451/clean",
+      "corrupt_content_hash": "3a3801ac7527443b",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_451/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_451",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_451",
+      "source_id": "confidence_prm_train_p1_451"
+    },
+    {
+      "clean_content_hash": "c50c40b9450ad7da",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_460/clean",
+      "corrupt_content_hash": "e62a5b0320378adb",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_460/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_460",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_460",
+      "source_id": "confidence_prm_train_p1_460"
+    },
+    {
+      "clean_content_hash": "ffab21ccf216cf61",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_461/clean",
+      "corrupt_content_hash": "6593d654402a7a30",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_461/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_461",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_461",
+      "source_id": "confidence_prm_train_p1_461"
+    },
+    {
+      "clean_content_hash": "18460b35af04603e",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_462/clean",
+      "corrupt_content_hash": "b0945bdf98179f2e",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_462/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_462",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_462",
+      "source_id": "confidence_prm_train_p1_462"
+    },
+    {
+      "clean_content_hash": "0e311bd3b689bf9d",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_464/clean",
+      "corrupt_content_hash": "bb535f4af35c8294",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_464/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_464",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_464",
+      "source_id": "confidence_prm_train_p1_464"
+    },
+    {
+      "clean_content_hash": "545106219eac49fe",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_468/clean",
+      "corrupt_content_hash": "5ed93df2d6eba26e",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_468/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_468",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_468",
+      "source_id": "confidence_prm_train_p1_468"
+    },
+    {
+      "clean_content_hash": "2093ccf664232bb9",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_47/clean",
+      "corrupt_content_hash": "2b8da4d5ef35e26f",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_47/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_47",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_47",
+      "source_id": "confidence_prm_train_p1_47"
+    },
+    {
+      "clean_content_hash": "65bcb6378affbefc",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_55/clean",
+      "corrupt_content_hash": "17f017ba949a0ee2",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_55/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_55",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_55",
+      "source_id": "confidence_prm_train_p1_55"
+    },
+    {
+      "clean_content_hash": "4f0d1899485c9431",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_61/clean",
+      "corrupt_content_hash": "6854727cfc53b976",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_61/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_61",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_61",
+      "source_id": "confidence_prm_train_p1_61"
+    },
+    {
+      "clean_content_hash": "f9b74c73b1ea0863",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_63/clean",
+      "corrupt_content_hash": "48f9710e3a35d2ad",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_63/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_63",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_63",
+      "source_id": "confidence_prm_train_p1_63"
+    },
+    {
+      "clean_content_hash": "aa8f491fb4fb24e3",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_68/clean",
+      "corrupt_content_hash": "85e5d86f65afe146",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_68/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_68",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_68",
+      "source_id": "confidence_prm_train_p1_68"
+    },
+    {
+      "clean_content_hash": "1fd0a64a4f2786b5",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_72/clean",
+      "corrupt_content_hash": "cf3959c6cc286974",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_72/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_72",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_72",
+      "source_id": "confidence_prm_train_p1_72"
+    },
+    {
+      "clean_content_hash": "ab39920ec10cb998",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_75/clean",
+      "corrupt_content_hash": "00f1da50a1a7b698",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_75/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_75",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_75",
+      "source_id": "confidence_prm_train_p1_75"
+    },
+    {
+      "clean_content_hash": "ee1b9c5018124ef8",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_76/clean",
+      "corrupt_content_hash": "95519088f0f78cc2",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_76/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_76",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_76",
+      "source_id": "confidence_prm_train_p1_76"
+    },
+    {
+      "clean_content_hash": "0188d4b74504b92a",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_83/clean",
+      "corrupt_content_hash": "eb005349236a0571",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_83/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_83",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_83",
+      "source_id": "confidence_prm_train_p1_83"
+    },
+    {
+      "clean_content_hash": "9ff94bb785d1bd09",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_93/clean",
+      "corrupt_content_hash": "ff6e79c95564712c",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_93/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_93",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_93",
+      "source_id": "confidence_prm_train_p1_93"
+    },
+    {
+      "clean_content_hash": "7e9e19e180992109",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_96/clean",
+      "corrupt_content_hash": "f49e766668aa481e",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_96/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_96",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_96",
+      "source_id": "confidence_prm_train_p1_96"
+    },
+    {
+      "clean_content_hash": "de7acd507f97c7bd",
+      "clean_sample_id": "prmbench/preview/confidence_prm_train_p1_99/clean",
+      "corrupt_content_hash": "57cbdb4468168846",
+      "corrupt_sample_id": "prmbench/preview/confidence_prm_train_p1_99/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/confidence_prm_train_p1_99",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_99",
+      "source_id": "confidence_prm_train_p1_99"
+    },
+    {
+      "clean_content_hash": "6145e09d9623f555",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_test_p1_103/clean",
+      "corrupt_content_hash": "05303cb9e57d471d",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_test_p1_103/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_test_p1_103",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p1_103",
+      "source_id": "counterfactual_prm_test_p1_103"
+    },
+    {
+      "clean_content_hash": "5df61b0b23136039",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_test_p1_14/clean",
+      "corrupt_content_hash": "f1d60a6348087892",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_test_p1_14/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_test_p1_14",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p1_14",
+      "source_id": "counterfactual_prm_test_p1_14"
+    },
+    {
+      "clean_content_hash": "be974f61640932b2",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_test_p1_58/clean",
+      "corrupt_content_hash": "094a73c77e42b8b5",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_test_p1_58/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_test_p1_58",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p1_58",
+      "source_id": "counterfactual_prm_test_p1_58"
+    },
+    {
+      "clean_content_hash": "ad2a69b427d8705e",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_test_p1_77/clean",
+      "corrupt_content_hash": "4c5aebc23ec4d480",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_test_p1_77/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_test_p1_77",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p1_77",
+      "source_id": "counterfactual_prm_test_p1_77"
+    },
+    {
+      "clean_content_hash": "f75038b654528775",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_test_p1_81/clean",
+      "corrupt_content_hash": "1da16477d96f27df",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_test_p1_81/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_test_p1_81",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p1_81",
+      "source_id": "counterfactual_prm_test_p1_81"
+    },
+    {
+      "clean_content_hash": "c4c7ba397f093930",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_test_p1_97/clean",
+      "corrupt_content_hash": "56442f352407b935",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_test_p1_97/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_test_p1_97",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p1_97",
+      "source_id": "counterfactual_prm_test_p1_97"
+    },
+    {
+      "clean_content_hash": "0c3aa74fdfc5899e",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_test_p2_1228/clean",
+      "corrupt_content_hash": "892b7bc499f9d6bd",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_test_p2_1228/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_test_p2_1228",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_1228",
+      "source_id": "counterfactual_prm_test_p2_1228"
+    },
+    {
+      "clean_content_hash": "51b98100275c24b1",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_test_p2_1362/clean",
+      "corrupt_content_hash": "db375d3db630d99e",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_test_p2_1362/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_test_p2_1362",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_1362",
+      "source_id": "counterfactual_prm_test_p2_1362"
+    },
+    {
+      "clean_content_hash": "ffa30f685517083f",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_test_p2_1496/clean",
+      "corrupt_content_hash": "05980586c77930a1",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_test_p2_1496/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_test_p2_1496",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_1496",
+      "source_id": "counterfactual_prm_test_p2_1496"
+    },
+    {
+      "clean_content_hash": "f46b88547a09515b",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_test_p2_1529/clean",
+      "corrupt_content_hash": "3314811e88fefaeb",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_test_p2_1529/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_test_p2_1529",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_1529",
+      "source_id": "counterfactual_prm_test_p2_1529"
+    },
+    {
+      "clean_content_hash": "9b3c8f36d4250086",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_test_p2_1695/clean",
+      "corrupt_content_hash": "e16dea4d85f1249d",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_test_p2_1695/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_test_p2_1695",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_1695",
+      "source_id": "counterfactual_prm_test_p2_1695"
+    },
+    {
+      "clean_content_hash": "6024a1bbf1a2698b",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_test_p2_1715/clean",
+      "corrupt_content_hash": "39b96995b2bda0b7",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_test_p2_1715/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_test_p2_1715",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_1715",
+      "source_id": "counterfactual_prm_test_p2_1715"
+    },
+    {
+      "clean_content_hash": "c897a04572ff9e22",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_test_p2_1723/clean",
+      "corrupt_content_hash": "08a53e193692e98b",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_test_p2_1723/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_test_p2_1723",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_1723",
+      "source_id": "counterfactual_prm_test_p2_1723"
+    },
+    {
+      "clean_content_hash": "4948f76f2d773da1",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_test_p2_1784/clean",
+      "corrupt_content_hash": "25a0b7bf6b5c48c2",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_test_p2_1784/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_test_p2_1784",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_1784",
+      "source_id": "counterfactual_prm_test_p2_1784"
+    },
+    {
+      "clean_content_hash": "6221b8b589bb527b",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_test_p2_1852/clean",
+      "corrupt_content_hash": "faa6d341ae8abb6f",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_test_p2_1852/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_test_p2_1852",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_1852",
+      "source_id": "counterfactual_prm_test_p2_1852"
+    },
+    {
+      "clean_content_hash": "6c2a0c0d7acdf0ea",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_test_p2_1920/clean",
+      "corrupt_content_hash": "09956ff77b2982ff",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_test_p2_1920/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_test_p2_1920",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_1920",
+      "source_id": "counterfactual_prm_test_p2_1920"
+    },
+    {
+      "clean_content_hash": "ef5414dd58cf8039",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_test_p2_1956/clean",
+      "corrupt_content_hash": "ade21a26d2f1a7e6",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_test_p2_1956/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_test_p2_1956",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_1956",
+      "source_id": "counterfactual_prm_test_p2_1956"
+    },
+    {
+      "clean_content_hash": "2b836a8582bf6f4d",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_test_p2_2050/clean",
+      "corrupt_content_hash": "62af05b9e6507657",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_test_p2_2050/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_test_p2_2050",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_2050",
+      "source_id": "counterfactual_prm_test_p2_2050"
+    },
+    {
+      "clean_content_hash": "0ca6ff0a9e9ea31a",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_test_p2_2071/clean",
+      "corrupt_content_hash": "a54b58f7464f765c",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_test_p2_2071/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_test_p2_2071",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_2071",
+      "source_id": "counterfactual_prm_test_p2_2071"
+    },
+    {
+      "clean_content_hash": "4ebe4532280c8786",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_test_p2_2095/clean",
+      "corrupt_content_hash": "6f77d7d550342a3b",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_test_p2_2095/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_test_p2_2095",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_2095",
+      "source_id": "counterfactual_prm_test_p2_2095"
+    },
+    {
+      "clean_content_hash": "56747060e6dc6839",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_test_p2_2126/clean",
+      "corrupt_content_hash": "a54dee00e702b783",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_test_p2_2126/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_test_p2_2126",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_2126",
+      "source_id": "counterfactual_prm_test_p2_2126"
+    },
+    {
+      "clean_content_hash": "8706970d01c197c4",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_test_p2_2475/clean",
+      "corrupt_content_hash": "c09cd0e6b0d9875a",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_test_p2_2475/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_test_p2_2475",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_2475",
+      "source_id": "counterfactual_prm_test_p2_2475"
+    },
+    {
+      "clean_content_hash": "26f9ed0d9280575b",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_test_p2_2492/clean",
+      "corrupt_content_hash": "45ef0603ab6cc17b",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_test_p2_2492/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_test_p2_2492",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_2492",
+      "source_id": "counterfactual_prm_test_p2_2492"
+    },
+    {
+      "clean_content_hash": "91252ad7a09cc1de",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_test_p2_2505/clean",
+      "corrupt_content_hash": "434537e8bb7e0612",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_test_p2_2505/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_test_p2_2505",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_2505",
+      "source_id": "counterfactual_prm_test_p2_2505"
+    },
+    {
+      "clean_content_hash": "0696b989011ee8fe",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_test_p2_2517/clean",
+      "corrupt_content_hash": "12ea4838a36a8b3e",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_test_p2_2517/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_test_p2_2517",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_2517",
+      "source_id": "counterfactual_prm_test_p2_2517"
+    },
+    {
+      "clean_content_hash": "712d6eed5b102cfb",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_test_p2_2532/clean",
+      "corrupt_content_hash": "1e438eea5019b481",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_test_p2_2532/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_test_p2_2532",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_2532",
+      "source_id": "counterfactual_prm_test_p2_2532"
+    },
+    {
+      "clean_content_hash": "136a9e37cbe415b2",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_test_p2_329/clean",
+      "corrupt_content_hash": "e8b35a22e7c37390",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_test_p2_329/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_test_p2_329",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_329",
+      "source_id": "counterfactual_prm_test_p2_329"
+    },
+    {
+      "clean_content_hash": "d5ca73d2da32f6c3",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_test_p2_671/clean",
+      "corrupt_content_hash": "f346a0439b54cdaa",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_test_p2_671/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_test_p2_671",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_671",
+      "source_id": "counterfactual_prm_test_p2_671"
+    },
+    {
+      "clean_content_hash": "26cdfb7042ad0a44",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_test_p2_783/clean",
+      "corrupt_content_hash": "ece7faf485a7a9b1",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_test_p2_783/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_test_p2_783",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_783",
+      "source_id": "counterfactual_prm_test_p2_783"
+    },
+    {
+      "clean_content_hash": "f4e149915e13e89c",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_test_p2_819/clean",
+      "corrupt_content_hash": "7b7763d7cc456f51",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_test_p2_819/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_test_p2_819",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_819",
+      "source_id": "counterfactual_prm_test_p2_819"
+    },
+    {
+      "clean_content_hash": "1ec3cc04550b60fa",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_test_p2_901/clean",
+      "corrupt_content_hash": "37c4968b908e2fee",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_test_p2_901/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_test_p2_901",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_901",
+      "source_id": "counterfactual_prm_test_p2_901"
+    },
+    {
+      "clean_content_hash": "42607df1094f928f",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_test_p2_927/clean",
+      "corrupt_content_hash": "84521484d80476ae",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_test_p2_927/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_test_p2_927",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_927",
+      "source_id": "counterfactual_prm_test_p2_927"
+    },
+    {
+      "clean_content_hash": "919cc1eab1d67d49",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_test_p2_951/clean",
+      "corrupt_content_hash": "5fadb8c9174273f5",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_test_p2_951/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_test_p2_951",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_951",
+      "source_id": "counterfactual_prm_test_p2_951"
+    },
+    {
+      "clean_content_hash": "b862961c536a099c",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_test_p2_961/clean",
+      "corrupt_content_hash": "cf4bafa49e9de02e",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_test_p2_961/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_test_p2_961",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_961",
+      "source_id": "counterfactual_prm_test_p2_961"
+    },
+    {
+      "clean_content_hash": "0dbef9596fd4a21a",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_test_p2_991/clean",
+      "corrupt_content_hash": "29c08b07ae102f82",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_test_p2_991/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_test_p2_991",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_991",
+      "source_id": "counterfactual_prm_test_p2_991"
+    },
+    {
+      "clean_content_hash": "059ded037ae0b0c6",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_train_p1_106/clean",
+      "corrupt_content_hash": "8ec5d526b3a37763",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_train_p1_106/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_train_p1_106",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_106",
+      "source_id": "counterfactual_prm_train_p1_106"
+    },
+    {
+      "clean_content_hash": "cb38b4f22fa6d463",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_train_p1_118/clean",
+      "corrupt_content_hash": "1d99b4626ce9e5f1",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_train_p1_118/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_train_p1_118",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_118",
+      "source_id": "counterfactual_prm_train_p1_118"
+    },
+    {
+      "clean_content_hash": "02f52e847952ad29",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_train_p1_126/clean",
+      "corrupt_content_hash": "b01aecc57276211c",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_train_p1_126/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_train_p1_126",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_126",
+      "source_id": "counterfactual_prm_train_p1_126"
+    },
+    {
+      "clean_content_hash": "fe8bfb96aad21d9e",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_train_p1_131/clean",
+      "corrupt_content_hash": "0ed2446b7d20d140",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_train_p1_131/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_train_p1_131",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_131",
+      "source_id": "counterfactual_prm_train_p1_131"
+    },
+    {
+      "clean_content_hash": "0e268211ad20b653",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_train_p1_144/clean",
+      "corrupt_content_hash": "c83f6875777d3cec",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_train_p1_144/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_train_p1_144",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_144",
+      "source_id": "counterfactual_prm_train_p1_144"
+    },
+    {
+      "clean_content_hash": "f1170c8fdab5de3a",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_train_p1_153/clean",
+      "corrupt_content_hash": "09e5ecb4172c22e8",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_train_p1_153/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_train_p1_153",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_153",
+      "source_id": "counterfactual_prm_train_p1_153"
+    },
+    {
+      "clean_content_hash": "abddfccaf210aa07",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_train_p1_216/clean",
+      "corrupt_content_hash": "be9f6f055f69b607",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_train_p1_216/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_train_p1_216",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_216",
+      "source_id": "counterfactual_prm_train_p1_216"
+    },
+    {
+      "clean_content_hash": "45f39e52f436322c",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_train_p1_223/clean",
+      "corrupt_content_hash": "da9c82ef8fe78066",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_train_p1_223/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_train_p1_223",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_223",
+      "source_id": "counterfactual_prm_train_p1_223"
+    },
+    {
+      "clean_content_hash": "860f342d70a6fd8f",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_train_p1_229/clean",
+      "corrupt_content_hash": "f8bc7a25f0ac30aa",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_train_p1_229/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_train_p1_229",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_229",
+      "source_id": "counterfactual_prm_train_p1_229"
+    },
+    {
+      "clean_content_hash": "c3bc1678752e1e49",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_train_p1_272/clean",
+      "corrupt_content_hash": "2b997fcdc8c26347",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_train_p1_272/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_train_p1_272",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_272",
+      "source_id": "counterfactual_prm_train_p1_272"
+    },
+    {
+      "clean_content_hash": "5b2c3ed9c63d1dbf",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_train_p1_282/clean",
+      "corrupt_content_hash": "3546b91068fe6374",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_train_p1_282/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_train_p1_282",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_282",
+      "source_id": "counterfactual_prm_train_p1_282"
+    },
+    {
+      "clean_content_hash": "27ce7ece8f497b4b",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_train_p1_285/clean",
+      "corrupt_content_hash": "51c69d88927238d5",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_train_p1_285/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_train_p1_285",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_285",
+      "source_id": "counterfactual_prm_train_p1_285"
+    },
+    {
+      "clean_content_hash": "d7a1abdac473a60c",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_train_p1_288/clean",
+      "corrupt_content_hash": "e239cca7299edb83",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_train_p1_288/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_train_p1_288",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_288",
+      "source_id": "counterfactual_prm_train_p1_288"
+    },
+    {
+      "clean_content_hash": "4d9daaf61886c3c8",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_train_p1_32/clean",
+      "corrupt_content_hash": "91aa6518914f53b5",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_train_p1_32/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_train_p1_32",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_32",
+      "source_id": "counterfactual_prm_train_p1_32"
+    },
+    {
+      "clean_content_hash": "82ff69906433a95e",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_train_p1_342/clean",
+      "corrupt_content_hash": "c21833e8bae38db0",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_train_p1_342/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_train_p1_342",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_342",
+      "source_id": "counterfactual_prm_train_p1_342"
+    },
+    {
+      "clean_content_hash": "3925b10f06c18552",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_train_p1_37/clean",
+      "corrupt_content_hash": "51bb19f48d55c37f",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_train_p1_37/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_train_p1_37",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_37",
+      "source_id": "counterfactual_prm_train_p1_37"
+    },
+    {
+      "clean_content_hash": "f5100faee97e5a8d",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_train_p1_376/clean",
+      "corrupt_content_hash": "6c59da5a97ab7b45",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_train_p1_376/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_train_p1_376",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_376",
+      "source_id": "counterfactual_prm_train_p1_376"
+    },
+    {
+      "clean_content_hash": "47f1fbe0b2576c80",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_train_p1_380/clean",
+      "corrupt_content_hash": "0fdd0fb4cc481ac1",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_train_p1_380/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_train_p1_380",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_380",
+      "source_id": "counterfactual_prm_train_p1_380"
+    },
+    {
+      "clean_content_hash": "505c3f46e43ca362",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_train_p1_381/clean",
+      "corrupt_content_hash": "4c223ee07f7c4314",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_train_p1_381/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_train_p1_381",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_381",
+      "source_id": "counterfactual_prm_train_p1_381"
+    },
+    {
+      "clean_content_hash": "f2c4bd94749fd164",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_train_p1_415/clean",
+      "corrupt_content_hash": "eab85d0367e0f9de",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_train_p1_415/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_train_p1_415",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_415",
+      "source_id": "counterfactual_prm_train_p1_415"
+    },
+    {
+      "clean_content_hash": "5d57e07979491e00",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_train_p1_416/clean",
+      "corrupt_content_hash": "b4c81fd012b8b6f8",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_train_p1_416/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_train_p1_416",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_416",
+      "source_id": "counterfactual_prm_train_p1_416"
+    },
+    {
+      "clean_content_hash": "77a0d1c631312ea1",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_train_p1_442/clean",
+      "corrupt_content_hash": "2f999d1cbae313a2",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_train_p1_442/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_train_p1_442",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_442",
+      "source_id": "counterfactual_prm_train_p1_442"
+    },
+    {
+      "clean_content_hash": "173875ba60c815de",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_train_p1_454/clean",
+      "corrupt_content_hash": "a8381f45dfbf3a69",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_train_p1_454/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_train_p1_454",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_454",
+      "source_id": "counterfactual_prm_train_p1_454"
+    },
+    {
+      "clean_content_hash": "014e23b595613605",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_train_p1_459/clean",
+      "corrupt_content_hash": "3ed8712bcae696da",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_train_p1_459/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_train_p1_459",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_459",
+      "source_id": "counterfactual_prm_train_p1_459"
+    },
+    {
+      "clean_content_hash": "8c97a1af16db03b0",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_train_p1_64/clean",
+      "corrupt_content_hash": "be4753f054374ee5",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_train_p1_64/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_train_p1_64",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_64",
+      "source_id": "counterfactual_prm_train_p1_64"
+    },
+    {
+      "clean_content_hash": "1fd0a64a4f2786b5",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_train_p1_72/clean",
+      "corrupt_content_hash": "fb674e8c8a453514",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_train_p1_72/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_train_p1_72",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_72",
+      "source_id": "counterfactual_prm_train_p1_72"
+    },
+    {
+      "clean_content_hash": "ee1b9c5018124ef8",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_train_p1_76/clean",
+      "corrupt_content_hash": "cb0ad61e6c2ba17f",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_train_p1_76/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_train_p1_76",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_76",
+      "source_id": "counterfactual_prm_train_p1_76"
+    },
+    {
+      "clean_content_hash": "d6438640914091d7",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_train_p1_86/clean",
+      "corrupt_content_hash": "a4cc5419d030b00e",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_train_p1_86/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_train_p1_86",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_86",
+      "source_id": "counterfactual_prm_train_p1_86"
+    },
+    {
+      "clean_content_hash": "cedeb510aae042fb",
+      "clean_sample_id": "prmbench/preview/counterfactual_prm_train_p1_88/clean",
+      "corrupt_content_hash": "0a0bb9074970799e",
+      "corrupt_sample_id": "prmbench/preview/counterfactual_prm_train_p1_88/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/counterfactual_prm_train_p1_88",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_88",
+      "source_id": "counterfactual_prm_train_p1_88"
+    },
+    {
+      "clean_content_hash": "f0eab2ca48351ebd",
+      "clean_sample_id": "prmbench/preview/deception_prm_test_p1_0/clean",
+      "corrupt_content_hash": "88a01baa71354647",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_test_p1_0/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_test_p1_0",
+      "pair_id": "prmbench/preview/deception_prm_test_p1_0",
+      "source_id": "deception_prm_test_p1_0"
+    },
+    {
+      "clean_content_hash": "9ee30c0fff3e91fc",
+      "clean_sample_id": "prmbench/preview/deception_prm_test_p1_10/clean",
+      "corrupt_content_hash": "49276239f4f183f5",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_test_p1_10/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_test_p1_10",
+      "pair_id": "prmbench/preview/deception_prm_test_p1_10",
+      "source_id": "deception_prm_test_p1_10"
+    },
+    {
+      "clean_content_hash": "3b4f8b5b2d618bad",
+      "clean_sample_id": "prmbench/preview/deception_prm_test_p1_103/clean",
+      "corrupt_content_hash": "6d59ada1f53cf27e",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_test_p1_103/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_test_p1_103",
+      "pair_id": "prmbench/preview/deception_prm_test_p1_103",
+      "source_id": "deception_prm_test_p1_103"
+    },
+    {
+      "clean_content_hash": "697bdee58ed27f46",
+      "clean_sample_id": "prmbench/preview/deception_prm_test_p1_12/clean",
+      "corrupt_content_hash": "2860b441da5dd7a1",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_test_p1_12/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_test_p1_12",
+      "pair_id": "prmbench/preview/deception_prm_test_p1_12",
+      "source_id": "deception_prm_test_p1_12"
+    },
+    {
+      "clean_content_hash": "97fad77d2c7629ae",
+      "clean_sample_id": "prmbench/preview/deception_prm_test_p1_18/clean",
+      "corrupt_content_hash": "ffdf55cf85ca2a9b",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_test_p1_18/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_test_p1_18",
+      "pair_id": "prmbench/preview/deception_prm_test_p1_18",
+      "source_id": "deception_prm_test_p1_18"
+    },
+    {
+      "clean_content_hash": "af80263f77c37db4",
+      "clean_sample_id": "prmbench/preview/deception_prm_test_p1_25/clean",
+      "corrupt_content_hash": "868ab75a439e707d",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_test_p1_25/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_test_p1_25",
+      "pair_id": "prmbench/preview/deception_prm_test_p1_25",
+      "source_id": "deception_prm_test_p1_25"
+    },
+    {
+      "clean_content_hash": "eb78f06634d97c6b",
+      "clean_sample_id": "prmbench/preview/deception_prm_test_p1_27/clean",
+      "corrupt_content_hash": "c5b2b0d67b155869",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_test_p1_27/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_test_p1_27",
+      "pair_id": "prmbench/preview/deception_prm_test_p1_27",
+      "source_id": "deception_prm_test_p1_27"
+    },
+    {
+      "clean_content_hash": "9bb05b6135c6cb25",
+      "clean_sample_id": "prmbench/preview/deception_prm_test_p1_39/clean",
+      "corrupt_content_hash": "738944e1434a85e6",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_test_p1_39/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_test_p1_39",
+      "pair_id": "prmbench/preview/deception_prm_test_p1_39",
+      "source_id": "deception_prm_test_p1_39"
+    },
+    {
+      "clean_content_hash": "798e8693e4d21ded",
+      "clean_sample_id": "prmbench/preview/deception_prm_test_p1_60/clean",
+      "corrupt_content_hash": "5dc80882d87f2207",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_test_p1_60/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_test_p1_60",
+      "pair_id": "prmbench/preview/deception_prm_test_p1_60",
+      "source_id": "deception_prm_test_p1_60"
+    },
+    {
+      "clean_content_hash": "4675c4a522ce0119",
+      "clean_sample_id": "prmbench/preview/deception_prm_test_p1_98/clean",
+      "corrupt_content_hash": "3e2a4e01cab505f3",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_test_p1_98/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_test_p1_98",
+      "pair_id": "prmbench/preview/deception_prm_test_p1_98",
+      "source_id": "deception_prm_test_p1_98"
+    },
+    {
+      "clean_content_hash": "12a891531695ab1a",
+      "clean_sample_id": "prmbench/preview/deception_prm_test_p2_1058/clean",
+      "corrupt_content_hash": "d31585629a5fcdde",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_test_p2_1058/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_test_p2_1058",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_1058",
+      "source_id": "deception_prm_test_p2_1058"
+    },
+    {
+      "clean_content_hash": "6efe42e61ab1a385",
+      "clean_sample_id": "prmbench/preview/deception_prm_test_p2_1218/clean",
+      "corrupt_content_hash": "ddd485c329dff3df",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_test_p2_1218/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_test_p2_1218",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_1218",
+      "source_id": "deception_prm_test_p2_1218"
+    },
+    {
+      "clean_content_hash": "4b330d585b4cac01",
+      "clean_sample_id": "prmbench/preview/deception_prm_test_p2_1286/clean",
+      "corrupt_content_hash": "cde5ded4427a6d2a",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_test_p2_1286/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_test_p2_1286",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_1286",
+      "source_id": "deception_prm_test_p2_1286"
+    },
+    {
+      "clean_content_hash": "57d4f8e942e92ca5",
+      "clean_sample_id": "prmbench/preview/deception_prm_test_p2_1608/clean",
+      "corrupt_content_hash": "aed740771da66eb5",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_test_p2_1608/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_test_p2_1608",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_1608",
+      "source_id": "deception_prm_test_p2_1608"
+    },
+    {
+      "clean_content_hash": "3ca8218d98aa64d3",
+      "clean_sample_id": "prmbench/preview/deception_prm_test_p2_1649/clean",
+      "corrupt_content_hash": "1bca552754cd975e",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_test_p2_1649/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_test_p2_1649",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_1649",
+      "source_id": "deception_prm_test_p2_1649"
+    },
+    {
+      "clean_content_hash": "deb8660d99fc04b6",
+      "clean_sample_id": "prmbench/preview/deception_prm_test_p2_1714/clean",
+      "corrupt_content_hash": "9e3ea33318913a3c",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_test_p2_1714/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_test_p2_1714",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_1714",
+      "source_id": "deception_prm_test_p2_1714"
+    },
+    {
+      "clean_content_hash": "64aeba9ad234a3b7",
+      "clean_sample_id": "prmbench/preview/deception_prm_test_p2_1721/clean",
+      "corrupt_content_hash": "c80d624251d0a0af",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_test_p2_1721/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_test_p2_1721",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_1721",
+      "source_id": "deception_prm_test_p2_1721"
+    },
+    {
+      "clean_content_hash": "84ab032218ab860b",
+      "clean_sample_id": "prmbench/preview/deception_prm_test_p2_1778/clean",
+      "corrupt_content_hash": "5c7213215483a9f3",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_test_p2_1778/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_test_p2_1778",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_1778",
+      "source_id": "deception_prm_test_p2_1778"
+    },
+    {
+      "clean_content_hash": "e63780b2713ebf99",
+      "clean_sample_id": "prmbench/preview/deception_prm_test_p2_1927/clean",
+      "corrupt_content_hash": "98acf6a7e8e5bfe5",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_test_p2_1927/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_test_p2_1927",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_1927",
+      "source_id": "deception_prm_test_p2_1927"
+    },
+    {
+      "clean_content_hash": "1523987f1a6805c6",
+      "clean_sample_id": "prmbench/preview/deception_prm_test_p2_1928/clean",
+      "corrupt_content_hash": "dacab6b96711e011",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_test_p2_1928/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_test_p2_1928",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_1928",
+      "source_id": "deception_prm_test_p2_1928"
+    },
+    {
+      "clean_content_hash": "10b7c7606941cb20",
+      "clean_sample_id": "prmbench/preview/deception_prm_test_p2_1958/clean",
+      "corrupt_content_hash": "a07056dd159c4825",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_test_p2_1958/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_test_p2_1958",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_1958",
+      "source_id": "deception_prm_test_p2_1958"
+    },
+    {
+      "clean_content_hash": "d02b989ca1edafd6",
+      "clean_sample_id": "prmbench/preview/deception_prm_test_p2_2022/clean",
+      "corrupt_content_hash": "526a2bb3d23476b6",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_test_p2_2022/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_test_p2_2022",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_2022",
+      "source_id": "deception_prm_test_p2_2022"
+    },
+    {
+      "clean_content_hash": "7b2dc2bc41133dc8",
+      "clean_sample_id": "prmbench/preview/deception_prm_test_p2_2201/clean",
+      "corrupt_content_hash": "e203bdc66f13f2a2",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_test_p2_2201/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_test_p2_2201",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_2201",
+      "source_id": "deception_prm_test_p2_2201"
+    },
+    {
+      "clean_content_hash": "d614854da9d66163",
+      "clean_sample_id": "prmbench/preview/deception_prm_test_p2_2208/clean",
+      "corrupt_content_hash": "f6c961d8f93cec06",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_test_p2_2208/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_test_p2_2208",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_2208",
+      "source_id": "deception_prm_test_p2_2208"
+    },
+    {
+      "clean_content_hash": "0db45ef7c4aa4653",
+      "clean_sample_id": "prmbench/preview/deception_prm_test_p2_2382/clean",
+      "corrupt_content_hash": "12865264a52b93aa",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_test_p2_2382/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_test_p2_2382",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_2382",
+      "source_id": "deception_prm_test_p2_2382"
+    },
+    {
+      "clean_content_hash": "51897b3417a10ad5",
+      "clean_sample_id": "prmbench/preview/deception_prm_test_p2_2580/clean",
+      "corrupt_content_hash": "1c3c386060d8a30b",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_test_p2_2580/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_test_p2_2580",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_2580",
+      "source_id": "deception_prm_test_p2_2580"
+    },
+    {
+      "clean_content_hash": "8c29b3ebd73a9f9a",
+      "clean_sample_id": "prmbench/preview/deception_prm_test_p2_2744/clean",
+      "corrupt_content_hash": "9024c2ae9f85b2bb",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_test_p2_2744/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_test_p2_2744",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_2744",
+      "source_id": "deception_prm_test_p2_2744"
+    },
+    {
+      "clean_content_hash": "d97bf9c66b027389",
+      "clean_sample_id": "prmbench/preview/deception_prm_test_p2_528/clean",
+      "corrupt_content_hash": "0485ec20593d3708",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_test_p2_528/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_test_p2_528",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_528",
+      "source_id": "deception_prm_test_p2_528"
+    },
+    {
+      "clean_content_hash": "42607df1094f928f",
+      "clean_sample_id": "prmbench/preview/deception_prm_test_p2_927/clean",
+      "corrupt_content_hash": "84a9c283ec2ff63a",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_test_p2_927/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_test_p2_927",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_927",
+      "source_id": "deception_prm_test_p2_927"
+    },
+    {
+      "clean_content_hash": "50c0061179b6b957",
+      "clean_sample_id": "prmbench/preview/deception_prm_train_p1_1/clean",
+      "corrupt_content_hash": "b5ffd2d2c0a7b167",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_train_p1_1/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_train_p1_1",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_1",
+      "source_id": "deception_prm_train_p1_1"
+    },
+    {
+      "clean_content_hash": "1152b76c136c2edb",
+      "clean_sample_id": "prmbench/preview/deception_prm_train_p1_106/clean",
+      "corrupt_content_hash": "d03a7bc8a6a84679",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_train_p1_106/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_train_p1_106",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_106",
+      "source_id": "deception_prm_train_p1_106"
+    },
+    {
+      "clean_content_hash": "0cffd0890032ce9c",
+      "clean_sample_id": "prmbench/preview/deception_prm_train_p1_111/clean",
+      "corrupt_content_hash": "d77a1c0e746e9a55",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_train_p1_111/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_train_p1_111",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_111",
+      "source_id": "deception_prm_train_p1_111"
+    },
+    {
+      "clean_content_hash": "77e44ec14d113ef9",
+      "clean_sample_id": "prmbench/preview/deception_prm_train_p1_12/clean",
+      "corrupt_content_hash": "08ec829bbbf01fc5",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_train_p1_12/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_train_p1_12",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_12",
+      "source_id": "deception_prm_train_p1_12"
+    },
+    {
+      "clean_content_hash": "77de9bac110221c6",
+      "clean_sample_id": "prmbench/preview/deception_prm_train_p1_145/clean",
+      "corrupt_content_hash": "11e99a9462a3d117",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_train_p1_145/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_train_p1_145",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_145",
+      "source_id": "deception_prm_train_p1_145"
+    },
+    {
+      "clean_content_hash": "86eae105590354d0",
+      "clean_sample_id": "prmbench/preview/deception_prm_train_p1_151/clean",
+      "corrupt_content_hash": "def42f11e8a9cb44",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_train_p1_151/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_train_p1_151",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_151",
+      "source_id": "deception_prm_train_p1_151"
+    },
+    {
+      "clean_content_hash": "8c113389a942c759",
+      "clean_sample_id": "prmbench/preview/deception_prm_train_p1_182/clean",
+      "corrupt_content_hash": "9dfdd7099dcdac74",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_train_p1_182/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_train_p1_182",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_182",
+      "source_id": "deception_prm_train_p1_182"
+    },
+    {
+      "clean_content_hash": "dc0b87317455d45f",
+      "clean_sample_id": "prmbench/preview/deception_prm_train_p1_20/clean",
+      "corrupt_content_hash": "32bccf0eef4d6015",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_train_p1_20/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_train_p1_20",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_20",
+      "source_id": "deception_prm_train_p1_20"
+    },
+    {
+      "clean_content_hash": "34b5380a6fde040f",
+      "clean_sample_id": "prmbench/preview/deception_prm_train_p1_22/clean",
+      "corrupt_content_hash": "a4fc30b732464165",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_train_p1_22/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_train_p1_22",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_22",
+      "source_id": "deception_prm_train_p1_22"
+    },
+    {
+      "clean_content_hash": "a58a6826992d1463",
+      "clean_sample_id": "prmbench/preview/deception_prm_train_p1_234/clean",
+      "corrupt_content_hash": "ae78e349430183bc",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_train_p1_234/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_train_p1_234",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_234",
+      "source_id": "deception_prm_train_p1_234"
+    },
+    {
+      "clean_content_hash": "3bc48d7d6a1005ba",
+      "clean_sample_id": "prmbench/preview/deception_prm_train_p1_246/clean",
+      "corrupt_content_hash": "bec7debe0f2c8cce",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_train_p1_246/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_train_p1_246",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_246",
+      "source_id": "deception_prm_train_p1_246"
+    },
+    {
+      "clean_content_hash": "bcde06658bba24ca",
+      "clean_sample_id": "prmbench/preview/deception_prm_train_p1_259/clean",
+      "corrupt_content_hash": "ac7d2d819a0dcae2",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_train_p1_259/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_train_p1_259",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_259",
+      "source_id": "deception_prm_train_p1_259"
+    },
+    {
+      "clean_content_hash": "6fd598fe616507bb",
+      "clean_sample_id": "prmbench/preview/deception_prm_train_p1_261/clean",
+      "corrupt_content_hash": "a8b722fa673d026a",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_train_p1_261/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_train_p1_261",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_261",
+      "source_id": "deception_prm_train_p1_261"
+    },
+    {
+      "clean_content_hash": "5b2c3ed9c63d1dbf",
+      "clean_sample_id": "prmbench/preview/deception_prm_train_p1_282/clean",
+      "corrupt_content_hash": "0a6d9a3de412737b",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_train_p1_282/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_train_p1_282",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_282",
+      "source_id": "deception_prm_train_p1_282"
+    },
+    {
+      "clean_content_hash": "e9177f13613e6a1d",
+      "clean_sample_id": "prmbench/preview/deception_prm_train_p1_287/clean",
+      "corrupt_content_hash": "2af3b8ee5c67dff3",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_train_p1_287/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_train_p1_287",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_287",
+      "source_id": "deception_prm_train_p1_287"
+    },
+    {
+      "clean_content_hash": "21af1e182d65a4d9",
+      "clean_sample_id": "prmbench/preview/deception_prm_train_p1_288/clean",
+      "corrupt_content_hash": "a849fb8ea4c78358",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_train_p1_288/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_train_p1_288",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_288",
+      "source_id": "deception_prm_train_p1_288"
+    },
+    {
+      "clean_content_hash": "62a91f8936de6fec",
+      "clean_sample_id": "prmbench/preview/deception_prm_train_p1_29/clean",
+      "corrupt_content_hash": "c510563295a75fa6",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_train_p1_29/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_train_p1_29",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_29",
+      "source_id": "deception_prm_train_p1_29"
+    },
+    {
+      "clean_content_hash": "4be8ae48293a72d0",
+      "clean_sample_id": "prmbench/preview/deception_prm_train_p1_301/clean",
+      "corrupt_content_hash": "3d475a616f9f3278",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_train_p1_301/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_train_p1_301",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_301",
+      "source_id": "deception_prm_train_p1_301"
+    },
+    {
+      "clean_content_hash": "0143e94c2628b9f8",
+      "clean_sample_id": "prmbench/preview/deception_prm_train_p1_335/clean",
+      "corrupt_content_hash": "054ab495c52fe8c5",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_train_p1_335/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_train_p1_335",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_335",
+      "source_id": "deception_prm_train_p1_335"
+    },
+    {
+      "clean_content_hash": "60011590c577e7ce",
+      "clean_sample_id": "prmbench/preview/deception_prm_train_p1_345/clean",
+      "corrupt_content_hash": "bd2c9e0374d1fa83",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_train_p1_345/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_train_p1_345",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_345",
+      "source_id": "deception_prm_train_p1_345"
+    },
+    {
+      "clean_content_hash": "833bda49a4ba7d74",
+      "clean_sample_id": "prmbench/preview/deception_prm_train_p1_36/clean",
+      "corrupt_content_hash": "64567b70beb4e528",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_train_p1_36/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_train_p1_36",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_36",
+      "source_id": "deception_prm_train_p1_36"
+    },
+    {
+      "clean_content_hash": "83eaa45c11cfb382",
+      "clean_sample_id": "prmbench/preview/deception_prm_train_p1_362/clean",
+      "corrupt_content_hash": "287185ff5278d6ec",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_train_p1_362/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_train_p1_362",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_362",
+      "source_id": "deception_prm_train_p1_362"
+    },
+    {
+      "clean_content_hash": "f5100faee97e5a8d",
+      "clean_sample_id": "prmbench/preview/deception_prm_train_p1_376/clean",
+      "corrupt_content_hash": "66a595f4fc36aabf",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_train_p1_376/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_train_p1_376",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_376",
+      "source_id": "deception_prm_train_p1_376"
+    },
+    {
+      "clean_content_hash": "c5880e3bd5018a5b",
+      "clean_sample_id": "prmbench/preview/deception_prm_train_p1_382/clean",
+      "corrupt_content_hash": "7c8d57842ab02a26",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_train_p1_382/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_train_p1_382",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_382",
+      "source_id": "deception_prm_train_p1_382"
+    },
+    {
+      "clean_content_hash": "8bcf6b29b6df6168",
+      "clean_sample_id": "prmbench/preview/deception_prm_train_p1_409/clean",
+      "corrupt_content_hash": "bf9f2a41c288beb5",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_train_p1_409/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_train_p1_409",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_409",
+      "source_id": "deception_prm_train_p1_409"
+    },
+    {
+      "clean_content_hash": "da05361b5d3a59b9",
+      "clean_sample_id": "prmbench/preview/deception_prm_train_p1_414/clean",
+      "corrupt_content_hash": "7383eaa1a049767e",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_train_p1_414/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_train_p1_414",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_414",
+      "source_id": "deception_prm_train_p1_414"
+    },
+    {
+      "clean_content_hash": "1a082abb94e68683",
+      "clean_sample_id": "prmbench/preview/deception_prm_train_p1_421/clean",
+      "corrupt_content_hash": "c3b4e8281cef14fe",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_train_p1_421/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_train_p1_421",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_421",
+      "source_id": "deception_prm_train_p1_421"
+    },
+    {
+      "clean_content_hash": "cd369e71d2db43a3",
+      "clean_sample_id": "prmbench/preview/deception_prm_train_p1_424/clean",
+      "corrupt_content_hash": "4f8c09b127caf9f4",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_train_p1_424/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_train_p1_424",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_424",
+      "source_id": "deception_prm_train_p1_424"
+    },
+    {
+      "clean_content_hash": "e7cf1e974a5cb40a",
+      "clean_sample_id": "prmbench/preview/deception_prm_train_p1_43/clean",
+      "corrupt_content_hash": "dd2f4f53d6ddb068",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_train_p1_43/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_train_p1_43",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_43",
+      "source_id": "deception_prm_train_p1_43"
+    },
+    {
+      "clean_content_hash": "03c97fa613d09ee8",
+      "clean_sample_id": "prmbench/preview/deception_prm_train_p1_430/clean",
+      "corrupt_content_hash": "b80d988f364090db",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_train_p1_430/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_train_p1_430",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_430",
+      "source_id": "deception_prm_train_p1_430"
+    },
+    {
+      "clean_content_hash": "7abffca98f39b711",
+      "clean_sample_id": "prmbench/preview/deception_prm_train_p1_441/clean",
+      "corrupt_content_hash": "541aba1ea0cc91cd",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_train_p1_441/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_train_p1_441",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_441",
+      "source_id": "deception_prm_train_p1_441"
+    },
+    {
+      "clean_content_hash": "77a0d1c631312ea1",
+      "clean_sample_id": "prmbench/preview/deception_prm_train_p1_442/clean",
+      "corrupt_content_hash": "90e0ebf80feb78d5",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_train_p1_442/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_train_p1_442",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_442",
+      "source_id": "deception_prm_train_p1_442"
+    },
+    {
+      "clean_content_hash": "c50c40b9450ad7da",
+      "clean_sample_id": "prmbench/preview/deception_prm_train_p1_460/clean",
+      "corrupt_content_hash": "2f5a58c4828f455a",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_train_p1_460/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_train_p1_460",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_460",
+      "source_id": "deception_prm_train_p1_460"
+    },
+    {
+      "clean_content_hash": "224f214c95ac2330",
+      "clean_sample_id": "prmbench/preview/deception_prm_train_p1_56/clean",
+      "corrupt_content_hash": "288aa0dc7e94aab4",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_train_p1_56/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_train_p1_56",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_56",
+      "source_id": "deception_prm_train_p1_56"
+    },
+    {
+      "clean_content_hash": "539f71bcd279bb7b",
+      "clean_sample_id": "prmbench/preview/deception_prm_train_p1_61/clean",
+      "corrupt_content_hash": "bd3ed0a9309de620",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_train_p1_61/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_train_p1_61",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_61",
+      "source_id": "deception_prm_train_p1_61"
+    },
+    {
+      "clean_content_hash": "0188d4b74504b92a",
+      "clean_sample_id": "prmbench/preview/deception_prm_train_p1_83/clean",
+      "corrupt_content_hash": "c992b622c95bba93",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_train_p1_83/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_train_p1_83",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_83",
+      "source_id": "deception_prm_train_p1_83"
+    },
+    {
+      "clean_content_hash": "d5102b8183f0f88b",
+      "clean_sample_id": "prmbench/preview/deception_prm_train_p1_84/clean",
+      "corrupt_content_hash": "16f2fc3c7fc00f01",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_train_p1_84/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_train_p1_84",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_84",
+      "source_id": "deception_prm_train_p1_84"
+    },
+    {
+      "clean_content_hash": "45f2a36ae6a212d2",
+      "clean_sample_id": "prmbench/preview/deception_prm_train_p1_86/clean",
+      "corrupt_content_hash": "954820fd1a53c377",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_train_p1_86/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_train_p1_86",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_86",
+      "source_id": "deception_prm_train_p1_86"
+    },
+    {
+      "clean_content_hash": "fa880032ddf79a58",
+      "clean_sample_id": "prmbench/preview/deception_prm_train_p1_98/clean",
+      "corrupt_content_hash": "a0f0709c69c180e1",
+      "corrupt_sample_id": "prmbench/preview/deception_prm_train_p1_98/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/deception_prm_train_p1_98",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_98",
+      "source_id": "deception_prm_train_p1_98"
+    },
+    {
+      "clean_content_hash": "ef5414dd58cf8039",
+      "clean_sample_id": "prmbench/preview/domain_inconsistency_prm_test_p2_1956/clean",
+      "corrupt_content_hash": "67f793e8c05df83c",
+      "corrupt_sample_id": "prmbench/preview/domain_inconsistency_prm_test_p2_1956/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/domain_inconsistency_prm_test_p2_1956",
+      "pair_id": "prmbench/preview/domain_inconsistency_prm_test_p2_1956",
+      "source_id": "domain_inconsistency_prm_test_p2_1956"
+    },
+    {
+      "clean_content_hash": "57ce232bf59a3a8a",
+      "clean_sample_id": "prmbench/preview/domain_inconsistency_prm_test_p2_2628/clean",
+      "corrupt_content_hash": "411b42e78ba86cfc",
+      "corrupt_sample_id": "prmbench/preview/domain_inconsistency_prm_test_p2_2628/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/domain_inconsistency_prm_test_p2_2628",
+      "pair_id": "prmbench/preview/domain_inconsistency_prm_test_p2_2628",
+      "source_id": "domain_inconsistency_prm_test_p2_2628"
+    },
+    {
+      "clean_content_hash": "33a73e270c62bbee",
+      "clean_sample_id": "prmbench/preview/domain_inconsistency_prm_test_p2_807/clean",
+      "corrupt_content_hash": "1fca42faf71b951a",
+      "corrupt_sample_id": "prmbench/preview/domain_inconsistency_prm_test_p2_807/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/domain_inconsistency_prm_test_p2_807",
+      "pair_id": "prmbench/preview/domain_inconsistency_prm_test_p2_807",
+      "source_id": "domain_inconsistency_prm_test_p2_807"
+    },
+    {
+      "clean_content_hash": "6d6af1dfbd1e57b2",
+      "clean_sample_id": "prmbench/preview/domain_inconsistency_prm_train_p1_100/clean",
+      "corrupt_content_hash": "0884f1607b479438",
+      "corrupt_sample_id": "prmbench/preview/domain_inconsistency_prm_train_p1_100/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/domain_inconsistency_prm_train_p1_100",
+      "pair_id": "prmbench/preview/domain_inconsistency_prm_train_p1_100",
+      "source_id": "domain_inconsistency_prm_train_p1_100"
+    },
+    {
+      "clean_content_hash": "e036d60df32e3f55",
+      "clean_sample_id": "prmbench/preview/domain_inconsistency_prm_train_p1_329/clean",
+      "corrupt_content_hash": "9676141b56a22d38",
+      "corrupt_sample_id": "prmbench/preview/domain_inconsistency_prm_train_p1_329/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/domain_inconsistency_prm_train_p1_329",
+      "pair_id": "prmbench/preview/domain_inconsistency_prm_train_p1_329",
+      "source_id": "domain_inconsistency_prm_train_p1_329"
+    },
+    {
+      "clean_content_hash": "c9ec230d3e892315",
+      "clean_sample_id": "prmbench/preview/missing_condition_prm_test_p2_1320/clean",
+      "corrupt_content_hash": "5169fa12a7fe964c",
+      "corrupt_sample_id": "prmbench/preview/missing_condition_prm_test_p2_1320/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/missing_condition_prm_test_p2_1320",
+      "pair_id": "prmbench/preview/missing_condition_prm_test_p2_1320",
+      "source_id": "missing_condition_prm_test_p2_1320"
+    },
+    {
+      "clean_content_hash": "4cfc84af979288b2",
+      "clean_sample_id": "prmbench/preview/missing_condition_prm_test_p2_1488/clean",
+      "corrupt_content_hash": "341ed36def4dd052",
+      "corrupt_sample_id": "prmbench/preview/missing_condition_prm_test_p2_1488/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/missing_condition_prm_test_p2_1488",
+      "pair_id": "prmbench/preview/missing_condition_prm_test_p2_1488",
+      "source_id": "missing_condition_prm_test_p2_1488"
+    },
+    {
+      "clean_content_hash": "56939cbb3a63da7a",
+      "clean_sample_id": "prmbench/preview/missing_condition_prm_test_p2_1599/clean",
+      "corrupt_content_hash": "5aa66ce047f1f077",
+      "corrupt_sample_id": "prmbench/preview/missing_condition_prm_test_p2_1599/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/missing_condition_prm_test_p2_1599",
+      "pair_id": "prmbench/preview/missing_condition_prm_test_p2_1599",
+      "source_id": "missing_condition_prm_test_p2_1599"
+    },
+    {
+      "clean_content_hash": "80e690d75f027226",
+      "clean_sample_id": "prmbench/preview/missing_condition_prm_test_p2_2490/clean",
+      "corrupt_content_hash": "22ffccfc4b1b9e85",
+      "corrupt_sample_id": "prmbench/preview/missing_condition_prm_test_p2_2490/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/missing_condition_prm_test_p2_2490",
+      "pair_id": "prmbench/preview/missing_condition_prm_test_p2_2490",
+      "source_id": "missing_condition_prm_test_p2_2490"
+    },
+    {
+      "clean_content_hash": "c41f137b60b0fce5",
+      "clean_sample_id": "prmbench/preview/missing_condition_prm_test_p2_2646/clean",
+      "corrupt_content_hash": "05f765e253b420e0",
+      "corrupt_sample_id": "prmbench/preview/missing_condition_prm_test_p2_2646/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/missing_condition_prm_test_p2_2646",
+      "pair_id": "prmbench/preview/missing_condition_prm_test_p2_2646",
+      "source_id": "missing_condition_prm_test_p2_2646"
+    },
+    {
+      "clean_content_hash": "a7c6769e7eb888e5",
+      "clean_sample_id": "prmbench/preview/missing_condition_prm_train_p1_227/clean",
+      "corrupt_content_hash": "691c9222c26f1d1d",
+      "corrupt_sample_id": "prmbench/preview/missing_condition_prm_train_p1_227/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/missing_condition_prm_train_p1_227",
+      "pair_id": "prmbench/preview/missing_condition_prm_train_p1_227",
+      "source_id": "missing_condition_prm_train_p1_227"
+    },
+    {
+      "clean_content_hash": "c3bc1678752e1e49",
+      "clean_sample_id": "prmbench/preview/missing_condition_prm_train_p1_272/clean",
+      "corrupt_content_hash": "8d38a717adda52a6",
+      "corrupt_sample_id": "prmbench/preview/missing_condition_prm_train_p1_272/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/missing_condition_prm_train_p1_272",
+      "pair_id": "prmbench/preview/missing_condition_prm_train_p1_272",
+      "source_id": "missing_condition_prm_train_p1_272"
+    },
+    {
+      "clean_content_hash": "32a8148eb2217100",
+      "clean_sample_id": "prmbench/preview/missing_condition_prm_train_p1_275/clean",
+      "corrupt_content_hash": "da5d4e44a1796d31",
+      "corrupt_sample_id": "prmbench/preview/missing_condition_prm_train_p1_275/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/missing_condition_prm_train_p1_275",
+      "pair_id": "prmbench/preview/missing_condition_prm_train_p1_275",
+      "source_id": "missing_condition_prm_train_p1_275"
+    },
+    {
+      "clean_content_hash": "946df04e32be5672",
+      "clean_sample_id": "prmbench/preview/missing_condition_prm_train_p1_352/clean",
+      "corrupt_content_hash": "81f3146e0b9aa80f",
+      "corrupt_sample_id": "prmbench/preview/missing_condition_prm_train_p1_352/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/missing_condition_prm_train_p1_352",
+      "pair_id": "prmbench/preview/missing_condition_prm_train_p1_352",
+      "source_id": "missing_condition_prm_train_p1_352"
+    },
+    {
+      "clean_content_hash": "9e706cbe5f0bb327",
+      "clean_sample_id": "prmbench/preview/missing_condition_prm_train_p1_378/clean",
+      "corrupt_content_hash": "5c7710cbaa3a3718",
+      "corrupt_sample_id": "prmbench/preview/missing_condition_prm_train_p1_378/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/missing_condition_prm_train_p1_378",
+      "pair_id": "prmbench/preview/missing_condition_prm_train_p1_378",
+      "source_id": "missing_condition_prm_train_p1_378"
+    },
+    {
+      "clean_content_hash": "014e23b595613605",
+      "clean_sample_id": "prmbench/preview/missing_condition_prm_train_p1_459/clean",
+      "corrupt_content_hash": "e1296f6bd9479801",
+      "corrupt_sample_id": "prmbench/preview/missing_condition_prm_train_p1_459/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/missing_condition_prm_train_p1_459",
+      "pair_id": "prmbench/preview/missing_condition_prm_train_p1_459",
+      "source_id": "missing_condition_prm_train_p1_459"
+    },
+    {
+      "clean_content_hash": "378ec0b75b6d045c",
+      "clean_sample_id": "prmbench/preview/missing_condition_prm_train_p1_7/clean",
+      "corrupt_content_hash": "28193924fb147fc6",
+      "corrupt_sample_id": "prmbench/preview/missing_condition_prm_train_p1_7/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/missing_condition_prm_train_p1_7",
+      "pair_id": "prmbench/preview/missing_condition_prm_train_p1_7",
+      "source_id": "missing_condition_prm_train_p1_7"
+    },
+    {
+      "clean_content_hash": "47a0ca9c8ed1d27f",
+      "clean_sample_id": "prmbench/preview/redundency_prm_test_p1_5/clean",
+      "corrupt_content_hash": "acd7d2257b6a964e",
+      "corrupt_sample_id": "prmbench/preview/redundency_prm_test_p1_5/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/redundency_prm_test_p1_5",
+      "pair_id": "prmbench/preview/redundency_prm_test_p1_5",
+      "source_id": "redundency_prm_test_p1_5"
+    },
+    {
+      "clean_content_hash": "33103c07aa9a9335",
+      "clean_sample_id": "prmbench/preview/redundency_prm_test_p2_1872/clean",
+      "corrupt_content_hash": "58f6a88a9ce0fdeb",
+      "corrupt_sample_id": "prmbench/preview/redundency_prm_test_p2_1872/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/redundency_prm_test_p2_1872",
+      "pair_id": "prmbench/preview/redundency_prm_test_p2_1872",
+      "source_id": "redundency_prm_test_p2_1872"
+    },
+    {
+      "clean_content_hash": "48c8b502e1f9dbd9",
+      "clean_sample_id": "prmbench/preview/redundency_prm_train_p1_76/clean",
+      "corrupt_content_hash": "ef3f4b2fdc25da41",
+      "corrupt_sample_id": "prmbench/preview/redundency_prm_train_p1_76/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/redundency_prm_train_p1_76",
+      "pair_id": "prmbench/preview/redundency_prm_train_p1_76",
+      "source_id": "redundency_prm_train_p1_76"
+    },
+    {
+      "clean_content_hash": "1c296b0225e8c7d4",
+      "clean_sample_id": "prmbench/preview/step_contradiction_prm_test_p1_70/clean",
+      "corrupt_content_hash": "dee3045a356b92a4",
+      "corrupt_sample_id": "prmbench/preview/step_contradiction_prm_test_p1_70/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/step_contradiction_prm_test_p1_70",
+      "pair_id": "prmbench/preview/step_contradiction_prm_test_p1_70",
+      "source_id": "step_contradiction_prm_test_p1_70"
+    },
+    {
+      "clean_content_hash": "4ae1fa49f5dcb697",
+      "clean_sample_id": "prmbench/preview/step_contradiction_prm_test_p2_2562/clean",
+      "corrupt_content_hash": "9b293c3462e5ce88",
+      "corrupt_sample_id": "prmbench/preview/step_contradiction_prm_test_p2_2562/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/step_contradiction_prm_test_p2_2562",
+      "pair_id": "prmbench/preview/step_contradiction_prm_test_p2_2562",
+      "source_id": "step_contradiction_prm_test_p2_2562"
+    },
+    {
+      "clean_content_hash": "842b35b3335f78a5",
+      "clean_sample_id": "prmbench/preview/step_contradiction_prm_test_p2_2646/clean",
+      "corrupt_content_hash": "6d8498f6b6051287",
+      "corrupt_sample_id": "prmbench/preview/step_contradiction_prm_test_p2_2646/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/step_contradiction_prm_test_p2_2646",
+      "pair_id": "prmbench/preview/step_contradiction_prm_test_p2_2646",
+      "source_id": "step_contradiction_prm_test_p2_2646"
+    },
+    {
+      "clean_content_hash": "df83444e87ef1955",
+      "clean_sample_id": "prmbench/preview/step_contradiction_prm_train_p1_146/clean",
+      "corrupt_content_hash": "c121e4c292cc8ce9",
+      "corrupt_sample_id": "prmbench/preview/step_contradiction_prm_train_p1_146/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/step_contradiction_prm_train_p1_146",
+      "pair_id": "prmbench/preview/step_contradiction_prm_train_p1_146",
+      "source_id": "step_contradiction_prm_train_p1_146"
+    },
+    {
+      "clean_content_hash": "9bef68c6c0149e36",
+      "clean_sample_id": "prmbench/preview/step_contradiction_prm_train_p1_20/clean",
+      "corrupt_content_hash": "cf82357bf39c71b0",
+      "corrupt_sample_id": "prmbench/preview/step_contradiction_prm_train_p1_20/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/step_contradiction_prm_train_p1_20",
+      "pair_id": "prmbench/preview/step_contradiction_prm_train_p1_20",
+      "source_id": "step_contradiction_prm_train_p1_20"
+    },
+    {
+      "clean_content_hash": "798297174a7301f6",
+      "clean_sample_id": "prmbench/preview/step_contradiction_prm_train_p1_255/clean",
+      "corrupt_content_hash": "26670019fc803338",
+      "corrupt_sample_id": "prmbench/preview/step_contradiction_prm_train_p1_255/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/step_contradiction_prm_train_p1_255",
+      "pair_id": "prmbench/preview/step_contradiction_prm_train_p1_255",
+      "source_id": "step_contradiction_prm_train_p1_255"
+    },
+    {
+      "clean_content_hash": "d434347aa2895ac8",
+      "clean_sample_id": "prmbench/preview/step_contradiction_prm_train_p1_272/clean",
+      "corrupt_content_hash": "e680f62ff310341c",
+      "corrupt_sample_id": "prmbench/preview/step_contradiction_prm_train_p1_272/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/step_contradiction_prm_train_p1_272",
+      "pair_id": "prmbench/preview/step_contradiction_prm_train_p1_272",
+      "source_id": "step_contradiction_prm_train_p1_272"
+    },
+    {
+      "clean_content_hash": "76e5779d90f72d98",
+      "clean_sample_id": "prmbench/preview/step_contradiction_prm_train_p1_331/clean",
+      "corrupt_content_hash": "b0af691bd25d32c3",
+      "corrupt_sample_id": "prmbench/preview/step_contradiction_prm_train_p1_331/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/step_contradiction_prm_train_p1_331",
+      "pair_id": "prmbench/preview/step_contradiction_prm_train_p1_331",
+      "source_id": "step_contradiction_prm_train_p1_331"
+    },
+    {
+      "clean_content_hash": "cac0fd01b3135099",
+      "clean_sample_id": "prmbench/preview/step_contradiction_prm_train_p1_347/clean",
+      "corrupt_content_hash": "0e56e76a14bdcf4a",
+      "corrupt_sample_id": "prmbench/preview/step_contradiction_prm_train_p1_347/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/step_contradiction_prm_train_p1_347",
+      "pair_id": "prmbench/preview/step_contradiction_prm_train_p1_347",
+      "source_id": "step_contradiction_prm_train_p1_347"
+    },
+    {
+      "clean_content_hash": "e210d63dc210abb1",
+      "clean_sample_id": "prmbench/preview/step_contradiction_prm_train_p1_376/clean",
+      "corrupt_content_hash": "de1d7228491acabe",
+      "corrupt_sample_id": "prmbench/preview/step_contradiction_prm_train_p1_376/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/step_contradiction_prm_train_p1_376",
+      "pair_id": "prmbench/preview/step_contradiction_prm_train_p1_376",
+      "source_id": "step_contradiction_prm_train_p1_376"
+    },
+    {
+      "clean_content_hash": "e8061e7faacccc6c",
+      "clean_sample_id": "prmbench/preview/step_contradiction_prm_train_p1_378/clean",
+      "corrupt_content_hash": "ad3ad5a26aab673d",
+      "corrupt_sample_id": "prmbench/preview/step_contradiction_prm_train_p1_378/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/step_contradiction_prm_train_p1_378",
+      "pair_id": "prmbench/preview/step_contradiction_prm_train_p1_378",
+      "source_id": "step_contradiction_prm_train_p1_378"
+    },
+    {
+      "clean_content_hash": "1dd38ef1aa4f7784",
+      "clean_sample_id": "prmbench/preview/step_contradiction_prm_train_p1_392/clean",
+      "corrupt_content_hash": "93e1db3c6b63ab73",
+      "corrupt_sample_id": "prmbench/preview/step_contradiction_prm_train_p1_392/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/step_contradiction_prm_train_p1_392",
+      "pair_id": "prmbench/preview/step_contradiction_prm_train_p1_392",
+      "source_id": "step_contradiction_prm_train_p1_392"
+    },
+    {
+      "clean_content_hash": "d851d2eb0e0c505d",
+      "clean_sample_id": "prmbench/preview/step_contradiction_prm_train_p1_443/clean",
+      "corrupt_content_hash": "e8eb17e5f5581eb6",
+      "corrupt_sample_id": "prmbench/preview/step_contradiction_prm_train_p1_443/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/step_contradiction_prm_train_p1_443",
+      "pair_id": "prmbench/preview/step_contradiction_prm_train_p1_443",
+      "source_id": "step_contradiction_prm_train_p1_443"
+    },
+    {
+      "clean_content_hash": "fdcb673ed519cf4d",
+      "clean_sample_id": "prmbench/preview/step_contradiction_prm_train_p1_467/clean",
+      "corrupt_content_hash": "03d194c893399eea",
+      "corrupt_sample_id": "prmbench/preview/step_contradiction_prm_train_p1_467/corrupt",
+      "group_id": "prmbench:preview:pair:prmbench/preview/step_contradiction_prm_train_p1_467",
+      "pair_id": "prmbench/preview/step_contradiction_prm_train_p1_467",
+      "source_id": "step_contradiction_prm_train_p1_467"
+    }
+  ],
+  "pairs_hash": "da16394f92591e75c06f1ae21bdce3396160713680cb893930d9c67e7e47796b",
+  "requested_pair_limit": 290,
+  "schema_version": 1,
+  "seed": 20260907,
+  "selected_example_count": 580,
+  "selected_pair_count": 290,
+  "selection_rule": {
+    "limit_semantics": "first_n_frozen_group_ids",
+    "name": "frozen_split_manifest_order",
+    "no_cross_split_matching": true,
+    "split_manifest_hash": "ee24124fc4a1b86466a6b2aa3c64ebc0e40d71eb7183a3b45124a41ac04a8ac0",
+    "split_partition": "discovery"
+  },
+  "selection_unit": "clean_corrupt_pair",
+  "source": {
+    "dataset": "prmbench",
+    "hf_id": "hitsmy/PRMBench_Preview",
+    "prepared_selection_manifest_hash": null,
+    "processed_file_sha256": null,
+    "raw_sha256": "3efe79ff688751369da6161635c247318611032071ee46cde6a20a95125bc966",
+    "requested_revision": "5cc7683d0ae5797f84d7aeac0607966f277c39e1",
+    "resolved_data_revision": "59abf58d51100c6befccf45fe8114d995fcc3b8e",
+    "source_type": "hf_loader",
+    "split": "train",
+    "split_manifest_sha256": null
+  }
+}

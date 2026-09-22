@@ -1,0 +1,27 @@
+schema_version: 1
+analysis_id: interface_access_gpt120_20260908
+input_snapshot_sha256: 2b2f426bc714e001449523bdcefd0f0ba1220036eed6846245673c32c5e02061
+canonical_protocol: configs/analysis/interface_access_canonical_common_20260829.yaml
+canonical_folds: docs/results/interface_access_canonical_common_20260829/source_component_folds.json
+canonical_folds_sha256: 40104b63e3dea343c1cdc6c7df30e1f695f8beab19caa377dfdc5afd4a0a15f0
+expected_split_manifest_hash: 85ee2903ce9b90e027b4658274dabc3ba71932f1d0dfb3cd48e7bbb76d40fd14
+recapture_root: archive://campaign_C/artifacts/campaign_20260907_C/gpt_oss_120b_common_core_full_v1/recapture
+reference_recapture_root: archive://runpod_gpt_oss_full_20260809T110315Z_complete/routeverify-runs/gpt_oss_full_20260809T110315Z/recapture
+reference_oof: docs/results/interface_access_canonical_common_20260829/interface_access_oof_predictions.jsonl
+reference_results: docs/results/interface_access_canonical_common_20260829/interface_access_results.json
+model_id: gpt_oss_120b
+display_name: GPT-OSS-120B
+protocol_grade: extended
+recapture_protocol: paired_first_error_common
+num_experts: 128
+top_k: 4
+num_layers: 36
+anchors: {early: 0, middle: 18, late: 35}
+reference_anchors: {early: 0, middle: 12, late: 23}
+constraints:
+  device: cpu
+  threads: 2
+  allow_model_weight_loading: false
+  allow_validation_access: false
+  allow_source_archive_writes: false
+output: docs/results/interface_access_gpt120_20260908

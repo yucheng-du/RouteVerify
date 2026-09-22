@@ -1,0 +1,658 @@
+{
+  "alias": "gpt_oss_20b",
+  "candidates": [
+    {
+      "class_name": "GptOssTopKRouter",
+      "name": "model.layers.0.mlp.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Mxfp4GptOssExperts",
+      "name": "model.layers.0.mlp.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "GptOssTopKRouter",
+      "name": "model.layers.1.mlp.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Mxfp4GptOssExperts",
+      "name": "model.layers.1.mlp.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "GptOssTopKRouter",
+      "name": "model.layers.2.mlp.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Mxfp4GptOssExperts",
+      "name": "model.layers.2.mlp.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "GptOssTopKRouter",
+      "name": "model.layers.3.mlp.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Mxfp4GptOssExperts",
+      "name": "model.layers.3.mlp.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "GptOssTopKRouter",
+      "name": "model.layers.4.mlp.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Mxfp4GptOssExperts",
+      "name": "model.layers.4.mlp.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "GptOssTopKRouter",
+      "name": "model.layers.5.mlp.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Mxfp4GptOssExperts",
+      "name": "model.layers.5.mlp.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "GptOssTopKRouter",
+      "name": "model.layers.6.mlp.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Mxfp4GptOssExperts",
+      "name": "model.layers.6.mlp.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "GptOssTopKRouter",
+      "name": "model.layers.7.mlp.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Mxfp4GptOssExperts",
+      "name": "model.layers.7.mlp.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "GptOssTopKRouter",
+      "name": "model.layers.8.mlp.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Mxfp4GptOssExperts",
+      "name": "model.layers.8.mlp.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "GptOssTopKRouter",
+      "name": "model.layers.9.mlp.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Mxfp4GptOssExperts",
+      "name": "model.layers.9.mlp.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "GptOssTopKRouter",
+      "name": "model.layers.10.mlp.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Mxfp4GptOssExperts",
+      "name": "model.layers.10.mlp.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "GptOssTopKRouter",
+      "name": "model.layers.11.mlp.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Mxfp4GptOssExperts",
+      "name": "model.layers.11.mlp.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "GptOssTopKRouter",
+      "name": "model.layers.12.mlp.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Mxfp4GptOssExperts",
+      "name": "model.layers.12.mlp.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "GptOssTopKRouter",
+      "name": "model.layers.13.mlp.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Mxfp4GptOssExperts",
+      "name": "model.layers.13.mlp.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "GptOssTopKRouter",
+      "name": "model.layers.14.mlp.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Mxfp4GptOssExperts",
+      "name": "model.layers.14.mlp.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "GptOssTopKRouter",
+      "name": "model.layers.15.mlp.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Mxfp4GptOssExperts",
+      "name": "model.layers.15.mlp.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "GptOssTopKRouter",
+      "name": "model.layers.16.mlp.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Mxfp4GptOssExperts",
+      "name": "model.layers.16.mlp.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "GptOssTopKRouter",
+      "name": "model.layers.17.mlp.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Mxfp4GptOssExperts",
+      "name": "model.layers.17.mlp.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "GptOssTopKRouter",
+      "name": "model.layers.18.mlp.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Mxfp4GptOssExperts",
+      "name": "model.layers.18.mlp.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "GptOssTopKRouter",
+      "name": "model.layers.19.mlp.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Mxfp4GptOssExperts",
+      "name": "model.layers.19.mlp.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "GptOssTopKRouter",
+      "name": "model.layers.20.mlp.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Mxfp4GptOssExperts",
+      "name": "model.layers.20.mlp.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "GptOssTopKRouter",
+      "name": "model.layers.21.mlp.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Mxfp4GptOssExperts",
+      "name": "model.layers.21.mlp.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "GptOssTopKRouter",
+      "name": "model.layers.22.mlp.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Mxfp4GptOssExperts",
+      "name": "model.layers.22.mlp.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "GptOssTopKRouter",
+      "name": "model.layers.23.mlp.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Mxfp4GptOssExperts",
+      "name": "model.layers.23.mlp.experts",
+      "role": "experts"
+    }
+  ],
+  "metadata": {
+    "architectures": [
+      "GptOssForCausalLM"
+    ],
+    "load_weights": true,
+    "model_type": "gpt_oss",
+    "num_experts": 32,
+    "num_experts_per_tok": 4,
+    "num_hidden_layers": 24,
+    "num_local_experts": 32,
+    "runtime_inspect": {
+      "actual_contract": {
+        "experts": 32,
+        "layers": 24,
+        "top_k": 4
+      },
+      "adapter": "gpt_oss_20b",
+      "architectures": [
+        "GptOssForCausalLM"
+      ],
+      "chat_template_sha256": "a4c9919cbbd4acdd51ccffe22da049264b1b73e59055fa58811a99efbd7c8146",
+      "config_contract": {
+        "experts": 32,
+        "layers": 24,
+        "top_k": 4
+      },
+      "contract_matches": true,
+      "expected_contract": {
+        "experts": 32,
+        "layers": 24,
+        "top_k": 4
+      },
+      "functional_linear_intercept_required": true,
+      "layers": [
+        {
+          "expert_module_num_experts": 32,
+          "experts_class": "transformers.integrations.mxfp4.Mxfp4GptOssExperts",
+          "layer": 0,
+          "mlp_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssMLP",
+          "router_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssTopKRouter",
+          "router_execution_mode": "mxfp4_functional_linear",
+          "router_num_experts": 32,
+          "router_top_k": 4,
+          "router_weight_shape": [
+            32,
+            2880
+          ]
+        },
+        {
+          "expert_module_num_experts": 32,
+          "experts_class": "transformers.integrations.mxfp4.Mxfp4GptOssExperts",
+          "layer": 1,
+          "mlp_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssMLP",
+          "router_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssTopKRouter",
+          "router_execution_mode": "mxfp4_functional_linear",
+          "router_num_experts": 32,
+          "router_top_k": 4,
+          "router_weight_shape": [
+            32,
+            2880
+          ]
+        },
+        {
+          "expert_module_num_experts": 32,
+          "experts_class": "transformers.integrations.mxfp4.Mxfp4GptOssExperts",
+          "layer": 2,
+          "mlp_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssMLP",
+          "router_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssTopKRouter",
+          "router_execution_mode": "mxfp4_functional_linear",
+          "router_num_experts": 32,
+          "router_top_k": 4,
+          "router_weight_shape": [
+            32,
+            2880
+          ]
+        },
+        {
+          "expert_module_num_experts": 32,
+          "experts_class": "transformers.integrations.mxfp4.Mxfp4GptOssExperts",
+          "layer": 3,
+          "mlp_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssMLP",
+          "router_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssTopKRouter",
+          "router_execution_mode": "mxfp4_functional_linear",
+          "router_num_experts": 32,
+          "router_top_k": 4,
+          "router_weight_shape": [
+            32,
+            2880
+          ]
+        },
+        {
+          "expert_module_num_experts": 32,
+          "experts_class": "transformers.integrations.mxfp4.Mxfp4GptOssExperts",
+          "layer": 4,
+          "mlp_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssMLP",
+          "router_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssTopKRouter",
+          "router_execution_mode": "mxfp4_functional_linear",
+          "router_num_experts": 32,
+          "router_top_k": 4,
+          "router_weight_shape": [
+            32,
+            2880
+          ]
+        },
+        {
+          "expert_module_num_experts": 32,
+          "experts_class": "transformers.integrations.mxfp4.Mxfp4GptOssExperts",
+          "layer": 5,
+          "mlp_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssMLP",
+          "router_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssTopKRouter",
+          "router_execution_mode": "mxfp4_functional_linear",
+          "router_num_experts": 32,
+          "router_top_k": 4,
+          "router_weight_shape": [
+            32,
+            2880
+          ]
+        },
+        {
+          "expert_module_num_experts": 32,
+          "experts_class": "transformers.integrations.mxfp4.Mxfp4GptOssExperts",
+          "layer": 6,
+          "mlp_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssMLP",
+          "router_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssTopKRouter",
+          "router_execution_mode": "mxfp4_functional_linear",
+          "router_num_experts": 32,
+          "router_top_k": 4,
+          "router_weight_shape": [
+            32,
+            2880
+          ]
+        },
+        {
+          "expert_module_num_experts": 32,
+          "experts_class": "transformers.integrations.mxfp4.Mxfp4GptOssExperts",
+          "layer": 7,
+          "mlp_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssMLP",
+          "router_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssTopKRouter",
+          "router_execution_mode": "mxfp4_functional_linear",
+          "router_num_experts": 32,
+          "router_top_k": 4,
+          "router_weight_shape": [
+            32,
+            2880
+          ]
+        },
+        {
+          "expert_module_num_experts": 32,
+          "experts_class": "transformers.integrations.mxfp4.Mxfp4GptOssExperts",
+          "layer": 8,
+          "mlp_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssMLP",
+          "router_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssTopKRouter",
+          "router_execution_mode": "mxfp4_functional_linear",
+          "router_num_experts": 32,
+          "router_top_k": 4,
+          "router_weight_shape": [
+            32,
+            2880
+          ]
+        },
+        {
+          "expert_module_num_experts": 32,
+          "experts_class": "transformers.integrations.mxfp4.Mxfp4GptOssExperts",
+          "layer": 9,
+          "mlp_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssMLP",
+          "router_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssTopKRouter",
+          "router_execution_mode": "mxfp4_functional_linear",
+          "router_num_experts": 32,
+          "router_top_k": 4,
+          "router_weight_shape": [
+            32,
+            2880
+          ]
+        },
+        {
+          "expert_module_num_experts": 32,
+          "experts_class": "transformers.integrations.mxfp4.Mxfp4GptOssExperts",
+          "layer": 10,
+          "mlp_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssMLP",
+          "router_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssTopKRouter",
+          "router_execution_mode": "mxfp4_functional_linear",
+          "router_num_experts": 32,
+          "router_top_k": 4,
+          "router_weight_shape": [
+            32,
+            2880
+          ]
+        },
+        {
+          "expert_module_num_experts": 32,
+          "experts_class": "transformers.integrations.mxfp4.Mxfp4GptOssExperts",
+          "layer": 11,
+          "mlp_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssMLP",
+          "router_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssTopKRouter",
+          "router_execution_mode": "mxfp4_functional_linear",
+          "router_num_experts": 32,
+          "router_top_k": 4,
+          "router_weight_shape": [
+            32,
+            2880
+          ]
+        },
+        {
+          "expert_module_num_experts": 32,
+          "experts_class": "transformers.integrations.mxfp4.Mxfp4GptOssExperts",
+          "layer": 12,
+          "mlp_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssMLP",
+          "router_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssTopKRouter",
+          "router_execution_mode": "mxfp4_functional_linear",
+          "router_num_experts": 32,
+          "router_top_k": 4,
+          "router_weight_shape": [
+            32,
+            2880
+          ]
+        },
+        {
+          "expert_module_num_experts": 32,
+          "experts_class": "transformers.integrations.mxfp4.Mxfp4GptOssExperts",
+          "layer": 13,
+          "mlp_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssMLP",
+          "router_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssTopKRouter",
+          "router_execution_mode": "mxfp4_functional_linear",
+          "router_num_experts": 32,
+          "router_top_k": 4,
+          "router_weight_shape": [
+            32,
+            2880
+          ]
+        },
+        {
+          "expert_module_num_experts": 32,
+          "experts_class": "transformers.integrations.mxfp4.Mxfp4GptOssExperts",
+          "layer": 14,
+          "mlp_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssMLP",
+          "router_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssTopKRouter",
+          "router_execution_mode": "mxfp4_functional_linear",
+          "router_num_experts": 32,
+          "router_top_k": 4,
+          "router_weight_shape": [
+            32,
+            2880
+          ]
+        },
+        {
+          "expert_module_num_experts": 32,
+          "experts_class": "transformers.integrations.mxfp4.Mxfp4GptOssExperts",
+          "layer": 15,
+          "mlp_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssMLP",
+          "router_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssTopKRouter",
+          "router_execution_mode": "mxfp4_functional_linear",
+          "router_num_experts": 32,
+          "router_top_k": 4,
+          "router_weight_shape": [
+            32,
+            2880
+          ]
+        },
+        {
+          "expert_module_num_experts": 32,
+          "experts_class": "transformers.integrations.mxfp4.Mxfp4GptOssExperts",
+          "layer": 16,
+          "mlp_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssMLP",
+          "router_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssTopKRouter",
+          "router_execution_mode": "mxfp4_functional_linear",
+          "router_num_experts": 32,
+          "router_top_k": 4,
+          "router_weight_shape": [
+            32,
+            2880
+          ]
+        },
+        {
+          "expert_module_num_experts": 32,
+          "experts_class": "transformers.integrations.mxfp4.Mxfp4GptOssExperts",
+          "layer": 17,
+          "mlp_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssMLP",
+          "router_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssTopKRouter",
+          "router_execution_mode": "mxfp4_functional_linear",
+          "router_num_experts": 32,
+          "router_top_k": 4,
+          "router_weight_shape": [
+            32,
+            2880
+          ]
+        },
+        {
+          "expert_module_num_experts": 32,
+          "experts_class": "transformers.integrations.mxfp4.Mxfp4GptOssExperts",
+          "layer": 18,
+          "mlp_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssMLP",
+          "router_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssTopKRouter",
+          "router_execution_mode": "mxfp4_functional_linear",
+          "router_num_experts": 32,
+          "router_top_k": 4,
+          "router_weight_shape": [
+            32,
+            2880
+          ]
+        },
+        {
+          "expert_module_num_experts": 32,
+          "experts_class": "transformers.integrations.mxfp4.Mxfp4GptOssExperts",
+          "layer": 19,
+          "mlp_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssMLP",
+          "router_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssTopKRouter",
+          "router_execution_mode": "mxfp4_functional_linear",
+          "router_num_experts": 32,
+          "router_top_k": 4,
+          "router_weight_shape": [
+            32,
+            2880
+          ]
+        },
+        {
+          "expert_module_num_experts": 32,
+          "experts_class": "transformers.integrations.mxfp4.Mxfp4GptOssExperts",
+          "layer": 20,
+          "mlp_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssMLP",
+          "router_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssTopKRouter",
+          "router_execution_mode": "mxfp4_functional_linear",
+          "router_num_experts": 32,
+          "router_top_k": 4,
+          "router_weight_shape": [
+            32,
+            2880
+          ]
+        },
+        {
+          "expert_module_num_experts": 32,
+          "experts_class": "transformers.integrations.mxfp4.Mxfp4GptOssExperts",
+          "layer": 21,
+          "mlp_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssMLP",
+          "router_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssTopKRouter",
+          "router_execution_mode": "mxfp4_functional_linear",
+          "router_num_experts": 32,
+          "router_top_k": 4,
+          "router_weight_shape": [
+            32,
+            2880
+          ]
+        },
+        {
+          "expert_module_num_experts": 32,
+          "experts_class": "transformers.integrations.mxfp4.Mxfp4GptOssExperts",
+          "layer": 22,
+          "mlp_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssMLP",
+          "router_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssTopKRouter",
+          "router_execution_mode": "mxfp4_functional_linear",
+          "router_num_experts": 32,
+          "router_top_k": 4,
+          "router_weight_shape": [
+            32,
+            2880
+          ]
+        },
+        {
+          "expert_module_num_experts": 32,
+          "experts_class": "transformers.integrations.mxfp4.Mxfp4GptOssExperts",
+          "layer": 23,
+          "mlp_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssMLP",
+          "router_class": "transformers.models.gpt_oss.modeling_gpt_oss.GptOssTopKRouter",
+          "router_execution_mode": "mxfp4_functional_linear",
+          "router_num_experts": 32,
+          "router_top_k": 4,
+          "router_weight_shape": [
+            32,
+            2880
+          ]
+        }
+      ],
+      "layout_consistent": true,
+      "model_id": "openai/gpt-oss-20b",
+      "model_type": "gpt_oss",
+      "mxfp4_kernel_load": {
+        "matched_call_count": 1,
+        "module_files": [
+          ".cache/huggingface/hub/models--kernels-community--gpt-oss-triton-kernels/snapshots/642d2a71c6a9b32fc18acb8ec53505fb324bc394/build/torch-cuda/__init__.py"
+        ],
+        "module_names": [
+          "gpt_oss_triton_kernels_85bf1c1fc970dd3f"
+        ],
+        "repository": "kernels-community/gpt-oss-triton-kernels",
+        "restored": true,
+        "revision": "642d2a71c6a9b32fc18acb8ec53505fb324bc394"
+      },
+      "native_mxfp4": true,
+      "quantization_config": {
+        "modules_to_not_convert": [
+          "model.layers.*.self_attn",
+          "model.layers.*.mlp.router",
+          "model.embed_tokens",
+          "lm_head"
+        ],
+        "quant_method": "mxfp4"
+      },
+      "router_execution_modes": [
+        "mxfp4_functional_linear"
+      ],
+      "runtime_package_versions": {
+        "kernels": "0.12.3",
+        "transformers": "5.12.1",
+        "triton": "3.7.1"
+      },
+      "schema_version": 1
+    },
+    "transformers_version": "5.12.1"
+  },
+  "model_id": "openai/gpt-oss-20b",
+  "summary": {
+    "experts": 24,
+    "router": 24
+  }
+}

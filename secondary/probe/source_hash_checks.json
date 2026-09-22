@@ -1,0 +1,159 @@
+{
+  "scope": "Original selected sources before public-path redaction; these are not hashes of the final public files. Use the release MANIFEST.json for public-file integrity.",
+  "checks": [
+    {
+      "analysis": "canonical_six",
+      "public_path": "secondary/probe/source/scripts/run_interface_access_analysis.py",
+      "recorded_sha256": "573319c76c20c41737936fbf708d4b382419f9a7a3bda0db909e5b9531dd739d",
+      "candidate_source_sha256": "573319c76c20c41737936fbf708d4b382419f9a7a3bda0db909e5b9531dd739d",
+      "matches_recorded_execution_hash": true
+    },
+    {
+      "analysis": "canonical_six",
+      "public_path": "secondary/probe/source/src/routeverify/analysis/fair_comparison.py",
+      "recorded_sha256": "916087b83c7c3771c2cfc0bf2a1110d6da672605fc8ea22d148f058b1ef9f3c4",
+      "candidate_source_sha256": "916087b83c7c3771c2cfc0bf2a1110d6da672605fc8ea22d148f058b1ef9f3c4",
+      "matches_recorded_execution_hash": true
+    },
+    {
+      "analysis": "canonical_six",
+      "public_path": "secondary/probe/source/src/routeverify/analysis/interface_access.py",
+      "recorded_sha256": "e129c80c380b5c95e6d9b629a2644c639e4b042244ea3db149f541e50ce5e6e7",
+      "candidate_source_sha256": "e129c80c380b5c95e6d9b629a2644c639e4b042244ea3db149f541e50ce5e6e7",
+      "matches_recorded_execution_hash": true
+    },
+    {
+      "analysis": "canonical_six",
+      "public_path": "secondary/probe/source/src/routeverify/analysis/probes.py",
+      "recorded_sha256": "69f6869813fd83782b1feec89281dd83670d6b0cf001d090b867200ddc107682",
+      "candidate_source_sha256": "69f6869813fd83782b1feec89281dd83670d6b0cf001d090b867200ddc107682",
+      "matches_recorded_execution_hash": true
+    },
+    {
+      "analysis": "canonical_six",
+      "public_path": "secondary/probe/source/src/routeverify/analysis/protocols.py",
+      "recorded_sha256": "3c980e65e7bd2732efa3330d99dd5ef30323677a62c49651668002e45f9b7f47",
+      "candidate_source_sha256": "3c980e65e7bd2732efa3330d99dd5ef30323677a62c49651668002e45f9b7f47",
+      "matches_recorded_execution_hash": true
+    },
+    {
+      "analysis": "canonical_six",
+      "public_path": "secondary/probe/source/src/routeverify/analysis/routing_probes.py",
+      "recorded_sha256": "1e9e568e472bcd18152913a4eb014bda411578465b6056d8294582d48ca683f2",
+      "candidate_source_sha256": "1e9e568e472bcd18152913a4eb014bda411578465b6056d8294582d48ca683f2",
+      "matches_recorded_execution_hash": true
+    },
+    {
+      "analysis": "canonical_six",
+      "public_path": "secondary/probe/source/src/routeverify/analysis/surface_baselines.py",
+      "recorded_sha256": "bc4fb6e835c04c98907ed64f02bb81b17362289004ba1dfd102ff722d2163a2b",
+      "candidate_source_sha256": "bc4fb6e835c04c98907ed64f02bb81b17362289004ba1dfd102ff722d2163a2b",
+      "matches_recorded_execution_hash": true
+    },
+    {
+      "analysis": "glm",
+      "public_path": "secondary/probe/source/scripts/run_interface_access_analysis_glm.py",
+      "recorded_sha256": "8a5f4c88085b470d496c9823a1d6a46607d36d73da167389d9ae7d01fb6f274a",
+      "candidate_source_sha256": "8a5f4c88085b470d496c9823a1d6a46607d36d73da167389d9ae7d01fb6f274a",
+      "matches_recorded_execution_hash": true
+    },
+    {
+      "analysis": "glm",
+      "public_path": "secondary/probe/source/src/routeverify/analysis/fair_comparison.py",
+      "recorded_sha256": "916087b83c7c3771c2cfc0bf2a1110d6da672605fc8ea22d148f058b1ef9f3c4",
+      "candidate_source_sha256": "916087b83c7c3771c2cfc0bf2a1110d6da672605fc8ea22d148f058b1ef9f3c4",
+      "matches_recorded_execution_hash": true
+    },
+    {
+      "analysis": "glm",
+      "public_path": "secondary/probe/source/src/routeverify/analysis/interface_access.py",
+      "recorded_sha256": "e129c80c380b5c95e6d9b629a2644c639e4b042244ea3db149f541e50ce5e6e7",
+      "candidate_source_sha256": "e129c80c380b5c95e6d9b629a2644c639e4b042244ea3db149f541e50ce5e6e7",
+      "matches_recorded_execution_hash": true
+    },
+    {
+      "analysis": "glm",
+      "public_path": "secondary/probe/source/src/routeverify/analysis/probes.py",
+      "recorded_sha256": "69f6869813fd83782b1feec89281dd83670d6b0cf001d090b867200ddc107682",
+      "candidate_source_sha256": "69f6869813fd83782b1feec89281dd83670d6b0cf001d090b867200ddc107682",
+      "matches_recorded_execution_hash": true
+    },
+    {
+      "analysis": "glm",
+      "public_path": "secondary/probe/source/src/routeverify/analysis/protocols.py",
+      "recorded_sha256": "3c980e65e7bd2732efa3330d99dd5ef30323677a62c49651668002e45f9b7f47",
+      "candidate_source_sha256": "3c980e65e7bd2732efa3330d99dd5ef30323677a62c49651668002e45f9b7f47",
+      "matches_recorded_execution_hash": true
+    },
+    {
+      "analysis": "glm",
+      "public_path": "secondary/probe/source/src/routeverify/analysis/routing_probes.py",
+      "recorded_sha256": "1e9e568e472bcd18152913a4eb014bda411578465b6056d8294582d48ca683f2",
+      "candidate_source_sha256": "1e9e568e472bcd18152913a4eb014bda411578465b6056d8294582d48ca683f2",
+      "matches_recorded_execution_hash": true
+    },
+    {
+      "analysis": "glm",
+      "public_path": "secondary/probe/source/src/routeverify/analysis/surface_baselines.py",
+      "recorded_sha256": "bc4fb6e835c04c98907ed64f02bb81b17362289004ba1dfd102ff722d2163a2b",
+      "candidate_source_sha256": "bc4fb6e835c04c98907ed64f02bb81b17362289004ba1dfd102ff722d2163a2b",
+      "matches_recorded_execution_hash": true
+    },
+    {
+      "analysis": "gpt120",
+      "public_path": "secondary/probe/source/scripts/run_interface_access_analysis.py",
+      "recorded_sha256": "573319c76c20c41737936fbf708d4b382419f9a7a3bda0db909e5b9531dd739d",
+      "candidate_source_sha256": "573319c76c20c41737936fbf708d4b382419f9a7a3bda0db909e5b9531dd739d",
+      "matches_recorded_execution_hash": true
+    },
+    {
+      "analysis": "gpt120",
+      "public_path": "secondary/probe/source/scripts/run_interface_access_gpt120_20260908.py",
+      "recorded_sha256": "a87b65b8a3d945b7f4feb12e8e2dae29c50daad8648ae7369a394b39211c96d9",
+      "candidate_source_sha256": "59a1947c142610b733ad52f6b6179ec06745bb63098753777c2bb373b2c19059",
+      "matches_recorded_execution_hash": false
+    },
+    {
+      "analysis": "gpt120",
+      "public_path": "secondary/probe/source/src/routeverify/analysis/fair_comparison.py",
+      "recorded_sha256": "916087b83c7c3771c2cfc0bf2a1110d6da672605fc8ea22d148f058b1ef9f3c4",
+      "candidate_source_sha256": "916087b83c7c3771c2cfc0bf2a1110d6da672605fc8ea22d148f058b1ef9f3c4",
+      "matches_recorded_execution_hash": true
+    },
+    {
+      "analysis": "gpt120",
+      "public_path": "secondary/probe/source/src/routeverify/analysis/interface_access.py",
+      "recorded_sha256": "e129c80c380b5c95e6d9b629a2644c639e4b042244ea3db149f541e50ce5e6e7",
+      "candidate_source_sha256": "e129c80c380b5c95e6d9b629a2644c639e4b042244ea3db149f541e50ce5e6e7",
+      "matches_recorded_execution_hash": true
+    },
+    {
+      "analysis": "gpt120",
+      "public_path": "secondary/probe/source/src/routeverify/analysis/probes.py",
+      "recorded_sha256": "69f6869813fd83782b1feec89281dd83670d6b0cf001d090b867200ddc107682",
+      "candidate_source_sha256": "69f6869813fd83782b1feec89281dd83670d6b0cf001d090b867200ddc107682",
+      "matches_recorded_execution_hash": true
+    },
+    {
+      "analysis": "gpt120",
+      "public_path": "secondary/probe/source/src/routeverify/analysis/protocols.py",
+      "recorded_sha256": "3c980e65e7bd2732efa3330d99dd5ef30323677a62c49651668002e45f9b7f47",
+      "candidate_source_sha256": "3c980e65e7bd2732efa3330d99dd5ef30323677a62c49651668002e45f9b7f47",
+      "matches_recorded_execution_hash": true
+    },
+    {
+      "analysis": "gpt120",
+      "public_path": "secondary/probe/source/src/routeverify/analysis/routing_probes.py",
+      "recorded_sha256": "1e9e568e472bcd18152913a4eb014bda411578465b6056d8294582d48ca683f2",
+      "candidate_source_sha256": "1e9e568e472bcd18152913a4eb014bda411578465b6056d8294582d48ca683f2",
+      "matches_recorded_execution_hash": true
+    },
+    {
+      "analysis": "gpt120",
+      "public_path": "secondary/probe/source/src/routeverify/analysis/surface_baselines.py",
+      "recorded_sha256": "bc4fb6e835c04c98907ed64f02bb81b17362289004ba1dfd102ff722d2163a2b",
+      "candidate_source_sha256": "bc4fb6e835c04c98907ed64f02bb81b17362289004ba1dfd102ff722d2163a2b",
+      "matches_recorded_execution_hash": true
+    }
+  ]
+}

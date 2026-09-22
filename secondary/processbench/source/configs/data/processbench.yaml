@@ -1,0 +1,8 @@
+dataset: processbench
+hf_id: Qwen/ProcessBench
+revision: 3bdcd5371ed567559a78f559c01c13a6deee7604
+subset: gsm8k
+split: train
+cache_dir: .cache/huggingface/datasets
+output: data/processed/processbench-gsm8k.jsonl
+balanced: true

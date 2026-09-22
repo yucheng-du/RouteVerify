@@ -1,0 +1,33 @@
+\begin{table*}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{2.8pt}
+\renewcommand{\arraystretch}{1.0}
+\caption{ProcessBench natural-error transfer on 64 same-generator,
+cross-problem pairs per model. MC$\rightarrow$FE uses a matched-correct donor and
+first-error receiver; FE$\rightarrow$MC swaps their roles. Each cell shows an
+estimate above its paired-cluster percentile-bootstrap 95\% interval (50,000
+resamples; no multiplicity adjustment). \(T\) and \(G\) come directly from paired
+rows, not marginal intervals.}
+\label{tab:processbench}
+\begin{tabular}{llcccc}
+\toprule
+Model & Site & MC$\rightarrow$FE & FE$\rightarrow$MC & \(T\) & \(G=T_{\resid}-T_{\router}\) \\
+\midrule
+\multirow{4}{*}{GPT-OSS 20B} & residual & $-.0590$ & $+.0242$ & $.0416$ & \multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}$.0476$\\$[.0145,.0817]$\end{tabular}} \\
+& & $[-.1029,-.0163]$ & $[-.0344,.0824]$ & $[.0065,.0775]$ & \\
+& router & $+.0051$ & $-.0070$ & $-.0060$ & \\
+& & $[-.0060,.0164]$ & $[-.0174,.0035]$ & $[-.0143,.0025]$ & \\
+\addlinespace[2pt]
+\multirow{4}{*}{Gemma 4 26B-A4B} & residual & $+.0442$ & $+.2948$ & $.1253$ & \multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}$.1241$\\$[.0246,.2402]$\end{tabular}} \\
+& & $[-.0813,.1594]$ & $[.1424,.5035]$ & $[.0224,.2452]$ & \\
+& router & $+.0010$ & $+.0034$ & $.0012$ & \\
+& & $[-.0339,.0358]$ & $[-.0203,.0268]$ & $[-.0183,.0205]$ & \\
+\addlinespace[2pt]
+\multirow{4}{*}{Nemotron-3 Nano} & residual & $-.0517$ & $+.0667$ & $.0592$ & \multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}$.0575$\\$[.0396,.0755]$\end{tabular}} \\
+& & $[-.0686,-.0345]$ & $[.0454,.0897]$ & $[.0410,.0778]$ & \\
+& router & $-.0033$ & $+.0001$ & $.0017$ & \\
+& & $[-.0093,.0027]$ & $[-.0054,.0056]$ & $[-.0024,.0056]$ & \\
+\bottomrule
+\end{tabular}
+\end{table*}

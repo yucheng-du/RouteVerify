@@ -1,0 +1,18 @@
+# L36 is the inherited causal headline anchor; recapture access uses L24.
+model: configs/models/qwen3_moe.yaml
+data: configs/data/prmbench.yaml
+split_manifest: docs/results/first_batch_zero_gpu_20260730/discovery_validation_split.json
+split_partition: discovery
+expected_pairs: 290
+selection_manifest: docs/results/gpt_oss_full_20260809/full_selection_manifest.json
+source_component_manifest: docs/results/qwen3_cpu_corrections_v1_20260808/source_problem_manifest.json
+anchor_layer: 36
+expected_bundle_sites: 48
+input_format: chat
+mode: both
+extended_diagnostics: false
+d_sites: [router_logits, moe_output, post_moe_residual]
+bundle_kind: moe_output
+seed: 0
+output_dir: artifacts/donor_bundle_20260907/qwen3_moe
+identity_tolerance: 1.0e-5

@@ -1,0 +1,302 @@
+{
+  "checkpoint_forwards": 0,
+  "weights_downloaded": false,
+  "syntax": {
+    "files": 491,
+    "passed": true,
+    "mode": "in-memory compile; no pycache"
+  },
+  "commands": [
+    {
+      "tree": "execution/campaign_A/qwen36_moe",
+      "entry": "donor_contrast --dry-run",
+      "model": "qwen36_moe",
+      "returncode": 0,
+      "weights_loaded": false,
+      "receiver_pairs": 290
+    },
+    {
+      "tree": "execution/campaign_A/qwen36_moe",
+      "entry": "load_discovery_pairs and manifest self-hash validation",
+      "returncode": 0,
+      "rows": [
+        {
+          "model": "qwen36_moe_core_20260907",
+          "pairs": 290,
+          "source_components": 235
+        },
+        {
+          "model": "qwen36_moe",
+          "all_290_donor_edges_match_archive": true,
+          "distinct_donors": 204
+        }
+      ],
+      "input_scope": "original archived discovery JSONL read-only; dataset text is not bundled"
+    },
+    {
+      "tree": "execution/campaign_A/qwen3_moe",
+      "entry": "donor_contrast --dry-run",
+      "model": "qwen3_moe",
+      "returncode": 0,
+      "weights_loaded": false,
+      "receiver_pairs": 290
+    },
+    {
+      "tree": "execution/campaign_A/qwen3_moe",
+      "entry": "load_discovery_pairs and manifest self-hash validation",
+      "returncode": 0,
+      "rows": [
+        {
+          "model": "qwen3_moe_core_20260907",
+          "pairs": 290,
+          "source_components": 235
+        },
+        {
+          "model": "qwen36_moe_core_20260907",
+          "pairs": 290,
+          "source_components": 235
+        },
+        {
+          "model": "qwen3_moe",
+          "all_290_donor_edges_match_archive": true,
+          "distinct_donors": 204
+        },
+        {
+          "model": "qwen36_moe",
+          "all_290_donor_edges_match_archive": true,
+          "distinct_donors": 204
+        }
+      ],
+      "input_scope": "original archived discovery JSONL read-only; dataset text is not bundled"
+    },
+    {
+      "tree": "execution/campaign_A/glm4_moe_lite",
+      "entry": "donor_contrast --dry-run",
+      "model": "glm4_moe_lite",
+      "returncode": 0,
+      "weights_loaded": false,
+      "receiver_pairs": 290
+    },
+    {
+      "tree": "execution/campaign_A/glm4_moe_lite",
+      "entry": "load_discovery_pairs and manifest self-hash validation",
+      "returncode": 0,
+      "rows": [
+        {
+          "model": "qwen36_moe_core_20260907",
+          "pairs": 290,
+          "source_components": 235
+        },
+        {
+          "model": "glm4_moe_lite_core_20260907",
+          "pairs": 290,
+          "source_components": 235
+        },
+        {
+          "model": "qwen36_moe",
+          "all_290_donor_edges_match_archive": true,
+          "distinct_donors": 204
+        },
+        {
+          "model": "glm4_moe_lite",
+          "all_290_donor_edges_match_archive": true,
+          "distinct_donors": 204
+        }
+      ],
+      "input_scope": "original archived discovery JSONL read-only; dataset text is not bundled"
+    },
+    {
+      "tree": "execution/campaign_B",
+      "entry": "donor_contrast --dry-run",
+      "model": "gemma4_moe",
+      "returncode": 0,
+      "weights_loaded": false,
+      "receiver_pairs": 290
+    },
+    {
+      "tree": "execution/campaign_B",
+      "entry": "donor_contrast --dry-run",
+      "model": "nemotron35_lightning",
+      "returncode": 0,
+      "weights_loaded": false,
+      "receiver_pairs": 290
+    },
+    {
+      "tree": "execution/campaign_B",
+      "entry": "donor_contrast --dry-run",
+      "model": "nemotron3_nano",
+      "returncode": 0,
+      "weights_loaded": false,
+      "receiver_pairs": 290
+    },
+    {
+      "tree": "execution/campaign_B",
+      "entry": "donor_contrast --dry-run",
+      "model": "olmoe",
+      "returncode": 0,
+      "weights_loaded": false,
+      "receiver_pairs": 290
+    },
+    {
+      "tree": "execution/campaign_B",
+      "entry": "load_discovery_pairs and manifest self-hash validation",
+      "returncode": 0,
+      "rows": [
+        {
+          "model": "gemma4_moe_core_20260907",
+          "pairs": 290,
+          "source_components": 235
+        },
+        {
+          "model": "nemotron35_lightning_core_20260907",
+          "pairs": 290,
+          "source_components": 235
+        },
+        {
+          "model": "olmoe_core_20260907",
+          "pairs": 290,
+          "source_components": 235
+        },
+        {
+          "model": "nemotron3_nano_core_20260907",
+          "pairs": 290,
+          "source_components": 235
+        },
+        {
+          "model": "gemma4_moe",
+          "all_290_donor_edges_match_archive": true,
+          "distinct_donors": 204
+        },
+        {
+          "model": "olmoe",
+          "all_290_donor_edges_match_archive": true,
+          "distinct_donors": 204
+        },
+        {
+          "model": "nemotron35_lightning",
+          "all_290_donor_edges_match_archive": true,
+          "distinct_donors": 204
+        },
+        {
+          "model": "nemotron3_nano",
+          "all_290_donor_edges_match_archive": true,
+          "distinct_donors": 204
+        }
+      ],
+      "input_scope": "original archived discovery JSONL read-only; dataset text is not bundled"
+    },
+    {
+      "tree": "execution/campaign_C",
+      "entry": "donor_contrast --dry-run",
+      "model": "gpt_oss_120b",
+      "returncode": 0,
+      "weights_loaded": false,
+      "receiver_pairs": 290
+    },
+    {
+      "tree": "execution/campaign_C",
+      "entry": "donor_contrast --dry-run",
+      "model": "gpt_oss_20b",
+      "returncode": 0,
+      "weights_loaded": false,
+      "receiver_pairs": 290
+    },
+    {
+      "tree": "execution/campaign_C",
+      "entry": "load_discovery_pairs and manifest self-hash validation",
+      "returncode": 0,
+      "rows": [
+        {
+          "model": "gpt_oss_120b_core_20260907",
+          "pairs": 290,
+          "source_components": 235
+        },
+        {
+          "model": "gpt_oss_20b_core_20260907",
+          "pairs": 290,
+          "source_components": 235
+        },
+        {
+          "model": "gpt_oss_120b",
+          "all_290_donor_edges_match_archive": true,
+          "distinct_donors": 204
+        },
+        {
+          "model": "gpt_oss_20b",
+          "all_290_donor_edges_match_archive": true,
+          "distinct_donors": 204
+        }
+      ],
+      "input_scope": "original archived discovery JSONL read-only; dataset text is not bundled"
+    },
+    {
+      "tree": "execution/campaign_D",
+      "entry": "load_discovery_pairs and manifest self-hash validation",
+      "returncode": 0,
+      "rows": [
+        {
+          "model": "gemma4_moe",
+          "pairs": 290,
+          "source_components": 235
+        },
+        {
+          "model": "qwen3_moe",
+          "pairs": 290,
+          "source_components": 235
+        },
+        {
+          "model": "olmoe",
+          "pairs": 290,
+          "source_components": 235
+        },
+        {
+          "model": "qwen36_moe",
+          "pairs": 290,
+          "source_components": 235
+        },
+        {
+          "model": "gpt_oss_120b",
+          "pairs": 290,
+          "source_components": 235
+        },
+        {
+          "model": "glm4_moe_lite",
+          "pairs": 290,
+          "source_components": 235
+        },
+        {
+          "model": "gpt_oss_20b",
+          "pairs": 290,
+          "source_components": 235
+        },
+        {
+          "model": "nemotron35_lightning",
+          "pairs": 290,
+          "source_components": 235
+        },
+        {
+          "model": "nemotron3_nano",
+          "pairs": 290,
+          "source_components": 235
+        },
+        {
+          "wide_d_fixed_matching_valid": true,
+          "receiver_pairs": 290,
+          "distinct_donors": 204
+        }
+      ],
+      "input_scope": "original archived discovery JSONL read-only; dataset text is not bundled"
+    }
+  ],
+  "dataset_reconstruction": {
+    "source_url": "https://huggingface.co/datasets/hitsmy/PRMBench_Preview/resolve/59abf58d51100c6befccf45fe8114d995fcc3b8e/prmbench_preview.jsonl",
+    "raw_sha256": "3efe79ff688751369da6161635c247318611032071ee46cde6a20a95125bc966",
+    "reconstructed_discovery_sha256": "dd8ae3ae2fc6669748e3d9ab7dd12775c2143e68ea8de82b39a922f5b822964a",
+    "original_archived_discovery_sha256": "dd8ae3ae2fc6669748e3d9ab7dd12775c2143e68ea8de82b39a922f5b822964a",
+    "pair_count": 290,
+    "example_count": 580,
+    "all_content_hashes_match": true,
+    "byte_identical_to_archived_discovery": true,
+    "checkpoint_forwards": 0
+  }
+}

@@ -1,0 +1,3157 @@
+{
+  "schema_version": 1,
+  "model": "nemotron3_nano",
+  "execution_version": "v1",
+  "mode": "full",
+  "passed": true,
+  "extracted_utc": "2026-09-08T22:01:06.050969+00:00",
+  "run_directory": "archive://runtime/campaign_20260908_D/runs/nemotron3_nano/full_v1",
+  "contract_id": "e3a272f74e7d31af7eebbd930be17acc0515d4a2f1d8d6770198396bfbb71700",
+  "checkpoint": {
+    "alias": "nemotron3_nano",
+    "harmony_reasoning_effort": "medium",
+    "model_id": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "require_native_mxfp4": false,
+    "revision": "2d59de1cbd51c0adf384eb906b766d1aee0e0517",
+    "tokenizer_revision": "2d59de1cbd51c0adf384eb906b766d1aee0e0517"
+  },
+  "N": 290,
+  "K": 235,
+  "selected_pairs": 290,
+  "ineligible_pairs": 0,
+  "ineligible_pair_ids": [],
+  "unique_fixed_donor_pairs": 204,
+  "primary_mean_logprob": {
+    "D_clean": {
+      "bootstrap_standard_error": 0.007140878018911454,
+      "ci_high": 0.017105801217730903,
+      "ci_low": -0.010924353672843945,
+      "mean": 0.003154242823392839
+    },
+    "D_common": {
+      "bootstrap_standard_error": 0.005168033816581301,
+      "ci_high": 0.0068773577585955,
+      "ci_low": -0.01336383936178815,
+      "mean": -0.0031436611365676737
+    },
+    "D_error": {
+      "bootstrap_standard_error": 0.006299042806427588,
+      "ci_high": 0.002800922372454425,
+      "ci_low": -0.021851343032103076,
+      "mean": -0.009441565096528198
+    }
+  },
+  "sensitivity_total_logprob": {
+    "D_clean": {
+      "bootstrap_standard_error": 0.02357409768356792,
+      "ci_high": 0.054912280843750834,
+      "ci_low": -0.037466177427317914,
+      "mean": 0.009042833758325413
+    },
+    "D_common": {
+      "bootstrap_standard_error": 0.01680861912451252,
+      "ci_high": 0.02173679696972579,
+      "ci_low": -0.04419246004830876,
+      "mean": -0.010819631773207722
+    },
+    "D_error": {
+      "bootstrap_standard_error": 0.020090702761750505,
+      "ci_high": 0.008183506577238446,
+      "ci_low": -0.07021701197276084,
+      "mean": -0.030682097304740856
+    }
+  },
+  "bootstrap": {
+    "conditional_on_observed_donor_matching": true,
+    "confidence_level": 0.95,
+    "donor_assignments_attached_to_receiver_pairs": true,
+    "intervals": "marginal two-sided percentile",
+    "n_resamples": 50000,
+    "receiver_roles_resampled_jointly": true,
+    "seed": 20260908,
+    "unit": "receiver_source_component",
+    "weighting": "receiver-pair weighted, including within each resample",
+    "cluster_pair_counts": [
+      1,
+      1,
+      2,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      3,
+      2,
+      1,
+      2,
+      1,
+      2,
+      4,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      2,
+      3,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      3,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      3,
+      1,
+      2,
+      2
+    ],
+    "draw_method": "sample_receiver_components_with_replacement_keep_all_member_pairs",
+    "estimands": [
+      "d_clean_mean",
+      "d_corrupt_mean",
+      "d_common_mean",
+      "d_clean_total",
+      "d_corrupt_total",
+      "d_common_total"
+    ],
+    "indices_sha256": "be76480c996442937f529a2df12989fe84876e622d5321be9b228f7861c30dba",
+    "method": "receiver_source_component_percentile",
+    "n_clusters": 235,
+    "n_pairs": 290,
+    "rng": "numpy.random.Generator(PCG64)"
+  },
+  "descriptive_heterogeneity": {
+    "origin": "Deterministic descriptives of saved analysis.per_pair values; no new inference or resampling.",
+    "metrics": {
+      "d_clean_mean": {
+        "n": 290,
+        "mean": 0.0031542428233928407,
+        "sample_sd": 0.12464321233927114,
+        "min": -0.5786128317316372,
+        "q25": -0.04107841026658812,
+        "median": 4.627493520578674e-05,
+        "q75": 0.04436508038391668,
+        "max": 0.45188337812821067,
+        "mean_absolute": 0.08465010174282495,
+        "fraction_positive": 0.5137931034482759,
+        "fraction_zero": 0.0
+      },
+      "d_corrupt_mean": {
+        "n": 290,
+        "mean": -0.00944156509652819,
+        "sample_sd": 0.10820755687713285,
+        "min": -0.4859621375799179,
+        "q25": -0.041104296222329195,
+        "median": -0.0001119322453935756,
+        "q75": 0.04069196494917077,
+        "max": 0.4085597132022182,
+        "mean_absolute": 0.0751298952671089,
+        "fraction_positive": 0.46551724137931033,
+        "fraction_zero": 0.0
+      },
+      "d_common_mean": {
+        "n": 290,
+        "mean": -0.003143661136567675,
+        "sample_sd": 0.09060256148608054,
+        "min": -0.5322874846557776,
+        "q25": -0.05896409632017215,
+        "median": -1.3659552981465373e-05,
+        "q75": 0.04044085166727504,
+        "max": 0.23039611925681433,
+        "mean_absolute": 0.06399634717401631,
+        "fraction_positive": 0.5,
+        "fraction_zero": 0.0
+      },
+      "d_clean_total": {
+        "n": 290,
+        "mean": 0.009042833758325413,
+        "sample_sd": 0.4109815853789494,
+        "min": -2.000486582517624,
+        "q25": -0.12607020884752274,
+        "median": 0.00033029913902282715,
+        "q75": 0.14188020303845406,
+        "max": 1.5008758008480072,
+        "mean_absolute": 0.2740131944289495,
+        "fraction_positive": 0.5379310344827586,
+        "fraction_zero": 0.0
+      },
+      "d_corrupt_total": {
+        "n": 290,
+        "mean": -0.030682097304740856,
+        "sample_sd": 0.3445739439538779,
+        "min": -1.6640622019767761,
+        "q25": -0.1269286423921585,
+        "median": -3.157183527946472e-05,
+        "q75": 0.1258656606078148,
+        "max": 1.2514114119112492,
+        "mean_absolute": 0.23708321583810552,
+        "fraction_positive": 0.4586206896551724,
+        "fraction_zero": 0.0
+      },
+      "d_common_total": {
+        "n": 290,
+        "mean": -0.010819631773207722,
+        "sample_sd": 0.2939568221820552,
+        "min": -1.8322743922472,
+        "q25": -0.18705888092517853,
+        "median": 0.00020739063620567322,
+        "q75": 0.12530885078012943,
+        "max": 0.8147948384284973,
+        "mean_absolute": 0.2046094533023906,
+        "fraction_positive": 0.5241379310344828,
+        "fraction_zero": 0.0
+      }
+    }
+  },
+  "technical": {
+    "all_atomic_pairs_passed": true,
+    "four_cells_same_invocation": true,
+    "raw_four_cells_match_saved_per_pair": true,
+    "saved_all_router_dispatch_verified": true,
+    "max_self_candidate_score_delta": 0.0,
+    "max_rerun_candidate_score_delta": 0.0,
+    "identity_atol": 0.002,
+    "rows_by_treatment": {
+      "unpatched": 580,
+      "unpatched_rerun": 580,
+      "self_patch": 580,
+      "donor_role": 1160
+    },
+    "target_site_count": 23,
+    "target_sites": [
+      "layer_1.router_logits",
+      "layer_3.router_logits",
+      "layer_6.router_logits",
+      "layer_8.router_logits",
+      "layer_10.router_logits",
+      "layer_13.router_logits",
+      "layer_15.router_logits",
+      "layer_17.router_logits",
+      "layer_20.router_logits",
+      "layer_22.router_logits",
+      "layer_24.router_logits",
+      "layer_27.router_logits",
+      "layer_29.router_logits",
+      "layer_31.router_logits",
+      "layer_34.router_logits",
+      "layer_36.router_logits",
+      "layer_38.router_logits",
+      "layer_40.router_logits",
+      "layer_43.router_logits",
+      "layer_45.router_logits",
+      "layer_47.router_logits",
+      "layer_49.router_logits",
+      "layer_51.router_logits"
+    ],
+    "candidate_target_ids": {
+      "CORRECT": [
+        [
+          1067,
+          3749,
+          61698
+        ]
+      ],
+      "INCORRECT": [
+        [
+          3174,
+          1067,
+          3749,
+          61698
+        ]
+      ]
+    }
+  },
+  "execution": {
+    "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+    "runtime_model_class": "NemotronHForCausalLM",
+    "elapsed_seconds": 792.1096713310108,
+    "capture_forwards": 1160,
+    "scoring_forwards": 5800,
+    "forward_count_scope": "this loaded invocation; recovered pairs add no forwards",
+    "recovered_pair_ids": [],
+    "no_validation_access": true
+  },
+  "recovery": {
+    "pairs_by_loaded_invocation": {
+      "a7f253a4-bd79-4f59-adce-369b7c7fbf75": 290
+    },
+    "operational_interruptions": [],
+    "final_invocation_actual_forwards": 6960,
+    "all_attempts_recorded_forward_lower_bound": 6960,
+    "additional_uncommitted_work_unknown": false,
+    "fresh_plan_forwards": 6960
+  },
+  "loaded_invocations": [
+    {
+      "loaded_run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "adapter_class": "Nemotron3NanoAdapter",
+      "adapter_source_sha256": "05e7099010d4c741f98efbeeb7fe13b29d789afa273a33816b99dc7b4a48b8c3",
+      "command": [
+        "archive://execution/src/routeverify/window_donor_contrast.py",
+        "--config",
+        "configs/experiments/window_donor_role_20260908/nemotron3_nano.yaml",
+        "--pairs",
+        "archive://runtime/campaign_20260908_D/assets/discovery/window_discovery_pairs.jsonl",
+        "--tokenizer-path",
+        "archive://runtime/campaign_20260908_D/assets/tokenizers/nemotron3_nano",
+        "--model-cache",
+        ".cache/huggingface/hub",
+        "--mode",
+        "full",
+        "--execution-version",
+        "v1",
+        "--output",
+        "archive://runtime/campaign_20260908_D/runs/nemotron3_nano/full_v1",
+        "--smoke-report",
+        "archive://runtime/campaign_20260908_D/runs/nemotron3_nano/smoke_v1/execution_summary.json"
+      ],
+      "loading_info": null,
+      "model_class": "NemotronHForCausalLM",
+      "note": "runtime provenance; semantic repairs require a new execution version/output",
+      "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+      "python": "3.11.10 (main, Oct 16 2024, 04:38:48) [Clang 18.1.8 ]",
+      "runner_source_sha256": "3e4e96fd27c25ccbf708bc1b9bcc82e35d24015cc6a14025116f9651b8204fa3",
+      "torch": "2.12.1+cu130",
+      "transformers": "5.12.1"
+    }
+  ],
+  "source_artifacts": [
+    {
+      "path": "runs/nemotron3_nano/full_v1/execution_summary.json",
+      "size_bytes": 32820,
+      "sha256": "882ccdf172401afdd5cce61fe7ad0d166af6a9de24a38d0b5c7ee9cbcaf3195b"
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/analysis.json",
+      "size_bytes": 220323064,
+      "sha256": "6c34f2b71df1e97e27d6a289690f747e2dd105d340ceff6a315eb0d5f5b249a9"
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/run_manifest.json",
+      "size_bytes": 315027,
+      "sha256": "c89087b306887a0b8ab5afb99d19e610bd8b0ca79303a0118cb5a523f0f58b05"
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/attempts/a7f253a4-bd79-4f59-adce-369b7c7fbf75/runtime.json",
+      "size_bytes": 1264,
+      "sha256": "08b6bc170a37a6e5173990df5ec868f93ab8fd767fed6627725439050dcac118"
+    }
+  ],
+  "raw_pair_artifacts": [
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/015f8dbf5a851ba78d091c43cc14574e.json",
+      "size_bytes": 1109477,
+      "sha256": "b4fb360471fd1d878ff6958beeba2dca5faf6d833a2e0d7dac6de5965d7b396c",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_1608",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/01888065d1566914a1ee4e12c97e1ffc.json",
+      "size_bytes": 974995,
+      "sha256": "75ecd206b3a3c07e5d034b06f14949bc24e452b2ce030af6373cea1ae1b67c25",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_2475",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/0379a5bb7d95fe2f8d95d55b23d04004.json",
+      "size_bytes": 729704,
+      "sha256": "e92db0d5f974ff40d0d73caf903a6ad0802742b4af6527ae413a2cf8a2c6c2b1",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_43",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/03d08b0e77a75d2e175cbc2a848acf72.json",
+      "size_bytes": 1154452,
+      "sha256": "6d0bd9a1488179e389f384c7829edd3b3c0c74763d6f1c54a6ddb744d2b49bda",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_289",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/0414031f2b714310d3ab6ee396d0b0ce.json",
+      "size_bytes": 1304478,
+      "sha256": "2919e773cb60807f3841c81ef28763028518e4b9214b0d2b003b214d47699433",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_145",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/04c7cc051aadeb1afc4b6428e7b45502.json",
+      "size_bytes": 1017636,
+      "sha256": "e074474472d2fc09c648396a8afb203d6507032dbf2216a1a0da3ad38c54c687",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_1721",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/05377e0f91a406c68a088081ba87e609.json",
+      "size_bytes": 966111,
+      "sha256": "7626e537216e2a44bef9d8b4ba0eb845f0dd82f89ce7b51384c1ab07abf97e9d",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_335",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/07c79eef0a4ce3c1ad9ee5a8acf1a7bf.json",
+      "size_bytes": 1580454,
+      "sha256": "bff7a195fa077a32f083cf59ce0d0222d7e7061ad7c47e64f27dd52f7f60ecfc",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_380",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/07f4f57dc5b81425a73a63a8827114a4.json",
+      "size_bytes": 942499,
+      "sha256": "b63451844b77f5ada534d5551af7a03b26569b5d8ef29868c80fa729534d4718",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_86",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/087f6129499caee88e4f3bc3a9281301.json",
+      "size_bytes": 757054,
+      "sha256": "67948f6add6c9b5b033325e95af2d1ca9bd06d66a866988ca215dd9ec8248055",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_47",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/09717d8ae7be6f4ae8e53a3efbc739c0.json",
+      "size_bytes": 803436,
+      "sha256": "e96b99252fccc490f9109ef85bf807b366d41c9b9c71af063e1d1894d1cf861a",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1785",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/09c8d3697923b045d551cda4bd7d6697.json",
+      "size_bytes": 675325,
+      "sha256": "8f782008a7f87973effd80ca8c05641a67f4cae8dcb28410abfd793f9074bdd1",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_112",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/0a4c7a5776e1a9ab9968079b1fd19319.json",
+      "size_bytes": 1156132,
+      "sha256": "0ab0586687b6b0c881ce40dd128b619b095b1636c2d4c4d7ad98a231463197e5",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2226",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/0ab679d3cd041902f9a8eb73b8550fcc.json",
+      "size_bytes": 1012505,
+      "sha256": "be0b8e4ed3de7b26a069e0a17c43df4bd899c657a34d2fa486a1c26230c32ee1",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1606",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/0bc210b1e642d86e6cf64a310c21c3ef.json",
+      "size_bytes": 871963,
+      "sha256": "015f139a26f6900ebef8bf3650dac1c2340dc5331276ca390a7ba360cc9adee9",
+      "pair_id": "prmbench/preview/domain_inconsistency_prm_train_p1_329",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/0df248782db669d2021da4af960a5116.json",
+      "size_bytes": 1584257,
+      "sha256": "d387ae4bdfa7ac88b3b91b1aff2d85c1876d7f07c7fb88832ca571b4081be736",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_152",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/0e0119bc4f068db7ad4143c4a67ec71e.json",
+      "size_bytes": 925243,
+      "sha256": "eabc80c7c6ef5cbcefcc629970f56782e3de08671bf2af0c0c2b7e2f1651cbaf",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_2201",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/0e3496352b00a83891ad4f104a90c28b.json",
+      "size_bytes": 946108,
+      "sha256": "e729930a5bc8b4091db335ec2fd84ef353da277398b7aeb10a17e692fcfcdef6",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_72",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/0ebd885b2100eb6a9daf6252e9dc47bd.json",
+      "size_bytes": 1064020,
+      "sha256": "bbcec9df379eeb8b518b778a4c0b744c20aa2656616d34d4d1a0d89da5a09b4e",
+      "pair_id": "prmbench/preview/step_contradiction_prm_train_p1_272",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/0f6075b954e2366f30784dde882e64b7.json",
+      "size_bytes": 836349,
+      "sha256": "57a850c2af62c6abb99c93a785a7be968b8a495028d6c50aa7c3b24df1930c87",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_301",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/0f9ffbc64936e9d87b33d2d2af1f9447.json",
+      "size_bytes": 1073360,
+      "sha256": "ea5927fb872840a9dd1451454e8ec83106387ff0300ff3974da244d04b2ecffc",
+      "pair_id": "prmbench/preview/missing_condition_prm_train_p1_272",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/110d868705bfb2c868038ec26e22bf2c.json",
+      "size_bytes": 1620955,
+      "sha256": "64fc3777c3a1b20a6ff6f8ba2c5c72e0f2bdfca175284a25160d086506b34c60",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_290",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/11bafb271bd62c9d0da85f8640fb894d.json",
+      "size_bytes": 947740,
+      "sha256": "81dfb4d9a9a05b87c0ba729ae1d5793c032a533767bd7b064349221080ed7310",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_415",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/1284723969b52c7951826876f566ae2e.json",
+      "size_bytes": 899097,
+      "sha256": "4b4264505a04764965ded9c4b319c0df5f1f8fad0a53f0f09abaf1d5c6299302",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_99",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/12cd8da3bcb5ef8a1241529c84004dd0.json",
+      "size_bytes": 1017689,
+      "sha256": "69c9a8c689b27ed1f63993d4950755a2b353651965e6beb27cadff49c322d307",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_160",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/130447f67c9d86860d7adbd1544c2480.json",
+      "size_bytes": 969529,
+      "sha256": "ebe9da60962f435d47bbfc7cdbd21b9fe90f4c29255f989f4a520677759e373d",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_1852",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/1616d87297994b7317947a374973c053.json",
+      "size_bytes": 1118495,
+      "sha256": "1c17f9a87af8fcd551dcc84060b3228c7e1e049ba21ab5bf6829ef210e8e0894",
+      "pair_id": "prmbench/preview/step_contradiction_prm_train_p1_378",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/1729ebedb6f8e2fa74afeb6dfb2e84fe.json",
+      "size_bytes": 870232,
+      "sha256": "4bda186d50664142fa763b2027bc3fb007da9e09243fbd199241d05f0d2ce8af",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_442",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/192d352c8ee3fbc429a2ba02b0679012.json",
+      "size_bytes": 1362074,
+      "sha256": "8bb857966d5d970c8d56e5a986a522379dd1b9695aa21d7e4c88f86dab86b4cc",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p1_58",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/1a6f4bc34d5f620c801eb95238174a9e.json",
+      "size_bytes": 1189506,
+      "sha256": "4382525d5030cc52a285d838d9734b0f3af8cb441c31dfec0d7e543c39250009",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1956",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/1ace88222699528f5fe14f51ae82399a.json",
+      "size_bytes": 938005,
+      "sha256": "381713a380699d05b644f7099dee7659028fabf046e6511266549e21e299cd58",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_3",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/1adb3a4dd476c9845173b1163e251a19.json",
+      "size_bytes": 895539,
+      "sha256": "ab73257c5e0e5e7ad2d65edc287b133fa636bd2131c2404ddc9c373b309cd2b9",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_77",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/1bec3ded58023cb47d6da0137bf51d8e.json",
+      "size_bytes": 751139,
+      "sha256": "8fa4b8d30b5b45d7cafc17ecc60e751f9c1a145f6642fd02d30921d1cdd4812f",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_376",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/1ca19bdb81d65439984084302b486280.json",
+      "size_bytes": 1502878,
+      "sha256": "a5eacf2043d70a3e5fe12ac8f675a580fe4bbed8dc1c5cb74b0255c9393b2ef4",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_430",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/1db2fab9c083c3afa9c26c9a4c1578d1.json",
+      "size_bytes": 941785,
+      "sha256": "07e328e4591bcbae66dac69f7763ea13f7fc07508fbd2653bc05a4b1f693745c",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_45",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/1dbce289fb90474ed494c4d5679c5ab3.json",
+      "size_bytes": 846289,
+      "sha256": "1dea23ff3cdc5333a6aeeb7e84101266d31c6f91e16118845f91ccf0b064cd39",
+      "pair_id": "prmbench/preview/missing_condition_prm_train_p1_459",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/1f8794a8c8159810ee63e0ceddddcb3b.json",
+      "size_bytes": 1115846,
+      "sha256": "59d33084391fb4cfa41ef04a0061ead26624d5f3666a1e914a6e814d4c63eb32",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_1228",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/1fd275cfc201e92447a8cb70ca52f62b.json",
+      "size_bytes": 5983211,
+      "sha256": "3fc7b9dc9feb95960d5a37ec3295e7a994b0bc7564ebb181c5128cba09af1a09",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_1958",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/21321a6836accd8c09cbe9fd41f6e09f.json",
+      "size_bytes": 1196639,
+      "sha256": "566dd10e6c977e73ba998a1a8575a69070337b8d192feb34bdf4b43cd2f573bd",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_153",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/21eec83771566e73eab489ddb1808355.json",
+      "size_bytes": 1228264,
+      "sha256": "2ccb9325da82c192735e019a8180be041fe083ce7362e653fd5ebbd6a163deba",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_1529",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/22becc42697a2e0f8236415abdaeb41c.json",
+      "size_bytes": 872692,
+      "sha256": "79e7f83b2d0edabd25307795cdaf6f646dd46f83198c47ab3d909eecb3573e5c",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_442",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/230fc53dc130d8e1c26942e11f4912ae.json",
+      "size_bytes": 1073499,
+      "sha256": "e13ca62423a654c83b5f94f1f862110bfcd0d49021dcc19e4efed37704ea9ac4",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_12",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/23ed8ae9111507b7816760e2a32b665a.json",
+      "size_bytes": 1024817,
+      "sha256": "4448427dfca71e599252cc25fa93b0e583007ef8a01f248b40eabec3bf98befb",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_901",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/248575244f86acb87635d48716a10d01.json",
+      "size_bytes": 1030479,
+      "sha256": "fada779fafae26e7ef9940b16f1012678f452a682ae01ba01f92d911852d0942",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_1723",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/25d2a2963cde9330dc9c93e11ed5993e.json",
+      "size_bytes": 641497,
+      "sha256": "82562261db0fd1b9c22b6f1673dc5d1ded6c6b76ab9bc65ecff0552692cf8bc3",
+      "pair_id": "prmbench/preview/deception_prm_test_p1_39",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/267685667dad377f9eb0e646ba653116.json",
+      "size_bytes": 945217,
+      "sha256": "529d26cfdec1fc98625d1533ba60c465a5fb55a7877595a0a7fc7d4a60d1fb81",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_282",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/26b3987c37ed535abfccf1e200c86e62.json",
+      "size_bytes": 1521172,
+      "sha256": "9dd78fca4c1cdc072c5ff51bd6cc0018af6c3fa34db1dd06946cf88e5644c745",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_116",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/2724e054f97be1aab16b119b79f4f0ec.json",
+      "size_bytes": 1315200,
+      "sha256": "560a3c72408a409ec5780df5654eff6e7f4a70497372829a8cbe8489593000b3",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1716",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/28321e99c283f3fbd3a0e1e0afd167af.json",
+      "size_bytes": 844413,
+      "sha256": "f11d5f679ab248bbf2c27c1a1c36d81640bc1d5c9531fbddde14068ffc191fc2",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_411",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/28ae60a63b344f25b575447880a3ced0.json",
+      "size_bytes": 964866,
+      "sha256": "a202edd736b9055a703dd2ef6b7916dd3f2256e9d94c56288a39981edd9086b2",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_58",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/2a41c3b8b36210338aee7e59ea84db15.json",
+      "size_bytes": 926180,
+      "sha256": "67d3945ce2d8a91db0c0027c8a8ba73876fcb5ad354413e75b36fb6786ba9999",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_131",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/2a8e40dfab6d0bac57c9499e5fec21e6.json",
+      "size_bytes": 983295,
+      "sha256": "d1234aa9705a71d07007e7bf2b90f78a33d45b4c7d410ca706d5b61a75f8e2f1",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_381",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/2ab780078fbe2fee368f8e5037a79775.json",
+      "size_bytes": 976314,
+      "sha256": "5b5f565bd9efb6c58effd4e7be473b4f05e0c5b970fc11c2f8468296b8d72a59",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_287",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/2b03fb042aac84588f727fcee49313c4.json",
+      "size_bytes": 1190819,
+      "sha256": "c80bce14f5569d7a447a46e9cc564cc9127102a5a10bce2171a6bf2c0170207e",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_106",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/2c017bfc7b71abb06707b2568253bdb1.json",
+      "size_bytes": 1084016,
+      "sha256": "c4ea481385370293bf11a1457caecab9ef8ca73af8baef499d4d6b0434c5b4af",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_182",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/2d75e4252cb58fe40627fe6a4277c99d.json",
+      "size_bytes": 1185287,
+      "sha256": "00fb7bd49efef7b7ea5a5f04e0c0ded025343c624991d19309235dcfa8b8ace4",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_106",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/2e9174b4028f313139a2d4819fff6866.json",
+      "size_bytes": 1144831,
+      "sha256": "c90e1e8a420143e3c5e43da010433129ae540d6fc2e4a945783eed1ba80a7528",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_1956",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/2e9239b1d2317e5e1123ebd3de36281f.json",
+      "size_bytes": 879338,
+      "sha256": "772e2e173fe8ee6177b12ae92ddff2fd60d16f7d7a66848500cb0899b29545a7",
+      "pair_id": "prmbench/preview/deception_prm_test_p1_0",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/2ed9356a6fce1935026cd10dc1783ad4.json",
+      "size_bytes": 990003,
+      "sha256": "3aaaf12bc44f6fc5dde7da90668dee17c45c0434f9d33c59ed5a2fa13760305b",
+      "pair_id": "prmbench/preview/step_contradiction_prm_train_p1_20",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/2f8fc14479d0248086ae90d7aafa402b.json",
+      "size_bytes": 922092,
+      "sha256": "336aaecf945de96c3476716dbecc55e765d6d298670515272ac4d5d8dece3107",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_246",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/2f9a9fcf8c51ab2582cf80bfcbdf2c95.json",
+      "size_bytes": 1295968,
+      "sha256": "c75940bd37b75c7edf43e758edcd3edc30e077c879610cb797aed729370c35f0",
+      "pair_id": "prmbench/preview/missing_condition_prm_test_p2_2490",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/2fa8f6b710ccff71887c775a07246ffd.json",
+      "size_bytes": 1144029,
+      "sha256": "7d5235381102430b1cd56443aa3ac9d8493ecc8a1cd0e2b83590769727fb3bc8",
+      "pair_id": "prmbench/preview/missing_condition_prm_test_p2_1599",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/303759e1fb6a8dcf20fb950ab53c9d4f.json",
+      "size_bytes": 1806230,
+      "sha256": "5661270883e94446ed30fe3337260379c0332630c85b352d60eee78eb2340889",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_173",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/308436c37c97f4050038310e9790caac.json",
+      "size_bytes": 1203864,
+      "sha256": "6f614a723b1b760881f2d00ddb1670b1b5c93bad48ba2d15aaea407f88ae1239",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_93",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/315f1a919afb7106348155e10d0a7c7a.json",
+      "size_bytes": 1222309,
+      "sha256": "6e6f462d9ab8b5506ac21875fdbf48df9b26098ed44e23a5313a1eb60c620d13",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_360",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/31d94ee87c73851d9130924b71b0d982.json",
+      "size_bytes": 1607129,
+      "sha256": "f7d02f33405b1ec38010d0dfb38442d017df5af2b8c8cee4188ed8b09ea32cd7",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_1218",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/333d5ca44cfbb861a9198299b118560e.json",
+      "size_bytes": 1144370,
+      "sha256": "e2b7c64e1aa149294d7e81036d33558b8eb1cff3b4544708c5116dfd4f37d19f",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1559",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/34473f871d02fa0805a6e7f0707afea0.json",
+      "size_bytes": 1061026,
+      "sha256": "e0926347286bfdd359c69718f0020cde185d1e0253b6375adde8432be57b8209",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_2208",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/35dfb141ca9fe55cdbeb894f7bede576.json",
+      "size_bytes": 1046698,
+      "sha256": "4a4fcfdb69650455f404dc2d7113c58798bf0db4dfebd4761b477dc8c41c561e",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_105",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/369c50ee74fafdfb753b162c1c61311a.json",
+      "size_bytes": 868734,
+      "sha256": "b285b49731cdb8671c01048ee93ed7b14afaaa16660ca0b84c66b21e61da8e84",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p1_81",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/36c021883ee0ef0db5ea33f79c888d4a.json",
+      "size_bytes": 1458442,
+      "sha256": "3574bf411e467db69da36bddc0c47d0ac48e5d6c24eb5124e994fce17d5dd01d",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_2532",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/36cc9f85a2d26512b19d61dfa5853b48.json",
+      "size_bytes": 1045750,
+      "sha256": "8aa0e63c9a1530ff51a282af960354d180c210bbf49df38805076982fa5de286",
+      "pair_id": "prmbench/preview/step_contradiction_prm_train_p1_146",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/37005309f9393041e08e10a94059498f.json",
+      "size_bytes": 856308,
+      "sha256": "cc65d95234140558c919854069cac2cfc7ea9dbe17510405a321c1358c5bdbcd",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_83",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/3764f9b6695c5b4e1ea24d398a5d0c86.json",
+      "size_bytes": 1268907,
+      "sha256": "c95c53d3634d791891b5c010a4a6fdf27c9cf9ab28b39a9a9148ceb2e80e5123",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p1_14",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/37db107b8d20c4451c175b1e47d4e6fe.json",
+      "size_bytes": 911311,
+      "sha256": "014ac06ae42bca72055c3be19ccb6e1af1a55a9f6bc2cc5794a3b728e82dfa4e",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_61",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/386d00e673bc17269e4f970c679f2eb0.json",
+      "size_bytes": 946516,
+      "sha256": "24d7860264c3d9408241403e8c17a3e58dfccf8e1f7c5f192025b17c482200c7",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_282",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/38ea52def2a48bd604c4d2f20a628c35.json",
+      "size_bytes": 1127821,
+      "sha256": "b828f0e09d19675515a57dc7b989f91c3677d54702959595dd23525fafe16a76",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_437",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/3910cb2af1845086a0090db2a68b5cad.json",
+      "size_bytes": 861995,
+      "sha256": "af58af70086b9df61e542f537600c2f518f39a81baa4fd1bc7824f9954f95887",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2709",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/3a7060cc53c9a541687d28cc648070e8.json",
+      "size_bytes": 799140,
+      "sha256": "218be054dfefc7f515b9c7ff7a034b4dd6ab562cc8d049998c08d81f14e5381e",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_376",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/3cc42d308c010dcd14a0ad0e1b73f824.json",
+      "size_bytes": 1139225,
+      "sha256": "73ba3c14101e806cb91cb48db03687a554d50c641108594e55bc7e4f29110069",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_461",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/3d8fd12a487fb6ef895d17b17c4c1602.json",
+      "size_bytes": 794834,
+      "sha256": "af4b9a6611f5bc273ce98ecb55130029fc54477c264e0320b7dda863823baa55",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_29",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/3fb86b58842405d5fffd23879ac51612.json",
+      "size_bytes": 1379231,
+      "sha256": "e8aafb0cb39850a2c67df374dbc5629eca45a6e9fb4d5ccc4a76146565e9f7e4",
+      "pair_id": "prmbench/preview/domain_inconsistency_prm_test_p2_2628",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/40989b4a5bc6238f4af2fd9e39d770a8.json",
+      "size_bytes": 907820,
+      "sha256": "7f896f57d51ab884e6fcd7b6c597bd6ed739b4613e7dd0ae2590f90c2b27219c",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_98",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/4129f235b575d4d645f2dc594281b40f.json",
+      "size_bytes": 1268463,
+      "sha256": "32378d1c96571e8efa98db778eb57cea51d79015ac544db3785dc98dc48f2b73",
+      "pair_id": "prmbench/preview/deception_prm_test_p1_12",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/418430e3f990e95d58a84efd173717f1.json",
+      "size_bytes": 1095787,
+      "sha256": "5d6e40935431d12c4f296596a9fe7996fbca734556be1d9a22b9b4fec384b436",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1634",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/42a16064c7dd1db090c974b9197a22ef.json",
+      "size_bytes": 1140006,
+      "sha256": "fba889cbdf35fe9056eedb207ccfb1c98c6bda1866985820b1777dd7a8fb1fa9",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_76",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/4410b008229bf1565c649d31f13e1062.json",
+      "size_bytes": 1054053,
+      "sha256": "07b51cc3ef167d9e53c2268ad984901a21a5223601c89840b97434a8079f1679",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1292",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/460391c22185cf19be2572a098064ab4.json",
+      "size_bytes": 982585,
+      "sha256": "2d63296bd61056a5e836d737405b4d91e652db76da42c188bf650d367f2d9bf0",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_142",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/48e05be26a1546ff4de98845639d21e3.json",
+      "size_bytes": 938764,
+      "sha256": "6f2048361fcc18e80074d6c3aff8e37de449c70e086dab6f9775ee0980ed3c0b",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1286",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/4a2040cf0a28f3802df61e8f9aa7324a.json",
+      "size_bytes": 1078263,
+      "sha256": "3c44485f02bff7e338987f6cd3ffea8d17d98c1148adbd5e6d5e6719919182d7",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_414",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/4c4c063f5f0a1f8f77cbffed2f6c683e.json",
+      "size_bytes": 1043981,
+      "sha256": "76c1a24c0475cadfe393cd41fd05812ade0115a4861802ed54f82df8b0a1aa2e",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_88",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/4c5879940c2949719e06e66c6bcccc44.json",
+      "size_bytes": 1073851,
+      "sha256": "477dbbed05d1354b0db607472549880f81f4a28491dda75d6955ab1d51174f66",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_261",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/4fc537ab970d0a1a4810ce6b514e54b9.json",
+      "size_bytes": 957764,
+      "sha256": "bbd8c64733b92f8d39dd901f871649dc2db1c2e15ef1a85a5c3721e95016f2f9",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_416",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/5192abf4f2062dac9a7e6373bd6d65e6.json",
+      "size_bytes": 1059629,
+      "sha256": "7ad6a4eb83c4f4e1e78bb0ca1dc222a3ead0101bb817df149d11059c6e69ba20",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_671",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/52bd820b734762d016d0cb29b127ded6.json",
+      "size_bytes": 1060701,
+      "sha256": "1c3b6e8820fa53f0e1de985a09099f19851c2ad536fd8455c8fda85e675fe93c",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_399",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/535a40637e553e7e4d590857ee640224.json",
+      "size_bytes": 1019663,
+      "sha256": "bd1c1dc0f75bef585b9b6ec46b4fd4961e86d177a7e2eb2d70690950b7b3d75a",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1759",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/54cb09bdcc79ea65d552fb3ce665da01.json",
+      "size_bytes": 1417225,
+      "sha256": "ecc293b0cae316ed7e08255d87747094bac155b675e60210cfb5b47be05288a1",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2127",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/55bcdbf705ab7960f2b366e53a40b872.json",
+      "size_bytes": 1053285,
+      "sha256": "a0f91492e28ab6a78af9e9f53070c0bf2370227303002512a157ad240e71afca",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_81",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/55f41c901c1e21735b17137ec1c1d277.json",
+      "size_bytes": 920483,
+      "sha256": "eb175b47634c2565ab3266cc920cb27853909ab3c5be297e0cf207dc269c21b3",
+      "pair_id": "prmbench/preview/circular_prm_train_p1_211",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/5730ca7f1171b4179af35b2c232847ab.json",
+      "size_bytes": 1019786,
+      "sha256": "0ce8746efb1328c5c73498389d261180a50c500ac78bd2690c8ac956f657e9f6",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_118",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/57601452b8b637f62cd93b03c632370a.json",
+      "size_bytes": 976115,
+      "sha256": "06212b798610395481b60f7288c747a8699bdd8ea8756e1376b6025e02990184",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_441",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/59704f6a5b95a036acfad851ea0f670c.json",
+      "size_bytes": 1057021,
+      "sha256": "aca2a181956f6cc52d8521e239529a8184bdf1be12e5f2b66c39c5fde99094d5",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_1058",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/59f9b597462e48c9c16bf206a85444aa.json",
+      "size_bytes": 1067137,
+      "sha256": "acd06e28504f1e6d553b397446b60bfcd472b38b82c35f63693fb9f67d5f3f80",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_2126",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/5a88a2599ec8b895b8e541566d504648.json",
+      "size_bytes": 1017754,
+      "sha256": "47c02612346fe462b5dfe80d794c61f7f392a537b29a071bb0eeae46e7cd3f5c",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_96",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/5b7767c54e0e23052dae2bcee7a2b0fb.json",
+      "size_bytes": 802218,
+      "sha256": "dc13dba6c4a03a5c552657cc3ad3fd0ce7487d2f6f791dc2cb7d66589067f83a",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_293",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/5b8bb2e82ade53c40dde75d770492dbd.json",
+      "size_bytes": 875086,
+      "sha256": "4692ce6cedfa544036d4908e72e5c75e6a36055cdf6a06d539b97bbf80fd0763",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_430",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/5d7030bbf5e299dc0896db46a62b9f74.json",
+      "size_bytes": 945899,
+      "sha256": "e122985f1ba765748c61c252307ba137dc1939777a973f47df351c2ed7f26fb8",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_450",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/5db32fe124538c17f8d39e2d935e84f6.json",
+      "size_bytes": 1101448,
+      "sha256": "03dcdabf92271e8f2fad7a0f40b12f03eb3a32501e8f160a9f5d2c3c5d030eda",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_1927",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/5e52fc02038f9fcbddfd16711617a05d.json",
+      "size_bytes": 1274480,
+      "sha256": "c1c69acfb06709f54afe8b23b135cdf7561913afc2d24ff326c7b371122a466e",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_64",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/5f96c990af978a519c2703dbc7406551.json",
+      "size_bytes": 2199278,
+      "sha256": "b2ce098ccb9bd3cddd4fae02db2b865b899335ad5a8387f3830d07db0f8bed3c",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_736",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/60f1eddd195f8e97ed1822589ec876a9.json",
+      "size_bytes": 1058621,
+      "sha256": "56c183751a4b3de4178ab49cadef4efc308592fb8ab5927b8f7618a40e6bd682",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_244",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/6259a198d633d67d79fcd0260250248d.json",
+      "size_bytes": 1025175,
+      "sha256": "f7cdefc7e08b7c587329642ce7188ef8cb124185fdcf7bc3708ebf1978d55e71",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_783",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/6279bbff5e5dc1eb562641a88c815195.json",
+      "size_bytes": 928939,
+      "sha256": "29c59439744b3222d71bcf160836de37ea31f24ba2bd33e16c3626350815cce1",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_329",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/638e2c5f632bf1623d094ff4d1bae683.json",
+      "size_bytes": 1284018,
+      "sha256": "391e18d8fa18b86d2cecbc7f28cc0f3170da7d9092317021ee85c2b28943c398",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_2095",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/63e401a0bd929ec46affb4e0cfca5b8e.json",
+      "size_bytes": 1141991,
+      "sha256": "243a1d1b0209bc78e0d08dcf0cc0043767d108d0e12f5c2c27f2176bfa46ee6b",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_819",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/64e082af881270e290685edf4a0d5d7a.json",
+      "size_bytes": 1083220,
+      "sha256": "97e3fbe5adbc607120c4533a1a8eae031acac4817f00f735d774d6d277c4cbd2",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_76",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/6526ea72be48faa1dab942462e186611.json",
+      "size_bytes": 1318226,
+      "sha256": "0086f81b5ea5d93ec2fd26d8c0cd0007541cf06173ecfb7dacefc5f9949e0554",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_278",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/65745c18cec4e5b579e8d789d86334df.json",
+      "size_bytes": 1014992,
+      "sha256": "cd7e42a728f9383caeff42e2be0c8b6b1a8deba0e0b73bb12bae68fe1cc67348",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_342",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/66deb86f67efba21c2a8c785e9af8faf.json",
+      "size_bytes": 1151450,
+      "sha256": "dcb201914c52cd9a0eb81e4f9a20940a26adb49cada401b02eea024a439a7c9b",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_1715",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/67ce13422209107f7e157eb766e4b628.json",
+      "size_bytes": 1211282,
+      "sha256": "84c93399704160de319574eb9e5b673c1a0aef57c28003cf627d03eb5faded57",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_927",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/6837c0dfb02e9b094526e379bf31710c.json",
+      "size_bytes": 1052850,
+      "sha256": "afa2daa1458af18dada96bc19f9a52ea30f8209adda6ce9477c171033ac49c16",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_382",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/6a72fe722fc7fed91458802a6c8d88e2.json",
+      "size_bytes": 1040909,
+      "sha256": "dfa7f4c7503eded2173b85cdf3c24016bf58dac2ed02f535d2337b4cadd2c797",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_120",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/6a8ec621bc09544a8192423566a8272c.json",
+      "size_bytes": 1056278,
+      "sha256": "96d4dc85506522862ab52b9ae4b0c2022a886fcd431c6ca9089d5cdded693928",
+      "pair_id": "prmbench/preview/deception_prm_test_p1_60",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/6ab1b100fad88713bc9016771c9e66f3.json",
+      "size_bytes": 902521,
+      "sha256": "629f5c28a51f7e68f8b3399b028d4ee03385be2604806a0dd778d8504d9968d9",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_464",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/6b81d18d7f2adc520a34c956a2ca5c45.json",
+      "size_bytes": 1200330,
+      "sha256": "e0a8897711c12248b61d0360e9a844082de75bea549dd225adbcf1baef695dd4",
+      "pair_id": "prmbench/preview/missing_condition_prm_test_p2_1488",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/6c80cc53f237cb3125c73eb66c5c0fb1.json",
+      "size_bytes": 816481,
+      "sha256": "4f32c48ee4145131540b98166534a1fa33901662568a82cb6c7350acc0e3efdb",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2375",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/6c97738fb801a57847b7aa6e9c6dfd3d.json",
+      "size_bytes": 1120097,
+      "sha256": "4d451dc2d1a1b97bd0825f7e75bc0025b38510f191ec24db705ed8bd16ab9ea2",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_2580",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/6d55a8b1ec22830f285f5ea236e54788.json",
+      "size_bytes": 1184348,
+      "sha256": "48c88182f71947089f0e606e4c9cdf0205ac1316214c425e37e7e67cf9285ff6",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_468",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/6de5c0c1d738a0371dabc469c257cc69.json",
+      "size_bytes": 1185716,
+      "sha256": "6542a90617f5889d1367584611e24c057e3d333294a4f42330ea477bfb37ded1",
+      "pair_id": "prmbench/preview/deception_prm_test_p1_27",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/6f37e15fd6b2eff402bc798b7bf9066b.json",
+      "size_bytes": 1213985,
+      "sha256": "d6ce1ec7855b57b5a653983f45c7b0447c34835ea1621c992755b00e59d92652",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p1_103",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/6f641a81c88f97c711bca471abc5b4d6.json",
+      "size_bytes": 3792542,
+      "sha256": "665c44168d49d64468d4c6eb11b614d7599c12aed6f1a8cd58d3a4fedd7313e6",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2562",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/6f747003620e4ccd513a735f48c7774f.json",
+      "size_bytes": 855877,
+      "sha256": "dacf5a02528123dd863f79aeb2203056575461325c81a0fce7f40faa3ee0c601",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_460",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/71375632c15649d2b56e5405fc072d02.json",
+      "size_bytes": 1294978,
+      "sha256": "1b5a23567d28e098e7a3413655c856d158a2cb6ab56efa118db5ba80fb021975",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_48",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/72321381b1d377dffbbc92bc0e0c0fd8.json",
+      "size_bytes": 732107,
+      "sha256": "e13d8a4fbe2b80fc09b002bcc6098cf798aa5d043257cc67daab064802a6ef81",
+      "pair_id": "prmbench/preview/deception_prm_test_p1_10",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/7297c94cae485b6f1309117be394ad1d.json",
+      "size_bytes": 737857,
+      "sha256": "a0f2f1f92f8c6d4e6cc8b5ad519ecede6d267d52adb3ec30816e5d45a9901f5d",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_144",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/72c80e88facf05aaf245d4e77bf08084.json",
+      "size_bytes": 913368,
+      "sha256": "8cc3a4967b16a557a415c5944957135f26141615aef5446a2718f29bba8ef85c",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_182",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/732455f5bfffca0332c43eb75d50f98c.json",
+      "size_bytes": 994895,
+      "sha256": "36d1bbb80f5bb1d95f6dc8b349d084179926d083c582ac7e7faf82794f8124a8",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_55",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/736eea7aa96f64578c1748125df79450.json",
+      "size_bytes": 800651,
+      "sha256": "2e30f0f66cabce92880222fb6c29f50f5e0fb94af8c1328cfb966aa09816875e",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_459",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/73df8dd5decd33869e581eddb50b4fb1.json",
+      "size_bytes": 1147282,
+      "sha256": "0c9926f83d030f00c146e6dd662b65c582dc4c64ec42e6ab289ee2b51fe286a7",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_1784",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/7459a19e560eb11f04c7dbd94f7f85be.json",
+      "size_bytes": 1060837,
+      "sha256": "7b839101dc6c4a41d22ee9b580b40da1a4cb947684cab0086afcdaa9d8159cf5",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_1928",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/750995a8093e3f3180b95a20b4c0ca2e.json",
+      "size_bytes": 1411759,
+      "sha256": "d13e9bf949093b2514dc7484acce75bf85d771efd6e0aaadc87e400fed80d3a4",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_1496",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/779e7a985d974fe50df695f5a570666b.json",
+      "size_bytes": 1130955,
+      "sha256": "0117a01ffcf1fa01942aac90d47da5f569d9be39df1b2a83dafd8c6f1f6002b2",
+      "pair_id": "prmbench/preview/missing_condition_prm_train_p1_275",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/77c397b9cd2ab9d4bbc2571465b54bd9.json",
+      "size_bytes": 1765781,
+      "sha256": "e6ef35d0b07f14f2968e5bc28e267ae7c33a3b7b455524568f00ae89c671248f",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1351",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/77cdaf41f21f3d89d18b25fbd34dc608.json",
+      "size_bytes": 1357643,
+      "sha256": "409a0c19d807c4a45faeeb8fad514edd4a77b72c6c43142a82156952d391d353",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1128",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/79de99af7870925b81b20b1fc92ab751.json",
+      "size_bytes": 1144481,
+      "sha256": "194498447339c89b33e3a1639bcf8ec25ef147e00e336c4a89eea2ec9ef008b8",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1721",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/7a41c54551bc0b3427e96a48aa5ba92c.json",
+      "size_bytes": 761628,
+      "sha256": "2d2c038e0aad32c8836416e4786b2835ce92a5652b02e8e88f0ba4a00b237da6",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_56",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/7cc7e6f7044c7b3a86d38d0b55a87a06.json",
+      "size_bytes": 1386412,
+      "sha256": "0918405ab29267a7200861ecfbedc527ff603163ee5f419511e3356233d4aa44",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2576",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/7d096ec7d0ed034db5af86e54ad0aced.json",
+      "size_bytes": 1238313,
+      "sha256": "450341eb637169bd6d04d016c913d4a90e44cbb116cc26f8d03568cf281b4798",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1935",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/7da4c7e79410a2ade60957bc0e18884c.json",
+      "size_bytes": 916247,
+      "sha256": "61ade37e7c5ccdff262a1d10c0d177bfe45084ea64879d36ef04d987b0f75421",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p1_77",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/7e44c3138b39ab4cb77bb0a526a3e40a.json",
+      "size_bytes": 1068587,
+      "sha256": "17ba72bec2d561b2dd13cf1738b012401031111c522643461f48c9b03b1a20da",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1920",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/80328d0b0eb6820b89d45847a268fca8.json",
+      "size_bytes": 857513,
+      "sha256": "285588d8deed434ed3ed4ca15d4910a722b09a9450b9805f6560f820ff328ac6",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_84",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/80d0b1d1b0e42dc02f808dd319d0d649.json",
+      "size_bytes": 936396,
+      "sha256": "db0de3825f9bf28c8ac3d81758885e5f8773cea337342c3ab25c6adf1d345079",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_61",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/80eb7e9ecac7fbf9a7198dd494d923d9.json",
+      "size_bytes": 923340,
+      "sha256": "af71d130a29892690db58e3e9149460d0623a504ce6c84e565f6dd281fe04320",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_229",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/810e8d4418d8c67a9e24b78a9ccb2d0c.json",
+      "size_bytes": 988603,
+      "sha256": "f6a890ec974dc4d9a7999d724b87aadad6eb9cafe3d30b1aa7217c4a63a15355",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_261",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/824233f3216f15cb7dae5c420b713f1b.json",
+      "size_bytes": 1063214,
+      "sha256": "252f646a802fa7c78cb239ce6438efb4133bdb6080ec13c6f7e2c9770f0582d5",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_272",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/83ea274bd8f264cc3bc21a87e257c7ee.json",
+      "size_bytes": 792310,
+      "sha256": "b5ca9593db5fde4ada17fefe5a5780ecd0a4af7579c1e14f8880ecd759995722",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_259",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/848d1ea01f7beebb59becbe1c6e2d399.json",
+      "size_bytes": 809450,
+      "sha256": "c277cb8da15a0e4a68478abb4372862e561fec427e6d88e8d78b2f7baf2abe1a",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_208",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/84b2dd29398cab568d99e8c7b0b160b2.json",
+      "size_bytes": 913262,
+      "sha256": "06c2040c8eab95d45c61761dedb58da69397ffebd9546fe429084b9a4f8f71ad",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_88",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/85948b165182f447bde08d24f67a7e7a.json",
+      "size_bytes": 894356,
+      "sha256": "35369feca34e7ea1e0d030326eba44f96926bda453c00a6327c3335b63ab8b9f",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_32",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/871bc34926f6d2a7a143b6a2fa7ae56e.json",
+      "size_bytes": 1181766,
+      "sha256": "2739bf2b6ec1c7a1367e82a15d9dc01bb7a8f1ff13c43215a9c9f0d5126e38c6",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2050",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/876f3d08e467daa0a9d939e312fc83d0.json",
+      "size_bytes": 1031528,
+      "sha256": "e00d525da194118caa7ebc8b31ce5a22be011121bdcfa85259eb3be379e9b582",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_86",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/877ef40b1288bb955556e012770d858e.json",
+      "size_bytes": 1225940,
+      "sha256": "8a0021a645eba4686fe8e597eca6f5dc96bb29af1c0dc244f858bde14c1aa3c0",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_1362",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/88e5e9989e91a27ecfb7f29f3f8f91c9.json",
+      "size_bytes": 992698,
+      "sha256": "932064d3b6ebac9924407236ab099ab15074ae220a98f99e422c7f14ee507714",
+      "pair_id": "prmbench/preview/deception_prm_test_p1_98",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/894f07dc87f6f33db306348a4572844d.json",
+      "size_bytes": 1428348,
+      "sha256": "580b391fc42b4e68dbeb995ab2a54031646619556cc58b1276995c92f6274315",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_1714",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/8a5c9f9aa3eb1faabeaa8cb128172ef0.json",
+      "size_bytes": 1110940,
+      "sha256": "eaa773e07850409d8a1606d7531d342556198cb639cc01ebcd8d9b6d23004fe8",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1518",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/8a8ae23ad7ac0832084d6e760c7b543c.json",
+      "size_bytes": 893329,
+      "sha256": "bb545c483e9c284514529841d5005e73e6b5f3797121c0209abed34fcbd72379",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2071",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/8c12eed394ab95188387f601c8d92835.json",
+      "size_bytes": 911850,
+      "sha256": "13687df139d518c9b5744f7a8ac4e77703082beac6d9123fd5913b03c1a36722",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_288",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/8d53156cf32c1f8fa9fa6d7a2837ca0f.json",
+      "size_bytes": 835133,
+      "sha256": "e0b9bed61a802be2d82e19587dc3db884d9f6952b504eca5860e00d7ee3a5d4c",
+      "pair_id": "prmbench/preview/circular_prm_train_p1_421",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/8dde166d5be2129db8117918dfc24ce4.json",
+      "size_bytes": 1475727,
+      "sha256": "351b9bb733bb309d4c48093ed8fdf9f15edb513714bdf14881a2537b789e570a",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_336",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/8e2bd2d9df46f1b623851486282ac63d.json",
+      "size_bytes": 958680,
+      "sha256": "2783ce0a44ae4f1a99ff719a1036fbc4d05527e0efe0002770b809ff92b37cae",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_362",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/8fa4ac987278abd8adbac43e1ccf3266.json",
+      "size_bytes": 738238,
+      "sha256": "f3eed83fd3c63e65b532e25537a6743b4b5632782c1e571ce17a3bef801a8b50",
+      "pair_id": "prmbench/preview/circular_prm_test_p1_54",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/90e9ca8af335490aeaa041095fefb8d3.json",
+      "size_bytes": 955584,
+      "sha256": "d66ebb3962ffa2d54b9a741b827a5f235863e3ac6a48c715ca84351550124c27",
+      "pair_id": "prmbench/preview/domain_inconsistency_prm_test_p2_1956",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/9161997017cab85e5645249b3dff33d6.json",
+      "size_bytes": 898706,
+      "sha256": "0bd414c2b57da452083f40427848e80be49fdfb2c4d24a6458f46075226632d6",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_2517",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/929fdda6d7c1432bfc55a5a9644f96e7.json",
+      "size_bytes": 809738,
+      "sha256": "6bdaf1295377fcd9f942ffb12191ade954b92caefd7c31b8416d3c35f530608d",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_20",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/933094fa1cf64d852c4159fdbd2f7813.json",
+      "size_bytes": 926427,
+      "sha256": "65f18fd9a04feadef160bf8bda6f005e54cec447c9e1b3e2981f54e4b1f143e1",
+      "pair_id": "prmbench/preview/circular_prm_train_p1_310",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/955e53af5248070eb1049003825f05a0.json",
+      "size_bytes": 1423209,
+      "sha256": "96afcf92d795b98c6ce694aa977b2352eda5d8f7021ccaab5049ec9591dd87c8",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_36",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/97470e470c0ab923fc11e050fb1d1f80.json",
+      "size_bytes": 1610961,
+      "sha256": "c6851342c9aab471f8e4621da7f21575caeeefd664b9b4a316f5ae08443678dc",
+      "pair_id": "prmbench/preview/missing_condition_prm_test_p2_2646",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/98b6acf495096debb5f9ac073b92e2fd.json",
+      "size_bytes": 799619,
+      "sha256": "47e73b433c4b9e56bd5f98c2cb260108fb7cfac4f4402d6f8d04ec9db81a8665",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_63",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/9c57fe8e91379ccd96c8c92f03591a9e.json",
+      "size_bytes": 1238508,
+      "sha256": "26d10f33015062753726e13ee80f4a690e8a9b6c47a33701f1b1fc11852db3f6",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2449",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/9cca3c55344ffd5c623d09089d4273ff.json",
+      "size_bytes": 1282794,
+      "sha256": "1eb82a2766cf4f1d1bad30b23739c82e4c23745fdf410510ce16c649cceb65e6",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_1695",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/9cd27ce8870e751f963dfbe77ac6f18e.json",
+      "size_bytes": 890989,
+      "sha256": "bd4eff15e5612f5f4d0ab75835b83c6a09bbfbafedaa44309dc4aa27cf513b2d",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_223",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/9d1e57a2e4ec652504f78cbbc35dec15.json",
+      "size_bytes": 795843,
+      "sha256": "d547f23d00189eed3eb262ea0a116d132195efd67fb818c82f2f6c9047e47266",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_376",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/9e088fd9fb87e4869b0d8859d383e707.json",
+      "size_bytes": 1063889,
+      "sha256": "774c78dae2817a32e04780a92ef293e3360d311d1be840e2b2aa2cdf2bcccf3e",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_83",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/9e2d0344fc8ee28c8a15e4104351b87f.json",
+      "size_bytes": 963042,
+      "sha256": "365de71190b3e68ab02a47e01ab2e8de62c94379d2a0f082468189d9cce62136",
+      "pair_id": "prmbench/preview/step_contradiction_prm_train_p1_255",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/9fa068256c7b52cb3cd15b20473234a6.json",
+      "size_bytes": 1370141,
+      "sha256": "d2e8a652389250f3b9e21dc9a58f3f6afffb91faf08a3f159c3af1d11e7779c0",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_451",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/a02009de19c0d89430bfc117ff7cde50.json",
+      "size_bytes": 963694,
+      "sha256": "8aa083f99a21599cb14aed925b876cb64faf6c33466fc8e8abd8e6392dd85bcc",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_369",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/a164ae9bd9b331e819b0e3f1c8be1ed2.json",
+      "size_bytes": 1230136,
+      "sha256": "2c0696c96e92b2869d035e554400c823553c01ea184388d9d66e0680f5e16b81",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_2505",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/a6af71af93ac4c60c547292c90532dbd.json",
+      "size_bytes": 978134,
+      "sha256": "2dbbda14f06170ba795823ef44ec47a7ef72368ca0288372c0273b1ab40f4592",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_1649",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/a84191a67fa10e9f093a582893ef5c87.json",
+      "size_bytes": 875656,
+      "sha256": "bf6441f8a8da3a7c8e65cacfff546ae168daaf6e91de0a970b93f10e4c602fdd",
+      "pair_id": "prmbench/preview/missing_condition_prm_train_p1_378",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/aa3aa9d1bea100d86885a444993179c5.json",
+      "size_bytes": 806701,
+      "sha256": "a8fe315f197e0af260e2a0b36cfef61ffcce2d0c5305f1cac410bf3b2d41ddb9",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_22",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/aa9046dad7331d3bae5597e300112855.json",
+      "size_bytes": 1062058,
+      "sha256": "d10802df6f97a1857f18b6fbae57dd5b6b59c1b9f0e1a42c9c836e26522def57",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_11",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/ac05a2ed29baddc7ff6e4693051d58f6.json",
+      "size_bytes": 1406486,
+      "sha256": "16b50c8eb8a23b78a3fd226e66362f823d9700a6416660d32965a61d0c3fa18b",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_249",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/addb83fd07e8dd2e658ec6be075a8c8c.json",
+      "size_bytes": 1414119,
+      "sha256": "a4c59f81d51fd154991103a198d2ce5f0b2e64bad6d32c16dc13911037e9ae01",
+      "pair_id": "prmbench/preview/step_contradiction_prm_train_p1_467",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/af0052ab6af917f2e4b63d2726d6b9e0.json",
+      "size_bytes": 921316,
+      "sha256": "da42c901f365af38f8a2e78bfed8bd56b759f042d4911fa4fddd664ff2577c9e",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_22",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/b15edfefa03c508ce15823d85b784aa0.json",
+      "size_bytes": 1498204,
+      "sha256": "7427b94373ffe92402324de5896b62de0211676293d1b374b697a653d3504739",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_216",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/b1954a9f2531ce5012abbfc11ebe0109.json",
+      "size_bytes": 938281,
+      "sha256": "27e562cccec86f94b02e954a5d4aa1d24367f349bc98048ce981a14c97c91153",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_528",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/b22f3b87698932349933b26c4d5ca27d.json",
+      "size_bytes": 958460,
+      "sha256": "727900c71f4e8a3c1bf966e5a6ea6020bc38fdb357da1fdfdad6845ff91c6e91",
+      "pair_id": "prmbench/preview/domain_inconsistency_prm_train_p1_100",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/b257f42ff3a1a2c69334870bc786802a.json",
+      "size_bytes": 782420,
+      "sha256": "db288492305615a2b8502feead7c73dddf28d587ccca0c86dd864e35b61c6665",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_454",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/b38cfed7d37b83ec96ffc51c50b0b28d.json",
+      "size_bytes": 1058383,
+      "sha256": "ee6804ff91205ab072e5ca5b8197e701907a159f40d8f967923c8a7851ee6aac",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_409",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/b468c091cca996f02cc71a446062b45d.json",
+      "size_bytes": 1411874,
+      "sha256": "d3be51dca5fa9caad4485027dfe70ae998e785577578d820581c64a3036193f8",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1496",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/b49703de60a7e41ec19c2d06d25c5cd4.json",
+      "size_bytes": 873206,
+      "sha256": "d38a029e93c3a615f7f26ecc916a28b065a4ae8ed857d151a4dfb3c8de376b0c",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_425",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/b49f8ea593e4432ec53da0a52ed31656.json",
+      "size_bytes": 966767,
+      "sha256": "9341e8c86c7facbd433fd62832c3ee6dc9e9af79d9a6e2c38f81b4645810c1e3",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_951",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/b51f2c1e287c5e0edee12df1558ac624.json",
+      "size_bytes": 1014196,
+      "sha256": "813e10c8dfad32687bfe765ebb3947b242410682c0c4a30515483bc02b4dfcdb",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1947",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/b6eeb6d17afac8d3e50db0b1f44d503c.json",
+      "size_bytes": 1102039,
+      "sha256": "c61759f07ad6749db8ed5ef90a6b5adea1783bb716bdbdbca746d5d214c61fcb",
+      "pair_id": "prmbench/preview/deception_prm_test_p1_18",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/b734cdb324daee9d1e22a113a6ac3c10.json",
+      "size_bytes": 2384355,
+      "sha256": "e1018d90f1ee2d7eba49df00148dd5a75c431e33cc1a74d077cb9333b5ec9f8b",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_271",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/b79fabaf1d14ed0178a1678877964d17.json",
+      "size_bytes": 1026797,
+      "sha256": "cabdcd5e47e1c8797322ae019e34ff19c84c70962955cf5abf0759829d615df0",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_86",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/b9ae34301ce74176a3ab74ecb218d14a.json",
+      "size_bytes": 1992634,
+      "sha256": "664ab2088781125bb600347abf1bd849506d748f74f0b8b21d099c8031ab2bb7",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_125",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/b9b4d75ad3530a7e39b0a49fddf5a742.json",
+      "size_bytes": 1811336,
+      "sha256": "adaa41e3ff2985dbbb004b7d5c83a326cd73adb05cd16b674d42856b9002690f",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_132",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/b9e6df4b1a60e04b3930dc42f946530e.json",
+      "size_bytes": 1662038,
+      "sha256": "f9498a5eb348f53b50420079caacaf1b575d6fe410b49818dce08bdc1c2bd7f1",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2265",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/ba117654a010b48da1473599edea5e53.json",
+      "size_bytes": 1488355,
+      "sha256": "19260ad8200e465b669a62180a0ce2f073732d9f6a74dcf730899c3af70e09bd",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_1286",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/bbd9899d48d606d19adbfca0547ed24c.json",
+      "size_bytes": 813648,
+      "sha256": "f90d9d7b4cc80477ad746588bf064a0a0300b0e1d6ad5ac37dcc2e69a593baea",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_13",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/bc34c9a042e126aa0b3a9692f35f537f.json",
+      "size_bytes": 1406472,
+      "sha256": "5532193375393ca97d30bf2e9ffb0dac2f9ac22e789241982321cf5727e17161",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_75",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/bc360872a70745de5c82eac64e9cea00.json",
+      "size_bytes": 978203,
+      "sha256": "49a4fcc267b9e353931b5e9535a0465b428fb3474b30b48b6d115fbedac03822",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_991",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/bce9b70867ca03a3d2003dad331a5c41.json",
+      "size_bytes": 2022782,
+      "sha256": "f8e0910e619f16b08aab906fba8d9591d33884e6fa841443f3d96113c34863d5",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_2744",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/bd6374dfe3b184cf45ee6e0834ba9b67.json",
+      "size_bytes": 891802,
+      "sha256": "848bb54ee615e010eb774522ad6b43fb67b1352e4a335761160b53b6279d437b",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_111",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/be06386635b62e7af05fda3cb342c653.json",
+      "size_bytes": 1081869,
+      "sha256": "936d525295d06baf1a5f4fa19040400a7194c34ed2a96711588a976b7a816635",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_2492",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/bf20215d471ee841ac7f9c8d3dd176f8.json",
+      "size_bytes": 3849899,
+      "sha256": "fcd6ee740deb7ce0e7162d7c34ffb2d0c5ef43267036b368ddb5ea680e43afb8",
+      "pair_id": "prmbench/preview/step_contradiction_prm_test_p2_2562",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/c0826f320d3af3944345784d5bcedda0.json",
+      "size_bytes": 1156170,
+      "sha256": "4fe85792c300c41068cb18e2653618caab5b818780fdc35fc39737c92106d377",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1899",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/c1579f1789be17b8c65facb95df89904.json",
+      "size_bytes": 831090,
+      "sha256": "6e34004aeed99f674772f5c4d67f04de9d14712911dac5aa454ffac9abf4dbc0",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_72",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/c290e091c7a339f4bf8c1973ba274205.json",
+      "size_bytes": 1050831,
+      "sha256": "3b98cbe6517f0c1e29589b421ecccdaa899621eb17fb5a20f8511d99dbbed9e6",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_961",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/c296781d062bee0faa5bac193f8ef89b.json",
+      "size_bytes": 818555,
+      "sha256": "b156a02c36fb8241a5f3e33913d783cf140969453536a78079443818cc602c1f",
+      "pair_id": "prmbench/preview/redundency_prm_test_p2_1872",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/c31b77a9217f8cbbe23469be40942154.json",
+      "size_bytes": 965922,
+      "sha256": "73ea8571f3606c9977155f98021142c86567a2d8ad41a7ae1ad9aa5a43b1207e",
+      "pair_id": "prmbench/preview/step_contradiction_prm_train_p1_392",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/c36f77015d3d10f708c08f85fbba91fd.json",
+      "size_bytes": 1276156,
+      "sha256": "fee45eb92fab9c7eb0819a3ef0b00dfa393dcca0cea118cb04d6fd912c2a6fc1",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2095",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/c3e0c968a3a4ef922429e0f6b7d1def0.json",
+      "size_bytes": 1148248,
+      "sha256": "e28c7cf9f8c016fec0d8193d615e4548f5120cc0da6b59994486693033fb8a61",
+      "pair_id": "prmbench/preview/circular_prm_test_p2_2126",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/c41043c7cb942711cad43880ad1cead9.json",
+      "size_bytes": 824524,
+      "sha256": "433e7349cce33991e6966367da43fb23a5a06d950e58bd8dc3e45ea3751ed245",
+      "pair_id": "prmbench/preview/missing_condition_prm_train_p1_227",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/c51f672562bba8a48d8c864848d3ece1.json",
+      "size_bytes": 1035671,
+      "sha256": "864b9ab1a0adec71fc50ba6a4dc021d2f608cfc958a5e0dbcab0a70497aa452a",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_2382",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/c56770548d15c2eb7344da0f39bc0c13.json",
+      "size_bytes": 1294332,
+      "sha256": "9e95065a85bbe77078b68cea4ac8dd4868d32b21cb28ad5c054fea5f37fa0fa9",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_409",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/c5ecb2a70a4739f62d71ebb3cc72f9b9.json",
+      "size_bytes": 1346513,
+      "sha256": "186a5d5ea8c56e73efeb8ac0efb3fffd25d957dde15d6c88393ecc39c10653e2",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_927",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/c5fcd2057aef308f26df977f5ff581e5.json",
+      "size_bytes": 1064543,
+      "sha256": "17ff1fd4ea882a4e1141e237b0b3ff5bc7f319a5a3d2fa41b156bb57cedb4a9b",
+      "pair_id": "prmbench/preview/domain_inconsistency_prm_test_p2_807",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/c754faf3461c12d4aaeeef9bb51d54f3.json",
+      "size_bytes": 1259590,
+      "sha256": "9cb855dde444964db05d36f65de991c0ad780c5e8c154488f2b4766b6a6c5c51",
+      "pair_id": "prmbench/preview/missing_condition_prm_train_p1_7",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/c95a8720399ba67f2fc56b5556ae628e.json",
+      "size_bytes": 877216,
+      "sha256": "1c6333180aa20c713d9ec5e322c160fe9b9800a38051aa1a422d45a9f352c58e",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_0",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/c994c030acbc89126a0fb9bd8908df1c.json",
+      "size_bytes": 889703,
+      "sha256": "7494eb60f90ec6a90367cd10aa916c17ff2cc5bfa21e8c6813fb56986b7a3b5b",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_150",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/c9a47b511b9e1d20a0651c66bec3dac2.json",
+      "size_bytes": 1122687,
+      "sha256": "0651e7b6669a7ef26000ef7948da36d8fd69565bbd87289c554acec2ec346d8a",
+      "pair_id": "prmbench/preview/missing_condition_prm_train_p1_352",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/ca1e1f0724492a20ccf285dedda7d14d.json",
+      "size_bytes": 826150,
+      "sha256": "1b4e7697a43789c31b8fc3b7aa94b408e2f1dfccc50ff14445abde7cfed9fd53",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_96",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/cb55e1f59849ae60f250605b6f974739.json",
+      "size_bytes": 961270,
+      "sha256": "d8ef73c0005a33ada71c770c1eb1949cf9f7c4e8777c48511e224ba5c2f6c2d2",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_462",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/cc3bf73b1e6a2648530015cf23b2dff4.json",
+      "size_bytes": 868222,
+      "sha256": "26030d09b05580f35f2860c33638bab698dd744454eb6f6a6d8bbc04d1ad3a71",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_424",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/cc498c63236e12507b67cb3bffd4b638.json",
+      "size_bytes": 780144,
+      "sha256": "125eb0dfd0cc5745b8e73dfa3b3980878d227a57c40db09d82ef97ff77c11693",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_421",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/cc706b06083755575706034c83983ef1.json",
+      "size_bytes": 813991,
+      "sha256": "10121cb6c0f0befe06d75e4c741c06a273b1fbc70001d3f3f347df707de49c89",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_128",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/cce38a043ae9f62c3bc55e7f355976df.json",
+      "size_bytes": 841725,
+      "sha256": "176fbeba98b95d75d4f20b1c78c8a63ef0ac6ec32f03374df119c84c6ff8bdd6",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_151",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/ce12e0c43b803a282da9d47fbba4772c.json",
+      "size_bytes": 1124743,
+      "sha256": "285a87bec73bb99cd1fdcb53e716011abfc2992fb96b3003f804727a6d1e41bf",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1829",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/ce887a5d872f639180958c54044f99c1.json",
+      "size_bytes": 845243,
+      "sha256": "7a53b467a2c245f74b34504a60d930db97e75b74d62ab6f64e4f0d24363b253b",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_98",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/ce9cf23105e75257d49a016b1ade474e.json",
+      "size_bytes": 762482,
+      "sha256": "b03767f3ad35746785e9642c2f59f2c225a7b7ff56925cd7d24ee78e8db672ef",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_2050",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/d032fc76f4e90435f3a7fff9d290ceef.json",
+      "size_bytes": 1325900,
+      "sha256": "4f8e6b26fc042b1bda92368ab94eb63fba50d80d9137da027267f58f20ce3efb",
+      "pair_id": "prmbench/preview/circular_prm_test_p2_2265",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/d0753eaac007c00b79c57e72703ad5ad.json",
+      "size_bytes": 1159343,
+      "sha256": "847fa493ba453264555aa43e7f16843f44c397608a9f85679640a1afc89327d3",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_285",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/d14b0f61c847d063f02bf2743a6d1fde.json",
+      "size_bytes": 1077351,
+      "sha256": "a4f49b1f7e291a02d5448aaefbf703e9ca0159d9493678197a6378f52dd919c2",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2105",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/d14bf3f7c6e7c06e3f5febc47db93a67.json",
+      "size_bytes": 1209136,
+      "sha256": "cc02d88775e2f50d1ce5007d438ada9f9fd8df3401781964cc3308ada009a21e",
+      "pair_id": "prmbench/preview/redundency_prm_train_p1_76",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/d2e826e02f8d9794f7868f48d17e6bee.json",
+      "size_bytes": 798229,
+      "sha256": "eec233c6479ea509aa585a44059c531a0b7cc15f5e75a23cbd3cba8bae13a393",
+      "pair_id": "prmbench/preview/step_contradiction_prm_train_p1_331",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/d343c905d5373583ebda518961e0456f.json",
+      "size_bytes": 1183750,
+      "sha256": "53fecd4d3f24c0093f0fd943865ec5fb7a4df7fbf2082ab44e3af8ea01893387",
+      "pair_id": "prmbench/preview/deception_prm_test_p1_25",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/d3fa26b0d7aec4c191d4c51d60ea706d.json",
+      "size_bytes": 952701,
+      "sha256": "042a1baca51daf394f23ee1279314599ed5cf14a4a4881d4e3c8463435cadfb6",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_381",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/d47a1e46f1f0f83811d039605b9cfc75.json",
+      "size_bytes": 1096521,
+      "sha256": "5ad5ac849049b945574ad067938e07d16bba9a86229d1b404287b1b48818c271",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_299",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/d4b88d226974f8af9882419f9fe77dea.json",
+      "size_bytes": 1322742,
+      "sha256": "bdfe9d39ee79c6465d278383a86fb877dcc79833184b8c17a92b5dc3f3d34187",
+      "pair_id": "prmbench/preview/step_contradiction_prm_test_p1_70",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/d5370dc04d9aaa6d1d0d6f01d1bb569f.json",
+      "size_bytes": 1070362,
+      "sha256": "0d6a30d55fe2635f140203bbbb3046f7deac092b649b469a223e801b40218b09",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_344",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/d58312ea634ed473ba7401df73155343.json",
+      "size_bytes": 1209688,
+      "sha256": "d7d722137fb5c74f8f6a4f627f4e9d70b9724160ab122ce123d52ea0a01abdb7",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_345",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/d6adbce5674a1d11e65ffe7347790996.json",
+      "size_bytes": 851417,
+      "sha256": "a96846669e6f2917f1e94e4cad4e73c8ebaec854fa9823d5fca053b8dce20cfa",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_2071",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/d702efc98384dd37bcb4f1eec60a8ae4.json",
+      "size_bytes": 912300,
+      "sha256": "4c2c79a1d863f75464362c0148377cc741ec8c0414583874263d4684eb45301f",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_1778",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/d762f0a569f56d9b287b872b37e76fd9.json",
+      "size_bytes": 1091549,
+      "sha256": "0d275ad5cb6dede4e28f121dfec68c5d76204313b8355f349d3365458c31b010",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_441",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/d86c1c77476abadc5fbadaf23477618c.json",
+      "size_bytes": 777342,
+      "sha256": "43a359455026a147651f4db3f14bbf8991a593e423af85aab95164e9e991556b",
+      "pair_id": "prmbench/preview/step_contradiction_prm_train_p1_347",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/dad4947bbafb0fb8fa31a0c29a2c9b28.json",
+      "size_bytes": 1347435,
+      "sha256": "95290210c46976bd116ba49d58b9aa056fded25eb69fde298e9761e19adbc9c2",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2594",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/db1b5fd252d98476684b7f7b434945a2.json",
+      "size_bytes": 1081011,
+      "sha256": "0a5c3a0f698db381221bcc9f54bbe188a10d943846af46deba1502318044a4a0",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_991",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/db2e3106d88fffffb43dc4cbf05c364c.json",
+      "size_bytes": 1656941,
+      "sha256": "6427f2f7af853bd08cef0ae8c4fa17268f119bac5612c7bda6ab60b704a851a4",
+      "pair_id": "prmbench/preview/step_contradiction_prm_test_p2_2646",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/db84242fcb561d0943c58fad56b4d805.json",
+      "size_bytes": 955906,
+      "sha256": "6fd282240498354ff1d510aa26809eb82e4d176b46e0609e33f0ddc9df98444b",
+      "pair_id": "prmbench/preview/step_contradiction_prm_train_p1_443",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/dd1e52f697d76bb1205e8601040de5c7.json",
+      "size_bytes": 1285542,
+      "sha256": "10e2dbc1c0d90729724e47497ec61c3b6c0826f905ca1773fc636eace4568f15",
+      "pair_id": "prmbench/preview/redundency_prm_test_p1_5",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/de980236855a381b042f7450a6d0eb0c.json",
+      "size_bytes": 1068278,
+      "sha256": "4ef30c23686fa8eadf21bf746b6afb060db02fe6a30681de96557def99cf792e",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_311",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/e17394464a29660459944dfcc1b1db58.json",
+      "size_bytes": 1429496,
+      "sha256": "2fce1041da57dc7f250406f84b0f2449890dc2af4a11e8c95992bf12e9e82b72",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_288",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/e192afa32453b7987dbf72f0b0b13b40.json",
+      "size_bytes": 1034280,
+      "sha256": "e344fde5f2642bbf2534a9c7b686f965c7fd19d2c05c7dd9f8b74ff20709866d",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_20",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/e50b547ecd032d20f512e2141ad8eed6.json",
+      "size_bytes": 1109124,
+      "sha256": "4ba2a407c65dfea6e38f4711df574a728b4cccccb155b1a36372e8fd0c303fec",
+      "pair_id": "prmbench/preview/missing_condition_prm_test_p2_1320",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/e8eba645d3f1d1191c09d8f83e674dd0.json",
+      "size_bytes": 988242,
+      "sha256": "07551cc7684c7591a16f1de897195ab06064ba81cb66148b528400ad8bbb4d4e",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p1_97",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/e8f77bc624f56055eb71ac9e2b271d10.json",
+      "size_bytes": 833749,
+      "sha256": "12668212913bd7b56771b3c4bf7e86a98e73f3ed9cc843f1b36c845c97bcc0ca",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_1920",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/e8fd241426fe83f31ecb1f88a64c5c42.json",
+      "size_bytes": 812961,
+      "sha256": "1d00b1df0d2b7e330b30aaee8797a97fcaca7bddd265c7d233c949d6b408c3cc",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_460",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/e90fd26fe34795cfd2f912c89c2851c5.json",
+      "size_bytes": 865444,
+      "sha256": "6515550832a9b080a52b46b2698ee6acd420c0593ade92c836c895b5c71b7f03",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_126",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/e96da9893bca04735f30cd15dee29d9c.json",
+      "size_bytes": 834203,
+      "sha256": "c3767b6cd398e6c7c283dc1832edcd1f6d7efe062c883d8ff0f45f525e3138bc",
+      "pair_id": "prmbench/preview/step_contradiction_prm_train_p1_376",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/e97a3d0a24c9c8989392893723dc8156.json",
+      "size_bytes": 1042191,
+      "sha256": "9a5706499f96a0663757cca2537af9bfcfa84e85f31859a2542d673b2ea0a172",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1141",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/ea83686d9f6837acb687113cd6af43e5.json",
+      "size_bytes": 1024079,
+      "sha256": "38abe94491cdcf7d85fdbb49c67ff17bfe601cc5d7745b86cab958e53c1000aa",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_186",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/ed76799611cfcf86fc62d09814b139a6.json",
+      "size_bytes": 1431169,
+      "sha256": "6a943b51fa8a643203feec4877ad17d8794d818e54caac21be26bcbbac12868f",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_37",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/edb7b41657803bf17cef90bd14ea69b9.json",
+      "size_bytes": 900121,
+      "sha256": "077ba9e447164d671bb7ce2e2708e17a9e8bba39bd25ecc961e1a71bd4d86a29",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_68",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/ee43cff1024e4ca9b54846d2a3a097cf.json",
+      "size_bytes": 980749,
+      "sha256": "5c378bd1941b3028f78a520bcd957f62c8ecbc20cd29636c95836a8da4bd2be1",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_28",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/eec3361bf4186530ab4cc17d3251e909.json",
+      "size_bytes": 984350,
+      "sha256": "10e2f48f34b45ee3b71586afa35be0bf9abcaf4f779d98f752487c5d5df302f1",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1305",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/ef53a537dbe72c234c3b4797e9c31ed6.json",
+      "size_bytes": 914469,
+      "sha256": "040117f0b5587e9e957b830b00632afe0eddfcb741eacd4bd7b4c877ba1ac30e",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_301",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/f31478f6322af4df8e7ed84115bf1eda.json",
+      "size_bytes": 1100876,
+      "sha256": "c88ca2771dc4b786b7ec8ab42efcf85c81a4c794af849ac8b996f8f489ddf246",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_222",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/f35ddab6b8e23c09f1c8a504cb58f1f2.json",
+      "size_bytes": 1069328,
+      "sha256": "5eb0f3fb334db647752dfd619e66498d3c85b6b55e3dd1b1370b02137cb40944",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1816",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/f4309a5493257c90d8e243843a0f32ca.json",
+      "size_bytes": 799366,
+      "sha256": "6226881fc9dd9cfd66941dca2d1659af6e2a6ec0c180cebf5f696f1a5a97139f",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_286",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/f593e7c764606068c5fce9fd6c414776.json",
+      "size_bytes": 1172787,
+      "sha256": "4ff3acd7faba4d31fc8be76be6603ec20709b7d8a5fd43dba1decb31e622e037",
+      "pair_id": "prmbench/preview/deception_prm_test_p1_103",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/f5bda247e86fd9c757eb0ad2cb8f2860.json",
+      "size_bytes": 983603,
+      "sha256": "22948a5f48473676b02d5d0fcc4d23cbd9424143ae3cc6fde101707414e36c25",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_671",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/f62bfe9afa390574a68c7264ecad028b.json",
+      "size_bytes": 952353,
+      "sha256": "c5e59a3a36abd4938b065b93c67f9f29dd043b3ef0868962c3ca3a289c1480ce",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_416",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/f6784e2dae52938d0ae0e40ed5f14f61.json",
+      "size_bytes": 911410,
+      "sha256": "e59e694cdadbd962712c1a7e586168382bba84b4a0c4fd9d8f406ea89a9abe8d",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_2022",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/f7314d56e24c81ca6251552a573e6f70.json",
+      "size_bytes": 1103323,
+      "sha256": "65688b4fbd939c2c7e09f1268a53c0fda267c81bccf0c74b46f97e2d6afde1f0",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_783",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/f77802cbc5bd124c0d1edb7abbee4b9c.json",
+      "size_bytes": 965269,
+      "sha256": "26bcba8e0ae5c46a2fd8d02aa1266398c40efa891de4c626d388b6a330dbcaa6",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2094",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/f9ff4f3b4a68bc2979de3297a47cf582.json",
+      "size_bytes": 688168,
+      "sha256": "0ae74d265674f1d37a4a4d4f5a0762db563fc2be3e54fcdfd017db6534fd26c5",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_1",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/fd0fa26a28608853adc54f4f3ab40825.json",
+      "size_bytes": 1407591,
+      "sha256": "39d2af0f9d0fb9e482cd870e77c0d31b32b802e828eee4acf21d8b66f153309c",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_234",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron3_nano/full_v1/pairs/ff939bf5a24970e4d57be25d8701ff64.json",
+      "size_bytes": 875385,
+      "sha256": "be48dfdd593d6e4775108c60255910b9fe9803deaac93928e52f2db05f37b18a",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_20",
+      "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+      "technical_passed": true,
+      "row_count": 10
+    }
+  ],
+  "interpretation": "External donor-role directionality under this intervention; does not identify a unique correctness code.",
+  "comparison_boundary": "Current wide-D run only; no old T/D rows combined or cross-run input equivalence inferred."
+}

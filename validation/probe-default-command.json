@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "scope": "Documented NPZ refit command, default 1000-resample branch, GPT120; clean Python 3.11 environment installed only from requirements-cpu.txt",
+  "panels": 18,
+  "classifier_fits": 90,
+  "bootstrap_resamples": 1000,
+  "maximum_absolute_difference_by_field": {
+    "micro_oof_auroc": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0,
+    "mean_fold_auroc": 0.0
+  },
+  "packages": {
+    "threadpoolctl": "3.6.0",
+    "cloudpickle": "3.1.2",
+    "pydantic_core": "2.46.4",
+    "joblib": "1.6.0",
+    "pandas": "3.0.3",
+    "scikit-learn": "1.9.0",
+    "numpy": "2.4.6",
+    "python-dateutil": "2.9.0.post0",
+    "scipy": "1.17.1",
+    "annotated-types": "0.8.0",
+    "typing-inspection": "0.4.4",
+    "pydantic": "2.13.4",
+    "typing_extensions": "4.16.0",
+    "six": "1.17.0",
+    "narwhals": "2.26.0"
+  },
+  "source_reads": "Anonymous candidate NPZ, rows, folds, source modules and reference OOF; no original activation archive access required",
+  "original_archives_needed": false,
+  "GPU_forwards": 0
+}

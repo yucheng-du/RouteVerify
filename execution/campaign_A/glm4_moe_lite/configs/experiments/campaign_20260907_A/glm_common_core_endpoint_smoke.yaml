@@ -1,0 +1,26 @@
+model: configs/models/glm4_moe_lite.yaml
+data: configs/experiments/campaign_20260907_A/glm_common_core_data.yaml
+output_dir: artifacts/campaign_20260907_A/glm_common_core_smoke/endpoint
+seed: 20260907
+limit: 8
+prompt_mode: step_binary
+input_format: chat
+boundary_strategy: paired_first_error
+patch_mode: single_site_sweep
+controls:
+- unpatched
+- unpatched_rerun
+- self_patch
+- norm_random_delta
+- random_matched_donor
+split_manifest: docs/results/first_batch_zero_gpu_20260730/discovery_validation_split.json
+split_partition: discovery
+sites:
+- post_moe_residual
+- moe_output
+- router_logits
+layers:
+- 1
+- 24
+alphas:
+- 1.0

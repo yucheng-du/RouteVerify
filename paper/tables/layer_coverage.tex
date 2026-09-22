@@ -1,0 +1,26 @@
+\begin{table*}[htbp]
+\centering
+\small
+\setlength{\tabcolsep}{5pt}
+\caption{Layer coverage in the nine-checkpoint analysis. Layers are zero-indexed
+absolute decoder-block indices. ``All routed sites'' counts routed blocks
+replaced by an all-router or all-layer MoE-output intervention, not every
+decoder block. ``Probe layer'' refers only to completed representation analyses
+in Appendix~\ref{app:access}.}
+\label{tab:abc-anchors}
+\begin{tabularx}{\textwidth}{@{}Yrrrr@{}}
+\toprule
+Model & Local $D$ layer & Window layer & All routed sites & Probe layer \\
+\midrule
+Qwen3.6-35B-A3B & 20 & 20 & 40 & 20 \\
+Qwen3-30B-A3B & 36 & 24 & 48 & 24 \\
+GLM-4.7-Flash & 24 & 24 & 46 & 24 \\
+Nemotron-3.5 Lightning & 27 & 27 & 23 & 27 \\
+Nemotron-3 Nano & 27 & 27 & 23 & 27 \\
+Gemma 4 26B-A4B & 15 & 15 & 30 & 15 \\
+OLMoE-1B-7B & 8 & 8 & 16 & --- \\
+GPT-OSS 20B & 12 & 12 & 24 & 12 \\
+GPT-OSS 120B & 18 & 18 & 36 & 18 \\
+\bottomrule
+\end{tabularx}
+\end{table*}

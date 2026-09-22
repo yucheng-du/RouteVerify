@@ -1,0 +1,52 @@
+{
+  "omitted": [
+    "model weights",
+    "dataset problem/solution text",
+    "full activation archives beyond selected probe boundary vectors",
+    "private history, collaboration logs and audits",
+    "smoke runs"
+  ],
+  "probe": {
+    "canonical_six": {
+      "bootstrap_resamples": 1000,
+      "folds": 5,
+      "models": 6,
+      "pairs": 290,
+      "post_hoc": true,
+      "rows_per_cell": 580,
+      "seed": 20260829,
+      "source_components": 235
+    },
+    "conditioning": "Intervals condition on fitted OOF scores; no classifier refitting within bootstrap",
+    "positive_class": "corrupt",
+    "separate_extensions": [
+      "glm",
+      "gpt120"
+    ],
+    "feature_bundle": {
+      "path": "probe/features/index.json",
+      "models": 8,
+      "rows_per_model": 580,
+      "model_anchor_combinations": 23,
+      "feature_cells": 138,
+      "native_numeric_payload_bytes": 139306720,
+      "compressed_npz_bytes": 107292676,
+      "entry": "probe/refit.py",
+      "excluded_refits": [
+        "238-group sensitivity",
+        "historical 1160-row Qwen comparison",
+        "text baselines"
+      ]
+    }
+  },
+  "processbench": {
+    "margin": "mean log P(INCORRECT) - mean log P(CORRECT)",
+    "models": 3,
+    "pairs": 64,
+    "post_hoc_receiver_state_analysis": true,
+    "resamples": 50000,
+    "seed": 0,
+    "traces": 128,
+    "unit": "pair; component sensitivity separately labeled"
+  }
+}

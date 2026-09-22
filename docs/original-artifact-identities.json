@@ -1,0 +1,29 @@
+{
+  "scope": "Original archive identities versus anonymized public copies; hashes are not interchangeable.",
+  "artifacts": [
+    {
+      "artifact": "unified_windows_v1.json",
+      "original_sha256_quoted_in_paper": "75431e13cb3cf0ebba9f8a86df443fcdda5c7fd10b6cd2fb28fd390909d241ac",
+      "original_source_hash_verified": true,
+      "public_path": "analysis/abc/unified_windows_v1.json",
+      "public_sha256": "a500fe10e875eacf602c1d3ed02e796b2de1b06d5051064d250692eb44f6203b",
+      "public_transformation": "Personal filesystem roots replaced by anonymous historical-source labels; scientific numerical values retained"
+    },
+    {
+      "artifact": "headline_d_bundle_v1.csv",
+      "original_sha256_quoted_in_paper": "0be3afb97f570165d0d7a0e662ba32c2fb9c6f8b5e58f55222ce13c86c636971",
+      "original_source_hash_verified": true,
+      "public_path": "analysis/abc/headline_d_bundle_v1.csv",
+      "public_sha256": "3724a1f0694fa77852b242216ef13954a63b2287e75de41fa13fb6ebf9848bcd",
+      "public_transformation": "Personal filesystem roots replaced by anonymous historical-source labels; scientific numerical values retained"
+    },
+    {
+      "artifact": "wide_d_nine_model_v1.json",
+      "original_sha256_quoted_in_paper": "6b1ccd80ecd58d01025ee41f3b2c7be274875a831509018244045019fa98e14b",
+      "original_source_hash_verified": true,
+      "public_path": "analysis/wide_d/wide_d_nine_model_v1.json",
+      "public_sha256": "8d09caf9edcd496cbc05971d26e1bedea0635a1aca164871c933807155479568",
+      "public_transformation": "Personal filesystem roots replaced by anonymous historical-source labels; scientific numerical values retained"
+    }
+  ]
+}

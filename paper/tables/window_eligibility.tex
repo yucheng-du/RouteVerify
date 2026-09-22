@@ -1,0 +1,28 @@
+\begin{table*}[htbp]
+\centering
+\small
+\setlength{\tabcolsep}{5pt}
+\caption{Eligible pairs/source components ($N/K$) for the eight-token windows.
+Paired-donor, self-patch, and norm-random conditions share the paired mask.
+``Common'' is the suffix/divergence intersection used for the equal-length
+position contrast. Matched-donor comparisons use their own complete-pair
+intersection.}
+\label{tab:abc-window-n}
+\begin{tabularx}{\textwidth}{@{}l*{5}{>{\centering\arraybackslash}X}@{}}
+\toprule
+& \multicolumn{2}{c}{Suffix-8} & \multicolumn{2}{c}{Divergence-8} & Common \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+Model & Paired & Matched & Paired & Matched & Paired \\
+\midrule
+Qwen3.6 & 278/226 & 265/217 & 276/224 & 261/213 & 276/224 \\
+Qwen3 & 278/226 & 265/217 & 276/224 & 261/213 & 276/224 \\
+GLM-4.7-Flash & 274/222 & 256/209 & 272/220 & 252/205 & 272/220 \\
+Lightning & 278/226 & 265/217 & 276/224 & 261/213 & 276/224 \\
+Nano & 278/226 & 265/217 & 276/224 & 261/213 & 276/224 \\
+Gemma 4 & 279/226 & 268/220 & 277/224 & 264/216 & 277/224 \\
+OLMoE & 271/220 & 250/205 & 271/220 & 250/205 & 271/220 \\
+GPT-OSS 20B & 272/220 & 253/206 & 271/219 & 251/204 & 271/219 \\
+GPT-OSS 120B & 272/220 & 253/206 & 271/219 & 251/204 & 271/219 \\
+\bottomrule
+\end{tabularx}
+\end{table*}

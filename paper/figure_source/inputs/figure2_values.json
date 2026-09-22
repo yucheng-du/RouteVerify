@@ -1,0 +1,599 @@
+{
+  "sha256_verified": true,
+  "source_path": "docs/results/abc_synthesis_20260908/unified_windows_v1.json",
+  "source_sha256": "a500fe10e875eacf602c1d3ed02e796b2de1b06d5051064d250692eb44f6203b",
+  "model_order": [
+    "Qwen3.6",
+    "Qwen3",
+    "GLM-4.7-Flash",
+    "Lightning",
+    "Nano",
+    "Gemma4",
+    "OLMoE",
+    "GPT-OSS-20B",
+    "GPT-OSS-120B"
+  ],
+  "arm_order_top_to_bottom": [
+    "router_logits",
+    "all_router",
+    "post_moe_residual"
+  ],
+  "rows": [
+    {
+      "model": "Qwen3.6",
+      "A_N": 290,
+      "A_K": 235,
+      "row_label_NK_from_C": {
+        "N": 276,
+        "K": 224,
+        "label": "8t N/K: 276/224"
+      },
+      "A_xlim": [
+        -0.052500000000000005,
+        1.5
+      ],
+      "A_upper_tick_label": "1.5",
+      "A_estimates": {
+        "router_logits": {
+          "mean": -0.0026014762509402856,
+          "ci_low": -0.012511339689073154,
+          "ci_high": 0.007352845998953589,
+          "N": 290,
+          "K": 235
+        },
+        "all_router": {
+          "mean": 0.34651606302399285,
+          "ci_low": 0.28632662940910636,
+          "ci_high": 0.4082439192416186,
+          "N": 290,
+          "K": 235
+        },
+        "post_moe_residual": {
+          "mean": 1.2821088872159478,
+          "ci_low": 1.1379430773211003,
+          "ci_high": 1.42677411885483,
+          "N": 290,
+          "K": 235
+        }
+      },
+      "B_gap_residual_minus_all_router": {
+        "mean": 0.935592824191955,
+        "ci_low": 0.8176434647711248,
+        "ci_high": 1.0550352960744882,
+        "N": 290,
+        "K": 235
+      },
+      "B_display": {
+        "mean": "0.936",
+        "ci": "[0.818, 1.055]",
+        "color_rule": "INK #202B36 if ci_low>0; #087F8C if ci_high<0; MUTED #54616B otherwise",
+        "color": "#202B36"
+      },
+      "C_gap_shift_div8_minus_suffix8": {
+        "mean": -0.13425392752211285,
+        "ci_low": -0.23927466466270472,
+        "ci_high": -0.027649511562621094,
+        "N": 276,
+        "K": 224
+      }
+    },
+    {
+      "model": "Qwen3",
+      "A_N": 290,
+      "A_K": 235,
+      "row_label_NK_from_C": {
+        "N": 276,
+        "K": 224,
+        "label": "8t N/K: 276/224"
+      },
+      "A_xlim": [
+        -0.17500000000000002,
+        5
+      ],
+      "A_upper_tick_label": "5",
+      "A_estimates": {
+        "router_logits": {
+          "mean": 0.02299374632066719,
+          "ci_low": 0.0008694804916495594,
+          "ci_high": 0.045264870546861735,
+          "N": 290,
+          "K": 235
+        },
+        "all_router": {
+          "mean": 1.5756138773671244,
+          "ci_low": 1.357676121806944,
+          "ci_high": 1.7960047992377064,
+          "N": 290,
+          "K": 235
+        },
+        "post_moe_residual": {
+          "mean": 4.205177984427999,
+          "ci_low": 3.7393797914499487,
+          "ci_high": 4.666049522114109,
+          "N": 290,
+          "K": 235
+        }
+      },
+      "B_gap_residual_minus_all_router": {
+        "mean": 2.629564107060874,
+        "ci_low": 2.2881141781243777,
+        "ci_high": 2.9765583953285764,
+        "N": 290,
+        "K": 235
+      },
+      "B_display": {
+        "mean": "2.630",
+        "ci": "[2.288, 2.977]",
+        "color_rule": "INK #202B36 if ci_low>0; #087F8C if ci_high<0; MUTED #54616B otherwise",
+        "color": "#202B36"
+      },
+      "C_gap_shift_div8_minus_suffix8": {
+        "mean": -0.8311521754341206,
+        "ci_low": -1.1554079705447842,
+        "ci_high": -0.5170122895414445,
+        "N": 276,
+        "K": 224
+      }
+    },
+    {
+      "model": "GLM-4.7-Flash",
+      "A_N": 290,
+      "A_K": 235,
+      "row_label_NK_from_C": {
+        "N": 272,
+        "K": 220,
+        "label": "8t N/K: 272/220"
+      },
+      "A_xlim": [
+        -0.0175,
+        0.5
+      ],
+      "A_upper_tick_label": "0.5",
+      "A_estimates": {
+        "router_logits": {
+          "mean": 0.005963882351235286,
+          "ci_low": -0.002378542540376865,
+          "ci_high": 0.014302673458915375,
+          "N": 290,
+          "K": 235
+        },
+        "all_router": {
+          "mean": 0.23131642470834776,
+          "ci_low": 0.18864035246797128,
+          "ci_high": 0.2748305043760464,
+          "N": 290,
+          "K": 235
+        },
+        "post_moe_residual": {
+          "mean": 0.42178462035338465,
+          "ci_low": 0.36242117856057227,
+          "ci_high": 0.4827956295761185,
+          "N": 290,
+          "K": 235
+        }
+      },
+      "B_gap_residual_minus_all_router": {
+        "mean": 0.19046819564503692,
+        "ci_low": 0.14627265518422428,
+        "ci_high": 0.2367210684364448,
+        "N": 290,
+        "K": 235
+      },
+      "B_display": {
+        "mean": "0.190",
+        "ci": "[0.146, 0.237]",
+        "color_rule": "INK #202B36 if ci_low>0; #087F8C if ci_high<0; MUTED #54616B otherwise",
+        "color": "#202B36"
+      },
+      "C_gap_shift_div8_minus_suffix8": {
+        "mean": -0.16141848513293286,
+        "ci_low": -0.20810571558973381,
+        "ci_high": -0.11565754699795054,
+        "N": 272,
+        "K": 220
+      }
+    },
+    {
+      "model": "Lightning",
+      "A_N": 290,
+      "A_K": 235,
+      "row_label_NK_from_C": {
+        "N": 276,
+        "K": 224,
+        "label": "8t N/K: 276/224"
+      },
+      "A_xlim": [
+        -0.010500000000000002,
+        0.30000000000000004
+      ],
+      "A_upper_tick_label": "0.3",
+      "A_estimates": {
+        "router_logits": {
+          "mean": 0.00011240195325072529,
+          "ci_low": -0.0033826386758379896,
+          "ci_high": 0.003567560716209446,
+          "N": 290,
+          "K": 235
+        },
+        "all_router": {
+          "mean": 0.22054382634299657,
+          "ci_low": 0.18590823798753486,
+          "ci_high": 0.25628722447197333,
+          "N": 290,
+          "K": 235
+        },
+        "post_moe_residual": {
+          "mean": 0.21722534155712636,
+          "ci_low": 0.1913812540014995,
+          "ci_high": 0.24362580712922516,
+          "N": 290,
+          "K": 235
+        }
+      },
+      "B_gap_residual_minus_all_router": {
+        "mean": -0.003318484785870233,
+        "ci_low": -0.03162086125221245,
+        "ci_high": 0.024855205545241385,
+        "N": 290,
+        "K": 235
+      },
+      "B_display": {
+        "mean": "\u22120.003",
+        "ci": "[\u22120.032, 0.025]",
+        "color_rule": "INK #202B36 if ci_low>0; #087F8C if ci_high<0; MUTED #54616B otherwise",
+        "color": "#54616B"
+      },
+      "C_gap_shift_div8_minus_suffix8": {
+        "mean": -0.10745610634562647,
+        "ci_low": -0.13630068594668374,
+        "ci_high": -0.07948392332661938,
+        "N": 276,
+        "K": 224
+      }
+    },
+    {
+      "model": "Nano",
+      "A_N": 290,
+      "A_K": 235,
+      "row_label_NK_from_C": {
+        "N": 276,
+        "K": 224,
+        "label": "8t N/K: 276/224"
+      },
+      "A_xlim": [
+        -0.007000000000000001,
+        0.2
+      ],
+      "A_upper_tick_label": "0.2",
+      "A_estimates": {
+        "router_logits": {
+          "mean": -0.0004712507123363078,
+          "ci_low": -0.0032912898948508802,
+          "ci_high": 0.002352813417217796,
+          "N": 290,
+          "K": 235
+        },
+        "all_router": {
+          "mean": 0.1434844038251188,
+          "ci_low": 0.11800995621433674,
+          "ci_high": 0.17013474231001657,
+          "N": 290,
+          "K": 235
+        },
+        "post_moe_residual": {
+          "mean": 0.1299559322731762,
+          "ci_low": 0.11153127131414654,
+          "ci_high": 0.1488895049767664,
+          "N": 290,
+          "K": 235
+        }
+      },
+      "B_gap_residual_minus_all_router": {
+        "mean": -0.013528471551942582,
+        "ci_low": -0.0323822589441234,
+        "ci_high": 0.005367263876882095,
+        "N": 290,
+        "K": 235
+      },
+      "B_display": {
+        "mean": "\u22120.014",
+        "ci": "[\u22120.032, 0.005]",
+        "color_rule": "INK #202B36 if ci_low>0; #087F8C if ci_high<0; MUTED #54616B otherwise",
+        "color": "#54616B"
+      },
+      "C_gap_shift_div8_minus_suffix8": {
+        "mean": -0.057712718478858394,
+        "ci_low": -0.07567040581968135,
+        "ci_high": -0.03997569906396614,
+        "N": 276,
+        "K": 224
+      }
+    },
+    {
+      "model": "Gemma4",
+      "A_N": 290,
+      "A_K": 235,
+      "row_label_NK_from_C": {
+        "N": 277,
+        "K": 224,
+        "label": "8t N/K: 277/224"
+      },
+      "A_xlim": [
+        -0.21000000000000002,
+        6
+      ],
+      "A_upper_tick_label": "6",
+      "A_estimates": {
+        "router_logits": {
+          "mean": 0.06006734788684516,
+          "ci_low": 0.017585415972065657,
+          "ci_high": 0.10154557833879795,
+          "N": 290,
+          "K": 235
+        },
+        "all_router": {
+          "mean": 1.2079646599607714,
+          "ci_low": 0.9575567751654999,
+          "ci_high": 1.458614696763325,
+          "N": 290,
+          "K": 235
+        },
+        "post_moe_residual": {
+          "mean": 4.869780710543753,
+          "ci_low": 4.352170270245074,
+          "ci_high": 5.395046952858774,
+          "N": 290,
+          "K": 235
+        }
+      },
+      "B_gap_residual_minus_all_router": {
+        "mean": 3.6618160505829813,
+        "ci_low": 3.1711197085312897,
+        "ci_high": 4.167649590215368,
+        "N": 290,
+        "K": 235
+      },
+      "B_display": {
+        "mean": "3.662",
+        "ci": "[3.171, 4.168]",
+        "color_rule": "INK #202B36 if ci_low>0; #087F8C if ci_high<0; MUTED #54616B otherwise",
+        "color": "#202B36"
+      },
+      "C_gap_shift_div8_minus_suffix8": {
+        "mean": -0.557637408614994,
+        "ci_low": -1.0336640958358831,
+        "ci_high": -0.07936725387726844,
+        "N": 277,
+        "K": 224
+      }
+    },
+    {
+      "model": "OLMoE",
+      "A_N": 290,
+      "A_K": 235,
+      "row_label_NK_from_C": {
+        "N": 271,
+        "K": 220,
+        "label": "8t N/K: 271/220"
+      },
+      "A_xlim": [
+        -0.0175,
+        0.5
+      ],
+      "A_upper_tick_label": "0.5",
+      "A_estimates": {
+        "router_logits": {
+          "mean": 0.01009066679957189,
+          "ci_low": -0.0047602448392145575,
+          "ci_high": 0.025877025523000575,
+          "N": 290,
+          "K": 235
+        },
+        "all_router": {
+          "mean": 0.1852307404834883,
+          "ci_low": 0.12004762604658101,
+          "ci_high": 0.25268191640532683,
+          "N": 290,
+          "K": 235
+        },
+        "post_moe_residual": {
+          "mean": 0.32437948196980537,
+          "ci_low": 0.23761535411360274,
+          "ci_high": 0.4134081293884259,
+          "N": 290,
+          "K": 235
+        }
+      },
+      "B_gap_residual_minus_all_router": {
+        "mean": 0.13914874148631706,
+        "ci_low": 0.07247488676772096,
+        "ci_high": 0.20820643356608007,
+        "N": 290,
+        "K": 235
+      },
+      "B_display": {
+        "mean": "0.139",
+        "ci": "[0.072, 0.208]",
+        "color_rule": "INK #202B36 if ci_low>0; #087F8C if ci_high<0; MUTED #54616B otherwise",
+        "color": "#202B36"
+      },
+      "C_gap_shift_div8_minus_suffix8": {
+        "mean": -0.09145981903712157,
+        "ci_low": -0.1610178153823004,
+        "ci_high": -0.026945588291543775,
+        "N": 271,
+        "K": 220
+      }
+    },
+    {
+      "model": "GPT-OSS-20B",
+      "A_N": 290,
+      "A_K": 235,
+      "row_label_NK_from_C": {
+        "N": 271,
+        "K": 219,
+        "label": "8t N/K: 271/219"
+      },
+      "A_xlim": [
+        -0.052500000000000005,
+        1.5
+      ],
+      "A_upper_tick_label": "1.5",
+      "A_estimates": {
+        "router_logits": {
+          "mean": 0.016669424432365798,
+          "ci_low": 0.006136201236555168,
+          "ci_high": 0.027352190514004948,
+          "N": 290,
+          "K": 235
+        },
+        "all_router": {
+          "mean": 0.29676038010513217,
+          "ci_low": 0.2415959782036509,
+          "ci_high": 0.3533410954885096,
+          "N": 290,
+          "K": 235
+        },
+        "post_moe_residual": {
+          "mean": 1.169850867202448,
+          "ci_low": 1.0286588023376062,
+          "ci_high": 1.3112515262472495,
+          "N": 290,
+          "K": 235
+        }
+      },
+      "B_gap_residual_minus_all_router": {
+        "mean": 0.8730904870973157,
+        "ci_low": 0.753583704031153,
+        "ci_high": 0.9944229235298766,
+        "N": 290,
+        "K": 235
+      },
+      "B_display": {
+        "mean": "0.873",
+        "ci": "[0.754, 0.994]",
+        "color_rule": "INK #202B36 if ci_low>0; #087F8C if ci_high<0; MUTED #54616B otherwise",
+        "color": "#202B36"
+      },
+      "C_gap_shift_div8_minus_suffix8": {
+        "mean": -0.21048685394198668,
+        "ci_low": -0.3127188606342663,
+        "ci_high": -0.11031735071828414,
+        "N": 271,
+        "K": 219
+      }
+    },
+    {
+      "model": "GPT-OSS-120B",
+      "A_N": 290,
+      "A_K": 235,
+      "row_label_NK_from_C": {
+        "N": 271,
+        "K": 219,
+        "label": "8t N/K: 271/219"
+      },
+      "A_xlim": [
+        -0.021000000000000005,
+        0.6000000000000001
+      ],
+      "A_upper_tick_label": "0.6",
+      "A_estimates": {
+        "router_logits": {
+          "mean": 0.018944326761047493,
+          "ci_low": 0.007596771029924574,
+          "ci_high": 0.030467223145713374,
+          "N": 290,
+          "K": 235
+        },
+        "all_router": {
+          "mean": 0.4283445007029586,
+          "ci_low": 0.34963277908720003,
+          "ci_high": 0.5091444004940827,
+          "N": 290,
+          "K": 235
+        },
+        "post_moe_residual": {
+          "mean": 0.32003799566985425,
+          "ci_low": 0.2762386576501732,
+          "ci_high": 0.3646007503547889,
+          "N": 290,
+          "K": 235
+        }
+      },
+      "B_gap_residual_minus_all_router": {
+        "mean": -0.10830650503310439,
+        "ci_low": -0.17566026583563313,
+        "ci_high": -0.04186783581457961,
+        "N": 290,
+        "K": 235
+      },
+      "B_display": {
+        "mean": "\u22120.108",
+        "ci": "[\u22120.176, \u22120.042]",
+        "color_rule": "INK #202B36 if ci_low>0; #087F8C if ci_high<0; MUTED #54616B otherwise",
+        "color": "#087F8C"
+      },
+      "C_gap_shift_div8_minus_suffix8": {
+        "mean": -0.1918602352348229,
+        "ci_low": -0.25356495664444456,
+        "ci_high": -0.1322473638598461,
+        "N": 271,
+        "K": 219
+      }
+    }
+  ],
+  "columnA_shared": {
+    "xlim_lower_rule": "min(-upper*0.035, min(ci_low)*1.18)",
+    "ylim": [
+      -0.6,
+      2.6
+    ],
+    "axes_width_fig": 0.235,
+    "axes_left_fig": 0.233
+  },
+  "columnC_axis": {
+    "xlim": [
+      -1.22,
+      0.08
+    ],
+    "xticks": [
+      -1,
+      -0.5,
+      0
+    ],
+    "xticklabels": [
+      "\u22121",
+      "\u22120.5",
+      "0"
+    ],
+    "ylim": [
+      -0.5,
+      8.5
+    ],
+    "inverted_y": true,
+    "axes_rect_fig": [
+      0.75,
+      0.112,
+      0.231,
+      0.673
+    ]
+  },
+  "json_keys": {
+    "A": "estimates[] model==<label> & estimand=='T' & window=='full_step' & control=='paired' & arm in {router_logits,all_router,post_moe_residual}",
+    "B": "estimates[] model==<label> & estimand=='residual_minus_arm' & window=='full_step' & arm=='all_router' & control=='paired'",
+    "C/NK": "estimates[] model==<label> & estimand=='gap_window_difference' & arm=='all_router' & control=='paired' & left=='divergence_k' & right=='suffix_k'"
+  },
+  "A_upper_limits_in_model_order": [
+    1.5,
+    5,
+    0.5,
+    0.30000000000000004,
+    0.2,
+    6,
+    0.5,
+    1.5,
+    0.6000000000000001
+  ],
+  "original_archive_hash": "75431e13cb3cf0ebba9f8a86df443fcdda5c7fd10b6cd2fb28fd390909d241ac",
+  "hash_scope": "source_sha256 identifies the current public input; original_archive_hash identifies the pre-release archived source"
+}

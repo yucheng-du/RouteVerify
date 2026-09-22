@@ -1,0 +1,9 @@
+dataset: prmbench
+hf_id: hitsmy/PRMBench_Preview
+revision: 5cc7683d0ae5797f84d7aeac0607966f277c39e1
+expected_resolved_data_revision: 59abf58d51100c6befccf45fe8114d995fcc3b8e
+expected_raw_sha256: 3efe79ff688751369da6161635c247318611032071ee46cde6a20a95125bc966
+subset: preview
+split: train
+cache_dir: .cache/huggingface/datasets
+output: data/processed/prmbench-pairs.jsonl

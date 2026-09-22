@@ -1,0 +1,12 @@
+alias: qwen3_moe
+model_id: Qwen/Qwen3-30B-A3B
+revision: ad44e777bcd18fa416d9da3bd8f70d33ebb85d39
+tokenizer_revision: ad44e777bcd18fa416d9da3bd8f70d33ebb85d39
+cache_dir: .cache/huggingface/hub
+trust_remote_code: true
+dtype: bfloat16
+device_map: auto
+load_weights: false
+expected_layers: 48
+expected_experts: 128
+expected_top_k: 8

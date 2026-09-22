@@ -1,0 +1,55 @@
+schema_version: 1
+analysis_id: glm_common_core_campaign_20260907_A
+constraints:
+  device: cpu
+  allow_model_weight_loading: false
+  allow_validation_access: false
+  allow_source_archive_writes: false
+  input_scope: recapture_tensors_plus_pre_existing_canonical_group_ids
+protocol:
+  outcome: clean_vs_corrupt_recapture_discrimination
+  positive_class: corrupt
+  pair_count: 290
+  row_count: 580
+  analysis_group_definition: connected_components_of_source_suffix_or_normalized_problem
+  expected_analysis_group_count: 235
+  grouping_limitation: The shared folds join all 290 frozen discovery pairs to pre-existing
+    canonical source_problem_id values from the versioned Qwen3 CPU-correction artifact.
+    The mapping has complete unambiguous coverage and preserves component IDs defined
+    over the full historical 580-pair universe. The upstream grouping is a registered
+    post-hoc sensitivity artifact, not a new prospective freeze.
+  seed: 20260829
+  folds: 5
+  bootstrap_resamples: 1000
+  estimator:
+    implementation: sklearn.linear_model.LogisticRegression
+    penalty: l2
+    C: 1.0
+    class_weight: balanced
+    solver: liblinear
+    max_iter: 2000
+    preprocessing: StandardScaler_fit_on_training_fold_only
+  contrast_feature_control:
+    status: not_run_missing_predeclared_labels
+    reason: Existing recapture manifests contain no predeclared topic, token-class,
+      language, or formatting contrast label. No proxy label is invented.
+canonical_source_problem_manifest: archive://execution/docs/results/qwen3_cpu_corrections_v1_20260808/source_problem_manifest.json
+canonical_source_problem_manifest_sha256: 38ebffd09be3c9223beb0ccd212027b2a0d380f914d5918980629eed4ec70de3
+canonical_grouping_provenance: archive://execution/docs/results/qwen3_cpu_corrections_v1_20260808/analysis_provenance.json
+reference_selection_manifest: recapture/selection_manifest.json
+reference_recapture_manifest: recapture/data_manifest.jsonl
+models:
+- model_id: glm4_moe_lite
+  display_name: GLM-4.7-Flash
+  protocol_grade: common_core_20260907_no_degenerate_panels
+  recapture_protocol: paired_first_error_common
+  recapture_root: recapture
+  selection_manifest: recapture/selection_manifest.json
+  num_experts: 64
+  top_k: 4
+  anchors:
+    early: 1
+    middle: 24
+  strict_common_row_identity: true
+output:
+  directory: analysis/interface_access

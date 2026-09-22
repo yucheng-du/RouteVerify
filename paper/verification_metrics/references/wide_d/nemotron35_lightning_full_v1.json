@@ -1,0 +1,3162 @@
+{
+  "schema_version": 1,
+  "model": "nemotron35_lightning",
+  "execution_version": "v1",
+  "mode": "full",
+  "passed": true,
+  "extracted_utc": "2026-09-08T22:39:14.715462+00:00",
+  "run_directory": "archive://runtime/campaign_20260908_D/runs/nemotron35_lightning/full_v1",
+  "contract_id": "6f0e2e17e335f773dc4ff6e9f5a777b9c5e292cd0fe69eab6783e3295ab5d4d9",
+  "checkpoint": {
+    "alias": "nemotron35_lightning",
+    "harmony_reasoning_effort": "medium",
+    "model_id": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "require_native_mxfp4": false,
+    "revision": "a9904d24bcc1d289a1950fa9d2b978c47cf903b9",
+    "tokenizer_revision": "a9904d24bcc1d289a1950fa9d2b978c47cf903b9"
+  },
+  "N": 290,
+  "K": 235,
+  "selected_pairs": 290,
+  "ineligible_pairs": 0,
+  "ineligible_pair_ids": [],
+  "unique_fixed_donor_pairs": 204,
+  "primary_mean_logprob": {
+    "D_clean": {
+      "bootstrap_standard_error": 0.011081915951515373,
+      "ci_high": 0.04300214045134068,
+      "ci_low": -0.0004819306006960866,
+      "mean": 0.021302871790917957
+    },
+    "D_common": {
+      "bootstrap_standard_error": 0.009039573200581163,
+      "ci_high": 0.0304195078143003,
+      "ci_low": -0.004970687365812287,
+      "mean": 0.012792649879468205
+    },
+    "D_error": {
+      "bootstrap_standard_error": 0.012176029759768335,
+      "ci_high": 0.028039609316917572,
+      "ci_low": -0.019738932756744574,
+      "mean": 0.004282427968018439
+    }
+  },
+  "sensitivity_total_logprob": {
+    "D_clean": {
+      "bootstrap_standard_error": 0.03915063331612718,
+      "ci_high": 0.14850962858324682,
+      "ci_low": -0.0052471102839453465,
+      "mean": 0.07168507286797053
+    },
+    "D_common": {
+      "bootstrap_standard_error": 0.031342825472614466,
+      "ci_high": 0.09895428482945522,
+      "ci_low": -0.023871680388756034,
+      "mean": 0.03785291184944197
+    },
+    "D_error": {
+      "bootstrap_standard_error": 0.041046583688528426,
+      "ci_high": 0.08377890831729476,
+      "ci_low": -0.07749408106561964,
+      "mean": 0.004020750830913412
+    }
+  },
+  "bootstrap": {
+    "conditional_on_observed_donor_matching": true,
+    "confidence_level": 0.95,
+    "donor_assignments_attached_to_receiver_pairs": true,
+    "intervals": "marginal two-sided percentile",
+    "n_resamples": 50000,
+    "receiver_roles_resampled_jointly": true,
+    "seed": 20260908,
+    "unit": "receiver_source_component",
+    "weighting": "receiver-pair weighted, including within each resample",
+    "cluster_pair_counts": [
+      1,
+      1,
+      2,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      3,
+      2,
+      1,
+      2,
+      1,
+      2,
+      4,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      2,
+      3,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      3,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      3,
+      1,
+      2,
+      2
+    ],
+    "draw_method": "sample_receiver_components_with_replacement_keep_all_member_pairs",
+    "estimands": [
+      "d_clean_mean",
+      "d_corrupt_mean",
+      "d_common_mean",
+      "d_clean_total",
+      "d_corrupt_total",
+      "d_common_total"
+    ],
+    "indices_sha256": "be76480c996442937f529a2df12989fe84876e622d5321be9b228f7861c30dba",
+    "method": "receiver_source_component_percentile",
+    "n_clusters": 235,
+    "n_pairs": 290,
+    "rng": "numpy.random.Generator(PCG64)"
+  },
+  "descriptive_heterogeneity": {
+    "origin": "Deterministic descriptives of saved analysis.per_pair values; no new inference or resampling.",
+    "metrics": {
+      "d_clean_mean": {
+        "n": 290,
+        "mean": 0.021302871790917954,
+        "sample_sd": 0.18862636937410054,
+        "min": -0.7382204694052537,
+        "q25": -0.076467910160621,
+        "median": 7.476781805357269e-05,
+        "q75": 0.11815402035911883,
+        "max": 0.8915016368652382,
+        "mean_absolute": 0.137977153824471,
+        "fraction_positive": 0.5344827586206896,
+        "fraction_zero": 0.0
+      },
+      "d_corrupt_mean": {
+        "n": 290,
+        "mean": 0.004282427968018442,
+        "sample_sd": 0.2051802665209082,
+        "min": -0.7679833173751831,
+        "q25": -0.11464883262912431,
+        "median": 0.0001687134305636273,
+        "q75": 0.12401153286918995,
+        "max": 0.6956438714017471,
+        "mean_absolute": 0.1528667095141357,
+        "fraction_positive": 0.5379310344827586,
+        "fraction_zero": 0.0
+      },
+      "d_common_mean": {
+        "n": 290,
+        "mean": 0.0127926498794682,
+        "sample_sd": 0.15126992533399658,
+        "min": -0.7531018933902184,
+        "q25": -0.0682052030460909,
+        "median": 0.020017533563077408,
+        "q75": 0.09928204324872543,
+        "max": 0.5116057825895647,
+        "mean_absolute": 0.11290333075114345,
+        "fraction_positive": 0.5655172413793104,
+        "fraction_zero": 0.0
+      },
+      "d_clean_total": {
+        "n": 290,
+        "mean": 0.07168507286797053,
+        "sample_sd": 0.6654343732809818,
+        "min": -2.8664718754589558,
+        "q25": -0.25007443875074387,
+        "median": 7.638148963451385e-05,
+        "q75": 0.3750770092010498,
+        "max": 3.500594620592892,
+        "mean_absolute": 0.4801645604845393,
+        "fraction_positive": 0.5482758620689655,
+        "fraction_zero": 0.0
+      },
+      "d_corrupt_total": {
+        "n": 290,
+        "mean": 0.004020750830913412,
+        "sample_sd": 0.6918568047960391,
+        "min": -3.0007531298324466,
+        "q25": -0.37496103160083294,
+        "median": 0.00018565356731414795,
+        "q75": 0.38773496448993683,
+        "max": 2.2501253858208656,
+        "mean_absolute": 0.5059703105418333,
+        "fraction_positive": 0.5482758620689655,
+        "fraction_zero": 0.0
+      },
+      "d_common_total": {
+        "n": 290,
+        "mean": 0.03785291184944197,
+        "sample_sd": 0.5242566439304391,
+        "min": -2.8430405128747225,
+        "q25": -0.2500051949173212,
+        "median": 0.06250493414700031,
+        "q75": 0.3125223945826292,
+        "max": 2.000369051937014,
+        "mean_absolute": 0.38389594638318725,
+        "fraction_positive": 0.5517241379310345,
+        "fraction_zero": 0.0
+      }
+    }
+  },
+  "technical": {
+    "all_atomic_pairs_passed": true,
+    "four_cells_same_invocation": true,
+    "raw_four_cells_match_saved_per_pair": true,
+    "saved_all_router_dispatch_verified": true,
+    "max_self_candidate_score_delta": 0.0,
+    "max_rerun_candidate_score_delta": 0.0,
+    "identity_atol": 0.002,
+    "rows_by_treatment": {
+      "unpatched": 580,
+      "unpatched_rerun": 580,
+      "self_patch": 580,
+      "donor_role": 1160
+    },
+    "target_site_count": 23,
+    "target_sites": [
+      "layer_1.router_logits",
+      "layer_3.router_logits",
+      "layer_6.router_logits",
+      "layer_8.router_logits",
+      "layer_10.router_logits",
+      "layer_13.router_logits",
+      "layer_15.router_logits",
+      "layer_17.router_logits",
+      "layer_20.router_logits",
+      "layer_22.router_logits",
+      "layer_24.router_logits",
+      "layer_27.router_logits",
+      "layer_29.router_logits",
+      "layer_31.router_logits",
+      "layer_34.router_logits",
+      "layer_36.router_logits",
+      "layer_38.router_logits",
+      "layer_40.router_logits",
+      "layer_43.router_logits",
+      "layer_45.router_logits",
+      "layer_47.router_logits",
+      "layer_49.router_logits",
+      "layer_51.router_logits"
+    ],
+    "candidate_target_ids": {
+      "CORRECT": [
+        [
+          1067,
+          3749,
+          61698
+        ]
+      ],
+      "INCORRECT": [
+        [
+          3174,
+          1067,
+          3749,
+          61698
+        ]
+      ]
+    }
+  },
+  "execution": {
+    "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+    "runtime_model_class": "NemotronHForCausalLM",
+    "elapsed_seconds": 727.4507994230371,
+    "capture_forwards": 1160,
+    "scoring_forwards": 5800,
+    "forward_count_scope": "this loaded invocation; recovered pairs add no forwards",
+    "recovered_pair_ids": [],
+    "no_validation_access": true
+  },
+  "recovery": {
+    "pairs_by_loaded_invocation": {
+      "7c4bffb6-356b-4805-bcc0-d8b44bc82144": 290
+    },
+    "operational_interruptions": [],
+    "final_invocation_actual_forwards": 6960,
+    "all_attempts_recorded_forward_lower_bound": 6960,
+    "additional_uncommitted_work_unknown": false,
+    "fresh_plan_forwards": 6960
+  },
+  "loaded_invocations": [
+    {
+      "loaded_run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "adapter_class": "Nemotron35LightningAdapter",
+      "adapter_source_sha256": "bc5f3a632ded2d93f6eaca576810cb152ebb99060c0f90f63428831d606980a9",
+      "command": [
+        "archive://execution/src/routeverify/window_donor_contrast.py",
+        "--config",
+        "configs/experiments/window_donor_role_20260908/nemotron35_lightning.yaml",
+        "--pairs",
+        "archive://runtime/campaign_20260908_D/assets/discovery/window_discovery_pairs.jsonl",
+        "--tokenizer-path",
+        "archive://runtime/campaign_20260908_D/assets/tokenizers/nemotron35_lightning",
+        "--model-cache",
+        ".cache/huggingface/hub",
+        "--mode",
+        "full",
+        "--execution-version",
+        "v1",
+        "--output",
+        "archive://runtime/campaign_20260908_D/runs/nemotron35_lightning/full_v1",
+        "--smoke-report",
+        "archive://runtime/campaign_20260908_D/runs/nemotron35_lightning/smoke_v1/execution_summary.json"
+      ],
+      "loading_info": {
+        "error_msgs": [],
+        "mismatched_keys": [],
+        "missing_keys": [],
+        "unexpected_keys": []
+      },
+      "model_class": "NemotronHForCausalLM",
+      "note": "runtime provenance; semantic repairs require a new execution version/output",
+      "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+      "python": "3.11.10 (main, Oct 16 2024, 04:38:48) [Clang 18.1.8 ]",
+      "runner_source_sha256": "3e4e96fd27c25ccbf708bc1b9bcc82e35d24015cc6a14025116f9651b8204fa3",
+      "torch": "2.12.1+cu130",
+      "transformers": "5.12.1"
+    }
+  ],
+  "source_artifacts": [
+    {
+      "path": "runs/nemotron35_lightning/full_v1/execution_summary.json",
+      "size_bytes": 32820,
+      "sha256": "ea9bc0b14aa8b300a6b35ff1ba842b6517767c594a0f7cd07afa4f5f2c26a51e"
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/analysis.json",
+      "size_bytes": 220365141,
+      "sha256": "c035bedc53902566ad945836c3eabe98fd36d787096128522d56b361fb320728"
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/run_manifest.json",
+      "size_bytes": 315040,
+      "sha256": "fad27d9c5aa5e2dcc12e495819abf9caadb9a4a4a9f30c8063d5348188f79a52"
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/attempts/7c4bffb6-356b-4805-bcc0-d8b44bc82144/runtime.json",
+      "size_bytes": 1394,
+      "sha256": "5f869939c27a7bcab091fdb16767bf5ff7eadc587a55edab22e64fe106a5eedd"
+    }
+  ],
+  "raw_pair_artifacts": [
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/015f8dbf5a851ba78d091c43cc14574e.json",
+      "size_bytes": 1109742,
+      "sha256": "22e7e05a88eda0ef61f0104cc4243db2d70616251b1c62d9e91ea98f9c22ec4e",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_1608",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/01888065d1566914a1ee4e12c97e1ffc.json",
+      "size_bytes": 975200,
+      "sha256": "7e16dbe6d9122b57643bfce60eb4a29d866b23bc04996bdc654f9520a7dce94f",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_2475",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/0379a5bb7d95fe2f8d95d55b23d04004.json",
+      "size_bytes": 729656,
+      "sha256": "1cb056a64c2c5af675482454fce42c4d3276639a06fb90b35d71710a21d4d022",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_43",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/03d08b0e77a75d2e175cbc2a848acf72.json",
+      "size_bytes": 1154557,
+      "sha256": "511b8429a5ff23eb52543d9b902cd9063f814e16a4c50ea13bd83aba77c2631c",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_289",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/0414031f2b714310d3ab6ee396d0b0ce.json",
+      "size_bytes": 1304757,
+      "sha256": "4a7d2e9213d7b54fd80fe7d46a32a5888107fa33dd8bcc0f72b178bd52fc2f70",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_145",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/04c7cc051aadeb1afc4b6428e7b45502.json",
+      "size_bytes": 1017631,
+      "sha256": "63ceafb0e58e5f74d392a19e0b8de7f8aa1d09f7db9befef58c636d959316ede",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_1721",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/05377e0f91a406c68a088081ba87e609.json",
+      "size_bytes": 966163,
+      "sha256": "dd09f7191ecbe5c20fdff1613635e3c788ac419d8bfa9bb174ea362feb7e4d5e",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_335",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/07c79eef0a4ce3c1ad9ee5a8acf1a7bf.json",
+      "size_bytes": 1580268,
+      "sha256": "02349efac1119173560c1c5d37c6a2a53c7ae9a9c9d7c5a12ba8ea68822e45de",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_380",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/07f4f57dc5b81425a73a63a8827114a4.json",
+      "size_bytes": 942755,
+      "sha256": "1e5cea2b622a2f1c943fa8cb2dd118240c1a8ac89f69a4e8c84ba20d43ce12dc",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_86",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/087f6129499caee88e4f3bc3a9281301.json",
+      "size_bytes": 756908,
+      "sha256": "f76b4d3390c719f50b85e2966b52050c93ea6f86f8c15fae638ee4f7fcbf5667",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_47",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/09717d8ae7be6f4ae8e53a3efbc739c0.json",
+      "size_bytes": 803689,
+      "sha256": "7e90bad93da80dbd8b776cde60ebaf1da3e2c970262a6a7e2276ca6d44d2bf0d",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1785",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/09c8d3697923b045d551cda4bd7d6697.json",
+      "size_bytes": 675596,
+      "sha256": "11d72d6eb6238bc27572b19cf1f7a097ab8c89b34832b3b5b6ad69e110432562",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_112",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/0a4c7a5776e1a9ab9968079b1fd19319.json",
+      "size_bytes": 1156300,
+      "sha256": "c210238347aca78045d2bf8080e120f28cdf1b2829182c090c6be74e8c4ad9e1",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2226",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/0ab679d3cd041902f9a8eb73b8550fcc.json",
+      "size_bytes": 1012523,
+      "sha256": "4ca7f42dd86a694321dac78bf77e125654100b6fcd4213bcd5b65cff69b3e480",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1606",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/0bc210b1e642d86e6cf64a310c21c3ef.json",
+      "size_bytes": 872074,
+      "sha256": "ca60f556fa5c41b50434fe7f4c6e2feca536b30ac6375f2368e962856d9735c8",
+      "pair_id": "prmbench/preview/domain_inconsistency_prm_train_p1_329",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/0df248782db669d2021da4af960a5116.json",
+      "size_bytes": 1584217,
+      "sha256": "c428736ef1d6bb31389e0401285075e7e5a2aef25b749997358ebba537b40a0f",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_152",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/0e0119bc4f068db7ad4143c4a67ec71e.json",
+      "size_bytes": 925413,
+      "sha256": "ad525f1571c06ab10afc21be264b62fa165687f587563e2f4436bda457af8d63",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_2201",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/0e3496352b00a83891ad4f104a90c28b.json",
+      "size_bytes": 946189,
+      "sha256": "e618185ba524fcd6a934cb3a368d0cc4d4b1dc38d30a73e7101680228ce87355",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_72",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/0ebd885b2100eb6a9daf6252e9dc47bd.json",
+      "size_bytes": 1064147,
+      "sha256": "05ebbfb5cb3b5885c73bcfad7d9b7b79ca8410a1eddcc10133c69e430b4a2382",
+      "pair_id": "prmbench/preview/step_contradiction_prm_train_p1_272",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/0f6075b954e2366f30784dde882e64b7.json",
+      "size_bytes": 836632,
+      "sha256": "8d8175558401a93908d1ce2c137763e51f0cf719a444de0da0e58c5e91b0e29d",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_301",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/0f9ffbc64936e9d87b33d2d2af1f9447.json",
+      "size_bytes": 1073408,
+      "sha256": "0b1fd99014b08a6c6573a2c2137e687c56a64033b63b04ca350f2e77f12e1313",
+      "pair_id": "prmbench/preview/missing_condition_prm_train_p1_272",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/110d868705bfb2c868038ec26e22bf2c.json",
+      "size_bytes": 1621562,
+      "sha256": "089da91662b1ca0d3d5becdca9a3593c961b429c9b41578d9d076059dd27512c",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_290",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/11bafb271bd62c9d0da85f8640fb894d.json",
+      "size_bytes": 947787,
+      "sha256": "2df6bf1a1011040b806ea97d57be3a94ef8369c4da20e9b43aba0c743faf04c9",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_415",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/1284723969b52c7951826876f566ae2e.json",
+      "size_bytes": 899452,
+      "sha256": "d5c1b13d731e4d24a92b726d3c2a56449b4aaea36a8d2413b233f9ff89dbf959",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_99",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/12cd8da3bcb5ef8a1241529c84004dd0.json",
+      "size_bytes": 1017739,
+      "sha256": "d0f78243e6551e918d3dd6189e896aa799d260d4b1178152d8638b61f05fdd61",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_160",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/130447f67c9d86860d7adbd1544c2480.json",
+      "size_bytes": 969548,
+      "sha256": "1abc9f63a20a8c37794b1bc85ff4c1d815e97912e66b31d6e1dd804e2cf5f26a",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_1852",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/1616d87297994b7317947a374973c053.json",
+      "size_bytes": 1118726,
+      "sha256": "c2350f05ec8225297e12a108d8398fae7fe97838650803f0440fbe7a77296885",
+      "pair_id": "prmbench/preview/step_contradiction_prm_train_p1_378",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/1729ebedb6f8e2fa74afeb6dfb2e84fe.json",
+      "size_bytes": 870482,
+      "sha256": "fd584717f56de6ebba9de94abc57fe0a7aad12c73b79717096d52639512298a2",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_442",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/192d352c8ee3fbc429a2ba02b0679012.json",
+      "size_bytes": 1362438,
+      "sha256": "81b18afbd1ab0cab7c88eb53bc54aced59ad5a951c65043ee63d81a1d9ea6379",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p1_58",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/1a6f4bc34d5f620c801eb95238174a9e.json",
+      "size_bytes": 1189515,
+      "sha256": "72160f9dac4c85b22ad3408967e326cfb54840e07a1f15f2c9568cceba445025",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1956",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/1ace88222699528f5fe14f51ae82399a.json",
+      "size_bytes": 938191,
+      "sha256": "3eab46b54ba2b80d3e45c16e27e55b2940c013742a89c15c7116ac66192bb45a",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_3",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/1adb3a4dd476c9845173b1163e251a19.json",
+      "size_bytes": 895552,
+      "sha256": "f11d35c5d182808482d3014a5e09b76145eb6ce8fb83a0d897bdcd78471ae2c8",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_77",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/1bec3ded58023cb47d6da0137bf51d8e.json",
+      "size_bytes": 751267,
+      "sha256": "4b423fa7aad7c0bcd4919118b181837a750fe6cd861da521dcb5d2fcdd5d22d7",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_376",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/1ca19bdb81d65439984084302b486280.json",
+      "size_bytes": 1503189,
+      "sha256": "adf930fd3f1fba30dba172f69d9bfb04643304509ddfd071c9c990fe4607a9f9",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_430",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/1db2fab9c083c3afa9c26c9a4c1578d1.json",
+      "size_bytes": 941883,
+      "sha256": "ebd649788d50db91027081457270a7aab889e46575a45bddc742f2bac9e4189a",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_45",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/1dbce289fb90474ed494c4d5679c5ab3.json",
+      "size_bytes": 846439,
+      "sha256": "6743337a6d031c0fd4cacc701f9e8c0ff81d32441966ccd0477371b5d2de76b1",
+      "pair_id": "prmbench/preview/missing_condition_prm_train_p1_459",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/1f8794a8c8159810ee63e0ceddddcb3b.json",
+      "size_bytes": 1115688,
+      "sha256": "d3604bb8fe19eeb174ceec850ee7561bbba83d5a434c97e272777e428e615be2",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_1228",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/1fd275cfc201e92447a8cb70ca52f62b.json",
+      "size_bytes": 5984888,
+      "sha256": "e5dc5f54bb28a6eff5d32bf1857df9017f62fedffb1927d68cb9bf3b76c53c85",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_1958",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/21321a6836accd8c09cbe9fd41f6e09f.json",
+      "size_bytes": 1196591,
+      "sha256": "ed6755ac80ed2674d84f1c16ca8983398a626a281954a65baac42558958efba6",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_153",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/21eec83771566e73eab489ddb1808355.json",
+      "size_bytes": 1228489,
+      "sha256": "37346d1dd7b6c1305c38e14b6a351881e5d63467064d07ffbfba3055a3c49d69",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_1529",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/22becc42697a2e0f8236415abdaeb41c.json",
+      "size_bytes": 872522,
+      "sha256": "da96f32fbb1ac882ed7a642c9bdb7d05f395a67d0cd03b88a9dd920102837ae1",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_442",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/230fc53dc130d8e1c26942e11f4912ae.json",
+      "size_bytes": 1073685,
+      "sha256": "5dc0107efe8c112657be6b283cc319d740ab9b7f537b0471abf2fded4f2ccb66",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_12",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/23ed8ae9111507b7816760e2a32b665a.json",
+      "size_bytes": 1024843,
+      "sha256": "715790252b43d6c4d9e26ceb468ce0d35b716f0167c41c1a3b0fd838f1cd83b6",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_901",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/248575244f86acb87635d48716a10d01.json",
+      "size_bytes": 1030407,
+      "sha256": "c99bc731dfe7fe0c3eee92bd108046941909460402ecc62dc84202efd0a227ae",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_1723",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/25d2a2963cde9330dc9c93e11ed5993e.json",
+      "size_bytes": 641270,
+      "sha256": "aed5429bb599d89c399c6a07696329f76f0476d6988e3ca68f541a271954fafc",
+      "pair_id": "prmbench/preview/deception_prm_test_p1_39",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/267685667dad377f9eb0e646ba653116.json",
+      "size_bytes": 945200,
+      "sha256": "5ef7506e4f019ce7981cb4bac66c8b72ca0a4e0a913fe944c329718101066dcf",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_282",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/26b3987c37ed535abfccf1e200c86e62.json",
+      "size_bytes": 1521193,
+      "sha256": "a4fe894a08c59ee96c38a1a9a658038c150c59d49c7b91963e651c73ac2a8af0",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_116",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/2724e054f97be1aab16b119b79f4f0ec.json",
+      "size_bytes": 1315509,
+      "sha256": "ce86fbad35feaca41296006a4de78480279a67378978e6ba61f26072ac6b26ea",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1716",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/28321e99c283f3fbd3a0e1e0afd167af.json",
+      "size_bytes": 844807,
+      "sha256": "b2fe1730277c06f2ebe15a0b028741b253fe0e83a01dc75f780f9a38c6e07c03",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_411",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/28ae60a63b344f25b575447880a3ced0.json",
+      "size_bytes": 965175,
+      "sha256": "f0488e9eecd5b1d83850f904c27c7e78c9d3b301687e8fe2cb5fde4d09a74620",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_58",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/2a41c3b8b36210338aee7e59ea84db15.json",
+      "size_bytes": 926273,
+      "sha256": "3630ca6e726224402aba7dc20a35034f0da7bdcc6c91125c8b86ec7646d27437",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_131",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/2a8e40dfab6d0bac57c9499e5fec21e6.json",
+      "size_bytes": 983286,
+      "sha256": "c943b4b3d19f9127465be8205aa1ba8d754bded2e010b5651902f26d38fceaf1",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_381",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/2ab780078fbe2fee368f8e5037a79775.json",
+      "size_bytes": 976453,
+      "sha256": "44fd67962a3b56a00e85426dfb9810f8144100f1f12a24feee494ce785d0f46b",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_287",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/2b03fb042aac84588f727fcee49313c4.json",
+      "size_bytes": 1191067,
+      "sha256": "7a90e356ceb56dc9bdfa93cd316f6f7f445785a3660e64f376b1b22f3698856e",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_106",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/2c017bfc7b71abb06707b2568253bdb1.json",
+      "size_bytes": 1084603,
+      "sha256": "e5ec684e13aaea4b1ba49a71c5741a261c97d15d0b9e0cfc7669a140b1fceecd",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_182",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/2d75e4252cb58fe40627fe6a4277c99d.json",
+      "size_bytes": 1185152,
+      "sha256": "7fefac8e39877b1ba2f869b379ea2772dec7dc855019808c3e0d3ff87431666e",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_106",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/2e9174b4028f313139a2d4819fff6866.json",
+      "size_bytes": 1144961,
+      "sha256": "c432acca01bd893fd65446459a93e8ef8a13d4aed490163bc4d0da2fc4e47866",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_1956",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/2e9239b1d2317e5e1123ebd3de36281f.json",
+      "size_bytes": 879444,
+      "sha256": "7f3de83fc1585c14a672bdd9400cbf3c76c21c1e28272e32cb8b07d15eb61829",
+      "pair_id": "prmbench/preview/deception_prm_test_p1_0",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/2ed9356a6fce1935026cd10dc1783ad4.json",
+      "size_bytes": 990373,
+      "sha256": "0563de46831f0217234f29f64bb61d86fbd837686392a0420b8bcddb67709f85",
+      "pair_id": "prmbench/preview/step_contradiction_prm_train_p1_20",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/2f8fc14479d0248086ae90d7aafa402b.json",
+      "size_bytes": 922608,
+      "sha256": "c6b21c2fe0952a4445c6dd66847cd54236001ccbb5f9522bee1604e88d5d6d76",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_246",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/2f9a9fcf8c51ab2582cf80bfcbdf2c95.json",
+      "size_bytes": 1296240,
+      "sha256": "70720bc38a29dd1a17be242bd441d79d2d1bdf396afec99eca25e081c69c5983",
+      "pair_id": "prmbench/preview/missing_condition_prm_test_p2_2490",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/2fa8f6b710ccff71887c775a07246ffd.json",
+      "size_bytes": 1144335,
+      "sha256": "4ad4df4385b3511198799470edef71b073adfb3b9a9043d89f14806ef476f124",
+      "pair_id": "prmbench/preview/missing_condition_prm_test_p2_1599",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/303759e1fb6a8dcf20fb950ab53c9d4f.json",
+      "size_bytes": 1806482,
+      "sha256": "8e23774f7bb97a0fb0cbaa4139777a9a63b12b2d8986b2ab57aa3c327eab31f4",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_173",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/308436c37c97f4050038310e9790caac.json",
+      "size_bytes": 1204330,
+      "sha256": "a31bc11bbda8a7054c39e3f412e1edc5224279c9b771b6a73616c2af90486b4a",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_93",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/315f1a919afb7106348155e10d0a7c7a.json",
+      "size_bytes": 1222522,
+      "sha256": "20b089b271baa4be8217c6e0a78f47059c20e918787d0113bfafde46ea7d4664",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_360",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/31d94ee87c73851d9130924b71b0d982.json",
+      "size_bytes": 1607704,
+      "sha256": "d84412922528c502188c5ddcbe76d15f59bc0640e97124e1758413d1c205f2f6",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_1218",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/333d5ca44cfbb861a9198299b118560e.json",
+      "size_bytes": 1144475,
+      "sha256": "eeff43f63862368049a7914cceea5000bcb277acc3ec56c9b5b1b6a7662763ee",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1559",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/34473f871d02fa0805a6e7f0707afea0.json",
+      "size_bytes": 1061074,
+      "sha256": "1b891d76051e27501af6a29d42117cfbfcb50cbab757857f168d14d6bbe3c197",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_2208",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/35dfb141ca9fe55cdbeb894f7bede576.json",
+      "size_bytes": 1046709,
+      "sha256": "ae28bd43b1c93e36d2176f2d47dedd081a8c61688f7f8c3207ce4cc848a2bac6",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_105",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/369c50ee74fafdfb753b162c1c61311a.json",
+      "size_bytes": 868683,
+      "sha256": "b28e08e057f1721c5ac8131bade3271f94ce4b6f99d46ed3196b2ca98b9a1760",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p1_81",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/36c021883ee0ef0db5ea33f79c888d4a.json",
+      "size_bytes": 1458727,
+      "sha256": "b0d363060616b9cd1edd4ff815e14c8bcd224516cc3441daa787075a57c83a66",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_2532",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/36cc9f85a2d26512b19d61dfa5853b48.json",
+      "size_bytes": 1045991,
+      "sha256": "db6fd49fdfd957f768311c6e44f7b1c69c0985d882e466d2dbb5768b4b615581",
+      "pair_id": "prmbench/preview/step_contradiction_prm_train_p1_146",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/37005309f9393041e08e10a94059498f.json",
+      "size_bytes": 856485,
+      "sha256": "515294424165f09a91f66bb3ffa94dcf563e1331cb278ecb1c05e0bc67e9a9fa",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_83",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/3764f9b6695c5b4e1ea24d398a5d0c86.json",
+      "size_bytes": 1269221,
+      "sha256": "555f83f76012c4ba45889d54121f0c026cb4469584548d7b54ab1b7e9a5b0b62",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p1_14",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/37db107b8d20c4451c175b1e47d4e6fe.json",
+      "size_bytes": 911437,
+      "sha256": "9388bdfa0d80c7c2d3bb547a51599552cf4992c9d8ca1b0062203179d3fb0f59",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_61",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/386d00e673bc17269e4f970c679f2eb0.json",
+      "size_bytes": 946697,
+      "sha256": "8b23c03dbbf8757090b7b7e95fce4be433d00abb1a988015f4b186a2f37f88ef",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_282",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/38ea52def2a48bd604c4d2f20a628c35.json",
+      "size_bytes": 1127620,
+      "sha256": "49c195fb8c80e1df359982fb1203120c6492c370ea139dce6bfd71267a5e298e",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_437",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/3910cb2af1845086a0090db2a68b5cad.json",
+      "size_bytes": 861909,
+      "sha256": "27806fe8ccfddc52c44a0e4ebbd4ac93ea2b8294d3175507c57fec6e1c355936",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2709",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/3a7060cc53c9a541687d28cc648070e8.json",
+      "size_bytes": 799187,
+      "sha256": "d8d60e630c29957cd64aee6ffc536662e9a7bea97fa760e7fdbb5970a648ab33",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_376",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/3cc42d308c010dcd14a0ad0e1b73f824.json",
+      "size_bytes": 1138929,
+      "sha256": "8be76b31a2e90050b3290bf69b38601fc10589bbf1f29e183c35eed4993e93f5",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_461",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/3d8fd12a487fb6ef895d17b17c4c1602.json",
+      "size_bytes": 795176,
+      "sha256": "2127e5abafd3cba573dc8625a38af7fdfbec9f71dd9397c716bc9b358b6ed40d",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_29",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/3fb86b58842405d5fffd23879ac51612.json",
+      "size_bytes": 1379387,
+      "sha256": "a771dc4e40441e1f6cd697cefae6aa1d5a4dfa0f2b5f0d3eaa659a3a9a6fa35b",
+      "pair_id": "prmbench/preview/domain_inconsistency_prm_test_p2_2628",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/40989b4a5bc6238f4af2fd9e39d770a8.json",
+      "size_bytes": 908097,
+      "sha256": "eb0cefb5c097f84b76dd7478cd31227faef50fc9777604f9567004a2b8feae47",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_98",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/4129f235b575d4d645f2dc594281b40f.json",
+      "size_bytes": 1268672,
+      "sha256": "c358062b3f2ceeeae8267cb7c63b41a477a3e40a9b4f95a1c3910993b2792cce",
+      "pair_id": "prmbench/preview/deception_prm_test_p1_12",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/418430e3f990e95d58a84efd173717f1.json",
+      "size_bytes": 1096001,
+      "sha256": "7f3ae4aabb37dafb724af6ae3b065a23c884f671d423cfdc44027e67a1fc1ff8",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1634",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/42a16064c7dd1db090c974b9197a22ef.json",
+      "size_bytes": 1140401,
+      "sha256": "1080c8b013ae2374c1cca1baa41f3441c7caa7bd14725fd304b2801bc2db101c",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_76",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/4410b008229bf1565c649d31f13e1062.json",
+      "size_bytes": 1054100,
+      "sha256": "4680d62cb2da37607d4c0e87812e507989587593ecd899766ae5e51b3c240438",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1292",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/460391c22185cf19be2572a098064ab4.json",
+      "size_bytes": 982714,
+      "sha256": "e102a4b3dd7e945aa1311708ce98493e13af2d06ab5673561c0f7f2695849e07",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_142",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/48e05be26a1546ff4de98845639d21e3.json",
+      "size_bytes": 938632,
+      "sha256": "8da84531b15b8748678c4a332df664212769aa4496f85d112045a568935b8521",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1286",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/4a2040cf0a28f3802df61e8f9aa7324a.json",
+      "size_bytes": 1078263,
+      "sha256": "001640b534f0c26daaa82ba0e365df6dc75c5f2cd75d358c68a11ad2df6743f3",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_414",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/4c4c063f5f0a1f8f77cbffed2f6c683e.json",
+      "size_bytes": 1044281,
+      "sha256": "0c7ee5228f19c41ede1a5df238f57586cb46aa9632ac30c6214d071b13815a4b",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_88",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/4c5879940c2949719e06e66c6bcccc44.json",
+      "size_bytes": 1074226,
+      "sha256": "62ba14c40d84e2978241f3ce321a40a4fdf3db7103203a2cf57c77c50007c187",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_261",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/4fc537ab970d0a1a4810ce6b514e54b9.json",
+      "size_bytes": 957613,
+      "sha256": "c278aee94daa25ba2d83d16c5ed39df830320e01048afa96774bd3a247fb95fa",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_416",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/5192abf4f2062dac9a7e6373bd6d65e6.json",
+      "size_bytes": 1059698,
+      "sha256": "2c90ef7cae7433743d92b9089f6b248f4c1d5c5e29f1ef5b0243c78faff2eb27",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_671",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/52bd820b734762d016d0cb29b127ded6.json",
+      "size_bytes": 1061330,
+      "sha256": "fc122b57ace2f04dd0a61a9475bcf22082f306c02ffbeecbcbe2bb710906cfc7",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_399",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/535a40637e553e7e4d590857ee640224.json",
+      "size_bytes": 1019897,
+      "sha256": "1d28c39969d16d192d55c0055324d8c2293602f98561797bf206b7d0bcbc07bb",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1759",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/54cb09bdcc79ea65d552fb3ce665da01.json",
+      "size_bytes": 1417586,
+      "sha256": "6bac80930f8c2a39ffcdf7abba316ebbedc77801700ab14062ea67f1ee961311",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2127",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/55bcdbf705ab7960f2b366e53a40b872.json",
+      "size_bytes": 1053305,
+      "sha256": "bf2fdee88c8bab7bb52ee4ac6d13f4388649edd953b9b171465b649b2a4a217b",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_81",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/55f41c901c1e21735b17137ec1c1d277.json",
+      "size_bytes": 920409,
+      "sha256": "950e1e89d41e2b52a5121ca12203fec6b0a56735a8526585e9f0e06ff9614506",
+      "pair_id": "prmbench/preview/circular_prm_train_p1_211",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/5730ca7f1171b4179af35b2c232847ab.json",
+      "size_bytes": 1020270,
+      "sha256": "72e8b4621937f9fdd9dd44d2edacfe25af5a090e0da994cd992bf8ac7d747774",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_118",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/57601452b8b637f62cd93b03c632370a.json",
+      "size_bytes": 976326,
+      "sha256": "3c48d2251a5c6a35f2bc18c019e0ff0674be1b7b252d83fc4a0872bea27589e2",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_441",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/59704f6a5b95a036acfad851ea0f670c.json",
+      "size_bytes": 1057129,
+      "sha256": "0ab70a3e93c82313964f52b6f68b9430fb374931c4ed00dd5edb36a17bbd024d",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_1058",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/59f9b597462e48c9c16bf206a85444aa.json",
+      "size_bytes": 1067130,
+      "sha256": "728d67dd638b835f0c3a4c197a15e831b7f92af5a4ede79d366156d2fe5a68e6",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_2126",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/5a88a2599ec8b895b8e541566d504648.json",
+      "size_bytes": 1017853,
+      "sha256": "d5f98da45afc0a9edb8453b4b59982774d890027b6e4336f92b1989799f93c9b",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_96",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/5b7767c54e0e23052dae2bcee7a2b0fb.json",
+      "size_bytes": 802407,
+      "sha256": "d80ba0ffdc9883b516844091cc9ab0fd5b6bfa81ad42e9af55589a79f324b716",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_293",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/5b8bb2e82ade53c40dde75d770492dbd.json",
+      "size_bytes": 875223,
+      "sha256": "ce3385e78ce429c7cbc7cefa6b09e93eefb2391a873a32d9c1439a10377a6cb5",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_430",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/5d7030bbf5e299dc0896db46a62b9f74.json",
+      "size_bytes": 946045,
+      "sha256": "75ef807ecafccd1b48b91ecdfd8923482776d0405fc06ce0f6709ab155ed5962",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_450",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/5db32fe124538c17f8d39e2d935e84f6.json",
+      "size_bytes": 1101694,
+      "sha256": "e9459b9416058f50e2ad49eccd2d678829714fffb05a2de0d588e495b715adfd",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_1927",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/5e52fc02038f9fcbddfd16711617a05d.json",
+      "size_bytes": 1274545,
+      "sha256": "ac364e62090f69773d8c06a4d19279e4a4c0925d699482a26beab65a635040fd",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_64",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/5f96c990af978a519c2703dbc7406551.json",
+      "size_bytes": 2199514,
+      "sha256": "af15ff7f715c8fd3cb14918ab6d92a172553f18d2dde97215907f5947db83f21",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_736",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/60f1eddd195f8e97ed1822589ec876a9.json",
+      "size_bytes": 1058757,
+      "sha256": "e0943727a0e7b51f11a31388918de09095a6f4dde77344efaede090cf41bec04",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_244",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/6259a198d633d67d79fcd0260250248d.json",
+      "size_bytes": 1025301,
+      "sha256": "438f6917beb009e97aa75d461c02a6f7105505541e73522803c50a9c617e3099",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_783",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/6279bbff5e5dc1eb562641a88c815195.json",
+      "size_bytes": 928899,
+      "sha256": "3a9f118c48377a256351fe64d4a60da387329378233459a2d086e19a4817bf09",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_329",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/638e2c5f632bf1623d094ff4d1bae683.json",
+      "size_bytes": 1284061,
+      "sha256": "3505c53aad0dab01048f31f03197b83e6168a256069806a22381a5f8c97b67f0",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_2095",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/63e401a0bd929ec46affb4e0cfca5b8e.json",
+      "size_bytes": 1141923,
+      "sha256": "b97ba502b44679f64e60ebcf4f668207f2b071e2464af0147a1e968cce2bfca9",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_819",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/64e082af881270e290685edf4a0d5d7a.json",
+      "size_bytes": 1083488,
+      "sha256": "b029e685c8005b35ad118ac451e1c039157dab9c9c7d0e18297d647bd3dcc625",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_76",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/6526ea72be48faa1dab942462e186611.json",
+      "size_bytes": 1318529,
+      "sha256": "b67a935ee52bb86f38b6c8d3c1b2034bf9ecf7a67d18755d24af92be1c93458a",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_278",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/65745c18cec4e5b579e8d789d86334df.json",
+      "size_bytes": 1015267,
+      "sha256": "ffd5ada48464683d34d7bad9bf147ca2c646931614a3fe8ee56dd8b1883c9602",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_342",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/66deb86f67efba21c2a8c785e9af8faf.json",
+      "size_bytes": 1151644,
+      "sha256": "707bab77d904b5699b1c4abb937b39449aeec70ad11a49a8dfb354cdecd3906b",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_1715",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/67ce13422209107f7e157eb766e4b628.json",
+      "size_bytes": 1211663,
+      "sha256": "807bdd4efaca8ab144ce4586848beeccf731567f61c436ed6ff74e3ebfcae8f4",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_927",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/6837c0dfb02e9b094526e379bf31710c.json",
+      "size_bytes": 1053018,
+      "sha256": "8ef9e8f0c31ef0218b3744171af1508fd0dc26537d990b231d1c586d51506026",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_382",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/6a72fe722fc7fed91458802a6c8d88e2.json",
+      "size_bytes": 1041226,
+      "sha256": "d07750322b693e177186493793b3740fafe300e0f2cb5fcfab6fdb18d8f4b061",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_120",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/6a8ec621bc09544a8192423566a8272c.json",
+      "size_bytes": 1056785,
+      "sha256": "975d22124c4817d2583350b48667370aa0245ff3d27e35efb54044f1878d76af",
+      "pair_id": "prmbench/preview/deception_prm_test_p1_60",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/6ab1b100fad88713bc9016771c9e66f3.json",
+      "size_bytes": 902483,
+      "sha256": "3c07c4ed7c39643d6331af0a3c52340a5893b594acb31dc5a67850920edb2f54",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_464",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/6b81d18d7f2adc520a34c956a2ca5c45.json",
+      "size_bytes": 1200576,
+      "sha256": "66cc5302bd7d3d1ba6aa89fb314727621ac424d10b552883371a1277915d0fc2",
+      "pair_id": "prmbench/preview/missing_condition_prm_test_p2_1488",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/6c80cc53f237cb3125c73eb66c5c0fb1.json",
+      "size_bytes": 816546,
+      "sha256": "4f25e052664cd87ca625cf63e1bc3380ce50b70d080f75bc2b3b9785a9417be3",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2375",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/6c97738fb801a57847b7aa6e9c6dfd3d.json",
+      "size_bytes": 1119802,
+      "sha256": "0226ffe4b0458911d7ad29ecae656367f38a227ecf829f24b5e58c11461e21a7",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_2580",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/6d55a8b1ec22830f285f5ea236e54788.json",
+      "size_bytes": 1184526,
+      "sha256": "582a9c9db96ed274d18fe80402305c35b8c29735e291250e7a4ce80d099a6e22",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_468",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/6de5c0c1d738a0371dabc469c257cc69.json",
+      "size_bytes": 1186358,
+      "sha256": "9545f5e462f688c7b7ba76ba515d26169e9167b239716a7e0c636e9b1e8842ef",
+      "pair_id": "prmbench/preview/deception_prm_test_p1_27",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/6f37e15fd6b2eff402bc798b7bf9066b.json",
+      "size_bytes": 1214184,
+      "sha256": "d7ff9c6a6e56edfd2ecaaa822b2fc48269e8181a197a926ef58ad11e9de1b97c",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p1_103",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/6f641a81c88f97c711bca471abc5b4d6.json",
+      "size_bytes": 3793597,
+      "sha256": "16255586657c4bde8d4f0a29b5e621e4ed003487d2993ef0e8abaf70492cd630",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2562",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/6f747003620e4ccd513a735f48c7774f.json",
+      "size_bytes": 855746,
+      "sha256": "5e250987b7325c933534f13a47e569ee58282ce0c7c2c110adbc108c1e0e2ec7",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_460",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/71375632c15649d2b56e5405fc072d02.json",
+      "size_bytes": 1295114,
+      "sha256": "c1c0dfb6951c720377b8b82b3eaef6ad8175d6d65de397a1193bf9e4435242c7",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_48",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/72321381b1d377dffbbc92bc0e0c0fd8.json",
+      "size_bytes": 731920,
+      "sha256": "505e7bff17816c33c9e2b8d87f589857708ff6b25c2b7f127c698013cdfe57bc",
+      "pair_id": "prmbench/preview/deception_prm_test_p1_10",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/7297c94cae485b6f1309117be394ad1d.json",
+      "size_bytes": 738076,
+      "sha256": "a0dabbd96a0404bc9af1230308f44e9f2ff6f7afe4fb8e077f29ccd4222409f9",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_144",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/72c80e88facf05aaf245d4e77bf08084.json",
+      "size_bytes": 913587,
+      "sha256": "f724677c7cdba3ad1769f8433a9e144c6bdbe7e385e9b4db6f2ec23435670055",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_182",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/732455f5bfffca0332c43eb75d50f98c.json",
+      "size_bytes": 995250,
+      "sha256": "1afbb4e228df3530efcd230243fe5a253023771317ac112d67d61b1df6d0eed7",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_55",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/736eea7aa96f64578c1748125df79450.json",
+      "size_bytes": 800947,
+      "sha256": "9dd33d8f130dbb5123de099ee8024070294221ebdd9e6f0a881a8091d3576374",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_459",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/73df8dd5decd33869e581eddb50b4fb1.json",
+      "size_bytes": 1147546,
+      "sha256": "7384087f4c16c78aed1e6bcca1c2e65792b63e0afa665ae4cef6b20454c73309",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_1784",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/7459a19e560eb11f04c7dbd94f7f85be.json",
+      "size_bytes": 1061078,
+      "sha256": "86a3f9db4679fe838dab07f0b971090247e90409f283476261cbf5d7a218a688",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_1928",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/750995a8093e3f3180b95a20b4c0ca2e.json",
+      "size_bytes": 1412352,
+      "sha256": "092a4a55963a457e8a3419073c1c2ed37b17697ad4fd568e9f649c509e047a6c",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_1496",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/779e7a985d974fe50df695f5a570666b.json",
+      "size_bytes": 1131219,
+      "sha256": "8857c340231eee37b8aed99ab6afde5d68f6b36250ef51df0dd1efe392c4ac8e",
+      "pair_id": "prmbench/preview/missing_condition_prm_train_p1_275",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/77c397b9cd2ab9d4bbc2571465b54bd9.json",
+      "size_bytes": 1765320,
+      "sha256": "af48338b654cb8e245a464d11b497925b198eba3b255b29889c0c7e6a565483d",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1351",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/77cdaf41f21f3d89d18b25fbd34dc608.json",
+      "size_bytes": 1358068,
+      "sha256": "397075432c0e47f152683b0f156e3015cda2abc174a691bc786e8074fb4a5c33",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1128",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/79de99af7870925b81b20b1fc92ab751.json",
+      "size_bytes": 1144786,
+      "sha256": "f7aeb6349b06b9930679d057761f9f523ea6a099c13c20c96e05c4c794f14b10",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1721",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/7a41c54551bc0b3427e96a48aa5ba92c.json",
+      "size_bytes": 761491,
+      "sha256": "cf95055b51e121bd25dc8edd8fb13f8040ec947ffcc80f3ff80945e532f7c045",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_56",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/7cc7e6f7044c7b3a86d38d0b55a87a06.json",
+      "size_bytes": 1387048,
+      "sha256": "561ea607e36c2528b5ad387710041c757629cc1cb9a2639a8f7dcd2cbcafff25",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2576",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/7d096ec7d0ed034db5af86e54ad0aced.json",
+      "size_bytes": 1238795,
+      "sha256": "e1054c4cd8105d3b4485e5b9f707b125f25fe8969cb09f657ab02b91a4d47317",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1935",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/7da4c7e79410a2ade60957bc0e18884c.json",
+      "size_bytes": 916499,
+      "sha256": "9dea431a5918769f77e447b61582652ae135aa906b35668a37a933325d8d0398",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p1_77",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/7e44c3138b39ab4cb77bb0a526a3e40a.json",
+      "size_bytes": 1068746,
+      "sha256": "8b489698e1c9e28b72031d068a3ba8a7530397f02e95089092e75215e124742c",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1920",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/80328d0b0eb6820b89d45847a268fca8.json",
+      "size_bytes": 857668,
+      "sha256": "54b8cdafde4bbbb56ab595879ec2a60cc4d2a6b97b1e1b0db7426d3bb9f42e43",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_84",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/80d0b1d1b0e42dc02f808dd319d0d649.json",
+      "size_bytes": 936486,
+      "sha256": "e8eb8663e7f42d5310175e1d05e2964bd8959b04324202bccaa666ab4f3fc75e",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_61",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/80eb7e9ecac7fbf9a7198dd494d923d9.json",
+      "size_bytes": 923675,
+      "sha256": "8714ca0732e53b0662b03d884fd843d626b2fd4a899a2a2ba602b924860721f0",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_229",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/810e8d4418d8c67a9e24b78a9ccb2d0c.json",
+      "size_bytes": 988570,
+      "sha256": "4f1da1632fa641c71a9d5724043ca703c6fe992dd4985352b26341de95b0bcb8",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_261",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/824233f3216f15cb7dae5c420b713f1b.json",
+      "size_bytes": 1063483,
+      "sha256": "b48ddbc42ce719d05aca5e688c8852b1076e5a0a889eacc23c3ba34e6f6a5627",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_272",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/83ea274bd8f264cc3bc21a87e257c7ee.json",
+      "size_bytes": 792289,
+      "sha256": "2750d7c2e88f9af35f387501ea86a9e4942a4b002b82d5b8f8c037daf9bc9a19",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_259",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/848d1ea01f7beebb59becbe1c6e2d399.json",
+      "size_bytes": 809736,
+      "sha256": "3db0a53d41cd719a79f706eb0be8697ebd36df5054559672e8bf6777581ff53a",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_208",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/84b2dd29398cab568d99e8c7b0b160b2.json",
+      "size_bytes": 913480,
+      "sha256": "1554cf98239685a47d2705f013f46b03569dfec659d3d0c4292f7063e01c5dfd",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_88",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/85948b165182f447bde08d24f67a7e7a.json",
+      "size_bytes": 894168,
+      "sha256": "991af588273278fb2ee4f88e70d8f23dd63aa6009de87a92333bddad56ae8c3f",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_32",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/871bc34926f6d2a7a143b6a2fa7ae56e.json",
+      "size_bytes": 1181888,
+      "sha256": "065cf0cceee5c79299e8a022286c3cd22c73fefa688db7842940eba3cd9cee30",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2050",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/876f3d08e467daa0a9d939e312fc83d0.json",
+      "size_bytes": 1031727,
+      "sha256": "86c57a4e8a0f54d4a8d8a88e8b5679667c7864134dd8e5aac326b2e9623299cc",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_86",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/877ef40b1288bb955556e012770d858e.json",
+      "size_bytes": 1226020,
+      "sha256": "639380dbe94c1277ebced2be227de639593a53e6fb55a1b4864bb7562aa9d5f5",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_1362",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/88e5e9989e91a27ecfb7f29f3f8f91c9.json",
+      "size_bytes": 992804,
+      "sha256": "34424993d8b4d5f9d91c0a988e98bb44c6964897b2304129dfb5d1410b8cdf06",
+      "pair_id": "prmbench/preview/deception_prm_test_p1_98",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/894f07dc87f6f33db306348a4572844d.json",
+      "size_bytes": 1428619,
+      "sha256": "d310a572e31bf392594ff8f2d0fc7403319219ed1f4cf28779fc5d471a5d6182",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_1714",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/8a5c9f9aa3eb1faabeaa8cb128172ef0.json",
+      "size_bytes": 1111501,
+      "sha256": "c47bf1bd07d9962f4fef58a7bf700b5d5a2de7a0d760d85216bfdbee09d892f2",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1518",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/8a8ae23ad7ac0832084d6e760c7b543c.json",
+      "size_bytes": 893622,
+      "sha256": "75693bb3e339fbe56318ac34385b1650aa0a5c8c2fbfca03c6561739a9774892",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2071",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/8c12eed394ab95188387f601c8d92835.json",
+      "size_bytes": 911976,
+      "sha256": "59a3487735be578b3465a3dd3a679b4c812a2e2950e9d2f02f2cdb2c776c5c8f",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_288",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/8d53156cf32c1f8fa9fa6d7a2837ca0f.json",
+      "size_bytes": 835201,
+      "sha256": "bbc47e4798ac1e1922cb165f7c1e07f327e98dd4d4b27b43eec7fbd89ddf3954",
+      "pair_id": "prmbench/preview/circular_prm_train_p1_421",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/8dde166d5be2129db8117918dfc24ce4.json",
+      "size_bytes": 1475716,
+      "sha256": "85bb4661c85bd6e6964e309b1c7b5d4cb44fc2d3c27528e2578c9278207ac576",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_336",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/8e2bd2d9df46f1b623851486282ac63d.json",
+      "size_bytes": 959071,
+      "sha256": "6516188a63a18f2b9b0249bc1c83647bba4a9374eef860314ddf32bf91d7b1df",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_362",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/8fa4ac987278abd8adbac43e1ccf3266.json",
+      "size_bytes": 738259,
+      "sha256": "77063673c79c36931e20dbb7704f097ad10b5df698a6167d2248b667eeab83d8",
+      "pair_id": "prmbench/preview/circular_prm_test_p1_54",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/90e9ca8af335490aeaa041095fefb8d3.json",
+      "size_bytes": 955754,
+      "sha256": "eab56117379c30f17b3be9c34e877e779bd5c6a9095480c37eabc0ca836a0f13",
+      "pair_id": "prmbench/preview/domain_inconsistency_prm_test_p2_1956",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/9161997017cab85e5645249b3dff33d6.json",
+      "size_bytes": 898704,
+      "sha256": "0e966aef252d10fbead8ab781a60492836bc3d7b2b9d352f3060d0d1405e320e",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_2517",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/929fdda6d7c1432bfc55a5a9644f96e7.json",
+      "size_bytes": 809902,
+      "sha256": "1bf680439a465eb0fd9d3adbf04beefc870de3c401fe08329d439643229e8f5d",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_20",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/933094fa1cf64d852c4159fdbd2f7813.json",
+      "size_bytes": 926471,
+      "sha256": "7f7e66f2dd9436f0a945730c094645b764bf97961b317f2104b9d8f70c48fc56",
+      "pair_id": "prmbench/preview/circular_prm_train_p1_310",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/955e53af5248070eb1049003825f05a0.json",
+      "size_bytes": 1423268,
+      "sha256": "63de3411aff350648e6dbed45a8ef1fbfeed0de03e35982fcdaa323e12cdfe89",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_36",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/97470e470c0ab923fc11e050fb1d1f80.json",
+      "size_bytes": 1610848,
+      "sha256": "6b49308434e4e662414df76747f21af1875760d10860c98b1efd0eff00784f55",
+      "pair_id": "prmbench/preview/missing_condition_prm_test_p2_2646",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/98b6acf495096debb5f9ac073b92e2fd.json",
+      "size_bytes": 799424,
+      "sha256": "97f091c9e43aa7f595ba234a2eadaf78b244ce1511ed7da26043a329ec4bf6fc",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_63",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/9c57fe8e91379ccd96c8c92f03591a9e.json",
+      "size_bytes": 1238464,
+      "sha256": "c0c20889f29823fb718e2e504456b4073205afd81cc8152183833e558f788c22",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2449",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/9cca3c55344ffd5c623d09089d4273ff.json",
+      "size_bytes": 1282848,
+      "sha256": "626ca330d93a3590e35d43dbd7537ac7f27d08020eb3c13fc98b308f2ba8d9ba",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_1695",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/9cd27ce8870e751f963dfbe77ac6f18e.json",
+      "size_bytes": 891234,
+      "sha256": "59fb7e2c1a094313ed62f065427407e8f53cb972939278bd75fb2857f1b75ce4",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_223",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/9d1e57a2e4ec652504f78cbbc35dec15.json",
+      "size_bytes": 795955,
+      "sha256": "05569754a491bca846ce285d0b1131eb172fe52ae2945a1166c4299718aadc62",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_376",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/9e088fd9fb87e4869b0d8859d383e707.json",
+      "size_bytes": 1064117,
+      "sha256": "78f60830f21f5d5384c50324486ce01c467b975fc41f4a5ee2662530e696457a",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_83",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/9e2d0344fc8ee28c8a15e4104351b87f.json",
+      "size_bytes": 963091,
+      "sha256": "9d3a12019935cfa7efda1a4b46903140bcff93f2c4a9902be1438266c9357d78",
+      "pair_id": "prmbench/preview/step_contradiction_prm_train_p1_255",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/9fa068256c7b52cb3cd15b20473234a6.json",
+      "size_bytes": 1370388,
+      "sha256": "692aed4dd9c9e94671e258f19185ad0350ca73d48d686e7ffbc2ff870399cc86",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_451",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/a02009de19c0d89430bfc117ff7cde50.json",
+      "size_bytes": 963734,
+      "sha256": "e6f2bc6dde822da2b0aff2a8cdf487d8af66adba43bea962fc0bd9be73b9a8b3",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_369",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/a164ae9bd9b331e819b0e3f1c8be1ed2.json",
+      "size_bytes": 1230548,
+      "sha256": "0ed57d779679574a47e2997a1a69629b58e03c7f84fda6b6a884f0911ca82fb0",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_2505",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/a6af71af93ac4c60c547292c90532dbd.json",
+      "size_bytes": 978024,
+      "sha256": "7fb99cffe167fb656abe60e43adcf3c197ea0bfa05acbb456dcf1f0060d9839f",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_1649",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/a84191a67fa10e9f093a582893ef5c87.json",
+      "size_bytes": 875701,
+      "sha256": "367e44df80b6838fda3f48b239f6c3936912d8b356b103b63b0488c11432fc8b",
+      "pair_id": "prmbench/preview/missing_condition_prm_train_p1_378",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/aa3aa9d1bea100d86885a444993179c5.json",
+      "size_bytes": 806834,
+      "sha256": "534dea68e2cf295cb2f73c0e20dc39c82bdae6ee1dcb5a9f1315defa2c27eb9d",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_22",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/aa9046dad7331d3bae5597e300112855.json",
+      "size_bytes": 1062199,
+      "sha256": "6143fe2b408096a8d6c3fabde38b0388d4f4d6ce2d18e205eb9e1927bcff4f71",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_11",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/ac05a2ed29baddc7ff6e4693051d58f6.json",
+      "size_bytes": 1406837,
+      "sha256": "222da4f70509ac311cc8402f1140299881d5bdd554ddd836978cbabddab99b2a",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_249",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/addb83fd07e8dd2e658ec6be075a8c8c.json",
+      "size_bytes": 1414289,
+      "sha256": "f7c4d6f00942975ec8d80036643d6d8e5b796c547a9cce0c745aabbaf154fba7",
+      "pair_id": "prmbench/preview/step_contradiction_prm_train_p1_467",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/af0052ab6af917f2e4b63d2726d6b9e0.json",
+      "size_bytes": 921333,
+      "sha256": "5e054f87230d7d3e00818f6ac2478afb8ee17bc99d54a463d408781f5ffb5b2e",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_22",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/b15edfefa03c508ce15823d85b784aa0.json",
+      "size_bytes": 1498552,
+      "sha256": "3ab7d57e471b8d7bc5b014f4ecd5ccc449d18b336c0727dbff215e122e66437d",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_216",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/b1954a9f2531ce5012abbfc11ebe0109.json",
+      "size_bytes": 938637,
+      "sha256": "f3df85c05368134323c143b9044abbfccd1002007fb552976ca0dc3084b130da",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_528",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/b22f3b87698932349933b26c4d5ca27d.json",
+      "size_bytes": 958502,
+      "sha256": "342a08222c62ee9251954ea1029de4976387fca17f92bd393e252f0609dc577d",
+      "pair_id": "prmbench/preview/domain_inconsistency_prm_train_p1_100",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/b257f42ff3a1a2c69334870bc786802a.json",
+      "size_bytes": 782374,
+      "sha256": "7e103b3c5da06a678eb6ee56263048e58f57d980679959fe5b55b0bfa0116227",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_454",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/b38cfed7d37b83ec96ffc51c50b0b28d.json",
+      "size_bytes": 1058365,
+      "sha256": "f5953acbfefbc31fa8c5673dbe8bc520199b23f7c4546e9a43e857844011b51a",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_409",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/b468c091cca996f02cc71a446062b45d.json",
+      "size_bytes": 1412361,
+      "sha256": "7571fa6b5998baa27f047474a9a4eae61b629596f7eed20ab004f2d34cc40a0c",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1496",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/b49703de60a7e41ec19c2d06d25c5cd4.json",
+      "size_bytes": 873328,
+      "sha256": "dbab83d5057061023ad915e53b4aa4afb95780f9d7479fb1715396cba6161c0b",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_425",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/b49f8ea593e4432ec53da0a52ed31656.json",
+      "size_bytes": 966733,
+      "sha256": "e34414239635a105e8e0b777874d632db94da55ecc34481e1ff7e1fa0bb9ce6c",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_951",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/b51f2c1e287c5e0edee12df1558ac624.json",
+      "size_bytes": 1014484,
+      "sha256": "94a105bed3f4ec989e6e0ca66eb92ebfe0cc576121220ee56c0291362acd1384",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1947",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/b6eeb6d17afac8d3e50db0b1f44d503c.json",
+      "size_bytes": 1102117,
+      "sha256": "6169eecd3e05cb4502f5f35eb36ab699ee8c7dd3bbe99bcd0ece1a40780b665c",
+      "pair_id": "prmbench/preview/deception_prm_test_p1_18",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/b734cdb324daee9d1e22a113a6ac3c10.json",
+      "size_bytes": 2384764,
+      "sha256": "c59e0b12dbdff01eab501ba2788924f51d0d103242ea79f49fe40d2d2af0d972",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_271",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/b79fabaf1d14ed0178a1678877964d17.json",
+      "size_bytes": 1026851,
+      "sha256": "90191e4b70ec99fb4b625f0c33dad08aec4b3b40d2fd0925dce71e25693a3257",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_86",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/b9ae34301ce74176a3ab74ecb218d14a.json",
+      "size_bytes": 1992611,
+      "sha256": "09724f6a86601d0afd73647717a141b94310d802f20a4b9a9afa1657f181a1f4",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_125",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/b9b4d75ad3530a7e39b0a49fddf5a742.json",
+      "size_bytes": 1811471,
+      "sha256": "0ed6e4b6820f841a5f34c82cc1fd3acb7a749a9f1d88e5d2d57b10e7ca4020ad",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_132",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/b9e6df4b1a60e04b3930dc42f946530e.json",
+      "size_bytes": 1662511,
+      "sha256": "5720dbb4a179be975946c10e9d657c69dc5a3af7dce6e927c26ee7bb2a14449d",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2265",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/ba117654a010b48da1473599edea5e53.json",
+      "size_bytes": 1488383,
+      "sha256": "e682c319f00b152e2da8c6cdeb4ff209440cdecd983a87a3c08a9508c7f62eea",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_1286",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/bbd9899d48d606d19adbfca0547ed24c.json",
+      "size_bytes": 813736,
+      "sha256": "10be3200e602f915b16cdf4d4c9f7bd89c9857010ee3c3fa80712ea56e157f56",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_13",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/bc34c9a042e126aa0b3a9692f35f537f.json",
+      "size_bytes": 1406706,
+      "sha256": "6257a81cb4661c2f549af3736a40835eeb8c10efadff8cb66ccf147c07870b4c",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_75",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/bc360872a70745de5c82eac64e9cea00.json",
+      "size_bytes": 978250,
+      "sha256": "fe61c0a0f5ab985f0f3411858a45f72883882f689f92829f32c1492aeff95bc5",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_991",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/bce9b70867ca03a3d2003dad331a5c41.json",
+      "size_bytes": 2023074,
+      "sha256": "47b2460aefdff6024afabc9e71a70848af8f66334310268e6262e032e347c06d",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_2744",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/bd6374dfe3b184cf45ee6e0834ba9b67.json",
+      "size_bytes": 891872,
+      "sha256": "924c572fe27caa7449d0a456de45b806a61938d0cd4d0a1cfc019ff6b856de72",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_111",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/be06386635b62e7af05fda3cb342c653.json",
+      "size_bytes": 1081819,
+      "sha256": "817f7d9ada1c6d3a3d20f993fa31e967ffe42d57f8fd35d28972222c6c544e96",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_2492",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/bf20215d471ee841ac7f9c8d3dd176f8.json",
+      "size_bytes": 3851237,
+      "sha256": "87fbb331e486bffd78f4ad0c800f0dd8727b321208b9f76dadec0aef57bb7cd0",
+      "pair_id": "prmbench/preview/step_contradiction_prm_test_p2_2562",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/c0826f320d3af3944345784d5bcedda0.json",
+      "size_bytes": 1156429,
+      "sha256": "b3d34e47fdd5a2eaafc52e4a270920ca3fb65810bf2613d02070bb9c569dec8c",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1899",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/c1579f1789be17b8c65facb95df89904.json",
+      "size_bytes": 830945,
+      "sha256": "f62d098c50347aaaf9050379cb7b623ec871c6f32c863d1c8d9535625e1914f1",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_72",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/c290e091c7a339f4bf8c1973ba274205.json",
+      "size_bytes": 1051120,
+      "sha256": "9bd810c963c77251100d5c5d995d2346648feddf6d5b5d70233f5eee77bcc492",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_961",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/c296781d062bee0faa5bac193f8ef89b.json",
+      "size_bytes": 818686,
+      "sha256": "621bdbc67c6497cbe9ba5f1c029f7aa9e8924a4a9cd4acbbd034f9526ef9f9a0",
+      "pair_id": "prmbench/preview/redundency_prm_test_p2_1872",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/c31b77a9217f8cbbe23469be40942154.json",
+      "size_bytes": 966287,
+      "sha256": "b4d101699f7f53a68c6d05ff7f36bdf6207e8e7266a207b5d73c2f291ce20d59",
+      "pair_id": "prmbench/preview/step_contradiction_prm_train_p1_392",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/c36f77015d3d10f708c08f85fbba91fd.json",
+      "size_bytes": 1276458,
+      "sha256": "7883950189a2aca2509e5ad327ac084cf0e382613b85061ec31b66cf996be317",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2095",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/c3e0c968a3a4ef922429e0f6b7d1def0.json",
+      "size_bytes": 1148384,
+      "sha256": "ad2049ddaaa81595d3db5f0cbc873d6f648e8f739cfcca9ddd5cf276174505a3",
+      "pair_id": "prmbench/preview/circular_prm_test_p2_2126",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/c41043c7cb942711cad43880ad1cead9.json",
+      "size_bytes": 824824,
+      "sha256": "d5f5b04aeb93520c67a6467060b48f4da30746e83ebf329e1d3e344baead89cc",
+      "pair_id": "prmbench/preview/missing_condition_prm_train_p1_227",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/c51f672562bba8a48d8c864848d3ece1.json",
+      "size_bytes": 1035644,
+      "sha256": "b64b728da9435087a18a85fd7e96b994a3736fc1e34a318d910f60e1e16e200b",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_2382",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/c56770548d15c2eb7344da0f39bc0c13.json",
+      "size_bytes": 1294286,
+      "sha256": "5bfbc2a61faa0d9103687bf120b69f25779b09a55cc6ecef11a1a65789e77dfe",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_409",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/c5ecb2a70a4739f62d71ebb3cc72f9b9.json",
+      "size_bytes": 1346317,
+      "sha256": "61d4f51d2b2732568a7cb39cd5815ff55a75feb9824767cdf2c14c3e7c3ccd22",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_927",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/c5fcd2057aef308f26df977f5ff581e5.json",
+      "size_bytes": 1064748,
+      "sha256": "02ab7b702fe5b828d5ce77d356ae0278e7467a649d7540b7f3610585d782dc0e",
+      "pair_id": "prmbench/preview/domain_inconsistency_prm_test_p2_807",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/c754faf3461c12d4aaeeef9bb51d54f3.json",
+      "size_bytes": 1259546,
+      "sha256": "c6586df7752b5ade1651a82d5e8abd1624ac2dabeb56975ecff9572c241dd603",
+      "pair_id": "prmbench/preview/missing_condition_prm_train_p1_7",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/c95a8720399ba67f2fc56b5556ae628e.json",
+      "size_bytes": 877082,
+      "sha256": "d1a7ee1a1aaee0dafb2878b408fa79a2c669400681e81136484c1e0bcac65766",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_0",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/c994c030acbc89126a0fb9bd8908df1c.json",
+      "size_bytes": 889492,
+      "sha256": "a2f84fd2e1ab9cbf4c9c0dbc8612d402408d773e297f7771150ca8f477aa0bb0",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_150",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/c9a47b511b9e1d20a0651c66bec3dac2.json",
+      "size_bytes": 1122609,
+      "sha256": "61caaa23854888d8827e11d087e06fdde940d48483d9dacd2c72edff2e86d14f",
+      "pair_id": "prmbench/preview/missing_condition_prm_train_p1_352",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/ca1e1f0724492a20ccf285dedda7d14d.json",
+      "size_bytes": 826171,
+      "sha256": "1dae97c67ae4f24e4b1fd7a86f2232df804ef7fe1122c5a3acb5db76c8e6f292",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_96",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/cb55e1f59849ae60f250605b6f974739.json",
+      "size_bytes": 961397,
+      "sha256": "a2d601c2422d09e4a35e5903accc6e9babde0d9e025868cc7e74ab4a51aa965b",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_462",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/cc3bf73b1e6a2648530015cf23b2dff4.json",
+      "size_bytes": 868389,
+      "sha256": "e41c15fabb496f518c9a0ce09fd7c0ada4ff595a0fb3c5428524818a9fb196a5",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_424",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/cc498c63236e12507b67cb3bffd4b638.json",
+      "size_bytes": 780018,
+      "sha256": "d9f32e6381841f366e9873c4f0adef039cc9ccf8bac7bef68a4c3140224cd574",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_421",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/cc706b06083755575706034c83983ef1.json",
+      "size_bytes": 814027,
+      "sha256": "1b58713b3a6accdb8910d1f9cedeff174b336877207fcb09d176e93ce59b12a1",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_128",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/cce38a043ae9f62c3bc55e7f355976df.json",
+      "size_bytes": 841806,
+      "sha256": "5d3d96d0633157946f2060c7450cf4c54f1e47d0fd5abbeee20e99aae7b20ed6",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_151",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/ce12e0c43b803a282da9d47fbba4772c.json",
+      "size_bytes": 1124609,
+      "sha256": "0424ceca0277945cec885e96f883404dcea9092a19891b9fc43048e2bf57261b",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1829",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/ce887a5d872f639180958c54044f99c1.json",
+      "size_bytes": 845186,
+      "sha256": "222b12e0c19439a8abad39721eaab0cd3a9915bd9d3e20ea05f7664e39ab8a2e",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_98",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/ce9cf23105e75257d49a016b1ade474e.json",
+      "size_bytes": 762682,
+      "sha256": "16774b5d0dcf853bf634b8c486132a07d98bf934d71f265a7cf57bbf8b9d7139",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_2050",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/d032fc76f4e90435f3a7fff9d290ceef.json",
+      "size_bytes": 1325994,
+      "sha256": "435a35a798cc0304d1481798f0d06e606011b3772b33fc7ba23ec344638b7acf",
+      "pair_id": "prmbench/preview/circular_prm_test_p2_2265",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/d0753eaac007c00b79c57e72703ad5ad.json",
+      "size_bytes": 1159455,
+      "sha256": "822a953ada51caef180d156b69ad5faf24e5ed127fb9c2dc082e185909be69f5",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_285",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/d14b0f61c847d063f02bf2743a6d1fde.json",
+      "size_bytes": 1077641,
+      "sha256": "7604344a7124215bf0d32eccb4b172d544d30f71e8c5c0fafcdc4613e3a5c8d4",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2105",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/d14bf3f7c6e7c06e3f5febc47db93a67.json",
+      "size_bytes": 1209331,
+      "sha256": "d737b9e0d4c3fe3b7d530a45c53db987643221a66258898aa8c51c2f4056469a",
+      "pair_id": "prmbench/preview/redundency_prm_train_p1_76",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/d2e826e02f8d9794f7868f48d17e6bee.json",
+      "size_bytes": 798432,
+      "sha256": "e5c61ed21f6a67e167100b6792ccf98daa14fdac372e742542860e0bea479a60",
+      "pair_id": "prmbench/preview/step_contradiction_prm_train_p1_331",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/d343c905d5373583ebda518961e0456f.json",
+      "size_bytes": 1183709,
+      "sha256": "6070cae20b5886c644f8ba806a47479e683b687ad2d9334763ff1414a93e4fce",
+      "pair_id": "prmbench/preview/deception_prm_test_p1_25",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/d3fa26b0d7aec4c191d4c51d60ea706d.json",
+      "size_bytes": 952610,
+      "sha256": "bc87f695f77c8e5eadff4bb312c55bfbb0a108c45684837a5c4bbf0855f21058",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_381",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/d47a1e46f1f0f83811d039605b9cfc75.json",
+      "size_bytes": 1096924,
+      "sha256": "01e4eeb201ac5b67b75d5ad4b562b88c28ace0dcb7377d969598591639f31385",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_299",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/d4b88d226974f8af9882419f9fe77dea.json",
+      "size_bytes": 1323366,
+      "sha256": "81e708569df591b1b43a4659d7596d00d4698d3b18cd1ea3451f2f7eab0c3cc4",
+      "pair_id": "prmbench/preview/step_contradiction_prm_test_p1_70",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/d5370dc04d9aaa6d1d0d6f01d1bb569f.json",
+      "size_bytes": 1070205,
+      "sha256": "b2efbcff436220e16d42f6f597ed7218a8312c3894f075fd8987e09b3c0fb17a",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_344",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/d58312ea634ed473ba7401df73155343.json",
+      "size_bytes": 1209721,
+      "sha256": "faf48fb57c22519e2b17a6a3a42f605e32b498dfcfefcdc062677f61959ffd46",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_345",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/d6adbce5674a1d11e65ffe7347790996.json",
+      "size_bytes": 851568,
+      "sha256": "f029d95923f301cabcd5a0210e823d2a6835b9ee3f037a1c3d15755134465426",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_2071",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/d702efc98384dd37bcb4f1eec60a8ae4.json",
+      "size_bytes": 912441,
+      "sha256": "29ff67f8a7d310976fd946bdbe02660b60087f5bfe3e849186202bdc37d72954",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_1778",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/d762f0a569f56d9b287b872b37e76fd9.json",
+      "size_bytes": 1091941,
+      "sha256": "8d742312503afd2e368a1d51f020d2173ce8a33430574f2cd9ea4d62dd7a6587",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_441",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/d86c1c77476abadc5fbadaf23477618c.json",
+      "size_bytes": 777741,
+      "sha256": "10cc6286eec1ca965b83a138950b1d970ed8be42ff9a0e97f8154e8a2e7127ed",
+      "pair_id": "prmbench/preview/step_contradiction_prm_train_p1_347",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/dad4947bbafb0fb8fa31a0c29a2c9b28.json",
+      "size_bytes": 1347550,
+      "sha256": "41880426bc3935453f30a00c9324b7ddde7e502121d0239cac284905306f37f5",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2594",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/db1b5fd252d98476684b7f7b434945a2.json",
+      "size_bytes": 1081086,
+      "sha256": "c5c1bf0b71e939400b08c41da85f408d5e677524a5289edc8b7f4c1e984396e5",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_991",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/db2e3106d88fffffb43dc4cbf05c364c.json",
+      "size_bytes": 1656859,
+      "sha256": "462aabf0d78a7b3f2b036d8a8efbfa36d00542cf9076d991bb5519fab1f6b117",
+      "pair_id": "prmbench/preview/step_contradiction_prm_test_p2_2646",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/db84242fcb561d0943c58fad56b4d805.json",
+      "size_bytes": 956035,
+      "sha256": "47055be91fe64b3884cb7574ee37d5c39b7368fdc76f78a21c6749d6519826ae",
+      "pair_id": "prmbench/preview/step_contradiction_prm_train_p1_443",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/dd1e52f697d76bb1205e8601040de5c7.json",
+      "size_bytes": 1285528,
+      "sha256": "2f1cdc0b57652bb8942aec304f4c1840bd3480b8c27f04a4764381e7c66a1ca5",
+      "pair_id": "prmbench/preview/redundency_prm_test_p1_5",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/de980236855a381b042f7450a6d0eb0c.json",
+      "size_bytes": 1068477,
+      "sha256": "b4ef8cefe9f7463749b9aec394040aaeb5e4ec841131b00eda44d7cfcceae12a",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_311",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/e17394464a29660459944dfcc1b1db58.json",
+      "size_bytes": 1429918,
+      "sha256": "3e15d8d25ec8e251f2cefb4c2ae7bf45e26379ee7e99a0048c6944b4c5ff0b76",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_288",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/e192afa32453b7987dbf72f0b0b13b40.json",
+      "size_bytes": 1034544,
+      "sha256": "c08594e904d5fbdf5c8a7f8ff19f010ea0f275464a6fb6fcb08308cf733e6de9",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_20",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/e50b547ecd032d20f512e2141ad8eed6.json",
+      "size_bytes": 1108970,
+      "sha256": "3b128bba23b06a7b132cb59e0625daf9c8959fc96abcc4b5c030048a36b61421",
+      "pair_id": "prmbench/preview/missing_condition_prm_test_p2_1320",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/e8eba645d3f1d1191c09d8f83e674dd0.json",
+      "size_bytes": 988329,
+      "sha256": "88c3c38088c765c048964cbb63edee8e79e9a7df18eab15ebdeabd83a9715b73",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p1_97",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/e8f77bc624f56055eb71ac9e2b271d10.json",
+      "size_bytes": 833897,
+      "sha256": "59699aa548bbd79cc80b1518911d8cd5c5eaa82193eeebf970bf1b4331f577b2",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_1920",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/e8fd241426fe83f31ecb1f88a64c5c42.json",
+      "size_bytes": 812921,
+      "sha256": "e4c3eb5908beae6d0b202d50b269b35ad554264768301245f179207b9936691b",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_460",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/e90fd26fe34795cfd2f912c89c2851c5.json",
+      "size_bytes": 865543,
+      "sha256": "808aa451e066b8ea250d52f022e221311723989b1247d3cbe814abbe6e9cfdaa",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_126",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/e96da9893bca04735f30cd15dee29d9c.json",
+      "size_bytes": 834225,
+      "sha256": "7dcdaf4de71876a2593b9f6c126db9d1cabe124792c5b675c71f77450ff26867",
+      "pair_id": "prmbench/preview/step_contradiction_prm_train_p1_376",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/e97a3d0a24c9c8989392893723dc8156.json",
+      "size_bytes": 1042491,
+      "sha256": "193cacca80e07878667928c456b635401441bfd858fe86008ba6d08f7297562e",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1141",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/ea83686d9f6837acb687113cd6af43e5.json",
+      "size_bytes": 1024545,
+      "sha256": "5c989a4a325e4fdafbd1b48787358ff10c8d923314d2e6273a81776e48bda698",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_186",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/ed76799611cfcf86fc62d09814b139a6.json",
+      "size_bytes": 1431559,
+      "sha256": "d42537c357271ea3322a1a9792a92544eec9cfd75902477fdd504639a1fe5b96",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_37",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/edb7b41657803bf17cef90bd14ea69b9.json",
+      "size_bytes": 900650,
+      "sha256": "2df927687300a8c75f7dd772e3dca3fa62c5db17e87ddaaf1af29032bcfaf2a7",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_68",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/ee43cff1024e4ca9b54846d2a3a097cf.json",
+      "size_bytes": 980734,
+      "sha256": "5690447fc7e3492844e3baa79c14d76f15fdcefbf25781ff7896d531e9524ad6",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_28",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/eec3361bf4186530ab4cc17d3251e909.json",
+      "size_bytes": 984823,
+      "sha256": "2627c4c96f60e53ef3174bf445cf280bfda2e173c15adcfde56548abe301fcfd",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1305",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/ef53a537dbe72c234c3b4797e9c31ed6.json",
+      "size_bytes": 914682,
+      "sha256": "e780d782029d2c40a876b8a81fb76430275d23eaab70abcbf822c61ccf97c3ae",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_301",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/f31478f6322af4df8e7ed84115bf1eda.json",
+      "size_bytes": 1100896,
+      "sha256": "4f008f3370ee7767e2d0266c40fde25a6af9a97b550395e9fa46e5c31f699bf0",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_222",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/f35ddab6b8e23c09f1c8a504cb58f1f2.json",
+      "size_bytes": 1069269,
+      "sha256": "2f7e49d4a0aecc829fd0d55afcf0cd7fe9bba5da3e607f43bea8f92e0405a4cb",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1816",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/f4309a5493257c90d8e243843a0f32ca.json",
+      "size_bytes": 799599,
+      "sha256": "188a7e09c27428612dea058e3446c0f4f599368079d8b26e365e6e5b1d157588",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_286",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/f593e7c764606068c5fce9fd6c414776.json",
+      "size_bytes": 1173290,
+      "sha256": "79e51025e8e1cf733c7e330d40ec42c3736c82afe9997b3eaaff572355f38735",
+      "pair_id": "prmbench/preview/deception_prm_test_p1_103",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/f5bda247e86fd9c757eb0ad2cb8f2860.json",
+      "size_bytes": 983723,
+      "sha256": "00b606ff120a908c22d87c7d66abf7175d8beef7009b7c48ac8454bccf1c760b",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_671",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/f62bfe9afa390574a68c7264ecad028b.json",
+      "size_bytes": 952153,
+      "sha256": "6d8a6f68574d4e4f3ecf455a51f8ad8887499324c1d931323cb857cc2195d704",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_416",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/f6784e2dae52938d0ae0e40ed5f14f61.json",
+      "size_bytes": 911465,
+      "sha256": "ff182332c435cd4a34ba04f749d08ee3da742a354e3a82ba4a4cbab99c847f38",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_2022",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/f7314d56e24c81ca6251552a573e6f70.json",
+      "size_bytes": 1103481,
+      "sha256": "f627e40a36e67437e4e7db1c90cb20fece5d8d4a3f7333e05c0b88426577c233",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_783",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/f77802cbc5bd124c0d1edb7abbee4b9c.json",
+      "size_bytes": 965603,
+      "sha256": "577aba182128cc18fd77978ab8b8627851a9e5d43dbd80969f3db207cdfb1bea",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2094",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/f9ff4f3b4a68bc2979de3297a47cf582.json",
+      "size_bytes": 688445,
+      "sha256": "1524a06bc1b15916cbaf7e10c53fcaf785c27744fa22862f4149d712dec22431",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_1",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/fd0fa26a28608853adc54f4f3ab40825.json",
+      "size_bytes": 1407626,
+      "sha256": "47e83bbd4328360331d7c3a4447dbf95a6302120c1bdf0bf2bd5374c63e5c21e",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_234",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/nemotron35_lightning/full_v1/pairs/ff939bf5a24970e4d57be25d8701ff64.json",
+      "size_bytes": 875229,
+      "sha256": "34537789e0bbb9f8e5186675c794d79197b973476e2837458b0344b3944c654c",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_20",
+      "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+      "technical_passed": true,
+      "row_count": 10
+    }
+  ],
+  "interpretation": "External donor-role directionality under this intervention; does not identify a unique correctness code.",
+  "comparison_boundary": "Current wide-D run only; no old T/D rows combined or cross-run input equivalence inferred."
+}

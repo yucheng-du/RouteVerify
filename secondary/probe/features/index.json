@@ -1,0 +1,2370 @@
+{
+  "compressed_npz_bytes": 107292676,
+  "excluded": "238-group sensitivity fits, separate historical 1160-row Qwen routing/text comparison, all text baselines, model weights and full-layer activation archives.",
+  "folds": {
+    "bytes": 222143,
+    "path": "canonical_six/source_component_folds.json",
+    "sha256": "d54e5bb12dc027cef9873047f684165378755e3efe0c2d707d9ad31874012ef7"
+  },
+  "models": [
+    {
+      "anchors": {
+        "early": {
+          "feature_digests": {
+            "expert_id_aligned_sparse_weights": {
+              "dtype": "float32",
+              "sha256": "7e3c17308e7860767197fdff38b420b74c61809cd37d2c68640271f2b9f62ad0",
+              "shape": [
+                580,
+                128
+              ]
+            },
+            "expert_id_membership_count": {
+              "dtype": "float32",
+              "sha256": "fb5ee2f249db7f7bcb2deb9a8dfbcba4cc693f2642da9c2e25290711c602125f",
+              "shape": [
+                580,
+                128
+              ]
+            },
+            "post_moe_residual": {
+              "dtype": "float32",
+              "sha256": "535dace87245f4bef4b112ca8f3bde5dab93bc615c967c9a454b379f736836d0",
+              "shape": [
+                580,
+                2816
+              ]
+            },
+            "rank_only_sorted_weights_legacy": {
+              "dtype": "float32",
+              "sha256": "11f3ae8c0ce56f2747a9bb8da87d763d1942a9e8017091dbcdcb3cf600b9d7c5",
+              "shape": [
+                580,
+                8
+              ]
+            },
+            "router_input": {
+              "dtype": "float32",
+              "sha256": "dbb4d40e6811d1d3e1ee91cb07c7af4a743fc825bb9d87e39b54ba39b50fa7f6",
+              "shape": [
+                580,
+                2816
+              ]
+            },
+            "router_logits": {
+              "dtype": "float32",
+              "sha256": "b0dd11a6ab16414b3ec8bc4c7368fc4658caff044f8750f50d0009b325ed617f",
+              "shape": [
+                580,
+                128
+              ]
+            }
+          },
+          "layer": 0
+        },
+        "late": {
+          "feature_digests": {
+            "expert_id_aligned_sparse_weights": {
+              "dtype": "float32",
+              "sha256": "4fc0749ea8c2197022e2f85a71adcc932d6c0e77b168e17cfec14a81d96e9231",
+              "shape": [
+                580,
+                128
+              ]
+            },
+            "expert_id_membership_count": {
+              "dtype": "float32",
+              "sha256": "7033288f979e78b6af69a213b8b8c1808244402d70bb1145aefed35c624781b8",
+              "shape": [
+                580,
+                128
+              ]
+            },
+            "post_moe_residual": {
+              "dtype": "float32",
+              "sha256": "6e16ee4a5a55b1aea925684d18d0997c19e4acd92ab433490f88d2225c1bf063",
+              "shape": [
+                580,
+                2816
+              ]
+            },
+            "rank_only_sorted_weights_legacy": {
+              "dtype": "float32",
+              "sha256": "0b37d7a5cee4493f72e06699310f80e902c34cee6a7c75e77acbcdd9e8ae2126",
+              "shape": [
+                580,
+                8
+              ]
+            },
+            "router_input": {
+              "dtype": "float32",
+              "sha256": "9fddc8907418257bc9be4fcf1829256546c760221d48a5de2bdde4ce492b301f",
+              "shape": [
+                580,
+                2816
+              ]
+            },
+            "router_logits": {
+              "dtype": "float32",
+              "sha256": "2e477dcd26312f5da46de911d3342bdb13924853d76d86baad377b921c9a5b7e",
+              "shape": [
+                580,
+                128
+              ]
+            }
+          },
+          "layer": 29
+        },
+        "middle": {
+          "feature_digests": {
+            "expert_id_aligned_sparse_weights": {
+              "dtype": "float32",
+              "sha256": "561531447e6edd1f222a35e58c41154a5d0521caa6692d4e7d94e065247a3a6f",
+              "shape": [
+                580,
+                128
+              ]
+            },
+            "expert_id_membership_count": {
+              "dtype": "float32",
+              "sha256": "99b549a290c7310d98906ee57f4f9f7485db8bc38adc913207ba53536e860fd4",
+              "shape": [
+                580,
+                128
+              ]
+            },
+            "post_moe_residual": {
+              "dtype": "float32",
+              "sha256": "08ab75882d2a10a023dbdaf2e05e049f54f576fc862a4e0cc157278963a18997",
+              "shape": [
+                580,
+                2816
+              ]
+            },
+            "rank_only_sorted_weights_legacy": {
+              "dtype": "float32",
+              "sha256": "b4cf66b7430fb89cee62764cc3521d0d3b40bf35311e4943861fbd701eefd1aa",
+              "shape": [
+                580,
+                8
+              ]
+            },
+            "router_input": {
+              "dtype": "float32",
+              "sha256": "5b09b7167dd08613e10f5c1378e460c318ba09fee29f101ac856b31db0970bc3",
+              "shape": [
+                580,
+                2816
+              ]
+            },
+            "router_logits": {
+              "dtype": "float32",
+              "sha256": "2c948ddb876150e2306d5fd4786b395814ed1d509c224109629a8eac9bf60823",
+              "shape": [
+                580,
+                128
+              ]
+            }
+          },
+          "layer": 15
+        }
+      },
+      "bundle": {
+        "bytes": 15867146,
+        "path": "features/gemma4.npz",
+        "sha256": "813c1f388a5e4fec829cf6fa86f779809957297cb5e893c0c29114972b16a137"
+      },
+      "model_id": "gemma4",
+      "n_analysis_groups": 235,
+      "n_pairs": 290,
+      "n_rows": 580,
+      "native_arrays": {
+        "layer_0.post_moe_residual": {
+          "dtype": "float16",
+          "sha256": "c00dc8ae56618e81f025b9b64941432fe4fa479e9f7b96ce34883f7d7d66a611",
+          "shape": [
+            580,
+            2816
+          ]
+        },
+        "layer_0.router_input": {
+          "dtype": "float16",
+          "sha256": "b0d2ff11e3b9d1b2e0e9c307365dcd64f99d8a6d5d0c4f6a7384c26829b33334",
+          "shape": [
+            580,
+            2816
+          ]
+        },
+        "layer_0.router_logits": {
+          "dtype": "float16",
+          "sha256": "f7df4675e11d57b2b9ed78de418c8b8386259eb521e99e77df1f614ed13a11bd",
+          "shape": [
+            580,
+            128
+          ]
+        },
+        "layer_0.router_topk_ids": {
+          "dtype": "int64",
+          "sha256": "e70ac5384d824c036b294e7ab245a12a61a7d00ee7ce6504cfbfbe85ae598d8e",
+          "shape": [
+            580,
+            8
+          ]
+        },
+        "layer_0.router_topk_weights": {
+          "dtype": "float16",
+          "sha256": "8588646d61c46e112c81a899560bbf7cc88b7c1967c1848d540c8e725f80d3bc",
+          "shape": [
+            580,
+            8
+          ]
+        },
+        "layer_15.post_moe_residual": {
+          "dtype": "float16",
+          "sha256": "2b8c29e91a4b53b3be71642d64c06b7703195420e70c59dd8c4ef9bfa4d806f3",
+          "shape": [
+            580,
+            2816
+          ]
+        },
+        "layer_15.router_input": {
+          "dtype": "float16",
+          "sha256": "b9937d942476c3ada05681b9baa0b06122fe8c798746090c960e41aaf3a8412c",
+          "shape": [
+            580,
+            2816
+          ]
+        },
+        "layer_15.router_logits": {
+          "dtype": "float16",
+          "sha256": "c1a568736e21665c1a812bb848b8c655e5d640997f33cc6dd64550d7ef702c0b",
+          "shape": [
+            580,
+            128
+          ]
+        },
+        "layer_15.router_topk_ids": {
+          "dtype": "int64",
+          "sha256": "c55c5a582a4513dbd78b1aaf971ce292159491c476fa3a1eba2923cdc8461b49",
+          "shape": [
+            580,
+            8
+          ]
+        },
+        "layer_15.router_topk_weights": {
+          "dtype": "float16",
+          "sha256": "57356688029ad0478b511d3d21d9cdeeaf206dcc1e3fa3500e652460f82fdbd4",
+          "shape": [
+            580,
+            8
+          ]
+        },
+        "layer_29.post_moe_residual": {
+          "dtype": "float16",
+          "sha256": "57ec3d65d7ed87ed6a82582979f2c9a5f5eb01b49b2d4ac98b102759b2620e13",
+          "shape": [
+            580,
+            2816
+          ]
+        },
+        "layer_29.router_input": {
+          "dtype": "float16",
+          "sha256": "a40a929dfcec3770b291fa0b9ae99af1a7147eec9f2436f5210f4f97352dfbb9",
+          "shape": [
+            580,
+            2816
+          ]
+        },
+        "layer_29.router_logits": {
+          "dtype": "float16",
+          "sha256": "2a26b22b981c65ca5696442dfe25d4c6d3ed56d000227a43e7c67d86308bec40",
+          "shape": [
+            580,
+            128
+          ]
+        },
+        "layer_29.router_topk_ids": {
+          "dtype": "int64",
+          "sha256": "efca485d3d6a4bc5832420db381dbc63ddad86185cad188a360f9dad5d9d7a6c",
+          "shape": [
+            580,
+            8
+          ]
+        },
+        "layer_29.router_topk_weights": {
+          "dtype": "float16",
+          "sha256": "5385bb82e95e24333a31b35c633c739d9dc22b94fddf6672bbc5fc500f9b3e6b",
+          "shape": [
+            580,
+            8
+          ]
+        }
+      },
+      "num_experts": 128,
+      "reference_oof": {
+        "bytes": 33678765,
+        "path": "canonical_six/interface_access_oof_predictions.jsonl",
+        "sha256": "fbb8e2c748205cf21b05bd8ca32cbd94610afff7e0e562a4bca6bebf1d2ad43d"
+      },
+      "rows": {
+        "bytes": 366176,
+        "path": "features/gemma4.rows.jsonl",
+        "sha256": "3f545e0c75e939d66e7d457dfd8b06d5b210090ee70c7098800c9b21d3fa20f7"
+      },
+      "source_manifest_original_sha256": "ad001bffee0be2f38319861407da839d8b8016e4b221d93bfa68a5dc13336e24"
+    },
+    {
+      "anchors": {
+        "early": {
+          "feature_digests": {
+            "expert_id_aligned_sparse_weights": {
+              "dtype": "float32",
+              "sha256": "73e025b83a436d747ab0a45a0804d3c04ed976dd3a6a30ad9ba1e288f884f3da",
+              "shape": [
+                580,
+                128
+              ]
+            },
+            "expert_id_membership_count": {
+              "dtype": "float32",
+              "sha256": "e533b4efee42c464b775c2a1a4b51e404e69126f153a62adf1c0f87d5e2fcf20",
+              "shape": [
+                580,
+                128
+              ]
+            },
+            "post_moe_residual": {
+              "dtype": "float32",
+              "sha256": "c68aa116981fd5b5e2b45c93b4fcd2c1a9102f5bfdeddccf3a813e3263259edf",
+              "shape": [
+                580,
+                2688
+              ]
+            },
+            "rank_only_sorted_weights_legacy": {
+              "dtype": "float32",
+              "sha256": "ce85019d4e69762015c134d858061a7f8436b9f24fb72033c48a8e4544a5531b",
+              "shape": [
+                580,
+                6
+              ]
+            },
+            "router_input": {
+              "dtype": "float32",
+              "sha256": "6aaf1606ca3d5f2c6cb466afa434efd31f30bf8c98ad3c8e3a47d023f30656ff",
+              "shape": [
+                580,
+                2688
+              ]
+            },
+            "router_logits": {
+              "dtype": "float32",
+              "sha256": "e9612cdbdec0fd54a0dd4805dcb264f0be29cc51d335792ad10d517488f26ff4",
+              "shape": [
+                580,
+                128
+              ]
+            }
+          },
+          "layer": 1
+        },
+        "late": {
+          "feature_digests": {
+            "expert_id_aligned_sparse_weights": {
+              "dtype": "float32",
+              "sha256": "eb245334a14c7cb09e8b759aff96470be2c1eb690a32bde1e02a90d9958c72d9",
+              "shape": [
+                580,
+                128
+              ]
+            },
+            "expert_id_membership_count": {
+              "dtype": "float32",
+              "sha256": "bdc97911861575efed5090c874ef929969c30c869bc4a922c622dba9ad903018",
+              "shape": [
+                580,
+                128
+              ]
+            },
+            "post_moe_residual": {
+              "dtype": "float32",
+              "sha256": "d25e640dac3248b88d590d3f0df8153cafa48152b53767bb03499926b14ddab7",
+              "shape": [
+                580,
+                2688
+              ]
+            },
+            "rank_only_sorted_weights_legacy": {
+              "dtype": "float32",
+              "sha256": "7f54b6b10156e22905d4343c74ad5ebfec39c593364e8234dde3422e35463d99",
+              "shape": [
+                580,
+                6
+              ]
+            },
+            "router_input": {
+              "dtype": "float32",
+              "sha256": "58258d0ffc7742b5b61ff7649b4c5418e5571c2a4aa1dec21fe0217ddd1fb391",
+              "shape": [
+                580,
+                2688
+              ]
+            },
+            "router_logits": {
+              "dtype": "float32",
+              "sha256": "e66d16051dd77e338b25984493dc0890605ae77ca6fccce1b9273a064c3a92bc",
+              "shape": [
+                580,
+                128
+              ]
+            }
+          },
+          "layer": 51
+        },
+        "middle": {
+          "feature_digests": {
+            "expert_id_aligned_sparse_weights": {
+              "dtype": "float32",
+              "sha256": "d352df6829a190ff2ebe1eed43370dbe1250196cc68787542de00f93d6be0e86",
+              "shape": [
+                580,
+                128
+              ]
+            },
+            "expert_id_membership_count": {
+              "dtype": "float32",
+              "sha256": "526d10b0300a46b828987fcac1931b11720bcbd13b71417687346bc511795da5",
+              "shape": [
+                580,
+                128
+              ]
+            },
+            "post_moe_residual": {
+              "dtype": "float32",
+              "sha256": "694b234edd9145718cb93bb04022b672d8220bd1c4016188c2d2879421675f37",
+              "shape": [
+                580,
+                2688
+              ]
+            },
+            "rank_only_sorted_weights_legacy": {
+              "dtype": "float32",
+              "sha256": "244133be8ea164397f00ac20e5b74fe81fcb3aabccf8489ecbd67047e29b7820",
+              "shape": [
+                580,
+                6
+              ]
+            },
+            "router_input": {
+              "dtype": "float32",
+              "sha256": "0828ae565011c452212d92ff31f07ad54ff599bb73e739e85389da48a5a3f496",
+              "shape": [
+                580,
+                2688
+              ]
+            },
+            "router_logits": {
+              "dtype": "float32",
+              "sha256": "1a4150865db6dd4ac55b82f81a552b46ca7d25ef0fde0ee0853093ee340672f1",
+              "shape": [
+                580,
+                128
+              ]
+            }
+          },
+          "layer": 27
+        }
+      },
+      "bundle": {
+        "bytes": 14848133,
+        "path": "features/nemotron3_nano.npz",
+        "sha256": "39409f3b211eef6eb9dbaa99af5754292c33fcd7aac3c718ad8772f01dccc795"
+      },
+      "model_id": "nemotron3_nano",
+      "n_analysis_groups": 235,
+      "n_pairs": 290,
+      "n_rows": 580,
+      "native_arrays": {
+        "layer_1.post_moe_residual": {
+          "dtype": "float16",
+          "sha256": "bafec8a2bdcbcb6f7a87d8994e4850c9992739d4897505215749c155521c3d50",
+          "shape": [
+            580,
+            2688
+          ]
+        },
+        "layer_1.router_input": {
+          "dtype": "float16",
+          "sha256": "61dd0e76378f6c028ddd19c22b027f27ce6ae8ff326a8cee5710885a447c11ce",
+          "shape": [
+            580,
+            2688
+          ]
+        },
+        "layer_1.router_logits": {
+          "dtype": "float16",
+          "sha256": "d5130e6dc28b796cd1bfdd7f22936562114e0fd2b0d1aa73ccc252786869a78d",
+          "shape": [
+            580,
+            128
+          ]
+        },
+        "layer_1.router_topk_ids": {
+          "dtype": "int64",
+          "sha256": "5ab2246c7ceeb7050f1aaf9c4eb75d1c2c7e246cb80ce26bba24408f241ce9f6",
+          "shape": [
+            580,
+            6
+          ]
+        },
+        "layer_1.router_topk_weights": {
+          "dtype": "float16",
+          "sha256": "21301ea29ac279de67e0d960851cdc3b1cb00f454f628a287721b27ba6cfc2cc",
+          "shape": [
+            580,
+            6
+          ]
+        },
+        "layer_27.post_moe_residual": {
+          "dtype": "float16",
+          "sha256": "91946d76f372c848f84972d2517e306a2dcada9031fbb5e05f1d090f3266828d",
+          "shape": [
+            580,
+            2688
+          ]
+        },
+        "layer_27.router_input": {
+          "dtype": "float16",
+          "sha256": "9cc812c9a6ff0b612307a589417085cfd4d9e7387c7803f745c05630a867dbe8",
+          "shape": [
+            580,
+            2688
+          ]
+        },
+        "layer_27.router_logits": {
+          "dtype": "float16",
+          "sha256": "0bd7a29970d82c35ef1c87fcdd0c32b1d070e96622fe911341561759bf0cb4de",
+          "shape": [
+            580,
+            128
+          ]
+        },
+        "layer_27.router_topk_ids": {
+          "dtype": "int64",
+          "sha256": "bfdfa6a92089bcea47c4d75a3bf930161311d5ec56fc3c2a3e7e47cc224835ac",
+          "shape": [
+            580,
+            6
+          ]
+        },
+        "layer_27.router_topk_weights": {
+          "dtype": "float16",
+          "sha256": "a91316a31c24986fe2044b0f7efe834403ab6e279dbc1ad60fc1b02eaf34d6ab",
+          "shape": [
+            580,
+            6
+          ]
+        },
+        "layer_51.post_moe_residual": {
+          "dtype": "float16",
+          "sha256": "29870697e587cdb9d16f35cff149df74b4d4a8199968db4fc0862aa5a90e2c80",
+          "shape": [
+            580,
+            2688
+          ]
+        },
+        "layer_51.router_input": {
+          "dtype": "float16",
+          "sha256": "41d5425e91b55e67b11ed2d7c0c2d42e7becb6f8475aedb702aa38b54a0e1a3a",
+          "shape": [
+            580,
+            2688
+          ]
+        },
+        "layer_51.router_logits": {
+          "dtype": "float16",
+          "sha256": "7168a80b7139b02feb1714d34fe4be414d3751cb1b56085e8eede4b25000b8f2",
+          "shape": [
+            580,
+            128
+          ]
+        },
+        "layer_51.router_topk_ids": {
+          "dtype": "int64",
+          "sha256": "442a042aa75febd61073b1e0ff9153f5ae50139a029d095a312edb1df923f3d0",
+          "shape": [
+            580,
+            6
+          ]
+        },
+        "layer_51.router_topk_weights": {
+          "dtype": "float16",
+          "sha256": "ef289d4bc8814f8bff6d63ab8bd02d8742f60fdba7bcdc92fc97ae29ec0632de",
+          "shape": [
+            580,
+            6
+          ]
+        }
+      },
+      "num_experts": 128,
+      "reference_oof": {
+        "bytes": 33678765,
+        "path": "canonical_six/interface_access_oof_predictions.jsonl",
+        "sha256": "fbb8e2c748205cf21b05bd8ca32cbd94610afff7e0e562a4bca6bebf1d2ad43d"
+      },
+      "rows": {
+        "bytes": 366175,
+        "path": "features/nemotron3_nano.rows.jsonl",
+        "sha256": "9d7357dde1be457904bddaf7508295bd316168c52a8742a6dde8c7619492dd3c"
+      },
+      "source_manifest_original_sha256": "8eb67fe6af8c566c2c848b4ec6face72b489f0ecaa30775a3d80d96410a9a50c"
+    },
+    {
+      "anchors": {
+        "early": {
+          "feature_digests": {
+            "expert_id_aligned_sparse_weights": {
+              "dtype": "float32",
+              "sha256": "32d5ce4edec54eb8befd9bc4536278888dda314cd8cec43562cde96255b99908",
+              "shape": [
+                580,
+                128
+              ]
+            },
+            "expert_id_membership_count": {
+              "dtype": "float32",
+              "sha256": "cee939e67442520b6eddc822935f031bcb0c785e9ee1709ca2cb6bad5e14d408",
+              "shape": [
+                580,
+                128
+              ]
+            },
+            "post_moe_residual": {
+              "dtype": "float32",
+              "sha256": "469387092b9321dc214cdbd0a3954188423ea8487949bacf90c990d2463b8953",
+              "shape": [
+                580,
+                2688
+              ]
+            },
+            "rank_only_sorted_weights_legacy": {
+              "dtype": "float32",
+              "sha256": "d027600609df25399752d86011070555d04d9269667f43e5b917364bd1bb4838",
+              "shape": [
+                580,
+                6
+              ]
+            },
+            "router_input": {
+              "dtype": "float32",
+              "sha256": "0188d7f7e60fce23c3ba864e4ac27911a0049c150014d37b73c0d20169ac0805",
+              "shape": [
+                580,
+                2688
+              ]
+            },
+            "router_logits": {
+              "dtype": "float32",
+              "sha256": "f5f06146155395cc677192c95bc61256e21552f317868f2569c46a0dc939a1ed",
+              "shape": [
+                580,
+                128
+              ]
+            }
+          },
+          "layer": 1
+        },
+        "late": {
+          "feature_digests": {
+            "expert_id_aligned_sparse_weights": {
+              "dtype": "float32",
+              "sha256": "6990b4c8442b89c38fe437b9a1b1f6d41f20defdb770703c6ed67a9c2df003c4",
+              "shape": [
+                580,
+                128
+              ]
+            },
+            "expert_id_membership_count": {
+              "dtype": "float32",
+              "sha256": "087b77d348f01d299682ef7ea62daf95724afdd74e9a803bc7a716c04f942a17",
+              "shape": [
+                580,
+                128
+              ]
+            },
+            "post_moe_residual": {
+              "dtype": "float32",
+              "sha256": "c2f53275def0c255cbf9a0dcb2d1179b000b30fa41adba5719bed5967f97e406",
+              "shape": [
+                580,
+                2688
+              ]
+            },
+            "rank_only_sorted_weights_legacy": {
+              "dtype": "float32",
+              "sha256": "623b71ddd95a668d8bab40808b48108de6ed068d8b30ae756109e47e0b5e6279",
+              "shape": [
+                580,
+                6
+              ]
+            },
+            "router_input": {
+              "dtype": "float32",
+              "sha256": "2062fa6f9f6cbefca0ba52eecd52d96ceb6fec2587ddb4fab2204913d509e5c5",
+              "shape": [
+                580,
+                2688
+              ]
+            },
+            "router_logits": {
+              "dtype": "float32",
+              "sha256": "81942230103b897bb4a511e9eadc8b0a739d89cd9f461ed562d0b03f8efab7c8",
+              "shape": [
+                580,
+                128
+              ]
+            }
+          },
+          "layer": 51
+        },
+        "middle": {
+          "feature_digests": {
+            "expert_id_aligned_sparse_weights": {
+              "dtype": "float32",
+              "sha256": "594458449a8539851d9ceb42f60b62b34483b142d981f9105083c2b1c2a5b75b",
+              "shape": [
+                580,
+                128
+              ]
+            },
+            "expert_id_membership_count": {
+              "dtype": "float32",
+              "sha256": "74e8b8084f1fa3f3087aaf2b0968edd5cecac6c4f1b6cfb6b393a6eec10ec62b",
+              "shape": [
+                580,
+                128
+              ]
+            },
+            "post_moe_residual": {
+              "dtype": "float32",
+              "sha256": "59cfb565b90e417dd3ef68666b8f0e3bb0f2dcbc63cc18e69f8731c6d0681eba",
+              "shape": [
+                580,
+                2688
+              ]
+            },
+            "rank_only_sorted_weights_legacy": {
+              "dtype": "float32",
+              "sha256": "d2854981e4def8bfa809d57530138efcfb3a9135aefc63c601622dd4a77c92d8",
+              "shape": [
+                580,
+                6
+              ]
+            },
+            "router_input": {
+              "dtype": "float32",
+              "sha256": "73224652ecf1e16cdc0f1c72a57e5d2465874b02d65cd28ae379b48da81d2fcb",
+              "shape": [
+                580,
+                2688
+              ]
+            },
+            "router_logits": {
+              "dtype": "float32",
+              "sha256": "f9614387b6709630a94f67c6cd7fbdae26371326bf15d626bf79e7cc26211fb3",
+              "shape": [
+                580,
+                128
+              ]
+            }
+          },
+          "layer": 27
+        }
+      },
+      "bundle": {
+        "bytes": 14835263,
+        "path": "features/nemotron35_lightning.npz",
+        "sha256": "6f22ee787681741b29b422e740c4934a879fabe3a33696e01e0316816db73430"
+      },
+      "model_id": "nemotron35_lightning",
+      "n_analysis_groups": 235,
+      "n_pairs": 290,
+      "n_rows": 580,
+      "native_arrays": {
+        "layer_1.post_moe_residual": {
+          "dtype": "float16",
+          "sha256": "2ab03ce5e5c15147761ec3f4977f416e1612fb86480e26a96e5aef7e37f5c16e",
+          "shape": [
+            580,
+            2688
+          ]
+        },
+        "layer_1.router_input": {
+          "dtype": "float16",
+          "sha256": "dfcd31dab9263864c76f544df73f77b9ac97c9455dc7f502f204d47cff5ade94",
+          "shape": [
+            580,
+            2688
+          ]
+        },
+        "layer_1.router_logits": {
+          "dtype": "float16",
+          "sha256": "60c92b5125411d8eb44fd1779fcf7b144dac3d4c14db6905b19d9a8edcf0c4bc",
+          "shape": [
+            580,
+            128
+          ]
+        },
+        "layer_1.router_topk_ids": {
+          "dtype": "int64",
+          "sha256": "0e0d13ef7ec9b7906d776856bad02bd7e68cd83b39fa112459690cd1b1eae6e4",
+          "shape": [
+            580,
+            6
+          ]
+        },
+        "layer_1.router_topk_weights": {
+          "dtype": "float16",
+          "sha256": "94e8fb4e298091e102bbfb22e8c2179ee1e245a53b36c76e7b133fd0eaf8440a",
+          "shape": [
+            580,
+            6
+          ]
+        },
+        "layer_27.post_moe_residual": {
+          "dtype": "float16",
+          "sha256": "1377642d90c6fb7feac981cd3c8ac52e5dc30c22ec2ea00af3f4c37af792a28e",
+          "shape": [
+            580,
+            2688
+          ]
+        },
+        "layer_27.router_input": {
+          "dtype": "float16",
+          "sha256": "f382dec73af85b449ce0e511a147ec5bd9f933b4c2929b539b1d3b037f830f62",
+          "shape": [
+            580,
+            2688
+          ]
+        },
+        "layer_27.router_logits": {
+          "dtype": "float16",
+          "sha256": "0d2b92c85fd0bf6c0e81a30f5d0781c91afcd42643e0913402b68650d6dbb27d",
+          "shape": [
+            580,
+            128
+          ]
+        },
+        "layer_27.router_topk_ids": {
+          "dtype": "int64",
+          "sha256": "8273c21b2389f3d8717b19348091866933cf5e8b9cd55ec23ff86bcd37efecae",
+          "shape": [
+            580,
+            6
+          ]
+        },
+        "layer_27.router_topk_weights": {
+          "dtype": "float16",
+          "sha256": "5285f7222ff03b4f70c90fca9cc8b87bdb0461a34dec0913ba6bb1d26f7e879f",
+          "shape": [
+            580,
+            6
+          ]
+        },
+        "layer_51.post_moe_residual": {
+          "dtype": "float16",
+          "sha256": "02ef82e265c53b3fee134baaf18075b77e107812158d827e4c39d66cfabfb98c",
+          "shape": [
+            580,
+            2688
+          ]
+        },
+        "layer_51.router_input": {
+          "dtype": "float16",
+          "sha256": "16c905c9da00303a13e57c6e920552e1870d7008f86e7fbb37db4330e6efeb01",
+          "shape": [
+            580,
+            2688
+          ]
+        },
+        "layer_51.router_logits": {
+          "dtype": "float16",
+          "sha256": "c670ecedceb18991538a5e8a5e077f6a24049c7e9d287f897114d6e6a09e0deb",
+          "shape": [
+            580,
+            128
+          ]
+        },
+        "layer_51.router_topk_ids": {
+          "dtype": "int64",
+          "sha256": "6b4e4f893ab95da1c0aa9cb1df7708c4c689f0ea76816cfd287b5cbe30af3860",
+          "shape": [
+            580,
+            6
+          ]
+        },
+        "layer_51.router_topk_weights": {
+          "dtype": "float16",
+          "sha256": "2a7e9c42962ff89c685043f226618e0421b226e1f589a6dc5d322e1a59edb0d4",
+          "shape": [
+            580,
+            6
+          ]
+        }
+      },
+      "num_experts": 128,
+      "reference_oof": {
+        "bytes": 33678765,
+        "path": "canonical_six/interface_access_oof_predictions.jsonl",
+        "sha256": "fbb8e2c748205cf21b05bd8ca32cbd94610afff7e0e562a4bca6bebf1d2ad43d"
+      },
+      "rows": {
+        "bytes": 366175,
+        "path": "features/nemotron35_lightning.rows.jsonl",
+        "sha256": "9d7357dde1be457904bddaf7508295bd316168c52a8742a6dde8c7619492dd3c"
+      },
+      "source_manifest_original_sha256": "c3ab241b83c0765c09b7f03f6c4f870235fe72734303dc99c909cffb1bd7e45f"
+    },
+    {
+      "anchors": {
+        "early": {
+          "feature_digests": {
+            "expert_id_aligned_sparse_weights": {
+              "dtype": "float32",
+              "sha256": "2edf9651a4f56b3e7235d63c8b446fab7a1d81926bdaf9402e234eb25c184a87",
+              "shape": [
+                580,
+                256
+              ]
+            },
+            "expert_id_membership_count": {
+              "dtype": "float32",
+              "sha256": "977955db8bef1b7a8d19baf263642fcf0c1ba981778c965eb91ddf219d71bd60",
+              "shape": [
+                580,
+                256
+              ]
+            },
+            "post_moe_residual": {
+              "dtype": "float32",
+              "sha256": "e36d8cd926bda523e2a407748e84c12aa3b81904fb4b45d5d06b4098d384800b",
+              "shape": [
+                580,
+                2048
+              ]
+            },
+            "rank_only_sorted_weights_legacy": {
+              "dtype": "float32",
+              "sha256": "4aedc8837359caa12fcf9efa321f01dc1007e0988ec3517c61e2cd96afdbfbdb",
+              "shape": [
+                580,
+                8
+              ]
+            },
+            "router_input": {
+              "dtype": "float32",
+              "sha256": "b21f18fc332e27131726091fdee77ba2e0106af0cb976846de56415e24ea3efb",
+              "shape": [
+                580,
+                2048
+              ]
+            },
+            "router_logits": {
+              "dtype": "float32",
+              "sha256": "c6571f5b1e63efdde46e3c04af9409888fbc2e4d4a8212f2076b2e35150ab937",
+              "shape": [
+                580,
+                256
+              ]
+            }
+          },
+          "layer": 0
+        },
+        "late": {
+          "feature_digests": {
+            "expert_id_aligned_sparse_weights": {
+              "dtype": "float32",
+              "sha256": "ceebe11bfe3b3d008b80f391257b1cf54ebd4c9d852e96cb9b271e79ad5315ec",
+              "shape": [
+                580,
+                256
+              ]
+            },
+            "expert_id_membership_count": {
+              "dtype": "float32",
+              "sha256": "473f915f9012dbe62a021814d6ac914d18876c8dfa561ee7b2bdf5c3a3f9dd26",
+              "shape": [
+                580,
+                256
+              ]
+            },
+            "post_moe_residual": {
+              "dtype": "float32",
+              "sha256": "6a18e07448baed5f682bd7e2bd3323132ad6344076dd2fbcdcd5ae273321e375",
+              "shape": [
+                580,
+                2048
+              ]
+            },
+            "rank_only_sorted_weights_legacy": {
+              "dtype": "float32",
+              "sha256": "08735da98b39a49c7df49b64be33c2a8dfc4de39ca612e516f7ae9be54293392",
+              "shape": [
+                580,
+                8
+              ]
+            },
+            "router_input": {
+              "dtype": "float32",
+              "sha256": "59d7281aff6b25865b1b529bab918413beeeabd7180fe1f4c7d7fa77448802c8",
+              "shape": [
+                580,
+                2048
+              ]
+            },
+            "router_logits": {
+              "dtype": "float32",
+              "sha256": "865092a93789ca7bcb602e34afb23a9a4c7d3c69c2689c14e0d5ae68fd3200e1",
+              "shape": [
+                580,
+                256
+              ]
+            }
+          },
+          "layer": 39
+        },
+        "middle": {
+          "feature_digests": {
+            "expert_id_aligned_sparse_weights": {
+              "dtype": "float32",
+              "sha256": "75a426e744737b7ff2ceefc8dcd3076ca221027ca0cdce4131b7af428dc58718",
+              "shape": [
+                580,
+                256
+              ]
+            },
+            "expert_id_membership_count": {
+              "dtype": "float32",
+              "sha256": "f181579685b1a1563c0835b41dd7aad998c8d89c4357f77f26d423be805b44a2",
+              "shape": [
+                580,
+                256
+              ]
+            },
+            "post_moe_residual": {
+              "dtype": "float32",
+              "sha256": "e9c965d92abd167478b746788acba28186cae9012f89d754723807103667fce0",
+              "shape": [
+                580,
+                2048
+              ]
+            },
+            "rank_only_sorted_weights_legacy": {
+              "dtype": "float32",
+              "sha256": "3bee749a9c925ee0fa8f777d441db370a54feed453c07d77a695988822902667",
+              "shape": [
+                580,
+                8
+              ]
+            },
+            "router_input": {
+              "dtype": "float32",
+              "sha256": "59467a608c6101799b66be9bda38eb0481f3da4518e77ceb16de6747233131a0",
+              "shape": [
+                580,
+                2048
+              ]
+            },
+            "router_logits": {
+              "dtype": "float32",
+              "sha256": "444f2d9b04257d2c0e2995ff91296d17af50d472bd0d89ec902ca25b0867436e",
+              "shape": [
+                580,
+                256
+              ]
+            }
+          },
+          "layer": 20
+        }
+      },
+      "bundle": {
+        "bytes": 11498338,
+        "path": "features/qwen36_moe.npz",
+        "sha256": "aef529f845ce100d3c4dc51dc4c8eade16b0f00e1104043582dfb4965a5e3ba3"
+      },
+      "model_id": "qwen36_moe",
+      "n_analysis_groups": 235,
+      "n_pairs": 290,
+      "n_rows": 580,
+      "native_arrays": {
+        "layer_0.post_moe_residual": {
+          "dtype": "float16",
+          "sha256": "c048398e5ba790d0b89c329960572d0a541039bb7f4182ea52bd532033b606f5",
+          "shape": [
+            580,
+            2048
+          ]
+        },
+        "layer_0.router_input": {
+          "dtype": "float16",
+          "sha256": "649805f98f091be4288123e3ef89aabb80666d12fa8b73b43247358be080a0d4",
+          "shape": [
+            580,
+            2048
+          ]
+        },
+        "layer_0.router_logits": {
+          "dtype": "float16",
+          "sha256": "519e8f341c8c04ff84bc3f44deb683374eb00d6be3010dcabd973f4d00bff1f8",
+          "shape": [
+            580,
+            256
+          ]
+        },
+        "layer_0.router_topk_ids": {
+          "dtype": "int64",
+          "sha256": "8bf34a544a7bf7e80f71f7bd3543d9eef75e2fa2d13f58d7eb84237d18fa45a3",
+          "shape": [
+            580,
+            8
+          ]
+        },
+        "layer_0.router_topk_weights": {
+          "dtype": "float16",
+          "sha256": "7920e0fdcf81e0e3be295b17662107cdd5e48b2352ba29d93e134889d338c82c",
+          "shape": [
+            580,
+            8
+          ]
+        },
+        "layer_20.post_moe_residual": {
+          "dtype": "float16",
+          "sha256": "1869c6b2446446439ca4728dd3a11ebd44d23d1d3def62aca98b74136f09f04d",
+          "shape": [
+            580,
+            2048
+          ]
+        },
+        "layer_20.router_input": {
+          "dtype": "float16",
+          "sha256": "dd301533ea6b7875dabbde5402eebc691ea7a6f295834610c6eddfbff91da3e3",
+          "shape": [
+            580,
+            2048
+          ]
+        },
+        "layer_20.router_logits": {
+          "dtype": "float16",
+          "sha256": "2e40d3c5d01bbade62e25c2cdf6a46e45ceca3edfafe2d32c9caf63687392313",
+          "shape": [
+            580,
+            256
+          ]
+        },
+        "layer_20.router_topk_ids": {
+          "dtype": "int64",
+          "sha256": "053af9efe76d0653dd1714e02cebc30ddae5f734b6f9fa34fd6160c9bb112992",
+          "shape": [
+            580,
+            8
+          ]
+        },
+        "layer_20.router_topk_weights": {
+          "dtype": "float16",
+          "sha256": "051064ec1f95cdca46a0dcbd4ab112ec599b31b07ddd4b42d2cca2ac86114fc2",
+          "shape": [
+            580,
+            8
+          ]
+        },
+        "layer_39.post_moe_residual": {
+          "dtype": "float16",
+          "sha256": "e3a3b12a5c3f677946eb963e33a219707581c8d317a12a724734a71c0978c264",
+          "shape": [
+            580,
+            2048
+          ]
+        },
+        "layer_39.router_input": {
+          "dtype": "float16",
+          "sha256": "26bbe8dfa5f65f3cb5e86040da83acaf4662643ee433ef3459142e35fc39d983",
+          "shape": [
+            580,
+            2048
+          ]
+        },
+        "layer_39.router_logits": {
+          "dtype": "float16",
+          "sha256": "427212cace89baf397fc80c5a571070a93cd9d3eac0a67266c94e0f4bd32d6ef",
+          "shape": [
+            580,
+            256
+          ]
+        },
+        "layer_39.router_topk_ids": {
+          "dtype": "int64",
+          "sha256": "8c79c28cd63e9f8514fb4c7cef664145a2ee772229ddfc6336d902c7cac5b182",
+          "shape": [
+            580,
+            8
+          ]
+        },
+        "layer_39.router_topk_weights": {
+          "dtype": "float16",
+          "sha256": "99796d74e06551f78f6d79164787fa8559aa1fdc414ed83e46b9f7fd6a995b87",
+          "shape": [
+            580,
+            8
+          ]
+        }
+      },
+      "num_experts": 256,
+      "reference_oof": {
+        "bytes": 33678765,
+        "path": "canonical_six/interface_access_oof_predictions.jsonl",
+        "sha256": "fbb8e2c748205cf21b05bd8ca32cbd94610afff7e0e562a4bca6bebf1d2ad43d"
+      },
+      "rows": {
+        "bytes": 366176,
+        "path": "features/qwen36_moe.rows.jsonl",
+        "sha256": "6830f49be399b4c6dbae1fac9d340809a836d49cf99ba79245b78ce3dd9b3314"
+      },
+      "source_manifest_original_sha256": "b52ac93b310fb84c3502852edb6956deec2e69bee3e90498f7acebc667ace80f"
+    },
+    {
+      "anchors": {
+        "early": {
+          "feature_digests": {
+            "expert_id_aligned_sparse_weights": {
+              "dtype": "float32",
+              "sha256": "68822e92f3ba1f7a9e76343bf66ac5f7921fa25978d508d58dba0e6fc8bff7e7",
+              "shape": [
+                580,
+                32
+              ]
+            },
+            "expert_id_membership_count": {
+              "dtype": "float32",
+              "sha256": "363594d90cc153547b5d4d8ae32b160affc8f5db27669effcc23593c52804221",
+              "shape": [
+                580,
+                32
+              ]
+            },
+            "post_moe_residual": {
+              "dtype": "float32",
+              "sha256": "eb52ad9de325a8d844d95b9e58d4a9097d09e2d7714da1e7dc9f0d41014b9af9",
+              "shape": [
+                580,
+                2880
+              ]
+            },
+            "rank_only_sorted_weights_legacy": {
+              "dtype": "float32",
+              "sha256": "cf0bb7471aa16f538588a5445d4f03054f0706cc34a1f727607601e8e4240fd0",
+              "shape": [
+                580,
+                4
+              ]
+            },
+            "router_input": {
+              "dtype": "float32",
+              "sha256": "5559c386451984ef9903b681e9796555a01c026adbc07cddea8580c78a97a779",
+              "shape": [
+                580,
+                2880
+              ]
+            },
+            "router_logits": {
+              "dtype": "float32",
+              "sha256": "e796b566a4a7d7fef8d73caec7488d0330050f43eda09ec52ee407e72e95be9f",
+              "shape": [
+                580,
+                32
+              ]
+            }
+          },
+          "layer": 0
+        },
+        "late": {
+          "feature_digests": {
+            "expert_id_aligned_sparse_weights": {
+              "dtype": "float32",
+              "sha256": "639e3c4808f802a5ff084d91357c36ae7ea981fe826b73cebb8b0e902802a43a",
+              "shape": [
+                580,
+                32
+              ]
+            },
+            "expert_id_membership_count": {
+              "dtype": "float32",
+              "sha256": "15d1a34f84f445ae400c6d0f3e6271eed8b9a97f85524a601d5a64d281448d33",
+              "shape": [
+                580,
+                32
+              ]
+            },
+            "post_moe_residual": {
+              "dtype": "float32",
+              "sha256": "b77ea649e0319932f0c9532be421bbdbc08f8d4f966b8595b5bf35bf0f19c617",
+              "shape": [
+                580,
+                2880
+              ]
+            },
+            "rank_only_sorted_weights_legacy": {
+              "dtype": "float32",
+              "sha256": "58318ca831893a22a88d39ab47b3e910c5f9115e71f41aadbd2abfcd8dd79a01",
+              "shape": [
+                580,
+                4
+              ]
+            },
+            "router_input": {
+              "dtype": "float32",
+              "sha256": "f119f466cf17bfad814f029fcb305e5b4470900b9143e1607babc2855e2b9e5f",
+              "shape": [
+                580,
+                2880
+              ]
+            },
+            "router_logits": {
+              "dtype": "float32",
+              "sha256": "161aeaa679949344b8ed565f46b2b981c64d6022339631cc343c09711ccae2a4",
+              "shape": [
+                580,
+                32
+              ]
+            }
+          },
+          "layer": 23
+        },
+        "middle": {
+          "feature_digests": {
+            "expert_id_aligned_sparse_weights": {
+              "dtype": "float32",
+              "sha256": "5444837157e6ac141ee87ea01561eefb73bc380c752aab3a93f2345ed1dc035b",
+              "shape": [
+                580,
+                32
+              ]
+            },
+            "expert_id_membership_count": {
+              "dtype": "float32",
+              "sha256": "32ef195771f5aef8be609ab3db3fcc6f8bc011de1e9fdc7b3641365c4fedf4e3",
+              "shape": [
+                580,
+                32
+              ]
+            },
+            "post_moe_residual": {
+              "dtype": "float32",
+              "sha256": "f306dda84e81879e1addeb37abd5fbf8195411d0b2760815263966bc4b980a08",
+              "shape": [
+                580,
+                2880
+              ]
+            },
+            "rank_only_sorted_weights_legacy": {
+              "dtype": "float32",
+              "sha256": "92bc7325f73df280f0eca10c3151003af13b77a81c688d5c08d20981ee0d8496",
+              "shape": [
+                580,
+                4
+              ]
+            },
+            "router_input": {
+              "dtype": "float32",
+              "sha256": "75cd44f50631ef8881d3427bbe1cbfc08815c6e01cf86b092815e3fbd03f57b0",
+              "shape": [
+                580,
+                2880
+              ]
+            },
+            "router_logits": {
+              "dtype": "float32",
+              "sha256": "d334f9c114cb2434a273a8946929ab1db0e6bccb8426a5cdc4486d1576076d42",
+              "shape": [
+                580,
+                32
+              ]
+            }
+          },
+          "layer": 12
+        }
+      },
+      "bundle": {
+        "bytes": 15689572,
+        "path": "features/gpt_oss.npz",
+        "sha256": "d6112bbc750f05b438be8651fe6f2a53793a070c65375896a8860fd027162c21"
+      },
+      "model_id": "gpt_oss",
+      "n_analysis_groups": 235,
+      "n_pairs": 290,
+      "n_rows": 580,
+      "native_arrays": {
+        "layer_0.post_moe_residual": {
+          "dtype": "float16",
+          "sha256": "db776ad48dec4aaef3161e5ac5ae46bd7e72e8b9c8bae8d67bd8e4346d2d93b7",
+          "shape": [
+            580,
+            2880
+          ]
+        },
+        "layer_0.router_input": {
+          "dtype": "float16",
+          "sha256": "6a5a6a87bb883e7a6768a8331cc0d8edbefbcd07bc64162c62d2d756f4ea683e",
+          "shape": [
+            580,
+            2880
+          ]
+        },
+        "layer_0.router_logits": {
+          "dtype": "float16",
+          "sha256": "5d3475a88efba7dbe12a1f31cc26158e29403005c5906c3cfc1569495d1b568d",
+          "shape": [
+            580,
+            32
+          ]
+        },
+        "layer_0.router_topk_ids": {
+          "dtype": "int64",
+          "sha256": "44352583bc3e938953c3d770f0bc6516f0df761e32bffa3df7d44df2f2be6bba",
+          "shape": [
+            580,
+            4
+          ]
+        },
+        "layer_0.router_topk_weights": {
+          "dtype": "float16",
+          "sha256": "bc7b376c0602ff5a8064051e69b9924f957c45ef9251425496d1b529dd5403a0",
+          "shape": [
+            580,
+            4
+          ]
+        },
+        "layer_12.post_moe_residual": {
+          "dtype": "float16",
+          "sha256": "eb2765dffcd43b2d8994659a7d09c05ecce3fd4bc0ceb1fb7cff95e5367e8741",
+          "shape": [
+            580,
+            2880
+          ]
+        },
+        "layer_12.router_input": {
+          "dtype": "float16",
+          "sha256": "e053a7e98a4011942d093763d327a4dccc51d540956c92d77953b022bf81937b",
+          "shape": [
+            580,
+            2880
+          ]
+        },
+        "layer_12.router_logits": {
+          "dtype": "float16",
+          "sha256": "dd9fd3cf0bb4a501616aa783f6afecb1f2a8e68aaad77325697c47df6effcd4e",
+          "shape": [
+            580,
+            32
+          ]
+        },
+        "layer_12.router_topk_ids": {
+          "dtype": "int64",
+          "sha256": "b914ebfc4e3f1afdfa74b54134f9ca990bc6c90e729325ae37b84098f86ec122",
+          "shape": [
+            580,
+            4
+          ]
+        },
+        "layer_12.router_topk_weights": {
+          "dtype": "float16",
+          "sha256": "5286ad8cb17b8406c616f41e41be98548781b05a700d36e2ea8f58eaa99babed",
+          "shape": [
+            580,
+            4
+          ]
+        },
+        "layer_23.post_moe_residual": {
+          "dtype": "float16",
+          "sha256": "278426ac9be383b75f7a3d43f183415bfd35699624edd15c0ba1ba3eefbbf0ba",
+          "shape": [
+            580,
+            2880
+          ]
+        },
+        "layer_23.router_input": {
+          "dtype": "float16",
+          "sha256": "85530a13f83875f5d62c424e8d92fc4ab753ebd6a800347f422c115d886fac2f",
+          "shape": [
+            580,
+            2880
+          ]
+        },
+        "layer_23.router_logits": {
+          "dtype": "float16",
+          "sha256": "fbe768da3886885abc6c8e82e54817d45ce845a5b35455149eb6aed62391b33b",
+          "shape": [
+            580,
+            32
+          ]
+        },
+        "layer_23.router_topk_ids": {
+          "dtype": "int64",
+          "sha256": "23e9f0dd3058b51f0b17934a1778116249fe6857eea1bf859d1c525d7dc87a96",
+          "shape": [
+            580,
+            4
+          ]
+        },
+        "layer_23.router_topk_weights": {
+          "dtype": "float16",
+          "sha256": "a79833f4d23aacc35e411289e2ab6606c57369ccc4456a43c23955ee0fcbfb3a",
+          "shape": [
+            580,
+            4
+          ]
+        }
+      },
+      "num_experts": 32,
+      "reference_oof": {
+        "bytes": 33678765,
+        "path": "canonical_six/interface_access_oof_predictions.jsonl",
+        "sha256": "fbb8e2c748205cf21b05bd8ca32cbd94610afff7e0e562a4bca6bebf1d2ad43d"
+      },
+      "rows": {
+        "bytes": 366176,
+        "path": "features/gpt_oss.rows.jsonl",
+        "sha256": "89c9e010c415d0ae1924c2b11cc96cd0523dd59ce392333698ccbe5b756a0728"
+      },
+      "source_manifest_original_sha256": "fab5e82fe1e29b4cfa7fecc7b303b55d5fd0c0137ccb2141981487483b0f214f"
+    },
+    {
+      "anchors": {
+        "early": {
+          "feature_digests": {
+            "expert_id_aligned_sparse_weights": {
+              "dtype": "float32",
+              "sha256": "de378c65820a1b7b4da85e9045c2f9f7c86f835f6524e7daebc4746f9f2e1628",
+              "shape": [
+                580,
+                128
+              ]
+            },
+            "expert_id_membership_count": {
+              "dtype": "float32",
+              "sha256": "983466fcde0e54206d0cd319f9059798b97ed6dfdadc33554801855d5dc9ab43",
+              "shape": [
+                580,
+                128
+              ]
+            },
+            "post_moe_residual": {
+              "dtype": "float32",
+              "sha256": "0191d20a14fe6c21c5b6b07e188d1141df47dc362a3a323478c845e2eea0ecb5",
+              "shape": [
+                580,
+                2048
+              ]
+            },
+            "rank_only_sorted_weights_legacy": {
+              "dtype": "float32",
+              "sha256": "243ce0221feeb7e6ee07f77bbbcc1f56c3cd41b997bea2f3083b682a27d5b725",
+              "shape": [
+                580,
+                8
+              ]
+            },
+            "router_input": {
+              "dtype": "float32",
+              "sha256": "35be9a09cadde3f9b38b4cf469a3293ae4cd0dd43b8e8731930be6092f369a3a",
+              "shape": [
+                580,
+                2048
+              ]
+            },
+            "router_logits": {
+              "dtype": "float32",
+              "sha256": "505ca5fea1317b74a187b238e8cdbb89b4bde4169da28d8096b55112a37f0b1b",
+              "shape": [
+                580,
+                128
+              ]
+            }
+          },
+          "layer": 0
+        },
+        "late": {
+          "feature_digests": {
+            "expert_id_aligned_sparse_weights": {
+              "dtype": "float32",
+              "sha256": "dbf7a82f3879421fbcfa5ba42b0d287db24f3f88691aee885d56f0cd0649dab5",
+              "shape": [
+                580,
+                128
+              ]
+            },
+            "expert_id_membership_count": {
+              "dtype": "float32",
+              "sha256": "9084bb0e0d34ca85f1a090ca86a685a00186183f7cb5ebd6c8f325513fb67b9e",
+              "shape": [
+                580,
+                128
+              ]
+            },
+            "post_moe_residual": {
+              "dtype": "float32",
+              "sha256": "1ac662a74245a501f116c8396ee2af3a987d82847303b26e7043b3d03364c763",
+              "shape": [
+                580,
+                2048
+              ]
+            },
+            "rank_only_sorted_weights_legacy": {
+              "dtype": "float32",
+              "sha256": "a2265a7ebc7629a21ab18f7b4c8c819f7bdcc0dc5498dfb4216359458882ebd8",
+              "shape": [
+                580,
+                8
+              ]
+            },
+            "router_input": {
+              "dtype": "float32",
+              "sha256": "fc6f7b80e1288e7bfaea45bff859a9b83e372d3054402cc1cd6cf34a92734e99",
+              "shape": [
+                580,
+                2048
+              ]
+            },
+            "router_logits": {
+              "dtype": "float32",
+              "sha256": "0454d65db2ff3f7b9a647f8c441804873cd1396e02532653152fa781b8fe8a5d",
+              "shape": [
+                580,
+                128
+              ]
+            }
+          },
+          "layer": 47
+        },
+        "middle": {
+          "feature_digests": {
+            "expert_id_aligned_sparse_weights": {
+              "dtype": "float32",
+              "sha256": "9b75c6dde05c6e5248debb42e6b193fcaeaa1b5fa645ef123beb32dfcebc310c",
+              "shape": [
+                580,
+                128
+              ]
+            },
+            "expert_id_membership_count": {
+              "dtype": "float32",
+              "sha256": "de8611d768db75fefc613c60ad89db8d5b5f3b4a58bc4158278c77afdcf6779a",
+              "shape": [
+                580,
+                128
+              ]
+            },
+            "post_moe_residual": {
+              "dtype": "float32",
+              "sha256": "09f3bcec98b030ef9819c5a541f8db967ad71763a652caefcb69070e9553ede0",
+              "shape": [
+                580,
+                2048
+              ]
+            },
+            "rank_only_sorted_weights_legacy": {
+              "dtype": "float32",
+              "sha256": "7b7f72aee8d553149b13c7dab55e83b7e9843d6e4396d1d5abfe8312e07f42d4",
+              "shape": [
+                580,
+                8
+              ]
+            },
+            "router_input": {
+              "dtype": "float32",
+              "sha256": "15329953e06d7f1e55cdda8b4a8707353530e4faf2ec3ffdece8273843e487f0",
+              "shape": [
+                580,
+                2048
+              ]
+            },
+            "router_logits": {
+              "dtype": "float32",
+              "sha256": "f195e9aae689654cbeb2d1cf598aca5e01a2fa0f47d0bccf7afa097c22241a42",
+              "shape": [
+                580,
+                128
+              ]
+            }
+          },
+          "layer": 24
+        }
+      },
+      "bundle": {
+        "bytes": 11291769,
+        "path": "features/qwen3_moe.npz",
+        "sha256": "a2531a506222488fb644bc1ec488a8526188c5ff0998260376ea86f9bdf248a4"
+      },
+      "model_id": "qwen3_moe",
+      "n_analysis_groups": 235,
+      "n_pairs": 290,
+      "n_rows": 580,
+      "native_arrays": {
+        "layer_0.post_moe_residual": {
+          "dtype": "float16",
+          "sha256": "494688919855a43a5a394efe06615f074907b9855bc66561cfa434777c31df74",
+          "shape": [
+            580,
+            2048
+          ]
+        },
+        "layer_0.router_input": {
+          "dtype": "float16",
+          "sha256": "be1e15e6375f252f546f6b09e80954dbe731ecdb0636eb68bc1c9281c334f942",
+          "shape": [
+            580,
+            2048
+          ]
+        },
+        "layer_0.router_logits": {
+          "dtype": "float16",
+          "sha256": "7a339bd781e0f0f825d1b109c58fded5c0f06d6523bf1811060b34f37e6a8b08",
+          "shape": [
+            580,
+            128
+          ]
+        },
+        "layer_0.router_topk_ids": {
+          "dtype": "int64",
+          "sha256": "a6da0df01ae9c79a3cdf2ceb1e37fe12cc0488b58f53f70f26e0296585c6d495",
+          "shape": [
+            580,
+            8
+          ]
+        },
+        "layer_0.router_topk_weights": {
+          "dtype": "float16",
+          "sha256": "8008d414f86e17e52e569bcaa6aff7be983e1920929cb200a30a741c265229fd",
+          "shape": [
+            580,
+            8
+          ]
+        },
+        "layer_24.post_moe_residual": {
+          "dtype": "float16",
+          "sha256": "bd71bc071a8369191952fa825b1c66d9222ec840c8fa3c846dbbc82363280eaa",
+          "shape": [
+            580,
+            2048
+          ]
+        },
+        "layer_24.router_input": {
+          "dtype": "float16",
+          "sha256": "75c15f3336b582782ab0680f32f4c171be7e93af36e73565c25a2196e91cfa41",
+          "shape": [
+            580,
+            2048
+          ]
+        },
+        "layer_24.router_logits": {
+          "dtype": "float16",
+          "sha256": "376fe7695df51d14ec156f09781b24e762a56ceb2332e2a5347c227fde37a794",
+          "shape": [
+            580,
+            128
+          ]
+        },
+        "layer_24.router_topk_ids": {
+          "dtype": "int64",
+          "sha256": "d82b6f50c84814b2aebff634688c571b79868bf0fe1d641be76b3678b034dd36",
+          "shape": [
+            580,
+            8
+          ]
+        },
+        "layer_24.router_topk_weights": {
+          "dtype": "float16",
+          "sha256": "b334ef242b996255d225d8b2342738295e70a3d9e3033044dd60b070c4d1bdd0",
+          "shape": [
+            580,
+            8
+          ]
+        },
+        "layer_47.post_moe_residual": {
+          "dtype": "float16",
+          "sha256": "7934c67b4824e9595f5bd90b7efaf93cbd3a8891d3b877b815a7090198cb82d1",
+          "shape": [
+            580,
+            2048
+          ]
+        },
+        "layer_47.router_input": {
+          "dtype": "float16",
+          "sha256": "25be6d856aa2a6074880ce6d471d06355b11f6dde4c97445c5ef8047db3be11d",
+          "shape": [
+            580,
+            2048
+          ]
+        },
+        "layer_47.router_logits": {
+          "dtype": "float16",
+          "sha256": "ba00e46fe6d6a65fd4b5874ee2d9b708a121dde128ed8be74e7bdcdadd608efe",
+          "shape": [
+            580,
+            128
+          ]
+        },
+        "layer_47.router_topk_ids": {
+          "dtype": "int64",
+          "sha256": "4bdac7ad2f3a2595769083a06d6ada48f06ffa65811f1e454ae4b6f4cefc1ba3",
+          "shape": [
+            580,
+            8
+          ]
+        },
+        "layer_47.router_topk_weights": {
+          "dtype": "float16",
+          "sha256": "8ef5fc63707666d04853463cd7f0598c59db318200a0bd96bd9108cd2443c586",
+          "shape": [
+            580,
+            8
+          ]
+        }
+      },
+      "num_experts": 128,
+      "reference_oof": {
+        "bytes": 33678765,
+        "path": "canonical_six/interface_access_oof_predictions.jsonl",
+        "sha256": "fbb8e2c748205cf21b05bd8ca32cbd94610afff7e0e562a4bca6bebf1d2ad43d"
+      },
+      "rows": {
+        "bytes": 366133,
+        "path": "features/qwen3_moe.rows.jsonl",
+        "sha256": "519158a6f0153d05b84fb4c667ba73badfc55f0d2f114ab8455bc46e79e7ebf4"
+      },
+      "source_manifest_original_sha256": "28a358cd5710760272ef5427e0fec1ca152dc639fe25e1fe64e60e032c8200b0"
+    },
+    {
+      "anchors": {
+        "early": {
+          "feature_digests": {
+            "expert_id_aligned_sparse_weights": {
+              "dtype": "float32",
+              "sha256": "cac7535932a04ddd79618acfd6facef87d79b75aa544d3b08ab98e59ce794458",
+              "shape": [
+                580,
+                64
+              ]
+            },
+            "expert_id_membership_count": {
+              "dtype": "float32",
+              "sha256": "8342b00ca8b7e49e2f8bf0ba15263140b120ec41bcf00c7198ede2efd7f99a1f",
+              "shape": [
+                580,
+                64
+              ]
+            },
+            "post_moe_residual": {
+              "dtype": "float32",
+              "sha256": "69a31f13e597b519606efa95abfb2dca46d8f7569c5a1673b02e67ce83de480c",
+              "shape": [
+                580,
+                2048
+              ]
+            },
+            "rank_only_sorted_weights_legacy": {
+              "dtype": "float32",
+              "sha256": "f4a2ab254225d856c850f8bf201e826204d76ba86145955aaf2a4ddea2d18c7b",
+              "shape": [
+                580,
+                4
+              ]
+            },
+            "router_input": {
+              "dtype": "float32",
+              "sha256": "0daed6c0bb566c68d6e4e0766e0832b48a1e13407ef0ac82377fc541ef12b981",
+              "shape": [
+                580,
+                2048
+              ]
+            },
+            "router_logits": {
+              "dtype": "float32",
+              "sha256": "16f734dcd21a7d6e973c7d2f28af49887d2c4405bf2c45949eb27b2f3413a88a",
+              "shape": [
+                580,
+                64
+              ]
+            }
+          },
+          "layer": 1
+        },
+        "middle": {
+          "feature_digests": {
+            "expert_id_aligned_sparse_weights": {
+              "dtype": "float32",
+              "sha256": "075b3594f55db955cd93a9160a4a4b936982ee1cd7e4372038a265bbcfb9dc72",
+              "shape": [
+                580,
+                64
+              ]
+            },
+            "expert_id_membership_count": {
+              "dtype": "float32",
+              "sha256": "b42da7b774a2309d81f17e4bfbd742cd788e451875794f2e9ec7886531bf0247",
+              "shape": [
+                580,
+                64
+              ]
+            },
+            "post_moe_residual": {
+              "dtype": "float32",
+              "sha256": "8f7371a5d563bd46d68e69b67d187eb5bf8f3562412ac5e14fafcf5c2be0bf9f",
+              "shape": [
+                580,
+                2048
+              ]
+            },
+            "rank_only_sorted_weights_legacy": {
+              "dtype": "float32",
+              "sha256": "de6a89ee9824790bf996c9ba3207ddd454d2b0ef92a83aced7e0f91ff322ed2f",
+              "shape": [
+                580,
+                4
+              ]
+            },
+            "router_input": {
+              "dtype": "float32",
+              "sha256": "ab01c6e0404e9914eeb9cde89612948625df677e7848ffa6cc4050df79df3131",
+              "shape": [
+                580,
+                2048
+              ]
+            },
+            "router_logits": {
+              "dtype": "float32",
+              "sha256": "37f4e8f29f816826927bfdd7cd47a105efe855f7231e58aa8cff1f430cb848bb",
+              "shape": [
+                580,
+                64
+              ]
+            }
+          },
+          "layer": 24
+        }
+      },
+      "bundle": {
+        "bytes": 7387161,
+        "path": "features/glm4_moe_lite.npz",
+        "sha256": "378adfef653772b30ee09cfc40f50162fea6e6107d075b2b3936d08c157fea4e"
+      },
+      "model_id": "glm4_moe_lite",
+      "n_analysis_groups": 235,
+      "n_pairs": 290,
+      "n_rows": 580,
+      "native_arrays": {
+        "layer_1.post_moe_residual": {
+          "dtype": "float16",
+          "sha256": "089391e46d3b2a37534820951ba9f4e2151460c882fbeae6f39ebddbc6a5fbf7",
+          "shape": [
+            580,
+            2048
+          ]
+        },
+        "layer_1.router_input": {
+          "dtype": "float16",
+          "sha256": "26cf804462f44940da9a0dbfa16798a96067f0e523a81b00ef33dc0b745d027d",
+          "shape": [
+            580,
+            2048
+          ]
+        },
+        "layer_1.router_logits": {
+          "dtype": "float16",
+          "sha256": "28100174c324c29c2b8e9f5740a8e91dcb6ef36ffc67b587d2d69fb56f5ef719",
+          "shape": [
+            580,
+            64
+          ]
+        },
+        "layer_1.router_topk_ids": {
+          "dtype": "int64",
+          "sha256": "b505e6a2c0398dfc8d626843fbb03c9d07311067553b4a54051dbbdda388627a",
+          "shape": [
+            580,
+            4
+          ]
+        },
+        "layer_1.router_topk_weights": {
+          "dtype": "float16",
+          "sha256": "2ac04d707edd2ab51cf15536241a3c47a17dff3a69c8368d456b574800e5cf70",
+          "shape": [
+            580,
+            4
+          ]
+        },
+        "layer_24.post_moe_residual": {
+          "dtype": "float16",
+          "sha256": "42d4993cd4daf8a4507ca41312500f6bea0f26940d9c62f6617084bd754ae03b",
+          "shape": [
+            580,
+            2048
+          ]
+        },
+        "layer_24.router_input": {
+          "dtype": "float16",
+          "sha256": "f126729384dc58cb58bd6442053924c650bbb724f8cbb6c88c0d1bd42208b42e",
+          "shape": [
+            580,
+            2048
+          ]
+        },
+        "layer_24.router_logits": {
+          "dtype": "float16",
+          "sha256": "fe14634d36370d5287e763f06cd13d3dac65083273a6c407787b38e7eef13158",
+          "shape": [
+            580,
+            64
+          ]
+        },
+        "layer_24.router_topk_ids": {
+          "dtype": "int64",
+          "sha256": "87105c72422374fc006121c595c3fcfc48fdecfb251b3480a8418a3a4c4c471d",
+          "shape": [
+            580,
+            4
+          ]
+        },
+        "layer_24.router_topk_weights": {
+          "dtype": "float16",
+          "sha256": "589ccd1aa56b803fe55de22354d64a66b5106f51c34cb5547ea10e8274f2f9d2",
+          "shape": [
+            580,
+            4
+          ]
+        }
+      },
+      "num_experts": 64,
+      "reference_oof": {
+        "bytes": 3956075,
+        "path": "glm/interface_access_oof_predictions.jsonl",
+        "sha256": "e1f5101c8ee9a97135609b3bb97806c4c301bb5e0e630727ab5909d64823cd85"
+      },
+      "rows": {
+        "bytes": 366174,
+        "path": "features/glm4_moe_lite.rows.jsonl",
+        "sha256": "d64700992d0e4ff336cf8330a52986589a3198d0a935fda49d6db51a050a491e"
+      },
+      "source_manifest_original_sha256": "db804d0c660a311ee9008f3d3aa491d158984e65923ac3b22990077ec9065f40"
+    },
+    {
+      "anchors": {
+        "early": {
+          "feature_digests": {
+            "expert_id_aligned_sparse_weights": {
+              "dtype": "float32",
+              "sha256": "22e1ccc03bccfffba6ab7e54257fa383761b2194e50e2ec0182bf26bd0edf9b7",
+              "shape": [
+                580,
+                128
+              ]
+            },
+            "expert_id_membership_count": {
+              "dtype": "float32",
+              "sha256": "8fe68742095e38e18924fec7aba135c19f30b5a43d6f0bae767f674d141659bc",
+              "shape": [
+                580,
+                128
+              ]
+            },
+            "post_moe_residual": {
+              "dtype": "float32",
+              "sha256": "d54a4d6e495a7ae07cec5bd3f3f49c5f26a14b6824d73b39f81aabc16dcf68f4",
+              "shape": [
+                580,
+                2880
+              ]
+            },
+            "rank_only_sorted_weights_legacy": {
+              "dtype": "float32",
+              "sha256": "a9197107f84b3a2af7ee048ba1b538f287fe01ec7b39627f269e38b1d061b70c",
+              "shape": [
+                580,
+                4
+              ]
+            },
+            "router_input": {
+              "dtype": "float32",
+              "sha256": "47b009eeb3ca55562fdddfdafcbec2348758c52c2e6b4b79db9c79c4e18886a5",
+              "shape": [
+                580,
+                2880
+              ]
+            },
+            "router_logits": {
+              "dtype": "float32",
+              "sha256": "f3b7b1e2aea10639c0002215128d243083ceec956d01ef008bfcf0bd7a0d2890",
+              "shape": [
+                580,
+                128
+              ]
+            }
+          },
+          "layer": 0
+        },
+        "late": {
+          "feature_digests": {
+            "expert_id_aligned_sparse_weights": {
+              "dtype": "float32",
+              "sha256": "98458ab80353569052366f487deddc320856307cc1d0c63cb67e5de6e62cef98",
+              "shape": [
+                580,
+                128
+              ]
+            },
+            "expert_id_membership_count": {
+              "dtype": "float32",
+              "sha256": "c473ef0cc3fcfc4d406f820e0339435eca74f7dc3b920237fe7c40139871c5bb",
+              "shape": [
+                580,
+                128
+              ]
+            },
+            "post_moe_residual": {
+              "dtype": "float32",
+              "sha256": "6dedc8efd7f7fd0cd5f9c424177194f1627526615b21c2229339a713914bcd1a",
+              "shape": [
+                580,
+                2880
+              ]
+            },
+            "rank_only_sorted_weights_legacy": {
+              "dtype": "float32",
+              "sha256": "d5bb9569f9823a05a6a658bfccaf88b6dff5d4e5367f1abc71112109de0be3f9",
+              "shape": [
+                580,
+                4
+              ]
+            },
+            "router_input": {
+              "dtype": "float32",
+              "sha256": "6f2d4597c3237f642ba22c6043f3958edc1a58d8adbe8ac0e30af062e84f8a67",
+              "shape": [
+                580,
+                2880
+              ]
+            },
+            "router_logits": {
+              "dtype": "float32",
+              "sha256": "394fb2525cdfdef2cf0341c847b19c3f57c51e87cd1c2392af4196b22ea0d8ea",
+              "shape": [
+                580,
+                128
+              ]
+            }
+          },
+          "layer": 35
+        },
+        "middle": {
+          "feature_digests": {
+            "expert_id_aligned_sparse_weights": {
+              "dtype": "float32",
+              "sha256": "da628f4fcf02b1719171c667b044fd066a75cd27f54eac7552e37c7e0d97f5c4",
+              "shape": [
+                580,
+                128
+              ]
+            },
+            "expert_id_membership_count": {
+              "dtype": "float32",
+              "sha256": "2f6fe1fbecc820fdd327ff644c6b748aac18beffa84d0ff8a9a49b94a2a3323f",
+              "shape": [
+                580,
+                128
+              ]
+            },
+            "post_moe_residual": {
+              "dtype": "float32",
+              "sha256": "c24d56bb4aff6e58fdaa9994bd00f93c2b69f67fbe5ec0ea007be85fe7ba4d7f",
+              "shape": [
+                580,
+                2880
+              ]
+            },
+            "rank_only_sorted_weights_legacy": {
+              "dtype": "float32",
+              "sha256": "ff04a2bcc2f30fec3c9e1c3fdff1d43a917b9ecd3376616d4da551e503e4942d",
+              "shape": [
+                580,
+                4
+              ]
+            },
+            "router_input": {
+              "dtype": "float32",
+              "sha256": "5b8430c263775ae0dd533f38cd75fb9ed6714f152faab7b51ad37b1b92c2e8ee",
+              "shape": [
+                580,
+                2880
+              ]
+            },
+            "router_logits": {
+              "dtype": "float32",
+              "sha256": "a33360100057d10ab2042806d44edd99d6480fbe1140e3444e490a157f232cce",
+              "shape": [
+                580,
+                128
+              ]
+            }
+          },
+          "layer": 18
+        }
+      },
+      "bundle": {
+        "bytes": 15875294,
+        "path": "features/gpt_oss_120b.npz",
+        "sha256": "f366c373c9ec3d981d8d09d1e20ee5aa6a59bf71af564cf60a19dba7c76600ac"
+      },
+      "model_id": "gpt_oss_120b",
+      "n_analysis_groups": 235,
+      "n_pairs": 290,
+      "n_rows": 580,
+      "native_arrays": {
+        "layer_0.post_moe_residual": {
+          "dtype": "float16",
+          "sha256": "b1a9f84a4429c44ada94740c45ec02b38aab3364fc7766accce3eb74b7a88278",
+          "shape": [
+            580,
+            2880
+          ]
+        },
+        "layer_0.router_input": {
+          "dtype": "float16",
+          "sha256": "3051d8ed3b7cf88a247c86ab964d3822f3ee590ac72e280a60b8c9323e19fee4",
+          "shape": [
+            580,
+            2880
+          ]
+        },
+        "layer_0.router_logits": {
+          "dtype": "float16",
+          "sha256": "c895ae934c5c7bbb57a3feefc51e6a49d8ef7a1968a90e3727aadd8a65aab09d",
+          "shape": [
+            580,
+            128
+          ]
+        },
+        "layer_0.router_topk_ids": {
+          "dtype": "int64",
+          "sha256": "fd2c93473db867de5e5d17f37eb89b232d7ba384f4ce3cdfc940a6dbde310871",
+          "shape": [
+            580,
+            4
+          ]
+        },
+        "layer_0.router_topk_weights": {
+          "dtype": "float16",
+          "sha256": "e7de135e41a14d25680741190dc9d35b07138e6fef9cc2c653c2e0ff4db42b93",
+          "shape": [
+            580,
+            4
+          ]
+        },
+        "layer_18.post_moe_residual": {
+          "dtype": "float16",
+          "sha256": "3f84341a561ca734c1ead5442c79588beca43bc7eaddd4881c865fce93104b6a",
+          "shape": [
+            580,
+            2880
+          ]
+        },
+        "layer_18.router_input": {
+          "dtype": "float16",
+          "sha256": "9dba37e08d8ea0c012adfef0ec9378916a79371f531fdd83784afd56dd56a8f2",
+          "shape": [
+            580,
+            2880
+          ]
+        },
+        "layer_18.router_logits": {
+          "dtype": "float16",
+          "sha256": "8a578ae22a376141b07a0b0f18192bfed48b631bb749633d511004d1858dfab2",
+          "shape": [
+            580,
+            128
+          ]
+        },
+        "layer_18.router_topk_ids": {
+          "dtype": "int64",
+          "sha256": "1d5b630894eb066142f575d567dfbad7c9444e19ccd2d2b3baf7bd48f60915a4",
+          "shape": [
+            580,
+            4
+          ]
+        },
+        "layer_18.router_topk_weights": {
+          "dtype": "float16",
+          "sha256": "b8c0570077857b261396608214278a5b667df93b8952d1352f2ec206d3e6d2c8",
+          "shape": [
+            580,
+            4
+          ]
+        },
+        "layer_35.post_moe_residual": {
+          "dtype": "float16",
+          "sha256": "4d89e05db74cf52daffe4b912fa166f01e318906dd16c5641453383a8f41da55",
+          "shape": [
+            580,
+            2880
+          ]
+        },
+        "layer_35.router_input": {
+          "dtype": "float16",
+          "sha256": "18dbe4bcb4c5fd31ecf313f8caec09a985fc7fa5e99476ceaa3b4425a5770a50",
+          "shape": [
+            580,
+            2880
+          ]
+        },
+        "layer_35.router_logits": {
+          "dtype": "float16",
+          "sha256": "116619232e2a4275770e933db07d976c0f311a0ab196f2fecc530cb51e08a802",
+          "shape": [
+            580,
+            128
+          ]
+        },
+        "layer_35.router_topk_ids": {
+          "dtype": "int64",
+          "sha256": "d556e5a23befdb54bd68078784aedd4a00934eedea1fc5caafdcc6a56e069e55",
+          "shape": [
+            580,
+            4
+          ]
+        },
+        "layer_35.router_topk_weights": {
+          "dtype": "float16",
+          "sha256": "df9c06cd94220b10b472f4089fc9378bab80edc2327ec14b289412663ede1d90",
+          "shape": [
+            580,
+            4
+          ]
+        }
+      },
+      "num_experts": 128,
+      "reference_oof": {
+        "bytes": 5909426,
+        "path": "gpt120/interface_access_oof_predictions.jsonl",
+        "sha256": "e42127e90b17a02ba9ada76aae09321005b9141cf59562fabc2c24cd5bdb3405"
+      },
+      "rows": {
+        "bytes": 366176,
+        "path": "features/gpt_oss_120b.rows.jsonl",
+        "sha256": "2fbfec49e12072ea3abaed001e635e38e4cd861231b0e76f0d676bb7d09361ac"
+      },
+      "source_manifest_original_sha256": "968bb3068323fa70fa25bdc140a6c70e3f36728b5851735dc34041f562142510"
+    }
+  ],
+  "native_numeric_payload_bytes": 139306720,
+  "representation": "Native float16 capture values and int64 expert IDs, stacked in sorted sample_id order; NPZ has no pickle/object arrays. No quantization, normalization or values changed.",
+  "schema_version": 1,
+  "scope": "Eight-model canonical interface-access panel; 580 rows, 290 pairs and 235 components per model; 23 model-anchor combinations; six feature families each."
+}

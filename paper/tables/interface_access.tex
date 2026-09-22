@@ -1,0 +1,27 @@
+\begin{table*}[ht]
+\centering
+\normalsize
+\setlength{\tabcolsep}{3.5pt}
+\renewcommand{\arraystretch}{1.10}
+\caption{Middle-anchor matched out-of-fold AUROC under 235 canonical
+source-problem groups. ``Access/causal layer'' gives the observational recapture
+anchor and the headline intervention anchor, respectively. ``Expert weight'' is
+the expert-ID-aligned sparse gate-weight representation. These are access
+measurements at capture interfaces, not intervention effects or a mediation
+sequence.}
+\label{tab:interface-access}
+\begin{tabularx}{\textwidth}{@{}P{0.23\textwidth}P{0.15\textwidth}>{\centering\arraybackslash}P{0.13\textwidth}*{4}{>{\centering\arraybackslash}X}@{}}
+\toprule
+Model & \shortstack{Protocol\\grade} & \shortstack{Access /\\causal layer} & Residual & \shortstack{Router\\input} &
+\shortstack{Router\\logits} & \shortstack{Expert\\weight} \\
+\midrule
+Gemma 4 & modern & 15 / 15 & 0.893 & 0.901 & 0.868 & 0.792 \\
+Nemotron-3 Nano & modern & 27 / 27 & 0.855 & 0.865 & 0.831 & 0.688 \\
+\begin{tabular}[t]{@{}l@{}}Nemotron-3.5\\Lightning\end{tabular} & modern & 27 / 27 & 0.865 & 0.862 & 0.826 & 0.733 \\
+Qwen3.6-35B-A3B & modern & 20 / 20 & 0.871 & 0.873 & 0.815 & 0.790 \\
+GPT-OSS 20B & extended & 12 / 12 & 0.829 & 0.837 & 0.801 & 0.715 \\
+Qwen3-30B-A3B & \begin{tabular}[t]{@{}l@{}}historical\\retrospective\end{tabular} & 24 / 36 & 0.907 & 0.915 & 0.884 & 0.750 \\
+OLMoE-1B-7B & unavailable & --- / 8 & --- & --- & --- & --- \\
+\bottomrule
+\end{tabularx}
+\end{table*}

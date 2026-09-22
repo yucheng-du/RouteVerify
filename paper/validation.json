@@ -1,0 +1,292 @@
+{
+  "scope": "Local CPU-only release preparation; no new model forwards.",
+  "metric_reproduction": {
+    "passed": true,
+    "stages": [
+      "baseline",
+      "flips",
+      "normalized_t",
+      "wide_d",
+      "tables"
+    ],
+    "checks": [
+      {
+        "file": "baseline/baseline_pairs_v1.csv",
+        "rows": 2610,
+        "match_atol": 1e-12
+      },
+      {
+        "file": "baseline/baseline_panels_v1.csv",
+        "rows": 18,
+        "match_atol": 1e-12
+      },
+      {
+        "file": "baseline/baseline_receivers_v1.csv",
+        "rows": 5220,
+        "match_atol": 1e-12
+      },
+      {
+        "file": "flips/flip_panels_v1.csv",
+        "rows": 6912,
+        "match_atol": 1e-12
+      },
+      {
+        "file": "normalized_t/normalized_t_panels_v1.csv",
+        "rows": 1152,
+        "match_atol": 1e-12
+      },
+      {
+        "file": "wide_d/wide_d_baseline_v1.csv",
+        "rows": 18,
+        "match_atol": 1e-12
+      },
+      {
+        "file": "wide_d/wide_d_d_reproduction_v1.csv",
+        "rows": 54,
+        "match_atol": 1e-12
+      },
+      {
+        "file": "wide_d/wide_d_donor_role_transitions_v1.csv",
+        "rows": 54,
+        "match_atol": 1e-12
+      },
+      {
+        "file": "wide_d/wide_d_flips_baseline_to_patched_v1.csv",
+        "rows": 108,
+        "match_atol": 1e-12
+      }
+    ],
+    "model_forwards": false
+  },
+  "reviewed_metric_table_values": [
+    {
+      "table": "verification_baseline_20260917",
+      "ordered_four_decimal_values_equal": true,
+      "values": 135,
+      "generated_values": 135
+    },
+    {
+      "table": "decision_flips_20260917",
+      "ordered_four_decimal_values_equal": true,
+      "values": 135,
+      "generated_values": 135
+    },
+    {
+      "table": "normalized_effects_20260917",
+      "ordered_four_decimal_values_equal": true,
+      "values": 117,
+      "generated_values": 117
+    }
+  ],
+  "figure_reproduction": {
+    "passed": true,
+    "model_forwards": false,
+    "resampling": false,
+    "figures": [
+      {
+        "figure": "abc_window_support_20260908",
+        "text_tokens_equal_to_reviewed_asset": true,
+        "page_geometry_equal": true
+      },
+      {
+        "figure": "wide_d_roles_20260908",
+        "text_tokens_equal_to_reviewed_asset": true,
+        "page_geometry_equal": true
+      },
+      {
+        "figure": "abc_window_profiles_20260908",
+        "text_tokens_equal_to_reviewed_asset": true,
+        "page_geometry_equal": true,
+        "intervals": 144,
+        "layout": {
+          "canvas_width_pt": 396.0,
+          "canvas_height_pt": 468.0,
+          "paper_scale": 1.0,
+          "font_sizes_pt": [
+            8,
+            9
+          ],
+          "font_family": "Times New Roman",
+          "out_of_canvas": [],
+          "independent_text_overlaps": [],
+          "text_count": 89
+        }
+      },
+      {
+        "figure": "processbench_receiver_state",
+        "text_tokens_equal_to_reviewed_asset": true,
+        "page_geometry_equal": true,
+        "layout": {
+          "canvas_width_pt": 396.0,
+          "canvas_height_pt": 219.6,
+          "paper_scale": 1.0,
+          "font_sizes_pt": [
+            8,
+            9
+          ],
+          "font_family": "Times New Roman",
+          "out_of_canvas": [],
+          "independent_text_overlaps": [],
+          "text_count": 30
+        }
+      }
+    ]
+  },
+  "reviewed_figure_rasters": [
+    {
+      "figure": "abc_window_support_20260908",
+      "raster_equal_144dpi": true,
+      "sizes": [
+        [
+          792,
+          546
+        ],
+        [
+          792,
+          546
+        ]
+      ]
+    },
+    {
+      "figure": "wide_d_roles_20260908",
+      "raster_equal_144dpi": true,
+      "sizes": [
+        [
+          792,
+          500
+        ],
+        [
+          792,
+          500
+        ]
+      ]
+    },
+    {
+      "figure": "abc_window_profiles_20260908",
+      "raster_equal_144dpi": true,
+      "sizes": [
+        [
+          792,
+          936
+        ],
+        [
+          792,
+          936
+        ]
+      ]
+    },
+    {
+      "figure": "processbench_receiver_state",
+      "raster_equal_144dpi": true,
+      "sizes": [
+        [
+          792,
+          440
+        ],
+        [
+          792,
+          440
+        ]
+      ]
+    },
+    {
+      "figure": "abc_overview_20260908",
+      "raster_equal_144dpi": true,
+      "sizes": [
+        [
+          792,
+          315
+        ],
+        [
+          792,
+          315
+        ]
+      ]
+    }
+  ],
+  "reference_projection_values_preserved": 161480,
+  "after_public_sanitization": {
+    "metric_smoke": {
+      "passed": true,
+      "stages": [
+        "baseline",
+        "tables"
+      ],
+      "checks": [
+        {
+          "file": "baseline/baseline_pairs_v1.csv",
+          "rows": 2610,
+          "match_atol": 1e-12
+        },
+        {
+          "file": "baseline/baseline_panels_v1.csv",
+          "rows": 18,
+          "match_atol": 1e-12
+        },
+        {
+          "file": "baseline/baseline_receivers_v1.csv",
+          "rows": 5220,
+          "match_atol": 1e-12
+        }
+      ],
+      "model_forwards": false
+    },
+    "numerical_figures": {
+      "passed": true,
+      "model_forwards": false,
+      "resampling": false,
+      "figures": [
+        {
+          "figure": "abc_window_support_20260908",
+          "text_tokens_equal_to_reviewed_asset": true,
+          "page_geometry_equal": true
+        },
+        {
+          "figure": "wide_d_roles_20260908",
+          "text_tokens_equal_to_reviewed_asset": true,
+          "page_geometry_equal": true
+        },
+        {
+          "figure": "abc_window_profiles_20260908",
+          "text_tokens_equal_to_reviewed_asset": true,
+          "page_geometry_equal": true,
+          "intervals": 144,
+          "layout": {
+            "canvas_width_pt": 396.0,
+            "canvas_height_pt": 468.0,
+            "paper_scale": 1.0,
+            "font_sizes_pt": [
+              8,
+              9
+            ],
+            "font_family": "Times New Roman",
+            "out_of_canvas": [],
+            "independent_text_overlaps": [],
+            "text_count": 89
+          }
+        },
+        {
+          "figure": "processbench_receiver_state",
+          "text_tokens_equal_to_reviewed_asset": true,
+          "page_geometry_equal": true,
+          "layout": {
+            "canvas_width_pt": 396.0,
+            "canvas_height_pt": 219.6,
+            "paper_scale": 1.0,
+            "font_sizes_pt": [
+              8,
+              9
+            ],
+            "font_family": "Times New Roman",
+            "out_of_canvas": [],
+            "independent_text_overlaps": [],
+            "text_count": 30
+          }
+        }
+      ]
+    },
+    "figure_input_hashes_updated_to_public_bytes": true,
+    "pdf_metadata": "Generic Creator only; decoded page contents preserved",
+    "result_map_paths_exist": true
+  }
+}

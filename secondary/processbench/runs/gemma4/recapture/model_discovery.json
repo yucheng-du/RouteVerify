@@ -1,0 +1,679 @@
+{
+  "alias": "gemma4_moe",
+  "candidates": [
+    {
+      "class_name": "Gemma4TextRouter",
+      "name": "model.language_model.layers.0.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Gemma4TextExperts",
+      "name": "model.language_model.layers.0.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "Gemma4TextRouter",
+      "name": "model.language_model.layers.1.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Gemma4TextExperts",
+      "name": "model.language_model.layers.1.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "Gemma4TextRouter",
+      "name": "model.language_model.layers.2.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Gemma4TextExperts",
+      "name": "model.language_model.layers.2.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "Gemma4TextRouter",
+      "name": "model.language_model.layers.3.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Gemma4TextExperts",
+      "name": "model.language_model.layers.3.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "Gemma4TextRouter",
+      "name": "model.language_model.layers.4.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Gemma4TextExperts",
+      "name": "model.language_model.layers.4.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "Gemma4TextRouter",
+      "name": "model.language_model.layers.5.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Gemma4TextExperts",
+      "name": "model.language_model.layers.5.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "Gemma4TextRouter",
+      "name": "model.language_model.layers.6.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Gemma4TextExperts",
+      "name": "model.language_model.layers.6.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "Gemma4TextRouter",
+      "name": "model.language_model.layers.7.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Gemma4TextExperts",
+      "name": "model.language_model.layers.7.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "Gemma4TextRouter",
+      "name": "model.language_model.layers.8.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Gemma4TextExperts",
+      "name": "model.language_model.layers.8.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "Gemma4TextRouter",
+      "name": "model.language_model.layers.9.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Gemma4TextExperts",
+      "name": "model.language_model.layers.9.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "Gemma4TextRouter",
+      "name": "model.language_model.layers.10.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Gemma4TextExperts",
+      "name": "model.language_model.layers.10.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "Gemma4TextRouter",
+      "name": "model.language_model.layers.11.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Gemma4TextExperts",
+      "name": "model.language_model.layers.11.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "Gemma4TextRouter",
+      "name": "model.language_model.layers.12.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Gemma4TextExperts",
+      "name": "model.language_model.layers.12.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "Gemma4TextRouter",
+      "name": "model.language_model.layers.13.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Gemma4TextExperts",
+      "name": "model.language_model.layers.13.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "Gemma4TextRouter",
+      "name": "model.language_model.layers.14.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Gemma4TextExperts",
+      "name": "model.language_model.layers.14.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "Gemma4TextRouter",
+      "name": "model.language_model.layers.15.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Gemma4TextExperts",
+      "name": "model.language_model.layers.15.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "Gemma4TextRouter",
+      "name": "model.language_model.layers.16.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Gemma4TextExperts",
+      "name": "model.language_model.layers.16.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "Gemma4TextRouter",
+      "name": "model.language_model.layers.17.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Gemma4TextExperts",
+      "name": "model.language_model.layers.17.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "Gemma4TextRouter",
+      "name": "model.language_model.layers.18.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Gemma4TextExperts",
+      "name": "model.language_model.layers.18.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "Gemma4TextRouter",
+      "name": "model.language_model.layers.19.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Gemma4TextExperts",
+      "name": "model.language_model.layers.19.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "Gemma4TextRouter",
+      "name": "model.language_model.layers.20.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Gemma4TextExperts",
+      "name": "model.language_model.layers.20.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "Gemma4TextRouter",
+      "name": "model.language_model.layers.21.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Gemma4TextExperts",
+      "name": "model.language_model.layers.21.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "Gemma4TextRouter",
+      "name": "model.language_model.layers.22.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Gemma4TextExperts",
+      "name": "model.language_model.layers.22.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "Gemma4TextRouter",
+      "name": "model.language_model.layers.23.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Gemma4TextExperts",
+      "name": "model.language_model.layers.23.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "Gemma4TextRouter",
+      "name": "model.language_model.layers.24.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Gemma4TextExperts",
+      "name": "model.language_model.layers.24.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "Gemma4TextRouter",
+      "name": "model.language_model.layers.25.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Gemma4TextExperts",
+      "name": "model.language_model.layers.25.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "Gemma4TextRouter",
+      "name": "model.language_model.layers.26.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Gemma4TextExperts",
+      "name": "model.language_model.layers.26.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "Gemma4TextRouter",
+      "name": "model.language_model.layers.27.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Gemma4TextExperts",
+      "name": "model.language_model.layers.27.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "Gemma4TextRouter",
+      "name": "model.language_model.layers.28.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Gemma4TextExperts",
+      "name": "model.language_model.layers.28.experts",
+      "role": "experts"
+    },
+    {
+      "class_name": "Gemma4TextRouter",
+      "name": "model.language_model.layers.29.router",
+      "role": "router"
+    },
+    {
+      "class_name": "Gemma4TextExperts",
+      "name": "model.language_model.layers.29.experts",
+      "role": "experts"
+    }
+  ],
+  "metadata": {
+    "architectures": [
+      "Gemma4ForConditionalGeneration"
+    ],
+    "config_field_sources": {
+      "architectures": "architectures",
+      "experts": "text_config.num_experts",
+      "model_type": "model_type",
+      "top_k": "text_config.top_k_experts",
+      "total_blocks": "text_config.num_hidden_layers"
+    },
+    "config_resolution_errors": [],
+    "load_weights": false,
+    "model_type": "gemma4",
+    "num_experts": 128,
+    "num_experts_per_tok": 8,
+    "num_hidden_layers": 30,
+    "num_local_experts": 128,
+    "runtime_inspect": {
+      "actual_contract": {
+        "experts": 128,
+        "routed_layers": 30,
+        "text_layers": 30,
+        "top_k": 8
+      },
+      "adapter": "gemma4_moe",
+      "all_text_layers_routed": true,
+      "architectures": [
+        "Gemma4ForConditionalGeneration"
+      ],
+      "layers": [
+        {
+          "expert_module_count": 128,
+          "experts_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextExperts",
+          "layer_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextDecoderLayer",
+          "layer_index": 0,
+          "parallel_dense_routed": true,
+          "routed": true,
+          "router_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextRouter",
+          "router_num_experts": 128,
+          "router_top_k": 8
+        },
+        {
+          "expert_module_count": 128,
+          "experts_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextExperts",
+          "layer_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextDecoderLayer",
+          "layer_index": 1,
+          "parallel_dense_routed": true,
+          "routed": true,
+          "router_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextRouter",
+          "router_num_experts": 128,
+          "router_top_k": 8
+        },
+        {
+          "expert_module_count": 128,
+          "experts_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextExperts",
+          "layer_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextDecoderLayer",
+          "layer_index": 2,
+          "parallel_dense_routed": true,
+          "routed": true,
+          "router_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextRouter",
+          "router_num_experts": 128,
+          "router_top_k": 8
+        },
+        {
+          "expert_module_count": 128,
+          "experts_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextExperts",
+          "layer_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextDecoderLayer",
+          "layer_index": 3,
+          "parallel_dense_routed": true,
+          "routed": true,
+          "router_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextRouter",
+          "router_num_experts": 128,
+          "router_top_k": 8
+        },
+        {
+          "expert_module_count": 128,
+          "experts_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextExperts",
+          "layer_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextDecoderLayer",
+          "layer_index": 4,
+          "parallel_dense_routed": true,
+          "routed": true,
+          "router_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextRouter",
+          "router_num_experts": 128,
+          "router_top_k": 8
+        },
+        {
+          "expert_module_count": 128,
+          "experts_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextExperts",
+          "layer_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextDecoderLayer",
+          "layer_index": 5,
+          "parallel_dense_routed": true,
+          "routed": true,
+          "router_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextRouter",
+          "router_num_experts": 128,
+          "router_top_k": 8
+        },
+        {
+          "expert_module_count": 128,
+          "experts_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextExperts",
+          "layer_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextDecoderLayer",
+          "layer_index": 6,
+          "parallel_dense_routed": true,
+          "routed": true,
+          "router_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextRouter",
+          "router_num_experts": 128,
+          "router_top_k": 8
+        },
+        {
+          "expert_module_count": 128,
+          "experts_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextExperts",
+          "layer_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextDecoderLayer",
+          "layer_index": 7,
+          "parallel_dense_routed": true,
+          "routed": true,
+          "router_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextRouter",
+          "router_num_experts": 128,
+          "router_top_k": 8
+        },
+        {
+          "expert_module_count": 128,
+          "experts_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextExperts",
+          "layer_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextDecoderLayer",
+          "layer_index": 8,
+          "parallel_dense_routed": true,
+          "routed": true,
+          "router_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextRouter",
+          "router_num_experts": 128,
+          "router_top_k": 8
+        },
+        {
+          "expert_module_count": 128,
+          "experts_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextExperts",
+          "layer_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextDecoderLayer",
+          "layer_index": 9,
+          "parallel_dense_routed": true,
+          "routed": true,
+          "router_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextRouter",
+          "router_num_experts": 128,
+          "router_top_k": 8
+        },
+        {
+          "expert_module_count": 128,
+          "experts_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextExperts",
+          "layer_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextDecoderLayer",
+          "layer_index": 10,
+          "parallel_dense_routed": true,
+          "routed": true,
+          "router_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextRouter",
+          "router_num_experts": 128,
+          "router_top_k": 8
+        },
+        {
+          "expert_module_count": 128,
+          "experts_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextExperts",
+          "layer_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextDecoderLayer",
+          "layer_index": 11,
+          "parallel_dense_routed": true,
+          "routed": true,
+          "router_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextRouter",
+          "router_num_experts": 128,
+          "router_top_k": 8
+        },
+        {
+          "expert_module_count": 128,
+          "experts_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextExperts",
+          "layer_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextDecoderLayer",
+          "layer_index": 12,
+          "parallel_dense_routed": true,
+          "routed": true,
+          "router_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextRouter",
+          "router_num_experts": 128,
+          "router_top_k": 8
+        },
+        {
+          "expert_module_count": 128,
+          "experts_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextExperts",
+          "layer_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextDecoderLayer",
+          "layer_index": 13,
+          "parallel_dense_routed": true,
+          "routed": true,
+          "router_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextRouter",
+          "router_num_experts": 128,
+          "router_top_k": 8
+        },
+        {
+          "expert_module_count": 128,
+          "experts_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextExperts",
+          "layer_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextDecoderLayer",
+          "layer_index": 14,
+          "parallel_dense_routed": true,
+          "routed": true,
+          "router_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextRouter",
+          "router_num_experts": 128,
+          "router_top_k": 8
+        },
+        {
+          "expert_module_count": 128,
+          "experts_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextExperts",
+          "layer_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextDecoderLayer",
+          "layer_index": 15,
+          "parallel_dense_routed": true,
+          "routed": true,
+          "router_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextRouter",
+          "router_num_experts": 128,
+          "router_top_k": 8
+        },
+        {
+          "expert_module_count": 128,
+          "experts_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextExperts",
+          "layer_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextDecoderLayer",
+          "layer_index": 16,
+          "parallel_dense_routed": true,
+          "routed": true,
+          "router_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextRouter",
+          "router_num_experts": 128,
+          "router_top_k": 8
+        },
+        {
+          "expert_module_count": 128,
+          "experts_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextExperts",
+          "layer_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextDecoderLayer",
+          "layer_index": 17,
+          "parallel_dense_routed": true,
+          "routed": true,
+          "router_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextRouter",
+          "router_num_experts": 128,
+          "router_top_k": 8
+        },
+        {
+          "expert_module_count": 128,
+          "experts_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextExperts",
+          "layer_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextDecoderLayer",
+          "layer_index": 18,
+          "parallel_dense_routed": true,
+          "routed": true,
+          "router_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextRouter",
+          "router_num_experts": 128,
+          "router_top_k": 8
+        },
+        {
+          "expert_module_count": 128,
+          "experts_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextExperts",
+          "layer_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextDecoderLayer",
+          "layer_index": 19,
+          "parallel_dense_routed": true,
+          "routed": true,
+          "router_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextRouter",
+          "router_num_experts": 128,
+          "router_top_k": 8
+        },
+        {
+          "expert_module_count": 128,
+          "experts_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextExperts",
+          "layer_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextDecoderLayer",
+          "layer_index": 20,
+          "parallel_dense_routed": true,
+          "routed": true,
+          "router_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextRouter",
+          "router_num_experts": 128,
+          "router_top_k": 8
+        },
+        {
+          "expert_module_count": 128,
+          "experts_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextExperts",
+          "layer_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextDecoderLayer",
+          "layer_index": 21,
+          "parallel_dense_routed": true,
+          "routed": true,
+          "router_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextRouter",
+          "router_num_experts": 128,
+          "router_top_k": 8
+        },
+        {
+          "expert_module_count": 128,
+          "experts_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextExperts",
+          "layer_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextDecoderLayer",
+          "layer_index": 22,
+          "parallel_dense_routed": true,
+          "routed": true,
+          "router_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextRouter",
+          "router_num_experts": 128,
+          "router_top_k": 8
+        },
+        {
+          "expert_module_count": 128,
+          "experts_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextExperts",
+          "layer_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextDecoderLayer",
+          "layer_index": 23,
+          "parallel_dense_routed": true,
+          "routed": true,
+          "router_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextRouter",
+          "router_num_experts": 128,
+          "router_top_k": 8
+        },
+        {
+          "expert_module_count": 128,
+          "experts_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextExperts",
+          "layer_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextDecoderLayer",
+          "layer_index": 24,
+          "parallel_dense_routed": true,
+          "routed": true,
+          "router_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextRouter",
+          "router_num_experts": 128,
+          "router_top_k": 8
+        },
+        {
+          "expert_module_count": 128,
+          "experts_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextExperts",
+          "layer_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextDecoderLayer",
+          "layer_index": 25,
+          "parallel_dense_routed": true,
+          "routed": true,
+          "router_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextRouter",
+          "router_num_experts": 128,
+          "router_top_k": 8
+        },
+        {
+          "expert_module_count": 128,
+          "experts_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextExperts",
+          "layer_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextDecoderLayer",
+          "layer_index": 26,
+          "parallel_dense_routed": true,
+          "routed": true,
+          "router_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextRouter",
+          "router_num_experts": 128,
+          "router_top_k": 8
+        },
+        {
+          "expert_module_count": 128,
+          "experts_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextExperts",
+          "layer_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextDecoderLayer",
+          "layer_index": 27,
+          "parallel_dense_routed": true,
+          "routed": true,
+          "router_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextRouter",
+          "router_num_experts": 128,
+          "router_top_k": 8
+        },
+        {
+          "expert_module_count": 128,
+          "experts_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextExperts",
+          "layer_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextDecoderLayer",
+          "layer_index": 28,
+          "parallel_dense_routed": true,
+          "routed": true,
+          "router_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextRouter",
+          "router_num_experts": 128,
+          "router_top_k": 8
+        },
+        {
+          "expert_module_count": 128,
+          "experts_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextExperts",
+          "layer_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextDecoderLayer",
+          "layer_index": 29,
+          "parallel_dense_routed": true,
+          "routed": true,
+          "router_class": "transformers.models.gemma4.modeling_gemma4.Gemma4TextRouter",
+          "router_num_experts": 128,
+          "router_top_k": 8
+        }
+      ],
+      "layout_consistent": true,
+      "model_id": "google/gemma-4-26B-A4B-it",
+      "model_type": "gemma4",
+      "schema_version": 1,
+      "text_model_prefix": "model.language_model"
+    }
+  },
+  "model_id": "google/gemma-4-26B-A4B-it",
+  "summary": {
+    "experts": 30,
+    "router": 30
+  }
+}

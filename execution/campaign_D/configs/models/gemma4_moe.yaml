@@ -1,0 +1,15 @@
+alias: gemma4_moe
+model_id: google/gemma-4-26B-A4B-it
+revision: 4d7ae4984b7db7de8f8457170b3f1a419ee76d52
+tokenizer_revision: 4d7ae4984b7db7de8f8457170b3f1a419ee76d52
+cache_dir: .cache/huggingface/hub
+trust_remote_code: false
+dtype: bfloat16
+device_map: auto
+load_weights: false
+expected_layers: 30
+expected_experts: 128
+expected_top_k: 8
+expected_model_type: gemma4
+expected_architectures: [Gemma4ForConditionalGeneration]
+expected_transformers_version: 5.12.1

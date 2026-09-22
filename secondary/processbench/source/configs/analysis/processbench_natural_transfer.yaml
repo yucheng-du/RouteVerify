@@ -1,0 +1,239 @@
+schema_version: 1
+protocol_id: processbench_same_generator_natural_transfer_v1
+analysis_role: exploratory_public_natural_error_transfer
+data_config: configs/data/processbench_natural_transfer.yaml
+seed: 20260828
+validation_accessed: false
+
+# Model-facing rows are always the frozen paired endpoints. The public 400-row
+# source population is inspected once on CPU and is not an additional GPU stage.
+source_population_audit:
+  subset: gsm8k
+  source_rows: 400
+  cpu_label_audit_rows: 400
+  gpu_rows: 0
+  all_correct_rows: 193
+  first_error_rows: 207
+
+data_contract:
+  hf_id: Qwen/ProcessBench
+  revision: 3bdcd5371ed567559a78f559c01c13a6deee7604
+  hf_config: default
+  subset: gsm8k
+  raw_file: gsm8k.json
+  raw_sha256: fb1c59dfd1e83e1c5a48dbe598db27e4bc0b8bc524a09445f2d4b69178f61349
+  source_rows: 400
+  processed_jsonl: data/processed/processbench-natural-transfer-v1.jsonl
+  processed_sha256: b1d7f21aff6d5a17d1494b5e8bcc2a4bf43d0e2f7d6689921ccb368d4e735c94
+  selection_manifest: data/processed/processbench-natural-transfer-v1.selection.json
+  selection_manifest_sha256: 0f2d885fc9e7657886f0686a08f1236b62c595703c414d80069cc92b304ca7a2
+  semantic_manifest_hash: 64e2961bf2021d9ec2e1a80899c862fdc4c0fa32845a25e9e121154f8f6caa62
+  selection_unit: same_generator_matched_correct_first_error_pair
+  same_generator_required: true
+  same_normalized_problem_required: false
+  trace_reuse_allowed: false
+
+prompt_mode: step_binary
+input_format: chat
+boundary_strategy: paired_first_error
+boundary_semantics_id: natural_first_error_with_mapped_all_correct_ordinal_v1
+pairing_rule_id: same_generator_exact_ordinal_unique_matching_v1
+candidate_labels: [CORRECT, INCORRECT]
+sites: [post_moe_residual, router_logits]
+alphas: [1.0]
+controls: [unpatched, unpatched_rerun, self_patch]
+identity_tolerance: 1.0e-5
+
+prompt_contract:
+  projection_id: step_binary_prefix_through_manifest_boundary_v1
+  first_error_boundary: public zero-based ProcessBench first-error label
+  all_correct_boundary: paired first-error ordinal mapped into the all-correct trace
+  all_correct_boundary_is_natural_error: false
+  include_first_step_errors: true
+  post_boundary_steps_visible: false
+  label_visible_to_model: false
+  visible_fields: [problem, steps_through_mapped_boundary, fixed_instruction]
+  forbidden_fields:
+    - id
+    - generator
+    - raw_label
+    - first_error
+    - is_all_correct
+    - final_answer_correct
+    - pair_id
+    - transfer_role
+
+# Each behavior or recapture row represents one selected trace. Each transfer
+# row contains both candidate scores and is counted once at the prediction-row
+# level, matching the existing common-core patch output convention.
+run_roles:
+  smoke:
+    pair_count: 8
+    authorization_scope: smoke_only
+    authorization_inherited: false
+    expected_rows:
+      behavior: 16
+      recapture: 16
+      transfer: 96
+      total: 128
+  full:
+    pair_count: 64
+    authorization_scope: full_only
+    authorization_inherited: false
+    expected_rows:
+      behavior: 128
+      recapture: 128
+      transfer: 768
+      total: 1024
+
+stage_contract:
+  execution_order: [behavior, recapture, transfer]
+  behavior:
+    rows_per_pair: 2
+    roles: [matched_correct, first_error]
+    use_full_source_population: false
+    result_gate: false
+  recapture:
+    rows_per_pair: 2
+    roles: [matched_correct, first_error]
+    sites_from_profile_anchor: true
+    arrays_per_row: 2
+  transfer:
+    rows_per_pair: 12
+    patch_mode: single_site_sweep
+    directions:
+      - matched_correct_to_first_error
+      - first_error_to_matched_correct
+    arms:
+      - name: unpatched
+        rows_per_pair: 2
+        index: receiver_role
+      - name: unpatched_rerun
+        rows_per_pair: 2
+        index: receiver_role
+      - name: self_patch
+        rows_per_pair: 4
+        index: receiver_role_x_site
+      - name: paired_transfer
+        rows_per_pair: 4
+        index: direction_x_site
+    require_candidate_patch_diagnostics: true
+    require_router_dispatch_for_site_kinds: [router_logits]
+    forced_reroute_control: false
+
+profiles:
+  gpt_oss:
+    model_config: configs/models/gpt_oss_20b.yaml
+    adapter_alias: gpt_oss_20b
+    adapter_class: routeverify.models.gpt_oss.GptOssAdapter
+    model_id: openai/gpt-oss-20b
+    revision: 6cee5e81ee83917806bbde320786a8fb61efebee
+    tokenizer_revision: 6cee5e81ee83917806bbde320786a8fb61efebee
+    anchor_layer: 12
+    anchor_coordinate: decoder_layer
+    normalized_depth: 0.5217391304347826
+    sites: [post_moe_residual, router_logits]
+    router_semantics_id: gpt_oss_raw_topk_selected_softmax_v1
+    authorization_env:
+      smoke: ALLOW_GPT_OSS_PROCESSBENCH_TRANSFER_SMOKE
+      full: ALLOW_GPT_OSS_PROCESSBENCH_TRANSFER_FULL
+    output_subdir: gpt_oss
+    architecture_contract:
+      total_blocks: 24
+      experts: 32
+      top_k: 4
+      required_router_execution_mode: mxfp4_functional_linear
+      require_native_mxfp4: true
+      render_family: openai_harmony
+    anchor_provenance:
+      execution_commit: a6411ba9ccec47a93dd58b41102d112131f160fd
+      result_commit: ecfcef4b58bb5b608eb361def0ad58db2378fb1c
+      result_path_at_commit: docs/results/gpt_oss_full_20260809.md
+      selection_basis: strongest bidirectional mid-depth post-MoE residual endpoint
+
+  gemma4:
+    model_config: configs/models/gemma4_moe.yaml
+    adapter_alias: gemma4_moe
+    adapter_class: routeverify.models.gemma4.Gemma4MoEAdapter
+    model_id: google/gemma-4-26B-A4B-it
+    revision: 4d7ae4984b7db7de8f8457170b3f1a419ee76d52
+    tokenizer_revision: 4d7ae4984b7db7de8f8457170b3f1a419ee76d52
+    anchor_layer: 15
+    anchor_coordinate: routed_text_layer
+    normalized_depth: 0.5172413793103449
+    sites: [post_moe_residual, router_logits]
+    router_semantics_id: gemma4_softmax_topk_per_expert_scale_v1
+    authorization_env:
+      smoke: ALLOW_GEMMA4_PROCESSBENCH_TRANSFER_SMOKE
+      full: ALLOW_GEMMA4_PROCESSBENCH_TRANSFER_FULL
+    output_subdir: gemma4
+    architecture_contract:
+      total_blocks: 30
+      router_blocks: 30
+      experts: 128
+      top_k: 8
+      preserve_parallel_dense_branch: true
+      raw_router_site: router.proj
+    anchor_provenance:
+      execution_commit: fde910a28b0fb162862dbc6e785a426df5b64644
+      result_commit: 906f7407aa99702b7f44d9b4f21cee4d472567c8
+      result_path_at_commit: docs/results/model45_common_core_20260823.json
+      selection_basis: registered mid-depth headline endpoint
+
+  nemotron3_nano:
+    model_config: configs/models/nemotron3_nano.yaml
+    adapter_alias: nemotron3_nano
+    adapter_class: routeverify.models.nemotron3_nano.Nemotron3NanoAdapter
+    model_id: nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
+    revision: 2d59de1cbd51c0adf384eb906b766d1aee0e0517
+    tokenizer_revision: 2d59de1cbd51c0adf384eb906b766d1aee0e0517
+    anchor_layer: 27
+    anchor_coordinate: absolute_hybrid_block
+    anchor_router_ordinal: 11
+    anchor_router_ordinal_base: zero
+    normalized_depth: 0.5294117647058824
+    sites: [post_moe_residual, router_logits]
+    router_semantics_id: nemotron_h_sigmoid_correction_group_topk_v1
+    authorization_env:
+      smoke: ALLOW_NEMOTRON3_NANO_PROCESSBENCH_TRANSFER_SMOKE
+      full: ALLOW_NEMOTRON3_NANO_PROCESSBENCH_TRANSFER_FULL
+    output_subdir: nemotron3_nano
+    architecture_contract:
+      total_blocks: 52
+      router_blocks: 23
+      router_block_indices: [1, 3, 6, 8, 10, 13, 15, 17, 20, 22, 24, 27, 29, 31, 34, 36, 38, 40, 43, 45, 47, 49, 51]
+      experts: 128
+      shared_experts: 1
+      top_k: 6
+      preserve_shared_expert_for_router_patch: true
+    anchor_provenance:
+      execution_commit: 612d171fc679f09d4e812bcd24ebd61bfe6a4d72
+      result_commit: 906f7407aa99702b7f44d9b4f21cee4d472567c8
+      result_path_at_commit: docs/results/model45_common_core_20260823.json
+      selection_basis: registered mid-depth headline routed block
+
+output_root: artifacts/processbench_natural_transfer
+
+minimum_provenance:
+  - actual_git_commit_and_dirty_state
+  - model_adapter_id_revision_tokenizer_revision_and_router_semantics
+  - runtime_model_topology_package_versions_dtype_device_and_hardware
+  - source_processed_and_selection_manifest_hashes
+  - selected_pair_ids_roles_boundaries_and_prompt_hashes
+  - stage_config_seed_row_site_treatment_direction_and_alpha
+  - candidate_score_and_input_provenance
+  - self_patch_and_unpatched_rerun_identity_diagnostics
+  - native_router_dispatch_diagnostics_for_router_logits
+  - validation_accessed_false
+
+execution_policy:
+  current_scope: local_cpu_preparation_only
+  gpu_authorized: false
+  model_weight_download_authorized: false
+  model_forward_authorized: false
+  runpod_or_cloud_authorized: false
+  require_global_gpu_env: ALLOW_GPU_RUN
+  role_authorization_is_separate: true
+  smoke_authorization_does_not_authorize_full: true
+  full_authorization_does_not_retroactively_authorize_smoke: true
+  validation_accessed: false

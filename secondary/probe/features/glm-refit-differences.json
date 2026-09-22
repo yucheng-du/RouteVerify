@@ -1,0 +1,463 @@
+{
+  "all_anchor_point_differences": [
+    {
+      "anchor": "early",
+      "changed_comparisons_involving_exact_tie": 0,
+      "changed_positive_negative_comparisons": 1,
+      "feature_family": "post_moe_residual",
+      "max_abs_score_difference": 0.03681877056224181,
+      "max_saved_gap_among_changed_comparisons": 0.00995931867473665,
+      "refit_auroc": 0.7319262782401903,
+      "saved_auroc": 0.7319381688466112
+    },
+    {
+      "anchor": "early",
+      "changed_comparisons_involving_exact_tie": 0,
+      "changed_positive_negative_comparisons": 32,
+      "feature_family": "router_input",
+      "max_abs_score_difference": 0.5850103844179522,
+      "max_saved_gap_among_changed_comparisons": 0.4651341147867881,
+      "refit_auroc": 0.729013079667063,
+      "saved_auroc": 0.7290606420927467
+    },
+    {
+      "anchor": "early",
+      "changed_comparisons_involving_exact_tie": 0,
+      "changed_positive_negative_comparisons": 3,
+      "feature_family": "router_logits",
+      "max_abs_score_difference": 0.001603114881735035,
+      "max_saved_gap_among_changed_comparisons": 0.00017984819625405102,
+      "refit_auroc": 0.737538644470868,
+      "saved_auroc": 0.737550535077289
+    },
+    {
+      "anchor": "early",
+      "changed_comparisons_involving_exact_tie": 52,
+      "changed_positive_negative_comparisons": 52,
+      "feature_family": "expert_id_membership_count",
+      "max_abs_score_difference": 3.5913155405076225e-06,
+      "max_saved_gap_among_changed_comparisons": 5.551115123125783e-17,
+      "refit_auroc": 0.5007253269916766,
+      "saved_auroc": 0.5004161712247325
+    },
+    {
+      "anchor": "early",
+      "changed_comparisons_involving_exact_tie": 0,
+      "changed_positive_negative_comparisons": 0,
+      "feature_family": "expert_id_aligned_sparse_weights",
+      "max_abs_score_difference": 1.145181499850878e-06,
+      "max_saved_gap_among_changed_comparisons": 0,
+      "refit_auroc": 0.6577288941736028,
+      "saved_auroc": 0.6577288941736028
+    },
+    {
+      "anchor": "early",
+      "changed_comparisons_involving_exact_tie": 0,
+      "changed_positive_negative_comparisons": 0,
+      "feature_family": "rank_only_sorted_weights_legacy",
+      "max_abs_score_difference": 4.440892098500626e-16,
+      "max_saved_gap_among_changed_comparisons": 0,
+      "refit_auroc": 0.550475624256837,
+      "saved_auroc": 0.550475624256837
+    },
+    {
+      "anchor": "middle",
+      "auroc_same_at_3_decimal_places": true,
+      "changed_comparisons_involving_exact_tie": 0,
+      "changed_positive_negative_comparisons": 0,
+      "ci_same_at_3_decimal_places": true,
+      "feature_family": "post_moe_residual",
+      "max_abs_ci_difference": 0.0,
+      "max_abs_score_difference": 0.009478749161463185,
+      "max_saved_gap_among_changed_comparisons": 0,
+      "refit_auroc": 0.864601664684899,
+      "refit_ci": {
+        "ci_high": 0.891767579246785,
+        "ci_low": 0.8386526245063197
+      },
+      "saved_auroc": 0.864601664684899,
+      "saved_ci": {
+        "ci_high": 0.891767579246785,
+        "ci_low": 0.8386526245063197
+      }
+    },
+    {
+      "anchor": "middle",
+      "auroc_same_at_3_decimal_places": true,
+      "changed_comparisons_involving_exact_tie": 0,
+      "changed_positive_negative_comparisons": 0,
+      "ci_same_at_3_decimal_places": true,
+      "feature_family": "router_input",
+      "max_abs_ci_difference": 0.0,
+      "max_abs_score_difference": 0.0021572311197592953,
+      "max_saved_gap_among_changed_comparisons": 0,
+      "refit_auroc": 0.8716646848989299,
+      "refit_ci": {
+        "ci_high": 0.8973245742286704,
+        "ci_low": 0.8451343823618821
+      },
+      "saved_auroc": 0.8716646848989299,
+      "saved_ci": {
+        "ci_high": 0.8973245742286704,
+        "ci_low": 0.8451343823618821
+      }
+    },
+    {
+      "anchor": "middle",
+      "auroc_same_at_3_decimal_places": true,
+      "changed_comparisons_involving_exact_tie": 0,
+      "changed_positive_negative_comparisons": 0,
+      "ci_same_at_3_decimal_places": true,
+      "feature_family": "router_logits",
+      "max_abs_ci_difference": 0.0,
+      "max_abs_score_difference": 2.971492060632741e-06,
+      "max_saved_gap_among_changed_comparisons": 0,
+      "refit_auroc": 0.8179667063020214,
+      "refit_ci": {
+        "ci_high": 0.8476137988639911,
+        "ci_low": 0.7863930019253832
+      },
+      "saved_auroc": 0.8179667063020214,
+      "saved_ci": {
+        "ci_high": 0.8476137988639911,
+        "ci_low": 0.7863930019253832
+      }
+    },
+    {
+      "anchor": "middle",
+      "auroc_same_at_3_decimal_places": true,
+      "changed_comparisons_involving_exact_tie": 16,
+      "changed_positive_negative_comparisons": 16,
+      "ci_same_at_3_decimal_places": true,
+      "feature_family": "expert_id_membership_count",
+      "max_abs_ci_difference": 7.846990512772045e-05,
+      "max_abs_score_difference": 1.3500311979441904e-13,
+      "max_saved_gap_among_changed_comparisons": 2.220446049250313e-16,
+      "refit_auroc": 0.7009453032104638,
+      "refit_ci": {
+        "ci_high": 0.7395728849981829,
+        "ci_low": 0.6643954142910038
+      },
+      "saved_auroc": 0.7010285374554103,
+      "saved_ci": {
+        "ci_high": 0.7396513549033106,
+        "ci_low": 0.6643502802582945
+      }
+    },
+    {
+      "anchor": "middle",
+      "auroc_same_at_3_decimal_places": true,
+      "changed_comparisons_involving_exact_tie": 0,
+      "changed_positive_negative_comparisons": 0,
+      "ci_same_at_3_decimal_places": true,
+      "feature_family": "expert_id_aligned_sparse_weights",
+      "max_abs_ci_difference": 0.0,
+      "max_abs_score_difference": 1.2612133559741778e-13,
+      "max_saved_gap_among_changed_comparisons": 0,
+      "refit_auroc": 0.7426872770511296,
+      "refit_ci": {
+        "ci_high": 0.7774528503459852,
+        "ci_low": 0.7082199198494401
+      },
+      "saved_auroc": 0.7426872770511296,
+      "saved_ci": {
+        "ci_high": 0.7774528503459852,
+        "ci_low": 0.7082199198494401
+      }
+    },
+    {
+      "anchor": "middle",
+      "auroc_same_at_3_decimal_places": true,
+      "changed_comparisons_involving_exact_tie": 0,
+      "changed_positive_negative_comparisons": 0,
+      "ci_same_at_3_decimal_places": true,
+      "feature_family": "rank_only_sorted_weights_legacy",
+      "max_abs_ci_difference": 0.0,
+      "max_abs_score_difference": 8.881784197001252e-16,
+      "max_saved_gap_among_changed_comparisons": 0,
+      "refit_auroc": 0.6906896551724138,
+      "refit_ci": {
+        "ci_high": 0.72782996384843,
+        "ci_low": 0.6529680621310648
+      },
+      "saved_auroc": 0.6906896551724138,
+      "saved_ci": {
+        "ci_high": 0.72782996384843,
+        "ci_low": 0.6529680621310648
+      }
+    }
+  ],
+  "cause": "Not established. Original execution was Linux x86_64; refit is macOS arm64 with the same recorded Python-package versions and estimator settings. Platform/compiler/solver arithmetic is a plausible explanation but has not been isolated experimentally. No stored GLM fit coefficients or feature-matrix digest are available to attribute the discrepancy uniquely.",
+  "identical_row_labels_groups_folds_layers": true,
+  "matched_protocol": {
+    "analysis_group_definition": "connected_components_of_source_suffix_or_normalized_problem",
+    "bootstrap_resamples": 1000,
+    "contrast_feature_control": {
+      "reason": "Existing recapture manifests contain no predeclared topic, token-class, language, or formatting contrast label. No proxy label is invented.",
+      "status": "not_run_missing_predeclared_labels"
+    },
+    "estimator": {
+      "C": 1.0,
+      "class_weight": "balanced",
+      "implementation": "sklearn.linear_model.LogisticRegression",
+      "max_iter": 2000,
+      "penalty": "l2",
+      "preprocessing": "StandardScaler_fit_on_training_fold_only",
+      "solver": "liblinear"
+    },
+    "expected_analysis_group_count": 235,
+    "folds": 5,
+    "grouping_limitation": "The shared folds join all 290 frozen discovery pairs to pre-existing canonical source_problem_id values from the versioned Qwen3 CPU-correction artifact. The mapping has complete unambiguous coverage and preserves component IDs defined over the full historical 580-pair universe. The upstream grouping is a registered post-hoc sensitivity artifact, not a new prospective freeze.",
+    "outcome": "clean_vs_corrupt_recapture_discrimination",
+    "pair_count": 290,
+    "positive_class": "corrupt",
+    "row_count": 580,
+    "seed": 20260829
+  },
+  "middle_anchor_adjacent_contrasts": [
+    {
+      "comparisons": {
+        "ci_high": {
+          "difference": 0.0,
+          "refit": 0.0016903574280652468,
+          "same_at_3_decimals": true,
+          "saved": 0.0016903574280652468
+        },
+        "ci_low": {
+          "difference": 0.0,
+          "refit": -0.016066094551070487,
+          "same_at_3_decimals": true,
+          "saved": -0.016066094551070487
+        },
+        "difference": {
+          "difference": 0.0,
+          "refit": -0.007063020214030935,
+          "same_at_3_decimals": true,
+          "saved": -0.007063020214030935
+        }
+      },
+      "left": "post_moe_residual",
+      "right": "router_input"
+    },
+    {
+      "comparisons": {
+        "ci_high": {
+          "difference": 0.0,
+          "refit": 0.07813191860182704,
+          "same_at_3_decimals": true,
+          "saved": 0.07813191860182704
+        },
+        "ci_low": {
+          "difference": 0.0,
+          "refit": 0.029289633052197388,
+          "same_at_3_decimals": true,
+          "saved": 0.029289633052197388
+        },
+        "difference": {
+          "difference": 0.0,
+          "refit": 0.0536979785969085,
+          "same_at_3_decimals": true,
+          "saved": 0.0536979785969085
+        }
+      },
+      "left": "router_input",
+      "right": "router_logits"
+    },
+    {
+      "comparisons": {
+        "ci_high": {
+          "difference": 0.0,
+          "refit": 0.10590523351687635,
+          "same_at_3_decimals": true,
+          "saved": 0.10590523351687635
+        },
+        "ci_low": {
+          "difference": 0.0,
+          "refit": 0.04338449369102051,
+          "same_at_3_decimals": true,
+          "saved": 0.04338449369102051
+        },
+        "difference": {
+          "difference": 0.0,
+          "refit": 0.07527942925089182,
+          "same_at_3_decimals": true,
+          "saved": 0.07527942925089182
+        }
+      },
+      "left": "router_logits",
+      "right": "expert_id_aligned_sparse_weights"
+    },
+    {
+      "comparisons": {
+        "ci_high": {
+          "difference": -2.2869279861566227e-05,
+          "refit": 0.059980180230888934,
+          "same_at_3_decimals": true,
+          "saved": 0.0600030495107505
+        },
+        "ci_low": {
+          "difference": 0.00020526330138772447,
+          "refit": 0.022547029662886773,
+          "same_at_3_decimals": false,
+          "saved": 0.02234176636149905
+        },
+        "difference": {
+          "difference": 8.323424494649512e-05,
+          "refit": 0.0417419738406658,
+          "same_at_3_decimals": true,
+          "saved": 0.04165873959571931
+        }
+      },
+      "left": "expert_id_aligned_sparse_weights",
+      "right": "expert_id_membership_count"
+    }
+  ],
+  "middle_anchor_cells": [
+    {
+      "anchor": "middle",
+      "auroc_same_at_3_decimal_places": true,
+      "changed_comparisons_involving_exact_tie": 0,
+      "changed_positive_negative_comparisons": 0,
+      "ci_same_at_3_decimal_places": true,
+      "feature_family": "post_moe_residual",
+      "max_abs_ci_difference": 0.0,
+      "max_abs_score_difference": 0.009478749161463185,
+      "max_saved_gap_among_changed_comparisons": 0,
+      "refit_auroc": 0.864601664684899,
+      "refit_ci": {
+        "ci_high": 0.891767579246785,
+        "ci_low": 0.8386526245063197
+      },
+      "saved_auroc": 0.864601664684899,
+      "saved_ci": {
+        "ci_high": 0.891767579246785,
+        "ci_low": 0.8386526245063197
+      }
+    },
+    {
+      "anchor": "middle",
+      "auroc_same_at_3_decimal_places": true,
+      "changed_comparisons_involving_exact_tie": 0,
+      "changed_positive_negative_comparisons": 0,
+      "ci_same_at_3_decimal_places": true,
+      "feature_family": "router_input",
+      "max_abs_ci_difference": 0.0,
+      "max_abs_score_difference": 0.0021572311197592953,
+      "max_saved_gap_among_changed_comparisons": 0,
+      "refit_auroc": 0.8716646848989299,
+      "refit_ci": {
+        "ci_high": 0.8973245742286704,
+        "ci_low": 0.8451343823618821
+      },
+      "saved_auroc": 0.8716646848989299,
+      "saved_ci": {
+        "ci_high": 0.8973245742286704,
+        "ci_low": 0.8451343823618821
+      }
+    },
+    {
+      "anchor": "middle",
+      "auroc_same_at_3_decimal_places": true,
+      "changed_comparisons_involving_exact_tie": 0,
+      "changed_positive_negative_comparisons": 0,
+      "ci_same_at_3_decimal_places": true,
+      "feature_family": "router_logits",
+      "max_abs_ci_difference": 0.0,
+      "max_abs_score_difference": 2.971492060632741e-06,
+      "max_saved_gap_among_changed_comparisons": 0,
+      "refit_auroc": 0.8179667063020214,
+      "refit_ci": {
+        "ci_high": 0.8476137988639911,
+        "ci_low": 0.7863930019253832
+      },
+      "saved_auroc": 0.8179667063020214,
+      "saved_ci": {
+        "ci_high": 0.8476137988639911,
+        "ci_low": 0.7863930019253832
+      }
+    },
+    {
+      "anchor": "middle",
+      "auroc_same_at_3_decimal_places": true,
+      "changed_comparisons_involving_exact_tie": 16,
+      "changed_positive_negative_comparisons": 16,
+      "ci_same_at_3_decimal_places": true,
+      "feature_family": "expert_id_membership_count",
+      "max_abs_ci_difference": 7.846990512772045e-05,
+      "max_abs_score_difference": 1.3500311979441904e-13,
+      "max_saved_gap_among_changed_comparisons": 2.220446049250313e-16,
+      "refit_auroc": 0.7009453032104638,
+      "refit_ci": {
+        "ci_high": 0.7395728849981829,
+        "ci_low": 0.6643954142910038
+      },
+      "saved_auroc": 0.7010285374554103,
+      "saved_ci": {
+        "ci_high": 0.7396513549033106,
+        "ci_low": 0.6643502802582945
+      }
+    },
+    {
+      "anchor": "middle",
+      "auroc_same_at_3_decimal_places": true,
+      "changed_comparisons_involving_exact_tie": 0,
+      "changed_positive_negative_comparisons": 0,
+      "ci_same_at_3_decimal_places": true,
+      "feature_family": "expert_id_aligned_sparse_weights",
+      "max_abs_ci_difference": 0.0,
+      "max_abs_score_difference": 1.2612133559741778e-13,
+      "max_saved_gap_among_changed_comparisons": 0,
+      "refit_auroc": 0.7426872770511296,
+      "refit_ci": {
+        "ci_high": 0.7774528503459852,
+        "ci_low": 0.7082199198494401
+      },
+      "saved_auroc": 0.7426872770511296,
+      "saved_ci": {
+        "ci_high": 0.7774528503459852,
+        "ci_low": 0.7082199198494401
+      }
+    },
+    {
+      "anchor": "middle",
+      "auroc_same_at_3_decimal_places": true,
+      "changed_comparisons_involving_exact_tie": 0,
+      "changed_positive_negative_comparisons": 0,
+      "ci_same_at_3_decimal_places": true,
+      "feature_family": "rank_only_sorted_weights_legacy",
+      "max_abs_ci_difference": 0.0,
+      "max_abs_score_difference": 8.881784197001252e-16,
+      "max_saved_gap_among_changed_comparisons": 0,
+      "refit_auroc": 0.6906896551724138,
+      "refit_ci": {
+        "ci_high": 0.72782996384843,
+        "ci_low": 0.6529680621310648
+      },
+      "saved_auroc": 0.6906896551724138,
+      "saved_ci": {
+        "ci_high": 0.72782996384843,
+        "ci_low": 0.6529680621310648
+      }
+    }
+  ],
+  "model": "glm4_moe_lite",
+  "model_forwards": 0,
+  "no_stored_results_modified": true,
+  "original_runtime": {
+    "numpy": "2.4.6",
+    "platform": "Linux-6.8.0-117-generic-x86_64-with-glibc2.35",
+    "python": "3.11.10",
+    "safetensors": "0.8.0",
+    "scikit_learn": "1.9.0"
+  },
+  "other_models": "All 126 cells of the other seven models, including GPT-OSS-120B, match saved OOF scores exactly.",
+  "reconstructed_features_equal_original_archive_extractor": true,
+  "refit_runtime": {
+    "numpy": "2.4.6",
+    "pydantic": "2.13.4",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.17.1",
+    "threadpoolctl": "3.6.0"
+  },
+  "status": "completed_with_recorded_prediction_differences"
+}

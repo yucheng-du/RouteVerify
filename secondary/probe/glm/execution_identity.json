@@ -1,0 +1,61 @@
+{
+  "analysis_id": "glm_common_core_campaign_20260907_A",
+  "runtime": {
+    "numpy": "2.4.6",
+    "platform": "Linux-6.8.0-117-generic-x86_64-with-glibc2.35",
+    "python": "3.11.10",
+    "safetensors": "0.8.0",
+    "scikit_learn": "1.9.0"
+  },
+  "recorded_code_sha256": {
+    "scripts/run_interface_access_analysis.py": "8a5f4c88085b470d496c9823a1d6a46607d36d73da167389d9ae7d01fb6f274a",
+    "src/routeverify/analysis/fair_comparison.py": "916087b83c7c3771c2cfc0bf2a1110d6da672605fc8ea22d148f058b1ef9f3c4",
+    "src/routeverify/analysis/interface_access.py": "e129c80c380b5c95e6d9b629a2644c639e4b042244ea3db149f541e50ce5e6e7",
+    "src/routeverify/analysis/probes.py": "69f6869813fd83782b1feec89281dd83670d6b0cf001d090b867200ddc107682",
+    "src/routeverify/analysis/protocols.py": "3c980e65e7bd2732efa3330d99dd5ef30323677a62c49651668002e45f9b7f47",
+    "src/routeverify/analysis/routing_probes.py": "1e9e568e472bcd18152913a4eb014bda411578465b6056d8294582d48ca683f2",
+    "src/routeverify/analysis/surface_baselines.py": "bc4fb6e835c04c98907ed64f02bb81b17362289004ba1dfd102ff722d2163a2b"
+  },
+  "inputs": {
+    "activation_integrity_contract": "Every accessed activation basename must exist under the declared recapture root; required keys, dimensions, expert count, row count, and finite values are checked. Large immutable activation files are not globally rehashed.",
+    "archive_root": "archive://runtime/routeverify-runs/campaign_20260907_A/glm4_moe_lite/common_core_full_v1",
+    "config": {
+      "path": "archive://runtime/routeverify-runs/campaign_20260907_A/glm4_moe_lite/common_core_full_v1/resolved_configs/interface_access.yaml",
+      "sha256": "4672bf6ff6beff4cfafa545bbce774d0091357b8ef7e5ec501ff6eef2f1cae2d"
+    },
+    "files": [
+      {
+        "path": "archive://execution/docs/results/qwen3_cpu_corrections_v1_20260808/analysis_provenance.json",
+        "sha256": "0d109ed7f8848775420076cf0c3198b44b6c3fc535285780bc029e05295c9e8a"
+      },
+      {
+        "path": "archive://execution/docs/results/qwen3_cpu_corrections_v1_20260808/source_problem_manifest.json",
+        "sha256": "38ebffd09be3c9223beb0ccd212027b2a0d380f914d5918980629eed4ec70de3"
+      },
+      {
+        "path": "archive://runtime/routeverify-runs/campaign_20260907_A/glm4_moe_lite/common_core_full_v1/recapture/config.resolved.yaml",
+        "sha256": "eb0e3a43a048c53c6f06bc69de40eb1d68c6437b9742a6bf2a47303abd6285b9"
+      },
+      {
+        "path": "archive://runtime/routeverify-runs/campaign_20260907_A/glm4_moe_lite/common_core_full_v1/recapture/data_manifest.jsonl",
+        "sha256": "db804d0c660a311ee9008f3d3aa491d158984e65923ac3b22990077ec9065f40"
+      },
+      {
+        "path": "archive://runtime/routeverify-runs/campaign_20260907_A/glm4_moe_lite/common_core_full_v1/recapture/selection_manifest.json",
+        "sha256": "1b3e10f09d208e10a0866a084d3c0d558aad1f2a4370f20c659128b8c30f6fe7"
+      },
+      {
+        "path": "archive://runtime/routeverify-runs/campaign_20260907_A/glm4_moe_lite/common_core_full_v1/resolved_configs/interface_access.yaml",
+        "sha256": "4672bf6ff6beff4cfafa545bbce774d0091357b8ef7e5ec501ff6eef2f1cae2d"
+      }
+    ]
+  },
+  "feature_digests": null,
+  "scope": {
+    "contrast_feature_control": "not_run_missing_predeclared_labels",
+    "device": "cpu",
+    "model_weights_loaded": false,
+    "source_archives_modified": false,
+    "validation_accessed": false
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "analysis_id": "processbench_natural_transfer_v1",
+  "bootstrap": {
+    "alpha": 0.05,
+    "confidence_level": 0.95,
+    "method": "ordinary_pair_percentile",
+    "multiplicity_adjustment": null,
+    "n_resamples": 1000,
+    "seed": 20260828
+  },
+  "effects": {
+    "first_error_to_matched_correct": {
+      "layer_27.post_moe_residual": {
+        "ci_high": 0.0899136346920083,
+        "ci_low": 0.04509726707037771,
+        "direction": "first_error_to_matched_correct",
+        "donor_role": "first_error",
+        "mean": 0.066659717898195,
+        "metric": "mean_logprob_margin_incorrect_minus_correct",
+        "n_pairs": 64,
+        "receiver_role": "matched_correct",
+        "site": "layer_27.post_moe_residual",
+        "units": "log-probability per candidate token"
+      },
+      "layer_27.router_logits": {
+        "ci_high": 0.00576523309767556,
+        "ci_low": -0.005546116340459169,
+        "direction": "first_error_to_matched_correct",
+        "donor_role": "first_error",
+        "mean": 9.216686400274161e-05,
+        "metric": "mean_logprob_margin_incorrect_minus_correct",
+        "n_pairs": 64,
+        "receiver_role": "matched_correct",
+        "site": "layer_27.router_logits",
+        "units": "log-probability per candidate token"
+      }
+    },
+    "matched_correct_to_first_error": {
+      "layer_27.post_moe_residual": {
+        "ci_high": -0.03512213401942668,
+        "ci_low": -0.06801687947311923,
+        "direction": "matched_correct_to_first_error",
+        "donor_role": "matched_correct",
+        "mean": -0.051651595378643826,
+        "metric": "mean_logprob_margin_incorrect_minus_correct",
+        "n_pairs": 64,
+        "receiver_role": "first_error",
+        "site": "layer_27.post_moe_residual",
+        "units": "log-probability per candidate token"
+      },
+      "layer_27.router_logits": {
+        "ci_high": 0.002659394944081818,
+        "ci_low": -0.009123509246031362,
+        "direction": "matched_correct_to_first_error",
+        "donor_role": "matched_correct",
+        "mean": -0.0033160364594853817,
+        "metric": "mean_logprob_margin_incorrect_minus_correct",
+        "n_pairs": 64,
+        "receiver_role": "first_error",
+        "site": "layer_27.router_logits",
+        "units": "log-probability per candidate token"
+      }
+    }
+  },
+  "excluded_smoke_control_rows": 0,
+  "expected_analyzed_rows": 768,
+  "identity": {
+    "passed": true,
+    "self_patch_by_site_role": {
+      "layer_27.post_moe_residual": {
+        "first_error": {
+          "max_abs_delta": 0.0,
+          "mean_abs_delta": 0.0,
+          "n": 64,
+          "passed": true
+        },
+        "matched_correct": {
+          "max_abs_delta": 0.0,
+          "mean_abs_delta": 0.0,
+          "n": 64,
+          "passed": true
+        }
+      },
+      "layer_27.router_logits": {
+        "first_error": {
+          "max_abs_delta": 0.0,
+          "mean_abs_delta": 0.0,
+          "n": 64,
+          "passed": true
+        },
+        "matched_correct": {
+          "max_abs_delta": 0.0,
+          "mean_abs_delta": 0.0,
+          "n": 64,
+          "passed": true
+        }
+      }
+    },
+    "tolerance": 1e-05,
+    "unpatched_rerun_by_role": {
+      "first_error": {
+        "max_abs_delta": 0.0,
+        "mean_abs_delta": 0.0,
+        "n": 64,
+        "passed": true
+      },
+      "matched_correct": {
+        "max_abs_delta": 0.0,
+        "mean_abs_delta": 0.0,
+        "n": 64,
+        "passed": true
+      }
+    }
+  },
+  "ignored_treatments": {},
+  "metric": {
+    "definition": "INCORRECT mean_logprob minus CORRECT mean_logprob",
+    "name": "mean_logprob_margin_incorrect_minus_correct",
+    "units": "log-probability per candidate token"
+  },
+  "n_analyzed_rows": 768,
+  "n_pairs": 64,
+  "n_rows": 768,
+  "role_semantics": {
+    "counterfactual_pair_claimed": false,
+    "internal_clean": "matched_correct",
+    "internal_corrupt": "first_error"
+  },
+  "router_native_dispatch": {
+    "failures": [],
+    "n_rows": 256,
+    "passed": true,
+    "required_for_router_patch_rows": true,
+    "router_sites": [
+      "layer_27.router_logits"
+    ],
+    "topk_change_required": false,
+    "topk_changed_rate": {
+      "max": 1.0,
+      "mean": 0.47265625,
+      "min": 0.0,
+      "n_reported": 256,
+      "zero_rows": 134
+    },
+    "verified_rows": 256
+  },
+  "schema_version": 1,
+  "sites": [
+    "layer_27.post_moe_residual",
+    "layer_27.router_logits"
+  ]
+}

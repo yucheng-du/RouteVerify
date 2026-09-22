@@ -1,0 +1,8 @@
+{
+  "boundary_strategy": "paired_first_error",
+  "input_format": "chat",
+  "n": 128,
+  "num_boundaries": 128,
+  "num_sites": 2,
+  "prompt_mode": "step_binary"
+}

@@ -1,0 +1,162 @@
+{
+  "cpu_refit": {
+    "cells": 138,
+    "elapsed_seconds": 133.8559180420125,
+    "exactly_matching_cells": 126,
+    "fitted_classifiers": 690,
+    "max_abs_auroc_difference": 0.0003091557669441247,
+    "max_abs_score_difference": 0.5850103844179522,
+    "mode": "fit-only",
+    "models": {
+      "gemma4": {
+        "cells": 18,
+        "max_abs_auroc_difference": 0.0,
+        "max_abs_score_difference": 0.0,
+        "strict_reference_matched_cells": 18
+      },
+      "glm4_moe_lite": {
+        "cells": 12,
+        "max_abs_auroc_difference": 0.0003091557669441247,
+        "max_abs_score_difference": 0.5850103844179522,
+        "strict_reference_matched_cells": 4
+      },
+      "gpt_oss": {
+        "cells": 18,
+        "max_abs_auroc_difference": 0.0,
+        "max_abs_score_difference": 0.0,
+        "strict_reference_matched_cells": 18
+      },
+      "gpt_oss_120b": {
+        "cells": 18,
+        "max_abs_auroc_difference": 0.0,
+        "max_abs_score_difference": 0.0,
+        "strict_reference_matched_cells": 18
+      },
+      "nemotron35_lightning": {
+        "cells": 18,
+        "max_abs_auroc_difference": 0.0,
+        "max_abs_score_difference": 0.0,
+        "strict_reference_matched_cells": 18
+      },
+      "nemotron3_nano": {
+        "cells": 18,
+        "max_abs_auroc_difference": 0.0,
+        "max_abs_score_difference": 0.0,
+        "strict_reference_matched_cells": 18
+      },
+      "qwen36_moe": {
+        "cells": 18,
+        "max_abs_auroc_difference": 0.0,
+        "max_abs_score_difference": 0.0,
+        "strict_reference_matched_cells": 18
+      },
+      "qwen3_moe": {
+        "cells": 18,
+        "max_abs_auroc_difference": 0.0,
+        "max_abs_score_difference": 0.0,
+        "strict_reference_matched_cells": 18
+      }
+    },
+    "oof_predictions": 80040,
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "python": "3.11.2",
+    "reference_comparison": "different",
+    "reference_differences": [
+      {
+        "abs_auroc_difference": 1.1890606420927874e-05,
+        "anchor": "early",
+        "feature_family": "post_moe_residual",
+        "layer": 1,
+        "max_abs_score_difference": 0.03681877056224181,
+        "model_id": "glm4_moe_lite"
+      },
+      {
+        "abs_auroc_difference": 4.7562425683711496e-05,
+        "anchor": "early",
+        "feature_family": "router_input",
+        "layer": 1,
+        "max_abs_score_difference": 0.5850103844179522,
+        "model_id": "glm4_moe_lite"
+      },
+      {
+        "abs_auroc_difference": 1.1890606420927874e-05,
+        "anchor": "early",
+        "feature_family": "router_logits",
+        "layer": 1,
+        "max_abs_score_difference": 0.001603114881735035,
+        "model_id": "glm4_moe_lite"
+      },
+      {
+        "abs_auroc_difference": 0.0003091557669441247,
+        "anchor": "early",
+        "feature_family": "expert_id_membership_count",
+        "layer": 1,
+        "max_abs_score_difference": 3.5913155405076225e-06,
+        "model_id": "glm4_moe_lite"
+      },
+      {
+        "abs_auroc_difference": 0.0,
+        "anchor": "middle",
+        "feature_family": "post_moe_residual",
+        "layer": 24,
+        "max_abs_score_difference": 0.009478749161463185,
+        "model_id": "glm4_moe_lite"
+      },
+      {
+        "abs_auroc_difference": 0.0,
+        "anchor": "middle",
+        "feature_family": "router_input",
+        "layer": 24,
+        "max_abs_score_difference": 0.0021572311197592953,
+        "model_id": "glm4_moe_lite"
+      },
+      {
+        "abs_auroc_difference": 0.0,
+        "anchor": "middle",
+        "feature_family": "router_logits",
+        "layer": 24,
+        "max_abs_score_difference": 2.971492060632741e-06,
+        "model_id": "glm4_moe_lite"
+      },
+      {
+        "abs_auroc_difference": 8.323424494649512e-05,
+        "anchor": "middle",
+        "feature_family": "expert_id_membership_count",
+        "layer": 24,
+        "max_abs_score_difference": 1.3500311979441904e-13,
+        "model_id": "glm4_moe_lite"
+      }
+    ],
+    "runtime": {
+      "numpy": "2.4.6",
+      "pydantic": "2.13.4",
+      "scikit-learn": "1.9.0",
+      "scipy": "1.17.1",
+      "threadpoolctl": "3.6.0"
+    },
+    "status": "completed",
+    "strict_reference_auroc_tolerance": 1.1890606421927468e-05,
+    "strict_reference_matched_cells": 130,
+    "strict_reference_score_tolerance": {
+      "atol": 1e-07,
+      "rtol": 1e-05
+    },
+    "threads": 2
+  },
+  "extraction": {
+    "all_NPZ_round_trips_exact": true,
+    "all_native_dtypes_and_values_preserved": true,
+    "all_reconstructed_X_equal_original_archive_extractor": true,
+    "compressed_npz_bytes": 107292676,
+    "feature_matrices": 138,
+    "gpt120_recorded_feature_digests_matched": 18,
+    "model_anchor_combinations": 23,
+    "models": 8,
+    "native_numeric_payload_bytes": 139306720,
+    "status": "passed"
+  },
+  "interpretation": "Feature extraction and CPU fitting completed. Seven models reproduce saved OOF scores exactly; GLM has explicitly retained prediction and small AUROC differences whose full cause has not been established. Saved original results are unchanged.",
+  "schema_version": 1,
+  "scope": "Eight-model 235-component canonical interface panel only. No native238 sensitivity fits, historical 1160-row Qwen routing/text fit, text-baseline fits, model forwards, GPU recapture or weight downloads.",
+  "uncertainty_validation": "All-model fit acceptance used --fit-only. A separate default-command GPT120 run recomputed all 18 cell intervals and matched saved results exactly; see validation/probe-default-command.json relative to the release root. GLM L24 intervals and adjacent contrasts were recomputed from newly fitted OOF scores to quantify the recorded differences; see glm-refit-differences.json here. Full all-model bootstrap was not repeated by this new CLI."
+}

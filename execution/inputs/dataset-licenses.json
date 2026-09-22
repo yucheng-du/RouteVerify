@@ -1,0 +1,20 @@
+[
+  {
+    "authority_url": "https://huggingface.co/datasets/hitsmy/PRMBench_Preview/raw/5cc7683d0ae5797f84d7aeac0607966f277c39e1/README.md",
+    "checked_on": "2026-09-22",
+    "dataset": "hitsmy/PRMBench_Preview",
+    "license": "Apache-2.0",
+    "readme_sha256": "86e51d9862421a74b0a354079749cc9f3674a8ac0913a21b80a0c916957b100e",
+    "redistribution": "dataset text omitted; obtain original under upstream terms",
+    "revision": "5cc7683d0ae5797f84d7aeac0607966f277c39e1"
+  },
+  {
+    "authority_url": "https://huggingface.co/datasets/Qwen/ProcessBench/raw/3bdcd5371ed567559a78f559c01c13a6deee7604/README.md",
+    "checked_on": "2026-09-22",
+    "dataset": "Qwen/ProcessBench",
+    "license": "Apache-2.0",
+    "readme_sha256": "525e4455e981213919c574146196258ddb63986c11637116f58d7ba8b990c6f5",
+    "redistribution": "dataset text omitted; obtain original under upstream terms",
+    "revision": "3bdcd5371ed567559a78f559c01c13a6deee7604"
+  }
+]

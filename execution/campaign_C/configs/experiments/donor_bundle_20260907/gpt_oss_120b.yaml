@@ -1,0 +1,18 @@
+# New same-loaded-model four-cell D and all-layer MoE-output supplement.
+model: configs/models/gpt_oss_120b.yaml
+data: configs/data/prmbench.yaml
+split_manifest: docs/results/first_batch_zero_gpu_20260730/discovery_validation_split.json
+split_partition: discovery
+expected_pairs: 290
+selection_manifest: docs/results/gpt_oss_full_20260809/full_selection_manifest.json
+source_component_manifest: docs/results/qwen3_cpu_corrections_v1_20260808/source_problem_manifest.json
+anchor_layer: 18
+expected_bundle_sites: 36
+input_format: chat
+mode: both
+extended_diagnostics: false
+d_sites: [router_logits, moe_output, post_moe_residual]
+bundle_kind: moe_output
+seed: 0
+output_dir: artifacts/campaign_20260907_C/gpt_oss_120b_donor_bundle_full_v1
+identity_tolerance: 1.0e-5

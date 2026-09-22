@@ -1,0 +1,317 @@
+{
+  "scope": "Reviewed manuscript v8; 5 figures and 16 tables. Paths are relative to paper/. Commands assume release root. No model-forward execution is implied.",
+  "results": [
+    {
+      "id": "Figure 1",
+      "latex_label": "fig:overview",
+      "topic": "Intervention schematic",
+      "assets": [
+        "figures/abc_overview_20260908.pdf",
+        "figure_source/overview.svg"
+      ],
+      "inputs": [
+        "../execution/"
+      ],
+      "cpu_command": "ROUTEVERIFY_FIGURE_OUTPUT=build/figures python paper/figure_source/overview.py",
+      "interpretation": "Conceptual schematic, not an empirical panel. Re-export with Inkscape and apply figure_source/fix_gradient.py for the recorded PDF gradient compatibility repair."
+    },
+    {
+      "id": "Figure 2",
+      "latex_label": "fig:abc-windows",
+      "topic": "Interface, token coverage, and direct gap contrasts",
+      "assets": [
+        "figures/abc_window_support_20260908.pdf"
+      ],
+      "inputs": [
+        "../analysis/abc/unified_windows_v1.json"
+      ],
+      "cpu_command": "python paper/figure_source/reproduce.py --output build/figures",
+      "interpretation": "Pair-level T; common eligibility for direct differences; symmetric-log axes in B/D; 50,000 source-component draws."
+    },
+    {
+      "id": "Figure 3",
+      "latex_label": "fig:wide-d-roles",
+      "topic": "Full-step all-router fixed-receiver donor correctness",
+      "assets": [
+        "figures/wide_d_roles_20260908.pdf"
+      ],
+      "inputs": [
+        "../analysis/wide_d/wide_d_nine_model_v1.json",
+        "../analysis/wide_d/secondary_contrasts.json",
+        "figure_source/inputs/abc/c/cross_checkpoint_contrasts_v1.json"
+      ],
+      "cpu_command": "python paper/figure_source/reproduce.py --output build/figures",
+      "interpretation": "Primary mean-logprob D; receiver roles average within pair. The lower checkpoint contrasts are post hoc and do not isolate parameter count."
+    },
+    {
+      "id": "Figure 4",
+      "latex_label": "fig:abc-window-profiles",
+      "topic": "Nine checkpoints, four windows and four interfaces",
+      "assets": [
+        "figures/abc_window_profiles_20260908.pdf"
+      ],
+      "inputs": [
+        "../analysis/abc/unified_windows_v1.json"
+      ],
+      "cpu_command": "python paper/figure_source/reproduce.py --output build/figures",
+      "interpretation": "144 paired-donor T intervals, checkpoint-specific linear axes. Missing windows remain missing."
+    },
+    {
+      "id": "Figure 5",
+      "latex_label": "fig:processbench-receiver-state",
+      "topic": "Exploratory ProcessBench receiver-state strata",
+      "assets": [
+        "figures/processbench_receiver_state.pdf"
+      ],
+      "inputs": [
+        "../secondary/processbench/analysis/pair_effects.csv",
+        "../secondary/processbench/analysis/receiver_state_effects.csv"
+      ],
+      "cpu_command": "python paper/figure_source/reproduce.py --output build/figures",
+      "interpretation": "All 64 Gemma pairs retained; correct-to-error residual direction. Receiver-state strata and 50,000 within-group draws are exploratory."
+    },
+    {
+      "id": "Table 1",
+      "latex_label": "tab:abc-d",
+      "topic": "Last-token local fixed-receiver D",
+      "assets": [
+        "tables/abc_donor_direction_20260908.tex"
+      ],
+      "inputs": [
+        "../analysis/abc/headline_d_bundle_v1.csv",
+        "../analysis/abc/headline_inputs/"
+      ],
+      "cpu_command": "python analysis/abc/recompute_headline.py --output build/abc_headline",
+      "interpretation": "N=290 receiver pairs, K=235 components; Qwen3 local D uses L36. Residual role contrasts remain distinct."
+    },
+    {
+      "id": "Table 2",
+      "latex_label": "tab:abc-bundle",
+      "topic": "All-layer last-token MoE-output controls",
+      "assets": [
+        "tables/abc_bundle_controls_20260908.tex"
+      ],
+      "inputs": [
+        "../analysis/abc/headline_d_bundle_v1.csv",
+        "../analysis/abc/headline_inputs/"
+      ],
+      "cpu_command": "python analysis/abc/recompute_headline.py --output build/abc_headline",
+      "interpretation": "Paired, matched external, and norm-random controls. All routed sites, final step token; not the full-step all-router condition."
+    },
+    {
+      "id": "Table 3",
+      "latex_label": "tab:abc-anchors",
+      "topic": "Layer and intervention coverage",
+      "assets": [
+        "tables/layer_coverage.tex"
+      ],
+      "inputs": [
+        "../execution/",
+        "../secondary/probe/configs/"
+      ],
+      "cpu_command": "See execution/README.md",
+      "interpretation": "Zero-indexed local D/window anchors and all routed sites; probe anchors describe a separate analysis. Qwen3 L36 D versus L24 windows/probes is intentional."
+    },
+    {
+      "id": "Table 4",
+      "latex_label": "tab:abc-window-n",
+      "topic": "Eight-token window eligibility",
+      "assets": [
+        "tables/window_eligibility.tex"
+      ],
+      "inputs": [
+        "../analysis/abc/unified_windows_v1.json",
+        "../analysis/abc/inputs/"
+      ],
+      "cpu_command": "python analysis/abc/recompute_windows.py --output build/abc_windows",
+      "interpretation": "N/K for paired/matched suffix/divergence; common masks are intersections. Missing observations are never zero-filled."
+    },
+    {
+      "id": "Table 5",
+      "latex_label": "tab:abc-d-all-interfaces",
+      "topic": "All three local interfaces and receiver roles",
+      "assets": [
+        "tables/abc_donor_all_interfaces_20260908.tex"
+      ],
+      "inputs": [
+        "../analysis/abc/headline_d_bundle_v1.csv"
+      ],
+      "cpu_command": "python analysis/abc/recompute_headline.py --output build/abc_headline",
+      "interpretation": "Same local D analysis as Table 1, all interface/role cells retained."
+    },
+    {
+      "id": "Table 6",
+      "latex_label": "tab:abc-window-router-controls",
+      "topic": "Full-step all-router controls and paired differences",
+      "assets": [
+        "tables/abc_window_router_controls_20260908.tex"
+      ],
+      "inputs": [
+        "../analysis/abc/unified_windows_v1.json"
+      ],
+      "cpu_command": "python analysis/abc/recompute_windows.py --output build/abc_windows",
+      "interpretation": "Control-adjusted differences formed within pair before 50,000-draw component resampling."
+    },
+    {
+      "id": "Table 7",
+      "latex_label": "tab:verification-baseline",
+      "topic": "Unpatched assay performance",
+      "assets": [
+        "tables/verification_baseline_20260917.tex"
+      ],
+      "inputs": [
+        "verification_metrics/baseline/baseline_panels_v1.csv",
+        "verification_metrics/extracted/windows/"
+      ],
+      "cpu_command": "python paper/verification_metrics/reproduce.py --output build/verification_metrics",
+      "interpretation": "Mean-logprob primary; M>0 means INCORRECT. This is an internal paired assay, not official benchmark performance. R=sum(T)/sum(g), not mean(T/g); no mediation-share interpretation. Regenerated table values match the reviewed table; typography was subsequently refined in the manuscript."
+    },
+    {
+      "id": "Table 8",
+      "latex_label": "tab:decision-flips",
+      "topic": "Verdict transitions and controls",
+      "assets": [
+        "tables/decision_flips_20260917.tex"
+      ],
+      "inputs": [
+        "verification_metrics/flips/flip_panels_v1.csv",
+        "verification_metrics/extracted/windows/"
+      ],
+      "cpu_command": "python paper/verification_metrics/reproduce.py --output build/verification_metrics",
+      "interpretation": "Mean-logprob primary; M>0 means INCORRECT. This is an internal paired assay, not official benchmark performance. R=sum(T)/sum(g), not mean(T/g); no mediation-share interpretation. Regenerated table values match the reviewed table; typography was subsequently refined in the manuscript."
+    },
+    {
+      "id": "Table 9",
+      "latex_label": "tab:normalized-effects",
+      "topic": "Normalized transfer and baseline gap",
+      "assets": [
+        "tables/normalized_effects_20260917.tex"
+      ],
+      "inputs": [
+        "verification_metrics/normalized_t/normalized_t_panels_v1.csv",
+        "verification_metrics/extracted/windows/"
+      ],
+      "cpu_command": "python paper/verification_metrics/reproduce.py --output build/verification_metrics",
+      "interpretation": "Mean-logprob primary; M>0 means INCORRECT. This is an internal paired assay, not official benchmark performance. R=sum(T)/sum(g), not mean(T/g); no mediation-share interpretation. Regenerated table values match the reviewed table; typography was subsequently refined in the manuscript."
+    },
+    {
+      "id": "Table 10",
+      "latex_label": "tab:wide-d-primary",
+      "topic": "Primary wide D",
+      "assets": [
+        "tables/wide_d_primary_20260908.tex"
+      ],
+      "inputs": [
+        "../analysis/wide_d/wide_d_nine_model_v1.json",
+        "../analysis/wide_d/"
+      ],
+      "cpu_command": "python analysis/wide_d/recompute.py --output build/wide_d",
+      "interpretation": "Mean-logprob, full step/all routed layers, alpha=1, fixed 204 external donor pairs; N=290/K=235; 50,000 draws."
+    },
+    {
+      "id": "Table 11",
+      "latex_label": "tab:wide-d-total",
+      "topic": "Total-logprob sensitivity",
+      "assets": [
+        "tables/wide_d_total_20260908.tex"
+      ],
+      "inputs": [
+        "../analysis/wide_d/wide_d_nine_model_v1.json"
+      ],
+      "cpu_command": "python analysis/wide_d/recompute.py --output build/wide_d",
+      "interpretation": "Separate candidate-total sensitivity on identical scores/draws, not an independent replication; Gemma unequal verdict token counts preserve their recorded weighting."
+    },
+    {
+      "id": "Table 12",
+      "latex_label": "tab:wide-d-direct",
+      "topic": "Post hoc direct wide D contrasts",
+      "assets": [
+        "tables/wide_d_direct_20260908.tex"
+      ],
+      "inputs": [
+        "../analysis/wide_d/secondary_contrasts.json"
+      ],
+      "cpu_command": "python analysis/wide_d/recompute.py --output build/wide_d",
+      "interpretation": "Correct-minus-error receiver contrast and GPT-OSS 20B-minus-120B D_common. Direct pair differences, fixed donor assignments, no multiplicity adjustment."
+    },
+    {
+      "id": "Table 13",
+      "latex_label": "tab:interface-access",
+      "topic": "Representation-access AUROC",
+      "assets": [
+        "tables/interface_access.tex"
+      ],
+      "inputs": [
+        "../secondary/probe/canonical_six/",
+        "../secondary/probe/configs/"
+      ],
+      "cpu_command": "python secondary/recompute.py --output build/secondary",
+      "interpretation": "Saved OOF predictions on the post hoc 235-component grouping. Qwen3 historical/retrospective and OLMoE unavailable labels preserved; access is not a causal effect."
+    },
+    {
+      "id": "Table 14",
+      "latex_label": "tab:text-baseline",
+      "topic": "Text baseline and router-minus-text",
+      "assets": [
+        "tables/text_baseline.tex"
+      ],
+      "inputs": [
+        "../secondary/probe/text_baseline/"
+      ],
+      "cpu_command": "python secondary/recompute.py --output build/secondary",
+      "interpretation": "Identical 580 samples and five saved folds; matched source-component resampling. Historical Qwen3 is a separately identified sensitivity."
+    },
+    {
+      "id": "Table 15",
+      "latex_label": "tab:processbench",
+      "topic": "Natural-error transfer",
+      "assets": [
+        "tables/processbench_transfer.tex"
+      ],
+      "inputs": [
+        "../secondary/processbench/runs/",
+        "../secondary/processbench/analysis/effect_distribution.csv"
+      ],
+      "cpu_command": "python secondary/recompute.py --output build/secondary",
+      "interpretation": "Three checkpoints, 64 same-generator cross-problem pairs/model; two directions; T and G derived jointly from paired rows."
+    },
+    {
+      "id": "Table 16",
+      "latex_label": "tab:processbench-receiver-state",
+      "topic": "Exploratory receiver-state effects",
+      "assets": [
+        "tables/processbench_receiver_state.tex"
+      ],
+      "inputs": [
+        "../secondary/processbench/analysis/receiver_state_effects.csv",
+        "../secondary/processbench/analysis/receiver_state_contrasts.csv"
+      ],
+      "cpu_command": "python secondary/recompute.py --output build/secondary",
+      "interpretation": "Within-observed-group bootstrap, 50,000 draws; all original pairs retained; does not identify a gating mechanism."
+    }
+  ],
+  "additional_textual_results": [
+    {
+      "scope": "Appendix G separate GLM/GPT-OSS 120B probes, matched controls, folds, nulls and sensitivity boundaries",
+      "inputs": [
+        "../secondary/probe/"
+      ],
+      "documentation": "../secondary/README.md"
+    },
+    {
+      "scope": "Appendix H source-component/construction sensitivity and native dispatch checks",
+      "inputs": [
+        "../secondary/processbench/"
+      ],
+      "documentation": "../secondary/README.md"
+    },
+    {
+      "scope": "Appendix I adapter identities, self controls, candidate scoring and coverage",
+      "inputs": [
+        "../execution/",
+        "verification_metrics/extracted/"
+      ],
+      "documentation": "../execution/README.md"
+    }
+  ]
+}

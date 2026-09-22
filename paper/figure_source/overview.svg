@@ -1,0 +1,256 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="396pt" height="157.16pt" viewBox="0 0 396 157.16">
+<g transform="translate(0,-32)">
+<defs>
+          <linearGradient id="verifier" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FA736A"/><stop offset=".48" stop-color="#AF577D"/><stop offset="1" stop-color="#143F7E"/></linearGradient>
+          <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FCFEFF"/><stop offset="1" stop-color="#F1F9FD"/></linearGradient>
+          <linearGradient id="clean" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#53C9BC"/><stop offset="1" stop-color="#3AB6AC"/></linearGradient>
+          <linearGradient id="error" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF776F"/><stop offset="1" stop-color="#F15A58"/></linearGradient>
+          <linearGradient id="footer" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#EDF2F7"/><stop offset="1" stop-color="#E6EEF5"/></linearGradient>
+        </defs>
+<rect x="4.85" y="34.45" width="77.3" height="128.8" rx="3.65" fill="#34546C" opacity="0.035"/>
+<rect x="5.2" y="34.550000000000004" width="76.6" height="128.1" rx="3.3" fill="#34546C" opacity="0.045"/>
+<rect id="traces" x="5.5" y="34.5" width="76" height="127.5" rx="3" fill="url(#panel)" stroke="#C4DEED" stroke-width="0.55"/>
+<text id="traces_title" font-family="Arial" font-size="7.2" font-weight="bold" fill="#183653" text-anchor="middle">
+<tspan x="43.5" y="45.898">Paired reasoning</tspan>
+<tspan x="43.5" y="53.998000000000005">traces</tspan>
+</text>
+<path id="first_error_boundary" d="M 64.5,88.8 L 64.5,133" fill="none" stroke="#A6BDCC" stroke-width="0.55" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.2 2.2"/>
+<text id="clean_trace_title" font-family="Arial" font-size="6.2" font-weight="bold" fill="#183653" text-anchor="start">
+<tspan x="11.7" y="73.608">Correct trace</tspan>
+</text>
+<path id="clean_step_edge_0" d="M 21.9,83.5 L 34.5,83.5" fill="none" stroke="#24537C" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="34.5,83.5 32.3,82.51 32.3,84.49" fill="#24537C"/>
+<circle id="clean_step_0" cx="16.0" cy="83.5" r="5.2" fill="#FFFFFF" stroke="#24537C" stroke-width="0.9"/>
+<path id="clean_step_edge_1" d="M 46.4,83.5 L 58.5,83.5" fill="none" stroke="#24537C" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="58.5,83.5 56.3,82.51 56.3,84.49" fill="#24537C"/>
+<circle id="clean_step_1" cx="40.5" cy="83.5" r="5.2" fill="#FFFFFF" stroke="#24537C" stroke-width="0.9"/>
+<circle id="clean_step_2" cx="64.5" cy="83.5" r="5.2" fill="url(#clean)" stroke="#24537C" stroke-width="0.9"/>
+<text id="error_trace_title" font-family="Arial" font-size="6.2" font-weight="bold" fill="#183653" text-anchor="start">
+<tspan x="11.7" y="111.108">First-error trace</tspan>
+</text>
+<path id="error_step_edge_0" d="M 21.9,121 L 34.5,121" fill="none" stroke="#24537C" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="34.5,121 32.3,120.01 32.3,121.99" fill="#24537C"/>
+<circle id="error_step_0" cx="16.0" cy="121" r="5.2" fill="#FFFFFF" stroke="#24537C" stroke-width="0.9"/>
+<path id="error_step_edge_1" d="M 46.4,121 L 58.5,121" fill="none" stroke="#24537C" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="58.5,121 56.3,120.01 56.3,121.99" fill="#24537C"/>
+<circle id="error_step_1" cx="40.5" cy="121" r="5.2" fill="#FFFFFF" stroke="#24537C" stroke-width="0.9"/>
+<circle id="error_step_2" cx="64.5" cy="121" r="5.2" fill="url(#error)" stroke="#24537C" stroke-width="0.9"/>
+<text id="first_error_label" font-family="Arial" font-size="5.7" font-weight="normal" fill="#183653" text-anchor="middle">
+<tspan x="64.5" y="140.938">First error</tspan>
+</text>
+<text id="future_hidden" font-family="Arial" font-size="5.7" font-weight="normal" fill="#183653" text-anchor="middle">
+<tspan x="43.5" y="150.78799999999998">Later steps</tspan>
+<tspan x="43.5" y="157.088">hidden</tspan>
+</text>
+<rect x="98.35" y="34.45" width="130.3" height="28.8" rx="3.65" fill="#34546C" opacity="0.035"/>
+<rect x="98.7" y="34.550000000000004" width="129.6" height="28.1" rx="3.3" fill="#34546C" opacity="0.045"/>
+<rect id="verifier" x="99" y="34.5" width="129" height="27.5" rx="3" fill="url(#verifier)" stroke="#FFFFFF" stroke-width="0.7"/>
+<text id="verifier_title" font-family="Arial" font-size="10.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">
+<tspan x="163.5" y="51.82">MoE verifier</tspan>
+</text>
+<path id="verifier_input" d="M 83,83.5 L 86,83.5 L 86,48.25 L 97.5,48.25" fill="none" stroke="#24537C" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="97.5,48.25 94.8,47.035 94.8,49.465" fill="#24537C"/>
+<path id="verifier_T" d="M 229.5,48.25 L 234,48.25 L 240,47" fill="none" stroke="#24537C" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="240,47 237.4301763981888,46.43219135655219 237.87071758707071,48.54678906318542" fill="#24537C"/>
+<path id="verifier_D" d="M 229.5,58 L 236,58 L 236,103 L 240,103" fill="none" stroke="#24537C" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="240,103 238.2,102.19 238.2,103.81" fill="#24537C"/>
+<rect id="sites" x="89" y="66" width="142.5" height="59" rx="2" fill="none" stroke="#C2DCEA" stroke-width="0.55" stroke-dasharray="2.3 1.7"/>
+<text id="sites_title" font-family="Arial" font-size="6.6" font-weight="normal" fill="#183653" text-anchor="middle">
+<tspan x="160.25" y="73.244">Intervention sites</tspan>
+</text>
+<circle id="site_dot_0" cx="112.75" cy="76.5" r="1.4" fill="#2B9CB2" stroke="none" stroke-width="0.8"/>
+<path id="site_stem_0" d="M 112.75,76.5 L 112.75,81" fill="none" stroke="#2B9CB2" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="site_label_0" x="90.5" y="80" width="44.5" height="8" rx="1.4" fill="#E6F5F7" stroke="none" stroke-width="0.55"/>
+<text id="site_text_0" font-family="Arial" font-size="6.0" font-weight="bold" fill="#183653" text-anchor="middle">
+<tspan x="112.75" y="86.04">Router logits</tspan>
+</text>
+<path id="site_separator_1" d="M 136.5,76 L 136.5,122" fill="none" stroke="#D4E3EB" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<circle id="site_dot_1" cx="160.25" cy="76.5" r="1.4" fill="#CB941E" stroke="none" stroke-width="0.8"/>
+<path id="site_stem_1" d="M 160.25,76.5 L 160.25,81" fill="none" stroke="#CB941E" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="site_label_1" x="138.0" y="80" width="44.5" height="8" rx="1.4" fill="#FFF0E1" stroke="none" stroke-width="0.55"/>
+<text id="site_text_1" font-family="Arial" font-size="6.0" font-weight="bold" fill="#183653" text-anchor="middle">
+<tspan x="160.25" y="86.04">MoE output</tspan>
+</text>
+<path id="site_separator_2" d="M 184.0,76 L 184.0,122" fill="none" stroke="#D4E3EB" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<circle id="site_dot_2" cx="207.75" cy="76.5" r="1.4" fill="#D85E7E" stroke="none" stroke-width="0.8"/>
+<path id="site_stem_2" d="M 207.75,76.5 L 207.75,81" fill="none" stroke="#D85E7E" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="site_label_2" x="185.5" y="80" width="44.5" height="8" rx="1.4" fill="#FAE7EE" stroke="none" stroke-width="0.55"/>
+<text id="site_text_2" font-family="Arial" font-size="6.0" font-weight="bold" fill="#183653" text-anchor="middle">
+<tspan x="207.75" y="86.04">Residual state</tspan>
+</text>
+<rect id="router_icon" x="92" y="97.8" width="20" height="8.4" rx="1.8" fill="#FFFFFF" stroke="#6E90B7" stroke-width="0.55"/>
+<text id="router_text" font-family="Arial" font-size="5.3" font-weight="normal" fill="#183653" text-anchor="middle">
+<tspan x="102" y="103.802">Router</tspan>
+</text>
+<path id="selection_0" d="M 112.55,102 L 122.95,93.2" fill="none" stroke="#24537C" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1.2 1"/>
+<polygon points="122.95,93.2 121.63242463246388,93.57802301631259 122.35910965411333,94.43683258735285" fill="#24537C"/>
+<rect id="routed_expert_0" x="123.5" y="89.55" width="11" height="7.3" rx="1" fill="#FFFFFF" stroke="#A3BFDB" stroke-width="0.45"/>
+<text id="routed_E_0" font-family="Arial" font-size="5.2" font-weight="normal" fill="#183653" text-anchor="middle">
+<tspan x="129.0" y="94.968">E1</tspan>
+</text>
+<path id="selection_1" d="M 112.55,102 L 122.95,102.0" fill="none" stroke="#24537C" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1.2 1"/>
+<polygon points="122.95,102.0 121.7,101.4375 121.7,102.5625" fill="#24537C"/>
+<rect id="routed_expert_1" x="123.5" y="98.35" width="11" height="7.3" rx="1" fill="#FFFFFF" stroke="#A3BFDB" stroke-width="0.45"/>
+<text id="routed_E_1" font-family="Arial" font-size="5.2" font-weight="normal" fill="#183653" text-anchor="middle">
+<tspan x="129.0" y="103.768">E2</tspan>
+</text>
+<path id="selection_2" d="M 112.55,102 L 122.95,110.80000000000001" fill="none" stroke="#24537C" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1.2 1"/>
+<polygon points="122.95,110.80000000000001 122.35910965411333,109.56316741264718 121.63242463246388,110.42197698368741" fill="#24537C"/>
+<rect id="routed_expert_2" x="123.5" y="107.15" width="11" height="7.3" rx="1" fill="#FFFFFF" stroke="#A3BFDB" stroke-width="0.45"/>
+<text id="routed_E_2" font-family="Arial" font-size="5.2" font-weight="normal" fill="#183653" text-anchor="middle">
+<tspan x="129.0" y="112.56800000000001">E3</tspan>
+</text>
+<rect id="output_expert_0" x="140.0" y="89.55" width="11" height="7.3" rx="1" fill="#FFFFFF" stroke="#A3BFDB" stroke-width="0.45"/>
+<text id="output_E_0" font-family="Arial" font-size="5.2" font-weight="normal" fill="#183653" text-anchor="middle">
+<tspan x="145.5" y="94.968">E1</tspan>
+</text>
+<path id="routed_state_0" d="M 151.55,93.2 L 171.5,102" fill="none" stroke="#24537C" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="171.5,102 170.3266719695536,100.69550725070287 169.74551136910733,102.01302474830545" fill="#24537C"/>
+<rect id="output_expert_1" x="140.0" y="98.35" width="11" height="7.3" rx="1" fill="#FFFFFF" stroke="#A3BFDB" stroke-width="0.45"/>
+<text id="output_E_1" font-family="Arial" font-size="5.2" font-weight="normal" fill="#183653" text-anchor="middle">
+<tspan x="145.5" y="103.768">E2</tspan>
+</text>
+<path id="routed_state_1" d="M 151.55,102.0 L 171.5,102" fill="none" stroke="#24537C" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="171.5,102 169.9,101.28 169.9,102.72" fill="#24537C"/>
+<rect id="output_expert_2" x="140.0" y="107.15" width="11" height="7.3" rx="1" fill="#FFFFFF" stroke="#A3BFDB" stroke-width="0.45"/>
+<text id="output_E_2" font-family="Arial" font-size="5.2" font-weight="normal" fill="#183653" text-anchor="middle">
+<tspan x="145.5" y="112.56800000000001">E3</tspan>
+</text>
+<path id="routed_state_2" d="M 151.55,110.80000000000001 L 171.5,102" fill="none" stroke="#24537C" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="171.5,102 169.74551136910733,101.98697525169455 170.3266719695536,103.30449274929713" fill="#24537C"/>
+<circle id="output_patch" cx="176.0" cy="102" r="4.0" fill="#CB941E" stroke="none" stroke-width="0.8"/>
+<path id="addition_input_0" d="M 188.0,94 L 198.6,100.0" fill="none" stroke="#24537C" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="198.6,100.0 197.56225975017892,98.58525791258572 196.85291831359237,99.83842778388862" fill="#24537C"/>
+<path id="addition_input_1" d="M 188.0,110 L 198.6,104.0" fill="none" stroke="#24537C" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="198.6,104.0 196.85291831359237,104.16157221611138 197.56225975017892,105.41474208741428" fill="#24537C"/>
+<circle id="addition" cx="203.0" cy="102" r="3.8" fill="#FFFFFF" stroke="#24537C" stroke-width="0.65"/>
+<text id="addition_glyph" font-family="Arial" font-size="6.2" font-weight="normal" fill="#183653" text-anchor="middle">
+<tspan x="203.0" y="104.108">+</tspan>
+</text>
+<path id="post_addition" d="M 207.4,102 L 220.3,102" fill="none" stroke="#24537C" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="220.3,102 218.70000000000002,101.28 218.70000000000002,102.72" fill="#24537C"/>
+<circle id="residual_patch" cx="224.5" cy="102" r="3.6" fill="#D85E7E" stroke="#24537C" stroke-width="0.6"/>
+<text id="site_definition_0" font-family="Arial" font-size="5.6" font-weight="normal" fill="#183653" text-anchor="middle">
+<tspan x="112.75" y="122.404">Select + weight</tspan>
+</text>
+<text id="site_definition_1" font-family="Arial" font-size="5.6" font-weight="normal" fill="#183653" text-anchor="middle">
+<tspan x="160.25" y="122.404">Routed update</tspan>
+</text>
+<text id="site_definition_2" font-family="Arial" font-size="5.6" font-weight="normal" fill="#183653" text-anchor="middle">
+<tspan x="207.75" y="122.404">After addition</tspan>
+</text>
+<rect x="85.85" y="127.94999999999999" width="149.3" height="35.3" rx="3.4499999999999997" fill="#34546C" opacity="0.035"/>
+<rect x="86.2" y="128.05" width="148.6" height="34.6" rx="3.0999999999999996" fill="#34546C" opacity="0.045"/>
+<rect id="support" x="86.5" y="128" width="148" height="34" rx="2.8" fill="url(#panel)" stroke="#C4DEED" stroke-width="0.55"/>
+<text id="support_title" font-family="Arial" font-size="6.4" font-weight="bold" fill="#183653" text-anchor="start">
+<tspan x="90.5" y="134.676">Layer support · T window examples</tspan>
+</text>
+<rect id="layer_0" x="90.0" y="138.6" width="35" height="7.8" rx="1.7" fill="#E9F2F8" stroke="#C4DEED" stroke-width="0.55"/>
+<text id="layer_text_0" font-family="Arial" font-size="5.3" font-weight="normal" fill="#183653" text-anchor="middle">
+<tspan x="107.5" y="144.302">One anchor</tspan>
+</text>
+<rect id="layer_1" x="90.0" y="148.2" width="35" height="7.8" rx="1.7" fill="#E9F2F8" stroke="#C4DEED" stroke-width="0.55"/>
+<text id="layer_text_1" font-family="Arial" font-size="5.3" font-weight="normal" fill="#183653" text-anchor="middle">
+<tspan x="107.5" y="153.902">All-router</tspan>
+</text>
+<text id="layer_note" font-family="Arial" font-size="5.0" font-weight="normal" fill="#183653" text-anchor="start">
+<tspan x="89.5" y="160.7">All routed layers</tspan>
+</text>
+<text id="window_label_0" font-family="Arial" font-size="5.8" font-weight="bold" fill="#CC4C5F" text-anchor="middle">
+<tspan x="156.5" y="141.77200000000002">Divergence-8</tspan>
+</text>
+<text id="window_tokens_0" font-family="Arial" font-size="5.0" font-weight="normal" fill="#CC4C5F" text-anchor="middle">
+<tspan x="156.5" y="147.7">8 tokens</tspan>
+</text>
+<rect id="track_0" x="131.5" y="151.2" width="45.0" height="3.4" rx="1.7" fill="#E4EDF3" stroke="none" stroke-width="0.55"/>
+<rect id="selected_window_0" x="141.4" y="151.2" width="24.750000000000004" height="3.4" rx="1.4" fill="#FAC7C4" stroke="none" stroke-width="0.55"/>
+<path id="window_brace_0" d="M 141.4,150.2 L 141.4,149.2 L 166.15,149.2 L 166.15,150.2" fill="none" stroke="#CC4C5F" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="divergence_token" d="M 152.29000000000002,151.79999999999998 L 152.29000000000002,154.0" fill="none" stroke="#708596" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text id="first_divergence_text" font-family="Arial" font-size="5.0" font-weight="normal" fill="#183653" text-anchor="middle">
+<tspan x="154.0" y="160.7">First divergence</tspan>
+</text>
+<path id="window_separator" d="M 180.5,140 L 180.5,159" fill="none" stroke="#D1E2EA" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<text id="window_label_1" font-family="Arial" font-size="5.8" font-weight="bold" fill="#188C86" text-anchor="middle">
+<tspan x="206.5" y="141.77200000000002">Suffix-8</tspan>
+</text>
+<text id="window_tokens_1" font-family="Arial" font-size="5.0" font-weight="normal" fill="#188C86" text-anchor="middle">
+<tspan x="206.5" y="147.7">8 tokens</tspan>
+</text>
+<rect id="track_1" x="181.5" y="151.2" width="45.0" height="3.4" rx="1.7" fill="#E4EDF3" stroke="none" stroke-width="0.55"/>
+<rect id="selected_window_1" x="201.75" y="151.2" width="24.750000000000004" height="3.4" rx="1.4" fill="#ADE6DD" stroke="none" stroke-width="0.55"/>
+<path id="window_brace_1" d="M 201.75,150.2 L 201.75,149.2 L 226.5,149.2 L 226.5,150.2" fill="none" stroke="#188C86" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="240.85" y="34.45" width="149.8" height="58.3" rx="3.65" fill="#34546C" opacity="0.035"/>
+<rect x="241.2" y="34.550000000000004" width="149.1" height="57.6" rx="3.3" fill="#34546C" opacity="0.045"/>
+<rect id="T_card" x="241.5" y="34.5" width="148.5" height="57" rx="3" fill="url(#panel)" stroke="#C4DEED" stroke-width="0.55"/>
+<text id="T_heading" font-family="Arial" font-size="8.2" font-weight="bold" fill="#183653" text-anchor="start">
+<tspan x="247.5" y="45.288">T  Paired response</tspan>
+</text>
+<text id="T_protocol" font-family="Arial" font-size="6.2" font-weight="normal" fill="#183653" text-anchor="middle">
+<tspan x="315.75" y="55.108">Same pair · independent runs</tspan>
+</text>
+<rect id="T_donor_0" x="249.0" y="58" width="54.75" height="10" rx="1.9" fill="url(#clean)" stroke="none" stroke-width="0.55"/>
+<text id="T_donor_0_text" font-family="Arial" font-size="6.2" font-weight="normal" fill="#FFFFFF" text-anchor="middle">
+<tspan x="276.375" y="65.108">Clean donor</tspan>
+</text>
+<rect id="T_receiver_0" x="327.75" y="58" width="54.75" height="10" rx="1.9" fill="#FFF1EE" stroke="#F88B89" stroke-width="0.55"/>
+<text id="T_receiver_0_text" font-family="Arial" font-size="6.2" font-weight="normal" fill="#183653" text-anchor="middle">
+<tspan x="355.125" y="65.108">Error receiver</tspan>
+</text>
+<path id="T_transfer_0" d="M 305.15,63 L 326.35,63" fill="none" stroke="#24537C" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1.8 1.4"/>
+<polygon points="326.35,63 323.75,61.83 323.75,64.17" fill="#24537C"/>
+<rect id="T_donor_1" x="249.0" y="72" width="54.75" height="10" rx="1.9" fill="url(#error)" stroke="none" stroke-width="0.55"/>
+<text id="T_donor_1_text" font-family="Arial" font-size="6.2" font-weight="normal" fill="#FFFFFF" text-anchor="middle">
+<tspan x="276.375" y="79.108">Error donor</tspan>
+</text>
+<rect id="T_receiver_1" x="327.75" y="72" width="54.75" height="10" rx="1.9" fill="#E8F6F5" stroke="#6CC7C0" stroke-width="0.55"/>
+<text id="T_receiver_1_text" font-family="Arial" font-size="6.2" font-weight="normal" fill="#183653" text-anchor="middle">
+<tspan x="355.125" y="79.108">Clean receiver</tspan>
+</text>
+<path id="T_transfer_1" d="M 305.15,77 L 326.35,77" fill="none" stroke="#24537C" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1.8 1.4"/>
+<polygon points="326.35,77 323.75,75.83 323.75,78.17" fill="#24537C"/>
+<text id="T_readout" font-family="Arial" font-size="6.2" font-weight="normal" fill="#183653" text-anchor="middle">
+<tspan x="315.75" y="89.208">Signed donor-aligned margin shifts</tspan>
+</text>
+<rect x="240.85" y="94.94999999999999" width="149.8" height="68.3" rx="3.65" fill="#34546C" opacity="0.035"/>
+<rect x="241.2" y="95.05" width="149.1" height="67.6" rx="3.3" fill="#34546C" opacity="0.045"/>
+<rect id="D_card" x="241.5" y="95" width="148.5" height="67" rx="3" fill="url(#panel)" stroke="#C4DEED" stroke-width="0.55"/>
+<text id="D_heading" font-family="Arial" font-size="8.2" font-weight="bold" fill="#183653" text-anchor="start">
+<tspan x="247.5" y="105.788">D  Donor-role contrast</tspan>
+</text>
+<text id="D_protocol" font-family="Arial" font-size="6.2" font-weight="normal" fill="#183653" text-anchor="middle">
+<tspan x="315.75" y="115.608">External matched pair · separate runs</tspan>
+</text>
+<rect id="D_donor_clean" x="249.0" y="119" width="62" height="10" rx="1.9" fill="url(#clean)" stroke="none" stroke-width="0.55"/>
+<text id="D_donor_clean_text" font-family="Arial" font-size="6.2" font-weight="normal" fill="#FFFFFF" text-anchor="middle">
+<tspan x="280.0" y="126.108">Matched clean donor</tspan>
+</text>
+<rect id="D_receiver_clean" x="249.0" y="136" width="62" height="10" rx="1.9" fill="#EAF1F6" stroke="#CCDDE8" stroke-width="0.55"/>
+<text id="D_receiver_clean_text" font-family="Arial" font-size="6.2" font-weight="normal" fill="#183653" text-anchor="middle">
+<tspan x="280.0" y="143.108">Same receiver</tspan>
+</text>
+<path id="D_transfer_clean" d="M 280.0,130.1 L 280.0,134.9" fill="none" stroke="#24537C" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="280.0,134.9 280.765,133.20000000000002 279.235,133.20000000000002" fill="#24537C"/>
+<rect id="D_donor_error" x="320.5" y="119" width="62" height="10" rx="1.9" fill="url(#error)" stroke="none" stroke-width="0.55"/>
+<text id="D_donor_error_text" font-family="Arial" font-size="6.2" font-weight="normal" fill="#FFFFFF" text-anchor="middle">
+<tspan x="351.5" y="126.108">Matched error donor</tspan>
+</text>
+<rect id="D_receiver_error" x="320.5" y="136" width="62" height="10" rx="1.9" fill="#EAF1F6" stroke="#CCDDE8" stroke-width="0.55"/>
+<text id="D_receiver_error_text" font-family="Arial" font-size="6.2" font-weight="normal" fill="#183653" text-anchor="middle">
+<tspan x="351.5" y="143.108">Same receiver</tspan>
+</text>
+<path id="D_transfer_error" d="M 351.5,130.1 L 351.5,134.9" fill="none" stroke="#24537C" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="351.5,134.9 352.265,133.20000000000002 350.735,133.20000000000002" fill="#24537C"/>
+<text id="D_comparison" font-family="Arial" font-size="6.2" font-weight="normal" fill="#183653" text-anchor="middle">
+<tspan x="315.75" y="153.308">Compare error-donor − clean-donor margins</tspan>
+</text>
+<text id="D_repeat" font-family="Arial" font-size="6.2" font-weight="normal" fill="#183653" text-anchor="middle">
+<tspan x="315.75" y="160.308">Repeat for both receiver roles</tspan>
+</text>
+<text id="margin_sign" font-family="Arial" font-size="6.2" font-weight="normal" fill="#183653" text-anchor="middle">
+<tspan x="198" y="170.108">M(x) &lt; 0 favors CORRECT; M(x) &gt; 0 favors INCORRECT</tspan>
+</text>
+<rect id="conclusion" x="5.5" y="174" width="385" height="12.5" rx="3" fill="url(#footer)" stroke="#90A8BC" stroke-width="0.55"/>
+<text id="conclusion_text" font-family="Arial" font-size="7" font-weight="bold" fill="#183653" text-anchor="middle">
+<tspan x="198" y="182.63">Intervention response and donor-role directionality require separate evidence</tspan>
+</text>
+</g></svg>

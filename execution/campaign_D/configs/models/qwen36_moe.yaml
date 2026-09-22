@@ -1,0 +1,26 @@
+alias: qwen36_moe
+model_id: Qwen/Qwen3.6-35B-A3B
+revision: 995ad96eacd98c81ed38be0c5b274b04031597b0
+tokenizer_revision: 995ad96eacd98c81ed38be0c5b274b04031597b0
+cache_dir: .cache/huggingface/hub
+trust_remote_code: false
+dtype: bfloat16
+device_map: auto
+load_weights: false
+expected_total_blocks: 40
+expected_router_blocks: 40
+expected_router_block_indices: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39]
+expected_experts: 256
+expected_shared_experts: 1
+expected_top_k: 8
+expected_hidden_size: 2048
+expected_shared_expert_intermediate_size: 512
+expected_moe_intermediate_size: 512
+expected_mtp_num_hidden_layers: 1
+expected_model_type: qwen3_5_moe
+expected_text_model_type: qwen3_5_moe_text
+expected_architectures: [Qwen3_5MoeForConditionalGeneration]
+expected_runtime_architecture: Qwen3_5MoeForCausalLM
+expected_layer_types: [linear_attention, linear_attention, linear_attention, full_attention, linear_attention, linear_attention, linear_attention, full_attention, linear_attention, linear_attention, linear_attention, full_attention, linear_attention, linear_attention, linear_attention, full_attention, linear_attention, linear_attention, linear_attention, full_attention, linear_attention, linear_attention, linear_attention, full_attention, linear_attention, linear_attention, linear_attention, full_attention, linear_attention, linear_attention, linear_attention, full_attention, linear_attention, linear_attention, linear_attention, full_attention, linear_attention, linear_attention, linear_attention, full_attention]
+expected_transformers_version: 5.12.1
+expected_chat_template_sha256: e84f32a23fdda27689f868aa4a1a5621f41133e51a48d7f3efcbea2839574259

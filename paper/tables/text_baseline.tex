@@ -1,0 +1,21 @@
+\begin{table}[ht]
+\centering
+\small
+\setlength{\tabcolsep}{5pt}
+\caption{Boundary-step text baseline on the identical 580 samples, 235 source components, and five saved interface-access folds. Differences compare the middle router-logit probe with the fixed text baseline; 95\% intervals use paired source-component resampling.}
+\label{tab:text-baseline}
+\begin{tabularx}{\textwidth}{@{}Ycc@{}}
+\toprule
+Model (access layer) & Text AUROC [95\% CI] & Router minus text [95\% CI] \\
+\midrule
+Gemma 4 (L15) & $0.743\;[0.710, 0.777]$ & $+0.124\;[0.084, 0.159]$ \\
+Nemotron-3 Nano (L27) & $0.743\;[0.710, 0.777]$ & $+0.088\;[0.051, 0.123]$ \\
+Nemotron-3.5 Lightning (L27) & $0.743\;[0.710, 0.777]$ & $+0.083\;[0.043, 0.116]$ \\
+Qwen3.6-35B-A3B (L20) & $0.743\;[0.710, 0.777]$ & $+0.072\;[0.031, 0.110]$ \\
+GPT-OSS-20B (L12) & $0.743\;[0.710, 0.777]$ & $+0.057\;[0.024, 0.092]$ \\
+\midrule
+\multicolumn{3}{@{}l}{\emph{Historical boundary sensitivity}} \\
+Qwen3-30B-A3B (L24) & $0.734\;[0.696, 0.771]$ & $+0.150\;[0.110, 0.190]$ \\
+\bottomrule
+\end{tabularx}
+\end{table}

@@ -1,0 +1,116 @@
+actual_protocol:
+  alphas:
+  - 1.0
+  boundary_strategy: paired_first_error
+  candidates:
+  - CORRECT
+  - INCORRECT
+  controls:
+  - unpatched
+  - unpatched_rerun
+  - self_patch
+  expected_router_hooks: null
+  forced_reroute_control: false
+  include_equivalence_analysis: false
+  input_format: chat
+  patch_mode: single_site_sweep
+  prompt_mode: step_binary
+  split_manifest: null
+  split_partition: null
+alphas:
+- 1.0
+boundary_strategy: paired_first_error
+command:
+  argv:
+  - archive://runtime/packages/routeverify-43bc9228/bin/routeverify
+  - intervene
+  - patch
+  - --experiment
+  - archive://runtime/runs/gemma4_processbench_full_20260829T104105Z/resolved_configs/transfer.yaml
+  - --limit
+  - '64'
+  - --seed
+  - '20260828'
+  shell: archive://runtime/packages/routeverify-43bc9228/bin/routeverify intervene patch
+    --experiment archive://runtime/runs/gemma4_processbench_full_20260829T104105Z/resolved_configs/transfer.yaml
+    --limit 64 --seed 20260828
+config_sources:
+  data:
+    path: archive://execution/configs/data/processbench_natural_transfer.yaml
+    sha256: aff26b770947cad7a067621d9baf81106760a3694f3613465302be82be7e35cf
+  experiment:
+    path: archive://runtime/runs/gemma4_processbench_full_20260829T104105Z/resolved_configs/transfer.yaml
+    sha256: f6b502652835d73c9493cbf511f3e8ee0e4ef7c364e5b4291b59d0296b9784b9
+  model:
+    path: archive://execution/configs/models/gemma4_moe.yaml
+    sha256: bfca32ce02083d3ac321de3ac6f0e0d964fab9f381b48b461b6c8b84d8df42d0
+controls:
+- unpatched
+- unpatched_rerun
+- self_patch
+data: archive://execution/configs/data/processbench_natural_transfer.yaml
+expected_router_hooks: null
+export_router_weights: null
+forced_reroute_control: false
+identity_tolerance: 1.0e-05
+include_equivalence_analysis: false
+input_format: chat
+layers:
+- 15
+limit: 64
+model: archive://execution/configs/models/gemma4_moe.yaml
+output_dir: archive://runtime/runs/gemma4_processbench_full_20260829T104105Z/transfer
+patch_mode: single_site_sweep
+prompt_mode: step_binary
+resolved_data:
+  balanced: true
+  cache_dir: .cache/huggingface/datasets
+  dataset: processbench_transfer
+  expected_processed_sha256: b1d7f21aff6d5a17d1494b5e8bcc2a4bf43d0e2f7d6689921ccb368d4e735c94
+  expected_raw_sha256: fb1c59dfd1e83e1c5a48dbe598db27e4bc0b8bc524a09445f2d4b69178f61349
+  expected_resolved_data_revision: 3bdcd5371ed567559a78f559c01c13a6deee7604
+  expected_selection_manifest_sha256: 0f2d885fc9e7657886f0686a08f1236b62c595703c414d80069cc92b304ca7a2
+  hf_config: default
+  hf_id: Qwen/ProcessBench
+  output: data/processed/processbench-natural-transfer-v1.jsonl
+  pair_output: null
+  revision: 3bdcd5371ed567559a78f559c01c13a6deee7604
+  selection_manifest: data/processed/processbench-natural-transfer-v1.selection.json
+  split: gsm8k
+  subset: gsm8k
+  validation_accessed: false
+resolved_model:
+  alias: gemma4_moe
+  attn_implementation: null
+  cache_dir: .cache/huggingface/hub
+  device_map: auto
+  dtype: bfloat16
+  expected_architectures:
+  - Gemma4ForConditionalGeneration
+  expected_chat_template_sha256: null
+  expected_experts: 128
+  expected_kernels_version: null
+  expected_layers: 30
+  expected_model_type: gemma4
+  expected_mxfp4_kernel_repo: null
+  expected_mxfp4_kernel_revision: null
+  expected_router_block_indices: null
+  expected_router_blocks: null
+  expected_top_k: 8
+  expected_total_blocks: null
+  expected_transformers_version: 5.12.1
+  expected_triton_version: null
+  harmony_reasoning_effort: medium
+  load_weights: true
+  model_id: google/gemma-4-26B-A4B-it
+  require_native_mxfp4: false
+  revision: 4d7ae4984b7db7de8f8457170b3f1a419ee76d52
+  tokenizer_revision: 4d7ae4984b7db7de8f8457170b3f1a419ee76d52
+  trust_remote_code: false
+router_weight_schema_version: 1
+seed: 20260828
+sites:
+- post_moe_residual
+- router_logits
+split_manifest: null
+split_partition: null

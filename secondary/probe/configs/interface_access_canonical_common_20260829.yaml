@@ -1,0 +1,134 @@
+schema_version: 1
+analysis_id: interface_access_canonical_common_20260829
+
+constraints:
+  device: cpu
+  allow_model_weight_loading: false
+  allow_validation_access: false
+  allow_source_archive_writes: false
+  input_scope: recapture_tensors_plus_pre_existing_canonical_group_ids
+
+protocol:
+  outcome: clean_vs_corrupt_recapture_discrimination
+  positive_class: corrupt
+  pair_count: 290
+  row_count: 580
+  analysis_group_definition: connected_components_of_source_suffix_or_normalized_problem
+  expected_analysis_group_count: 235
+  grouping_limitation: >-
+    The shared folds join all 290 frozen discovery pairs to pre-existing canonical
+    source_problem_id values from the versioned Qwen3 CPU-correction artifact.
+    The mapping has complete unambiguous coverage and preserves component IDs
+    defined over the full historical 580-pair universe. The upstream grouping is
+    a registered post-hoc sensitivity artifact, not a new prospective freeze.
+  seed: 20260829
+  folds: 5
+  bootstrap_resamples: 1000
+  estimator:
+    implementation: sklearn.linear_model.LogisticRegression
+    penalty: l2
+    C: 1.0
+    class_weight: balanced
+    solver: liblinear
+    max_iter: 2000
+    preprocessing: StandardScaler_fit_on_training_fold_only
+  contrast_feature_control:
+    status: not_run_missing_predeclared_labels
+    reason: >-
+      Existing recapture manifests contain no predeclared topic, token-class,
+      language, or formatting contrast label. No proxy label is invented.
+
+canonical_source_problem_manifest: runpod_gpt_oss_full_20260809T110315Z_complete/RouteVerify/docs/results/qwen3_cpu_corrections_v1_20260808/source_problem_manifest.json
+canonical_source_problem_manifest_sha256: 38ebffd09be3c9223beb0ccd212027b2a0d380f914d5918980629eed4ec70de3
+canonical_grouping_provenance: runpod_gpt_oss_full_20260809T110315Z_complete/RouteVerify/docs/results/qwen3_cpu_corrections_v1_20260808/analysis_provenance.json
+
+reference_selection_manifest: model45_common_core_20260823T103639Z/routeverify-runs/gemma4/gemma4_common_core_full_20260823T041753Z/recapture/selection_manifest.json
+reference_recapture_manifest: model45_common_core_20260823T103639Z/routeverify-runs/gemma4/gemma4_common_core_full_20260823T041753Z/recapture/data_manifest.jsonl
+
+models:
+  - model_id: gemma4
+    display_name: Gemma 4
+    protocol_grade: modern
+    recapture_protocol: paired_first_error_common
+    recapture_root: model45_common_core_20260823T103639Z/routeverify-runs/gemma4/gemma4_common_core_full_20260823T041753Z/recapture
+    selection_manifest: model45_common_core_20260823T103639Z/routeverify-runs/gemma4/gemma4_common_core_full_20260823T041753Z/recapture/selection_manifest.json
+    num_experts: 128
+    top_k: 8
+    anchors: {early: 0, middle: 15, late: 29}
+    strict_common_row_identity: true
+
+  - model_id: nemotron3_nano
+    display_name: Nemotron-3 Nano
+    protocol_grade: modern
+    recapture_protocol: paired_first_error_common
+    recapture_root: model45_common_core_20260823T103639Z/routeverify-runs/nemotron3_nano/nemotron3_nano_common_core_full_20260823T075037Z/recapture
+    selection_manifest: model45_common_core_20260823T103639Z/routeverify-runs/nemotron3_nano/nemotron3_nano_common_core_full_20260823T075037Z/recapture/selection_manifest.json
+    num_experts: 128
+    top_k: 6
+    anchors: {early: 1, middle: 27, late: 51}
+    strict_common_row_identity: true
+
+  - model_id: nemotron35_lightning
+    display_name: Nemotron-3.5 Lightning
+    protocol_grade: modern
+    recapture_protocol: paired_first_error_common
+    recapture_root: model67_common_core_20260829/routeverify-runs/nemotron35_lightning_full_20260829T102016Z/recapture
+    selection_manifest: model67_common_core_20260829/routeverify-runs/nemotron35_lightning_full_20260829T102016Z/recapture/selection_manifest.json
+    num_experts: 128
+    top_k: 6
+    anchors: {early: 1, middle: 27, late: 51}
+    strict_common_row_identity: true
+
+  - model_id: qwen36_moe
+    display_name: Qwen3.6-35B-A3B
+    protocol_grade: modern
+    recapture_protocol: paired_first_error_common
+    recapture_root: model67_common_core_20260829/routeverify-runs/qwen36_moe_full_20260829T120905Z/recapture
+    selection_manifest: model67_common_core_20260829/routeverify-runs/qwen36_moe_full_20260829T120905Z/recapture/selection_manifest.json
+    num_experts: 256
+    top_k: 8
+    anchors: {early: 0, middle: 20, late: 39}
+    strict_common_row_identity: true
+
+  - model_id: gpt_oss
+    display_name: GPT-OSS-20B
+    protocol_grade: extended
+    recapture_protocol: paired_first_error_common
+    recapture_root: runpod_gpt_oss_full_20260809T110315Z_complete/routeverify-runs/gpt_oss_full_20260809T110315Z/recapture
+    selection_manifest: runpod_gpt_oss_full_20260809T110315Z_complete/routeverify-runs/gpt_oss_full_20260809T110315Z/recapture/selection_manifest.json
+    num_experts: 32
+    top_k: 4
+    anchors: {early: 0, middle: 12, late: 23}
+    strict_common_row_identity: true
+
+  - model_id: qwen3_moe
+    display_name: Qwen3-30B-A3B
+    protocol_grade: historical_retrospective
+    recapture_protocol: first_error_or_matched_all_correct_historical
+    recapture_root: qwen3_runpod_backup_20260628/artifacts/qwen3_full_suite_20260627T012309Z/qwen3_prmbench_diagnostic_verifier
+    selection_manifest: null
+    num_experts: 128
+    top_k: 8
+    anchors: {early: 0, middle: 24, late: 47}
+    strict_common_row_identity: false
+    caveat: >-
+      Post-hoc reanalysis of already-viewed Qwen3 artifacts. The full historical
+      run used pair-grouped splits and first-error-or-matched-all-correct
+      boundaries. This sensitivity subsets the same 290 discovery pair IDs and
+      applies the new shared canonical source-component folds/matched estimator,
+      but it is not prospective confirmation and is not pooled with
+      paired-first-error arms.
+
+  - model_id: olmoe
+    display_name: OLMoE-1B-7B
+    protocol_grade: legacy_unavailable
+    recapture_protocol: no_archived_recapture_manifest
+    available: false
+    caveat: >-
+      Existing OLMoE archives contain behavior/router/endpoint intervention
+      artifacts but no recapture data_manifest.jsonl plus activation tensors.
+      Interface-access values are therefore NA rather than imputed.
+
+output:
+  directory: docs/results/interface_access_canonical_common_20260829
+  refuse_nonempty_directory: true

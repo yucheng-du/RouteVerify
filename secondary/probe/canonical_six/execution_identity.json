@@ -1,0 +1,117 @@
+{
+  "analysis_id": "interface_access_canonical_common_20260829",
+  "runtime": {
+    "numpy": "2.4.6",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "python": "3.11.2",
+    "safetensors": "0.8.0",
+    "scikit_learn": "1.9.0"
+  },
+  "recorded_code_sha256": {
+    "scripts/run_interface_access_analysis.py": "573319c76c20c41737936fbf708d4b382419f9a7a3bda0db909e5b9531dd739d",
+    "src/routeverify/analysis/fair_comparison.py": "916087b83c7c3771c2cfc0bf2a1110d6da672605fc8ea22d148f058b1ef9f3c4",
+    "src/routeverify/analysis/interface_access.py": "e129c80c380b5c95e6d9b629a2644c639e4b042244ea3db149f541e50ce5e6e7",
+    "src/routeverify/analysis/probes.py": "69f6869813fd83782b1feec89281dd83670d6b0cf001d090b867200ddc107682",
+    "src/routeverify/analysis/protocols.py": "3c980e65e7bd2732efa3330d99dd5ef30323677a62c49651668002e45f9b7f47",
+    "src/routeverify/analysis/routing_probes.py": "1e9e568e472bcd18152913a4eb014bda411578465b6056d8294582d48ca683f2",
+    "src/routeverify/analysis/surface_baselines.py": "bc4fb6e835c04c98907ed64f02bb81b17362289004ba1dfd102ff722d2163a2b"
+  },
+  "inputs": {
+    "activation_integrity_contract": "Every accessed activation basename must exist under the declared recapture root; required keys, dimensions, expert count, row count, and finite values are checked. Large immutable activation files are not globally rehashed.",
+    "archive_root": "archive://",
+    "config": {
+      "path": "archive://analysis-worktree/configs/analysis/interface_access_canonical_common_20260829.yaml",
+      "sha256": "fdc93f0f86b3be3268ca305a4f09e5f23bd1143fe3a7ead3226f5cc605c3e88f"
+    },
+    "files": [
+      {
+        "path": "archive://analysis-worktree/configs/analysis/interface_access_canonical_common_20260829.yaml",
+        "sha256": "fdc93f0f86b3be3268ca305a4f09e5f23bd1143fe3a7ead3226f5cc605c3e88f"
+      },
+      {
+        "path": "archive://model45_common_core_20260823T103639Z/routeverify-runs/gemma4/gemma4_common_core_full_20260823T041753Z/recapture/config.resolved.yaml",
+        "sha256": "8a8465715a68f01c32dbf8bc98ad9cb67d6f5edc28907e48f5ca424ad388da7e"
+      },
+      {
+        "path": "archive://model45_common_core_20260823T103639Z/routeverify-runs/gemma4/gemma4_common_core_full_20260823T041753Z/recapture/data_manifest.jsonl",
+        "sha256": "ad001bffee0be2f38319861407da839d8b8016e4b221d93bfa68a5dc13336e24"
+      },
+      {
+        "path": "archive://model45_common_core_20260823T103639Z/routeverify-runs/gemma4/gemma4_common_core_full_20260823T041753Z/recapture/selection_manifest.json",
+        "sha256": "153a331eab1dbc812989f57475c0180ed70b0a49bc8d7825446b0d2e47b98337"
+      },
+      {
+        "path": "archive://model45_common_core_20260823T103639Z/routeverify-runs/nemotron3_nano/nemotron3_nano_common_core_full_20260823T075037Z/recapture/config.resolved.yaml",
+        "sha256": "0bc99a2ac4ec4817aa1e0b8b4d5b0217ad3ae0700fddda87c68f6951788002de"
+      },
+      {
+        "path": "archive://model45_common_core_20260823T103639Z/routeverify-runs/nemotron3_nano/nemotron3_nano_common_core_full_20260823T075037Z/recapture/data_manifest.jsonl",
+        "sha256": "8eb67fe6af8c566c2c848b4ec6face72b489f0ecaa30775a3d80d96410a9a50c"
+      },
+      {
+        "path": "archive://model45_common_core_20260823T103639Z/routeverify-runs/nemotron3_nano/nemotron3_nano_common_core_full_20260823T075037Z/recapture/selection_manifest.json",
+        "sha256": "153a331eab1dbc812989f57475c0180ed70b0a49bc8d7825446b0d2e47b98337"
+      },
+      {
+        "path": "archive://model67_common_core_20260829/routeverify-runs/nemotron35_lightning_full_20260829T102016Z/recapture/config.resolved.yaml",
+        "sha256": "83934743be9925d367164691ba99fbd7c73c3bc17bfa7e3979a4814c559fdea6"
+      },
+      {
+        "path": "archive://model67_common_core_20260829/routeverify-runs/nemotron35_lightning_full_20260829T102016Z/recapture/data_manifest.jsonl",
+        "sha256": "c3ab241b83c0765c09b7f03f6c4f870235fe72734303dc99c909cffb1bd7e45f"
+      },
+      {
+        "path": "archive://model67_common_core_20260829/routeverify-runs/nemotron35_lightning_full_20260829T102016Z/recapture/selection_manifest.json",
+        "sha256": "5b2931d58cca3aa343cad5d355f93444b0d00c72b29cedde06336c1272160ffc"
+      },
+      {
+        "path": "archive://model67_common_core_20260829/routeverify-runs/qwen36_moe_full_20260829T120905Z/recapture/config.resolved.yaml",
+        "sha256": "090516ed0e4efe2d31f92fcd788c01f68817a8310f6c65768e532b485d079d87"
+      },
+      {
+        "path": "archive://model67_common_core_20260829/routeverify-runs/qwen36_moe_full_20260829T120905Z/recapture/data_manifest.jsonl",
+        "sha256": "b52ac93b310fb84c3502852edb6956deec2e69bee3e90498f7acebc667ace80f"
+      },
+      {
+        "path": "archive://model67_common_core_20260829/routeverify-runs/qwen36_moe_full_20260829T120905Z/recapture/selection_manifest.json",
+        "sha256": "5b2931d58cca3aa343cad5d355f93444b0d00c72b29cedde06336c1272160ffc"
+      },
+      {
+        "path": "archive://qwen3_runpod_backup_20260628/artifacts/qwen3_full_suite_20260627T012309Z/qwen3_prmbench_diagnostic_verifier/config.resolved.yaml",
+        "sha256": "9241f9ab18d79d2d4ce1edd775832c0de9c4a9022098ef0dc5283ad71da0b04f"
+      },
+      {
+        "path": "archive://qwen3_runpod_backup_20260628/artifacts/qwen3_full_suite_20260627T012309Z/qwen3_prmbench_diagnostic_verifier/data_manifest.jsonl",
+        "sha256": "28a358cd5710760272ef5427e0fec1ca152dc639fe25e1fe64e60e032c8200b0"
+      },
+      {
+        "path": "archive://runpod_gpt_oss_full_20260809T110315Z_complete/RouteVerify/docs/results/qwen3_cpu_corrections_v1_20260808/analysis_provenance.json",
+        "sha256": "0d109ed7f8848775420076cf0c3198b44b6c3fc535285780bc029e05295c9e8a"
+      },
+      {
+        "path": "archive://runpod_gpt_oss_full_20260809T110315Z_complete/RouteVerify/docs/results/qwen3_cpu_corrections_v1_20260808/source_problem_manifest.json",
+        "sha256": "38ebffd09be3c9223beb0ccd212027b2a0d380f914d5918980629eed4ec70de3"
+      },
+      {
+        "path": "archive://runpod_gpt_oss_full_20260809T110315Z_complete/routeverify-runs/gpt_oss_full_20260809T110315Z/recapture/config.resolved.yaml",
+        "sha256": "7640ee6d39be6a38631531d744910be0c34cbb93d18f4ca8b979cc439b4d09ee"
+      },
+      {
+        "path": "archive://runpod_gpt_oss_full_20260809T110315Z_complete/routeverify-runs/gpt_oss_full_20260809T110315Z/recapture/data_manifest.jsonl",
+        "sha256": "fab5e82fe1e29b4cfa7fecc7b303b55d5fd0c0137ccb2141981487483b0f214f"
+      },
+      {
+        "path": "archive://runpod_gpt_oss_full_20260809T110315Z_complete/routeverify-runs/gpt_oss_full_20260809T110315Z/recapture/selection_manifest.json",
+        "sha256": "e8916aa384fc141a8d4f72fec936c7fa1776763458a8bd81fb9cf019a0569fb1"
+      }
+    ]
+  },
+  "feature_digests": null,
+  "scope": {
+    "contrast_feature_control": "not_run_missing_predeclared_labels",
+    "device": "cpu",
+    "model_weights_loaded": false,
+    "source_archives_modified": false,
+    "validation_accessed": false
+  }
+}

@@ -1,0 +1,304 @@
+{
+  "accelerate": "1.14.0",
+  "capture_site_contract": {
+    "adapter": {
+      "alias": "olmoe",
+      "class": "routeverify.models.olmoe.OLMoEAdapter"
+    },
+    "moe_layout": {
+      "router_block_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "router_block_metadata": [
+        {
+          "block_index": 0,
+          "normalized_depth": 0.0,
+          "router_ordinal": 0
+        },
+        {
+          "block_index": 1,
+          "normalized_depth": 0.06666666666666667,
+          "router_ordinal": 1
+        },
+        {
+          "block_index": 2,
+          "normalized_depth": 0.13333333333333333,
+          "router_ordinal": 2
+        },
+        {
+          "block_index": 3,
+          "normalized_depth": 0.2,
+          "router_ordinal": 3
+        },
+        {
+          "block_index": 4,
+          "normalized_depth": 0.26666666666666666,
+          "router_ordinal": 4
+        },
+        {
+          "block_index": 5,
+          "normalized_depth": 0.3333333333333333,
+          "router_ordinal": 5
+        },
+        {
+          "block_index": 6,
+          "normalized_depth": 0.4,
+          "router_ordinal": 6
+        },
+        {
+          "block_index": 7,
+          "normalized_depth": 0.4666666666666667,
+          "router_ordinal": 7
+        },
+        {
+          "block_index": 8,
+          "normalized_depth": 0.5333333333333333,
+          "router_ordinal": 8
+        },
+        {
+          "block_index": 9,
+          "normalized_depth": 0.6,
+          "router_ordinal": 9
+        },
+        {
+          "block_index": 10,
+          "normalized_depth": 0.6666666666666666,
+          "router_ordinal": 10
+        },
+        {
+          "block_index": 11,
+          "normalized_depth": 0.7333333333333333,
+          "router_ordinal": 11
+        },
+        {
+          "block_index": 12,
+          "normalized_depth": 0.8,
+          "router_ordinal": 12
+        },
+        {
+          "block_index": 13,
+          "normalized_depth": 0.8666666666666667,
+          "router_ordinal": 13
+        },
+        {
+          "block_index": 14,
+          "normalized_depth": 0.9333333333333333,
+          "router_ordinal": 14
+        },
+        {
+          "block_index": 15,
+          "normalized_depth": 1.0,
+          "router_ordinal": 15
+        }
+      ],
+      "router_blocks": 16,
+      "total_blocks": 16
+    },
+    "router_semantics_id": "olmoe_softmax_topk_v1",
+    "schema_version": 1,
+    "site_schema_version": 1,
+    "sites": [
+      {
+        "block_index": 0,
+        "kind": "moe_output",
+        "module_name": "model.layers.0.mlp",
+        "normalized_depth": 0.0,
+        "router_ordinal": 0,
+        "semantic_boundary": "moe_branch_output",
+        "site_key": "layer_0.moe_output"
+      },
+      {
+        "block_index": 1,
+        "kind": "moe_output",
+        "module_name": "model.layers.1.mlp",
+        "normalized_depth": 0.06666666666666667,
+        "router_ordinal": 1,
+        "semantic_boundary": "moe_branch_output",
+        "site_key": "layer_1.moe_output"
+      },
+      {
+        "block_index": 2,
+        "kind": "moe_output",
+        "module_name": "model.layers.2.mlp",
+        "normalized_depth": 0.13333333333333333,
+        "router_ordinal": 2,
+        "semantic_boundary": "moe_branch_output",
+        "site_key": "layer_2.moe_output"
+      },
+      {
+        "block_index": 3,
+        "kind": "moe_output",
+        "module_name": "model.layers.3.mlp",
+        "normalized_depth": 0.2,
+        "router_ordinal": 3,
+        "semantic_boundary": "moe_branch_output",
+        "site_key": "layer_3.moe_output"
+      },
+      {
+        "block_index": 4,
+        "kind": "moe_output",
+        "module_name": "model.layers.4.mlp",
+        "normalized_depth": 0.26666666666666666,
+        "router_ordinal": 4,
+        "semantic_boundary": "moe_branch_output",
+        "site_key": "layer_4.moe_output"
+      },
+      {
+        "block_index": 5,
+        "kind": "moe_output",
+        "module_name": "model.layers.5.mlp",
+        "normalized_depth": 0.3333333333333333,
+        "router_ordinal": 5,
+        "semantic_boundary": "moe_branch_output",
+        "site_key": "layer_5.moe_output"
+      },
+      {
+        "block_index": 6,
+        "kind": "moe_output",
+        "module_name": "model.layers.6.mlp",
+        "normalized_depth": 0.4,
+        "router_ordinal": 6,
+        "semantic_boundary": "moe_branch_output",
+        "site_key": "layer_6.moe_output"
+      },
+      {
+        "block_index": 7,
+        "kind": "moe_output",
+        "module_name": "model.layers.7.mlp",
+        "normalized_depth": 0.4666666666666667,
+        "router_ordinal": 7,
+        "semantic_boundary": "moe_branch_output",
+        "site_key": "layer_7.moe_output"
+      },
+      {
+        "block_index": 8,
+        "kind": "router_logits",
+        "module_name": "model.layers.8.mlp.gate",
+        "normalized_depth": 0.5333333333333333,
+        "router_ordinal": 8,
+        "semantic_boundary": "pre_native_router_selection",
+        "site_key": "layer_8.router_logits"
+      },
+      {
+        "block_index": 8,
+        "kind": "moe_output",
+        "module_name": "model.layers.8.mlp",
+        "normalized_depth": 0.5333333333333333,
+        "router_ordinal": 8,
+        "semantic_boundary": "moe_branch_output",
+        "site_key": "layer_8.moe_output"
+      },
+      {
+        "block_index": 8,
+        "kind": "post_moe_residual",
+        "module_name": "model.layers.8",
+        "normalized_depth": 0.5333333333333333,
+        "router_ordinal": 8,
+        "semantic_boundary": "post_moe_block_output",
+        "site_key": "layer_8.post_moe_residual"
+      },
+      {
+        "block_index": 9,
+        "kind": "moe_output",
+        "module_name": "model.layers.9.mlp",
+        "normalized_depth": 0.6,
+        "router_ordinal": 9,
+        "semantic_boundary": "moe_branch_output",
+        "site_key": "layer_9.moe_output"
+      },
+      {
+        "block_index": 10,
+        "kind": "moe_output",
+        "module_name": "model.layers.10.mlp",
+        "normalized_depth": 0.6666666666666666,
+        "router_ordinal": 10,
+        "semantic_boundary": "moe_branch_output",
+        "site_key": "layer_10.moe_output"
+      },
+      {
+        "block_index": 11,
+        "kind": "moe_output",
+        "module_name": "model.layers.11.mlp",
+        "normalized_depth": 0.7333333333333333,
+        "router_ordinal": 11,
+        "semantic_boundary": "moe_branch_output",
+        "site_key": "layer_11.moe_output"
+      },
+      {
+        "block_index": 12,
+        "kind": "moe_output",
+        "module_name": "model.layers.12.mlp",
+        "normalized_depth": 0.8,
+        "router_ordinal": 12,
+        "semantic_boundary": "moe_branch_output",
+        "site_key": "layer_12.moe_output"
+      },
+      {
+        "block_index": 13,
+        "kind": "moe_output",
+        "module_name": "model.layers.13.mlp",
+        "normalized_depth": 0.8666666666666667,
+        "router_ordinal": 13,
+        "semantic_boundary": "moe_branch_output",
+        "site_key": "layer_13.moe_output"
+      },
+      {
+        "block_index": 14,
+        "kind": "moe_output",
+        "module_name": "model.layers.14.mlp",
+        "normalized_depth": 0.9333333333333333,
+        "router_ordinal": 14,
+        "semantic_boundary": "moe_branch_output",
+        "site_key": "layer_14.moe_output"
+      },
+      {
+        "block_index": 15,
+        "kind": "moe_output",
+        "module_name": "model.layers.15.mlp",
+        "normalized_depth": 1.0,
+        "router_ordinal": 15,
+        "semantic_boundary": "moe_branch_output",
+        "site_key": "layer_15.moe_output"
+      }
+    ]
+  },
+  "cuda": {
+    "cuda_available": true,
+    "device_count": 1,
+    "devices": [
+      {
+        "index": 0,
+        "major": 9,
+        "minor": 0,
+        "name": "NVIDIA H100 NVL",
+        "total_memory": 99949674496
+      }
+    ],
+    "torch_available": true,
+    "torch_cuda_version": "13.0"
+  },
+  "datasets": "5.0.0",
+  "original_environment_sha256": "d56d3e702abbafde08a45397646197adf8178bbb7c0150c13614362522fcf32f",
+  "platform": "Linux-6.8.0-136-generic-x86_64-with-glibc2.35",
+  "python": "3.11.10",
+  "runner_source_sha256": "4a817951e2aeebf82efc4afd664068b51acc22a5464cdaaa698031b95caf9d0f",
+  "scope": "Selected scientific layout and runtime versions from the completed full donor/bundle run; operational environment, local paths and Git metadata omitted.",
+  "seed": 0,
+  "torch": "2.12.1+cu130",
+  "transformers": "5.12.1"
+}

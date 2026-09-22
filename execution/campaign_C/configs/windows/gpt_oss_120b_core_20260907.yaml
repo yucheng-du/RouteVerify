@@ -1,0 +1,16 @@
+protocol: receiver_window_core_v1_20260907
+model: configs/models/gpt_oss_120b.yaml
+partition: discovery
+selection_manifest: docs/results/model67_common_core_20260829/qwen36_moe/full_selection_manifest.json
+split_manifest: docs/results/first_batch_zero_gpu_20260730/discovery_validation_split.json
+source_manifest: docs/results/qwen3_cpu_corrections_v1_20260808/source_problem_manifest.json
+seed: 20260828
+anchor: 18
+k_candidates:
+- 4
+- 8
+- 16
+- 32
+min_pair_coverage: 0.9
+smoke_pairs: 2
+identity_atol: 0.002

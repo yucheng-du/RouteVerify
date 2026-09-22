@@ -1,0 +1,21 @@
+# New donor-role D and simultaneous output bundle supplement to original common-core.
+# Anchor rule: upper central routed block (46 routed indices 1..46 -> index 24).
+# Historical technical smoke L23 is not the final common-core or D anchor.
+# Model contract pins 7dd20894a642a0aa287e9827cb1a1f7f91386b67, native BF16, TF5.12.1.
+model: configs/models/glm4_moe_lite.yaml
+data: configs/data/prmbench.yaml
+split_manifest: docs/results/first_batch_zero_gpu_20260730/discovery_validation_split.json
+split_partition: discovery
+expected_pairs: 290
+selection_manifest: docs/results/gpt_oss_full_20260809/full_selection_manifest.json
+source_component_manifest: docs/results/qwen3_cpu_corrections_v1_20260808/source_problem_manifest.json
+anchor_layer: 24
+expected_bundle_sites: 46
+input_format: chat
+mode: both
+extended_diagnostics: false
+d_sites: [router_logits, moe_output, post_moe_residual]
+bundle_kind: moe_output
+seed: 0
+output_dir: artifacts/donor_bundle_20260907/glm4_moe_lite
+identity_tolerance: 1.0e-5

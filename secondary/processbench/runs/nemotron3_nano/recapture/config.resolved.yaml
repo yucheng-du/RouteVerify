@@ -1,0 +1,28 @@
+alphas:
+- 0.0
+- 0.5
+- 1.0
+- 2.0
+boundary_strategy: paired_first_error
+controls: []
+data: archive://execution/configs/data/processbench_natural_transfer.yaml
+expected_router_hooks: null
+export_router_weights: null
+forced_reroute_control: false
+identity_tolerance: 1.0e-05
+include_equivalence_analysis: true
+input_format: chat
+layers:
+- 27
+limit: 64
+model: archive://execution/configs/models/nemotron3_nano.yaml
+output_dir: archive://runtime/runs/nemotron3_nano_processbench_full_20260829T112713Z/recapture
+patch_mode: single_site_sweep
+prompt_mode: step_binary
+router_weight_schema_version: 1
+seed: 20260828
+sites:
+- post_moe_residual
+- router_logits
+split_manifest: null
+split_partition: null

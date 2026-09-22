@@ -1,0 +1,1857 @@
+{
+  "schema_version": 1,
+  "status": "COMPLETE",
+  "generated_utc": "2026-09-08T22:51:54.290311+00:00",
+  "execution_version": "v1",
+  "expected_models": [
+    "olmoe",
+    "gpt_oss_20b",
+    "gpt_oss_120b",
+    "qwen3_moe",
+    "qwen36_moe",
+    "gemma4_moe",
+    "glm4_moe_lite",
+    "nemotron3_nano",
+    "nemotron35_lightning"
+  ],
+  "completed_models": [
+    "olmoe",
+    "gpt_oss_20b",
+    "gpt_oss_120b",
+    "qwen3_moe",
+    "qwen36_moe",
+    "gemma4_moe",
+    "glm4_moe_lite",
+    "nemotron3_nano",
+    "nemotron35_lightning"
+  ],
+  "missing_models": [],
+  "method": "\u6bcf\u4e2a receiver pair i \u56fa\u5b9a\u4e00\u4e2a\u5916\u90e8 donor pair j\uff0c\u4ee5 seed 0 \u5339\u914d\uff0c\u6392\u9664\u81ea\u8eab\u53ca\u540c\u6e90 donor\u3002D_clean = m(C_i <- E_j) - m(C_i <- C_j)\uff1bD_error = m(E_i <- E_j) - m(E_i <- C_j)\uff1bD_common = (D_clean + D_error)/2\uff0c\u5148\u5728\u6bcf\u4e2a pair \u5185\u5e73\u5747\uff0c\u518d\u8de8 pair \u6c42\u5747\u503c\u3002\u4e3b margin m \u4e3a\u5b8c\u6574\u5019\u9009\u7684 mean_logprob(INCORRECT) \u2212 mean_logprob(CORRECT)\uff0c\u4e24\u4e2a\u5019\u9009\u5404\u6309\u81ea\u5df1\u7684 token \u6570\u5f52\u4e00\u5316\uff1btotal logprob \u5355\u5217\u4e3a\u654f\u611f\u6027\u5206\u6790\u3002",
+  "intervention": "\u5e72\u9884\u4fdd\u7559 receiver \u7684\u5168\u90e8 step token\uff1b\u6bcf\u4e2a donor \u89d2\u8272\u4f7f\u7528\u81ea\u8eab\u5b8c\u6574 step span\uff0c\u901a\u8fc7\u7aef\u70b9\u5bf9\u9f50\u3001\u5355\u8c03\u6700\u8fd1\u90bb\u6620\u5c04\u5230 receiver \u957f\u5ea6\u3002\u5168\u90e8 adapter-defined routed sites \u540c\u65f6\u66ff\u6362\uff0calpha=1\uff0c\u6cbf\u7528\u56fa\u5b9a checkpoint \u7684\u539f\u751f BF16/MXFP4 \u8def\u5f84\u3002\u6bcf\u4e2a\u539f\u5b50 pair \u7684\u56db\u683c donor-role \u8bc4\u5206\u53ca\u63a7\u5236\u5747\u6765\u81ea\u540c\u4e00\u6b21 loaded invocation\u3002",
+  "inference": "\u533a\u95f4\u76f4\u63a5\u590d\u7528\u4fdd\u5b58\u7684 50,000 \u6b21 receiver-source-component percentile bootstrap\uff1aseed 20260908\uff0cnumpy Generator(PCG64)\uff0c\u6bcf\u6b21\u62bd\u6837\u6309 receiver pair \u52a0\u6743\uff0c\u4e24\u4e2a receiver \u89d2\u8272\u8054\u5408\u91cd\u62bd\uff0cdonor assignment \u56fa\u5b9a\u3002\u5168\u90e8\u4e3a pointwise 95% \u533a\u95f4\uff0c\u672a\u7ecf\u540c\u65f6\u8986\u76d6\u6216\u591a\u91cd\u6bd4\u8f83\u6821\u6b63\u3002N \u4e3a receiver pairs\uff0cK \u4e3a receiver source components\uff1bD_common \u4e0d\u628a N \u7ffb\u500d\uff0c\u7f3a\u5931\u7ed3\u679c\u4e0d\u8865\u96f6\u3002",
+  "limitations": "\u6b63 D \u652f\u6301\u672c\u5e72\u9884\u4e0b donor-role \u7684\u56e0\u679c\u5173\u8054\uff0c\u4e0d\u80fd\u636e\u6b64\u8bc6\u522b\u552f\u4e00\u7684\u6b63\u786e\u6027\u7f16\u7801\u3002\u8d1f\u4f30\u8ba1\u548c\u8de8\u96f6\u533a\u95f4\u5747\u662f\u6709\u6548\u7ed3\u679c\uff1b\u533a\u95f4\u5305\u542b\u96f6\u4e0d\u8bc1\u660e\u6548\u5e94\u4e25\u683c\u4e3a\u96f6\uff0c\u4e5f\u4e0d\u8bc1\u660e\u7b49\u6548\u3002\u8de8\u6a21\u578b\u6392\u5e8f\u548c\u5dee\u5f02\u4ec5\u4f5c\u63cf\u8ff0\uff0c\u672a\u8fdb\u884c\u6a21\u578b\u5dee\u5f02\u7684\u8054\u5408\u68c0\u9a8c\uff1b\u5404\u6a21\u578b tokenizer\u3001checkpoint\u3001\u539f\u751f\u7cbe\u5ea6\u548c routed sites \u4e0d\u540c\u3002\u63a8\u65ad\u4ee5\u56fa\u5b9a discovery panel \u548c donor assignment \u4e3a\u6761\u4ef6\uff0c\u672a\u91cd\u65b0\u5339\u914d donor\u3002\u5386\u53f2 full-step T\uff08\u4e5d\u6a21\u578b\u4e3a\u6b63\uff09\u53ca\u5386\u53f2 last-token single-layer D \u7684\u4f30\u8ba1\u5bf9\u8c61\u6216\u5339\u914d\u4e0d\u540c\uff0c\u4e0d\u80fd\u7531\u672c\u8f6e\u8ba1\u7b97 D/T \u65b9\u5411\u6bd4\u4f8b\u3001\u76f8\u51cf\u6216\u5ba3\u79f0\u8de8\u8fd0\u884c\u8f93\u5165\u7b49\u4ef7\uff1b\u672c\u8f6e\u672a\u5408\u5e76\u5386\u53f2 T/D \u8bc4\u5206\u3002",
+  "models": [
+    {
+      "model": "olmoe",
+      "contract_id": "59baae0869504eeacb848d01832aaadc381132095e1747a68a5c3f2d67582487",
+      "checkpoint": {
+        "alias": "olmoe",
+        "harmony_reasoning_effort": "medium",
+        "model_id": "allenai/OLMoE-1B-7B-0924-Instruct",
+        "require_native_mxfp4": false,
+        "revision": "7f1c97f440f06ce36705e4f2b843edb5925f4498",
+        "tokenizer_revision": "7f1c97f440f06ce36705e4f2b843edb5925f4498"
+      },
+      "N": 290,
+      "K": 235,
+      "selected_pairs": 290,
+      "ineligible_pairs": 0,
+      "unique_fixed_donor_pairs": 204,
+      "primary_mean_logprob": {
+        "D_clean": {
+          "bootstrap_standard_error": 0.02668204826821999,
+          "ci_high": 0.04352227072808525,
+          "ci_low": -0.060855600028102315,
+          "mean": -0.008776800815436202
+        },
+        "D_common": {
+          "bootstrap_standard_error": 0.0278830507336512,
+          "ci_high": 0.07125330800187868,
+          "ci_low": -0.03758962613894646,
+          "mean": 0.016356184025078987
+        },
+        "D_error": {
+          "bootstrap_standard_error": 0.043533331712769366,
+          "ci_high": 0.12697449342127826,
+          "ci_low": -0.04351965374418939,
+          "mean": 0.04148916886559415
+        }
+      },
+      "sensitivity_total_logprob": {
+        "D_clean": {
+          "bootstrap_standard_error": 0.07743199398824761,
+          "ci_high": 0.1265426516136083,
+          "ci_low": -0.17651803287903392,
+          "mean": -0.025437387775485244
+        },
+        "D_common": {
+          "bootstrap_standard_error": 0.07714935346003579,
+          "ci_high": 0.19109691548258512,
+          "ci_low": -0.10922422311044619,
+          "mean": 0.039437958058913175
+        },
+        "D_error": {
+          "bootstrap_standard_error": 0.11780446921568438,
+          "ci_high": 0.33612244722409823,
+          "ci_low": -0.12550836019616005,
+          "mean": 0.10431330389331159
+        }
+      },
+      "technical": {
+        "all_atomic_pairs_passed": true,
+        "four_cells_same_invocation": true,
+        "raw_four_cells_match_saved_per_pair": true,
+        "saved_all_router_dispatch_verified": true,
+        "max_self_candidate_score_delta": 0.0,
+        "max_rerun_candidate_score_delta": 0.0,
+        "identity_atol": 0.002,
+        "rows_by_treatment": {
+          "unpatched": 580,
+          "unpatched_rerun": 580,
+          "self_patch": 580,
+          "donor_role": 1160
+        },
+        "target_site_count": 16,
+        "target_sites": [
+          "layer_0.router_logits",
+          "layer_1.router_logits",
+          "layer_2.router_logits",
+          "layer_3.router_logits",
+          "layer_4.router_logits",
+          "layer_5.router_logits",
+          "layer_6.router_logits",
+          "layer_7.router_logits",
+          "layer_8.router_logits",
+          "layer_9.router_logits",
+          "layer_10.router_logits",
+          "layer_11.router_logits",
+          "layer_12.router_logits",
+          "layer_13.router_logits",
+          "layer_14.router_logits",
+          "layer_15.router_logits"
+        ],
+        "candidate_target_ids": {
+          "CORRECT": [
+            [
+              39683,
+              18541
+            ]
+          ],
+          "INCORRECT": [
+            [
+              32466,
+              1372,
+              18541
+            ]
+          ]
+        }
+      },
+      "execution": {
+        "run_id": "39286ded-fb0c-493f-95bf-7424f1052bb1",
+        "runtime_model_class": "OlmoeForCausalLM",
+        "elapsed_seconds": 257.7098915039096,
+        "capture_forwards": 1160,
+        "scoring_forwards": 5800,
+        "forward_count_scope": "this loaded invocation; recovered pairs add no forwards",
+        "recovered_pair_ids": [],
+        "no_validation_access": true
+      },
+      "loaded_invocations": [
+        {
+          "loaded_run_id": "39286ded-fb0c-493f-95bf-7424f1052bb1",
+          "adapter_class": "OLMoEAdapter",
+          "adapter_source_sha256": "2a8728046bd7fd54c2aad868123a0fa638559f713259c0244c27bf85227e05d0",
+          "command": [
+            "archive://execution/src/routeverify/window_donor_contrast.py",
+            "--config",
+            "configs/experiments/window_donor_role_20260908/olmoe.yaml",
+            "--pairs",
+            "archive://runtime/campaign_20260908_D/assets/discovery/window_discovery_pairs.jsonl",
+            "--tokenizer-path",
+            "archive://runtime/campaign_20260908_D/assets/tokenizers/olmoe",
+            "--model-cache",
+            ".cache/huggingface/hub",
+            "--mode",
+            "full",
+            "--execution-version",
+            "v1",
+            "--output",
+            "archive://runtime/campaign_20260908_D/runs/olmoe/full_v1",
+            "--smoke-report",
+            "archive://runtime/campaign_20260908_D/runs/olmoe/smoke_v1/execution_summary.json"
+          ],
+          "loading_info": null,
+          "model_class": "OlmoeForCausalLM",
+          "note": "runtime provenance; semantic repairs require a new execution version/output",
+          "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+          "python": "3.11.10 (main, Oct 16 2024, 04:38:48) [Clang 18.1.8 ]",
+          "runner_source_sha256": "3e4e96fd27c25ccbf708bc1b9bcc82e35d24015cc6a14025116f9651b8204fa3",
+          "torch": "2.12.1+cu130",
+          "transformers": "5.12.1"
+        }
+      ],
+      "recovery": {
+        "pairs_by_loaded_invocation": {
+          "39286ded-fb0c-493f-95bf-7424f1052bb1": 290
+        },
+        "operational_interruptions": [],
+        "final_invocation_actual_forwards": 6960,
+        "all_attempts_recorded_forward_lower_bound": 6960,
+        "additional_uncommitted_work_unknown": false,
+        "metadata_origin": "Fresh-run counts from unchanged saved summary execution and pair provenance."
+      },
+      "summary_source": {
+        "path": "reporting/olmoe_full_v1.json",
+        "size_bytes": 122438,
+        "sha256": "480c3a58548c9394946853e90b6d2201e16003d0ff4b0def5a8486e5ff7b9165"
+      }
+    },
+    {
+      "model": "gpt_oss_20b",
+      "contract_id": "0edb10d533baa641e0aaa0a47999500ee78cceb9cf8af2c4cfc99a1499aec4d6",
+      "checkpoint": {
+        "alias": "gpt_oss_20b",
+        "harmony_reasoning_effort": "medium",
+        "model_id": "openai/gpt-oss-20b",
+        "require_native_mxfp4": true,
+        "revision": "6cee5e81ee83917806bbde320786a8fb61efebee",
+        "tokenizer_revision": "6cee5e81ee83917806bbde320786a8fb61efebee"
+      },
+      "N": 290,
+      "K": 235,
+      "selected_pairs": 290,
+      "ineligible_pairs": 0,
+      "unique_fixed_donor_pairs": 204,
+      "primary_mean_logprob": {
+        "D_clean": {
+          "bootstrap_standard_error": 0.0337996074806912,
+          "ci_high": 0.18026872112434492,
+          "ci_low": 0.04799306600986939,
+          "mean": 0.11366537340418922
+        },
+        "D_common": {
+          "bootstrap_standard_error": 0.026551629045384852,
+          "ci_high": 0.12255290367253614,
+          "ci_low": 0.018114339268054003,
+          "mean": 0.0699445540692935
+        },
+        "D_error": {
+          "bootstrap_standard_error": 0.030727745323883157,
+          "ci_high": 0.08710306313964512,
+          "ci_low": -0.03346695175464262,
+          "mean": 0.026223734734397913
+        }
+      },
+      "sensitivity_total_logprob": {
+        "D_clean": {
+          "bootstrap_standard_error": 0.08128446917203928,
+          "ci_high": 0.41931662815285636,
+          "ci_low": 0.10173638083092255,
+          "mean": 0.25876296632762613
+        },
+        "D_common": {
+          "bootstrap_standard_error": 0.06117519658143392,
+          "ci_high": 0.2867595190485603,
+          "ci_low": 0.0462876650062587,
+          "mean": 0.16533142411639787
+        },
+        "D_error": {
+          "bootstrap_standard_error": 0.06811409175425506,
+          "ci_high": 0.20738449225476435,
+          "ci_low": -0.059969328965068604,
+          "mean": 0.07189988190516958
+        }
+      },
+      "technical": {
+        "all_atomic_pairs_passed": true,
+        "four_cells_same_invocation": true,
+        "raw_four_cells_match_saved_per_pair": true,
+        "saved_all_router_dispatch_verified": true,
+        "max_self_candidate_score_delta": 0.0,
+        "max_rerun_candidate_score_delta": 0.0,
+        "identity_atol": 0.002,
+        "rows_by_treatment": {
+          "unpatched": 580,
+          "unpatched_rerun": 580,
+          "self_patch": 580,
+          "donor_role": 1160
+        },
+        "target_site_count": 24,
+        "target_sites": [
+          "layer_0.router_logits",
+          "layer_1.router_logits",
+          "layer_2.router_logits",
+          "layer_3.router_logits",
+          "layer_4.router_logits",
+          "layer_5.router_logits",
+          "layer_6.router_logits",
+          "layer_7.router_logits",
+          "layer_8.router_logits",
+          "layer_9.router_logits",
+          "layer_10.router_logits",
+          "layer_11.router_logits",
+          "layer_12.router_logits",
+          "layer_13.router_logits",
+          "layer_14.router_logits",
+          "layer_15.router_logits",
+          "layer_16.router_logits",
+          "layer_17.router_logits",
+          "layer_18.router_logits",
+          "layer_19.router_logits",
+          "layer_20.router_logits",
+          "layer_21.router_logits",
+          "layer_22.router_logits",
+          "layer_23.router_logits"
+        ],
+        "candidate_target_ids": {
+          "CORRECT": [
+            [
+              88816,
+              86605
+            ]
+          ],
+          "INCORRECT": [
+            [
+              58311,
+              1301,
+              86605
+            ]
+          ]
+        }
+      },
+      "execution": {
+        "run_id": "2fa9ddf3-5bec-45fe-8366-1c406bc85a61",
+        "runtime_model_class": "GptOssForCausalLM",
+        "elapsed_seconds": 864.1915420470759,
+        "capture_forwards": 1160,
+        "scoring_forwards": 5800,
+        "forward_count_scope": "this loaded invocation; recovered pairs add no forwards",
+        "recovered_pair_ids": [],
+        "no_validation_access": true
+      },
+      "loaded_invocations": [
+        {
+          "loaded_run_id": "2fa9ddf3-5bec-45fe-8366-1c406bc85a61",
+          "adapter_class": "GptOssAdapter",
+          "adapter_source_sha256": "757f4213fd3da1d600d5bb2677cf0a0b8318c15337c76b030ba800dbf4c46a78",
+          "command": [
+            "archive://execution/src/routeverify/window_donor_contrast.py",
+            "--config",
+            "configs/experiments/window_donor_role_20260908/gpt_oss_20b.yaml",
+            "--pairs",
+            "archive://runtime/campaign_20260908_D/assets/discovery/window_discovery_pairs.jsonl",
+            "--tokenizer-path",
+            "archive://runtime/campaign_20260908_D/assets/tokenizers/gpt_oss_20b",
+            "--model-cache",
+            ".cache/huggingface/hub",
+            "--mode",
+            "full",
+            "--execution-version",
+            "v1",
+            "--output",
+            "archive://runtime/campaign_20260908_D/runs/gpt_oss_20b/full_v1",
+            "--smoke-report",
+            "archive://runtime/campaign_20260908_D/runs/gpt_oss_20b/smoke_v1/execution_summary.json"
+          ],
+          "loading_info": null,
+          "model_class": "GptOssForCausalLM",
+          "note": "runtime provenance; semantic repairs require a new execution version/output",
+          "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+          "python": "3.11.10 (main, Oct 16 2024, 04:38:48) [Clang 18.1.8 ]",
+          "runner_source_sha256": "3e4e96fd27c25ccbf708bc1b9bcc82e35d24015cc6a14025116f9651b8204fa3",
+          "torch": "2.12.1+cu130",
+          "transformers": "5.12.1"
+        }
+      ],
+      "recovery": {
+        "pairs_by_loaded_invocation": {
+          "2fa9ddf3-5bec-45fe-8366-1c406bc85a61": 290
+        },
+        "operational_interruptions": [],
+        "final_invocation_actual_forwards": 6960,
+        "all_attempts_recorded_forward_lower_bound": 6960,
+        "additional_uncommitted_work_unknown": false,
+        "metadata_origin": "Fresh-run counts from unchanged saved summary execution and pair provenance."
+      },
+      "summary_source": {
+        "path": "reporting/gpt_oss_20b_full_v1.json",
+        "size_bytes": 124651,
+        "sha256": "65d86c9c1fe33ac943ec3475e4d4d62021f21771a56414a4cd159da9334a3f09"
+      }
+    },
+    {
+      "model": "gpt_oss_120b",
+      "contract_id": "ed306573f09ce815b4728f8f73eb7f18ebec069b3ee40f2a952587ee4f73d0f8",
+      "checkpoint": {
+        "alias": "gpt_oss_120b",
+        "harmony_reasoning_effort": "medium",
+        "model_id": "openai/gpt-oss-120b",
+        "require_native_mxfp4": true,
+        "revision": "b5c939de8f754692c1647ca79fbf85e8c1e70f8a",
+        "tokenizer_revision": "b5c939de8f754692c1647ca79fbf85e8c1e70f8a"
+      },
+      "N": 290,
+      "K": 235,
+      "selected_pairs": 290,
+      "ineligible_pairs": 0,
+      "unique_fixed_donor_pairs": 204,
+      "primary_mean_logprob": {
+        "D_clean": {
+          "bootstrap_standard_error": 0.023683676124751703,
+          "ci_high": 0.043542854994471275,
+          "ci_low": -0.04892680436573712,
+          "mean": -0.0031788347252252012
+        },
+        "D_common": {
+          "bootstrap_standard_error": 0.017439331200810693,
+          "ci_high": 0.029011852213706946,
+          "ci_low": -0.03929379432975653,
+          "mean": -0.005118236740708683
+        },
+        "D_error": {
+          "bootstrap_standard_error": 0.02389336305677905,
+          "ci_high": 0.039644081573685264,
+          "ci_low": -0.05392237757661601,
+          "mean": -0.0070576387561921946
+        }
+      },
+      "sensitivity_total_logprob": {
+        "D_clean": {
+          "bootstrap_standard_error": 0.057235600307173104,
+          "ci_high": 0.12693452042073244,
+          "ci_low": -0.09683339894194658,
+          "mean": 0.01360501878807554
+        },
+        "D_common": {
+          "bootstrap_standard_error": 0.04103174326705312,
+          "ci_high": 0.07491798141980568,
+          "ci_low": -0.08586154492098676,
+          "mean": -0.005454596266394345
+        },
+        "D_error": {
+          "bootstrap_standard_error": 0.05540380782346643,
+          "ci_high": 0.08319284088002604,
+          "ci_low": -0.1339642115629402,
+          "mean": -0.02451421132086423
+        }
+      },
+      "technical": {
+        "all_atomic_pairs_passed": true,
+        "four_cells_same_invocation": true,
+        "raw_four_cells_match_saved_per_pair": true,
+        "saved_all_router_dispatch_verified": true,
+        "max_self_candidate_score_delta": 0.0,
+        "max_rerun_candidate_score_delta": 0.0,
+        "identity_atol": 0.002,
+        "rows_by_treatment": {
+          "unpatched": 580,
+          "unpatched_rerun": 580,
+          "self_patch": 580,
+          "donor_role": 1160
+        },
+        "target_site_count": 36,
+        "target_sites": [
+          "layer_0.router_logits",
+          "layer_1.router_logits",
+          "layer_2.router_logits",
+          "layer_3.router_logits",
+          "layer_4.router_logits",
+          "layer_5.router_logits",
+          "layer_6.router_logits",
+          "layer_7.router_logits",
+          "layer_8.router_logits",
+          "layer_9.router_logits",
+          "layer_10.router_logits",
+          "layer_11.router_logits",
+          "layer_12.router_logits",
+          "layer_13.router_logits",
+          "layer_14.router_logits",
+          "layer_15.router_logits",
+          "layer_16.router_logits",
+          "layer_17.router_logits",
+          "layer_18.router_logits",
+          "layer_19.router_logits",
+          "layer_20.router_logits",
+          "layer_21.router_logits",
+          "layer_22.router_logits",
+          "layer_23.router_logits",
+          "layer_24.router_logits",
+          "layer_25.router_logits",
+          "layer_26.router_logits",
+          "layer_27.router_logits",
+          "layer_28.router_logits",
+          "layer_29.router_logits",
+          "layer_30.router_logits",
+          "layer_31.router_logits",
+          "layer_32.router_logits",
+          "layer_33.router_logits",
+          "layer_34.router_logits",
+          "layer_35.router_logits"
+        ],
+        "candidate_target_ids": {
+          "CORRECT": [
+            [
+              88816,
+              86605
+            ]
+          ],
+          "INCORRECT": [
+            [
+              58311,
+              1301,
+              86605
+            ]
+          ]
+        }
+      },
+      "execution": {
+        "run_id": "9381bf52-62ea-460d-a384-426efc6e272a",
+        "runtime_model_class": "GptOssForCausalLM",
+        "elapsed_seconds": 906.6078326038551,
+        "capture_forwards": 1160,
+        "scoring_forwards": 5800,
+        "forward_count_scope": "this loaded invocation; recovered pairs add no forwards",
+        "recovered_pair_ids": [],
+        "no_validation_access": true
+      },
+      "loaded_invocations": [
+        {
+          "loaded_run_id": "9381bf52-62ea-460d-a384-426efc6e272a",
+          "adapter_class": "GptOss120BAdapter",
+          "adapter_source_sha256": "a946b155c97e467a1f381009e1328f24b1a6a92e0cc6d13dcc6760dbe35beab7",
+          "command": [
+            "archive://execution/src/routeverify/window_donor_contrast.py",
+            "--config",
+            "configs/experiments/window_donor_role_20260908/gpt_oss_120b.yaml",
+            "--pairs",
+            "archive://runtime/campaign_20260908_D/assets/discovery/window_discovery_pairs.jsonl",
+            "--tokenizer-path",
+            "archive://runtime/campaign_20260908_D/assets/tokenizers/gpt_oss_120b",
+            "--model-cache",
+            ".cache/huggingface/hub",
+            "--mode",
+            "full",
+            "--execution-version",
+            "v1",
+            "--output",
+            "archive://runtime/campaign_20260908_D/runs/gpt_oss_120b/full_v1",
+            "--smoke-report",
+            "archive://runtime/campaign_20260908_D/runs/gpt_oss_120b/smoke_v1/execution_summary.json"
+          ],
+          "loading_info": null,
+          "model_class": "GptOssForCausalLM",
+          "note": "runtime provenance; semantic repairs require a new execution version/output",
+          "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+          "python": "3.11.10 (main, Oct 16 2024, 04:38:48) [Clang 18.1.8 ]",
+          "runner_source_sha256": "3e4e96fd27c25ccbf708bc1b9bcc82e35d24015cc6a14025116f9651b8204fa3",
+          "torch": "2.12.1+cu130",
+          "transformers": "5.12.1"
+        }
+      ],
+      "recovery": {
+        "pairs_by_loaded_invocation": {
+          "9381bf52-62ea-460d-a384-426efc6e272a": 290
+        },
+        "operational_interruptions": [],
+        "final_invocation_actual_forwards": 6960,
+        "all_attempts_recorded_forward_lower_bound": 6960,
+        "additional_uncommitted_work_unknown": false,
+        "fresh_plan_forwards": 6960
+      },
+      "summary_source": {
+        "path": "reporting/gpt_oss_120b_full_v1.json",
+        "size_bytes": 125777,
+        "sha256": "147014d0a2b4554bb715aba7c0ef9b2ef731185de8c2b9d9d7007934f05e2ae0"
+      }
+    },
+    {
+      "model": "qwen3_moe",
+      "contract_id": "c5ded3d8c2bf7aa9769d023d09590cdcb6b1cffec1bee9b26b2a08f85bfaa3a8",
+      "checkpoint": {
+        "alias": "qwen3_moe",
+        "harmony_reasoning_effort": "medium",
+        "model_id": "Qwen/Qwen3-30B-A3B",
+        "require_native_mxfp4": false,
+        "revision": "ad44e777bcd18fa416d9da3bd8f70d33ebb85d39",
+        "tokenizer_revision": "ad44e777bcd18fa416d9da3bd8f70d33ebb85d39"
+      },
+      "N": 290,
+      "K": 235,
+      "selected_pairs": 290,
+      "ineligible_pairs": 0,
+      "unique_fixed_donor_pairs": 204,
+      "primary_mean_logprob": {
+        "D_clean": {
+          "bootstrap_standard_error": 0.0584544418282523,
+          "ci_high": 0.019216057367165265,
+          "ci_low": -0.20953318070669957,
+          "mean": -0.0954463262054635
+        },
+        "D_common": {
+          "bootstrap_standard_error": 0.05206748425960691,
+          "ci_high": 0.01659297440935827,
+          "ci_low": -0.18715362098863877,
+          "mean": -0.08464482522593052
+        },
+        "D_error": {
+          "bootstrap_standard_error": 0.06850488960013174,
+          "ci_high": 0.058885043990078635,
+          "ci_low": -0.21019708239595486,
+          "mean": -0.07384332424639754
+        }
+      },
+      "sensitivity_total_logprob": {
+        "D_clean": {
+          "bootstrap_standard_error": 0.16297411172597873,
+          "ci_high": 0.05536333023341709,
+          "ci_low": -0.5815216546841085,
+          "mean": -0.2637930464533271
+        },
+        "D_common": {
+          "bootstrap_standard_error": 0.14428614667475634,
+          "ci_high": 0.04910714287038089,
+          "ci_low": -0.5153966246019825,
+          "mean": -0.23057426331361833
+        },
+        "D_error": {
+          "bootstrap_standard_error": 0.18744833546622292,
+          "ci_high": 0.16436013507265312,
+          "ci_low": -0.5702490620667628,
+          "mean": -0.1973554801739097
+        }
+      },
+      "technical": {
+        "all_atomic_pairs_passed": true,
+        "four_cells_same_invocation": true,
+        "raw_four_cells_match_saved_per_pair": true,
+        "saved_all_router_dispatch_verified": true,
+        "max_self_candidate_score_delta": 0.0,
+        "max_rerun_candidate_score_delta": 0.0,
+        "identity_atol": 0.002,
+        "rows_by_treatment": {
+          "unpatched": 580,
+          "unpatched_rerun": 580,
+          "self_patch": 580,
+          "donor_role": 1160
+        },
+        "target_site_count": 48,
+        "target_sites": [
+          "layer_0.router_logits",
+          "layer_1.router_logits",
+          "layer_2.router_logits",
+          "layer_3.router_logits",
+          "layer_4.router_logits",
+          "layer_5.router_logits",
+          "layer_6.router_logits",
+          "layer_7.router_logits",
+          "layer_8.router_logits",
+          "layer_9.router_logits",
+          "layer_10.router_logits",
+          "layer_11.router_logits",
+          "layer_12.router_logits",
+          "layer_13.router_logits",
+          "layer_14.router_logits",
+          "layer_15.router_logits",
+          "layer_16.router_logits",
+          "layer_17.router_logits",
+          "layer_18.router_logits",
+          "layer_19.router_logits",
+          "layer_20.router_logits",
+          "layer_21.router_logits",
+          "layer_22.router_logits",
+          "layer_23.router_logits",
+          "layer_24.router_logits",
+          "layer_25.router_logits",
+          "layer_26.router_logits",
+          "layer_27.router_logits",
+          "layer_28.router_logits",
+          "layer_29.router_logits",
+          "layer_30.router_logits",
+          "layer_31.router_logits",
+          "layer_32.router_logits",
+          "layer_33.router_logits",
+          "layer_34.router_logits",
+          "layer_35.router_logits",
+          "layer_36.router_logits",
+          "layer_37.router_logits",
+          "layer_38.router_logits",
+          "layer_39.router_logits",
+          "layer_40.router_logits",
+          "layer_41.router_logits",
+          "layer_42.router_logits",
+          "layer_43.router_logits",
+          "layer_44.router_logits",
+          "layer_45.router_logits",
+          "layer_46.router_logits",
+          "layer_47.router_logits"
+        ],
+        "candidate_target_ids": {
+          "CORRECT": [
+            [
+              52320,
+              44840
+            ]
+          ],
+          "INCORRECT": [
+            [
+              38439,
+              868,
+              44840
+            ]
+          ]
+        }
+      },
+      "execution": {
+        "run_id": "b2a12be5-47a6-43f9-aa15-3fc970719df6",
+        "runtime_model_class": "Qwen3MoeForCausalLM",
+        "elapsed_seconds": 1142.779852060834,
+        "capture_forwards": 1160,
+        "scoring_forwards": 5800,
+        "forward_count_scope": "this loaded invocation; recovered pairs add no forwards",
+        "recovered_pair_ids": [],
+        "no_validation_access": true
+      },
+      "loaded_invocations": [
+        {
+          "loaded_run_id": "b2a12be5-47a6-43f9-aa15-3fc970719df6",
+          "adapter_class": "Qwen3MoEAdapter",
+          "adapter_source_sha256": "d701361067fad9fbd45e66744ad4a82dc07d3ad177182bc89ac1f30334a1f2c5",
+          "command": [
+            "archive://execution/src/routeverify/window_donor_contrast.py",
+            "--config",
+            "configs/experiments/window_donor_role_20260908/qwen3_moe.yaml",
+            "--pairs",
+            "archive://runtime/campaign_20260908_D/assets/discovery/window_discovery_pairs.jsonl",
+            "--tokenizer-path",
+            "archive://runtime/campaign_20260908_D/assets/tokenizers/qwen3_moe",
+            "--model-cache",
+            ".cache/huggingface/hub",
+            "--mode",
+            "full",
+            "--execution-version",
+            "v1",
+            "--output",
+            "archive://runtime/campaign_20260908_D/runs/qwen3_moe/full_v1",
+            "--smoke-report",
+            "archive://runtime/campaign_20260908_D/runs/qwen3_moe/smoke_v1/execution_summary.json"
+          ],
+          "loading_info": {
+            "error_msgs": [],
+            "mismatched_keys": [],
+            "missing_keys": [],
+            "unexpected_keys": []
+          },
+          "model_class": "Qwen3MoeForCausalLM",
+          "note": "runtime provenance; semantic repairs require a new execution version/output",
+          "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+          "python": "3.11.10 (main, Oct 16 2024, 04:38:48) [Clang 18.1.8 ]",
+          "runner_source_sha256": "3e4e96fd27c25ccbf708bc1b9bcc82e35d24015cc6a14025116f9651b8204fa3",
+          "torch": "2.12.1+cu130",
+          "transformers": "5.12.1"
+        }
+      ],
+      "recovery": {
+        "pairs_by_loaded_invocation": {
+          "b2a12be5-47a6-43f9-aa15-3fc970719df6": 290
+        },
+        "operational_interruptions": [],
+        "final_invocation_actual_forwards": 6960,
+        "all_attempts_recorded_forward_lower_bound": 6960,
+        "additional_uncommitted_work_unknown": false,
+        "metadata_origin": "Fresh-run counts from unchanged saved summary execution and pair provenance."
+      },
+      "summary_source": {
+        "path": "reporting/qwen3_moe_full_v1.json",
+        "size_bytes": 125093,
+        "sha256": "85d539c88fa59b892ac3225860acc45a09fb6ea3a55cc2997a32eb01317c6e76"
+      }
+    },
+    {
+      "model": "qwen36_moe",
+      "contract_id": "39b94e867838e83f3c4704bb7561d744852043d6a8886cad7dd4fde9c3e27436",
+      "checkpoint": {
+        "alias": "qwen36_moe",
+        "harmony_reasoning_effort": "medium",
+        "model_id": "Qwen/Qwen3.6-35B-A3B",
+        "require_native_mxfp4": false,
+        "revision": "995ad96eacd98c81ed38be0c5b274b04031597b0",
+        "tokenizer_revision": "995ad96eacd98c81ed38be0c5b274b04031597b0"
+      },
+      "N": 290,
+      "K": 235,
+      "selected_pairs": 290,
+      "ineligible_pairs": 0,
+      "unique_fixed_donor_pairs": 204,
+      "primary_mean_logprob": {
+        "D_clean": {
+          "bootstrap_standard_error": 0.020307870945381966,
+          "ci_high": 0.059522831383054906,
+          "ci_low": -0.019942920426918923,
+          "mean": 0.01976866827496251
+        },
+        "D_common": {
+          "bootstrap_standard_error": 0.01947060418493871,
+          "ci_high": 0.0485687077996615,
+          "ci_low": -0.02823029125024658,
+          "mean": 0.010505213766845874
+        },
+        "D_error": {
+          "bootstrap_standard_error": 0.032013611682854055,
+          "ci_high": 0.06442176015390064,
+          "ci_low": -0.06158949110172157,
+          "mean": 0.0012417592587292041
+        }
+      },
+      "sensitivity_total_logprob": {
+        "D_clean": {
+          "bootstrap_standard_error": 0.052412162415111783,
+          "ci_high": 0.15092354020957394,
+          "ci_low": -0.054064936487008705,
+          "mean": 0.047707490452790054
+        },
+        "D_common": {
+          "bootstrap_standard_error": 0.046357915142861514,
+          "ci_high": 0.1117736393372702,
+          "ci_low": -0.0710285878996793,
+          "mean": 0.02112381267762775
+        },
+        "D_error": {
+          "bootstrap_standard_error": 0.07381304620931971,
+          "ci_high": 0.14108976278219815,
+          "ci_low": -0.15020381252252332,
+          "mean": -0.005459865097534554
+        }
+      },
+      "technical": {
+        "all_atomic_pairs_passed": true,
+        "four_cells_same_invocation": true,
+        "raw_four_cells_match_saved_per_pair": true,
+        "saved_all_router_dispatch_verified": true,
+        "max_self_candidate_score_delta": 0.0,
+        "max_rerun_candidate_score_delta": 0.0,
+        "identity_atol": 0.002,
+        "rows_by_treatment": {
+          "unpatched": 580,
+          "unpatched_rerun": 580,
+          "self_patch": 580,
+          "donor_role": 1160
+        },
+        "target_site_count": 40,
+        "target_sites": [
+          "layer_0.router_logits",
+          "layer_1.router_logits",
+          "layer_2.router_logits",
+          "layer_3.router_logits",
+          "layer_4.router_logits",
+          "layer_5.router_logits",
+          "layer_6.router_logits",
+          "layer_7.router_logits",
+          "layer_8.router_logits",
+          "layer_9.router_logits",
+          "layer_10.router_logits",
+          "layer_11.router_logits",
+          "layer_12.router_logits",
+          "layer_13.router_logits",
+          "layer_14.router_logits",
+          "layer_15.router_logits",
+          "layer_16.router_logits",
+          "layer_17.router_logits",
+          "layer_18.router_logits",
+          "layer_19.router_logits",
+          "layer_20.router_logits",
+          "layer_21.router_logits",
+          "layer_22.router_logits",
+          "layer_23.router_logits",
+          "layer_24.router_logits",
+          "layer_25.router_logits",
+          "layer_26.router_logits",
+          "layer_27.router_logits",
+          "layer_28.router_logits",
+          "layer_29.router_logits",
+          "layer_30.router_logits",
+          "layer_31.router_logits",
+          "layer_32.router_logits",
+          "layer_33.router_logits",
+          "layer_34.router_logits",
+          "layer_35.router_logits",
+          "layer_36.router_logits",
+          "layer_37.router_logits",
+          "layer_38.router_logits",
+          "layer_39.router_logits"
+        ],
+        "candidate_target_ids": {
+          "CORRECT": [
+            [
+              50564,
+              43347
+            ]
+          ],
+          "INCORRECT": [
+            [
+              37163,
+              842,
+              43347
+            ]
+          ]
+        }
+      },
+      "execution": {
+        "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+        "runtime_model_class": "Qwen3_5MoeForCausalLM",
+        "elapsed_seconds": 971.6895128539763,
+        "capture_forwards": 1160,
+        "scoring_forwards": 5800,
+        "forward_count_scope": "this loaded invocation; recovered pairs add no forwards",
+        "recovered_pair_ids": [],
+        "no_validation_access": true
+      },
+      "loaded_invocations": [
+        {
+          "loaded_run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+          "adapter_class": "Qwen36MoEAdapter",
+          "adapter_source_sha256": "e203916d8351a7a1698db1efbecde6938969f4252b61f25ed706a83c705062e6",
+          "command": [
+            "archive://execution/src/routeverify/window_donor_contrast.py",
+            "--config",
+            "configs/experiments/window_donor_role_20260908/qwen36_moe.yaml",
+            "--pairs",
+            "archive://runtime/campaign_20260908_D/assets/discovery/window_discovery_pairs.jsonl",
+            "--tokenizer-path",
+            "archive://runtime/campaign_20260908_D/assets/tokenizers/qwen36_moe",
+            "--model-cache",
+            ".cache/huggingface/hub",
+            "--mode",
+            "full",
+            "--execution-version",
+            "v1",
+            "--output",
+            "archive://runtime/campaign_20260908_D/runs/qwen36_moe/full_v1",
+            "--smoke-report",
+            "archive://runtime/campaign_20260908_D/runs/qwen36_moe/smoke_v1/execution_summary.json"
+          ],
+          "loading_info": {
+            "error_msgs": [],
+            "mismatched_keys": [],
+            "missing_keys": [],
+            "unexpected_keys": []
+          },
+          "model_class": "Qwen3_5MoeForCausalLM",
+          "note": "runtime provenance; semantic repairs require a new execution version/output",
+          "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+          "python": "3.11.10 (main, Oct 16 2024, 04:38:48) [Clang 18.1.8 ]",
+          "runner_source_sha256": "3e4e96fd27c25ccbf708bc1b9bcc82e35d24015cc6a14025116f9651b8204fa3",
+          "torch": "2.12.1+cu130",
+          "transformers": "5.12.1"
+        }
+      ],
+      "recovery": {
+        "pairs_by_loaded_invocation": {
+          "facc1740-9b26-4f48-8256-404c6c6e7629": 290
+        },
+        "operational_interruptions": [],
+        "final_invocation_actual_forwards": 6960,
+        "all_attempts_recorded_forward_lower_bound": 6960,
+        "additional_uncommitted_work_unknown": false,
+        "fresh_plan_forwards": 6960
+      },
+      "summary_source": {
+        "path": "reporting/qwen36_moe_full_v1.json",
+        "size_bytes": 125436,
+        "sha256": "25a2a071b126457cd7fc1beb9779549b472d9f3978f2196410d91d5bf723f065"
+      }
+    },
+    {
+      "model": "gemma4_moe",
+      "contract_id": "00b5f676e608ae1b1d776adcbd386018048fdd4485e1c598b060b8a619d2c425",
+      "checkpoint": {
+        "alias": "gemma4_moe",
+        "harmony_reasoning_effort": "medium",
+        "model_id": "google/gemma-4-26B-A4B-it",
+        "require_native_mxfp4": false,
+        "revision": "4d7ae4984b7db7de8f8457170b3f1a419ee76d52",
+        "tokenizer_revision": "4d7ae4984b7db7de8f8457170b3f1a419ee76d52"
+      },
+      "N": 290,
+      "K": 235,
+      "selected_pairs": 290,
+      "ineligible_pairs": 0,
+      "unique_fixed_donor_pairs": 204,
+      "primary_mean_logprob": {
+        "D_clean": {
+          "bootstrap_standard_error": 0.1588303216426864,
+          "ci_high": 0.7002209738937234,
+          "ci_low": 0.07616419521541813,
+          "mean": 0.3874600970823628
+        },
+        "D_common": {
+          "bootstrap_standard_error": 0.11925769641357296,
+          "ci_high": 0.45448900091924355,
+          "ci_low": -0.011420540856922352,
+          "mean": 0.22070615518512918
+        },
+        "D_error": {
+          "bootstrap_standard_error": 0.13962778355427435,
+          "ci_high": 0.3335210813812489,
+          "ci_low": -0.21588242926184523,
+          "mean": 0.053952213287895345
+        }
+      },
+      "sensitivity_total_logprob": {
+        "D_clean": {
+          "bootstrap_standard_error": 0.3789175948943739,
+          "ci_high": 1.7053706945484874,
+          "ci_low": 0.2172231457572073,
+          "mean": 0.9581647210430548
+        },
+        "D_common": {
+          "bootstrap_standard_error": 0.282214727713811,
+          "ci_high": 1.1019636036723768,
+          "ci_low": 0.0034157206783907495,
+          "mean": 0.5488436433855924
+        },
+        "D_error": {
+          "bootstrap_standard_error": 0.32763615390548717,
+          "ci_high": 0.7932659738943783,
+          "ci_low": -0.4944489164712755,
+          "mean": 0.13952256572813043
+        }
+      },
+      "technical": {
+        "all_atomic_pairs_passed": true,
+        "four_cells_same_invocation": true,
+        "raw_four_cells_match_saved_per_pair": true,
+        "saved_all_router_dispatch_verified": true,
+        "max_self_candidate_score_delta": 0.0,
+        "max_rerun_candidate_score_delta": 0.0,
+        "identity_atol": 0.002,
+        "rows_by_treatment": {
+          "unpatched": 580,
+          "unpatched_rerun": 580,
+          "self_patch": 580,
+          "donor_role": 1160
+        },
+        "target_site_count": 30,
+        "target_sites": [
+          "layer_0.router_logits",
+          "layer_1.router_logits",
+          "layer_2.router_logits",
+          "layer_3.router_logits",
+          "layer_4.router_logits",
+          "layer_5.router_logits",
+          "layer_6.router_logits",
+          "layer_7.router_logits",
+          "layer_8.router_logits",
+          "layer_9.router_logits",
+          "layer_10.router_logits",
+          "layer_11.router_logits",
+          "layer_12.router_logits",
+          "layer_13.router_logits",
+          "layer_14.router_logits",
+          "layer_15.router_logits",
+          "layer_16.router_logits",
+          "layer_17.router_logits",
+          "layer_18.router_logits",
+          "layer_19.router_logits",
+          "layer_20.router_logits",
+          "layer_21.router_logits",
+          "layer_22.router_logits",
+          "layer_23.router_logits",
+          "layer_24.router_logits",
+          "layer_25.router_logits",
+          "layer_26.router_logits",
+          "layer_27.router_logits",
+          "layer_28.router_logits",
+          "layer_29.router_logits"
+        ],
+        "candidate_target_ids": {
+          "CORRECT": [
+            [
+              38850,
+              20981
+            ]
+          ],
+          "INCORRECT": [
+            [
+              1204,
+              38850,
+              20981
+            ]
+          ]
+        }
+      },
+      "execution": {
+        "run_id": "4e46dce0-861b-44c9-8ace-f0f1d925818b",
+        "runtime_model_class": "Gemma4ForConditionalGeneration",
+        "elapsed_seconds": 746.8441344280727,
+        "capture_forwards": 1104,
+        "scoring_forwards": 4920,
+        "forward_count_scope": "this loaded invocation; recovered pairs add no forwards",
+        "recovered_pair_ids": [
+          "prmbench/preview/counterfactual_prm_train_p1_285",
+          "prmbench/preview/circular_prm_train_p1_421",
+          "prmbench/preview/confidence_prm_test_p2_1128",
+          "prmbench/preview/deception_prm_train_p1_84",
+          "prmbench/preview/deception_prm_train_p1_29",
+          "prmbench/preview/deception_prm_train_p1_56",
+          "prmbench/preview/confidence_prm_test_p2_1518",
+          "prmbench/preview/confidence_prm_test_p2_2562",
+          "prmbench/preview/confidence_prm_test_p1_48",
+          "prmbench/preview/counterfactual_prm_train_p1_64",
+          "prmbench/preview/confidence_prm_test_p2_1292",
+          "prmbench/preview/counterfactual_prm_test_p2_901",
+          "prmbench/preview/step_contradiction_prm_train_p1_255",
+          "prmbench/preview/confidence_prm_test_p1_98",
+          "prmbench/preview/deception_prm_test_p2_2208",
+          "prmbench/preview/deception_prm_train_p1_282",
+          "prmbench/preview/confidence_prm_test_p2_1286",
+          "prmbench/preview/deception_prm_test_p2_1714",
+          "prmbench/preview/confidence_prm_test_p2_2094",
+          "prmbench/preview/confidence_prm_test_p2_1759",
+          "prmbench/preview/counterfactual_prm_test_p2_2532",
+          "prmbench/preview/counterfactual_prm_test_p2_1852",
+          "prmbench/preview/confidence_prm_test_p2_360",
+          "prmbench/preview/confidence_prm_test_p2_1721",
+          "prmbench/preview/confidence_prm_train_p1_271",
+          "prmbench/preview/confidence_prm_train_p1_142",
+          "prmbench/preview/confidence_prm_train_p1_261",
+          "prmbench/preview/counterfactual_prm_test_p2_1715",
+          "prmbench/preview/step_contradiction_prm_train_p1_392",
+          "prmbench/preview/confidence_prm_train_p1_76",
+          "prmbench/preview/confidence_prm_train_p1_55",
+          "prmbench/preview/confidence_prm_test_p2_1141",
+          "prmbench/preview/confidence_prm_train_p1_286",
+          "prmbench/preview/confidence_prm_train_p1_93",
+          "prmbench/preview/counterfactual_prm_train_p1_76",
+          "prmbench/preview/confidence_prm_test_p2_2449",
+          "prmbench/preview/step_contradiction_prm_train_p1_347",
+          "prmbench/preview/confidence_prm_test_p1_20",
+          "prmbench/preview/missing_condition_prm_test_p2_2490",
+          "prmbench/preview/deception_prm_test_p1_27",
+          "prmbench/preview/deception_prm_train_p1_301",
+          "prmbench/preview/deception_prm_test_p1_25",
+          "prmbench/preview/deception_prm_train_p1_442",
+          "prmbench/preview/deception_prm_test_p2_2201"
+        ],
+        "no_validation_access": true
+      },
+      "loaded_invocations": [
+        {
+          "loaded_run_id": "29687b42-ec5c-4c96-9129-02e06d0136a2",
+          "adapter_class": "Gemma4MoEAdapter",
+          "adapter_source_sha256": "2de8e22db40c0b5d1d3fb6365b96f6c10945528cdd2097dd5648fda4ddfe40c3",
+          "command": [
+            "archive://execution/src/routeverify/window_donor_contrast.py",
+            "--config",
+            "configs/experiments/window_donor_role_20260908/gemma4_moe.yaml",
+            "--pairs",
+            "archive://runtime/campaign_20260908_D/assets/discovery/window_discovery_pairs.jsonl",
+            "--tokenizer-path",
+            "archive://runtime/campaign_20260908_D/assets/tokenizers/gemma4_moe",
+            "--model-cache",
+            ".cache/huggingface/hub",
+            "--mode",
+            "full",
+            "--execution-version",
+            "v1",
+            "--output",
+            "archive://runtime/campaign_20260908_D/runs/gemma4_moe/full_v1",
+            "--smoke-report",
+            "archive://runtime/campaign_20260908_D/runs/gemma4_moe/smoke_v1/execution_summary.json"
+          ],
+          "loading_info": null,
+          "model_class": "Gemma4ForConditionalGeneration",
+          "note": "runtime provenance; semantic repairs require a new execution version/output",
+          "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+          "python": "3.11.10 (main, Oct 16 2024, 04:38:48) [Clang 18.1.8 ]",
+          "runner_source_sha256": "3e4e96fd27c25ccbf708bc1b9bcc82e35d24015cc6a14025116f9651b8204fa3",
+          "torch": "2.12.1+cu130",
+          "transformers": "5.12.1"
+        },
+        {
+          "loaded_run_id": "4e46dce0-861b-44c9-8ace-f0f1d925818b",
+          "adapter_class": "Gemma4MoEAdapter",
+          "adapter_source_sha256": "2de8e22db40c0b5d1d3fb6365b96f6c10945528cdd2097dd5648fda4ddfe40c3",
+          "command": [
+            "archive://execution/src/routeverify/window_donor_contrast.py",
+            "--config",
+            "configs/experiments/window_donor_role_20260908/gemma4_moe.yaml",
+            "--pairs",
+            "archive://runtime/campaign_20260908_D/assets/discovery/window_discovery_pairs.jsonl",
+            "--tokenizer-path",
+            "archive://runtime/campaign_20260908_D/assets/tokenizers/gemma4_moe",
+            "--model-cache",
+            ".cache/huggingface/hub",
+            "--mode",
+            "full",
+            "--execution-version",
+            "v1",
+            "--output",
+            "archive://runtime/campaign_20260908_D/runs/gemma4_moe/full_v1",
+            "--smoke-report",
+            "archive://runtime/campaign_20260908_D/runs/gemma4_moe/smoke_v1/execution_summary.json",
+            "--resume"
+          ],
+          "loading_info": null,
+          "model_class": "Gemma4ForConditionalGeneration",
+          "note": "runtime provenance; semantic repairs require a new execution version/output",
+          "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+          "python": "3.11.10 (main, Oct 16 2024, 04:38:48) [Clang 18.1.8 ]",
+          "runner_source_sha256": "3e4e96fd27c25ccbf708bc1b9bcc82e35d24015cc6a14025116f9651b8204fa3",
+          "torch": "2.12.1+cu130",
+          "transformers": "5.12.1"
+        }
+      ],
+      "recovery": {
+        "pairs_by_loaded_invocation": {
+          "4e46dce0-861b-44c9-8ace-f0f1d925818b": 246,
+          "29687b42-ec5c-4c96-9129-02e06d0136a2": 44
+        },
+        "operational_interruptions": [
+          {
+            "kind": "operational_resource_pause",
+            "loaded_invocation": "29687b42-ec5c-4c96-9129-02e06d0136a2",
+            "reason": "Three GPU processes reached143084/143771MiB; Gemma allocator growth on longer full inputs left687MiB headroom, unsafe for further long inputs",
+            "signal": "SIGINT",
+            "completed_atomic_pairs_retained": 44,
+            "committed_forward_lower_bound": 1208,
+            "uncommitted_forward_count": "unknown",
+            "partial_pair_policy": "KeyboardInterrupt ended active candidate operation; no unfinished pair file published, terminal stderr retained, do not infer or reuse partial four cells",
+            "resume_policy": "Explicit --resume v1; all completed atomic pair files retained; entire unfinished receiver pair redone with new capture in new loaded invocation",
+            "same_execution_version": "v1",
+            "scientific_source_or_config_changes": false,
+            "evidence": [
+              {
+                "path": "runs/gemma4_moe/full_v1/attempts/29687b42-ec5c-4c96-9129-02e06d0136a2/executor_interruption.json",
+                "size_bytes": 3177,
+                "sha256": "8146eb0c3dee0f47ea98258f9ec0b7a2808b1e7524440303dedcaef80653ecc6"
+              },
+              {
+                "path": "provenance/gemma4_moe_full_v1_resource_interruption_20260908T2119Z.json",
+                "size_bytes": 19274,
+                "sha256": "5874c573d10ab1c5859fe36451e64d2ea6faef254ebda182876532c6e67cb1be"
+              }
+            ]
+          }
+        ],
+        "final_invocation_actual_forwards": 6024,
+        "all_attempts_recorded_forward_lower_bound": 7232,
+        "additional_uncommitted_work_unknown": true,
+        "fresh_plan_forwards": 6960
+      },
+      "summary_source": {
+        "path": "reporting/gemma4_moe_full_v1.json",
+        "size_bytes": 131006,
+        "sha256": "3a1b77bb099b61dd87e09755a4bfd0ce882be929fe970ec919801d4eb9587100"
+      }
+    },
+    {
+      "model": "glm4_moe_lite",
+      "contract_id": "b7d148fa804549de86117b059464d9ed340d7b9755e716a819132dea875fce7c",
+      "checkpoint": {
+        "alias": "glm4_moe_lite",
+        "harmony_reasoning_effort": "medium",
+        "model_id": "zai-org/GLM-4.7-Flash",
+        "require_native_mxfp4": false,
+        "revision": "7dd20894a642a0aa287e9827cb1a1f7f91386b67",
+        "tokenizer_revision": "7dd20894a642a0aa287e9827cb1a1f7f91386b67"
+      },
+      "N": 290,
+      "K": 235,
+      "selected_pairs": 290,
+      "ineligible_pairs": 0,
+      "unique_fixed_donor_pairs": 204,
+      "primary_mean_logprob": {
+        "D_clean": {
+          "bootstrap_standard_error": 0.016303854067078627,
+          "ci_high": 0.036949195927083844,
+          "ci_low": -0.027318189204980865,
+          "mean": 0.004067604587916507
+        },
+        "D_common": {
+          "bootstrap_standard_error": 0.012036727514609324,
+          "ci_high": 0.011016789375091079,
+          "ci_low": -0.03626691136429624,
+          "mean": -0.01254824936234702
+        },
+        "D_error": {
+          "bootstrap_standard_error": 0.014302637197544606,
+          "ci_high": -0.0011054407199225964,
+          "ci_low": -0.05715404062333626,
+          "mean": -0.029164103312610545
+        }
+      },
+      "sensitivity_total_logprob": {
+        "D_clean": {
+          "bootstrap_standard_error": 0.04687925896092163,
+          "ci_high": 0.10904193408727829,
+          "ci_low": -0.07531870779623356,
+          "mean": 0.014733730105618978
+        },
+        "D_common": {
+          "bootstrap_standard_error": 0.03413361895366153,
+          "ci_high": 0.03560941308631355,
+          "ci_low": -0.09862375348582994,
+          "mean": -0.031333688847271016
+        },
+        "D_error": {
+          "bootstrap_standard_error": 0.03982533060983212,
+          "ci_high": 0.0009220218383306831,
+          "ci_low": -0.1551922945242936,
+          "mean": -0.07740110780016102
+        }
+      },
+      "technical": {
+        "all_atomic_pairs_passed": true,
+        "four_cells_same_invocation": true,
+        "raw_four_cells_match_saved_per_pair": true,
+        "saved_all_router_dispatch_verified": true,
+        "max_self_candidate_score_delta": 0.0,
+        "max_rerun_candidate_score_delta": 0.0,
+        "identity_atol": 0.002,
+        "rows_by_treatment": {
+          "unpatched": 580,
+          "unpatched_rerun": 580,
+          "self_patch": 580,
+          "donor_role": 1160
+        },
+        "target_site_count": 46,
+        "target_sites": [
+          "layer_1.router_logits",
+          "layer_2.router_logits",
+          "layer_3.router_logits",
+          "layer_4.router_logits",
+          "layer_5.router_logits",
+          "layer_6.router_logits",
+          "layer_7.router_logits",
+          "layer_8.router_logits",
+          "layer_9.router_logits",
+          "layer_10.router_logits",
+          "layer_11.router_logits",
+          "layer_12.router_logits",
+          "layer_13.router_logits",
+          "layer_14.router_logits",
+          "layer_15.router_logits",
+          "layer_16.router_logits",
+          "layer_17.router_logits",
+          "layer_18.router_logits",
+          "layer_19.router_logits",
+          "layer_20.router_logits",
+          "layer_21.router_logits",
+          "layer_22.router_logits",
+          "layer_23.router_logits",
+          "layer_24.router_logits",
+          "layer_25.router_logits",
+          "layer_26.router_logits",
+          "layer_27.router_logits",
+          "layer_28.router_logits",
+          "layer_29.router_logits",
+          "layer_30.router_logits",
+          "layer_31.router_logits",
+          "layer_32.router_logits",
+          "layer_33.router_logits",
+          "layer_34.router_logits",
+          "layer_35.router_logits",
+          "layer_36.router_logits",
+          "layer_37.router_logits",
+          "layer_38.router_logits",
+          "layer_39.router_logits",
+          "layer_40.router_logits",
+          "layer_41.router_logits",
+          "layer_42.router_logits",
+          "layer_43.router_logits",
+          "layer_44.router_logits",
+          "layer_45.router_logits",
+          "layer_46.router_logits"
+        ],
+        "candidate_target_ids": {
+          "CORRECT": [
+            [
+              51977,
+              44579
+            ]
+          ],
+          "INCORRECT": [
+            [
+              38232,
+              868,
+              44579
+            ]
+          ]
+        }
+      },
+      "execution": {
+        "run_id": "88d91669-74c7-4e4a-88bd-4df93fd89626",
+        "runtime_model_class": "Glm4MoeLiteForCausalLM",
+        "elapsed_seconds": 953.5511200339533,
+        "capture_forwards": 1160,
+        "scoring_forwards": 5800,
+        "forward_count_scope": "this loaded invocation; recovered pairs add no forwards",
+        "recovered_pair_ids": [],
+        "no_validation_access": true
+      },
+      "loaded_invocations": [
+        {
+          "loaded_run_id": "88d91669-74c7-4e4a-88bd-4df93fd89626",
+          "adapter_class": "Glm4MoELiteAdapter",
+          "adapter_source_sha256": "092bb6d789803fb5595cea13976a54e980a37e659281b2da423b27097be3caf2",
+          "command": [
+            "archive://execution/src/routeverify/window_donor_contrast.py",
+            "--config",
+            "configs/experiments/window_donor_role_20260908/glm4_moe_lite.yaml",
+            "--pairs",
+            "archive://runtime/campaign_20260908_D/assets/discovery/window_discovery_pairs.jsonl",
+            "--tokenizer-path",
+            "archive://runtime/campaign_20260908_D/assets/tokenizers/glm4_moe_lite",
+            "--model-cache",
+            ".cache/huggingface/hub",
+            "--mode",
+            "full",
+            "--execution-version",
+            "v1",
+            "--output",
+            "archive://runtime/campaign_20260908_D/runs/glm4_moe_lite/full_v1",
+            "--smoke-report",
+            "archive://runtime/campaign_20260908_D/runs/glm4_moe_lite/smoke_v1/execution_summary.json"
+          ],
+          "loading_info": {
+            "error_msgs": [],
+            "mismatched_keys": [],
+            "missing_keys": [],
+            "unexpected_keys": []
+          },
+          "model_class": "Glm4MoeLiteForCausalLM",
+          "note": "runtime provenance; semantic repairs require a new execution version/output",
+          "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+          "python": "3.11.10 (main, Oct 16 2024, 04:38:48) [Clang 18.1.8 ]",
+          "runner_source_sha256": "3e4e96fd27c25ccbf708bc1b9bcc82e35d24015cc6a14025116f9651b8204fa3",
+          "torch": "2.12.1+cu130",
+          "transformers": "5.12.1"
+        }
+      ],
+      "recovery": {
+        "pairs_by_loaded_invocation": {
+          "88d91669-74c7-4e4a-88bd-4df93fd89626": 290
+        },
+        "operational_interruptions": [],
+        "final_invocation_actual_forwards": 6960,
+        "all_attempts_recorded_forward_lower_bound": 6960,
+        "additional_uncommitted_work_unknown": false,
+        "fresh_plan_forwards": 6960
+      },
+      "summary_source": {
+        "path": "reporting/glm4_moe_lite_full_v1.json",
+        "size_bytes": 126560,
+        "sha256": "70824af5d97f22947c491deaca7ab0ce2808bb189a482f9c7cf1234a6de37773"
+      }
+    },
+    {
+      "model": "nemotron3_nano",
+      "contract_id": "e3a272f74e7d31af7eebbd930be17acc0515d4a2f1d8d6770198396bfbb71700",
+      "checkpoint": {
+        "alias": "nemotron3_nano",
+        "harmony_reasoning_effort": "medium",
+        "model_id": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+        "require_native_mxfp4": false,
+        "revision": "2d59de1cbd51c0adf384eb906b766d1aee0e0517",
+        "tokenizer_revision": "2d59de1cbd51c0adf384eb906b766d1aee0e0517"
+      },
+      "N": 290,
+      "K": 235,
+      "selected_pairs": 290,
+      "ineligible_pairs": 0,
+      "unique_fixed_donor_pairs": 204,
+      "primary_mean_logprob": {
+        "D_clean": {
+          "bootstrap_standard_error": 0.007140878018911454,
+          "ci_high": 0.017105801217730903,
+          "ci_low": -0.010924353672843945,
+          "mean": 0.003154242823392839
+        },
+        "D_common": {
+          "bootstrap_standard_error": 0.005168033816581301,
+          "ci_high": 0.0068773577585955,
+          "ci_low": -0.01336383936178815,
+          "mean": -0.0031436611365676737
+        },
+        "D_error": {
+          "bootstrap_standard_error": 0.006299042806427588,
+          "ci_high": 0.002800922372454425,
+          "ci_low": -0.021851343032103076,
+          "mean": -0.009441565096528198
+        }
+      },
+      "sensitivity_total_logprob": {
+        "D_clean": {
+          "bootstrap_standard_error": 0.02357409768356792,
+          "ci_high": 0.054912280843750834,
+          "ci_low": -0.037466177427317914,
+          "mean": 0.009042833758325413
+        },
+        "D_common": {
+          "bootstrap_standard_error": 0.01680861912451252,
+          "ci_high": 0.02173679696972579,
+          "ci_low": -0.04419246004830876,
+          "mean": -0.010819631773207722
+        },
+        "D_error": {
+          "bootstrap_standard_error": 0.020090702761750505,
+          "ci_high": 0.008183506577238446,
+          "ci_low": -0.07021701197276084,
+          "mean": -0.030682097304740856
+        }
+      },
+      "technical": {
+        "all_atomic_pairs_passed": true,
+        "four_cells_same_invocation": true,
+        "raw_four_cells_match_saved_per_pair": true,
+        "saved_all_router_dispatch_verified": true,
+        "max_self_candidate_score_delta": 0.0,
+        "max_rerun_candidate_score_delta": 0.0,
+        "identity_atol": 0.002,
+        "rows_by_treatment": {
+          "unpatched": 580,
+          "unpatched_rerun": 580,
+          "self_patch": 580,
+          "donor_role": 1160
+        },
+        "target_site_count": 23,
+        "target_sites": [
+          "layer_1.router_logits",
+          "layer_3.router_logits",
+          "layer_6.router_logits",
+          "layer_8.router_logits",
+          "layer_10.router_logits",
+          "layer_13.router_logits",
+          "layer_15.router_logits",
+          "layer_17.router_logits",
+          "layer_20.router_logits",
+          "layer_22.router_logits",
+          "layer_24.router_logits",
+          "layer_27.router_logits",
+          "layer_29.router_logits",
+          "layer_31.router_logits",
+          "layer_34.router_logits",
+          "layer_36.router_logits",
+          "layer_38.router_logits",
+          "layer_40.router_logits",
+          "layer_43.router_logits",
+          "layer_45.router_logits",
+          "layer_47.router_logits",
+          "layer_49.router_logits",
+          "layer_51.router_logits"
+        ],
+        "candidate_target_ids": {
+          "CORRECT": [
+            [
+              1067,
+              3749,
+              61698
+            ]
+          ],
+          "INCORRECT": [
+            [
+              3174,
+              1067,
+              3749,
+              61698
+            ]
+          ]
+        }
+      },
+      "execution": {
+        "run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+        "runtime_model_class": "NemotronHForCausalLM",
+        "elapsed_seconds": 792.1096713310108,
+        "capture_forwards": 1160,
+        "scoring_forwards": 5800,
+        "forward_count_scope": "this loaded invocation; recovered pairs add no forwards",
+        "recovered_pair_ids": [],
+        "no_validation_access": true
+      },
+      "loaded_invocations": [
+        {
+          "loaded_run_id": "a7f253a4-bd79-4f59-adce-369b7c7fbf75",
+          "adapter_class": "Nemotron3NanoAdapter",
+          "adapter_source_sha256": "05e7099010d4c741f98efbeeb7fe13b29d789afa273a33816b99dc7b4a48b8c3",
+          "command": [
+            "archive://execution/src/routeverify/window_donor_contrast.py",
+            "--config",
+            "configs/experiments/window_donor_role_20260908/nemotron3_nano.yaml",
+            "--pairs",
+            "archive://runtime/campaign_20260908_D/assets/discovery/window_discovery_pairs.jsonl",
+            "--tokenizer-path",
+            "archive://runtime/campaign_20260908_D/assets/tokenizers/nemotron3_nano",
+            "--model-cache",
+            ".cache/huggingface/hub",
+            "--mode",
+            "full",
+            "--execution-version",
+            "v1",
+            "--output",
+            "archive://runtime/campaign_20260908_D/runs/nemotron3_nano/full_v1",
+            "--smoke-report",
+            "archive://runtime/campaign_20260908_D/runs/nemotron3_nano/smoke_v1/execution_summary.json"
+          ],
+          "loading_info": null,
+          "model_class": "NemotronHForCausalLM",
+          "note": "runtime provenance; semantic repairs require a new execution version/output",
+          "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+          "python": "3.11.10 (main, Oct 16 2024, 04:38:48) [Clang 18.1.8 ]",
+          "runner_source_sha256": "3e4e96fd27c25ccbf708bc1b9bcc82e35d24015cc6a14025116f9651b8204fa3",
+          "torch": "2.12.1+cu130",
+          "transformers": "5.12.1"
+        }
+      ],
+      "recovery": {
+        "pairs_by_loaded_invocation": {
+          "a7f253a4-bd79-4f59-adce-369b7c7fbf75": 290
+        },
+        "operational_interruptions": [],
+        "final_invocation_actual_forwards": 6960,
+        "all_attempts_recorded_forward_lower_bound": 6960,
+        "additional_uncommitted_work_unknown": false,
+        "fresh_plan_forwards": 6960
+      },
+      "summary_source": {
+        "path": "reporting/nemotron3_nano_full_v1.json",
+        "size_bytes": 125931,
+        "sha256": "683f31ff2f0406713b8aee11c736329654e5c5c3f5160c035b2efe179e283e39"
+      }
+    },
+    {
+      "model": "nemotron35_lightning",
+      "contract_id": "6f0e2e17e335f773dc4ff6e9f5a777b9c5e292cd0fe69eab6783e3295ab5d4d9",
+      "checkpoint": {
+        "alias": "nemotron35_lightning",
+        "harmony_reasoning_effort": "medium",
+        "model_id": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+        "require_native_mxfp4": false,
+        "revision": "a9904d24bcc1d289a1950fa9d2b978c47cf903b9",
+        "tokenizer_revision": "a9904d24bcc1d289a1950fa9d2b978c47cf903b9"
+      },
+      "N": 290,
+      "K": 235,
+      "selected_pairs": 290,
+      "ineligible_pairs": 0,
+      "unique_fixed_donor_pairs": 204,
+      "primary_mean_logprob": {
+        "D_clean": {
+          "bootstrap_standard_error": 0.011081915951515373,
+          "ci_high": 0.04300214045134068,
+          "ci_low": -0.0004819306006960866,
+          "mean": 0.021302871790917957
+        },
+        "D_common": {
+          "bootstrap_standard_error": 0.009039573200581163,
+          "ci_high": 0.0304195078143003,
+          "ci_low": -0.004970687365812287,
+          "mean": 0.012792649879468205
+        },
+        "D_error": {
+          "bootstrap_standard_error": 0.012176029759768335,
+          "ci_high": 0.028039609316917572,
+          "ci_low": -0.019738932756744574,
+          "mean": 0.004282427968018439
+        }
+      },
+      "sensitivity_total_logprob": {
+        "D_clean": {
+          "bootstrap_standard_error": 0.03915063331612718,
+          "ci_high": 0.14850962858324682,
+          "ci_low": -0.0052471102839453465,
+          "mean": 0.07168507286797053
+        },
+        "D_common": {
+          "bootstrap_standard_error": 0.031342825472614466,
+          "ci_high": 0.09895428482945522,
+          "ci_low": -0.023871680388756034,
+          "mean": 0.03785291184944197
+        },
+        "D_error": {
+          "bootstrap_standard_error": 0.041046583688528426,
+          "ci_high": 0.08377890831729476,
+          "ci_low": -0.07749408106561964,
+          "mean": 0.004020750830913412
+        }
+      },
+      "technical": {
+        "all_atomic_pairs_passed": true,
+        "four_cells_same_invocation": true,
+        "raw_four_cells_match_saved_per_pair": true,
+        "saved_all_router_dispatch_verified": true,
+        "max_self_candidate_score_delta": 0.0,
+        "max_rerun_candidate_score_delta": 0.0,
+        "identity_atol": 0.002,
+        "rows_by_treatment": {
+          "unpatched": 580,
+          "unpatched_rerun": 580,
+          "self_patch": 580,
+          "donor_role": 1160
+        },
+        "target_site_count": 23,
+        "target_sites": [
+          "layer_1.router_logits",
+          "layer_3.router_logits",
+          "layer_6.router_logits",
+          "layer_8.router_logits",
+          "layer_10.router_logits",
+          "layer_13.router_logits",
+          "layer_15.router_logits",
+          "layer_17.router_logits",
+          "layer_20.router_logits",
+          "layer_22.router_logits",
+          "layer_24.router_logits",
+          "layer_27.router_logits",
+          "layer_29.router_logits",
+          "layer_31.router_logits",
+          "layer_34.router_logits",
+          "layer_36.router_logits",
+          "layer_38.router_logits",
+          "layer_40.router_logits",
+          "layer_43.router_logits",
+          "layer_45.router_logits",
+          "layer_47.router_logits",
+          "layer_49.router_logits",
+          "layer_51.router_logits"
+        ],
+        "candidate_target_ids": {
+          "CORRECT": [
+            [
+              1067,
+              3749,
+              61698
+            ]
+          ],
+          "INCORRECT": [
+            [
+              3174,
+              1067,
+              3749,
+              61698
+            ]
+          ]
+        }
+      },
+      "execution": {
+        "run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+        "runtime_model_class": "NemotronHForCausalLM",
+        "elapsed_seconds": 727.4507994230371,
+        "capture_forwards": 1160,
+        "scoring_forwards": 5800,
+        "forward_count_scope": "this loaded invocation; recovered pairs add no forwards",
+        "recovered_pair_ids": [],
+        "no_validation_access": true
+      },
+      "loaded_invocations": [
+        {
+          "loaded_run_id": "7c4bffb6-356b-4805-bcc0-d8b44bc82144",
+          "adapter_class": "Nemotron35LightningAdapter",
+          "adapter_source_sha256": "bc5f3a632ded2d93f6eaca576810cb152ebb99060c0f90f63428831d606980a9",
+          "command": [
+            "archive://execution/src/routeverify/window_donor_contrast.py",
+            "--config",
+            "configs/experiments/window_donor_role_20260908/nemotron35_lightning.yaml",
+            "--pairs",
+            "archive://runtime/campaign_20260908_D/assets/discovery/window_discovery_pairs.jsonl",
+            "--tokenizer-path",
+            "archive://runtime/campaign_20260908_D/assets/tokenizers/nemotron35_lightning",
+            "--model-cache",
+            ".cache/huggingface/hub",
+            "--mode",
+            "full",
+            "--execution-version",
+            "v1",
+            "--output",
+            "archive://runtime/campaign_20260908_D/runs/nemotron35_lightning/full_v1",
+            "--smoke-report",
+            "archive://runtime/campaign_20260908_D/runs/nemotron35_lightning/smoke_v1/execution_summary.json"
+          ],
+          "loading_info": {
+            "error_msgs": [],
+            "mismatched_keys": [],
+            "missing_keys": [],
+            "unexpected_keys": []
+          },
+          "model_class": "NemotronHForCausalLM",
+          "note": "runtime provenance; semantic repairs require a new execution version/output",
+          "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+          "python": "3.11.10 (main, Oct 16 2024, 04:38:48) [Clang 18.1.8 ]",
+          "runner_source_sha256": "3e4e96fd27c25ccbf708bc1b9bcc82e35d24015cc6a14025116f9651b8204fa3",
+          "torch": "2.12.1+cu130",
+          "transformers": "5.12.1"
+        }
+      ],
+      "recovery": {
+        "pairs_by_loaded_invocation": {
+          "7c4bffb6-356b-4805-bcc0-d8b44bc82144": 290
+        },
+        "operational_interruptions": [],
+        "final_invocation_actual_forwards": 6960,
+        "all_attempts_recorded_forward_lower_bound": 6960,
+        "additional_uncommitted_work_unknown": false,
+        "fresh_plan_forwards": 6960
+      },
+      "summary_source": {
+        "path": "reporting/nemotron35_lightning_full_v1.json",
+        "size_bytes": 127855,
+        "sha256": "f116c12d2fedacdb89ae52ceca8d48ece0af726dc62736e5ce81e637826c52ff"
+      }
+    }
+  ],
+  "source_summaries": [
+    {
+      "path": "reporting/olmoe_full_v1.json",
+      "size_bytes": 122438,
+      "sha256": "480c3a58548c9394946853e90b6d2201e16003d0ff4b0def5a8486e5ff7b9165"
+    },
+    {
+      "path": "reporting/gpt_oss_20b_full_v1.json",
+      "size_bytes": 124651,
+      "sha256": "65d86c9c1fe33ac943ec3475e4d4d62021f21771a56414a4cd159da9334a3f09"
+    },
+    {
+      "path": "reporting/gpt_oss_120b_full_v1.json",
+      "size_bytes": 125777,
+      "sha256": "147014d0a2b4554bb715aba7c0ef9b2ef731185de8c2b9d9d7007934f05e2ae0"
+    },
+    {
+      "path": "reporting/qwen3_moe_full_v1.json",
+      "size_bytes": 125093,
+      "sha256": "85d539c88fa59b892ac3225860acc45a09fb6ea3a55cc2997a32eb01317c6e76"
+    },
+    {
+      "path": "reporting/qwen36_moe_full_v1.json",
+      "size_bytes": 125436,
+      "sha256": "25a2a071b126457cd7fc1beb9779549b472d9f3978f2196410d91d5bf723f065"
+    },
+    {
+      "path": "reporting/gemma4_moe_full_v1.json",
+      "size_bytes": 131006,
+      "sha256": "3a1b77bb099b61dd87e09755a4bfd0ce882be929fe970ec919801d4eb9587100"
+    },
+    {
+      "path": "reporting/glm4_moe_lite_full_v1.json",
+      "size_bytes": 126560,
+      "sha256": "70824af5d97f22947c491deaca7ab0ce2808bb189a482f9c7cf1234a6de37773"
+    },
+    {
+      "path": "reporting/nemotron3_nano_full_v1.json",
+      "size_bytes": 125931,
+      "sha256": "683f31ff2f0406713b8aee11c736329654e5c5c3f5160c035b2efe179e283e39"
+    },
+    {
+      "path": "reporting/nemotron35_lightning_full_v1.json",
+      "size_bytes": 127855,
+      "sha256": "f116c12d2fedacdb89ae52ceca8d48ece0af726dc62736e5ce81e637826c52ff"
+    }
+  ],
+  "full_forward_accounting": {
+    "recorded_lower_bound": 62912,
+    "additional_uncommitted_work_unknown": true,
+    "scope": "Available completed full runs only; smoke and loading excluded."
+  },
+  "gpu_experimental_forward_accounting": {
+    "recorded_lower_bound": 63488,
+    "completed_smoke_runs": 9,
+    "smoke_forwards": 576,
+    "smoke_evidence_scope": "Nine passed 64-forward smoke stages verified by the execution controller before final synthesis.",
+    "additional_uncommitted_work_unknown": true,
+    "fresh_plan_full_forwards": 62640,
+    "fresh_plan_smoke_forwards": 576,
+    "fresh_plan_total_forwards": 63216,
+    "fresh_plan_is_actual_aggregate_count": false,
+    "scope": "Completed full runs plus nine passed smoke runs; excludes model loading."
+  },
+  "bootstrap_rerun": false,
+  "scientific_source_config_mutations": false
+}

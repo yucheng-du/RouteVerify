@@ -1,0 +1,27 @@
+\begin{table}[htbp]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.12}
+\caption{Exploratory residual-transfer effects by the receiver's unpatched
+judgment. Entries give mean shifts in nats/target-token; the group contrast is
+misjudged minus correctly judged, with marginal 95\% intervals from 50,000
+within-group pair-bootstrap draws. C$\rightarrow$E is matched correct to first
+error; E$\rightarrow$C is the reverse. All original pairs remain included.}
+\label{tab:processbench-receiver-state}
+\begin{tabularx}{\textwidth}{@{}l c r r >{\centering\arraybackslash}X@{}}
+\toprule
+Model & Direction & \shortstack{Correctly judged\\$n$, mean} &
+\shortstack{Misjudged\\$n$, mean} & \shortstack{Group contrast\\$[95\%\ \mathrm{CI}]$} \\
+\midrule
+GPT-OSS & C$\rightarrow$E & 46, $-.0776$ & 18, $-.0114$ & $.0662$ [$-.0249$, $.1564$] \\
+        & E$\rightarrow$C & 34, $.0436$ & 30, $.0022$ & $-.0415$ [$-.1618$, $.0747$] \\
+\addlinespace[3pt]
+Gemma 4 & C$\rightarrow$E & 53, $-.0155$ & 11, $.3320$ & $.3475$ [$.1342$, $.5708$] \\
+        & E$\rightarrow$C & 35, $.3126$ & 29, $.2733$ & $-.0392$ [$-.4320$, $.2568$] \\
+\addlinespace[3pt]
+Nano    & C$\rightarrow$E & 59, $-.0574$ & 5, $.0164$ & $.0738$ [$.0272$, $.1340$] \\
+        & E$\rightarrow$C & 23, $.1018$ & 41, $.0469$ & $-.0549$ [$-.1085$, $-.0053$] \\
+\bottomrule
+\end{tabularx}
+\end{table}

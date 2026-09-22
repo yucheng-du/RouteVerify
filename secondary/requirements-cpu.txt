@@ -1,0 +1,2 @@
+# Score-level reanalysis only; executed successfully with NumPy 2.4.4.
+numpy==2.4.4

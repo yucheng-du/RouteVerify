@@ -1,0 +1,3177 @@
+{
+  "schema_version": 1,
+  "model": "qwen36_moe",
+  "execution_version": "v1",
+  "mode": "full",
+  "passed": true,
+  "extracted_utc": "2026-09-08T22:49:39.585517+00:00",
+  "run_directory": "archive://runtime/campaign_20260908_D/runs/qwen36_moe/full_v1",
+  "contract_id": "39b94e867838e83f3c4704bb7561d744852043d6a8886cad7dd4fde9c3e27436",
+  "checkpoint": {
+    "alias": "qwen36_moe",
+    "harmony_reasoning_effort": "medium",
+    "model_id": "Qwen/Qwen3.6-35B-A3B",
+    "require_native_mxfp4": false,
+    "revision": "995ad96eacd98c81ed38be0c5b274b04031597b0",
+    "tokenizer_revision": "995ad96eacd98c81ed38be0c5b274b04031597b0"
+  },
+  "N": 290,
+  "K": 235,
+  "selected_pairs": 290,
+  "ineligible_pairs": 0,
+  "ineligible_pair_ids": [],
+  "unique_fixed_donor_pairs": 204,
+  "primary_mean_logprob": {
+    "D_clean": {
+      "bootstrap_standard_error": 0.020307870945381966,
+      "ci_high": 0.059522831383054906,
+      "ci_low": -0.019942920426918923,
+      "mean": 0.01976866827496251
+    },
+    "D_common": {
+      "bootstrap_standard_error": 0.01947060418493871,
+      "ci_high": 0.0485687077996615,
+      "ci_low": -0.02823029125024658,
+      "mean": 0.010505213766845874
+    },
+    "D_error": {
+      "bootstrap_standard_error": 0.032013611682854055,
+      "ci_high": 0.06442176015390064,
+      "ci_low": -0.06158949110172157,
+      "mean": 0.0012417592587292041
+    }
+  },
+  "sensitivity_total_logprob": {
+    "D_clean": {
+      "bootstrap_standard_error": 0.052412162415111783,
+      "ci_high": 0.15092354020957394,
+      "ci_low": -0.054064936487008705,
+      "mean": 0.047707490452790054
+    },
+    "D_common": {
+      "bootstrap_standard_error": 0.046357915142861514,
+      "ci_high": 0.1117736393372702,
+      "ci_low": -0.0710285878996793,
+      "mean": 0.02112381267762775
+    },
+    "D_error": {
+      "bootstrap_standard_error": 0.07381304620931971,
+      "ci_high": 0.14108976278219815,
+      "ci_low": -0.15020381252252332,
+      "mean": -0.005459865097534554
+    }
+  },
+  "bootstrap": {
+    "conditional_on_observed_donor_matching": true,
+    "confidence_level": 0.95,
+    "donor_assignments_attached_to_receiver_pairs": true,
+    "intervals": "marginal two-sided percentile",
+    "n_resamples": 50000,
+    "receiver_roles_resampled_jointly": true,
+    "seed": 20260908,
+    "unit": "receiver_source_component",
+    "weighting": "receiver-pair weighted, including within each resample",
+    "cluster_pair_counts": [
+      1,
+      1,
+      2,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      3,
+      2,
+      1,
+      2,
+      1,
+      2,
+      4,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      2,
+      3,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      3,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      3,
+      1,
+      2,
+      2
+    ],
+    "draw_method": "sample_receiver_components_with_replacement_keep_all_member_pairs",
+    "estimands": [
+      "d_clean_mean",
+      "d_corrupt_mean",
+      "d_common_mean",
+      "d_clean_total",
+      "d_corrupt_total",
+      "d_common_total"
+    ],
+    "indices_sha256": "be76480c996442937f529a2df12989fe84876e622d5321be9b228f7861c30dba",
+    "method": "receiver_source_component_percentile",
+    "n_clusters": 235,
+    "n_pairs": 290,
+    "rng": "numpy.random.Generator(PCG64)"
+  },
+  "descriptive_heterogeneity": {
+    "origin": "Deterministic descriptives of saved analysis.per_pair values; no new inference or resampling.",
+    "metrics": {
+      "d_clean_mean": {
+        "n": 290,
+        "mean": 0.019768668274962528,
+        "sample_sd": 0.3452637820692078,
+        "min": -1.312147113184134,
+        "q25": -0.13239356564978758,
+        "median": 0.017791618903477968,
+        "q75": 0.17030402847255283,
+        "max": 1.5168682684501011,
+        "mean_absolute": 0.2371482545579516,
+        "fraction_positive": 0.5344827586206896,
+        "fraction_zero": 0.0
+      },
+      "d_corrupt_mean": {
+        "n": 290,
+        "mean": 0.001241759258729201,
+        "sample_sd": 0.5409157399025482,
+        "min": -2.576017200946808,
+        "q25": -0.1976619896789392,
+        "median": 0.0013052125771840228,
+        "q75": 0.2039369394381841,
+        "max": 2.7807283888105303,
+        "mean_absolute": 0.33853160665375875,
+        "fraction_positive": 0.506896551724138,
+        "fraction_zero": 0.0
+      },
+      "d_common_mean": {
+        "n": 290,
+        "mean": 0.010505213766845864,
+        "sample_sd": 0.326764684191782,
+        "min": -1.4682282644013565,
+        "q25": -0.11570438075189787,
+        "median": 0.010611469546953883,
+        "q75": 0.16517664926747483,
+        "max": 1.2445321672518426,
+        "mean_absolute": 0.22584068872229912,
+        "fraction_positive": 0.5241379310344828,
+        "fraction_zero": 0.0
+      },
+      "d_clean_total": {
+        "n": 290,
+        "mean": 0.047707490452790054,
+        "sample_sd": 0.9003986725350793,
+        "min": -3.622306198813021,
+        "q25": -0.3750259429216385,
+        "median": 0.002904459834098816,
+        "q75": 0.46411617286503315,
+        "max": 3.3012078255414963,
+        "mean_absolute": 0.6256162511216926,
+        "fraction_positive": 0.5413793103448276,
+        "fraction_zero": 0.0
+      },
+      "d_corrupt_total": {
+        "n": 290,
+        "mean": -0.005459865097534554,
+        "sample_sd": 1.2544939752341107,
+        "min": -5.875011920928955,
+        "q25": -0.499997578561306,
+        "median": 1.3381242752075195e-05,
+        "q75": 0.49999405443668365,
+        "max": 7.625110842753202,
+        "mean_absolute": 0.7841691693307126,
+        "fraction_positive": 0.5103448275862069,
+        "fraction_zero": 0.0
+      },
+      "d_common_total": {
+        "n": 290,
+        "mean": 0.02112381267762775,
+        "sample_sd": 0.7830980384551276,
+        "min": -3.4375076964497566,
+        "q25": -0.29274723678827286,
+        "median": 1.1481344699859619e-05,
+        "q75": 0.38897118787281215,
+        "max": 3.375048973830417,
+        "mean_absolute": 0.5436659233604462,
+        "fraction_positive": 0.506896551724138,
+        "fraction_zero": 0.0
+      }
+    }
+  },
+  "technical": {
+    "all_atomic_pairs_passed": true,
+    "four_cells_same_invocation": true,
+    "raw_four_cells_match_saved_per_pair": true,
+    "saved_all_router_dispatch_verified": true,
+    "max_self_candidate_score_delta": 0.0,
+    "max_rerun_candidate_score_delta": 0.0,
+    "identity_atol": 0.002,
+    "rows_by_treatment": {
+      "unpatched": 580,
+      "unpatched_rerun": 580,
+      "self_patch": 580,
+      "donor_role": 1160
+    },
+    "target_site_count": 40,
+    "target_sites": [
+      "layer_0.router_logits",
+      "layer_1.router_logits",
+      "layer_2.router_logits",
+      "layer_3.router_logits",
+      "layer_4.router_logits",
+      "layer_5.router_logits",
+      "layer_6.router_logits",
+      "layer_7.router_logits",
+      "layer_8.router_logits",
+      "layer_9.router_logits",
+      "layer_10.router_logits",
+      "layer_11.router_logits",
+      "layer_12.router_logits",
+      "layer_13.router_logits",
+      "layer_14.router_logits",
+      "layer_15.router_logits",
+      "layer_16.router_logits",
+      "layer_17.router_logits",
+      "layer_18.router_logits",
+      "layer_19.router_logits",
+      "layer_20.router_logits",
+      "layer_21.router_logits",
+      "layer_22.router_logits",
+      "layer_23.router_logits",
+      "layer_24.router_logits",
+      "layer_25.router_logits",
+      "layer_26.router_logits",
+      "layer_27.router_logits",
+      "layer_28.router_logits",
+      "layer_29.router_logits",
+      "layer_30.router_logits",
+      "layer_31.router_logits",
+      "layer_32.router_logits",
+      "layer_33.router_logits",
+      "layer_34.router_logits",
+      "layer_35.router_logits",
+      "layer_36.router_logits",
+      "layer_37.router_logits",
+      "layer_38.router_logits",
+      "layer_39.router_logits"
+    ],
+    "candidate_target_ids": {
+      "CORRECT": [
+        [
+          50564,
+          43347
+        ]
+      ],
+      "INCORRECT": [
+        [
+          37163,
+          842,
+          43347
+        ]
+      ]
+    }
+  },
+  "execution": {
+    "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+    "runtime_model_class": "Qwen3_5MoeForCausalLM",
+    "elapsed_seconds": 971.6895128539763,
+    "capture_forwards": 1160,
+    "scoring_forwards": 5800,
+    "forward_count_scope": "this loaded invocation; recovered pairs add no forwards",
+    "recovered_pair_ids": [],
+    "no_validation_access": true
+  },
+  "recovery": {
+    "pairs_by_loaded_invocation": {
+      "facc1740-9b26-4f48-8256-404c6c6e7629": 290
+    },
+    "operational_interruptions": [],
+    "final_invocation_actual_forwards": 6960,
+    "all_attempts_recorded_forward_lower_bound": 6960,
+    "additional_uncommitted_work_unknown": false,
+    "fresh_plan_forwards": 6960
+  },
+  "loaded_invocations": [
+    {
+      "loaded_run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "adapter_class": "Qwen36MoEAdapter",
+      "adapter_source_sha256": "e203916d8351a7a1698db1efbecde6938969f4252b61f25ed706a83c705062e6",
+      "command": [
+        "archive://execution/src/routeverify/window_donor_contrast.py",
+        "--config",
+        "configs/experiments/window_donor_role_20260908/qwen36_moe.yaml",
+        "--pairs",
+        "archive://runtime/campaign_20260908_D/assets/discovery/window_discovery_pairs.jsonl",
+        "--tokenizer-path",
+        "archive://runtime/campaign_20260908_D/assets/tokenizers/qwen36_moe",
+        "--model-cache",
+        ".cache/huggingface/hub",
+        "--mode",
+        "full",
+        "--execution-version",
+        "v1",
+        "--output",
+        "archive://runtime/campaign_20260908_D/runs/qwen36_moe/full_v1",
+        "--smoke-report",
+        "archive://runtime/campaign_20260908_D/runs/qwen36_moe/smoke_v1/execution_summary.json"
+      ],
+      "loading_info": {
+        "error_msgs": [],
+        "mismatched_keys": [],
+        "missing_keys": [],
+        "unexpected_keys": []
+      },
+      "model_class": "Qwen3_5MoeForCausalLM",
+      "note": "runtime provenance; semantic repairs require a new execution version/output",
+      "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+      "python": "3.11.10 (main, Oct 16 2024, 04:38:48) [Clang 18.1.8 ]",
+      "runner_source_sha256": "3e4e96fd27c25ccbf708bc1b9bcc82e35d24015cc6a14025116f9651b8204fa3",
+      "torch": "2.12.1+cu130",
+      "transformers": "5.12.1"
+    }
+  ],
+  "source_artifacts": [
+    {
+      "path": "runs/qwen36_moe/full_v1/execution_summary.json",
+      "size_bytes": 33325,
+      "sha256": "164b57db6efb5967d40e9784dd9a5c787f9179c7116c933b037bafe781596509"
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/analysis.json",
+      "size_bytes": 370103223,
+      "sha256": "234fe1ebeae7b8b6ab3918f321cbfd24d852af5a2a0ee1ede3566284ca9c5d7a"
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/run_manifest.json",
+      "size_bytes": 315538,
+      "sha256": "39676b90273008881f26b5a39384aad70b7567fab5edfa195c5710894e251225"
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/attempts/facc1740-9b26-4f48-8256-404c6c6e7629/runtime.json",
+      "size_bytes": 1345,
+      "sha256": "26ca395d1141bf169efc09df6ca172b88c7431733dc720f4d95b0b4d27e2e243"
+    }
+  ],
+  "raw_pair_artifacts": [
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/015f8dbf5a851ba78d091c43cc14574e.json",
+      "size_bytes": 1753897,
+      "sha256": "0be8971d302b4ef89440dec2ca00e5d4bacdbf12b130ffcffedce7ae859c555e",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_1608",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/01888065d1566914a1ee4e12c97e1ffc.json",
+      "size_bytes": 1458023,
+      "sha256": "7c893c9cfdaa5c9b8e73594aa561bbc960fbcd8196caeac53bd0b45a3fbfd66d",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_2475",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/0379a5bb7d95fe2f8d95d55b23d04004.json",
+      "size_bytes": 1071733,
+      "sha256": "fb99aaffcf895274992c51b180cd3806d4e8e7a2ba743ce6251b8c88909da50b",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_43",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/03d08b0e77a75d2e175cbc2a848acf72.json",
+      "size_bytes": 1818810,
+      "sha256": "789f598873a8a7d56786f3ad21a4c11d54705f06d78a19d37fbd5dc37c2567cd",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_289",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/0414031f2b714310d3ab6ee396d0b0ce.json",
+      "size_bytes": 2157789,
+      "sha256": "b64f8fc113b2217a38ceb2f4793df5552fd427fc4f6f3e3b5275f97c4a9bd56f",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_145",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/04c7cc051aadeb1afc4b6428e7b45502.json",
+      "size_bytes": 1566966,
+      "sha256": "4c4c8b334eedfd7e6aa2cd31b2a8388c7b4b0fc07c651ca066b750c24f64dbb3",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_1721",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/05377e0f91a406c68a088081ba87e609.json",
+      "size_bytes": 1589758,
+      "sha256": "1d8cae69ecdd62a248640cc6f98f6fd21bf1ee6e0bb98f724dd1b5c35b3443b2",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_335",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/07c79eef0a4ce3c1ad9ee5a8acf1a7bf.json",
+      "size_bytes": 2269675,
+      "sha256": "adbf62fef84d4630465d80e237edbff7a5e24eda73b3e672b9eb8c6820e5214b",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_380",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/07f4f57dc5b81425a73a63a8827114a4.json",
+      "size_bytes": 1432797,
+      "sha256": "c5693629910dcaf66a451fdbf362a35df57bef663eaa2167616cd6dd56c74502",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_86",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/087f6129499caee88e4f3bc3a9281301.json",
+      "size_bytes": 1192798,
+      "sha256": "34ece19d8279dcfe5ddb8b61a1bfc02a5dd628e207f5b13962fa561ed139caaf",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_47",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/09717d8ae7be6f4ae8e53a3efbc739c0.json",
+      "size_bytes": 1190320,
+      "sha256": "9f6a69341e10fdc89697f8d8befcdc29e4d4afe4255b7906fd9dbed5378d2ec6",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1785",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/09c8d3697923b045d551cda4bd7d6697.json",
+      "size_bytes": 1033642,
+      "sha256": "cb612458905863d65873daa90ec577309ff5ae1163c98f58e9470a5205bc4cb7",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_112",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/0a4c7a5776e1a9ab9968079b1fd19319.json",
+      "size_bytes": 1821813,
+      "sha256": "23feb9cc415f599e8bc303ef96b04a697e7f0f236a2d5d8840d89fd108b04055",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2226",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/0ab679d3cd041902f9a8eb73b8550fcc.json",
+      "size_bytes": 1604500,
+      "sha256": "5f9cf100d77af4e45b05085a3c23d4ec937ef3188487f2b917fdecbc3d7bc169",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1606",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/0bc210b1e642d86e6cf64a310c21c3ef.json",
+      "size_bytes": 1326725,
+      "sha256": "7931ffb2ec20ef49d3c9e5132559e21cf67450bb9fdd3aa9fbd13e9de696ec41",
+      "pair_id": "prmbench/preview/domain_inconsistency_prm_train_p1_329",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/0df248782db669d2021da4af960a5116.json",
+      "size_bytes": 2000342,
+      "sha256": "1fff1bf1af77c06cf8bd40f02f29170ff8b393f32ca9c722738bfb4ce726424c",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_152",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/0e0119bc4f068db7ad4143c4a67ec71e.json",
+      "size_bytes": 1407099,
+      "sha256": "9f12fa26533522725b1aad35ca31f02816c64ccf647c8469aba02e5c294ffcca",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_2201",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/0e3496352b00a83891ad4f104a90c28b.json",
+      "size_bytes": 1360839,
+      "sha256": "fb5973b0532f8bbbe9af3415e36b0a86021e6050a21608c188ffca988f68432f",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_72",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/0ebd885b2100eb6a9daf6252e9dc47bd.json",
+      "size_bytes": 1643883,
+      "sha256": "47e06865f64c9799c3188e787eb8991018c78a09a2be30d93ad949aa7da461e0",
+      "pair_id": "prmbench/preview/step_contradiction_prm_train_p1_272",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/0f6075b954e2366f30784dde882e64b7.json",
+      "size_bytes": 1211934,
+      "sha256": "d15d16f7f46909a3ff7210e42bab33de8a45a702fe5f8f8c467856fa29d6a8ed",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_301",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/0f9ffbc64936e9d87b33d2d2af1f9447.json",
+      "size_bytes": 1653269,
+      "sha256": "b965943b4c470a031d0f5e780c69cb9822ab5c23ee478218d7bf871baefaf343",
+      "pair_id": "prmbench/preview/missing_condition_prm_train_p1_272",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/110d868705bfb2c868038ec26e22bf2c.json",
+      "size_bytes": 2550187,
+      "sha256": "b0a0f3d8b9b11bb7c5b2ced1d4099f37734e4ab72fdb63a39e094791d2411e3c",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_290",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/11bafb271bd62c9d0da85f8640fb894d.json",
+      "size_bytes": 1512304,
+      "sha256": "d83ee6aadc8bdb233259045fa1519aabbb631a76cc8626f79b318329d210d759",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_415",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/1284723969b52c7951826876f566ae2e.json",
+      "size_bytes": 1347246,
+      "sha256": "34f8b43dc1d0dc4606ff11df9ae390500368b283d516f895103517cfef52493d",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_99",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/12cd8da3bcb5ef8a1241529c84004dd0.json",
+      "size_bytes": 1561797,
+      "sha256": "43e5d9326f2a6aa153b93d81955b3536ed848124a41b9929f89947f762b2e900",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_160",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/130447f67c9d86860d7adbd1544c2480.json",
+      "size_bytes": 1471003,
+      "sha256": "5798fee49cfe43f8288730bfd8ead36c1d132fd6c91c38dd8487920bbb120a42",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_1852",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/1616d87297994b7317947a374973c053.json",
+      "size_bytes": 1803446,
+      "sha256": "657eeca82d928c27c682c8abbad8b6ac56cd416d32a9f6c0ae8ac1256d5c2cfb",
+      "pair_id": "prmbench/preview/step_contradiction_prm_train_p1_378",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/1729ebedb6f8e2fa74afeb6dfb2e84fe.json",
+      "size_bytes": 1300850,
+      "sha256": "887ec1c710aeb5f8ca248fb8e5448e00d2877d87b1387feda18b40751497a9b1",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_442",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/192d352c8ee3fbc429a2ba02b0679012.json",
+      "size_bytes": 2096688,
+      "sha256": "057c84f561a4bd4db7d8ca70cd260a38c907923a96ccca7828e768ad994a9482",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p1_58",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/1a6f4bc34d5f620c801eb95238174a9e.json",
+      "size_bytes": 1814166,
+      "sha256": "4f5b4d22976f80ab1985335393354112e7a0d7036536fbe044b2d19cd05b44ad",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1956",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/1ace88222699528f5fe14f51ae82399a.json",
+      "size_bytes": 1430779,
+      "sha256": "0d31137cb5ccb5347d69b354765df81064ca3c981b43153f3ef5c1858a6710a0",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_3",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/1adb3a4dd476c9845173b1163e251a19.json",
+      "size_bytes": 1388140,
+      "sha256": "df67d4206b13490b6580cfee883693ea6b266c16a7499a77f159c85d9d42ce33",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_77",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/1bec3ded58023cb47d6da0137bf51d8e.json",
+      "size_bytes": 1099042,
+      "sha256": "f15b58091ce20c2b2a20e8d114a09e39b0528d4d8b2a6fc60952bddea9c52ba5",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_376",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/1ca19bdb81d65439984084302b486280.json",
+      "size_bytes": 2439720,
+      "sha256": "e281feef948f3721a9a8f0151433dc2d2e9d8665a077469ace46dffcfe0a2a58",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_430",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/1db2fab9c083c3afa9c26c9a4c1578d1.json",
+      "size_bytes": 1394280,
+      "sha256": "538052c24a2aba66b7fda2e187a924ad96e4ee4e1fd2d3e9174d8d1644da171b",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_45",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/1dbce289fb90474ed494c4d5679c5ab3.json",
+      "size_bytes": 1285355,
+      "sha256": "3837c1597bcec6ab5d9c25ceeaea355acb5fbfe387f6f37cc97456ebfb05a87a",
+      "pair_id": "prmbench/preview/missing_condition_prm_train_p1_459",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/1f8794a8c8159810ee63e0ceddddcb3b.json",
+      "size_bytes": 1778460,
+      "sha256": "15278eb9d09168cfc380e5fd5e0690c10dbc22b0545852fca4e92bdd2a77ab8d",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_1228",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/1fd275cfc201e92447a8cb70ca52f62b.json",
+      "size_bytes": 12283781,
+      "sha256": "4c2eef4d382c44b3b4f8442d80734b4cfb62127534810ba86a77549e3839b396",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_1958",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/21321a6836accd8c09cbe9fd41f6e09f.json",
+      "size_bytes": 1942576,
+      "sha256": "311b555669662157ce10af681864b74db731007bf6d6f147b8777e614664232b",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_153",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/21eec83771566e73eab489ddb1808355.json",
+      "size_bytes": 1954973,
+      "sha256": "98a22742578f089e806908309bc88633978b1f27db4e328f1ab5c3688a457955",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_1529",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/22becc42697a2e0f8236415abdaeb41c.json",
+      "size_bytes": 1303455,
+      "sha256": "70ae4eaf6530e941531464d43893f303a49dc991cbe738f960351e7b2fa45f6f",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_442",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/230fc53dc130d8e1c26942e11f4912ae.json",
+      "size_bytes": 1594935,
+      "sha256": "97fddeae17f1c01eb68df6893f7f6f8391199e0625f381de771918ef16d05859",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_12",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/23ed8ae9111507b7816760e2a32b665a.json",
+      "size_bytes": 1660526,
+      "sha256": "3ffbd2e0b555994a7aad5bc43bb3669388720a79c12f5109de0c8f59bdaef0ae",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_901",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/248575244f86acb87635d48716a10d01.json",
+      "size_bytes": 1643266,
+      "sha256": "c61c67de3e07d68b402ff0295cd94d6f9089a0a36ddddee0c373ad658c1f8482",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_1723",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/25d2a2963cde9330dc9c93e11ed5993e.json",
+      "size_bytes": 963293,
+      "sha256": "879f3a331bcf62310a279cf30e805b4a156da78d2257b7c59e407fa0be48629b",
+      "pair_id": "prmbench/preview/deception_prm_test_p1_39",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/267685667dad377f9eb0e646ba653116.json",
+      "size_bytes": 1513070,
+      "sha256": "fa8669d1816ddfeff69730dd04807ea3fc41b6998c0e74672e9db4c7b5de57b6",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_282",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/26b3987c37ed535abfccf1e200c86e62.json",
+      "size_bytes": 2239598,
+      "sha256": "c47f448c3ab87ac9cb5b76301689321959fe6f66eaf72fe74fdd6f4cf64c1b6c",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_116",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/2724e054f97be1aab16b119b79f4f0ec.json",
+      "size_bytes": 2043004,
+      "sha256": "8adc8f62070720c318582522f6e2b99b3481064a9e7900784cc5e2d37b268680",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1716",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/28321e99c283f3fbd3a0e1e0afd167af.json",
+      "size_bytes": 1283844,
+      "sha256": "ecc569ad153915b9eae71f1b614de9cc68e5a0ffcb2c7db6ab9ab0b10c382bbb",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_411",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/28ae60a63b344f25b575447880a3ced0.json",
+      "size_bytes": 1334911,
+      "sha256": "839d856d699fdaae8b46995b1195a0c35863804b210aa9a789a485d82c837324",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_58",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/2a41c3b8b36210338aee7e59ea84db15.json",
+      "size_bytes": 1446710,
+      "sha256": "055d5bbd345a42828cb2078db1f26bc956563cc1918e00eb0116a8fedf46ca5e",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_131",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/2a8e40dfab6d0bac57c9499e5fec21e6.json",
+      "size_bytes": 1569751,
+      "sha256": "8a3be1e10aaee2d9a754fa242709324b8b7d83d927ad58ea3d20b6e6e8002037",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_381",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/2ab780078fbe2fee368f8e5037a79775.json",
+      "size_bytes": 1514641,
+      "sha256": "d19cee69f542ab2a65a2f2f2292d4c9249238ba918828b7d01397e91dcbe718c",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_287",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/2b03fb042aac84588f727fcee49313c4.json",
+      "size_bytes": 1979331,
+      "sha256": "2a11adc570fb2916386228138508bc0188d5a9e91768a00fbbaef4b8443e41f8",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_106",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/2c017bfc7b71abb06707b2568253bdb1.json",
+      "size_bytes": 1751693,
+      "sha256": "63148574427fad4b553b30825cea1a001a3937133eea535d13dfb6553ca9a621",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_182",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/2d75e4252cb58fe40627fe6a4277c99d.json",
+      "size_bytes": 2052332,
+      "sha256": "a7adc3f8cd18ea5dcd02fe5616cee325ddc5ba5f2f9490adbeefb8983b4e9dc8",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_106",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/2e9174b4028f313139a2d4819fff6866.json",
+      "size_bytes": 1794441,
+      "sha256": "4d6933109c8ddb4fbeff8bfe355eef51627f070af480a9b78bf19f27ac527535",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_1956",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/2e9239b1d2317e5e1123ebd3de36281f.json",
+      "size_bytes": 1360314,
+      "sha256": "f0ff68caf0b89864b5f68fc9038db1cbcdbe0311050cd1a96e93f29e787f988c",
+      "pair_id": "prmbench/preview/deception_prm_test_p1_0",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/2ed9356a6fce1935026cd10dc1783ad4.json",
+      "size_bytes": 1541949,
+      "sha256": "a1679c60c12189eaa4a8fb6f9faaf76e13ec9b2284c5153189d76437e03ae051",
+      "pair_id": "prmbench/preview/step_contradiction_prm_train_p1_20",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/2f8fc14479d0248086ae90d7aafa402b.json",
+      "size_bytes": 1469334,
+      "sha256": "0304c87ac42b1b997ea2262b9ca8c49fa47ffbb36bc6203b400716b0d88f2ac0",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_246",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/2f9a9fcf8c51ab2582cf80bfcbdf2c95.json",
+      "size_bytes": 2018806,
+      "sha256": "6fb87daaf29c9d7cf796558d352d96d752d4e4446f97c67e340f2365e6d790d4",
+      "pair_id": "prmbench/preview/missing_condition_prm_test_p2_2490",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/2fa8f6b710ccff71887c775a07246ffd.json",
+      "size_bytes": 1836855,
+      "sha256": "42135f10483c2b9eaf40fcc99703ff2c138760259a5019d7ac53d68a60781d06",
+      "pair_id": "prmbench/preview/missing_condition_prm_test_p2_1599",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/303759e1fb6a8dcf20fb950ab53c9d4f.json",
+      "size_bytes": 2486480,
+      "sha256": "6cc3300bbd10948225686c78cf7babc9ad52e2604fdf984981eb357262d26713",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_173",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/308436c37c97f4050038310e9790caac.json",
+      "size_bytes": 1805457,
+      "sha256": "d2166392d16a0f9682c8535f7e9481a86f5561f0b8d1365ff10d4faeb466fb17",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_93",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/315f1a919afb7106348155e10d0a7c7a.json",
+      "size_bytes": 1673269,
+      "sha256": "20582b96c96d9add34f36dc31591b216b19f03e114574e2ce669435c8db8bae0",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_360",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/31d94ee87c73851d9130924b71b0d982.json",
+      "size_bytes": 2613748,
+      "sha256": "d3362ba98c8a5c3979c3b754ea7853c23720f4ca4b7006494dc1cc310059133e",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_1218",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/333d5ca44cfbb861a9198299b118560e.json",
+      "size_bytes": 1929309,
+      "sha256": "a07e3c79746362ad31f343a5382f15ac18a8f285703c3d70e6507084787ac87c",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1559",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/34473f871d02fa0805a6e7f0707afea0.json",
+      "size_bytes": 1669131,
+      "sha256": "7ce2f4d2376fe6f23a78bac7c07305b8721c9f2cc100146dc7297ad9ab7253aa",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_2208",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/35dfb141ca9fe55cdbeb894f7bede576.json",
+      "size_bytes": 1616006,
+      "sha256": "2528b701081db68bc9e0db83a440a67b017098fe96c65fcb3aced1b8ed9ca276",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_105",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/369c50ee74fafdfb753b162c1c61311a.json",
+      "size_bytes": 1263378,
+      "sha256": "cc713983e2c069fd3404ba592d3ab97f3bb9f334fff1cb829fdd75f0276af33a",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p1_81",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/36c021883ee0ef0db5ea33f79c888d4a.json",
+      "size_bytes": 2345754,
+      "sha256": "d6bc8d233d8ea48d50be9c53307cbedd081bc64cc3a3beea53ea69a705062c60",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_2532",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/36cc9f85a2d26512b19d61dfa5853b48.json",
+      "size_bytes": 1598182,
+      "sha256": "0827f1ee5b6775f8e6757bf8a58d75db19f25db8728fd604140fbec88ff8c1be",
+      "pair_id": "prmbench/preview/step_contradiction_prm_train_p1_146",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/37005309f9393041e08e10a94059498f.json",
+      "size_bytes": 1309968,
+      "sha256": "33a928e92ed717a2b39c92517fa75515f604c73981a943dbfffa14c3f22ddb48",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_83",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/3764f9b6695c5b4e1ea24d398a5d0c86.json",
+      "size_bytes": 2025051,
+      "sha256": "54262f1f9c623ecac62e9fe1d4c08f96283e9fd34d111333310dc09faa6a4999",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p1_14",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/37db107b8d20c4451c175b1e47d4e6fe.json",
+      "size_bytes": 1381289,
+      "sha256": "58cda28722c09d8eb442d4d3a04d5075b3df3394ab107d8064bfaa48327457e8",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_61",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/386d00e673bc17269e4f970c679f2eb0.json",
+      "size_bytes": 1487335,
+      "sha256": "ea9a5172fde0835e43f258fbb75f8453c9c4e7df73010f37c24c9de376b9977b",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_282",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/38ea52def2a48bd604c4d2f20a628c35.json",
+      "size_bytes": 1695059,
+      "sha256": "82edd85e4db9f88c1fdec796e3fd83296623b8173a3aba0b980f94eb01b66d8e",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_437",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/3910cb2af1845086a0090db2a68b5cad.json",
+      "size_bytes": 1283518,
+      "sha256": "742cc7717d3400fb803904c84f935378530e4b27891dbbcde96b661aac9db1ea",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2709",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/3a7060cc53c9a541687d28cc648070e8.json",
+      "size_bytes": 1228460,
+      "sha256": "49a6b24bbedc04b3668b9a8b77cd9cfbe2e819a550cfc0762cc1f192521b62f5",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_376",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/3cc42d308c010dcd14a0ad0e1b73f824.json",
+      "size_bytes": 1823532,
+      "sha256": "6281bf969b6f7815f2a1bc056d7240954ed43cc811225e23ea338eec8119233f",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_461",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/3d8fd12a487fb6ef895d17b17c4c1602.json",
+      "size_bytes": 1210289,
+      "sha256": "b928c0d1ff6d8f176adc4f6331750d8898781827356bbac955033f94e327ee15",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_29",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/3fb86b58842405d5fffd23879ac51612.json",
+      "size_bytes": 2134561,
+      "sha256": "1cf543c5e501a653aac114752fe6b5cfed5da0863b348e9749979540ef4eda23",
+      "pair_id": "prmbench/preview/domain_inconsistency_prm_test_p2_2628",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/40989b4a5bc6238f4af2fd9e39d770a8.json",
+      "size_bytes": 1400289,
+      "sha256": "561f92c7232a78bc571f6e42ea2b034277310c9ae5d9f4932fd2cdf99e61b1f0",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_98",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/4129f235b575d4d645f2dc594281b40f.json",
+      "size_bytes": 1892477,
+      "sha256": "94e94018adca17f2f0bb4479f58aea218e29ea38d5725b2e4fc06b9fcd86a251",
+      "pair_id": "prmbench/preview/deception_prm_test_p1_12",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/418430e3f990e95d58a84efd173717f1.json",
+      "size_bytes": 1670424,
+      "sha256": "19568f00cb46e7f3b857d465550694577df9ff9541711a98f9f6eed1841c0a74",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1634",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/42a16064c7dd1db090c974b9197a22ef.json",
+      "size_bytes": 1842410,
+      "sha256": "9e917d95c372d901ed82709104c8fd48d61fc92eefc25e71e1f4eca8469ab02b",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_76",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/4410b008229bf1565c649d31f13e1062.json",
+      "size_bytes": 1629332,
+      "sha256": "11c84d1389dcf40c324e9faceded14e58edf9238c2cafc18cf59dcf6fe14bc9a",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1292",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/460391c22185cf19be2572a098064ab4.json",
+      "size_bytes": 1519407,
+      "sha256": "5d7aa13b88aa9a8f871b44495532156ba956f40cba4ad7713d240c7d5a31b866",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_142",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/48e05be26a1546ff4de98845639d21e3.json",
+      "size_bytes": 1360034,
+      "sha256": "94ea399c2034ca8b826a359cfcdb9d39b0405d9ed30545d293f87883f4fc0565",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1286",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/4a2040cf0a28f3802df61e8f9aa7324a.json",
+      "size_bytes": 1661534,
+      "sha256": "8a01622f0dabe8993eec2e05f15372ba9f11c9fd6e0e1cdde53ec2f754140885",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_414",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/4c4c063f5f0a1f8f77cbffed2f6c683e.json",
+      "size_bytes": 1558105,
+      "sha256": "2fef386478ec6ace25e72daeb67b935377547f91cce10f565542093788788ffd",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_88",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/4c5879940c2949719e06e66c6bcccc44.json",
+      "size_bytes": 1657526,
+      "sha256": "588e68c0b2efb57c03b5d71513650e2678cd669c4888a00d3bee221f99c787b9",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_261",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/4fc537ab970d0a1a4810ce6b514e54b9.json",
+      "size_bytes": 1565505,
+      "sha256": "0288bca4460b9e3b2ee0dbfc0f982891d54fdaca563d65a87ebe76e495fe1e10",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_416",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/5192abf4f2062dac9a7e6373bd6d65e6.json",
+      "size_bytes": 1786317,
+      "sha256": "a78a3f33a3eb4288cc2560e5256134c70b085423cd8cadcb3e90ecceb4ca2107",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_671",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/52bd820b734762d016d0cb29b127ded6.json",
+      "size_bytes": 1586508,
+      "sha256": "87a6559482260bc3aa151d825b05699c9ad7515c8a09c23e5a8802de9ac56a32",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_399",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/535a40637e553e7e4d590857ee640224.json",
+      "size_bytes": 1615566,
+      "sha256": "401bbfe320038c7d3fb90be5362588fcbe03bc00e7f8fc44aa6dcc9988921379",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1759",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/54cb09bdcc79ea65d552fb3ce665da01.json",
+      "size_bytes": 2262052,
+      "sha256": "af01c951732140ec01c13140a2eb8457c3174ce824a4bb404b506befe73b0d9f",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2127",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/55bcdbf705ab7960f2b366e53a40b872.json",
+      "size_bytes": 1571536,
+      "sha256": "6d4b67c6b9f8dbee09036b5206cdf8239addc639626562d4b19e9bcdc3c35ab1",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_81",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/55f41c901c1e21735b17137ec1c1d277.json",
+      "size_bytes": 1621747,
+      "sha256": "b3e2a8507b264ad8825a1cf56bcd3af4fd8e77d3a182f554439b27edbad2c33c",
+      "pair_id": "prmbench/preview/circular_prm_train_p1_211",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/5730ca7f1171b4179af35b2c232847ab.json",
+      "size_bytes": 1552319,
+      "sha256": "e339918b3a05ec99aecd1eb40b911e649d0026351aacf1a67aaf4763a971fbdd",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_118",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/57601452b8b637f62cd93b03c632370a.json",
+      "size_bytes": 1460896,
+      "sha256": "92d4283907957cbe2c3dea4e86badb5d5e4c97c8c80783a4922046c020ca38a2",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_441",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/59704f6a5b95a036acfad851ea0f670c.json",
+      "size_bytes": 1626073,
+      "sha256": "a3200e886c59d30b7d32426ad8e98adadabcaa509a05c28a06d1254eb8aa343f",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_1058",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/59f9b597462e48c9c16bf206a85444aa.json",
+      "size_bytes": 1688385,
+      "sha256": "951daaaca57fe20ee7c9172d5318fa7a93bb24efedbe9af8bfb39c6b99453ba1",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_2126",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/5a88a2599ec8b895b8e541566d504648.json",
+      "size_bytes": 1532732,
+      "sha256": "5948e4f28618dc5c43aef7711cd2ad9e03c88984dc686d4367d88d88add89b45",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_96",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/5b7767c54e0e23052dae2bcee7a2b0fb.json",
+      "size_bytes": 1202239,
+      "sha256": "07b31b9e6e3134d791b30e43087c72efbe784c38139d1be6cc6f4fe18583be2a",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_293",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/5b8bb2e82ade53c40dde75d770492dbd.json",
+      "size_bytes": 1399862,
+      "sha256": "cc44d2e4012c4dd01dc5a74f2e4ac25f1564b7036a91554f5be6bd559aa3590b",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_430",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/5d7030bbf5e299dc0896db46a62b9f74.json",
+      "size_bytes": 1366634,
+      "sha256": "c44d6c7ffbdb71084a39899b5527e6277f83e13c918155e7b8d6a998e54a53bb",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_450",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/5db32fe124538c17f8d39e2d935e84f6.json",
+      "size_bytes": 1689621,
+      "sha256": "31c058ee63e6c8c49893396f10157028ada28c39635eccb53ce43de2a8022deb",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_1927",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/5e52fc02038f9fcbddfd16711617a05d.json",
+      "size_bytes": 2007972,
+      "sha256": "eee09fb4df10a2a07df06b74eb2b78fbef56b792a51ba0010226a02c992ab184",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_64",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/5f96c990af978a519c2703dbc7406551.json",
+      "size_bytes": 3386529,
+      "sha256": "763980d90fe40c501d1f9ef1689defec383991d989922293e6c1945ddc9a478c",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_736",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/60f1eddd195f8e97ed1822589ec876a9.json",
+      "size_bytes": 1507588,
+      "sha256": "92d2c0d7c9bebf022042331edea354fbd75c99bdd73389a937bf251ce5bbcc80",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_244",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/6259a198d633d67d79fcd0260250248d.json",
+      "size_bytes": 1628932,
+      "sha256": "1e6ef6148acfd63318fa42e1e437ec7f9e221f59d4b60c9f9b4cf421b53727ce",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_783",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/6279bbff5e5dc1eb562641a88c815195.json",
+      "size_bytes": 1430661,
+      "sha256": "4ddc84d0565bb0a21b1e80512f3f4b80acaacaeda6822fb2a94eb4d9acd010cd",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_329",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/638e2c5f632bf1623d094ff4d1bae683.json",
+      "size_bytes": 2068525,
+      "sha256": "88ea533ffcff705201c7875863c7ced20ee3124cc5dddc33b149844454b80c28",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_2095",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/63e401a0bd929ec46affb4e0cfca5b8e.json",
+      "size_bytes": 1747592,
+      "sha256": "a31f527c0ba42e702413025fd88a9b2c0b7b5853ac9eeeed573a40457081c1d8",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_819",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/64e082af881270e290685edf4a0d5d7a.json",
+      "size_bytes": 1728210,
+      "sha256": "095b46dc1ffdd0c358bd67930ac96985f014fa5efef2a7fd9bce860d2faaad15",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_76",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/6526ea72be48faa1dab942462e186611.json",
+      "size_bytes": 2086069,
+      "sha256": "48bee6bb332190c128124696f43cc65c07e190e0d84d440b03ac277895619de6",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_278",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/65745c18cec4e5b579e8d789d86334df.json",
+      "size_bytes": 1520198,
+      "sha256": "02c2cba29b5443a94ef5c2c6b0e56a0ffc9a18c3b755c37764e36b3c196e89c5",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_342",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/66deb86f67efba21c2a8c785e9af8faf.json",
+      "size_bytes": 1799672,
+      "sha256": "43fefec7fdc790f7492d2970109f307273b564d619270fa745eb277881960986",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_1715",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/67ce13422209107f7e157eb766e4b628.json",
+      "size_bytes": 1718524,
+      "sha256": "2aec390394775aa09c8f98e426fd24422bce9eb473af07f47f298b91bcee296b",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_927",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/6837c0dfb02e9b094526e379bf31710c.json",
+      "size_bytes": 1582278,
+      "sha256": "2ebd23529577f7e07e0741e6ab671a4c1e554de53f53973b6e54451b138e0ea1",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_382",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/6a72fe722fc7fed91458802a6c8d88e2.json",
+      "size_bytes": 1615855,
+      "sha256": "89eea18245411734f8b9efc10941384e3931092363a5ae559ef4993661d955e0",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_120",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/6a8ec621bc09544a8192423566a8272c.json",
+      "size_bytes": 1600215,
+      "sha256": "fdb2a1b995c649cc8f5280e0047dfbc322f3eb11f663725c7c0e42dff5a4c76c",
+      "pair_id": "prmbench/preview/deception_prm_test_p1_60",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/6ab1b100fad88713bc9016771c9e66f3.json",
+      "size_bytes": 1332135,
+      "sha256": "5428e0c79b16f1520b3f4de2d3c6728f2951d2cd284e8eb94c61413334c87c95",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_464",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/6b81d18d7f2adc520a34c956a2ca5c45.json",
+      "size_bytes": 1791713,
+      "sha256": "0cb4993342c6ea9d5f4acd17094fb584de0f6bbc6eb46191b0d62158ac223a3e",
+      "pair_id": "prmbench/preview/missing_condition_prm_test_p2_1488",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/6c80cc53f237cb3125c73eb66c5c0fb1.json",
+      "size_bytes": 1268405,
+      "sha256": "2166fc785812ead4a353312183ef308c8872b5f80c1dc82f65f125fc5a5b6f75",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2375",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/6c97738fb801a57847b7aa6e9c6dfd3d.json",
+      "size_bytes": 1754935,
+      "sha256": "206711752921eb55e7ddee92d4c26f6ee6a329382060a1e1f76a431ee40d5f22",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_2580",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/6d55a8b1ec22830f285f5ea236e54788.json",
+      "size_bytes": 1737773,
+      "sha256": "cc70820c9224494866278a8ee9b3370d35a75e305593a5c88ef5b708ada455ba",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_468",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/6de5c0c1d738a0371dabc469c257cc69.json",
+      "size_bytes": 1749482,
+      "sha256": "4815bbde4e721a6e4944d03b12691c91b7b7f793aa8f2971edb19062ddca7a05",
+      "pair_id": "prmbench/preview/deception_prm_test_p1_27",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/6f37e15fd6b2eff402bc798b7bf9066b.json",
+      "size_bytes": 1886522,
+      "sha256": "43882f4cef6386b24db83fa7aed97aa0197a71fb0eec0e6d1b9229a1a67e5314",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p1_103",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/6f641a81c88f97c711bca471abc5b4d6.json",
+      "size_bytes": 6436240,
+      "sha256": "fe13ab772f72249caa2ca156826ea08fd2839be455b507b63d20bc0d80e470a4",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2562",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/6f747003620e4ccd513a735f48c7774f.json",
+      "size_bytes": 1359944,
+      "sha256": "59b92a7b3803f8edf8fa9545757d6534207f643aeafcc25bebb2db67f2314f5c",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_460",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/71375632c15649d2b56e5405fc072d02.json",
+      "size_bytes": 1783173,
+      "sha256": "609c44425d10c0b65a7a91430d3c062dad9b4a6d308cb97a814b7ef5781217af",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_48",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/72321381b1d377dffbbc92bc0e0c0fd8.json",
+      "size_bytes": 1054305,
+      "sha256": "f30e456933cf4406c58e597c05cb4463996fcf7288eee4cb5b2a4d433b968a80",
+      "pair_id": "prmbench/preview/deception_prm_test_p1_10",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/7297c94cae485b6f1309117be394ad1d.json",
+      "size_bytes": 1118068,
+      "sha256": "c671839ef91a7228736e94b28e44b418fc4993dd90c6be884b157765f90759cd",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_144",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/72c80e88facf05aaf245d4e77bf08084.json",
+      "size_bytes": 1452330,
+      "sha256": "02ea5f5bcb9c7c611f5310efb4c06a15088c719fc666ea7011cfd9cb321aac0f",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_182",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/732455f5bfffca0332c43eb75d50f98c.json",
+      "size_bytes": 1518920,
+      "sha256": "ae1eeedf25ca1e09ab2048dc096a3252106c16fbec9cbc11825b16d18d16bd62",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_55",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/736eea7aa96f64578c1748125df79450.json",
+      "size_bytes": 1228684,
+      "sha256": "1247f87ab9d904f7e35f8419ed6c40eaf8f3266a6a39a006502430f04ecb6233",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_459",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/73df8dd5decd33869e581eddb50b4fb1.json",
+      "size_bytes": 1914611,
+      "sha256": "3a837f8e5405648818d67e7653387d9eb6f9b21651ae1b96f9363bc5c1649953",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_1784",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/7459a19e560eb11f04c7dbd94f7f85be.json",
+      "size_bytes": 1440922,
+      "sha256": "e2df6dbbadcecaf7976bf93f2cf947da60f59b6cbccd8deef247a9a7319d82e8",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_1928",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/750995a8093e3f3180b95a20b4c0ca2e.json",
+      "size_bytes": 2350888,
+      "sha256": "5de5216e77a2aa3995ca725ffb5284b196f22fd5b11641b11d6c7d9e3e876883",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_1496",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/779e7a985d974fe50df695f5a570666b.json",
+      "size_bytes": 1893818,
+      "sha256": "db3475cedeb290cf10dabd8ed0b7b3f239bb0b4ae91182ab568a90867bcc20c7",
+      "pair_id": "prmbench/preview/missing_condition_prm_train_p1_275",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/77c397b9cd2ab9d4bbc2571465b54bd9.json",
+      "size_bytes": 2615566,
+      "sha256": "9d728e5ca0a7e8a0439652b3f2cc1fa59d346e4702c6c5e77909ee069c885be7",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1351",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/77cdaf41f21f3d89d18b25fbd34dc608.json",
+      "size_bytes": 2024562,
+      "sha256": "2e41f354837e34029a2cca9ec12780a65f146f162935a2d60faec84c7e354cce",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1128",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/79de99af7870925b81b20b1fc92ab751.json",
+      "size_bytes": 1754977,
+      "sha256": "4faea6c51dfcd714e8bfa4331cae08ce458cf91d62a3b8f1c737e5877a924028",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1721",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/7a41c54551bc0b3427e96a48aa5ba92c.json",
+      "size_bytes": 1140906,
+      "sha256": "832495d9c50753a6a884f90eb345e69e300140826bedcbc5f937c93e00d0f6d0",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_56",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/7cc7e6f7044c7b3a86d38d0b55a87a06.json",
+      "size_bytes": 2230187,
+      "sha256": "515932912739a22645cb09c040bfa6669c2de9817fb90a5b7fa0f4a6bdfb13b7",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2576",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/7d096ec7d0ed034db5af86e54ad0aced.json",
+      "size_bytes": 1926049,
+      "sha256": "2845d8f215c58f06c9144b586c2b71dafda11ccc5ac183488bd3343fb456309f",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1935",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/7da4c7e79410a2ade60957bc0e18884c.json",
+      "size_bytes": 1439604,
+      "sha256": "a0ddc9614d1aa545beca8bf11be93d376a48b57a3323dbfc9d5b716f1735f8e9",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p1_77",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/7e44c3138b39ab4cb77bb0a526a3e40a.json",
+      "size_bytes": 1636791,
+      "sha256": "9e539141d27dc6484c2b7db1825bed1060bab3e92f29c00df233d4f4093cce9b",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1920",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/80328d0b0eb6820b89d45847a268fca8.json",
+      "size_bytes": 1256840,
+      "sha256": "7dab7fb9070f730d6145d986542a01a16d323650fe9e52cee6aa563ca2f5c14d",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_84",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/80d0b1d1b0e42dc02f808dd319d0d649.json",
+      "size_bytes": 1441883,
+      "sha256": "89249969e01cd69550521cf1cce4230bb0369170c7d003ea47eb71f37b159980",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_61",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/80eb7e9ecac7fbf9a7198dd494d923d9.json",
+      "size_bytes": 1415765,
+      "sha256": "de4d04cec028e15531d30701a9609602b33e0d70fb136f32062fba83c971292e",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_229",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/810e8d4418d8c67a9e24b78a9ccb2d0c.json",
+      "size_bytes": 1496663,
+      "sha256": "9ef1663c08cdd08af7d93836c9f7c6039cdd833054f218e0196844623a8d789c",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_261",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/824233f3216f15cb7dae5c420b713f1b.json",
+      "size_bytes": 1662237,
+      "sha256": "c685f94fb01177f8634153d251cb69de51d086c91043ae0c0a8f532296768aac",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_272",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/83ea274bd8f264cc3bc21a87e257c7ee.json",
+      "size_bytes": 1136044,
+      "sha256": "7886fdf7e511a3278e85ad529e275db96e9691bf2eaacf02c0018102f8a6264a",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_259",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/848d1ea01f7beebb59becbe1c6e2d399.json",
+      "size_bytes": 1242745,
+      "sha256": "505cb90f2b9b1f0b21e9f26178076e2a87363e4131c325f8c2f6e16f6cf9cbe8",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_208",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/84b2dd29398cab568d99e8c7b0b160b2.json",
+      "size_bytes": 1359073,
+      "sha256": "cca5955b8614f5310308fe007795deb2178c4eb608612f13ff1aed735cf0ce15",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_88",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/85948b165182f447bde08d24f67a7e7a.json",
+      "size_bytes": 1289468,
+      "sha256": "f07d0d7e8f054307622144e645d045b2c1feed9c82bf5a30533193c16145e443",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_32",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/871bc34926f6d2a7a143b6a2fa7ae56e.json",
+      "size_bytes": 1827219,
+      "sha256": "492e3a61850a1342bdd14408fa2a86f0ae040653f8f9e133879ce5273a6472da",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2050",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/876f3d08e467daa0a9d939e312fc83d0.json",
+      "size_bytes": 1537224,
+      "sha256": "fc152bb8942780eed26047016de411e3c698de1b454ce434fd08a0cc7da01023",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_86",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/877ef40b1288bb955556e012770d858e.json",
+      "size_bytes": 1843379,
+      "sha256": "d691a51e97dc042a37a903fff2267d49a4e79a304759cdd7e1d9050cf65854d8",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_1362",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/88e5e9989e91a27ecfb7f29f3f8f91c9.json",
+      "size_bytes": 1631959,
+      "sha256": "28bb3f293623be00dea97cba7e96164467a7216ac587c9a735e215374ca2fb37",
+      "pair_id": "prmbench/preview/deception_prm_test_p1_98",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/894f07dc87f6f33db306348a4572844d.json",
+      "size_bytes": 2179659,
+      "sha256": "3f36b921325c713eca0e66bfe1e5dac030714f3702753ac78a07dbace910d0b1",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_1714",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/8a5c9f9aa3eb1faabeaa8cb128172ef0.json",
+      "size_bytes": 1743568,
+      "sha256": "ce5632b08e7ce70792fa47961585e34f1680d12c717fef91c340552c12e9f062",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1518",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/8a8ae23ad7ac0832084d6e760c7b543c.json",
+      "size_bytes": 1368335,
+      "sha256": "b280da0e26e41fb4206ddf08bb87489f1d4d86c35a615ec6e5c03abf3d932192",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2071",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/8c12eed394ab95188387f601c8d92835.json",
+      "size_bytes": 1457574,
+      "sha256": "aa57efed8ae568de305c3834c35ab3f72c496ba8532ed156b145d34a49498358",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_288",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/8d53156cf32c1f8fa9fa6d7a2837ca0f.json",
+      "size_bytes": 1291018,
+      "sha256": "bb950ea3708321a5998dcc2d8edc62a3b9ad26fd70af647ad54e806567f935a5",
+      "pair_id": "prmbench/preview/circular_prm_train_p1_421",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/8dde166d5be2129db8117918dfc24ce4.json",
+      "size_bytes": 2405825,
+      "sha256": "f3674eebe609a27ba073388675797f2678cd29a8748d29e1471b3d6a62173a5b",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_336",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/8e2bd2d9df46f1b623851486282ac63d.json",
+      "size_bytes": 1485609,
+      "sha256": "fe8956d81b3779b9a84309c9769aa59847052714bdc7ee597430b637dff0c327",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_362",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/8fa4ac987278abd8adbac43e1ccf3266.json",
+      "size_bytes": 1169418,
+      "sha256": "eb911e1c8d7153e97755aa682e944569a35306bf93f072563937ed74c97b5252",
+      "pair_id": "prmbench/preview/circular_prm_test_p1_54",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/90e9ca8af335490aeaa041095fefb8d3.json",
+      "size_bytes": 1428006,
+      "sha256": "4a0e87a65f219ae06168f553be84ba6690548e66adfca28187fb7157d634c85e",
+      "pair_id": "prmbench/preview/domain_inconsistency_prm_test_p2_1956",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/9161997017cab85e5645249b3dff33d6.json",
+      "size_bytes": 1410612,
+      "sha256": "ed4445fc2c802eb50687218b88fe2a008aa073006e3bb85cb5435c46f014e2fd",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_2517",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/929fdda6d7c1432bfc55a5a9644f96e7.json",
+      "size_bytes": 1268314,
+      "sha256": "d4429b73b9ef6bdde0fb121c44d0e38a379d7859d59e830f52a8c038d4f21c92",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_20",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/933094fa1cf64d852c4159fdbd2f7813.json",
+      "size_bytes": 1500758,
+      "sha256": "b49c0f062581526f3a3bec0b1a58a23db989f276b41b5a97b1f261644210bc64",
+      "pair_id": "prmbench/preview/circular_prm_train_p1_310",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/955e53af5248070eb1049003825f05a0.json",
+      "size_bytes": 1962020,
+      "sha256": "62c89f5d6054cce14c3cd88f1505b2d0a4456504530f02c1e0e31c22a12a4d8f",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_36",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/97470e470c0ab923fc11e050fb1d1f80.json",
+      "size_bytes": 2530573,
+      "sha256": "bafbc62ecc3f0180cdac685718df1cb49a87935ee494b076bdc904f939a2a9bb",
+      "pair_id": "prmbench/preview/missing_condition_prm_test_p2_2646",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/98b6acf495096debb5f9ac073b92e2fd.json",
+      "size_bytes": 1252411,
+      "sha256": "84a1b5fd98cd3f0ccf526560bddfe42cc4c7ac1292d630da219cfb9eb525b24a",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_63",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/9c57fe8e91379ccd96c8c92f03591a9e.json",
+      "size_bytes": 1927391,
+      "sha256": "59b1518add78a08e7426f141454ac687dc0dff01e6b960d12d92fd3ff0285da1",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2449",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/9cca3c55344ffd5c623d09089d4273ff.json",
+      "size_bytes": 2015350,
+      "sha256": "db14766f623467165316f0f260c300ce4dda80ce5acd85c12de1aabcb9a98908",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_1695",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/9cd27ce8870e751f963dfbe77ac6f18e.json",
+      "size_bytes": 1376680,
+      "sha256": "11d0d2e74b906fc82a4b6d10f00e6916959ce362a82f74e44060c855ad615cb9",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_223",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/9d1e57a2e4ec652504f78cbbc35dec15.json",
+      "size_bytes": 1206654,
+      "sha256": "6a8742950a198c38d699fef0127bd7e64ba7c830fdb32faf0778244513e37d7a",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_376",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/9e088fd9fb87e4869b0d8859d383e707.json",
+      "size_bytes": 1710008,
+      "sha256": "e89b18b2c1560b19eda31dec85225c31b98897803977454ac96eefe695f5a526",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_83",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/9e2d0344fc8ee28c8a15e4104351b87f.json",
+      "size_bytes": 1441066,
+      "sha256": "d8a72cd67e8739e2a622a363cf69f9f428d5a8957cab6a2fc1745f1025a8ca47",
+      "pair_id": "prmbench/preview/step_contradiction_prm_train_p1_255",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/9fa068256c7b52cb3cd15b20473234a6.json",
+      "size_bytes": 2223000,
+      "sha256": "4a7d2164e364a8ea43517ba9c9c750a3be9453e8574d1570e108321d48d8b9cc",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_451",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/a02009de19c0d89430bfc117ff7cde50.json",
+      "size_bytes": 1489411,
+      "sha256": "0b5cfd250e1cac6ce144de080ca81e8151f65c18e77269605d90a48983265605",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_369",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/a164ae9bd9b331e819b0e3f1c8be1ed2.json",
+      "size_bytes": 1989231,
+      "sha256": "e4070c82416396562b889665406e1b8f848255782dbce34cbb833486b7282c97",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_2505",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/a6af71af93ac4c60c547292c90532dbd.json",
+      "size_bytes": 1547681,
+      "sha256": "0b832337921cf1b183ea9c1e6381f09a8be85de8b1c0ecbaa07b7c45374499e4",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_1649",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/a84191a67fa10e9f093a582893ef5c87.json",
+      "size_bytes": 1323116,
+      "sha256": "8f67a54861c30d049af3f17688dca48e998affbd6024ff6733a8e80c1b14f0bc",
+      "pair_id": "prmbench/preview/missing_condition_prm_train_p1_378",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/aa3aa9d1bea100d86885a444993179c5.json",
+      "size_bytes": 1247780,
+      "sha256": "32c0f3ef5c0f22ccce94be5fbc47bba70948743390625b1fa3db53842dd12ef0",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_22",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/aa9046dad7331d3bae5597e300112855.json",
+      "size_bytes": 1380170,
+      "sha256": "f0c817ed79f7e92cd01792164fa2b6bbba9a25a1b51f7544b2fb09eaba47ffe0",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_11",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/ac05a2ed29baddc7ff6e4693051d58f6.json",
+      "size_bytes": 2652974,
+      "sha256": "fb8d5e2777c9f249fbaf3f8ac49317a7ff0d4a05fc42a9bd1d4782cb3a7f985a",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_249",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/addb83fd07e8dd2e658ec6be075a8c8c.json",
+      "size_bytes": 2116986,
+      "sha256": "4122f73872dff59b63ec391f2af6a2bb49364f218513511e8fc33615d07d88c1",
+      "pair_id": "prmbench/preview/step_contradiction_prm_train_p1_467",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/af0052ab6af917f2e4b63d2726d6b9e0.json",
+      "size_bytes": 1439187,
+      "sha256": "4f3deaed9ab0cdbcdecb70f6b95c8b6176097f37d62b3fbc0b3f0f336cce5a86",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_22",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/b15edfefa03c508ce15823d85b784aa0.json",
+      "size_bytes": 2310212,
+      "sha256": "e7e1a9a0b94b99b80ff4859f76f61436728c4401f9a89bf4ea392005a3cc16ee",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_216",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/b1954a9f2531ce5012abbfc11ebe0109.json",
+      "size_bytes": 1506276,
+      "sha256": "923cbe0423d1bcbd6b402b9358d441a6daea1e82595a65142c61ab9867dfb0ad",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_528",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/b22f3b87698932349933b26c4d5ca27d.json",
+      "size_bytes": 1482485,
+      "sha256": "a6d658319a9362528965749e717acaa70f5baeeec8985559410c8ad22c65b6cb",
+      "pair_id": "prmbench/preview/domain_inconsistency_prm_train_p1_100",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/b257f42ff3a1a2c69334870bc786802a.json",
+      "size_bytes": 1173582,
+      "sha256": "bf04f0ef096e1419d8ecd6f286fef2b529f3faa4295cd5c94e37c8035db0e87c",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_454",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/b38cfed7d37b83ec96ffc51c50b0b28d.json",
+      "size_bytes": 1653856,
+      "sha256": "3412ab3393572d96aa9c9e2833a32cc9b3ed65c497da33fcb9a78aa20051332c",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_409",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/b468c091cca996f02cc71a446062b45d.json",
+      "size_bytes": 2345122,
+      "sha256": "e958c704962fb6deefc39b3d9ab3d74e60b22e905a8402a646bd06ee347cb192",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1496",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/b49703de60a7e41ec19c2d06d25c5cd4.json",
+      "size_bytes": 1337716,
+      "sha256": "8bc7463bea58a4b7521116a33e98e9f0af3e1f5ac73aa11dcdf4768bee01ba8e",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_425",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/b49f8ea593e4432ec53da0a52ed31656.json",
+      "size_bytes": 1413989,
+      "sha256": "12edbc78907671e94a8438abcbf9859cf80dfc3499dc85d9a4f518b2da66df83",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_951",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/b51f2c1e287c5e0edee12df1558ac624.json",
+      "size_bytes": 1517137,
+      "sha256": "383fce2f97185c37fee4632a0a3d4b6cfd873b070348b397cd4838d558877077",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1947",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/b6eeb6d17afac8d3e50db0b1f44d503c.json",
+      "size_bytes": 1883972,
+      "sha256": "696210eb4cfd8c79c6654e1131d13936a7631fa21a340c69ce0c2f4fcd2b5a1d",
+      "pair_id": "prmbench/preview/deception_prm_test_p1_18",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/b734cdb324daee9d1e22a113a6ac3c10.json",
+      "size_bytes": 3465889,
+      "sha256": "c1c87900c0c89389a2b6e535b02b27011d1efdfe206106557394c59ef0e1d087",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_271",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/b79fabaf1d14ed0178a1678877964d17.json",
+      "size_bytes": 1535638,
+      "sha256": "735bc9359c68df97555caae5e5ccc3f2f69862e20c680fae10931205676d5c9f",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_86",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/b9ae34301ce74176a3ab74ecb218d14a.json",
+      "size_bytes": 2795979,
+      "sha256": "c6b8849b654faf27acabcadad86c57534f4e69656c2c268bf7508e704dffc653",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_125",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/b9b4d75ad3530a7e39b0a49fddf5a742.json",
+      "size_bytes": 2268151,
+      "sha256": "13f1b156a3b1185333e1fea9fc215e61f078b549bd0bd4408d6ab8863341508b",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_132",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/b9e6df4b1a60e04b3930dc42f946530e.json",
+      "size_bytes": 2706989,
+      "sha256": "5764b53355c0b3e5e85965839c02581714ed575bbfe702c46986c4907e869814",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2265",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/ba117654a010b48da1473599edea5e53.json",
+      "size_bytes": 2400178,
+      "sha256": "7088f5c7121fb51bdc6619ad4344ef39427a2dcec03bde17dcc4ba6f829057d3",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_1286",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/bbd9899d48d606d19adbfca0547ed24c.json",
+      "size_bytes": 1250586,
+      "sha256": "27aadde73a0891472febd4ec0fa447a2d29daf90fe02f7ae9b2067d6ab467dc3",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_13",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/bc34c9a042e126aa0b3a9692f35f537f.json",
+      "size_bytes": 2013155,
+      "sha256": "64ee49bc8c7f688b3f5f113e3ea53078c458553026861d17ef416a9c66dc9a4e",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_75",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/bc360872a70745de5c82eac64e9cea00.json",
+      "size_bytes": 1426855,
+      "sha256": "d556dba5ba87694e1c17ac4b70cea5b3a55ad5151d122d2db4a3d542d534d81f",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_991",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/bce9b70867ca03a3d2003dad331a5c41.json",
+      "size_bytes": 3556959,
+      "sha256": "0726cf239f935df448036266e23f588c02d331c030f57ce00761774801a9c99c",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_2744",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/bd6374dfe3b184cf45ee6e0834ba9b67.json",
+      "size_bytes": 1334956,
+      "sha256": "ac0724a42aa2fbf28359d411057e269ad26bec7a36055695817b0947e2d4371e",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_111",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/be06386635b62e7af05fda3cb342c653.json",
+      "size_bytes": 1604728,
+      "sha256": "fb47669b49e74f0fa7a599b0ef1153259b9da79fd2d50f76bc73fcbbf1de9040",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_2492",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/bf20215d471ee841ac7f9c8d3dd176f8.json",
+      "size_bytes": 6575603,
+      "sha256": "b63f1dcf79c8ebec74cfbf73c3645ca6815e48e9a0056952f4cc0c844c97b3d3",
+      "pair_id": "prmbench/preview/step_contradiction_prm_test_p2_2562",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/c0826f320d3af3944345784d5bcedda0.json",
+      "size_bytes": 1740407,
+      "sha256": "73211ceab07d7134ef6b970ac2ad79c3cd531c7548b8ed01c00cfee9127f24ca",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1899",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/c1579f1789be17b8c65facb95df89904.json",
+      "size_bytes": 1196009,
+      "sha256": "ab82556ff4a9598df13c7828eb1e42bc6bd883315b2565de6b73eadbf502a9ff",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_72",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/c290e091c7a339f4bf8c1973ba274205.json",
+      "size_bytes": 1582339,
+      "sha256": "8df81ce5c976e75ad5fb9a5d4d706cad5e11e51241aa7f3cd60dccf70b46220d",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_961",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/c296781d062bee0faa5bac193f8ef89b.json",
+      "size_bytes": 1297242,
+      "sha256": "5b110010640391288106ce1fade573d773c7025fa0086f37a448016f55c0a35b",
+      "pair_id": "prmbench/preview/redundency_prm_test_p2_1872",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/c31b77a9217f8cbbe23469be40942154.json",
+      "size_bytes": 1416344,
+      "sha256": "04c44faee7311cecb199aba7685ba4d7b5f767cbd283517164f511a7929c0d14",
+      "pair_id": "prmbench/preview/step_contradiction_prm_train_p1_392",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/c36f77015d3d10f708c08f85fbba91fd.json",
+      "size_bytes": 2056643,
+      "sha256": "3cce46a6dcd6e1de6b839e7190c1090b6d2379a598dc6e95755fb59f316e1b7e",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2095",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/c3e0c968a3a4ef922429e0f6b7d1def0.json",
+      "size_bytes": 1814308,
+      "sha256": "9ec51ad33a8c11a69b15ba4fbb823274a87fbeaf3f5f0104f26e710c03535d15",
+      "pair_id": "prmbench/preview/circular_prm_test_p2_2126",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/c41043c7cb942711cad43880ad1cead9.json",
+      "size_bytes": 1103508,
+      "sha256": "f72869a62ff96cf456dc891cded868a1893ca90ceef534ced1124ca8f32b268a",
+      "pair_id": "prmbench/preview/missing_condition_prm_train_p1_227",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/c51f672562bba8a48d8c864848d3ece1.json",
+      "size_bytes": 1604314,
+      "sha256": "57f835072cc5495235ee20b46e11b87188a1414bd8e107c3bfdf7b354654f15e",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_2382",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/c56770548d15c2eb7344da0f39bc0c13.json",
+      "size_bytes": 2102940,
+      "sha256": "9dfdec59b46139e9fb44c46d57942d9a3716232164b20a08a21ede14959e37e8",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_409",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/c5ecb2a70a4739f62d71ebb3cc72f9b9.json",
+      "size_bytes": 1925365,
+      "sha256": "b314aa482e22812a1b7b4106e37b0c2246f912ad29dac283158114e587085c36",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_927",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/c5fcd2057aef308f26df977f5ff581e5.json",
+      "size_bytes": 1702020,
+      "sha256": "1f941704b92928780ea884d7ea899772a8a505b5cbfe5278f2147c8a7fc3e1c2",
+      "pair_id": "prmbench/preview/domain_inconsistency_prm_test_p2_807",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/c754faf3461c12d4aaeeef9bb51d54f3.json",
+      "size_bytes": 1988834,
+      "sha256": "eebab252696a1fbd21af6679bf64ba6a25b6f952ba7130213ea36fe36f9b1bde",
+      "pair_id": "prmbench/preview/missing_condition_prm_train_p1_7",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/c95a8720399ba67f2fc56b5556ae628e.json",
+      "size_bytes": 1358002,
+      "sha256": "84175a81a97dbd16ba2b4ed407251bdc746c702ccdf4ac9df95f2d091a1d17de",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_0",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/c994c030acbc89126a0fb9bd8908df1c.json",
+      "size_bytes": 1320370,
+      "sha256": "f0a57c37c7f6f9dd718ce221af8f5a83f361fd9b778d88b194b0159a8685be77",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_150",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/c9a47b511b9e1d20a0651c66bec3dac2.json",
+      "size_bytes": 1761361,
+      "sha256": "a698d0fa86d6d50c49d4ff993de900da9e9bc5ff3acd3574ab2cc8940baf2433",
+      "pair_id": "prmbench/preview/missing_condition_prm_train_p1_352",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/ca1e1f0724492a20ccf285dedda7d14d.json",
+      "size_bytes": 1208129,
+      "sha256": "439e378dcb908bc05826583a5f1cbe4f3530525e6fccee783dfa2621d59b9766",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_96",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/cb55e1f59849ae60f250605b6f974739.json",
+      "size_bytes": 1416419,
+      "sha256": "08d53823ff32ec2b0cacc9f18e8034ab9d7974a96a49b4091d49121ded1b053c",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_462",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/cc3bf73b1e6a2648530015cf23b2dff4.json",
+      "size_bytes": 1350454,
+      "sha256": "21af60422d6236a7236d350e71b50b525747faad6326d15aba5cc328fee155e5",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_424",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/cc498c63236e12507b67cb3bffd4b638.json",
+      "size_bytes": 1209462,
+      "sha256": "bd4e5e47294c96c39bdf360c55127ea61216a7bc9d132ae63f316a01574f2693",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_421",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/cc706b06083755575706034c83983ef1.json",
+      "size_bytes": 1252270,
+      "sha256": "fa2386cf4cfcb28ff89b25b9f1857c8a73978329f5fa551c63878faa9f33a5c5",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_128",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/cce38a043ae9f62c3bc55e7f355976df.json",
+      "size_bytes": 1396517,
+      "sha256": "ce2599af2937ec3dca30ae60d83eaa020f57557f4af3aa2eda182968a37801cc",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_151",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/ce12e0c43b803a282da9d47fbba4772c.json",
+      "size_bytes": 1768602,
+      "sha256": "8f0bda141251eca2dbf17b648567d0f9a6e2515a4559352665633f664d4a71e1",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1829",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/ce887a5d872f639180958c54044f99c1.json",
+      "size_bytes": 1309907,
+      "sha256": "057c31829ff9cc20e87467d9706a169a7fa9627ecf22d003f2b1e2b08a03aa0f",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_98",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/ce9cf23105e75257d49a016b1ade474e.json",
+      "size_bytes": 1192065,
+      "sha256": "69285cf7794b75bd946fc907c007e14b1adfd69afffaf376632db573511a9d50",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_2050",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/d032fc76f4e90435f3a7fff9d290ceef.json",
+      "size_bytes": 2164909,
+      "sha256": "0f2b5ee20f9cd1ff4d02597452da06208b4905e078b53d0ecd1f4cf81462307a",
+      "pair_id": "prmbench/preview/circular_prm_test_p2_2265",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/d0753eaac007c00b79c57e72703ad5ad.json",
+      "size_bytes": 1649718,
+      "sha256": "6bb878f51122b300e7a88f2cebae06312825f4c10d5c33c2fcaf7146a1d41e74",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_285",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/d14b0f61c847d063f02bf2743a6d1fde.json",
+      "size_bytes": 1682123,
+      "sha256": "c46526bafda5f2266b4ad3a63387e08b00d92d6eaa863d776e5177d0510bd264",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2105",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/d14bf3f7c6e7c06e3f5febc47db93a67.json",
+      "size_bytes": 1985850,
+      "sha256": "1df285d9bf544ae016b46c0fa2c1878d5448322fc715b9da6b7d33f955c98efe",
+      "pair_id": "prmbench/preview/redundency_prm_train_p1_76",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/d2e826e02f8d9794f7868f48d17e6bee.json",
+      "size_bytes": 1185827,
+      "sha256": "f0c78a4672a081268036326cbb4168764f4a11cf590d2604d6b22a5080ab01c3",
+      "pair_id": "prmbench/preview/step_contradiction_prm_train_p1_331",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/d343c905d5373583ebda518961e0456f.json",
+      "size_bytes": 1837496,
+      "sha256": "5562d029fbe46843ce622d0e0223cb10ee59d7974a24a871a6c0c332c62df0cf",
+      "pair_id": "prmbench/preview/deception_prm_test_p1_25",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/d3fa26b0d7aec4c191d4c51d60ea706d.json",
+      "size_bytes": 1501081,
+      "sha256": "9b9133d79641496332dd2a15acbbdb2cc9bcf4a018d7d39d94fe239b8ab5b9df",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_381",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/d47a1e46f1f0f83811d039605b9cfc75.json",
+      "size_bytes": 1729388,
+      "sha256": "79242a0fa8f9ea689a2d3fa1bccd7c5beddd9756703de3da6bba2aefc3ea818a",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_299",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/d4b88d226974f8af9882419f9fe77dea.json",
+      "size_bytes": 2061147,
+      "sha256": "71fd62d9bed592c57b76de9ec27a636bf0e99356754dffb399f8ebf2d8317fa6",
+      "pair_id": "prmbench/preview/step_contradiction_prm_test_p1_70",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/d5370dc04d9aaa6d1d0d6f01d1bb569f.json",
+      "size_bytes": 1535831,
+      "sha256": "c87e3806ec03ffb2e4ff44cc010ff77de4f73bdad4fca78db651e18b8296126d",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_344",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/d58312ea634ed473ba7401df73155343.json",
+      "size_bytes": 1654471,
+      "sha256": "162a58ebdda2d99f0454e561d59eb995408a10e3b609e3cdae02054d0fcd3f40",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_345",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/d6adbce5674a1d11e65ffe7347790996.json",
+      "size_bytes": 1291848,
+      "sha256": "8f89a607c50b612e423104ffb07bc3e40783525bcfbe25b5a1cb94d810393807",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_2071",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/d702efc98384dd37bcb4f1eec60a8ae4.json",
+      "size_bytes": 1340809,
+      "sha256": "3c90b97fd6c0ae34b3351ce18d2cde8d9833375b713cbb376586b52b907a659b",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_1778",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/d762f0a569f56d9b287b872b37e76fd9.json",
+      "size_bytes": 1585150,
+      "sha256": "1af47f2bee4c852ed8ad99cd136bd1b39aa94c922d6baa8ceb6edb4c4d551441",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_441",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/d86c1c77476abadc5fbadaf23477618c.json",
+      "size_bytes": 1154325,
+      "sha256": "a18774395cc5b689ab575774653194005d79571f599470eba0295f6431317fe4",
+      "pair_id": "prmbench/preview/step_contradiction_prm_train_p1_347",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/dad4947bbafb0fb8fa31a0c29a2c9b28.json",
+      "size_bytes": 2057842,
+      "sha256": "23d47d92856efce865ee9981c40d6e778feb3675ff64625afa41802f69e0c883",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2594",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/db1b5fd252d98476684b7f7b434945a2.json",
+      "size_bytes": 1617980,
+      "sha256": "c94a994e57407b6ecb5e70001b5233b4b056d67fcbdc0d4cc987b60f5d96d3f5",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_991",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/db2e3106d88fffffb43dc4cbf05c364c.json",
+      "size_bytes": 2610137,
+      "sha256": "d4e5c52beef88e5e5b8f57a9f3b1339a2b481d4c5825316de330a268d6f867a1",
+      "pair_id": "prmbench/preview/step_contradiction_prm_test_p2_2646",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/db84242fcb561d0943c58fad56b4d805.json",
+      "size_bytes": 1480965,
+      "sha256": "b85a84091979ef622d0a7ae20d22aa06bf2b67577e96137044b5fc275524ee44",
+      "pair_id": "prmbench/preview/step_contradiction_prm_train_p1_443",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/dd1e52f697d76bb1205e8601040de5c7.json",
+      "size_bytes": 2063341,
+      "sha256": "a53b8bb01c37d457baf00b757c7c31faa0e88254100449d303a5b909dbd880d2",
+      "pair_id": "prmbench/preview/redundency_prm_test_p1_5",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/de980236855a381b042f7450a6d0eb0c.json",
+      "size_bytes": 1695687,
+      "sha256": "86169b3f36e457e333bf3bf49e910b29e811d5559be068f265c746cd4af600a1",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_311",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/e17394464a29660459944dfcc1b1db58.json",
+      "size_bytes": 2271378,
+      "sha256": "8ed85bd92edf648a9ee4aecaa754cd4126152304020bd2e4e03465c77a5976f7",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_288",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/e192afa32453b7987dbf72f0b0b13b40.json",
+      "size_bytes": 1658935,
+      "sha256": "97ae9dbe3aa2a27b38cd7e32b03962cf323300a9f9a475de7420fd8d511bb372",
+      "pair_id": "prmbench/preview/confidence_prm_test_p1_20",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/e50b547ecd032d20f512e2141ad8eed6.json",
+      "size_bytes": 1676556,
+      "sha256": "f9d1302a855b56a3ffd0b2a8a2d52aeb81f9e498b7e63d75d12969bb87564a4e",
+      "pair_id": "prmbench/preview/missing_condition_prm_test_p2_1320",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/e8eba645d3f1d1191c09d8f83e674dd0.json",
+      "size_bytes": 1621263,
+      "sha256": "dd58911257da73b00bbc4842933cbaed0f1d42ab3ef22af095de0315542c1654",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p1_97",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/e8f77bc624f56055eb71ac9e2b271d10.json",
+      "size_bytes": 1325915,
+      "sha256": "6b306e171444ca10483dea641f58abccc60df8c2582a31574392bb329a097495",
+      "pair_id": "prmbench/preview/counterfactual_prm_test_p2_1920",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/e8fd241426fe83f31ecb1f88a64c5c42.json",
+      "size_bytes": 1268028,
+      "sha256": "bf9321a461c83093305f99fe45417b69023ef34ddb8c751bed5edf22daebc5b2",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_460",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/e90fd26fe34795cfd2f912c89c2851c5.json",
+      "size_bytes": 1266021,
+      "sha256": "079744f199fbf967688e6332aca4ffe3bac2d25d745d1848066855d9ee33161a",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_126",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/e96da9893bca04735f30cd15dee29d9c.json",
+      "size_bytes": 1251675,
+      "sha256": "706f74b45032023f24816f14efb21f728d83ea59aab61235f23615ea44a88b9c",
+      "pair_id": "prmbench/preview/step_contradiction_prm_train_p1_376",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/e97a3d0a24c9c8989392893723dc8156.json",
+      "size_bytes": 1559671,
+      "sha256": "1b46defc90b973fed8449e5a82f5341a16e4070a64697fa78844c40a9675782c",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1141",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/ea83686d9f6837acb687113cd6af43e5.json",
+      "size_bytes": 1620210,
+      "sha256": "c9a21f2c30e91dff271eb315b20c281ed505c4496cb0302d1e865b151103fa6f",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_186",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/ed76799611cfcf86fc62d09814b139a6.json",
+      "size_bytes": 2197842,
+      "sha256": "dc7fa5a964144d7e58501b78584e08176aa687d51612ab7fcc3a892e95e58aaf",
+      "pair_id": "prmbench/preview/counterfactual_prm_train_p1_37",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/edb7b41657803bf17cef90bd14ea69b9.json",
+      "size_bytes": 1390969,
+      "sha256": "02363b6d9f8587ef667477c39d6bcae814db999a19dcf0ff1b724f79d97b4553",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_68",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/ee43cff1024e4ca9b54846d2a3a097cf.json",
+      "size_bytes": 1524043,
+      "sha256": "f1c6b81712e54a60c1a58a18e6abcfe12d7f3e1ce661d07e486d26bfedac0226",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_28",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/eec3361bf4186530ab4cc17d3251e909.json",
+      "size_bytes": 1547849,
+      "sha256": "bccf60983ee307f942eeb98f28c086c107b52b005f0455bccfd8f772e6ec17ab",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1305",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/ef53a537dbe72c234c3b4797e9c31ed6.json",
+      "size_bytes": 1332981,
+      "sha256": "6b852a620521beb7730196c4b71be118c5398b3b9c8cb341101fbcb7f9d25870",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_301",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/f31478f6322af4df8e7ed84115bf1eda.json",
+      "size_bytes": 1734421,
+      "sha256": "dbf70fe46ed3284418882b16ff18837976d872e4dfad0aa12e484dafda4504ad",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_222",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/f35ddab6b8e23c09f1c8a504cb58f1f2.json",
+      "size_bytes": 1606465,
+      "sha256": "b63d4354eede8ea2aef118ef36958d5af4d94b096503d9fbf16e8bb35e9ef0d3",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_1816",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/f4309a5493257c90d8e243843a0f32ca.json",
+      "size_bytes": 1216501,
+      "sha256": "764044bc79dadc9079636e8a5e67de9d2749b5d2b70e979bb315764d1682d4dc",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_286",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/f593e7c764606068c5fce9fd6c414776.json",
+      "size_bytes": 1788803,
+      "sha256": "6c79d217438aa749fd88c3678ff918c3bc7317d270899558ba3026804bbda490",
+      "pair_id": "prmbench/preview/deception_prm_test_p1_103",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/f5bda247e86fd9c757eb0ad2cb8f2860.json",
+      "size_bytes": 1570974,
+      "sha256": "3d0679cba7a8239b69723412ff571b9f78041690902d00ffaf29613b3ffb28ba",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_671",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/f62bfe9afa390574a68c7264ecad028b.json",
+      "size_bytes": 1551376,
+      "sha256": "122f14084fe589a5d92516fbbdcbc457ae09c470fdde00de4a05a6a48c3f4ff5",
+      "pair_id": "prmbench/preview/confidence_prm_train_p1_416",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/f6784e2dae52938d0ae0e40ed5f14f61.json",
+      "size_bytes": 1391129,
+      "sha256": "7c33218af5e584034c830e66fcf1079afee22960cb7ad8e8675ef62de7e94a50",
+      "pair_id": "prmbench/preview/deception_prm_test_p2_2022",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/f7314d56e24c81ca6251552a573e6f70.json",
+      "size_bytes": 1774716,
+      "sha256": "9d616129946aa6e4dedf5d72681bce6060b9f4c55ab79ba63d1a82f55c9ba013",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_783",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/f77802cbc5bd124c0d1edb7abbee4b9c.json",
+      "size_bytes": 1502698,
+      "sha256": "f8c270c4c4005fc0e40b8692b4186bfd4fee7e619c6e6389ebbd9190115f2d89",
+      "pair_id": "prmbench/preview/confidence_prm_test_p2_2094",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/f9ff4f3b4a68bc2979de3297a47cf582.json",
+      "size_bytes": 1019291,
+      "sha256": "9f4c3223dc09169a3529890eb9a1b9abb26364b0d58798bbb927e935b8a22c9e",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_1",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/fd0fa26a28608853adc54f4f3ab40825.json",
+      "size_bytes": 2247166,
+      "sha256": "a4430b6b6e798ed67e4e4a9c521995bd7c34b2787a41cc54b9c37da7f54ec43b",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_234",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    },
+    {
+      "path": "runs/qwen36_moe/full_v1/pairs/ff939bf5a24970e4d57be25d8701ff64.json",
+      "size_bytes": 1379424,
+      "sha256": "f4ea4927f82145d1840cfb95c3b86b563ce5f0fda2cbd4b37ced0e794f3fbbd7",
+      "pair_id": "prmbench/preview/deception_prm_train_p1_20",
+      "run_id": "facc1740-9b26-4f48-8256-404c6c6e7629",
+      "technical_passed": true,
+      "row_count": 10
+    }
+  ],
+  "interpretation": "External donor-role directionality under this intervention; does not identify a unique correctness code.",
+  "comparison_boundary": "Current wide-D run only; no old T/D rows combined or cross-run input equivalence inferred."
+}

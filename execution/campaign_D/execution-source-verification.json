@@ -1,0 +1,663 @@
+{
+  "models": [
+    {
+      "K": 235,
+      "N": 290,
+      "checkpoint": {
+        "alias": "olmoe",
+        "harmony_reasoning_effort": "medium",
+        "model_id": "allenai/OLMoE-1B-7B-0924-Instruct",
+        "require_native_mxfp4": false,
+        "revision": "7f1c97f440f06ce36705e4f2b843edb5925f4498",
+        "tokenizer_revision": "7f1c97f440f06ce36705e4f2b843edb5925f4498"
+      },
+      "execution_version": "v1",
+      "loaded_invocation_checks": [
+        {
+          "adapter_and_runner_match": true,
+          "adapter_class": "OLMoEAdapter",
+          "adapter_source_sha256": "2a8728046bd7fd54c2aad868123a0fa638559f713259c0244c27bf85227e05d0",
+          "model_class": "OlmoeForCausalLM",
+          "python": "3.11.10 (main, Oct 16 2024, 04:38:48) [Clang 18.1.8 ]",
+          "runner_source_sha256": "3e4e96fd27c25ccbf708bc1b9bcc82e35d24015cc6a14025116f9651b8204fa3",
+          "torch": "2.12.1+cu130",
+          "transformers": "5.12.1"
+        }
+      ],
+      "model": "olmoe",
+      "original_report_sha256": "480c3a58548c9394946853e90b6d2201e16003d0ff4b0def5a8486e5ff7b9165",
+      "passed": true,
+      "source_checks": [
+        {
+          "actual_sha256": "3e4e96fd27c25ccbf708bc1b9bcc82e35d24015cc6a14025116f9651b8204fa3",
+          "expected_sha256": "3e4e96fd27c25ccbf708bc1b9bcc82e35d24015cc6a14025116f9651b8204fa3",
+          "passed": true,
+          "public_path": "execution/campaign_D/src/routeverify/window_donor_contrast.py"
+        },
+        {
+          "actual_sha256": "4aa8a8a24ab359ebff36e5356bb205c2e7f7954a0fad73a0be8e158248145b28",
+          "expected_sha256": "4aa8a8a24ab359ebff36e5356bb205c2e7f7954a0fad73a0be8e158248145b28",
+          "passed": true,
+          "public_path": "execution/campaign_D/src/routeverify/window_interventions.py"
+        },
+        {
+          "actual_sha256": "be0fcbc848fd14ce8fbf06d3e45dbfba6df08a4e5e356b2848b75511c14bcf51",
+          "expected_sha256": "be0fcbc848fd14ce8fbf06d3e45dbfba6df08a4e5e356b2848b75511c14bcf51",
+          "passed": true,
+          "public_path": "execution/campaign_D/src/routeverify/eval/candidate_scoring.py"
+        },
+        {
+          "actual_sha256": "36b4aed8b029166a0554958f87a3098f1af01d273dc4f6d587525ad2483ba529",
+          "expected_sha256": "36b4aed8b029166a0554958f87a3098f1af01d273dc4f6d587525ad2483ba529",
+          "passed": true,
+          "public_path": "execution/campaign_D/src/routeverify/analysis/window_donor_contrast.py"
+        },
+        {
+          "actual_sha256": "7ffd9cf7d533722abe891fd066849b699f96b96ca9696d735266f860ac506c4c",
+          "expected_sha256": "7ffd9cf7d533722abe891fd066849b699f96b96ca9696d735266f860ac506c4c",
+          "passed": true,
+          "public_path": "execution/campaign_D/configs/experiments/window_donor_role_20260908/olmoe.yaml"
+        },
+        {
+          "actual_sha256": "cc6c19d01c566d08c7c228bd70e85d2fc6118d3560ae443f82dd974bd5dab575",
+          "expected_sha256": "cc6c19d01c566d08c7c228bd70e85d2fc6118d3560ae443f82dd974bd5dab575",
+          "passed": true,
+          "public_path": "execution/campaign_D/configs/models/olmoe.yaml"
+        },
+        {
+          "actual_sha256": "df99467403a77fba7ebd9804d86106aba85bd104cf50f2575faf713ca1bb61f6",
+          "expected_sha256": "df99467403a77fba7ebd9804d86106aba85bd104cf50f2575faf713ca1bb61f6",
+          "passed": true,
+          "public_path": "execution/campaign_D/configs/experiments/window_donor_role_20260908/matching.json"
+        }
+      ]
+    },
+    {
+      "K": 235,
+      "N": 290,
+      "checkpoint": {
+        "alias": "gpt_oss_20b",
+        "harmony_reasoning_effort": "medium",
+        "model_id": "openai/gpt-oss-20b",
+        "require_native_mxfp4": true,
+        "revision": "6cee5e81ee83917806bbde320786a8fb61efebee",
+        "tokenizer_revision": "6cee5e81ee83917806bbde320786a8fb61efebee"
+      },
+      "execution_version": "v1",
+      "loaded_invocation_checks": [
+        {
+          "adapter_and_runner_match": true,
+          "adapter_class": "GptOssAdapter",
+          "adapter_source_sha256": "757f4213fd3da1d600d5bb2677cf0a0b8318c15337c76b030ba800dbf4c46a78",
+          "model_class": "GptOssForCausalLM",
+          "python": "3.11.10 (main, Oct 16 2024, 04:38:48) [Clang 18.1.8 ]",
+          "runner_source_sha256": "3e4e96fd27c25ccbf708bc1b9bcc82e35d24015cc6a14025116f9651b8204fa3",
+          "torch": "2.12.1+cu130",
+          "transformers": "5.12.1"
+        }
+      ],
+      "model": "gpt_oss_20b",
+      "original_report_sha256": "65d86c9c1fe33ac943ec3475e4d4d62021f21771a56414a4cd159da9334a3f09",
+      "passed": true,
+      "source_checks": [
+        {
+          "actual_sha256": "3e4e96fd27c25ccbf708bc1b9bcc82e35d24015cc6a14025116f9651b8204fa3",
+          "expected_sha256": "3e4e96fd27c25ccbf708bc1b9bcc82e35d24015cc6a14025116f9651b8204fa3",
+          "passed": true,
+          "public_path": "execution/campaign_D/src/routeverify/window_donor_contrast.py"
+        },
+        {
+          "actual_sha256": "4aa8a8a24ab359ebff36e5356bb205c2e7f7954a0fad73a0be8e158248145b28",
+          "expected_sha256": "4aa8a8a24ab359ebff36e5356bb205c2e7f7954a0fad73a0be8e158248145b28",
+          "passed": true,
+          "public_path": "execution/campaign_D/src/routeverify/window_interventions.py"
+        },
+        {
+          "actual_sha256": "be0fcbc848fd14ce8fbf06d3e45dbfba6df08a4e5e356b2848b75511c14bcf51",
+          "expected_sha256": "be0fcbc848fd14ce8fbf06d3e45dbfba6df08a4e5e356b2848b75511c14bcf51",
+          "passed": true,
+          "public_path": "execution/campaign_D/src/routeverify/eval/candidate_scoring.py"
+        },
+        {
+          "actual_sha256": "36b4aed8b029166a0554958f87a3098f1af01d273dc4f6d587525ad2483ba529",
+          "expected_sha256": "36b4aed8b029166a0554958f87a3098f1af01d273dc4f6d587525ad2483ba529",
+          "passed": true,
+          "public_path": "execution/campaign_D/src/routeverify/analysis/window_donor_contrast.py"
+        },
+        {
+          "actual_sha256": "c99b85b816980f10b31cb8f060914bc58bb6b64650c55896559644ac94b938a7",
+          "expected_sha256": "c99b85b816980f10b31cb8f060914bc58bb6b64650c55896559644ac94b938a7",
+          "passed": true,
+          "public_path": "execution/campaign_D/configs/experiments/window_donor_role_20260908/gpt_oss_20b.yaml"
+        },
+        {
+          "actual_sha256": "15b76ba86f91ad38bbc7bce34f18b680ae5a27a1aaf4a8b9addcff62cc507cc8",
+          "expected_sha256": "15b76ba86f91ad38bbc7bce34f18b680ae5a27a1aaf4a8b9addcff62cc507cc8",
+          "passed": true,
+          "public_path": "execution/campaign_D/configs/models/gpt_oss_20b.yaml"
+        },
+        {
+          "actual_sha256": "df99467403a77fba7ebd9804d86106aba85bd104cf50f2575faf713ca1bb61f6",
+          "expected_sha256": "df99467403a77fba7ebd9804d86106aba85bd104cf50f2575faf713ca1bb61f6",
+          "passed": true,
+          "public_path": "execution/campaign_D/configs/experiments/window_donor_role_20260908/matching.json"
+        }
+      ]
+    },
+    {
+      "K": 235,
+      "N": 290,
+      "checkpoint": {
+        "alias": "gpt_oss_120b",
+        "harmony_reasoning_effort": "medium",
+        "model_id": "openai/gpt-oss-120b",
+        "require_native_mxfp4": true,
+        "revision": "b5c939de8f754692c1647ca79fbf85e8c1e70f8a",
+        "tokenizer_revision": "b5c939de8f754692c1647ca79fbf85e8c1e70f8a"
+      },
+      "execution_version": "v1",
+      "loaded_invocation_checks": [
+        {
+          "adapter_and_runner_match": true,
+          "adapter_class": "GptOss120BAdapter",
+          "adapter_source_sha256": "a946b155c97e467a1f381009e1328f24b1a6a92e0cc6d13dcc6760dbe35beab7",
+          "model_class": "GptOssForCausalLM",
+          "python": "3.11.10 (main, Oct 16 2024, 04:38:48) [Clang 18.1.8 ]",
+          "runner_source_sha256": "3e4e96fd27c25ccbf708bc1b9bcc82e35d24015cc6a14025116f9651b8204fa3",
+          "torch": "2.12.1+cu130",
+          "transformers": "5.12.1"
+        }
+      ],
+      "model": "gpt_oss_120b",
+      "original_report_sha256": "147014d0a2b4554bb715aba7c0ef9b2ef731185de8c2b9d9d7007934f05e2ae0",
+      "passed": true,
+      "source_checks": [
+        {
+          "actual_sha256": "3e4e96fd27c25ccbf708bc1b9bcc82e35d24015cc6a14025116f9651b8204fa3",
+          "expected_sha256": "3e4e96fd27c25ccbf708bc1b9bcc82e35d24015cc6a14025116f9651b8204fa3",
+          "passed": true,
+          "public_path": "execution/campaign_D/src/routeverify/window_donor_contrast.py"
+        },
+        {
+          "actual_sha256": "4aa8a8a24ab359ebff36e5356bb205c2e7f7954a0fad73a0be8e158248145b28",
+          "expected_sha256": "4aa8a8a24ab359ebff36e5356bb205c2e7f7954a0fad73a0be8e158248145b28",
+          "passed": true,
+          "public_path": "execution/campaign_D/src/routeverify/window_interventions.py"
+        },
+        {
+          "actual_sha256": "be0fcbc848fd14ce8fbf06d3e45dbfba6df08a4e5e356b2848b75511c14bcf51",
+          "expected_sha256": "be0fcbc848fd14ce8fbf06d3e45dbfba6df08a4e5e356b2848b75511c14bcf51",
+          "passed": true,
+          "public_path": "execution/campaign_D/src/routeverify/eval/candidate_scoring.py"
+        },
+        {
+          "actual_sha256": "36b4aed8b029166a0554958f87a3098f1af01d273dc4f6d587525ad2483ba529",
+          "expected_sha256": "36b4aed8b029166a0554958f87a3098f1af01d273dc4f6d587525ad2483ba529",
+          "passed": true,
+          "public_path": "execution/campaign_D/src/routeverify/analysis/window_donor_contrast.py"
+        },
+        {
+          "actual_sha256": "8bc2a68edd1e223d31645c379bde6aa98057accfa12b6be33759a44b56c7c751",
+          "expected_sha256": "8bc2a68edd1e223d31645c379bde6aa98057accfa12b6be33759a44b56c7c751",
+          "passed": true,
+          "public_path": "execution/campaign_D/configs/experiments/window_donor_role_20260908/gpt_oss_120b.yaml"
+        },
+        {
+          "actual_sha256": "ee2cbe3aba447ff9b915dacea4b3f8fb08d1474b11ce6adf4f207db4ef250f8c",
+          "expected_sha256": "ee2cbe3aba447ff9b915dacea4b3f8fb08d1474b11ce6adf4f207db4ef250f8c",
+          "passed": true,
+          "public_path": "execution/campaign_D/configs/models/gpt_oss_120b.yaml"
+        },
+        {
+          "actual_sha256": "df99467403a77fba7ebd9804d86106aba85bd104cf50f2575faf713ca1bb61f6",
+          "expected_sha256": "df99467403a77fba7ebd9804d86106aba85bd104cf50f2575faf713ca1bb61f6",
+          "passed": true,
+          "public_path": "execution/campaign_D/configs/experiments/window_donor_role_20260908/matching.json"
+        }
+      ]
+    },
+    {
+      "K": 235,
+      "N": 290,
+      "checkpoint": {
+        "alias": "qwen3_moe",
+        "harmony_reasoning_effort": "medium",
+        "model_id": "Qwen/Qwen3-30B-A3B",
+        "require_native_mxfp4": false,
+        "revision": "ad44e777bcd18fa416d9da3bd8f70d33ebb85d39",
+        "tokenizer_revision": "ad44e777bcd18fa416d9da3bd8f70d33ebb85d39"
+      },
+      "execution_version": "v1",
+      "loaded_invocation_checks": [
+        {
+          "adapter_and_runner_match": true,
+          "adapter_class": "Qwen3MoEAdapter",
+          "adapter_source_sha256": "d701361067fad9fbd45e66744ad4a82dc07d3ad177182bc89ac1f30334a1f2c5",
+          "model_class": "Qwen3MoeForCausalLM",
+          "python": "3.11.10 (main, Oct 16 2024, 04:38:48) [Clang 18.1.8 ]",
+          "runner_source_sha256": "3e4e96fd27c25ccbf708bc1b9bcc82e35d24015cc6a14025116f9651b8204fa3",
+          "torch": "2.12.1+cu130",
+          "transformers": "5.12.1"
+        }
+      ],
+      "model": "qwen3_moe",
+      "original_report_sha256": "85d539c88fa59b892ac3225860acc45a09fb6ea3a55cc2997a32eb01317c6e76",
+      "passed": true,
+      "source_checks": [
+        {
+          "actual_sha256": "3e4e96fd27c25ccbf708bc1b9bcc82e35d24015cc6a14025116f9651b8204fa3",
+          "expected_sha256": "3e4e96fd27c25ccbf708bc1b9bcc82e35d24015cc6a14025116f9651b8204fa3",
+          "passed": true,
+          "public_path": "execution/campaign_D/src/routeverify/window_donor_contrast.py"
+        },
+        {
+          "actual_sha256": "4aa8a8a24ab359ebff36e5356bb205c2e7f7954a0fad73a0be8e158248145b28",
+          "expected_sha256": "4aa8a8a24ab359ebff36e5356bb205c2e7f7954a0fad73a0be8e158248145b28",
+          "passed": true,
+          "public_path": "execution/campaign_D/src/routeverify/window_interventions.py"
+        },
+        {
+          "actual_sha256": "be0fcbc848fd14ce8fbf06d3e45dbfba6df08a4e5e356b2848b75511c14bcf51",
+          "expected_sha256": "be0fcbc848fd14ce8fbf06d3e45dbfba6df08a4e5e356b2848b75511c14bcf51",
+          "passed": true,
+          "public_path": "execution/campaign_D/src/routeverify/eval/candidate_scoring.py"
+        },
+        {
+          "actual_sha256": "36b4aed8b029166a0554958f87a3098f1af01d273dc4f6d587525ad2483ba529",
+          "expected_sha256": "36b4aed8b029166a0554958f87a3098f1af01d273dc4f6d587525ad2483ba529",
+          "passed": true,
+          "public_path": "execution/campaign_D/src/routeverify/analysis/window_donor_contrast.py"
+        },
+        {
+          "actual_sha256": "de48202be887f32d02550ffc21883010322717a4f4a54f75ecaa2184cbf8de47",
+          "expected_sha256": "de48202be887f32d02550ffc21883010322717a4f4a54f75ecaa2184cbf8de47",
+          "passed": true,
+          "public_path": "execution/campaign_D/configs/experiments/window_donor_role_20260908/qwen3_moe.yaml"
+        },
+        {
+          "actual_sha256": "e133a3e2f2cf9bb363b7527c21ceb3b9ae09c5093e09841e2eeb6a3f04a2d577",
+          "expected_sha256": "e133a3e2f2cf9bb363b7527c21ceb3b9ae09c5093e09841e2eeb6a3f04a2d577",
+          "passed": true,
+          "public_path": "execution/campaign_D/configs/models/qwen3_moe.yaml"
+        },
+        {
+          "actual_sha256": "df99467403a77fba7ebd9804d86106aba85bd104cf50f2575faf713ca1bb61f6",
+          "expected_sha256": "df99467403a77fba7ebd9804d86106aba85bd104cf50f2575faf713ca1bb61f6",
+          "passed": true,
+          "public_path": "execution/campaign_D/configs/experiments/window_donor_role_20260908/matching.json"
+        }
+      ]
+    },
+    {
+      "K": 235,
+      "N": 290,
+      "checkpoint": {
+        "alias": "qwen36_moe",
+        "harmony_reasoning_effort": "medium",
+        "model_id": "Qwen/Qwen3.6-35B-A3B",
+        "require_native_mxfp4": false,
+        "revision": "995ad96eacd98c81ed38be0c5b274b04031597b0",
+        "tokenizer_revision": "995ad96eacd98c81ed38be0c5b274b04031597b0"
+      },
+      "execution_version": "v1",
+      "loaded_invocation_checks": [
+        {
+          "adapter_and_runner_match": true,
+          "adapter_class": "Qwen36MoEAdapter",
+          "adapter_source_sha256": "e203916d8351a7a1698db1efbecde6938969f4252b61f25ed706a83c705062e6",
+          "model_class": "Qwen3_5MoeForCausalLM",
+          "python": "3.11.10 (main, Oct 16 2024, 04:38:48) [Clang 18.1.8 ]",
+          "runner_source_sha256": "3e4e96fd27c25ccbf708bc1b9bcc82e35d24015cc6a14025116f9651b8204fa3",
+          "torch": "2.12.1+cu130",
+          "transformers": "5.12.1"
+        }
+      ],
+      "model": "qwen36_moe",
+      "original_report_sha256": "25a2a071b126457cd7fc1beb9779549b472d9f3978f2196410d91d5bf723f065",
+      "passed": true,
+      "source_checks": [
+        {
+          "actual_sha256": "3e4e96fd27c25ccbf708bc1b9bcc82e35d24015cc6a14025116f9651b8204fa3",
+          "expected_sha256": "3e4e96fd27c25ccbf708bc1b9bcc82e35d24015cc6a14025116f9651b8204fa3",
+          "passed": true,
+          "public_path": "execution/campaign_D/src/routeverify/window_donor_contrast.py"
+        },
+        {
+          "actual_sha256": "4aa8a8a24ab359ebff36e5356bb205c2e7f7954a0fad73a0be8e158248145b28",
+          "expected_sha256": "4aa8a8a24ab359ebff36e5356bb205c2e7f7954a0fad73a0be8e158248145b28",
+          "passed": true,
+          "public_path": "execution/campaign_D/src/routeverify/window_interventions.py"
+        },
+        {
+          "actual_sha256": "be0fcbc848fd14ce8fbf06d3e45dbfba6df08a4e5e356b2848b75511c14bcf51",
+          "expected_sha256": "be0fcbc848fd14ce8fbf06d3e45dbfba6df08a4e5e356b2848b75511c14bcf51",
+          "passed": true,
+          "public_path": "execution/campaign_D/src/routeverify/eval/candidate_scoring.py"
+        },
+        {
+          "actual_sha256": "36b4aed8b029166a0554958f87a3098f1af01d273dc4f6d587525ad2483ba529",
+          "expected_sha256": "36b4aed8b029166a0554958f87a3098f1af01d273dc4f6d587525ad2483ba529",
+          "passed": true,
+          "public_path": "execution/campaign_D/src/routeverify/analysis/window_donor_contrast.py"
+        },
+        {
+          "actual_sha256": "14692359065c52467a1ac0f06f3a0b83ed4ddcad466c58c6676ab93ae1495b81",
+          "expected_sha256": "14692359065c52467a1ac0f06f3a0b83ed4ddcad466c58c6676ab93ae1495b81",
+          "passed": true,
+          "public_path": "execution/campaign_D/configs/experiments/window_donor_role_20260908/qwen36_moe.yaml"
+        },
+        {
+          "actual_sha256": "bbabae243c5425f45fe5607f65919b744bcdcade5dcb5234ece327a131246c9a",
+          "expected_sha256": "bbabae243c5425f45fe5607f65919b744bcdcade5dcb5234ece327a131246c9a",
+          "passed": true,
+          "public_path": "execution/campaign_D/configs/models/qwen36_moe.yaml"
+        },
+        {
+          "actual_sha256": "df99467403a77fba7ebd9804d86106aba85bd104cf50f2575faf713ca1bb61f6",
+          "expected_sha256": "df99467403a77fba7ebd9804d86106aba85bd104cf50f2575faf713ca1bb61f6",
+          "passed": true,
+          "public_path": "execution/campaign_D/configs/experiments/window_donor_role_20260908/matching.json"
+        }
+      ]
+    },
+    {
+      "K": 235,
+      "N": 290,
+      "checkpoint": {
+        "alias": "gemma4_moe",
+        "harmony_reasoning_effort": "medium",
+        "model_id": "google/gemma-4-26B-A4B-it",
+        "require_native_mxfp4": false,
+        "revision": "4d7ae4984b7db7de8f8457170b3f1a419ee76d52",
+        "tokenizer_revision": "4d7ae4984b7db7de8f8457170b3f1a419ee76d52"
+      },
+      "execution_version": "v1",
+      "loaded_invocation_checks": [
+        {
+          "adapter_and_runner_match": true,
+          "adapter_class": "Gemma4MoEAdapter",
+          "adapter_source_sha256": "2de8e22db40c0b5d1d3fb6365b96f6c10945528cdd2097dd5648fda4ddfe40c3",
+          "model_class": "Gemma4ForConditionalGeneration",
+          "python": "3.11.10 (main, Oct 16 2024, 04:38:48) [Clang 18.1.8 ]",
+          "runner_source_sha256": "3e4e96fd27c25ccbf708bc1b9bcc82e35d24015cc6a14025116f9651b8204fa3",
+          "torch": "2.12.1+cu130",
+          "transformers": "5.12.1"
+        },
+        {
+          "adapter_and_runner_match": true,
+          "adapter_class": "Gemma4MoEAdapter",
+          "adapter_source_sha256": "2de8e22db40c0b5d1d3fb6365b96f6c10945528cdd2097dd5648fda4ddfe40c3",
+          "model_class": "Gemma4ForConditionalGeneration",
+          "python": "3.11.10 (main, Oct 16 2024, 04:38:48) [Clang 18.1.8 ]",
+          "runner_source_sha256": "3e4e96fd27c25ccbf708bc1b9bcc82e35d24015cc6a14025116f9651b8204fa3",
+          "torch": "2.12.1+cu130",
+          "transformers": "5.12.1"
+        }
+      ],
+      "model": "gemma4_moe",
+      "original_report_sha256": "3a1b77bb099b61dd87e09755a4bfd0ce882be929fe970ec919801d4eb9587100",
+      "passed": true,
+      "source_checks": [
+        {
+          "actual_sha256": "3e4e96fd27c25ccbf708bc1b9bcc82e35d24015cc6a14025116f9651b8204fa3",
+          "expected_sha256": "3e4e96fd27c25ccbf708bc1b9bcc82e35d24015cc6a14025116f9651b8204fa3",
+          "passed": true,
+          "public_path": "execution/campaign_D/src/routeverify/window_donor_contrast.py"
+        },
+        {
+          "actual_sha256": "4aa8a8a24ab359ebff36e5356bb205c2e7f7954a0fad73a0be8e158248145b28",
+          "expected_sha256": "4aa8a8a24ab359ebff36e5356bb205c2e7f7954a0fad73a0be8e158248145b28",
+          "passed": true,
+          "public_path": "execution/campaign_D/src/routeverify/window_interventions.py"
+        },
+        {
+          "actual_sha256": "be0fcbc848fd14ce8fbf06d3e45dbfba6df08a4e5e356b2848b75511c14bcf51",
+          "expected_sha256": "be0fcbc848fd14ce8fbf06d3e45dbfba6df08a4e5e356b2848b75511c14bcf51",
+          "passed": true,
+          "public_path": "execution/campaign_D/src/routeverify/eval/candidate_scoring.py"
+        },
+        {
+          "actual_sha256": "36b4aed8b029166a0554958f87a3098f1af01d273dc4f6d587525ad2483ba529",
+          "expected_sha256": "36b4aed8b029166a0554958f87a3098f1af01d273dc4f6d587525ad2483ba529",
+          "passed": true,
+          "public_path": "execution/campaign_D/src/routeverify/analysis/window_donor_contrast.py"
+        },
+        {
+          "actual_sha256": "c368e3409f25981de4d7088a19f0ad4f0a4d09d4dbe7cb8f2310b6ec0fdd7fc1",
+          "expected_sha256": "c368e3409f25981de4d7088a19f0ad4f0a4d09d4dbe7cb8f2310b6ec0fdd7fc1",
+          "passed": true,
+          "public_path": "execution/campaign_D/configs/experiments/window_donor_role_20260908/gemma4_moe.yaml"
+        },
+        {
+          "actual_sha256": "bfca32ce02083d3ac321de3ac6f0e0d964fab9f381b48b461b6c8b84d8df42d0",
+          "expected_sha256": "bfca32ce02083d3ac321de3ac6f0e0d964fab9f381b48b461b6c8b84d8df42d0",
+          "passed": true,
+          "public_path": "execution/campaign_D/configs/models/gemma4_moe.yaml"
+        },
+        {
+          "actual_sha256": "df99467403a77fba7ebd9804d86106aba85bd104cf50f2575faf713ca1bb61f6",
+          "expected_sha256": "df99467403a77fba7ebd9804d86106aba85bd104cf50f2575faf713ca1bb61f6",
+          "passed": true,
+          "public_path": "execution/campaign_D/configs/experiments/window_donor_role_20260908/matching.json"
+        }
+      ]
+    },
+    {
+      "K": 235,
+      "N": 290,
+      "checkpoint": {
+        "alias": "glm4_moe_lite",
+        "harmony_reasoning_effort": "medium",
+        "model_id": "zai-org/GLM-4.7-Flash",
+        "require_native_mxfp4": false,
+        "revision": "7dd20894a642a0aa287e9827cb1a1f7f91386b67",
+        "tokenizer_revision": "7dd20894a642a0aa287e9827cb1a1f7f91386b67"
+      },
+      "execution_version": "v1",
+      "loaded_invocation_checks": [
+        {
+          "adapter_and_runner_match": true,
+          "adapter_class": "Glm4MoELiteAdapter",
+          "adapter_source_sha256": "092bb6d789803fb5595cea13976a54e980a37e659281b2da423b27097be3caf2",
+          "model_class": "Glm4MoeLiteForCausalLM",
+          "python": "3.11.10 (main, Oct 16 2024, 04:38:48) [Clang 18.1.8 ]",
+          "runner_source_sha256": "3e4e96fd27c25ccbf708bc1b9bcc82e35d24015cc6a14025116f9651b8204fa3",
+          "torch": "2.12.1+cu130",
+          "transformers": "5.12.1"
+        }
+      ],
+      "model": "glm4_moe_lite",
+      "original_report_sha256": "70824af5d97f22947c491deaca7ab0ce2808bb189a482f9c7cf1234a6de37773",
+      "passed": true,
+      "source_checks": [
+        {
+          "actual_sha256": "3e4e96fd27c25ccbf708bc1b9bcc82e35d24015cc6a14025116f9651b8204fa3",
+          "expected_sha256": "3e4e96fd27c25ccbf708bc1b9bcc82e35d24015cc6a14025116f9651b8204fa3",
+          "passed": true,
+          "public_path": "execution/campaign_D/src/routeverify/window_donor_contrast.py"
+        },
+        {
+          "actual_sha256": "4aa8a8a24ab359ebff36e5356bb205c2e7f7954a0fad73a0be8e158248145b28",
+          "expected_sha256": "4aa8a8a24ab359ebff36e5356bb205c2e7f7954a0fad73a0be8e158248145b28",
+          "passed": true,
+          "public_path": "execution/campaign_D/src/routeverify/window_interventions.py"
+        },
+        {
+          "actual_sha256": "be0fcbc848fd14ce8fbf06d3e45dbfba6df08a4e5e356b2848b75511c14bcf51",
+          "expected_sha256": "be0fcbc848fd14ce8fbf06d3e45dbfba6df08a4e5e356b2848b75511c14bcf51",
+          "passed": true,
+          "public_path": "execution/campaign_D/src/routeverify/eval/candidate_scoring.py"
+        },
+        {
+          "actual_sha256": "36b4aed8b029166a0554958f87a3098f1af01d273dc4f6d587525ad2483ba529",
+          "expected_sha256": "36b4aed8b029166a0554958f87a3098f1af01d273dc4f6d587525ad2483ba529",
+          "passed": true,
+          "public_path": "execution/campaign_D/src/routeverify/analysis/window_donor_contrast.py"
+        },
+        {
+          "actual_sha256": "24c13c8657ad1370b1af1460bd552b6cc0a8b48b5a30e134eb3cf2358238f1da",
+          "expected_sha256": "24c13c8657ad1370b1af1460bd552b6cc0a8b48b5a30e134eb3cf2358238f1da",
+          "passed": true,
+          "public_path": "execution/campaign_D/configs/experiments/window_donor_role_20260908/glm4_moe_lite.yaml"
+        },
+        {
+          "actual_sha256": "0e158a6236b0d1fc5ca83dbddc95271d41a11e25b7b6b2d9340e597743b87db5",
+          "expected_sha256": "0e158a6236b0d1fc5ca83dbddc95271d41a11e25b7b6b2d9340e597743b87db5",
+          "passed": true,
+          "public_path": "execution/campaign_D/configs/models/glm4_moe_lite.yaml"
+        },
+        {
+          "actual_sha256": "df99467403a77fba7ebd9804d86106aba85bd104cf50f2575faf713ca1bb61f6",
+          "expected_sha256": "df99467403a77fba7ebd9804d86106aba85bd104cf50f2575faf713ca1bb61f6",
+          "passed": true,
+          "public_path": "execution/campaign_D/configs/experiments/window_donor_role_20260908/matching.json"
+        }
+      ]
+    },
+    {
+      "K": 235,
+      "N": 290,
+      "checkpoint": {
+        "alias": "nemotron3_nano",
+        "harmony_reasoning_effort": "medium",
+        "model_id": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+        "require_native_mxfp4": false,
+        "revision": "2d59de1cbd51c0adf384eb906b766d1aee0e0517",
+        "tokenizer_revision": "2d59de1cbd51c0adf384eb906b766d1aee0e0517"
+      },
+      "execution_version": "v1",
+      "loaded_invocation_checks": [
+        {
+          "adapter_and_runner_match": true,
+          "adapter_class": "Nemotron3NanoAdapter",
+          "adapter_source_sha256": "05e7099010d4c741f98efbeeb7fe13b29d789afa273a33816b99dc7b4a48b8c3",
+          "model_class": "NemotronHForCausalLM",
+          "python": "3.11.10 (main, Oct 16 2024, 04:38:48) [Clang 18.1.8 ]",
+          "runner_source_sha256": "3e4e96fd27c25ccbf708bc1b9bcc82e35d24015cc6a14025116f9651b8204fa3",
+          "torch": "2.12.1+cu130",
+          "transformers": "5.12.1"
+        }
+      ],
+      "model": "nemotron3_nano",
+      "original_report_sha256": "683f31ff2f0406713b8aee11c736329654e5c5c3f5160c035b2efe179e283e39",
+      "passed": true,
+      "source_checks": [
+        {
+          "actual_sha256": "3e4e96fd27c25ccbf708bc1b9bcc82e35d24015cc6a14025116f9651b8204fa3",
+          "expected_sha256": "3e4e96fd27c25ccbf708bc1b9bcc82e35d24015cc6a14025116f9651b8204fa3",
+          "passed": true,
+          "public_path": "execution/campaign_D/src/routeverify/window_donor_contrast.py"
+        },
+        {
+          "actual_sha256": "4aa8a8a24ab359ebff36e5356bb205c2e7f7954a0fad73a0be8e158248145b28",
+          "expected_sha256": "4aa8a8a24ab359ebff36e5356bb205c2e7f7954a0fad73a0be8e158248145b28",
+          "passed": true,
+          "public_path": "execution/campaign_D/src/routeverify/window_interventions.py"
+        },
+        {
+          "actual_sha256": "be0fcbc848fd14ce8fbf06d3e45dbfba6df08a4e5e356b2848b75511c14bcf51",
+          "expected_sha256": "be0fcbc848fd14ce8fbf06d3e45dbfba6df08a4e5e356b2848b75511c14bcf51",
+          "passed": true,
+          "public_path": "execution/campaign_D/src/routeverify/eval/candidate_scoring.py"
+        },
+        {
+          "actual_sha256": "36b4aed8b029166a0554958f87a3098f1af01d273dc4f6d587525ad2483ba529",
+          "expected_sha256": "36b4aed8b029166a0554958f87a3098f1af01d273dc4f6d587525ad2483ba529",
+          "passed": true,
+          "public_path": "execution/campaign_D/src/routeverify/analysis/window_donor_contrast.py"
+        },
+        {
+          "actual_sha256": "4294818ccd0df6ff334023ece87267781555e8b2ec56265d06ca3cfb3ff7f1a3",
+          "expected_sha256": "4294818ccd0df6ff334023ece87267781555e8b2ec56265d06ca3cfb3ff7f1a3",
+          "passed": true,
+          "public_path": "execution/campaign_D/configs/experiments/window_donor_role_20260908/nemotron3_nano.yaml"
+        },
+        {
+          "actual_sha256": "487202855d124fdf3b8ac841b59279ca2177a7263b0e07bf3ef206aa531168db",
+          "expected_sha256": "487202855d124fdf3b8ac841b59279ca2177a7263b0e07bf3ef206aa531168db",
+          "passed": true,
+          "public_path": "execution/campaign_D/configs/models/nemotron3_nano.yaml"
+        },
+        {
+          "actual_sha256": "df99467403a77fba7ebd9804d86106aba85bd104cf50f2575faf713ca1bb61f6",
+          "expected_sha256": "df99467403a77fba7ebd9804d86106aba85bd104cf50f2575faf713ca1bb61f6",
+          "passed": true,
+          "public_path": "execution/campaign_D/configs/experiments/window_donor_role_20260908/matching.json"
+        }
+      ]
+    },
+    {
+      "K": 235,
+      "N": 290,
+      "checkpoint": {
+        "alias": "nemotron35_lightning",
+        "harmony_reasoning_effort": "medium",
+        "model_id": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+        "require_native_mxfp4": false,
+        "revision": "a9904d24bcc1d289a1950fa9d2b978c47cf903b9",
+        "tokenizer_revision": "a9904d24bcc1d289a1950fa9d2b978c47cf903b9"
+      },
+      "execution_version": "v1",
+      "loaded_invocation_checks": [
+        {
+          "adapter_and_runner_match": true,
+          "adapter_class": "Nemotron35LightningAdapter",
+          "adapter_source_sha256": "bc5f3a632ded2d93f6eaca576810cb152ebb99060c0f90f63428831d606980a9",
+          "model_class": "NemotronHForCausalLM",
+          "python": "3.11.10 (main, Oct 16 2024, 04:38:48) [Clang 18.1.8 ]",
+          "runner_source_sha256": "3e4e96fd27c25ccbf708bc1b9bcc82e35d24015cc6a14025116f9651b8204fa3",
+          "torch": "2.12.1+cu130",
+          "transformers": "5.12.1"
+        }
+      ],
+      "model": "nemotron35_lightning",
+      "original_report_sha256": "f116c12d2fedacdb89ae52ceca8d48ece0af726dc62736e5ce81e637826c52ff",
+      "passed": true,
+      "source_checks": [
+        {
+          "actual_sha256": "3e4e96fd27c25ccbf708bc1b9bcc82e35d24015cc6a14025116f9651b8204fa3",
+          "expected_sha256": "3e4e96fd27c25ccbf708bc1b9bcc82e35d24015cc6a14025116f9651b8204fa3",
+          "passed": true,
+          "public_path": "execution/campaign_D/src/routeverify/window_donor_contrast.py"
+        },
+        {
+          "actual_sha256": "4aa8a8a24ab359ebff36e5356bb205c2e7f7954a0fad73a0be8e158248145b28",
+          "expected_sha256": "4aa8a8a24ab359ebff36e5356bb205c2e7f7954a0fad73a0be8e158248145b28",
+          "passed": true,
+          "public_path": "execution/campaign_D/src/routeverify/window_interventions.py"
+        },
+        {
+          "actual_sha256": "be0fcbc848fd14ce8fbf06d3e45dbfba6df08a4e5e356b2848b75511c14bcf51",
+          "expected_sha256": "be0fcbc848fd14ce8fbf06d3e45dbfba6df08a4e5e356b2848b75511c14bcf51",
+          "passed": true,
+          "public_path": "execution/campaign_D/src/routeverify/eval/candidate_scoring.py"
+        },
+        {
+          "actual_sha256": "36b4aed8b029166a0554958f87a3098f1af01d273dc4f6d587525ad2483ba529",
+          "expected_sha256": "36b4aed8b029166a0554958f87a3098f1af01d273dc4f6d587525ad2483ba529",
+          "passed": true,
+          "public_path": "execution/campaign_D/src/routeverify/analysis/window_donor_contrast.py"
+        },
+        {
+          "actual_sha256": "62e9747108b6df0868fc5188d4c9cb2b2a41d5742f51611d6eeea6f440b446e0",
+          "expected_sha256": "62e9747108b6df0868fc5188d4c9cb2b2a41d5742f51611d6eeea6f440b446e0",
+          "passed": true,
+          "public_path": "execution/campaign_D/configs/experiments/window_donor_role_20260908/nemotron35_lightning.yaml"
+        },
+        {
+          "actual_sha256": "4f62cdc225d1ea29838364556ec1c1785bbd869551cd44227ac32a9f33cbd696",
+          "expected_sha256": "4f62cdc225d1ea29838364556ec1c1785bbd869551cd44227ac32a9f33cbd696",
+          "passed": true,
+          "public_path": "execution/campaign_D/configs/models/nemotron35_lightning.yaml"
+        },
+        {
+          "actual_sha256": "df99467403a77fba7ebd9804d86106aba85bd104cf50f2575faf713ca1bb61f6",
+          "expected_sha256": "df99467403a77fba7ebd9804d86106aba85bd104cf50f2575faf713ca1bb61f6",
+          "passed": true,
+          "public_path": "execution/campaign_D/configs/experiments/window_donor_role_20260908/matching.json"
+        }
+      ]
+    }
+  ],
+  "scope": "Original source and config hashes verified before public sanitization. Runtime entries are taken from the completed archive reports, not from new GPU runs."
+}

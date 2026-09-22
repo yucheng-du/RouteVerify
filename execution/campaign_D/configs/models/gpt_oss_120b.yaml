@@ -1,0 +1,23 @@
+alias: gpt_oss_120b
+model_id: openai/gpt-oss-120b
+revision: b5c939de8f754692c1647ca79fbf85e8c1e70f8a
+tokenizer_revision: b5c939de8f754692c1647ca79fbf85e8c1e70f8a
+cache_dir: .cache/huggingface/hub
+trust_remote_code: false
+# The unquantized modules/activations use BF16. Expert storage and dispatch remain native MXFP4.
+dtype: bfloat16
+device_map: auto
+load_weights: false
+expected_layers: 36
+expected_experts: 128
+expected_top_k: 4
+expected_model_type: gpt_oss
+expected_architectures: [GptOssForCausalLM]
+expected_chat_template_sha256: a4c9919cbbd4acdd51ccffe22da049264b1b73e59055fa58811a99efbd7c8146
+expected_transformers_version: 5.12.1
+expected_kernels_version: 0.12.3
+expected_triton_version: 3.7.1
+expected_mxfp4_kernel_repo: kernels-community/gpt-oss-triton-kernels
+expected_mxfp4_kernel_revision: 642d2a71c6a9b32fc18acb8ec53505fb324bc394
+require_native_mxfp4: true
+harmony_reasoning_effort: medium
