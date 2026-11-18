@@ -1,0 +1,20 @@
+% Values formatted directly from the frozen analysis CSVs; no recomputation.
+\begingroup
+\fontsize{10}{11.5}\selectfont
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lccc@{}}
+\toprule
+Model & Real $D$ & Placebo & Real $D$ $-$ placebo \\
+\midrule
+Qwen3.6 & \begin{tabular}[t]{@{}c@{}}\(0.008\)\\\([-0.014,\,0.031]\)\end{tabular} & \begin{tabular}[t]{@{}c@{}}\(-0.013\)\\\([-0.039,\,0.013]\)\end{tabular} & \begin{tabular}[t]{@{}c@{}}\(0.021\)\\\([-0.016,\,0.062]\)\end{tabular}\\[2pt]
+GLM-4.7-Flash & \begin{tabular}[t]{@{}c@{}}\(0.183\)\\\([0.144,\,0.222]\)\end{tabular} & \begin{tabular}[t]{@{}c@{}}\(-0.004\)\\\([-0.036,\,0.029]\)\end{tabular} & \begin{tabular}[t]{@{}c@{}}\(0.186\)\\\([0.134,\,0.238]\)\end{tabular}\\[2pt]
+Lightning & \begin{tabular}[t]{@{}c@{}}\(0.140\)\\\([0.117,\,0.164]\)\end{tabular} & \begin{tabular}[t]{@{}c@{}}\(0.016\)\\\([-0.003,\,0.035]\)\end{tabular} & \begin{tabular}[t]{@{}c@{}}\(0.124\)\\\([0.093,\,0.156]\)\end{tabular}\\[2pt]
+Nano & \begin{tabular}[t]{@{}c@{}}\(0.075\)\\\([0.063,\,0.088]\)\end{tabular} & \begin{tabular}[t]{@{}c@{}}\(0.004\)\\\([-0.006,\,0.014]\)\end{tabular} & \begin{tabular}[t]{@{}c@{}}\(0.072\)\\\([0.055,\,0.088]\)\end{tabular}\\[2pt]
+Gemma4 & \begin{tabular}[t]{@{}c@{}}\(0.805\)\\\([0.558,\,1.068]\)\end{tabular} & \begin{tabular}[t]{@{}c@{}}\(-0.157\)\\\([-0.418,\,0.105]\)\end{tabular} & \begin{tabular}[t]{@{}c@{}}\(0.961\)\\\([0.562,\,1.381]\)\end{tabular}\\[2pt]
+OLMoE & \begin{tabular}[t]{@{}c@{}}\(0.169\)\\\([0.102,\,0.241]\)\end{tabular} & \begin{tabular}[t]{@{}c@{}}\(0.111\)\\\([0.062,\,0.163]\)\end{tabular} & \begin{tabular}[t]{@{}c@{}}\(0.057\)\\\([-0.009,\,0.124]\)\end{tabular}\\[2pt]
+GPT-OSS-20B & \begin{tabular}[t]{@{}c@{}}\(0.130\)\\\([0.095,\,0.167]\)\end{tabular} & \begin{tabular}[t]{@{}c@{}}\(0.030\)\\\([-0.012,\,0.070]\)\end{tabular} & \begin{tabular}[t]{@{}c@{}}\(0.100\)\\\([0.051,\,0.151]\)\end{tabular}\\[2pt]
+GPT-OSS-120B & \begin{tabular}[t]{@{}c@{}}\(0.213\)\\\([0.175,\,0.254]\)\end{tabular} & \begin{tabular}[t]{@{}c@{}}\(0.019\)\\\([-0.015,\,0.054]\)\end{tabular} & \begin{tabular}[t]{@{}c@{}}\(0.194\)\\\([0.144,\,0.247]\)\end{tabular}\\[2pt]
+\bottomrule
+\end{tabular*}
+\endgroup

@@ -1,6 +1,10 @@
-# RouteVerify — anonymous reproduction materials
+# RouteVerify
 
-Code and non-weight artifacts for the nine-checkpoint intervention study, with separate representation-probe and ProcessBench analyses, supplied under the [review-use permission](LICENSES.md). These materials include no original project history or model weights.
+**RouteVerify: Routing Interventions for Step-Level Verification in Mixture-of-Experts Models**
+
+Yucheng Du, Ryan A. Rossi, and Xiyang Hu
+
+This repository contains the code and numerical observations for the nine-checkpoint intervention study, its representation probes, and the ProcessBench analysis. [MIT license and dataset sources](LICENSES.md)
 
 ## Start here: CPU reproduction
 
@@ -32,6 +36,8 @@ python paper/verification_metrics/reproduce.py --output build/verification_metri
 
 The first three commands retain the reported 50,000 source-component bootstrap draws and write to `build/`. They cover all 1,170 window panels / 161,480 pair-level T values, 126 local-D / all-layer-output panels, and the nine-model full-step all-router D analysis. See [secondary analyses](secondary/README.md), [paper assets and result map](paper/README.md), and [analysis details](analysis/README.md) for their executable commands and exact scope.
 
+For Appendix L, see the [same-label placebo and donor surface gap](paper/appendix_l/placebo_surface/README.md) (Tables 17–18 and sensitivity analyses) and [routing changes](paper/appendix_l/routing/README.md) (Table 19). The [category-exclusion analysis](paper/category_exclusion/README.md) reproduces the 91 comparisons underlying the separate appendix paragraph. All run on CPU using the bundled observations.
+
 Refit the eight-model canonical interface probes from the included compact boundary features, without model weights, dataset text or GPU execution:
 
 ```sh
@@ -44,7 +50,7 @@ Use a new or empty output directory. This command fits 138 cells with five folds
 
 [Execution sources](execution/README.md) preserves the actual campaign snapshots and model revisions. The A checkpoints use different overlays; B, C and D retain their own sources. Download model weights and datasets separately from the recorded upstream revisions, reconstruct the frozen input manifests, then use the corresponding campaign environment and command. GPU dependencies are in those snapshots, not `requirements-cpu.txt`.
 
-This candidate has been validated by CPU reanalysis and lightweight source/input checks. **A complete GPU rerun has not been performed for this release.** Archived scores reproduce the reported analysis; this does not establish bitwise determinism of new GPU forwards.
+CPU reanalysis and source checks validate the archived observations. A fresh end-to-end run requires model weights and GPU execution.
 
 ## Interpretation and provenance
 
@@ -55,4 +61,4 @@ This candidate has been validated by CPU reanalysis and lightweight source/input
 
 [MANIFEST.json](MANIFEST.json) identifies **these public copies**. [Original artifact identities](docs/original-artifact-identities.json) preserve the three hashes quoted in the paper separately. Paths and selected metadata have been anonymized; public hashes must not be substituted for the original archive hashes.
 
-[Release scope and remaining decisions](docs/release-scope.md) records omissions and limitations. [Licensing](LICENSES.md) distinguishes project sources from upstream datasets, model code and model weights. No model weights, raw dataset problem text, private audit/chat records, credentials or private repository addresses are included.
+See [release scope](docs/release-scope.md) for coverage and limitations, and [data sources](LICENSES.md) for the upstream revisions used to obtain benchmark text.

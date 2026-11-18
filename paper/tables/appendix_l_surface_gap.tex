@@ -1,0 +1,20 @@
+% Values formatted directly from the frozen analysis CSVs; no recomputation.
+\begingroup
+\fontsize{10}{11.5}\selectfont
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lcc@{}}
+\toprule
+Model & $D$ where $\Delta s\leq 0$ & Intercept at $\Delta s=0$ \\
+\midrule
+Qwen3.6 & \begin{tabular}[t]{@{}c@{}}\(0.038\)\\\([0.003,\,0.081]\)\end{tabular} & \begin{tabular}[t]{@{}c@{}}\(0.021\)\\\([-0.002,\,0.047]\)\end{tabular}\\[2pt]
+GLM-4.7-Flash & \begin{tabular}[t]{@{}c@{}}\(0.124\)\\\([0.071,\,0.182]\)\end{tabular} & \begin{tabular}[t]{@{}c@{}}\(0.145\)\\\([0.109,\,0.182]\)\end{tabular}\\[2pt]
+Lightning & \begin{tabular}[t]{@{}c@{}}\(0.104\)\\\([0.073,\,0.137]\)\end{tabular} & \begin{tabular}[t]{@{}c@{}}\(0.125\)\\\([0.101,\,0.149]\)\end{tabular}\\[2pt]
+Nano & \begin{tabular}[t]{@{}c@{}}\(0.062\)\\\([0.045,\,0.081]\)\end{tabular} & \begin{tabular}[t]{@{}c@{}}\(0.065\)\\\([0.052,\,0.078]\)\end{tabular}\\[2pt]
+Gemma4 & \begin{tabular}[t]{@{}c@{}}\(1.024\)\\\([0.602,\,1.478]\)\end{tabular} & \begin{tabular}[t]{@{}c@{}}\(0.864\)\\\([0.614,\,1.130]\)\end{tabular}\\[2pt]
+OLMoE & \begin{tabular}[t]{@{}c@{}}\(0.001\)\\\([-0.022,\,0.024]\)\end{tabular} & \begin{tabular}[t]{@{}c@{}}\(0.056\)\\\([0.012,\,0.102]\)\end{tabular}\\[2pt]
+GPT-OSS-20B & \begin{tabular}[t]{@{}c@{}}\(0.060\)\\\([0.027,\,0.095]\)\end{tabular} & \begin{tabular}[t]{@{}c@{}}\(0.076\)\\\([0.046,\,0.106]\)\end{tabular}\\[2pt]
+GPT-OSS-120B & \begin{tabular}[t]{@{}c@{}}\(0.151\)\\\([0.095,\,0.215]\)\end{tabular} & \begin{tabular}[t]{@{}c@{}}\(0.158\)\\\([0.123,\,0.195]\)\end{tabular}\\[2pt]
+\bottomrule
+\end{tabular*}
+\endgroup

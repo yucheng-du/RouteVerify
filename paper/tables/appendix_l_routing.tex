@@ -1,0 +1,21 @@
+% Values formatted directly from the frozen analysis CSVs; no recomputation.
+\begingroup
+\fontsize{9}{10.5}\selectfont
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lcccc@{}}
+\toprule
+Model & \shortstack{Top-$k$\\changed} & \shortstack{Matched/paired\\KL range} & \shortstack{$D$ donors: E/C KL\\single layer} & \shortstack{$D$ donors: E/C KL\\all-router} \\
+\midrule
+Qwen3.6 & 0.926 & 1.715--2.119 & 0.998 & 0.998 \\[2pt]
+Qwen3 & 0.683 & 1.585--2.144 & 0.939 & 0.995 \\[2pt]
+GLM-4.7-Flash & 0.636 & 1.657--2.331 & 0.999 & 1.016 \\[2pt]
+Lightning & 0.883 & 1.763--2.160 & 0.944 & 1.010 \\[2pt]
+Nano & 0.843 & 1.738--2.141 & 0.900 & 1.009 \\[2pt]
+Gemma4 & 0.886 & 1.560--1.934 & 1.091 & 1.009 \\[2pt]
+OLMoE & 0.348 & 1.612--2.213 & 1.030 & 1.024 \\[2pt]
+GPT-OSS-20B & 0.655 & 1.676--2.224 & 1.049 & 0.999 \\[2pt]
+GPT-OSS-120B & 0.709 & 1.636--2.202 & 0.955 & 1.000 \\[2pt]
+\bottomrule
+\end{tabular*}
+\endgroup

@@ -86,8 +86,9 @@
     }
   },
   "licensing": {
-    "candidate_permission": "Review use only; see LICENSES.md",
-    "open_source_release": false,
+    "candidate_permission": "The original anonymous review snapshot carried review-use terms.",
+    "public_code_license": "MIT; see LICENSE and LICENSES.md",
+    "open_source_release": true,
     "project_metadata_files_updated": 8,
     "third_party_terms_retained": true,
     "original_sources_modified": false

@@ -1,5 +1,5 @@
 {
-  "scope": "Reviewed manuscript v8; 5 figures and 16 tables. Paths are relative to paper/. Commands assume release root. No model-forward execution is implied.",
+  "scope": "The preprint contains five figures and nineteen tables. The table and figure numbers below follow the preprint. The original reproduction package supplies the earlier display assets for Figures 1–5 and Tables 1–16. The Table 17–19 TeX files are taken directly from the preprint source. Paths are relative to paper/. Run CPU commands from the release root.",
   "results": [
     {
       "id": "Figure 1",
@@ -86,20 +86,6 @@
     },
     {
       "id": "Table 2",
-      "latex_label": "tab:abc-bundle",
-      "topic": "All-layer last-token MoE-output controls",
-      "assets": [
-        "tables/abc_bundle_controls_20260908.tex"
-      ],
-      "inputs": [
-        "../analysis/abc/headline_d_bundle_v1.csv",
-        "../analysis/abc/headline_inputs/"
-      ],
-      "cpu_command": "python analysis/abc/recompute_headline.py --output build/abc_headline",
-      "interpretation": "Paired, matched external, and norm-random controls. All routed sites, final step token; not the full-step all-router condition."
-    },
-    {
-      "id": "Table 3",
       "latex_label": "tab:abc-anchors",
       "topic": "Layer and intervention coverage",
       "assets": [
@@ -113,7 +99,7 @@
       "interpretation": "Zero-indexed local D/window anchors and all routed sites; probe anchors describe a separate analysis. Qwen3 L36 D versus L24 windows/probes is intentional."
     },
     {
-      "id": "Table 4",
+      "id": "Table 3",
       "latex_label": "tab:abc-window-n",
       "topic": "Eight-token window eligibility",
       "assets": [
@@ -127,7 +113,7 @@
       "interpretation": "N/K for paired/matched suffix/divergence; common masks are intersections. Missing observations are never zero-filled."
     },
     {
-      "id": "Table 5",
+      "id": "Table 4",
       "latex_label": "tab:abc-d-all-interfaces",
       "topic": "All three local interfaces and receiver roles",
       "assets": [
@@ -140,7 +126,7 @@
       "interpretation": "Same local D analysis as Table 1, all interface/role cells retained."
     },
     {
-      "id": "Table 6",
+      "id": "Table 5",
       "latex_label": "tab:abc-window-router-controls",
       "topic": "Full-step all-router controls and paired differences",
       "assets": [
@@ -151,6 +137,20 @@
       ],
       "cpu_command": "python analysis/abc/recompute_windows.py --output build/abc_windows",
       "interpretation": "Control-adjusted differences formed within pair before 50,000-draw component resampling."
+    },
+    {
+      "id": "Table 6",
+      "latex_label": "tab:abc-bundle",
+      "topic": "All-layer last-token MoE-output controls",
+      "assets": [
+        "tables/abc_bundle_controls_20260908.tex"
+      ],
+      "inputs": [
+        "../analysis/abc/headline_d_bundle_v1.csv",
+        "../analysis/abc/headline_inputs/"
+      ],
+      "cpu_command": "python analysis/abc/recompute_headline.py --output build/abc_headline",
+      "interpretation": "Paired, matched external, and norm-random controls. All routed sites, final step token; not the full-step all-router condition."
     },
     {
       "id": "Table 7",
@@ -288,6 +288,48 @@
       ],
       "cpu_command": "python secondary/recompute.py --output build/secondary",
       "interpretation": "Within-observed-group bootstrap, 50,000 draws; all original pairs retained; does not identify a gating mechanism."
+    },
+    {
+      "id": "Table 17",
+      "latex_label": "tab:same-label-placebo",
+      "topic": "Same-label placebo at the last-token residual interface",
+      "assets": [
+        "tables/appendix_l_placebo.tex"
+      ],
+      "inputs": [
+        "../analysis/abc/headline_inputs/",
+        "../secondary/probe/text_baseline/oof_predictions.jsonl",
+        "verification_metrics/extracted/windows/"
+      ],
+      "cpu_command": "OPENBLAS_NUM_THREADS=1 python paper/appendix_l/placebo_surface/reproduce.py --output build/appendix_l/placebo_surface.csv",
+      "interpretation": "The TF-IDF-oriented placebo, real D and their paired difference use 195 receiver pairs in 166 source components across eight eligible models."
+    },
+    {
+      "id": "Table 18",
+      "latex_label": "tab:surface-gap",
+      "topic": "Residual D and the TF-IDF donor gap",
+      "assets": [
+        "tables/appendix_l_surface_gap.tex"
+      ],
+      "inputs": [
+        "../analysis/abc/headline_inputs/",
+        "../secondary/probe/text_baseline/oof_predictions.jsonl"
+      ],
+      "cpu_command": "OPENBLAS_NUM_THREADS=1 python paper/appendix_l/placebo_surface/reproduce.py --output build/appendix_l/placebo_surface.csv",
+      "interpretation": "The conditional mean uses 80 pairs with nonpositive donor gap. The zero-gap intercept comes from a regression fitted to all 290 pairs and refitted within each resample."
+    },
+    {
+      "id": "Table 19",
+      "latex_label": "tab:routing-manipulation",
+      "topic": "Routing changes and perturbation-size comparisons",
+      "assets": [
+        "tables/appendix_l_routing.tex"
+      ],
+      "inputs": [
+        "appendix_l/routing/observations.csv.gz"
+      ],
+      "cpu_command": "python paper/appendix_l/routing/reproduce.py --output build/appendix_l/routing",
+      "interpretation": "Nine models. Changed-set fractions average the per-receiver measurements. KL ratios compare the means for each donor condition within a model."
     }
   ],
   "additional_textual_results": [
@@ -312,6 +354,34 @@
         "verification_metrics/extracted/"
       ],
       "documentation": "../execution/README.md"
+    },
+    {
+      "scope": "Appendix B.1 category-exclusion sensitivity for token-window T contrasts",
+      "inputs": [
+        "category_exclusion/input-manifest.json"
+      ],
+      "documentation": "category_exclusion/README.md",
+      "cpu_command": "python paper/category_exclusion/recompute_category_exclusion.py"
+    },
+    {
+      "scope": "Appendix L.1 placebo sensitivities for donor length, total log probability, category exclusion and within-run centering, plus identical-donor drift",
+      "inputs": [
+        "appendix_l/placebo_surface/boundary_counts.csv",
+        "appendix_l/placebo_surface/fixed_run_baselines.csv",
+        "../analysis/abc/headline_inputs/",
+        "../secondary/probe/text_baseline/oof_predictions.jsonl",
+        "verification_metrics/extracted/windows/"
+      ],
+      "documentation": "appendix_l/placebo_surface/README.md",
+      "cpu_command": "OPENBLAS_NUM_THREADS=1 python paper/appendix_l/placebo_surface/reproduce_sensitivities.py --output-dir build/appendix_l"
+    },
+    {
+      "scope": "Appendix L.3 changed-set and donor perturbation ranges",
+      "inputs": [
+        "appendix_l/routing/observations.csv.gz"
+      ],
+      "documentation": "appendix_l/routing/README.md",
+      "cpu_command": "python paper/appendix_l/routing/reproduce.py --output build/appendix_l/routing"
     }
   ]
 }

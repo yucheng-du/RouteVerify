@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "path_base": "RouteVerify release root",
+  "files": [
+    {
+      "path": "execution/inputs/discovery-identities.jsonl",
+      "bytes": 248708,
+      "sha256": "1795b6cddc3bcda57af9eeae025e3846596ce1caa31bf3f16ea4fad069f998bc"
+    },
+    {
+      "path": "analysis/abc/window_pair_values_v1.csv",
+      "bytes": 34161189,
+      "sha256": "d511ce408a41fc63307420a7a1efe811dc651c3f395a28f292b8aee3525271ff"
+    },
+    {
+      "path": "analysis/abc/unified_windows_v1.csv",
+      "bytes": 441437,
+      "sha256": "d208587bd90ac741184508715858d8cccc46f8ba88463948cae8525286a92b40"
+    }
+  ]
+}
